@@ -29,7 +29,7 @@ Mandatory materials/readings will be circulated via Moodle in advance
 book, whereas it is essential you carefully go through:
 
 -   lecture notes (to be uploaded onto
-    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635)weekly);
+    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635) weekly);
 
 -   Python scripts/Jupyter notebooks (to be uploaded onto
     Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635)
