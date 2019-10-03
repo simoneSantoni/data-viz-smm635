@@ -87,7 +87,7 @@ For the **mid-term project**, students are required to solve a complex
 visualization problem. This year, the project will focus on the topic of
 'popularity' in markets (details will be available by week 3, when the
 project will be released). Submissions will be assessed on a
-$0 - 100 \%$ scale. The Groups who fail can resubmit a revised version
+0 - 100% scale. The Groups who fail can resubmit a revised version
 of the project; if the revision is sufficient, students receive a 50%
 mark. The deadline for the project is November 11 (week 6). Selected
 groups will be invite to present the outcome of their work to fellow
