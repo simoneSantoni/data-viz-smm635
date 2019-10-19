@@ -203,3 +203,7 @@ On top of Anaconda/Python, students should install the modules
 [Rasterio](https://rasterio.readthedocs.io/en/latest/),
 [Shapely](https://shapely.readthedocs.io/en/stable/manual.html) (I
 recommend to do that using Conda).
+
+
+Version history
+===============
