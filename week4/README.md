@@ -3,8 +3,11 @@ README
 
 This ```week4``` folder contains the following materials:
 
-+ lecture notes
-  - Jupyter notebook - ```slideshow_0.ipynb```
-  - image folder - ```images/```
-+ data
-+ 
++ Lecture notes:
+  - ```slideshow_0.ipynb``` - 
+  - ```images/``` - 
+  - ```data``` - 
++ Labs:
+  - **to be updated soon**
++ Description of the problem set:
+  - **to be updated soon**
