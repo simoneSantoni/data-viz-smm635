@@ -31,7 +31,7 @@ import matplotlib.gridspec as gridspec
 
 plt.style.use('seaborn-bright')
 plt.rc('text', usetex=True)
-plt.rc('font', family='serif', size=12)
+plt.rc('font', family='serif', size=10)
 
 
 # %% fake data
@@ -47,7 +47,7 @@ y = 10 + x * (1+ np.random.randn(n))
 # -------
 
 # create figure
-fig = plt.figure(figsize=(6, 6))
+fig = plt.figure(figsize=(4, 4))
 
 # parition the figure into 4 subplots with 'gridspec'
 gs = gridspec.GridSpec(2, 2, # we want 2 rows, 2 cols
@@ -94,14 +94,13 @@ textstr = (r'$(x_{i}, y_{i})$')
 x_range = np.max(x) - np.min(x)
 y_range = np.max(y) - np.min(y)
 ax1.text(x_i, y_i, textstr,
-         horizontalalignment='center', verticalalignment='bottom',
-         fontsize=12)
+         horizontalalignment='center', verticalalignment='bottom')
 # textbox within the x distro
 textstr = (r'$x_{i}$')
-ax3.text(x_i, 1 - 0.3, textstr, horizontalalignment='center', fontsize=12)
+ax3.text(x_i, 1 - 0.5, textstr, horizontalalignment='center')
 # textbox within the y distro
 textstr = (r'$y_{i}$')
-ax0.text(1 - 0.3, y_i, textstr, verticalalignment='center', fontsize=12)
+ax0.text(1 - 0.5, y_i, textstr, verticalalignment='center')
 
 # save plot
 out_f = os.path.join(os.getcwd(), 'tufte_scatter.pdf')
