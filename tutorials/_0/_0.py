@@ -104,8 +104,8 @@ textstr = (r'$y_{i}$')
 ax0.text(1 - 0.3, y_i, textstr, verticalalignment='center', fontsize=12)
 
 # save plot
-#out_f = os.path.join(os.getcwd(), 'tufte_scatter.pdf')
-#fig.savefig(out_f)
+out_f = os.path.join(os.getcwd(), 'tufte_scatter.pdf')
+fig.savefig(out_f)
 
 # show plot
 plt.show()
