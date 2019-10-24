@@ -1,4 +1,4 @@
-# README
+# Set of tutorials - README
 
 
 # Contents
