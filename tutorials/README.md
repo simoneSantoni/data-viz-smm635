@@ -10,4 +10,3 @@
 | _2     | Stacked bar charts      |
 | _3     | Advanced histograms     |
 | _4     | Stream charts           |
-| _5     | ??                      | 
