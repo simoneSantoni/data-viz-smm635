@@ -8,7 +8,8 @@
 
 Author: Simone Santoni, simone.santoni.1@city.ac.uk
 
-Dates: created Thu Oct 24 11:06:17 UTC 2019; last change Thu Oct 24 11:06:17 UTC 2019
+Dates: - created Thu Oct 24 11:06:17 UTC 2019
+       - last change Thu Oct 24 11:06:17 UTC 2019
 
 Notes: This script reproduces the scatter diagram reported in Tufte's book
        "The Display of Quantitative Information" (page 133). For sake of
