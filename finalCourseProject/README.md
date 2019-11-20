@@ -37,7 +37,7 @@ References
 Good data visualization draw on a thorough appreciation of the context on the
 part of the designer. Here are key references you may want to consider:
 
-+[Business Models: A Challenging Agenda](https://journals.sagepub.com/doi/full/10.1177/1476127013510112)
++ [Business Models: A Challenging Agenda](https://journals.sagepub.com/doi/full/10.1177/1476127013510112)
 + [Business Model Zoo](http://www.businessmodelzoo.com/)
 
 
