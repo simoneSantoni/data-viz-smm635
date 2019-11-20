@@ -54,8 +54,9 @@ fig = plt.figure(figsize=(4, 4))
 gs = gridspec.GridSpec(2, 2, # we want 2 rows, 2 cols
                        figure=fig, # this gs applies to figure
                        hspace=-0.05, wspace=-0.05, # separation between plots
-                       width_ratios=[0.5, 10], # ration between the first and second column
-                       height_ratios=[10, 0.5]) # ration between the first ans second row
+                       width_ratios=[0.5, 10], # ratio between the first
+                       # and second column
+                       height_ratios=[10, 0.5]) # ratio between the first ans second row
 
 # add plots
 ax0 = fig.add_subplot(gs[0, 0]) # this will occupy the first row-first colum
