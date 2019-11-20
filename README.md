@@ -146,11 +146,12 @@ Schedule of the Module
 | 6    | Mid-term project in class-presentations                                        |
 | 7    | Geospatial maps, part II                                                       |
 |      | Laboratory sessions (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
-| 8    | Final course project release                                                   |
+|      | Final course project release                                                   |
+| 8    | Interactive visualizations for the web, part I                                 |
+|      | Laboratory sessions (Bokeh)                                                    |
 | 9    | Interactive visualizations for the web, part I                                 |
 |      | Laboratory sessions (Bokeh)                                                    |
-| 10   | Interactive visualizations for the web, part I                                 |
-|      | Laboratory sessions (Bokeh)                                                    |
+| 10   | Group-level meetings                                                           |
 
 
 Prerequisites
