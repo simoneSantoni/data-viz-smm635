@@ -61,7 +61,7 @@ Option 2 - Airbnb Vs. Manhattan Hotels
 Deliverables
 ------------
 
-By December 2 (5:00 PM), groups have to upload the following set of materials:
+By December 20 (5:00 PM), groups have to upload the following set of materials:
 
 + copy of Python scripts and/or the Jupyter notebook
 + supporting documentation (.md/.tex format) reporting:
