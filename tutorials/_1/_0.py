@@ -8,7 +8,8 @@
 
 Author: Simone Santoni, simone.santoni.1@city.ac.uk
 
-Dates: last change Fri Nov  1 00:06:33 UTC 2019
+Dates: - created Fri Nov  1 00:06:33 UTC 2019
+       - last change Sun Nov 24 23:30:31 UTC 2019
 
 Notes: This script produces a multi-plot figure. Plots ara arranged over
        the figure such that to have 2 plots at the top and 1 plot that is

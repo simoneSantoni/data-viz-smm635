@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin/>
+        <pubdate>20130308</pubdate>
+        <title>Detailed World Polygons (LSIB), South America, 2013</title>
+        <geoform>vector digital data</geoform>
+        <pubinfo>
+          <pubplace/>
+          <publish>United States. Department of State. Office of the Geographer. Humanitarian Information Unit</publish>
+        </pubinfo>
+        <onlink>http://purl.stanford.edu/vc965bq8111</onlink>
+        <lworkcit>
+          <citeinfo>
+            <title>U.S. Department of State, Humanitarian Information Unit GIS Maps and Data</title>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This polygon shapefile contains the boundaries of countries in South America. This layer, created by the Office of the Geographer, combines two data sets: Large Scale International Boundary Lines (LSIB) and World Vector Shorelines (LSIB-WVS). The lines reflect U.S. government (USG) policy and thus not necessarily de facto control. The 1:250,000 scale WVS coastline data from the National Geospatial-Intelligence Agency (NGA) is generally shifted by several hundred meters to over a km. The LSIB is in WGS84 datum and is generally accurate to within a couple hundred meters or better. The boundary research and “recovery” of the delineation of the line has been done over past decades by geographers at State and colleagues from other USG agencies and the UK. It is based on modern imagery, elevation data, relevant maps, treaties, international arbitration and court rulings, data from national mapping agencies and boundary commissions if available, and other sources.</abstract>
+      <purpose>The mission of the Humanitarian Information Unit (HIU) is to serve as a U.S. Government interagency center to identify, collect, analyze, and disseminate all-source information critical to U.S. Government decision-makers and partners in preparation for and response to humanitarian emergencies worldwide, and to promote innovative technologies and best practices for humanitarian information management</purpose>
+      <supplinf>The LSIB and WVS files were combined using ESRI's ArcGIS 10.0 lines to polygon tool. In the cases where the LSIB did not extend enough to touch the shoreline, the WVS shoreline was moved inland until it met the LSIB. In the cases where the LSIB border extended past the shoreline, the shoreline was moved outward until it met the boundary. No boundary line was moved for the production of these polygons. 
+The polygons were then topologically corrected to the best of our ability and had corresponding country attributes attached. </supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20130308</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-109.460442</westbc>
+        <eastbc>-26.234194</eastbc>
+        <northbc>12.629084</northbc>
+        <southbc>-59.487141</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>lcsh</themekt>
+        <themekey>Countries</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>boundaries</themekey>
+      </theme>
+      <place>
+        <placekt>geonames</placekt>
+        <placekey>South America</placekey>
+      </place>
+    </keywords>
+    <accconst>This item is in the public domain. There are no restrictions on access or use.</accconst>
+    <useconst>None</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Department of State, Office of the Geographer</cntorg>
+          <cntper>Humanitarian Information Unit</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>unknown</addrtype>
+          <address>2025 E St., NW, Suite NE5-037</address>
+          <city>Washington</city>
+          <state>DC</state>
+          <postal>20522</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(202) 634-0340</cntvoice>
+        <cntfax>(202) 634-0380</cntfax>
+        <cntemail>HIU_INFO@state.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Department of State, Office of the Geographer</cntorg>
+          <cntper>David Linthicum</cntper>
+        </cntorgp>
+        <cntvoice>(202) 647-7154</cntvoice>
+        <cntemail>LinthicumDH@state.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>U.S. Department of State, Office of the Geographer. (2013). Detailed World Polygons (LSIB), South America, 2013. U.S. Department of State. Humanitarian Information Unit. Available at:  http://purl.stanford.edu/vc965bq8111.</datacred>
+    <native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.3.1.4959</native>
+  </idinfo>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>12002</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <eainfo>
+    <detailed xmlns="">
+      <enttyp>
+        <enttypl>SouthAmerica</enttypl>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NAME</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>CC</attrlabl>
+        <attrdef>Two letter country code, also known as the Federal Information Processing Standard (FIPS) 10-4 standard, used by the U.S. Government for geographical data processing and reference.</attrdef>
+        <attrdefs>National Institute of Standards and Technology (NIST)</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>REGION</attrlabl>
+        <attrdef>Geographic region country is located in.</attrdef>
+        <attrdefs>U.S. Department of State, Office of the Geographer</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>iso_alpha2</attrlabl>
+        <attrdef>International Organization for Standardization (ISO) alpha-2 codes are the two-letter country codes defined by ISO 3166-1 of the ISO 3166 standard.</attrdef>
+        <attrdefs>International Organization for Standardization</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>iso_alpha3</attrlabl>
+        <attrdef>International Organization for Standardization (ISO) alpha-3 codes are the three-letter country codes defined by ISO 3166-1 of the ISO 3166 standard.</attrdef>
+        <attrdefs>International Organization for Standardization</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>iso_num</attrlabl>
+        <attrdef>International Organization for Standardization (ISO) numeric codes are the three digit numeric country codes defined by ISO 3166-1 of the ISO 3166 standard.</attrdef>
+        <attrdefs>International Organization for Standardization</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>tld</attrlabl>
+        <attrdef>Top Level Domain (TLD) is the highest level in the hierarchical Domain Name System of the Internet.</attrdef>
+        <attrdefs>Domain Name System</attrdefs>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Stanford Geospatial Center</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>Branner Earth Sciences Library</address>
+          <address>Mitchell Building, 2nd Floor</address>
+          <address>397 Panama Mall</address>
+          <city>Stanford</city>
+          <state>California</state>
+          <postal>94305</postal>
+        </cntaddr>
+        <cntvoice>650-723-2746</cntvoice>
+        <cntemail>brannerlibrary@stanford.edu</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>See access and use constraints information.</distliab>
+  </distinfo>
+  <metainfo>
+    <metd>20160714</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Stanford Geospatial Center</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>Branner Earth Sciences Library</address>
+          <address>Mitchell Building, 2nd Floor</address>
+          <address>397 Panama Mall</address>
+          <city>Stanford</city>
+          <state>California</state>
+          <postal>94305</postal>
+        </cntaddr>
+        <cntvoice>650-723-2746</cntvoice>
+        <cntemail>brannerlibrary@stanford.edu</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>

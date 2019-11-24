@@ -1,0 +1,1 @@
+http://hgl.harvard.edu:8090/geoserver/wfs?outputformat=SHAPE-ZIP&request=GetFeature&service=wfs&srsName=EPSG%3A4326&typeName=hglshapefiles%3AGERMANY_ADMIN_1890&version=2.0.0

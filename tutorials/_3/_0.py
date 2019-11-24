@@ -7,10 +7,12 @@
 --------------------------------------------------------------------------------
 
 Author: Simone Santoni, simone.santoni.1@city.ac.uk
+        -- credits to the Matplotlib team
 
-Dates:
+Dates: - created 
+       - last change 
 
-Notes:
+Notes: --
 
 """
 
@@ -67,4 +69,8 @@ ax.set_title('Cumulative step histograms')
 ax.set_xlabel('Annual rainfall (mm)')
 ax.set_ylabel('Likelihood of occurrence')
 
+# save plot
+plt.savefig('cumulative_historam.pdf')
+
+# show plot
 plt.show()
