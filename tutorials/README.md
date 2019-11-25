@@ -10,3 +10,5 @@
 | _2     | Stacked bar charts         |
 | _3     | Cumulative histograms      |
 | _4     | Counts plot                |
+| _5     | Diverging plot             |
+| _
