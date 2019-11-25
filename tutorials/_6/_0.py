@@ -13,10 +13,6 @@ Dates: - created 5/11/2019 12:50:35
        - last change 25/11/2019 00:50:35
 
 Notes: --
-=======
-Dates:
-
-Notes:
 
 '''
 
