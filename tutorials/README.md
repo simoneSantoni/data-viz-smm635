@@ -11,4 +11,5 @@
 | _3     | Cumulative histograms      |
 | _4     | Counts plot                |
 | _5     | Diverging plot             |
-| _
+| _6     | Slope chart                |
+| _7     | Geospatial visualizations  |
