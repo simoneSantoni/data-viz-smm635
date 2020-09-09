@@ -24,7 +24,7 @@ Materials & Readings
 ====================
 
 Mandatory materials/readings will be circulated via Moodle in advance
-(Monday). For this module you are not required to purchase any expensive
+(every Friday – i.e., one week before the class). For this module you are not required to purchase any expensive
 book, whereas it is essential you carefully go through:
 
 -   lecture notes (to be uploaded onto
@@ -51,7 +51,6 @@ Discretionary readings/materials students may want to reference to are:
 
 -   [The Visual Display of Quantitative
     Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_3?ie=UTF8&qid=1537986137&sr=8-3&keywords=edward+tufte).
-
 
 Learning Objectives and Assessment
 ==================================
@@ -93,66 +92,78 @@ mark. The deadline for the project is November 11 (week 6). Selected
 groups will be invite to present the outcome of their work to fellow
 students in week 6.
 
-With the **final course project** (due by week 10, see Table 1), groups
+With the **final course project** (due by mid-December, see Table 1), groups
 make their hands 'dirty' as they help a real-world client to face some
 data visualization challenges. Details about the client and the
 challenge will be available in week 8. Final course projects will be
-evaluated on a rolling-based window and should be submitted by December
-20.
+evaluated on a rolling-based window and should be submitted by mid December
+(the course office will confirm the exact deadline shortly).
 
-Both types of assessment will be evaluated along four criteria: i)
-appropriate use of notions and frameworks discussed in class; ii)
-effectiveness of the proposed answer or solution; iii)
-originality/creativity of the proposed answer or solution; iv)
-organization an clarity of submitted materials. All criteria carry-out
-equal weight in terms of mark.
+Both types of assessment will be evaluated along four criteria: i) appropriate
+use of notions and frameworks discussed in class; ii) effectiveness of the
+proposed answer or solution; iii) originality/creativity of the proposed answer
+or solution; iv) organization an clarity of submitted materials. All criteria
+carry-out equal weight in terms of mark.
 
-**Problem sets** will be launched weekly. Students may want to deal
-these problem sets and present their solution to the class. One student
-per session will be selected on the basis of the novelty and
-effectiveness of the proposed solution. One bonus point
-(+1 FM) will be assigned.
+**Problem sets** will be launched weekly. Individual students may want to deal
+these problem sets and present their solution to the class. A maximum of three
+students per session will be selected on the basis of the novelty and
+effectiveness of the proposed solution. One bonus point (+1 FM) will be
+assigned.
 
+**Case studies** will be launched in weeks 8 and 10. Groups of students may
+want to deal these problem sets and present their solution to the class. A
+maximum of three groups per session will be selected on the basis of the
+novelty and effectiveness of the proposed solution. Two bonus points (+2 FM)
+will be assigned.
 
-Schedule of the Module
-======================
+Organization and Schedule of the Module
+========================================
 
-| Week | Topic                                                                          |
-|:----:|--------------------------------------------------------------------------------|
-| 1    | Introduction to the module                                                     |
-| 2    | Elements of infographic                                                        |
-|      | - taste, aesthetics, and perceptions                                           |
-|      | - visual forms                                                                 |
-|      | - colors                                                                       |
-|      | - exemplars of visualization                                                   |
-|      | Exploratory statistical charts                                                 |
-|      | - frequencies                                                                  |
-|      | - univariate distributions                                                     |
-|      | - bivariate distributions                                                      |
-|      | - 3D distributions                                                             |
-|      | Laboratory sessions (Matplotlib)                                               |
-| 3    | Time-dependent data                                                            |
-|      | - timelines                                                                    |
-|      | - sequences of events                                                          |
-|      | - narrative                                                                    |
-|      | Laboratory sessions (Matplotlib)                                               |
-| 4    | Visualizing statical estimates and fits                                        |
-|      | - uncertainty in estimates                                                     |
-|      | - plotting causal effects estimated via regression                             |
-|      | - comparing causal effects across groups                                       |
-|      | Laboratory sessions (Matplotlib)                                               |
-| 5    | Geospatial maps, part I                                                        |
-|      | Laboratory sessions (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
-| 6    | Mid-term project in class-presentations                                        |
-| 7    | Geospatial maps, part II                                                       |
-|      | Laboratory sessions (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
-|      | Final course project release                                                   |
-| 8    | Interactive visualizations for the web, part I                                 |
-|      | Laboratory sessions (Bokeh)                                                    |
-| 9    | Interactive visualizations for the web, part I                                 |
-|      | Laboratory sessions (Bokeh)                                                    |
-| 10   | Group-level meetings                                                           |
+The module builds on two types of sessions: async sessions convey key notions
+and analytical tools; sync sessions (which take place every Thursday) are
+applied in nature – here students have the opportunity to mobilize the key
+notions and analytical tools presented in the async sessions to solve concrete
+visualization problems.
 
+| Week | Topic                                                                                             |
+|:----:|---------------------------------------------------------------------------------------------------|
+| 1    | Introduction to the module                                                                        |
+| 2    | Elements of infographic                                                                           |
+|      | - taste, aesthetics, and perceptions                                                              |
+|      | - visual forms                                                                                    |
+|      | - colors                                                                                          |
+|      | - exemplars of visualization                                                                      |
+|      | Laboratory session on Python for data viz (Matplotlib)*                                           |
+| 3    | Exploratory statistical charts                                                                    |
+|      | - frequencies                                                                                     |
+|      | - univariate distributions                                                                        |
+|      | - bivariate distributions                                                                         |
+|      | - 3D distributions                                                                                |
+|      | Laboratory session on exploratory statistical charts (Matplotlib)*                                |
+| 4    | Time-dependent data                                                                               |
+|      | - timelines                                                                                       |
+|      | - sequences of events                                                                             |
+|      | - narrative                                                                                       |
+|      | Laboratory session on time-dependent data (Matplotlib)*                                           |
+| 5    | Launching the mid-term project                                                                    |
+|      | Laboratory session on time-dependent data (Matplotlib)*                                           |
+| 6    | Presentations of mid-term projects*                                                               |
+|      | Visualizing statical estimates and fits                                                           |
+|      | - uncertainty in estimates                                                                        |
+|      | - plotting causal effects estimated via regression                                                |
+|      | - comparing causal effects across groups                                                          |
+|      | Laboratory session on visualizing statistical estimates (Matplotlib)                              |
+| 7    | Geospatial maps                                                                                   |
+|      | Laboratory sessions on geospatial maps (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
+| 8    | Case study # 1                                                                                    |
+|      | In-class, collective discussion*                                                                  |
+| 9    | Interactive visualizations for the web                                                            |
+|      | Laboratory session on interactive visualizations (Bokeh)*                                         |
+| 10   | Case study # 2                                                                                    |
+|      | In-class, collective discussion*                                                                  |
+
+Note: * denotes synchronous sessions.
 
 Prerequisites
 =============
@@ -165,7 +176,7 @@ Visualization.
 Software requirements
 =====================
 
-For this module you are supposed to run Python 3.7 on your machine. Now,
+For this module you are supposed to run Python 3.7 or higher on your machine. Now,
 how to get Python work on your machine? There are several ways to do
 that. A fast, smooth alternative is to install
 [Anaconda](https://www.anaconda.com/what-is-anaconda/), an open source
@@ -209,5 +220,5 @@ recommend to do that using Conda).
 Version history
 ===============
 
-+ Created: Tue 01 Oct 20:00:01 UTC 2019
-+ Last change: Wed Nov 20 17:03:45 UTC 2019
++ Created: Wed 9 Sep 22:39:23 2020
++ Last change: 
