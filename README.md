@@ -117,6 +117,13 @@ maximum of three groups per session will be selected on the basis of the
 novelty and effectiveness of the proposed solution. Two bonus points (+2 FM)
 will be assigned.
 
+Guest speakers
+==============
+
+Throughout all the various weeks of the Term, SMM635 will host two types of
+guest speakers: ambassadors – former students of the BA program – and
+practitioners from several industries.
+
 Organization and Schedule of the Module
 ========================================
 
