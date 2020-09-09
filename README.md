@@ -133,42 +133,43 @@ applied in nature – here students have the opportunity to mobilize the key
 notions and analytical tools presented in the async sessions to solve concrete
 visualization problems.
 
-| Week | Topic                                                                                             |
-|:----:|---------------------------------------------------------------------------------------------------|
-| 1    | Introduction to the module                                                                        |
-| 2    | Elements of infographic                                                                           |
-|      | - taste, aesthetics, and perceptions                                                              |
-|      | - visual forms                                                                                    |
-|      | - colors                                                                                          |
-|      | - exemplars of visualization                                                                      |
-|      | Laboratory session on Python for data viz (Matplotlib)*                                           |
-| 3    | Exploratory statistical charts                                                                    |
-|      | - frequencies                                                                                     |
-|      | - univariate distributions                                                                        |
-|      | - bivariate distributions                                                                         |
-|      | - 3D distributions                                                                                |
-|      | Laboratory session on exploratory statistical charts (Matplotlib)*                                |
-| 4    | Time-dependent data                                                                               |
-|      | - timelines                                                                                       |
-|      | - sequences of events                                                                             |
-|      | - narrative                                                                                       |
-|      | Laboratory session on time-dependent data (Matplotlib)*                                           |
-| 5    | Launching the mid-term project                                                                    |
-|      | Laboratory session on time-dependent data (Matplotlib)*                                           |
-| 6    | Presentations of mid-term projects*                                                               |
-|      | Visualizing statical estimates and fits                                                           |
-|      | - uncertainty in estimates                                                                        |
-|      | - plotting causal effects estimated via regression                                                |
-|      | - comparing causal effects across groups                                                          |
-|      | Laboratory session on visualizing statistical estimates (Matplotlib)                              |
-| 7    | Geospatial maps                                                                                   |
-|      | Laboratory sessions on geospatial maps (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
-| 8    | Case study # 1                                                                                    |
-|      | In-class, collective discussion*                                                                  |
-| 9    | Interactive visualizations for the web                                                            |
-|      | Laboratory session on interactive visualizations (Bokeh)*                                         |
-| 10   | Case study # 2                                                                                    |
-|      | In-class, collective discussion*                                                                  |
+| Week | Topic                                                                                              |
+|:----:|----------------------------------------------------------------------------------------------------|
+| 1    | Introduction to the module                                                                         |
+| 2    | Elements of infographic                                                                            |
+|      | - taste, aesthetics, and perceptions                                                               |
+|      | - visual forms                                                                                     |
+|      | - colors                                                                                           |
+|      | - exemplars of visualization                                                                       |
+|      | Laboratory session on Python for data viz (Matplotlib/*                                            |
+| 3    | Exploratory statistical charts                                                                     |
+|      | - frequencies                                                                                      |
+|      | - univariate distributions                                                                         |
+|      | - bivariate distributions                                                                          |
+|      | - 3D distributions                                                                                 |
+|      | Laboratory session on exploratory statistical charts (Matplotlib)*                                 |
+| 4    | Time-dependent data                                                                                |
+|      | - timelines                                                                                        |
+|      | - sequences of events                                                                              |
+|      | - narrative                                                                                        |
+|      | Laboratory session on time-dependent data (Matplotlib)*                                            |
+| 5    | Launching the mid-term project                                                                     |
+|      | Laboratory session on time-dependent data (Matplotlib)*                                            |
+| 6    | Presentations of mid-term projects*                                                                |
+|      | Visualizing statical estimates and fits                                                            |
+|      | - uncertainty in estimates                                                                         |
+|      | - plotting causal effects estimated via regression                                                 |
+|      | - comparing causal effects across groups                                                           |
+|      | Laboratory session on visualizing statistical estimates (Matplotlib)                               |
+| 7    | Geospatial maps                                                                                    |
+|      | Laboratory sessions on geospatial maps (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas)* |
+|      | Launching the final-course project                                                                 |
+| 8    | Case study # 1                                                                                     |
+|      | In-class, collective discussion*                                                                   |
+| 9    | Interactive visualizations for the web                                                             |
+|      | Laboratory session on interactive visualizations (Bokeh)*                                          |
+| 10   | Case study # 2                                                                                     |
+|      | In-class, collective discussion*                                                                   |
 
 Note: * denotes synchronous sessions.
 
