@@ -20,7 +20,6 @@ for the module; Python will make things happen (at least on our screen).
 Consistently with the teaching philosophy of the module leader, each
 individual lecture integrates 'theory' and 'practice'.
 
-
 Materials & Readings
 ====================
 
@@ -30,13 +29,14 @@ book, whereas it is essential you carefully go through:
 
 -   lecture notes (to be uploaded onto
     Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635) weekly);
-
--   Python scripts/Jupyter notebooks (to be uploaded onto
-    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635)
+-   case studies (to be uploaded onto
+    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/caseStudies/)
     weekly);
-
+-   Python scripts/Jupyter notebooks (to be uploaded onto
+    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/tutorials/)
+    or `week*` directories weekly);
 -   journal articles (to be uploaded onto
-    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635)
+    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/references/)
     weekly).
 
 Discretionary readings/materials students may want to reference to are:
