@@ -1,5 +1,4 @@
-Tutorials - README
-==================
+# Tutorials - README
 
 This directory contains some Python scripts that offer basic 'recipes' to
 create key visualizations.
