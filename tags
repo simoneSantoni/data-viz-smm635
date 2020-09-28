@@ -1,151 +1,28 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-201267808	tutorials/_7/data/bra_aerofacp.html	/^<A NAME="201267808">$/;"	a
-Data_Quality_Information	tutorials/_7/data/bra_aerofacp.html	/^<A name="Data_Quality_Information"><HR \/><\/A>$/;"	a
-Entity_and_Attribute_Information	tutorials/_7/data/bra_aerofacp.html	/^<A name="Entity_and_Attribute_Information"><HR \/><\/A>$/;"	a
-Identification_Information	tutorials/_7/data/bra_aerofacp.html	/^<A name="Identification_Information"><HR \/><\/A>$/;"	a
-Metadata_Reference_Information	tutorials/_7/data/bra_aerofacp.html	/^<A name="Metadata_Reference_Information"><HR \/><\/A>$/;"	a
-Spatial_Data_Organization_Information	tutorials/_7/data/bra_aerofacp.html	/^<A name="Spatial_Data_Organization_Information"><HR \/><\/A>$/;"	a
-Spatial_Reference_Information	tutorials/_7/data/bra_aerofacp.html	/^<A name="Spatial_Reference_Information"><HR \/><\/A>$/;"	a
-arrowprops	tutorials/_5/_1.py	/^             arrowprops=dict(arrowstyle='-[, widthB=2.0, lengthB=1.5',$/;"	v
-ax	tutorials/_2/_0.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
-ax	tutorials/_4/_0.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
-ax	tutorials/_5/_0.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
-ax	tutorials/_5/_1.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
-ax	tutorials/_6/_0.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
-ax0	tutorials/_0/_0.py	/^ax0 = fig.add_subplot(gs[0, 0]) # this will occupy the first row-first colum$/;"	v
-ax0	tutorials/_1/_0.py	/^ax0 = fig.add_subplot(gs[0, 0:2]) # this will occupy the first row-first colum$/;"	v
-ax1	tutorials/_0/_0.py	/^ax1 = fig.add_subplot(gs[0, 1]) # and so on and so forth...$/;"	v
-ax1	tutorials/_1/_0.py	/^ax1 = fig.add_subplot(gs[0, 2:4]) # and so on and so forth...$/;"	v
-ax2	tutorials/_0/_0.py	/^ax2 = fig.add_subplot(gs[1, 0])$/;"	v
-ax2	tutorials/_1/_0.py	/^ax2 = fig.add_subplot(gs[1, 1:3])$/;"	v
-ax3	tutorials/_0/_0.py	/^ax3 = fig.add_subplot(gs[1, 1])$/;"	v
-bbox	tutorials/_5/_1.py	/^             bbox=dict(boxstyle='square', fc='firebrick'),$/;"	v
-color	tutorials/_2/_0.py	/^                           color=colors[:len(vals)])$/;"	v
-color	tutorials/_5/_1.py	/^            color=df.colors,$/;"	v
-colors	tutorials/_2/_0.py	/^colors = [plt.cm.Spectral(i\/float(len(vals)-1)) for i in range(len(vals))]$/;"	v
-df	tutorials/_2/_0.py	/^df = pd.read_csv(target)$/;"	v
-df	tutorials/_5/_0.py	/^df = pd.read_csv("https:\/\/github.com\/selva86\/datasets\/raw\/master\/mtcars.csv")$/;"	v
-df	tutorials/_5/_1.py	/^df = pd.read_csv("https:\/\/github.com\/selva86\/datasets\/raw\/master\/mtcars.csv")$/;"	v
-df	tutorials/_6/_0.py	/^df = pd.read_csv(url)$/;"	v
-df_agg	tutorials/_2/_0.py	/^df_agg = df.loc[:, [x_var, groupby_var]].groupby(groupby_var)$/;"	v
-df_counts	tutorials/_4/_0.py	/^df_counts = gr.size().reset_index(name='counts')$/;"	v
-dr	tutorials/_4/_0.py	/^dr = os.getcwd()$/;"	v
-fdr	tutorials/_4/_0.py	/^fdr = 'data\/killerAps'$/;"	v
-fig	tutorials/_0/_0.py	/^fig = plt.figure(figsize=(4, 4))$/;"	v
-fig	tutorials/_1/_0.py	/^fig = plt.figure(figsize=(6, 6))$/;"	v
-fig	tutorials/_2/_0.py	/^fig = plt.figure(figsize=(9, 6))$/;"	v
-fig	tutorials/_4/_0.py	/^fig = plt.figure(figsize=(6, 4))$/;"	v
-fig	tutorials/_5/_0.py	/^fig = plt.figure(figsize=(14,16), dpi= 80)$/;"	v
-fig	tutorials/_5/_1.py	/^fig = plt.figure(figsize=(14,16), dpi= 80)$/;"	v
-fig	tutorials/_6/_0.py	/^fig = plt.figure(figsize=(14, 14))$/;"	v
-figure	tutorials/_0/_0.py	/^                       figure=fig, # this gs applies to figure$/;"	v
-figure	tutorials/_1/_0.py	/^                       figure=fig, # this gs applies to figure$/;"	v
-fix	tutorials/_7/data/bra_aerofacp.html	/^      function fix(e) {$/;"	f
-fontdict	tutorials/_6/_0.py	/^             fontdict={'size': 22})$/;"	v
-fontdict	tutorials/_6/_0.py	/^            fontdict={'size': 14})$/;"	v
-fontdict	tutorials/_6/_0.py	/^        fontdict={'size': 18, 'weight': 700})$/;"	v
-fontsize	tutorials/_2/_0.py	/^          fontsize=22)$/;"	v
-fontsize	tutorials/_4/_0.py	/^          fontsize=22)$/;"	v
-gr	tutorials/_4/_0.py	/^gr = df.groupby(['cat', 'killerappgros'])$/;"	v
-gridspec	tutorials/_0/_0.py	/^import matplotlib.gridspec as gridspec$/;"	i
-gridspec	tutorials/_1/_0.py	/^import matplotlib.gridspec as gridspec$/;"	i
-groupby_var	tutorials/_2/_0.py	/^groupby_var = 'class'$/;"	v
-gs	tutorials/_0/_0.py	/^gs = gridspec.GridSpec(2, 2, # we want 2 rows, 2 cols$/;"	v
-gs	tutorials/_1/_0.py	/^gs = gridspec.GridSpec(2, 4, # we want 2 rows, 4 cols$/;"	v
-height_ratios	tutorials/_0/_0.py	/^                       height_ratios=[10, 0.5]) # ratio between the first ans second row$/;"	v
-height_ratios	tutorials/_1/_0.py	/^                       height_ratios=[1, 1]) # ration between the first ans second row$/;"	v
-horizontalalignment	tutorials/_6/_0.py	/^            horizontalalignment='left',$/;"	v
-horizontalalignment	tutorials/_6/_0.py	/^            horizontalalignment='right',$/;"	v
-horizontalalignment	tutorials/_6/_0.py	/^        horizontalalignment='left',$/;"	v
-horizontalalignment	tutorials/_6/_0.py	/^        horizontalalignment='right',$/;"	v
-i	tutorials/_0/_0.py	/^i = np.random.randint(0, len(x), 1)$/;"	v
-in_f	tutorials/_4/_0.py	/^in_f = 'data.csv'$/;"	v
-klass	tutorials/_6/_0.py	/^klass = ['red' if (y1 - y2) < 0 else 'green'$/;"	v
-label	tutorials/_3/_0.py	/^        label='Reversed emp.')$/;"	v
-left_label	tutorials/_6/_0.py	/^left_label = [str(c) + ', ' + str(round(y))$/;"	v
-ls	tutorials/_0/_0.py	/^         ls='--',$/;"	v
-lw	tutorials/_0/_0.py	/^         lw='1')$/;"	v
-matplotlib	tutorials/_0/_0.py	/^import matplotlib.gridspec as gridspec$/;"	i
-matplotlib	tutorials/_0/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	tutorials/_1/_0.py	/^import matplotlib.gridspec as gridspec$/;"	i
-matplotlib	tutorials/_1/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	tutorials/_2/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	tutorials/_3/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	tutorials/_4/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	tutorials/_5/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	tutorials/_5/_1.py	/^import matplotlib.patches as patches$/;"	i
-matplotlib	tutorials/_5/_1.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	tutorials/_6/_0.py	/^import matplotlib.lines as mlines$/;"	i
-matplotlib	tutorials/_6/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-mlines	tutorials/_6/_0.py	/^import matplotlib.lines as mlines$/;"	i
-mu	tutorials/_3/_0.py	/^mu = 200$/;"	v
-n	tutorials/_0/_0.py	/^n = 30$/;"	v
-n_bins	tutorials/_3/_0.py	/^n_bins = 50$/;"	v
-newline	tutorials/_6/_0.py	/^def newline(_p_1, _p_2, color='black'):$/;"	f
-np	tutorials/_0/_0.py	/^import numpy as np$/;"	i
-np	tutorials/_1/_0.py	/^import numpy as np$/;"	i
-np	tutorials/_2/_0.py	/^import numpy as np$/;"	i
-np	tutorials/_3/_0.py	/^import numpy as np$/;"	i
-np	tutorials/_6/_0.py	/^import numpy as np$/;"	i
-os	tutorials/_0/_0.py	/^import os$/;"	i
-os	tutorials/_1/_0.py	/^import os$/;"	i
-os	tutorials/_2/_0.py	/^import os$/;"	i
-os	tutorials/_4/_0.py	/^import os$/;"	i
-os	tutorials/_5/_0.py	/^import os$/;"	i
-os	tutorials/_5/_1.py	/^import os$/;"	i
-os	tutorials/_6/_0.py	/^import os$/;"	i
-out_f	tutorials/_0/_0.py	/^out_f = os.path.join(os.getcwd(), 'tufte_scatter.pdf')$/;"	v
-out_f	tutorials/_1/_0.py	/^out_f = os.path.join(os.getcwd(), 'multiple_plots.pdf')$/;"	v
-out_f	tutorials/_2/_0.py	/^out_f = os.path.join(os.getcwd(), 'stacked_histogram.pdf')$/;"	v
-p1	tutorials/_5/_1.py	/^p1 = patches.Rectangle((-2.0, -1), width=.3, height=3, alpha=.2, facecolor='red')$/;"	v
-p2	tutorials/_5/_1.py	/^p2 = patches.Rectangle((1.5, 27), width=.8, height=5, alpha=.2, facecolor='green')$/;"	v
-patches	tutorials/_5/_1.py	/^import matplotlib.patches as patches$/;"	i
-pd	tutorials/_2/_0.py	/^import pandas as pd$/;"	i
-pd	tutorials/_4/_0.py	/^import pandas as pd$/;"	i
-pd	tutorials/_5/_0.py	/^import pandas as pd$/;"	i
-pd	tutorials/_5/_1.py	/^import pandas as pd$/;"	i
-pd	tutorials/_6/_0.py	/^import pandas as pd$/;"	i
-plt	tutorials/_0/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	tutorials/_1/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	tutorials/_2/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	tutorials/_3/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	tutorials/_4/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	tutorials/_5/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	tutorials/_5/_1.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	tutorials/_6/_0.py	/^import matplotlib.pyplot as plt$/;"	i
-right_label	tutorials/_6/_0.py	/^right_label = [str(c) + ', ' + str(round(y))$/;"	v
-sigma	tutorials/_3/_0.py	/^sigma = 25$/;"	v
-sns	tutorials/_4/_0.py	/^import seaborn as sns$/;"	i
-t	tutorials/_5/_0.py	/^    t = plt.text(x, y, round(label, 1), horizontalalignment='center',$/;"	v
-target	tutorials/_2/_0.py	/^target = "https:\/\/github.com\/selva86\/datasets\/raw\/master\/mpg_ggplot2.csv"$/;"	v
-target	tutorials/_4/_0.py	/^target = os.path.join(dr, fdr, in_f)$/;"	v
-test	tutorials/_7/data/bra_aerofacp.html	/^function test() {$/;"	f
-textstr	tutorials/_0/_0.py	/^textstr = (r'$(x_{i}, y_{i})$')$/;"	v
-textstr	tutorials/_0/_0.py	/^textstr = (r'$x_{i}$')$/;"	v
-textstr	tutorials/_0/_0.py	/^textstr = (r'$y_{i}$')$/;"	v
-url	tutorials/_6/_0.py	/^url = "https:\/\/raw.githubusercontent.com\/selva86\/datasets\/master\/gdppercap.csv"$/;"	v
-vals	tutorials/_2/_0.py	/^vals = [df[x_var].values.tolist() for i, df in df_agg]$/;"	v
-verticalalignment	tutorials/_6/_0.py	/^            verticalalignment='center',$/;"	v
-verticalalignment	tutorials/_6/_0.py	/^        verticalalignment='center',$/;"	v
-width_ratios	tutorials/_0/_0.py	/^                       width_ratios=[0.5, 10], # ratio between the first$/;"	v
-width_ratios	tutorials/_1/_0.py	/^                       width_ratios=[1, 1, 1, 1], # ration between the$/;"	v
-x	tutorials/_0/_0.py	/^x = np.random.randn(n)$/;"	v
-x	tutorials/_1/_0.py	/^x = np.arange(0, 10, 1)$/;"	v
-x	tutorials/_3/_0.py	/^x = np.random.normal(mu, sigma, size=100)$/;"	v
-x	tutorials/_5/_0.py	/^x = df.loc[:, ['mpg']]$/;"	v
-x	tutorials/_5/_1.py	/^x = df.loc[:, ['mpg']]$/;"	v
-x_range	tutorials/_0/_0.py	/^x_range = np.max(x) - np.min(x)$/;"	v
-x_var	tutorials/_2/_0.py	/^x_var = 'displ'$/;"	v
-xy	tutorials/_5/_1.py	/^             xy=(0.0, 11.0), xytext=(1.0, 11), xycoords='data',$/;"	v
-y	tutorials/_0/_0.py	/^y = 10 + x * (1+ np.random.randn(n))$/;"	v
-y	tutorials/_3/_0.py	/^y = ((1 \/ (np.sqrt(2 * np.pi) * sigma)) *$/;"	v
-y	tutorials/_3/_0.py	/^y = y.cumsum()$/;"	v
-y0	tutorials/_1/_0.py	/^y0 = np.square(x)$/;"	v
-y1	tutorials/_1/_0.py	/^y1 = np.sqrt(x)$/;"	v
-y2	tutorials/_1/_0.py	/^y2 = 2 + x$/;"	v
-y_range	tutorials/_0/_0.py	/^y_range = np.max(y) - np.min(y)$/;"	v
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+Assessment	README.md	/^# Assessment$/;"	c
+Case studies	README.md	/^## Case studies$/;"	s
+Case studies – README	caseStudies/README.md	/^Case studies – README$/;"	c
+Data Visualization, SMM635 ― README	README.md	/^# Data Visualization, SMM635 ― README$/;"	c
+Discretionary coursework	README.md	/^## Discretionary coursework$/;"	s
+Final course project	README.md	/^## Final course project$/;"	s
+Final course project – README	finalCourseProject/README.md	/^Final course project – README$/;"	c
+Guest speakers	README.md	/^# Guest speakers$/;"	c
+Instructor	README.md	/^# Instructor$/;"	c
+Learning Objectives	README.md	/^# Learning Objectives$/;"	c
+Materials & Readings	README.md	/^# Materials & Readings$/;"	c
+Mid-term project	README.md	/^## Mid-term project$/;"	s
+Mid-term project - README	midTermProject/README.md	/^Mid-term project - README$/;"	c
+Module Overview	README.md	/^# Module Overview$/;"	c
+Prerequisites	README.md	/^# Prerequisites$/;"	c
+References - README	references/README.md	/^References - README$/;"	c
+Schedule of the Module	README.md	/^# Schedule of the Module$/;"	c
+Software requirements	README.md	/^# Software requirements$/;"	c
+Tutorials - README	tutorials/README.md	/^Tutorials - README$/;"	c
+Version history	README.md	/^# Version history$/;"	c
