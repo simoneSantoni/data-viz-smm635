@@ -180,13 +180,11 @@ assigned.
 |      | - sequences of events                                                                             |
 |      | - narrative                                                                                       |
 |      | Laboratory session on time-dependent data (Matplotlib)                                            |
-|  5   | Time-dependent data (cont'ed)                                                                     |
-|      | Laboratory session on time-dependent data (Matplotlib)                                            |
-|  6   | Mid-term project ― students' presentations                                                        |
-|      | Visualizing statical estimates and fits                                                           |
+|  5   | Visualizing statical estimates and fits                                                           |
 |      | - uncertainty in estimates                                                                        |
 |      | - plotting causal effects estimated via regression                                                |
-|      | - comparing causal effects across groups                                                          |
+|      | Laboratory session on statistical estimates and fits                                              |
+|  6   | Mid-term project ― students' presentations                                                        |
 |      | Laboratory session on visualizing statistical estimates (Matplotlib)                              |
 |  7   | Geospatial maps                                                                                   |
 |      | Laboratory sessions on geospatial maps (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
