@@ -13,9 +13,3 @@ York Times.
 # Submission
 
 Submit your solution via email to simone.santoni.1@city.ac.uk. Late submissions (> October 14, 2020) may not be considered for the in-class presentations.
-
----
-Footnotes
-
-[1] :  Koop, G. and J. Tobias, "Learning About Heterogeneity in Returns to Schooling,"
-Journal of Applied Econometrics, 18, 2004, pp. 827-849.
