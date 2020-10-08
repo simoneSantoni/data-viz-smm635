@@ -15,7 +15,7 @@ York Times.
 
 # Submission
 
-Submit your solution via email to simone.santoni.1@city.ac.uk. Late submissions (> October 14, 2020) may not be considered for the in-class presentations. 
+Submit your solution via email to simone.santoni.1@city.ac.uk. Late submissions (> October 14, 2020) may not be considered for the in-class presentations.
 
 ---
 Footnotes
