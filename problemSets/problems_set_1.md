@@ -2,10 +2,7 @@
 
 # Context
 
-Consider the dataset used in Koop and Tobias[1] Labor Market Experience Data.
-(See The data file is in two parts. The file contains the panel of 17,919
-observations on the Person ID and 4 time-varying variables. The data were
-downloaded from the Journal of Applied Econometrics archive website.
+Consider the [dataset used in Koop and Tobias](https://github.com/simoneSantoni/data-viz-smm635/tree/master/data/koopAndTobias), which concerns the relationship between schooling and wage at the individual level.
 
 # Task
 
