@@ -9,7 +9,7 @@ Author: Simone Santoni, simone.santoni.1@city.ac.uk
 Dates: - created Thu Oct 24 11:06:17 UTC 2019
        - last change Thu Oct 24 11:06:17 UTC 2019
 Notes: This script reproduces the bar chart reported in Tufte's book
-       "The Display of Quantitative Information" (page 133). For sake of
+       "The Display of Quantitative Information" (page 127). For sake of
        convenience, I use simulated data.
 """
 
@@ -66,4 +66,4 @@ plt.savefig(out_f,
             dpi=600)
 
 # show plot
-plt.show()
+# plt.show()
