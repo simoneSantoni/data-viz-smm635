@@ -1,4 +1,4 @@
-# ! /usr/env/bin python3
+# !/usr/env/bin python3
 # -*-encoding utf-8-*-
 
 """
@@ -15,33 +15,23 @@ Notes: This script reproduces the scatter diagram reported in Tufte's book
 
 
 # %% libraries
-# ------------
-
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
-
 # %% aesthetics
-# -------------
-
 plt.style.use('seaborn-bright')
 plt.rc('text', usetex=True)
 plt.rc('font', family='serif', size=10)
 
-
 # %% fake data
-# ------------
-
 np.random.seed(111) # fix the seed to ensure reproducibility
 n = 30
 x = np.random.randn(n)
 y = 10 + x * (1+ np.random.randn(n))
 
-
 # %% plot
-# -------
 
 # create figure
 fig = plt.figure(figsize=(4, 4))
@@ -105,5 +95,4 @@ out_f = os.path.join(os.getcwd(), 'tufte_scatter.pdf')
 fig.savefig(out_f)
 
 # show plot
-plt.show()
-
+#plt.show()
