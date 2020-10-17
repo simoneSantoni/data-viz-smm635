@@ -65,14 +65,13 @@ Students are supposed to upload the following onto Moodle:
   -   the design choices behind the visualization and their rationales
   -   the data transformation and analysis tasks (if any) carried out to achieve the visualization.
 
-File format: or Students are free to pick-up the template the best serves their needs. I'll
-accept:
+Regarding the companion document, students are free to pick-up the template the best serves their needs. I'll accept:
 
 + report (.docx, .md, or .pdf generated via LaTeX)
 + beamer (.pptx, .md, or .pdf generated via LaTeX)
 + report + beamer
 
-
+Concise documents with high per word added value are welcome.
 
 # Modeling Tip
 
