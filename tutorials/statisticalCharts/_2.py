@@ -36,11 +36,12 @@ vars = ['X', 'Y', 'Z']
 mu = [np.mean(a) for a in [x, y, z]]
 
 # artists
-flierprops = dict(marker='o',
-                  markerfacecolor='w',
-                  markeredgecolor='k',
-                  markersize=3,
+# --+ properties for the fliers
+flierprops = dict(marker='+',
+                  color='w',
+                  markersize=6,
                   linestyle='none')
+# --+ properties for the median
 medianprops = dict(linewidth=0)
 
 # figure framework
