@@ -57,7 +57,7 @@ Referendum.
 
 # Deliverables
 
-Students are supposed to upload the following onto Moodle:
+By November 11 (8:00 PM),i students are supposed to upload the following onto Moodle:
 
 +   a .pdf of the visualization;
 +   the Python code of the project;
