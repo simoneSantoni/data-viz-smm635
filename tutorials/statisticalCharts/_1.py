@@ -34,7 +34,7 @@ y = 10 + x * (1+ np.random.randn(n))
 # %% plot
 
 # create figure
-fig = plt.figure(figsize=(4, 4))
+fig = plt.figure(figsize=(5, 5))
 
 # parition the figure into 4 subplots with 'gridspec'
 gs = gridspec.GridSpec(2, 2, # we want 2 rows, 2 cols
