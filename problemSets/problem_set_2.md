@@ -10,7 +10,7 @@
 -   the univariate distributions of the following variables: 'EDUC', 'LOGWAGE', 'ABILITY', 'MOTHERED', 'FATHERED', and 'SIBLINGS';
 -   the bivariate distribution of any possible pair of the above-mentioned variables;
 -   submissions should build on Matplotlib only (that is, I won't accept Seaborn code);
--   use can use as many 'ax' as you want to do the job;
+-   to do the job, you can use as many 'ax' as you want;
 -   the figure should fit an A4 page, landscape layout;
 -   the audience is 'Dr. Asimit' - the visualization has to be included in the final year dissertation BA students have to deliver.
 
