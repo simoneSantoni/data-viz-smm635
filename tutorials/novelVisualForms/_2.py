@@ -28,8 +28,6 @@ df = pd.read_csv(os.path.join(dr, fdr, in_f))
 gr = df.groupby(['cat', 'killerappgros'])
 df_counts = gr.size().reset_index(name='counts')
 
-df_counts
-
 # %% stripplot
 
 # create figure
@@ -59,12 +57,9 @@ ax.legend(loc='best')
 plt.tight_layout()
 plt.savefig('counts_plot.pdf')
 
-# axes
-# ax.set_xlabel(fontsize=12)
-
-# title
-plt.title('Counts Plot - Size of circle is bigger as more points overlap',
-          fontsize=22)
+# save plot
+plt.tight_layout()
+plt.savefig(os.path.join(os.getcwd(), 'count_plot.pdf'))
 
 # show plot
 plt.show()
