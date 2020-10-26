@@ -37,7 +37,7 @@ width = 0.35       # the width of the bars: can also be len(x) sequence
 # %% stacked barchart
 
 # create figure
-fig = plt.figure(figsize=(6, 4))
+fig = plt.figure(figsize=(6, 5))
 
 # create plot
 ax = fig.add_subplot(1, 1, 1)
