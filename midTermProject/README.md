@@ -46,13 +46,13 @@ Below is the codebook for the variables included in the data table:
 -   'country': company location;
 -   'price': share price;
 -   'sector': sector in which a company operates
--   'assets': company assets (in thousands)
+-   'assets': company assets (K)
 -   'operating': ratio of a company's operating income before interest and
     taxes (earnings before interest, taxes) to the book value of total assets;
 -   'debt_to_assets': the variable reflects the ratio between the sum of a
      company’s total debt on the book value of total assets;
 -   'age': company's tenure;
--   'date': timestemp
+-   'date': timestamp
 
 ## Population of companies
 
