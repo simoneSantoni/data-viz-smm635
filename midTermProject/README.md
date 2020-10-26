@@ -38,7 +38,29 @@ The data for the project contains:
 +   population of companies
 +   economic & financials (both short- and long-term)
 
-The columns included in the two data tables have self-explanatory labels.
+## Variables
+
+Below is the codebook of the variables:
+
+-   'price': share price;
+-   'sector': qualitative variable that indicates the industry in which a
+    company operates; s1 (1=Consumer Discretionary, 0=others), s2 (1=Consumer
+    Staples, 0=others), s3 (1=Energy and Materials, 0=others), s4
+    (1=Financials, 0=others), s5 (1=Industrials, 0=others), and s6
+    (1=Utilities, 0=others) were used as dummy variables;
+-   'age': company's tenure;
+-   'assets': the logarithm of a company’s total assets
+-   'operating': ration of a company's operating income before interest and
+    taxes (earnings before interest, taxes) to the book value of total assets;
+-   'debt-to-assets': the variable reflects the ratio between the sum of a
+     company’s total debt on the book value of total assets;
+-   'country': company location; c1(1=France, 0=others), c2 (1=Germany,
+    0=others) and C3 (1=United Kingdom, 0=others) were used alternately for
+    the four models as dummy variables. The reason behind the choice of
+    extending the analysis to Germany and France is related to their economic
+    and political exposure to Brexit, as it will be explained in paragraph
+    4.3. Furthermore, CDP rankings availability grants the opportunity to
+    deeply analyse these countries.
 
 ## Population of companies
 
