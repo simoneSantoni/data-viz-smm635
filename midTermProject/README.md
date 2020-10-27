@@ -15,7 +15,7 @@ British companies could have performed in case of no-leave;
 
 Mainly, there are three routes to visually display the results:
 
-1.  adopting descriptive statistical charts (that is, drawing on the tools
+1.  adopting descriptive statistical charts (that is, drawing on the tools discussed in week 3)
 2.  adopting charts that convey the results produced with statistical models
 such as linear regression (that is, drawing on the tools discussed in week 5
 of the model);
