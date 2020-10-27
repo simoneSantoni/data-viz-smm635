@@ -76,8 +76,8 @@ By November 11 (8:00 PM),i students are supposed to upload the following onto Mo
 +   a .pdf of the visualization;
 +   the Python code of the project;
 +   a companion document that explains:
-  -   the design choices behind the visualization and their rationales
-  -   the data transformation and analysis tasks (if any) carried out to achieve the visualization.
+    -   the design choices behind the visualization and their rationales
+    -   the data transformation and analysis tasks (if any) carried out to achieve the visualization.
 
 Regarding the companion document, students are free to pick-up the template the best serves their needs. I'll accept:
 
