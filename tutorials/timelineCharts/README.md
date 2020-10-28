@@ -3,6 +3,10 @@
 This folder contains some snippets of codes that show some 'timeline' visual
 forms such as:
 
-    -  `_0.py` - slope chart
-    -  `_1.py` - line chart (under construction)
-    -  `_2.py` - lollipop chart (under construction)
+    -  `_0.py` - Tufte's slope chart
+    -  `_1.py` - Tufte's line chart
+    -  `_2.py` - lollipop chart
+    -  `_3.py` - unstacked area chart
+    -  `_4.py` - stacked area chart
+    -  `_5.py` - time series decomposition
+    -  `_6.py` - interrupted time series (under construction)

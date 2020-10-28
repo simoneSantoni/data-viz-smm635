@@ -27,8 +27,6 @@ import matplotlib.lines as mlines
 url = "https://raw.githubusercontent.com/selva86/datasets/master/gdppercap.csv"
 df = pd.read_csv(url)
 
-df
-
 # %% prepare data
 left_label = [str(c) + ', ' + str(round(y))
               for c, y in zip(df.continent, df['1952'])]
