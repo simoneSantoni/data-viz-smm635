@@ -134,7 +134,7 @@ ax.xaxis.set_tick_params(rotation=90)
 axins = inset_axes(ax, width=3, height=2.2)
 axins.plot(df['date'], df['adj_close'], color='firebrick')
 axins.axvspan(pd.Timestamp(2008, 9, 1), pd.Timestamp(2008, 11, 1),
-              color='gray', alpha=0.25)
+              color='gray', alpha=0.5)
 axins.spines["top"].set_alpha(0)
 axins.spines["bottom"].set_alpha(.3)
 axins.spines["right"].set_alpha(0)
@@ -142,7 +142,7 @@ axins.spines["left"].set_alpha(.3)
 axins.xaxis.set_tick_params(rotation=90)
 
 # save plot
-out_f = os.path.join(os.getcwd(), 'time_series_decomposition.pdf')
+out_f = os.path.join(os.getcwd(), 'interrupted_time_series.pdf')
 fig.savefig(out_f,
             transparent=True,
             bbox_inches='tight',
