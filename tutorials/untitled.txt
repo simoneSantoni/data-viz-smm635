@@ -1,2 +1,0 @@
-pip install jupyter-kite
-jupyter labextension install "@kiteco/jupyterlab-kite"
