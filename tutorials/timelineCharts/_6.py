@@ -24,11 +24,13 @@ from matplotlib import rc
 import pandas as pd
 
 # %% setup
-rc('font',**{'family':'serif','serif':['Avant Garde']})
+rc('font',**{'family':'sans-serif','sans-serif':['Avant Garde']})
 rc('text', usetex=True)
 
 # %% workind directory
 wd = os.getcwd()
+
+wd
 
 # %% load nasdaq dataset
 
@@ -58,6 +60,7 @@ df.info()
 
 # figure
 fig = plt.figure(figsize=(11, 8))
+
 # plot
 ax = fig.add_subplot(111)
 
