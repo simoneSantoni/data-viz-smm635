@@ -5,3 +5,4 @@ forms such as:
 
     -  `_0.py` and `_1.py` - diverging plots
     -  `_2.py` - count plot
+    -  `_3.py` - upset plot
