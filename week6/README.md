@@ -1,4 +1,4 @@
-# Week 4 Materials
+# Week 5 Materials
 
 This folder contains the following set of materials:
 
@@ -8,5 +8,7 @@ This folder contains the following set of materials:
 Further materials concerning 'labs' and the problem set will be made available
 during the Thursday xx session, which will cover the following:
 
--   .
--   .
++   frequencies/Tufte's bar chart
++   monovariate distributions/Tufte's scatter plot
++   bivariate distributions/Tufte's scatter diagram
++   monovariate distribution/'scientific' histogram
