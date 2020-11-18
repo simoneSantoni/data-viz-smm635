@@ -1,0 +1,10 @@
+SMM635 Tutorial
+
+[November 18, 2020]
+
+
+* Who's the GOAT?
+
+* Matplotlib and Seaborn:  Friends or Foes? 
+
+
