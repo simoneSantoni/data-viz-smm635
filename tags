@@ -6,12 +6,11 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 alpha	tutorials/statisticalCharts/_3.py	/^                           alpha=0.25)$/;"	v
 alpha	tutorials/statisticalCharts/_4.py	/^         alpha=0.6)$/;"	v
-apr	.virtual_documents/week5/problemSet/eric.ipynb.py	/^apr = pd.read_csv("apr.csv")$/;"	v
-apr1	.virtual_documents/week5/problemSet/eric.ipynb.py	/^apr1 = np.count_nonzero(apr.data)$/;"	v
 arrowprops	tutorials/novelVisualForms/_1.py	/^             arrowprops=dict(arrowstyle='-[, widthB=2.0, lengthB=1.5',$/;"	v
 arrowprops	tutorials/timelineCharts/_6.py	/^            arrowprops=dict(arrowstyle="->", ec="dimgrey",$/;"	v
 arrowprops	tutorials/timelineCharts/_6.py	/^            arrowprops=dict(arrowstyle="->", ec='dimgrey',$/;"	v
-ax	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^ax = fig.add_subplot(111)$/;"	v
+ax	.virtual_documents/Untitled.ipynb.py	/^ax = fig.add_subplot(111)$/;"	v
+ax	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^ax = fig.add_subplot(111)$/;"	v
 ax	tutorials/novelVisualForms/_0.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
 ax	tutorials/novelVisualForms/_1.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
 ax	tutorials/novelVisualForms/_2.py	/^ax = fig.add_subplot(1, 1, 1)$/;"	v
@@ -26,7 +25,6 @@ ax	tutorials/timelineCharts/_2.py	/^ax = fig.add_subplot(111)$/;"	v
 ax	tutorials/timelineCharts/_3.py	/^ax = fig.add_subplot(111)$/;"	v
 ax	tutorials/timelineCharts/_4.py	/^ax = fig.add_subplot(111)$/;"	v
 ax	tutorials/timelineCharts/_6.py	/^ax = fig.add_subplot(111)$/;"	v
-ax0	.virtual_documents/week5/problemSet/eric.ipynb.py	/^ax0 = fig1.add_subplot(1,1,1)$/;"	v
 ax0	tutorials/matplotlibBasics/_0.py	/^ax0 = fig.add_subplot(gs[0, 0:2]) # this will occupy the first row-first colum$/;"	v
 ax0	tutorials/statisticalCharts/_1.py	/^ax0 = fig.add_subplot(gs[0, 0]) # this will occupy the first row-first colum$/;"	v
 ax1	tutorials/matplotlibBasics/_0.py	/^ax1 = fig.add_subplot(gs[0, 2:4]) # and so on and so forth...$/;"	v
@@ -35,7 +33,6 @@ ax2	tutorials/matplotlibBasics/_0.py	/^ax2 = fig.add_subplot(gs[1, 1:3])$/;"	v
 ax2	tutorials/statisticalCharts/_1.py	/^ax2 = fig.add_subplot(gs[1, 0])$/;"	v
 ax3	tutorials/statisticalCharts/_1.py	/^ax3 = fig.add_subplot(gs[1, 1])$/;"	v
 axins	tutorials/timelineCharts/_6.py	/^axins = inset_axes(ax, width=3, height=2.2)$/;"	v
-axis	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^               axis=0)$/;"	v
 axr	tutorials/timelineCharts/_1.py	/^axr = ax.twinx()$/;"	v
 bbox	tutorials/novelVisualForms/_1.py	/^             bbox=dict(boxstyle='square', fc='firebrick'),$/;"	v
 bbox_inches	tutorials/statisticalCharts/_0.py	/^            bbox_inches='tight',$/;"	v
@@ -55,16 +52,12 @@ color	tutorials/novelVisualForms/_1.py	/^            color=df.colors,$/;"	v
 color	tutorials/statisticalCharts/_2.py	/^                  color='w',$/;"	v
 color	tutorials/timelineCharts/_6.py	/^            color='dimgrey',$/;"	v
 color	tutorials/timelineCharts/_6.py	/^          color='dimgrey')$/;"	v
-columns	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                          columns=names)$/;"	v
-columns	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                         columns=names)$/;"	v
-columns	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                       columns=names)$/;"	v
-columns	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                      columns=names)$/;"	v
 connectionstyle	tutorials/timelineCharts/_6.py	/^                            connectionstyle="arc3"),)$/;"	v
 counts	tutorials/statisticalCharts/_0.py	/^counts = [4, 2, 6, 8]$/;"	v
 datetime	tutorials/timelineCharts/_6.py	/^import datetime$/;"	i
 decomposition	tutorials/timelineCharts/_5.py	/^decomposition = sm.tsa.seasonal_decompose(df['Passengers'], model='additive')$/;"	v
-df	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^df = pd.DataFrame({'sectors': ['a', 'b', 'a', 'b', 'a', 'b', 'a', 'b'],$/;"	v
-df	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^df = pd.concat([df_1_5, df_6_25, df_26_100, df_101_500, df_501_],$/;"	v
+df	.virtual_documents/Untitled.ipynb.py	/^df = pd.DataFrame({'Normal distr.': n, 'Poisson distr.': p})$/;"	v
+df	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^df = pd.DataFrame({'Normal distr.': n, 'Poisson distr.': p})$/;"	v
 df	tutorials/novelVisualForms/_0.py	/^df = pd.read_csv("https:\/\/github.com\/selva86\/datasets\/raw\/master\/mtcars.csv")$/;"	v
 df	tutorials/novelVisualForms/_1.py	/^df = pd.read_csv("https:\/\/github.com\/selva86\/datasets\/raw\/master\/mtcars.csv")$/;"	v
 df	tutorials/novelVisualForms/_2.py	/^df = pd.read_csv(os.path.join(dr, fdr, in_f))$/;"	v
@@ -76,11 +69,6 @@ df	tutorials/timelineCharts/_3.py	/^df = pd.read_csv(in_file)$/;"	v
 df	tutorials/timelineCharts/_4.py	/^df = pd.read_csv(in_file)$/;"	v
 df	tutorials/timelineCharts/_5.py	/^df = pd.read_csv(in_file)$/;"	v
 df	tutorials/timelineCharts/_6.py	/^df = pd.read_csv(in_file)$/;"	v
-df_101_500	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^df_101_500 = pd.DataFrame(np.random.multivariate_normal(mu, r, size=num_samples),$/;"	v
-df_1_5	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^df_1_5 = pd.DataFrame(np.random.multivariate_normal(mu, r, size=num_samples),$/;"	v
-df_26_100	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^df_26_100 = pd.DataFrame(np.random.multivariate_normal(mu, r, size=num_samples),$/;"	v
-df_501_	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^df_501_ = pd.DataFrame(np.random.multivariate_normal(mu, r, size=num_samples),$/;"	v
-df_6_25	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^df_6_25 = pd.DataFrame(np.random.multivariate_normal(mu, r, size=num_samples),$/;"	v
 df_counts	tutorials/novelVisualForms/_2.py	/^df_counts = gr.size().reset_index(name='counts')$/;"	v
 dji	tutorials/timelineCharts/_6.py	/^dji = df.loc[slice, 'adj_close']$/;"	v
 dpi	tutorials/statisticalCharts/_0.py	/^            dpi=600)$/;"	v
@@ -98,9 +86,8 @@ edgecolor	tutorials/statisticalCharts/_5.py	/^       edgecolor='k')$/;"	v
 edgecolor	tutorials/timelineCharts/_2.py	/^           edgecolor='w')$/;"	v
 fc	tutorials/timelineCharts/_6.py	/^fc = pd.Timestamp(2008, 10, 9)$/;"	v
 fdr	tutorials/novelVisualForms/_2.py	/^fdr = 'data\/killerAppData'$/;"	v
-feb	.virtual_documents/week5/problemSet/eric.ipynb.py	/^feb = pd.read_csv("Feb.csv")$/;"	v
-feb1	.virtual_documents/week5/problemSet/eric.ipynb.py	/^feb1 = np.count_nonzero(feb.data)$/;"	v
-fig	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^fig = plt.figure(figsize=(6, 4))$/;"	v
+fig	.virtual_documents/Untitled.ipynb.py	/^fig = plt.figure(figsize=(6, 6))$/;"	v
+fig	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^fig = plt.figure(figsize=(6, 6))$/;"	v
 fig	tutorials/matplotlibBasics/_0.py	/^fig = plt.figure(figsize=(6, 6))$/;"	v
 fig	tutorials/novelVisualForms/_0.py	/^fig = plt.figure(figsize=(14,16), dpi= 80)$/;"	v
 fig	tutorials/novelVisualForms/_1.py	/^fig = plt.figure(figsize=(14,16), dpi= 80)$/;"	v
@@ -118,7 +105,6 @@ fig	tutorials/timelineCharts/_3.py	/^fig = plt.figure(figsize=(6, 4))$/;"	v
 fig	tutorials/timelineCharts/_4.py	/^fig = plt.figure(figsize=(6, 4))$/;"	v
 fig	tutorials/timelineCharts/_5.py	/^fig = decomposition.plot()$/;"	v
 fig	tutorials/timelineCharts/_6.py	/^fig = plt.figure(figsize=(11, 8))$/;"	v
-fig1	.virtual_documents/week5/problemSet/eric.ipynb.py	/^fig1 = plt.figure(figsize=(50,50))$/;"	v
 figure	tutorials/matplotlibBasics/_0.py	/^                       figure=fig, # this gs applies to figure$/;"	v
 figure	tutorials/statisticalCharts/_1.py	/^                       figure=fig, # this gs applies to figure$/;"	v
 flierprops	tutorials/statisticalCharts/_2.py	/^           flierprops=flierprops)$/;"	v
@@ -140,8 +126,6 @@ gs	tutorials/matplotlibBasics/_0.py	/^gs = gridspec.GridSpec(2, 4, # we want 2 r
 gs	tutorials/statisticalCharts/_1.py	/^gs = gridspec.GridSpec(2, 2, # we want 2 rows, 2 cols$/;"	v
 height_ratios	tutorials/matplotlibBasics/_0.py	/^                       height_ratios=[1, 1]) # ration between the first ans second row$/;"	v
 height_ratios	tutorials/statisticalCharts/_1.py	/^                       height_ratios=[10, 0.5]) # ratio between the first ans second row$/;"	v
-high	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                                                  high=100,$/;"	v
-high	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                                                high=25,$/;"	v
 horizontalalignment	tutorials/timelineCharts/_0.py	/^            horizontalalignment='left',$/;"	v
 horizontalalignment	tutorials/timelineCharts/_0.py	/^            horizontalalignment='right',$/;"	v
 horizontalalignment	tutorials/timelineCharts/_0.py	/^        horizontalalignment='left',$/;"	v
@@ -159,10 +143,6 @@ in_file	tutorials/timelineCharts/_6.py	/^in_file = os.path.join(wd, 'data', 'sto
 in_office	tutorials/statisticalCharts/_5.py	/^in_office = [25, 32, 34, 20, 25]$/;"	v
 in_office_std	tutorials/statisticalCharts/_5.py	/^in_office_std = [3, 5, 2, 3, 3]$/;"	v
 inset_axes	tutorials/timelineCharts/_6.py	/^from mpl_toolkits.axes_grid1.inset_locator import inset_axes$/;"	i
-jan	.virtual_documents/week5/problemSet/eric.ipynb.py	/^jan = pd.read_csv("Jan.csv")$/;"	v
-jan1	.virtual_documents/week5/problemSet/eric.ipynb.py	/^jan1 = np.count_nonzero(jan.data)$/;"	v
-june	.virtual_documents/week5/problemSet/eric.ipynb.py	/^june = pd.read_csv("June.csv")$/;"	v
-june1	.virtual_documents/week5/problemSet/eric.ipynb.py	/^june1 = np.count_nonzero(june.data)$/;"	v
 klass	tutorials/timelineCharts/_0.py	/^klass = ['red' if (y1 - y2) < 0 else 'green'$/;"	v
 labels	tutorials/statisticalCharts/_2.py	/^           labels=vars,$/;"	v
 labels	tutorials/timelineCharts/_1.py	/^labels = []$/;"	v
@@ -171,13 +151,9 @@ left_label	tutorials/timelineCharts/_0.py	/^left_label = [str(c) + ', ' + str(ro
 linestyle	tutorials/statisticalCharts/_2.py	/^                  linestyle='none')$/;"	v
 ls	tutorials/statisticalCharts/_1.py	/^         ls='--',$/;"	v
 lw	tutorials/statisticalCharts/_1.py	/^         lw='1')$/;"	v
-mar	.virtual_documents/week5/problemSet/eric.ipynb.py	/^mar = pd.read_csv("Mar.csv")$/;"	v
-mar1	.virtual_documents/week5/problemSet/eric.ipynb.py	/^mar1= np.count_nonzero(mar.data)$/;"	v
 markersize	tutorials/statisticalCharts/_2.py	/^                  markersize=6,$/;"	v
-matplotlib	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
-matplotlib	.virtual_documents/week5/problemSet/eric.ipynb.py	/^import matplotlib$/;"	i
-matplotlib	.virtual_documents/week5/problemSet/eric.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	.virtual_documents/Untitled.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
 matplotlib	tutorials/matplotlibBasics/_0.py	/^import matplotlib.gridspec as gridspec$/;"	i
 matplotlib	tutorials/matplotlibBasics/_0.py	/^import matplotlib.pyplot as plt$/;"	i
 matplotlib	tutorials/novelVisualForms/_0.py	/^import matplotlib.pyplot as plt$/;"	i
@@ -199,23 +175,27 @@ matplotlib	tutorials/timelineCharts/_3.py	/^import matplotlib.pyplot as plt$/;"	
 matplotlib	tutorials/timelineCharts/_4.py	/^import matplotlib.pyplot as plt$/;"	i
 matplotlib	tutorials/timelineCharts/_5.py	/^import matplotlib.pyplot as plt$/;"	i
 matplotlib	tutorials/timelineCharts/_6.py	/^import matplotlib.pyplot as plt$/;"	i
-may	.virtual_documents/week5/problemSet/eric.ipynb.py	/^may = pd.read_csv("May.csv")$/;"	v
-may1	.virtual_documents/week5/problemSet/eric.ipynb.py	/^may1 = np.count_nonzero(may.data)$/;"	v
 meanline	tutorials/statisticalCharts/_2.py	/^           meanline=False,$/;"	v
 medianprops	tutorials/statisticalCharts/_2.py	/^           medianprops=medianprops,$/;"	v
 medianprops	tutorials/statisticalCharts/_2.py	/^medianprops = dict(linewidth=0)$/;"	v
 mlines	tutorials/timelineCharts/_0.py	/^import matplotlib.lines as mlines$/;"	i
-mu	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^mu = np.repeat(0, 4)$/;"	v
+molten	.virtual_documents/Untitled.ipynb.py	/^molten = pd.melt(df, value_name='Score', var_name='Distribution')$/;"	v
+molten	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^molten = pd.melt(df, value_name='Score', var_name='Distribution')$/;"	v
 mu	tutorials/statisticalCharts/_2.py	/^mu = [np.mean(a) for a in [x, y, z]]$/;"	v
 mu	tutorials/statisticalCharts/_3.py	/^mu = 2.5$/;"	v
+n	.virtual_documents/Untitled.ipynb.py	/^n = np.random.normal(0, 10, 1000)$/;"	v
+n	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^n = np.random.normal(0, 10, 1000)$/;"	v
 n	tutorials/statisticalCharts/_1.py	/^n = 30$/;"	v
+n0	.virtual_documents/Untitled.ipynb.py	/^n0 = np.random.normal(0, 2, 10000)$/;"	v
+n0	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^n0 = np.random.normal(0, 2, 10000)$/;"	v
+n1	.virtual_documents/Untitled.ipynb.py	/^n1 = np.random.normal(0, 1, 10000)$/;"	v
+n1	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^n1 = np.random.normal(0, 1, 10000)$/;"	v
 n_bins	tutorials/statisticalCharts/_3.py	/^n_bins = 50$/;"	v
-names	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^names = ['job_sat', 'int_qui', 'age', 'org_tnr']$/;"	v
 new_cols	tutorials/novelVisualForms/_3.py	/^new_cols = ['t{}'.format(i) for i in old_cols]$/;"	v
 new_cols	tutorials/timelineCharts/_6.py	/^new_cols = ['date', 'open', 'high', 'low', 'close', 'adj_close', 'volume']$/;"	v
 newline	tutorials/timelineCharts/_0.py	/^def newline(_p_1, _p_2, color='black'):$/;"	f
-np	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import numpy as np$/;"	i
-np	.virtual_documents/week5/problemSet/eric.ipynb.py	/^import numpy as np$/;"	i
+np	.virtual_documents/Untitled.ipynb.py	/^import numpy as np$/;"	i
+np	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^import numpy as np$/;"	i
 np	tutorials/matplotlibBasics/_0.py	/^import numpy as np$/;"	i
 np	tutorials/novelVisualForms/_3.py	/^import numpy as np$/;"	i
 np	tutorials/statisticalCharts/_0.py	/^import numpy as np$/;"	i
@@ -227,10 +207,8 @@ np	tutorials/statisticalCharts/_5.py	/^import numpy as np$/;"	i
 np	tutorials/timelineCharts/_0.py	/^import numpy as np$/;"	i
 np	tutorials/timelineCharts/_1.py	/^import numpy as np$/;"	i
 np	tutorials/timelineCharts/_6.py	/^import numpy as np$/;"	i
-num_samples	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^num_samples = 1000$/;"	v
 old_cols	tutorials/novelVisualForms/_3.py	/^old_cols = df.columns$/;"	v
 old_cols	tutorials/timelineCharts/_6.py	/^old_cols = df.columns$/;"	v
-os	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import os$/;"	i
 os	tutorials/matplotlibBasics/_0.py	/^import os$/;"	i
 os	tutorials/novelVisualForms/_0.py	/^import os$/;"	i
 os	tutorials/novelVisualForms/_1.py	/^import os$/;"	i
@@ -261,6 +239,8 @@ out_f	tutorials/timelineCharts/_3.py	/^out_f = os.path.join(os.getcwd(), 'unstac
 out_f	tutorials/timelineCharts/_4.py	/^out_f = os.path.join(os.getcwd(), 'stacked_area.pdf')$/;"	v
 out_f	tutorials/timelineCharts/_5.py	/^out_f = os.path.join(os.getcwd(), 'time_series_decomposition.pdf')$/;"	v
 out_f	tutorials/timelineCharts/_6.py	/^out_f = os.path.join(os.getcwd(), 'interrupted_time_series.pdf')$/;"	v
+p	.virtual_documents/Untitled.ipynb.py	/^p = np.random.poisson(10, 1000)$/;"	v
+p	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^p = np.random.poisson(10, 1000)$/;"	v
 p1	tutorials/novelVisualForms/_1.py	/^p1 = patches.Rectangle((-2.0, -1), width=.3, height=3, alpha=.2, facecolor='red')$/;"	v
 p2	tutorials/novelVisualForms/_1.py	/^p2 = patches.Rectangle((1.5, 27), width=.8, height=5, alpha=.2, facecolor='green')$/;"	v
 pad_inches	tutorials/statisticalCharts/_0.py	/^            pad_inches=0,$/;"	v
@@ -276,9 +256,8 @@ pad_inches	tutorials/timelineCharts/_5.py	/^            pad_inches=0)$/;"	v
 pad_inches	tutorials/timelineCharts/_6.py	/^            pad_inches=0)$/;"	v
 parsed	tutorials/timelineCharts/_1.py	/^        parsed = line.split(',')$/;"	v
 patches	tutorials/novelVisualForms/_1.py	/^import matplotlib.patches as patches$/;"	i
-pd	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^import pandas as pd$/;"	i
-pd	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import pandas as pd$/;"	i
-pd	.virtual_documents/week5/problemSet/eric.ipynb.py	/^import pandas as pd$/;"	i
+pd	.virtual_documents/Untitled.ipynb.py	/^import pandas as pd$/;"	i
+pd	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^import pandas as pd$/;"	i
 pd	tutorials/novelVisualForms/_0.py	/^import pandas as pd$/;"	i
 pd	tutorials/novelVisualForms/_1.py	/^import pandas as pd$/;"	i
 pd	tutorials/novelVisualForms/_2.py	/^import pandas as pd$/;"	i
@@ -291,10 +270,8 @@ pd	tutorials/timelineCharts/_3.py	/^import pandas as pd$/;"	i
 pd	tutorials/timelineCharts/_4.py	/^import pandas as pd$/;"	i
 pd	tutorials/timelineCharts/_5.py	/^import pandas as pd$/;"	i
 pd	tutorials/timelineCharts/_6.py	/^import pandas as pd$/;"	i
-plot_set	.virtual_documents/week5/problemSet/eric.ipynb.py	/^plot_set = np.array([jan1,feb1,mar1,apr1,may1,june1])$/;"	v
-plt	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
-plt	.virtual_documents/week5/problemSet/eric.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	.virtual_documents/Untitled.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^import matplotlib.pyplot as plt$/;"	i
 plt	tutorials/matplotlibBasics/_0.py	/^import matplotlib.pyplot as plt$/;"	i
 plt	tutorials/novelVisualForms/_0.py	/^import matplotlib.pyplot as plt$/;"	i
 plt	tutorials/novelVisualForms/_1.py	/^import matplotlib.pyplot as plt$/;"	i
@@ -316,8 +293,6 @@ pos	tutorials/statisticalCharts/_0.py	/^pos = np.arange(0, len(categories), 1)$/
 pos	tutorials/statisticalCharts/_2.py	/^pos = [1, 2, 3]$/;"	v
 positions	tutorials/statisticalCharts/_2.py	/^           positions=pos,$/;"	v
 purchase_patterns	tutorials/novelVisualForms/_3.py	/^purchase_patterns = np.random.binomial(n=1, p=1\/3, size=(50, 5))$/;"	v
-r	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^r = np.array([$/;"	v
-rc	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^from matplotlib import rc$/;"	i
 rc	tutorials/statisticalCharts/_0.py	/^from matplotlib import rc$/;"	i
 rc	tutorials/statisticalCharts/_2.py	/^from matplotlib import rc$/;"	i
 rc	tutorials/statisticalCharts/_3.py	/^from matplotlib import rc$/;"	i
@@ -334,15 +309,11 @@ sep	tutorials/timelineCharts/_6.py	/^sep = 100$/;"	v
 showbox	tutorials/statisticalCharts/_2.py	/^           showbox=False,$/;"	v
 showcaps	tutorials/statisticalCharts/_2.py	/^           showcaps=False,$/;"	v
 sigma	tutorials/statisticalCharts/_3.py	/^sigma = 4$/;"	v
-size	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                                                  size=num_samples)$/;"	v
-size	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^                                                size=num_samples)$/;"	v
 slice	tutorials/timelineCharts/_6.py	/^slice = ((df['date'] >= pd.Timestamp(2008, 9, 1)) &$/;"	v
-sm	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import statsmodels.api as sm$/;"	i
 sm	tutorials/timelineCharts/_5.py	/^import statsmodels.api as sm$/;"	i
-smf	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import statsmodels.formula as smf$/;"	i
+sns	.virtual_documents/Untitled.ipynb.py	/^import seaborn as sns$/;"	i
+sns	.virtual_documents/matplotlib_and_seaborn.ipynb.py	/^import seaborn as sns$/;"	i
 sns	tutorials/novelVisualForms/_2.py	/^import seaborn as sns$/;"	i
-statsmodels	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import statsmodels.api as sm$/;"	i
-statsmodels	.virtual_documents/tutorials/statisticalEstimates/_0.ipynb.py	/^import statsmodels.formula as smf$/;"	i
 statsmodels	tutorials/timelineCharts/_5.py	/^import statsmodels.api as sm$/;"	i
 t	tutorials/novelVisualForms/_0.py	/^    t = plt.text(x, y, round(label, 1), horizontalalignment='center',$/;"	v
 t	tutorials/timelineCharts/_6.py	/^t = df.loc[slice, 'date']$/;"	v
@@ -366,7 +337,6 @@ url	tutorials/timelineCharts/_0.py	/^url = "https:\/\/raw.githubusercontent.com\
 vars	tutorials/statisticalCharts/_2.py	/^vars = ['X', 'Y', 'Z']$/;"	v
 verticalalignment	tutorials/timelineCharts/_0.py	/^            verticalalignment='center',$/;"	v
 verticalalignment	tutorials/timelineCharts/_0.py	/^        verticalalignment='center',$/;"	v
-warnings	.virtual_documents/week5/problemSet/eric.ipynb.py	/^import warnings$/;"	i
 wd	tutorials/novelVisualForms/_2.py	/^wd = os.getcwd()$/;"	v
 wd	tutorials/timelineCharts/_1.py	/^wd = os.getcwd()$/;"	v
 wd	tutorials/timelineCharts/_2.py	/^wd = os.getcwd()$/;"	v
@@ -374,14 +344,11 @@ wd	tutorials/timelineCharts/_3.py	/^wd = os.getcwd()$/;"	v
 wd	tutorials/timelineCharts/_4.py	/^wd = os.getcwd()$/;"	v
 wd	tutorials/timelineCharts/_5.py	/^wd = os.getcwd()$/;"	v
 wd	tutorials/timelineCharts/_6.py	/^wd = os.getcwd()$/;"	v
-width	.virtual_documents/week5/problemSet/eric.ipynb.py	/^width = 0.35$/;"	v
 width	tutorials/statisticalCharts/_5.py	/^width = 0.35       # the width of the bars: can also be len(x) sequence$/;"	v
 width_ratios	tutorials/matplotlibBasics/_0.py	/^                       width_ratios=[1, 1, 1, 1], # ration between the$/;"	v
 width_ratios	tutorials/statisticalCharts/_1.py	/^                       width_ratios=[0.5, 10], # ratio between the first$/;"	v
 work_from_home	tutorials/statisticalCharts/_5.py	/^work_from_home = [20, 35, 30, 35, 27]$/;"	v
 work_from_home_std	tutorials/statisticalCharts/_5.py	/^work_from_home_std = [2, 3, 4, 1, 2]$/;"	v
-x	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^x = [0, 1]$/;"	v
-x	.virtual_documents/week5/problemSet/eric.ipynb.py	/^x = np.arange(len(x_label))$/;"	v
 x	tutorials/matplotlibBasics/_0.py	/^x = np.arange(0, 10, 1)$/;"	v
 x	tutorials/novelVisualForms/_0.py	/^x = df.loc[:, ['mpg']]$/;"	v
 x	tutorials/novelVisualForms/_1.py	/^x = df.loc[:, ['mpg']]$/;"	v
@@ -389,7 +356,6 @@ x	tutorials/statisticalCharts/_1.py	/^x = np.random.randn(n)$/;"	v
 x	tutorials/statisticalCharts/_2.py	/^x = np.random.normal(loc=1, scale=1.2, size=100)$/;"	v
 x	tutorials/statisticalCharts/_3.py	/^x = np.random.normal(mu, sigma, size=1000)$/;"	v
 x	tutorials/statisticalCharts/_4.py	/^x = np.random.normal(loc=-1, scale=0.75, size=1000)$/;"	v
-x_label	.virtual_documents/week5/problemSet/eric.ipynb.py	/^x_label = ['January', 'Febury', 'March', 'April', 'May', 'June']$/;"	v
 x_range	tutorials/statisticalCharts/_1.py	/^x_range = np.max(x) - np.min(x)$/;"	v
 xy	tutorials/novelVisualForms/_1.py	/^             xy=(0.0, 11.0), xytext=(1.0, 11), xycoords='data',$/;"	v
 xy	tutorials/timelineCharts/_6.py	/^            xy=(fc, fc_y - sep), xycoords='data',$/;"	v
@@ -403,13 +369,9 @@ y	tutorials/statisticalCharts/_2.py	/^y = np.random.normal(loc=1.5, scale=0.75, 
 y	tutorials/statisticalCharts/_3.py	/^y = ((1 \/ (np.sqrt(2 * np.pi) * sigma)) *$/;"	v
 y	tutorials/statisticalCharts/_3.py	/^y = y.cumsum()$/;"	v
 y	tutorials/statisticalCharts/_4.py	/^y = np.random.normal(loc=0, scale=1, size=1000)$/;"	v
-y0	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^y0 = df.loc[(df['countries'] == 'fr') & (df['sectors'] == 'a'), 'average_roe']$/;"	v
 y0	tutorials/matplotlibBasics/_0.py	/^y0 = np.square(x)$/;"	v
-y1	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^y1 = df.loc[(df['countries'] == 'fr') & (df['sectors'] == 'b'), 'average_roe']$/;"	v
 y1	tutorials/matplotlibBasics/_0.py	/^y1 = np.sqrt(x)$/;"	v
-y2	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^y2 = df.loc[(df['countries'] == 'uk') & (df['sectors'] == 'a'), 'average_roe']$/;"	v
 y2	tutorials/matplotlibBasics/_0.py	/^y2 = 2 + x$/;"	v
-y3	.virtual_documents/tutorials/statisticalEstimates/Untitled.ipynb.py	/^y3 = df.loc[(df['countries'] == 'uk') & (df['sectors'] == 'b'), 'average_roe']$/;"	v
 y_range	tutorials/statisticalCharts/_1.py	/^y_range = np.max(y) - np.min(y)$/;"	v
 z	tutorials/statisticalCharts/_2.py	/^z = np.random.normal(loc=0.5, scale=0.25, size=100)$/;"	v
 z	tutorials/statisticalCharts/_4.py	/^z = np.random.normal(loc=1, scale=0.5, size=1000)$/;"	v
