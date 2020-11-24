@@ -2,27 +2,13 @@
 
 <!-- TOC -->
 
-- [Final course project (on homophily, closure, and performance)– README](#final-course-project-on-homophily-closure-and-performance-readme)
+- [Final course project (on the genesis and transformation of Tech City) – README](#final-course-project-on-the-genesis-and-transformation-of-tech-city--readme)
 - [Introduction](#introduction)
 - [Problem to address](#problem-to-address)
 - [Background for the case study](#background-for-the-case-study)
 - [Data](#data)
-  - [Dataset 1 – technology supply network in Formula 1](#dataset-1--technology-supply-network-in-formula-1)
-    - [Source](#source)
-    - [Data tables](#data-tables)
-    - [Data analysis tips](#data-analysis-tips)
-  - [Dataset 2 – founding teams in the UK economy](#dataset-2--founding-teams-in-the-uk-economy)
-    - [Source](#source-1)
-    - [Data tables](#data-tables-1)
-    - [Data analysis tips](#data-analysis-tips-1)
-  - [Dataset 3 – mobility network among professional football players](#dataset-3--mobility-network-among-professional-football-players)
-    - [Source](#source-2)
-    - [Data tables](#data-tables-2)
-    - [Data analysis tips](#data-analysis-tips-2)
-  - [Dataset 4 – collaboration and performance in hip hop music](#dataset-4--collaboration-and-performance-in-hip-hop-music)
-    - [Source](#source-3)
-    - [Data tables](#data-tables-3)
-    - [Data analysis tips](#data-analysis-tips-3)
+  - [Source](#source)
+  - [Data tables](#data-tables)
 - [Deliverables](#deliverables)
 
 <!-- /TOC -->
