@@ -1,207 +1,105 @@
-#!/usr/#!/usr/bin/env python3
-# -*- encoding utf-8 -*-
-
-"""
-------------------------------------------------------------------------------
-    _4.py  |  radar chart
-------------------------------------------------------------------------------
-
-Author   :
-
-Edits    :
-
-Synopsis :
-
-Notes    :
-
-"""
-
-# %% load libraries
+# Libraries
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, RegularPolygon
-from matplotlib.path import Path
-from matplotlib.projections.polar import PolarAxes
-from matplotlib.projections import register_projection
-from matplotlib.spines import Spine
-from matplotlib.transforms import Affine2D
 import pandas as pd
-from pprint import pprint as pp
+from math import pi
+from matplotlib import rc
 
-# %% snippet
-def radar_factory(num_vars, frame='circle'):
-    """
-    Create a radar chart with `num_vars` axes.
+# %%  matplotlib viz setup
+rc('font',**{'family':'serif','serif':['Computer Modern Roman']})
+rc('text', usetex=True)
 
-    This function creates a RadarAxes projection and registers it.
-
-    Parameters
-    ----------
-    num_vars : int
-        Number of variables for radar chart.
-    frame : {'circle', 'polygon'}
-        Shape of frame surrounding axes.
-
-    """
-    # calculate evenly-spaced axis angles
-    theta = np.linspace(0, 2*np.pi, num_vars, endpoint=False)
-
-    class RadarAxes(PolarAxes):
-
-        name = 'radar'
-        # use 1 line segment to connect specified points
-        RESOLUTION = 1
-
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, **kwargs)
-            # rotate plot such that the first axis is at the top
-            self.set_theta_zero_location('N')
-
-        def fill(self, *args, closed=True, **kwargs):
-            """Override fill so that line is closed by default"""
-            return super().fill(closed=closed, *args, **kwargs)
-
-        def plot(self, *args, **kwargs):
-            """Override plot so that line is closed by default"""
-            lines = super().plot(*args, **kwargs)
-            for line in lines:
-                self._close_line(line)
-
-        def _close_line(self, line):
-            x, y = line.get_data()
-            # FIXME: markers at x[0], y[0] get doubled-up
-            if x[0] != x[-1]:
-                x = np.append(x, x[0])
-                y = np.append(y, y[0])
-                line.set_data(x, y)
-
-        def set_varlabels(self, labels):
-            self.set_thetagrids(np.degrees(theta), labels)
-
-        def _gen_axes_patch(self):
-            # The Axes patch must be centered at (0.5, 0.5) and of radius 0.5
-            # in axes coordinates.
-            if frame == 'circle':
-                return Circle((0.5, 0.5), 0.5)
-            elif frame == 'polygon':
-                return RegularPolygon((0.5, 0.5), num_vars,
-                                      radius=.5, edgecolor="k")
-            else:
-                raise ValueError("Unknown value for 'frame': %s" % frame)
-
-        def _gen_axes_spines(self):
-            if frame == 'circle':
-                return super()._gen_axes_spines()
-            elif frame == 'polygon':
-                # spine_type must be 'left'/'right'/'top'/'bottom'/'circle'.
-                spine = Spine(axes=self,
-                              spine_type='circle',
-                              path=Path.unit_regular_polygon(num_vars))
-                # unit_regular_polygon gives a polygon of radius 1 centered at
-                # (0, 0) but we want a polygon of radius 0.5 centered at (0.5,
-                # 0.5) in axes coordinates.
-                spine.set_transform(Affine2D().scale(.5).translate(.5, .5)
-                                    + self.transAxes)
-                return {'polar': spine}
-            else:
-                raise ValueError("Unknown value for 'frame': %s" % frame)
-
-    register_projection(RadarAxes)
-    return theta
-
-# %% read data
-# path to file
+# %% data for the chart
+# read data
+# --+ path to file
 in_file = os.path.join('.', 'data', 'nba', 'goat.csv')
-# get a df
+# --+ get a df
 df = pd.read_csv(in_file)
-# data preview
-df.head()
-
-# %% data transformation
-# key features of the data - player with the longest career spell
-periods = np.max(df['sort'])
-# cumulative number of titles
-gr = df.groupby('player')
-df.loc[:, 'cum_title'] = gr['nba_champion'].transform(np.cumsum)
-
-# %% data to pass to the radar chart
-# player tenure in the league
-max_tnr = np.max(df['sort'])
-experience = ['Rookie']
-experience.extend(['Y={}'.format(i) for i in np.arange(1, max_tnr)])
 # player set
 players = df.player.unique().tolist()
-players
-colors = ['red',    # as Chicago Bulls shirt
-          'yellow', # one of the two colors of Lakers shirt
-          'green',  # as Boston Celtics shirt
-          'purple'] # the other color of Lakers shirt
-# points per game and cumulative NBA title by year
-ppg, titles = [], []
+# get cumulative nba titles
+gr = df.groupby('player')
+df.loc[:, 'nba_champion'] = gr['nba_champion'].transform(np.cumsum)
+# manipulate data
+# --+ create career spells with equal length to improve comparability among
+#     players
+max_expr = np.max(df['sort'])
+expr = []
+for i in np.arange(1, max_expr + 1):
+    for j in players:
+        expr.append([i, j])
+expr = pd.DataFrame(expr, columns=['sort', 'player'])
+df = pd.merge(df, expr, on=['player', 'sort'], how='right')
+# we want to radar charts, one for the average points per game, one for the
+#     count of titles
+variables = ['points', 'nba_champion']
+# replace missing values with 0 if player j is inactive in perio j
+for variable in variables:
+    df.loc[df[variable].isnull(), variable] = 0
+
+# %% visualization
+# colors to associate with each player
+colors = dict(zip(players, ['orange', 'gray', 'black', 'green']))
+# labels for the axes
+labels = [i + 1 for i in range(max_expr)]
+# create the figure
+fig = plt.figure(figsize=(9, 5.5))
+# create axes/segments of the chart (we divide the plot into seasons)
+angles = [n / float(max_expr) * 2 * pi for n in range(max_expr)]
+angles += angles[:1]
+# create two plots with ploar axes (plot #1 contains point per game; plot #2
+#     contains nba titles)
+ax0 = fig.add_subplot(1, 2, 1, polar=True)
+ax1 = fig.add_subplot(1, 2, 2, polar=True)
+# average points per game chart
+# --+ title
+ax0.set_title(r'Average point per game by season', pad=20)
+# --+ axes
+ax0.set_theta_offset(pi / 2)
+ax0.set_theta_direction(-1)
+# --+ axes and ticks
+ax0.set_xticks(angles[:-1])
+ax0.set_xticklabels(labels)
+# --+ draw ylabels
+ax0.set_rlabel_position(0)
+#ax0.set_yticks([])
+ax1.set_xticklabels(labels)
+# plot the data series
 for player in players:
-    query = df['player'] == player
-    ppg.append(df.loc[query, 'points'].to_list())
-    titles.append(df.loc[query, 'nba_champion'].to_list())
-# wrap data together
-def example_data():
-    data = [experience,
-            ('Points per game', [ppg]),
-            ('Cumulative NBA titles', [titles])]
-    return data
-
-
-# %% declaring data
-def example_data():
-    data = [
-        ['Sulfate', 'Nitrate', 'EC', 'OC1', 'OC2', 'OC3', 'OP', 'CO', 'O3'],
-        ('Points per game', [
-            [0.88, 0.01, 0.03, 0.03, 0.00, 0.06, 0.01, 0.00, 0.00],
-            [0.07, 0.95, 0.04, 0.05, 0.00, 0.02, 0.01, 0.00, 0.00],
-            [0.01, 0.02, 0.85, 0.19, 0.05, 0.10, 0.00, 0.00, 0.00],
-            [0.02, 0.01, 0.07, 0.01, 0.21, 0.12, 0.98, 0.00, 0.00],
-            [0.01, 0.01, 0.02, 0.71, 0.74, 0.70, 0.00, 0.00, 0.00]]),
-        ('NBA titles', [
-            [0.88, 0.02, 0.02, 0.02, 0.00, 0.05, 0.00, 0.05, 0.00],
-            [0.08, 0.94, 0.04, 0.02, 0.00, 0.01, 0.12, 0.04, 0.00],
-            [0.01, 0.01, 0.79, 0.10, 0.00, 0.05, 0.00, 0.31, 0.00],
-            [0.00, 0.02, 0.03, 0.38, 0.31, 0.31, 0.00, 0.59, 0.00],
-            [0.02, 0.02, 0.11, 0.47, 0.69, 0.58, 0.88, 0.00, 0.00]]),
-        ('With O3', [
-    ]
-    return data
-
-# %% deploy function
-if __name__ == '__main__':
-    N = 9
-    theta = radar_factory(N, frame='polygon')
-
-    data = example_data()
-    spoke_labels = data.pop(0)
-
-    fig, axs = plt.subplots(figsize=(9, 9), nrows=1, ncols=2,
-                            subplot_kw=dict(projection='radar'))
-    fig.subplots_adjust(wspace=0.25, hspace=0.20, top=0.85, bottom=0.05)
-
-    colors = ['b', 'r', 'g', 'm', 'y']
-    # Plot the four cases from the example data on separate axes
-    for ax, (title, case_data) in zip(axs.flat, data):
-        ax.set_rgrids([0.2, 0.4, 0.6, 0.8])
-        ax.set_title(title, weight='bold', size='medium', position=(0.5, 1.1),
-                     horizontalalignment='center', verticalalignment='center')
-        for d, color in zip(case_data, colors):
-            ax.plot(theta, d, color=color)
-            ax.fill(theta, d, facecolor=color, alpha=0.25)
-        ax.set_varlabels(spoke_labels)
-
-    # add legend relative to top-left plot
-    labels = ('Factor 1', 'Factor 2', 'Factor 3', 'Factor 4', 'Factor 5')
-    legend = axs[0].legend(labels, loc=(0.9, .95),
-                           labelspacing=0.1, fontsize='small')
-
-    #fig.text(0.5, 0.965, '5-Factor Solution Profiles Across Four Scenarios',
-    #         horizontalalignment='center', color='black', weight='bold',
-    #         size='large')
-
-    plt.show()
+    values = df.loc[df['player'] == player, 'points'].tolist()
+    values += values[:1]
+    ax0.scatter(angles, values, linewidth=1, linestyle='solid',
+                label=player, color=colors[player])
+#    ax0.fill(angles, values, color=colors[player], alpha=0.1)
+# nba titles
+# --+ title
+ax1.set_title(r'Cumulative count of NBA titles by season', pad=20)
+ax1.set_theta_offset(pi / 2)
+ax1.set_theta_direction(-1)
+# --+ axes and ticks
+ax1.set_xticks(angles[:-1])
+ax1.set_xticklabels(labels)
+#ax1.set_yticks([])
+ax1.yaxis.label.set_color('white')
+# --+ draw ylabels
+ax1.set_rlabel_position(0)
+# plot the data series
+for player in players:
+    values = df.loc[df['player'] == player, 'nba_champion'].tolist()
+    values += values[:1]
+    ax1.plot(angles, values, linewidth=1, linestyle='solid',
+             label=player, color=colors[player])
+    ax1.fill(angles, values, color=colors[player], alpha=0.1)
+# legend
+plt.legend(loc='upper right', bbox_to_anchor=(0.21, 0))
+# title
+plt.suptitle(r'Different pathways to greatness', fontsize=18)
+# save plot to file
+out_f = os.path.join(os.getcwd(), 'radar_chart.pdf')
+plt.savefig(out_f,
+            transparent=True,
+            bbox_inches='tight',
+            pad_inches=0)
+# show plot
+#plt.show()
