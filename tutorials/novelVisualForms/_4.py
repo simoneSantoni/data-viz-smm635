@@ -1,3 +1,18 @@
+# !/usr/env/bin python3
+# -*-encoding utf-8-*-
+
+"""
+--------------------------------------------------------------------------------
+    _4.py  |  radar chart
+--------------------------------------------------------------------------------
+Author : Simone Santoni, simone.santoni.1@city.ac.uk
+
+Edits  : created 11/27/2020, 9:18:14 AM; never revised
+
+Notes  : this script shows how to compare and contrast data on careers using
+         a relatively novel visual form such as the radar chart
+
+"""
 # Libraries
 import os
 import numpy as np
