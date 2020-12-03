@@ -37,7 +37,7 @@ https://www.ft.com/content/ca2e8368-48e6-11ea-aeb3-955839e06441_
 
 # Problem to address
 
-The mounting conversation on inequality issues in Hollywood – along with some signals of changes already included in the data – may create ecological favor for diversity. You're supposed to build a dashboard/some interactive viz that helps movie executives to address the following question: "what are the consequences in terms of Oscars allocation to assign the 'next' prominent role to a minority actor?"
+The mounting conversation on inequality issues in Hollywood – along with some signals of changes already included in the data – may create ecological favor for diversity. You're supposed to build a dashboard/some interactive viz that helps movie executives to address the following question: "considering the allocation of accolades such as the Oscar, what are the expected onsequences of assigning the 'next' prominent role to a minority actor?"
 
 # Data
 
