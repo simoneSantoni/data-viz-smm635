@@ -3,10 +3,6 @@
 This folder contains the following set of materials:
 
 + Lecture notes:
-  - [slideshow_1.ipynb](slideshow_1.ipynb) - Tufte's design principles; statistical charts
+  - [slideshow_1.ipynb](slideshow_1.ipynb) - visualizing statistical patterns and uncertainty in estimates
 
-Further materials concerning 'labs' and the problem set will be made available
-during the Thursday xx session, which will cover the following:
-
--   .
--   .
+Further materials are included in `tutorials/statisticalEstimates/_0.ipynb`
