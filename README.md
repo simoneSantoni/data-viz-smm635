@@ -76,6 +76,8 @@ __Discretionary readings/materials__ include and aren't limited to:
 - [The Visual Display of Quantitative Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_3?ie=UTF8&qid=1537986137&sr=8-3&keywords=edward+tufte)
 - miscellaneous materials reported in the [website of Ed Tufte](https://www.edwardtufte.com/tufte/)
 - miscallaneous materials reported in the [website of the UW Interactive Data Lab](http://idl.cs.washington.edu)
+- ['r/DataIsBeautiful'](https://www.reddit.com/r/dataisbeautiful/), a source 
+  of inspiration and a virtual _agora_ for millions of data viz enthusiasts
 
 ## Learning Objectives
 
@@ -220,25 +222,19 @@ science and machine learning environments.
 
 Here is the workflow:
 
-1.  Use your preferred browser to open the link pointing to the
-    [Anaconda repository](http://www.numpy.org/);
-
-2.  Select the installer the which suits your machine (32- or 64-bit)
-    and operating system (Win, Mac OS, Linux). Mac users may want to
-    download the graphical installer rather than the command-line
-    installer (students may feel less comfortable with);
-
-3.  Retrieve the installer (perhaps in your download folder);
-
-4.  Run the installer;
-
-5.  Log-out from your current session (it does not matter if you use
-    Win, Mac OS or Linux);
-
-6.  Log-in into a new session;
-
-7.  Run 'Anaconda Navigator' — namely, a convenient place to launch the
-    IPython shell or other user-interfaces to interact with IPython.
+1. Use your preferred browser to open the link pointing to the
+   [Anaconda repository](http://www.numpy.org/)
+2. Select the installer the which suits your machine (32- or 64-bit)
+   and operating system (Win, Mac OS, Linux). Mac users may want to
+   download the graphical installer rather than the command-line
+   installer (students may feel less comfortable with)
+3. Retrieve the installer (perhaps in your download folder)
+4. Run the installer
+5. Log-out from your current session (it does not matter if you use
+   Win, Mac OS or Linux)
+6. Log-in into a new session
+7. Run 'Anaconda Navigator' — namely, a convenient place to launch the
+   IPython shell or other user-interfaces to interact with IPython.
 
 On top of Anaconda/Python, students should install the modules
 [Matplotlib](https://networkx.github.io/),
@@ -248,6 +244,10 @@ On top of Anaconda/Python, students should install the modules
 [Rasterio](https://rasterio.readthedocs.io/en/latest/),
 [Shapely](https://shapely.readthedocs.io/en/stable/manual.html) (I
 recommend doing that with Conda).
+
+The [envSetup](https://github.com/simoneSantoni/data-viz-smm635/blob/2ef404c852f5d91def12d4b2e50687959e60c94e/envSetup) 
+folder contains some resources that assist you to set up your Python 
+environment.
 
 ## Version history
 
