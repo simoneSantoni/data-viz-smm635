@@ -11,11 +11,11 @@
     - [Final course project](#final-course-project)
   - [Case studies](#case-studies)
   - [Discretionary coursework](#discretionary-coursework)
-- [Schedule of the Module](#schedule-of-the-module)
-- [Guest speakers](#guest-speakers)
-- [Prerequisites](#prerequisites)
-- [Software requirements](#software-requirements)
-- [Version history](#version-history)
+  - [Schedule of the Module](#schedule-of-the-module)
+  - [Guest speakers](#guest-speakers)
+  - [Prerequisites](#prerequisites)
+  - [Software requirements](#software-requirements)
+  - [Version history](#version-history)
 
 ## Instructor
 
@@ -23,7 +23,7 @@
   🏢 106 Bunhill Row, office 4034
 - Office hour: every Wednesday from 13:30 to 14:30 (students are required to 
   book a slot and share their questions via email in advance).
-- Teaching assistant to the module: Dr. Feng Zhou — [Feng.Zhou@city.ac.uk](Feng.Zhou@city.ac.uk)
+- Teaching assistant: Dr. Feng Zhou — [Feng.Zhou@city.ac.uk](Feng.Zhou@city.ac.uk)
 
 ## Module Overview
 
@@ -106,7 +106,7 @@ appropriate use of notions and frameworks discussed in class; ii)
 effectiveness of the proposed answer or solution; iii)
 originality/creativity of the proposed answer or solution; iv)
 organization and clarity of submitted materials. All criteria carry-out
-equal weight in terms of mark.
+equal weight in terms of marking.
 
 ### Mid-term project
 
@@ -121,40 +121,41 @@ receive a maximum of 3 bonus points on the basis of the quality of their
 presentations.
 
 To clarify your expectations about the MTP, please consider the [assignments
-administered to the previous cohorts of BA]().
+administered to the previous BA cohorts](https://github.com/simoneSantoni/data-viz-smm635/blob/c3eb44673454d975a2a5c92db514daf5fb5ac5b4/pastAssignments).
 
 ### Final course project
 
-With the **FCP** , groups
-make their hands 'dirty' as they help a real-world client to face some
-data visualization challenges. Details about the client and the
-challenge will be available in week 7. Final course projects will be
-evaluated on a rolling-based window and should be submitted by mid December
-(the course office will confirm the exact deadline shortly).
+With the FCP, students will work __individually__ to help a real-world client 
+to face some data visualization challenges. Details about the client and the
+challenge will be available on November 17. Final course projects will be
+evaluated on a rolling basis and should be submitted by early January
+(e.g., January 7 — the course office will confirm the exact deadline shortly).
 
+To clarify your expectations about the FCP, please consider the [assignments
+administered to the previous BA cohorts](https://github.com/simoneSantoni/data-viz-smm635/blob/c3eb44673454d975a2a5c92db514daf5fb5ac5b4/pastAssignments).
 ## Case studies
 
 Case studies provide students with the opportunity to learn how to integrate
 the 'business' and the 'data viz' perspectives in order to deal
 effectively with real-world problems. In terms of process, groups of students
 will receive i) a detailed description of a business issue, and ii) relevant
-data; then, they will be working for one week to produce their own solution.
-Solutions will be disclussed in class. Each presenting group will be
-associated with a discussant group whose role is to challenge the ideas,
-tools, and recommendetions that will be brought to the table. I expect six
-pairs of presenting and discussant groups; this means group that will present
-their solution in week 8 will serve as discussant in week 10 (and viceversa).
-Both presenting and discussant groups will be assessed.
+data. Then, they will be working for one week to produce their own solution.
+The views on the case will be discussed in class during an interactive session
+led by the lecturer. Students could be cold-called during the session and asked
+to share their solution.
 
 ## Discretionary coursework
 
-**Problem sets** will be launched weekly. Individual students may want to deal
+__Problem sets (PS)__ will be launched weekly. Individual students may want to deal
 these problem sets and present their solution to the class. A maximum of three
 students per session will be selected on the basis of the novelty and
 effectiveness of the proposed solution. One bonus point (+1 FM) will be
 assigned.
 
-# Schedule of the Module
+To clarify your expectations about PSs, please consider the [assignments
+administered to the previous BA cohorts](https://github.com/simoneSantoni/data-viz-smm635/blob/c3eb44673454d975a2a5c92db514daf5fb5ac5b4/pastAssignments).
+
+## Schedule of the Module
 
 | Week  | Topic                                                                                             |
 | :---: | :------------------------------------------------------------------------------------------------ |
@@ -178,7 +179,7 @@ assigned.
 |       | - sequences of events                                                                             |
 |       | - narrative                                                                                       |
 |       | Laboratory session on time-dependent data (Matplotlib)                                            |
-|   5   | Visualizing statical estimates and fits                                                           |
+|   5   | Visualizing statistical estimates and fits                                                        |
 |       | - uncertainty in estimates                                                                        |
 |       | - plotting causal effects estimated via regression                                                |
 |       | Laboratory session on statistical estimates and fits                                              |
@@ -187,25 +188,26 @@ assigned.
 |   7   | Geospatial maps                                                                                   |
 |       | Laboratory sessions on geospatial maps (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
 |       | Launching the final-course project                                                                |
-|   8   | Case study # 1                                                                                    |
+|   8   | Case study # 1 (on geospatial maps)                                                               |
 |   9   | Interactive visualizations for the web                                                            |
 |       | Laboratory session on interactive visualizations (Bokeh)                                          |
-|  10   | Case study # 2                                                                                    |
+|  10   | Case study # 2 (on interactive visualizations)                                                    |
 
+## Guest speakers
 
-# Guest speakers
+Subject to the Covid-19-related norms and actions, SMM635 might host short talks
+from two types of guest speakers: ambassadors — former students of the BA 
+program — and practitioners.
 
-Throughout all the various weeks of the Term, SMM635 willi host two types of
-guest speakers: ambassadors – former students of the BA program – and
-practitioners from several industries.
-
-# Prerequisites
+## Prerequisites
 
 The SMM692 ― Python Pre-Course module defines the knowledge students
 should possess in order to proficiently attend to SMM635 ― Data
 Visualization.
 
-# Software requirements
+A minimal understanding of 
+
+## Software requirements
 
 For this module you are supposed to run Python 3.7 or higher on your machine. Now,
 how to get Python work on your machine? There are several ways to do
@@ -235,7 +237,7 @@ Here is the workflow:
 
 6.  Log-in into a new session;
 
-7.  Run 'Anaconda Navigator'―namely, a convenient place to launch the
+7.  Run 'Anaconda Navigator' — namely, a convenient place to launch the
     IPython shell or other user-interfaces to interact with IPython.
 
 On top of Anaconda/Python, students should install the modules
@@ -247,7 +249,7 @@ On top of Anaconda/Python, students should install the modules
 [Shapely](https://shapely.readthedocs.io/en/stable/manual.html) (I
 recommend doing that with Conda).
 
-# Version history
+## Version history
 
-+ Created: 28/09/2020, 07:39:49
-+ Last change: no revisions so far
+- Current version is 1.0
+- Last change: Tue 28 Sep 17:38:52 BST 2021
