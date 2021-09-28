@@ -1,101 +1,81 @@
 # Data Visualization, SMM635 ― README
 
-<!-- TOC -->
 
-- [Instructor](#instructor)
-- [Module Overview](#module-overview)
-- [Materials & Readings](#materials--readings)
-- [Learning Objectives](#learning-objectives)
-- [Assessment](#assessment)
-  - [Mid-term project](#mid-term-project)
-  - [Final course project](#final-course-project)
-  - [Case studies](#case-studies)
-- [Organization and Schedule of the Module](#organization-and-schedule-of-the-module)
-- [Guest speakers](#guest-speakers)
-- [Prerequisites](#prerequisites)
-- [Software requirements](#software-requirements)
-- [Version history](#version-history)
+## Instructor
 
-<!-- /TOC -->
+- Dr. Simone Santoni — ✉️ [simone.santoni.1@city.ac.uk](simone.santoni.1@city.ac.uk), 
+  🏢 106 Bunhill Row, office 4034
+- Office hour: every Wednesday from 13:30 to 14:30 (students are required to 
+  book a slot and share their questions via email in advance).
+- Teaching assistant to the module: Dr. Feng Zhou — [Feng.Zhou@city.ac.uk](Feng.Zhou@city.ac.uk)
 
-# Instructor
-
-+   Dr. Simone Santoni ―  [simone.santoni.1@city.ac.uk](simone.santoni.1@city.ac.uk)
-+   Office hour: every Thursday from 17:30 to 18:30 (students are required to book a slot and share their questions via email in advance).
-+   Teaching assistant: Dr. Feng Zhou ―  [Feng.Zhou@city.ac.uk](Feng.Zhou@city.ac.uk)
-
-# Module Overview
+## Module Overview
 
 In the digital era, we are bombarded by humongous streams of
 information. Sometimes, these 'inputs' are not interesting enough to
-breach the defensive barriers that protect our attention ― hence, we
-simply decide to pass over. Other times, what we are exposed to seems
-valuable but we do not see any neat, meaningful pattern in it (that's
+breach the defensive barriers that protect our attention — hence, we
+simply decide to pass over. Other times, what we are exposed seems
+valuable, but we do not see any neat, meaningful pattern in it (that's
 the bottom line as it comes to crunch massive datasets!!). According to
 the popular idiom *"one picture is worth a thousand words"*, all what
-messengers and audiences need to 'click' is ― often-times ― just a
+messengers and audiences need to 'click' is — often-times — just a
 simple, effective visualization.
 
 This module is a journey into the art and science of creating memorable
 charts, which grab the attention of the audience and successfully convey
 insights and narratives. Pleasant journeys require good companions:
-'infographic' ― i.e., the field that investigates the representation of
-information, data, and knowledge ― will offer the theoretical platform
+'infographic' — i.e., the field that investigates the representation of
+information, data, and knowledge — will offer the theoretical platform
 for the module; Python will make things happen (at least on our screen).
 Consistently with the teaching philosophy of the module leader, each
 individual lecture integrates 'theory' and 'practice'.
 
-# Materials & Readings
+## Materials & Readings
 
-Mandatory materials/readings will be circulated via Moodle in advance
-(every Friday – i.e., one week before the class). For this module you are not required to purchase any expensive
-book, whereas it is essential you carefully go through:
+For SMM635, you aren't required to purchase any book, whereas it is essential 
+you carefully go through:
 
--   lecture notes (to be uploaded onto
-    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635) weekly; they include slideshows + videos);
--   case studies (to be uploaded onto
-    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/caseStudies/)
-    weekly);
--   Python scripts/Jupyter notebooks (to be uploaded onto
-    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/tutorials/)
-    or `week*` directories weekly);
--   journal articles (to be uploaded onto
-    Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/references/)
-    weekly).
+- lecture notes, available under the set of folders [~/data-viz-smm635/week](`~/data-viz-smm635/week*`)
+- case studies, to be uploaded onto
+  Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/caseStudies/)
+  weekly);
+- Python scripts/Jupyter notebooks (to be uploaded onto
+  Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/tutorials/)
+  or `week*` directories weekly);
+- journal articles (to be uploaded onto
+  Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/references/)
+  weekly).
 
-Discretionary readings/materials students may want to reference to are:
+__Discretionary readings/materials__ students may want to reference to are:
 
--   [Knowledge is
-    Beautiful](https://informationisbeautiful.net/2014/knowledge-is-beautiful/)
+- [Knowledge is
+  Beautiful](https://informationisbeautiful.net/2014/knowledge-is-beautiful/)
+- [The Functional
+  Art](http://www.thefunctionalart.com/p/about-book.html)
+- [The Information Capital](http://theinformationcapital.com/)
+- [The Visual Display of Quantitative
+  Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_3?ie=UTF8&qid=1537986137&sr=8-3&keywords=edward+tufte).
 
--   [The Functional
-    Art](http://www.thefunctionalart.com/p/about-book.html)
-
--   [The Information Capital](http://theinformationcapital.com/)
-
--   [The Visual Display of Quantitative
-    Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_3?ie=UTF8&qid=1537986137&sr=8-3&keywords=edward+tufte).
-
-# Learning Objectives
+## Learning Objectives
 
 At the end of the module, students should be able to:
 
--   generate and evaluate visual forms for appropriateness, context, and
-    meaning;
+- generate and evaluate visual forms for appropriateness, context, and
+  meaning;
 
--   design and execute statical charts with a particular emphasis on
-    massive datasets;
+- design and execute statical charts with a particular emphasis on
+  massive datasets;
 
--   design and execute complex visualizations involving timeliness and
-    geospatial attributes;
+- design and execute complex visualizations involving timeliness and
+  geospatial attributes;
 
--   design and execute interactive visualizations;
+- design and execute interactive visualizations;
 
--   leverage the visualization capabilities of the Python libraries
-    [Matplotlib](https://matplotlib.org/) and
-    [Bokeh](https://bokeh.pydata.org/).
+- leverage the visualization capabilities of the Python libraries
+  [Matplotlib](https://matplotlib.org/) and
+  [Bokeh](https://bokeh.pydata.org/).
 
-# Assessment
+## Assessment
 
 As per the module specification, students will be assessed on the basis
 of coursework submissions, which all are the outcome of group-level
@@ -114,7 +94,7 @@ originality/creativity of the proposed answer or solution; iv)
 organization an clarity of submitted materials. All criteria carry-out
 equal weight in terms of mark.
 
-## Mid-term project
+### Mid-term project
 
 For the **MTP**, students are required to solve a complex
 visualization problem. The details of the MTP will be available by week 3, when the
@@ -125,7 +105,7 @@ mark. The deadline for the project is November 11 (week 6). Selected groups will
 their work to fellow students in week 6. Invited groups could also receive a
 maximum of 3 bonus points on the basis of the quality of their presentations.
 
-## Final course project
+### Final course project
 
 With the **FCP** , groups
 make their hands 'dirty' as they help a real-world client to face some
@@ -137,7 +117,7 @@ evaluated on a rolling-based window and should be submitted by mid December
 ## Case studies
 
 Case studies provide students with the opportunity to learn how to integrate
-the 'business' and the 'data viz' perspectives in order to  deal
+the 'business' and the 'data viz' perspectives in order to deal
 effectively with real-world problems. In terms of process, groups of students
 will receive i) a detailed description of a business issue, and ii) relevant
 data; then, they will be working for one week to produce their own solution.
@@ -158,46 +138,46 @@ assigned.
 
 # Schedule of the Module
 
-| Week | Topic                                                                                             |
-|:----:|:--------------------------------------------------------------------------------------------------|
-|  1   | Introduction to the SMM635                                                                        |
-|      | Laboratory session on Python for data viz (Matplotlib)                                            |
-|  2   | Elements of infographic                                                                           |
-|      | - taste, aesthetics, and perceptions                                                              |
-|      | - visual forms                                                                                    |
-|      | - colors                                                                                          |
-|      | - exemplars of visualization                                                                      |
-|      | Laboratory session on Python for data viz (Matplotlib)                                            |
-|  3   | Exploratory statistical charts                                                                    |
-|      | - frequencies                                                                                     |
-|      | - univariate distributions                                                                        |
-|      | - bivariate distributions                                                                         |
-|      | - 3D distributions                                                                                |
-|      | Laboratory session on exploratory statistical charts (Matplotlib)                                 |
-|      | Mid-term project release                                                                          |
-|  4   | Time-dependent data                                                                               |
-|      | - timelines                                                                                       |
-|      | - sequences of events                                                                             |
-|      | - narrative                                                                                       |
-|      | Laboratory session on time-dependent data (Matplotlib)                                            |
-|  5   | Visualizing statical estimates and fits                                                           |
-|      | - uncertainty in estimates                                                                        |
-|      | - plotting causal effects estimated via regression                                                |
-|      | Laboratory session on statistical estimates and fits                                              |
-|  6   | Mid-term project ― students' presentations                                                        |
-|      | Laboratory session on visualizing statistical estimates (Matplotlib)                              |
-|  7   | Geospatial maps                                                                                   |
-|      | Laboratory sessions on geospatial maps (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
-|      | Launching the final-course project                                                                |
-|  8   | Case study # 1                                                                                    |
-|  9   | Interactive visualizations for the web                                                            |
-|      | Laboratory session on interactive visualizations (Bokeh)                                          |
-|  10  | Case study # 2                                                                                    |
+| Week  | Topic                                                                                             |
+| :---: | :------------------------------------------------------------------------------------------------ |
+|   1   | Introduction to the SMM635                                                                        |
+|       | Laboratory session on Python for data viz (Matplotlib)                                            |
+|   2   | Elements of infographic                                                                           |
+|       | - taste, aesthetics, and perceptions                                                              |
+|       | - visual forms                                                                                    |
+|       | - colors                                                                                          |
+|       | - exemplars of visualization                                                                      |
+|       | Laboratory session on Python for data viz (Matplotlib)                                            |
+|   3   | Exploratory statistical charts                                                                    |
+|       | - frequencies                                                                                     |
+|       | - univariate distributions                                                                        |
+|       | - bivariate distributions                                                                         |
+|       | - 3D distributions                                                                                |
+|       | Laboratory session on exploratory statistical charts (Matplotlib)                                 |
+|       | Mid-term project release                                                                          |
+|   4   | Time-dependent data                                                                               |
+|       | - timelines                                                                                       |
+|       | - sequences of events                                                                             |
+|       | - narrative                                                                                       |
+|       | Laboratory session on time-dependent data (Matplotlib)                                            |
+|   5   | Visualizing statical estimates and fits                                                           |
+|       | - uncertainty in estimates                                                                        |
+|       | - plotting causal effects estimated via regression                                                |
+|       | Laboratory session on statistical estimates and fits                                              |
+|   6   | Mid-term project ― students' presentations                                                        |
+|       | Laboratory session on visualizing statistical estimates (Matplotlib)                              |
+|   7   | Geospatial maps                                                                                   |
+|       | Laboratory sessions on geospatial maps (Fiona + Pyshp + Rasterio + Pyproj + Shapeley + Geopandas) |
+|       | Launching the final-course project                                                                |
+|   8   | Case study # 1                                                                                    |
+|   9   | Interactive visualizations for the web                                                            |
+|       | Laboratory session on interactive visualizations (Bokeh)                                          |
+|  10   | Case study # 2                                                                                    |
 
 
 # Guest speakers
 
-Throughout all the various weeks of the Term, SMM635 will host two types of
+Throughout all the various weeks of the Term, SMM635 willi host two types of
 guest speakers: ambassadors – former students of the BA program – and
 practitioners from several industries.
 
