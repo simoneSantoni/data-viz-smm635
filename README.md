@@ -4,15 +4,15 @@
 
 - [Data Visualization, SMM635 ― README](#data-visualization-smm635--readme)
   - [Instructor](#instructor)
-  - [Module Overview](#module-overview)
-  - [Materials & Readings](#materials--readings)
-  - [Learning Objectives](#learning-objectives)
+  - [Module overview](#module-overview)
+  - [Materials & readings](#materials--readings)
+  - [Learning objectives](#learning-objectives)
   - [Assessment](#assessment)
     - [Mid-term project](#mid-term-project)
     - [Final course project](#final-course-project)
   - [Case studies](#case-studies)
   - [Discretionary coursework](#discretionary-coursework)
-  - [Schedule of the Module](#schedule-of-the-module)
+  - [Schedule of the module](#schedule-of-the-module)
   - [Guest speakers](#guest-speakers)
   - [Prerequisites](#prerequisites)
   - [Software requirements](#software-requirements)
@@ -26,7 +26,7 @@
   book a slot and share their questions via email in advance).
 - Teaching assistant: Dr. Feng Zhou — [Feng.Zhou@city.ac.uk](Feng.Zhou@city.ac.uk)
 
-## Module Overview
+## Module overview
 
 In the digital era, we are bombarded by humongous streams of
 information. Sometimes, these 'inputs' are not interesting enough to
@@ -47,7 +47,7 @@ for the module; Python will make things happen (at least on our screen).
 Consistently with the teaching philosophy of the module leader, each
 individual lecture integrates 'theory' and 'practice'.
 
-## Materials & Readings
+## Materials & readings
 
 For SMM635, you aren't required to purchase any book, whereas it is key 
 you carefully consider the following set of __mandatory materials__:
@@ -80,7 +80,7 @@ __Discretionary readings/materials__ include and aren't limited to:
 - ['r/DataIsBeautiful'](https://www.reddit.com/r/dataisbeautiful/), a source 
   of inspiration and a virtual _agora_ for millions of data viz enthusiasts
 
-## Learning Objectives
+## Learning objectives
 
 At the end of the module, students should be able to:
 
@@ -158,7 +158,7 @@ assigned.
 To clarify your expectations about PSs, please consider the [assignments
 administered to the previous BA cohorts](https://github.com/simoneSantoni/data-viz-smm635/blob/c3eb44673454d975a2a5c92db514daf5fb5ac5b4/pastAssignments).
 
-## Schedule of the Module
+## Schedule of the module
 
 | Week  | Topic                                                                                             |
 | :---: | :------------------------------------------------------------------------------------------------ |
