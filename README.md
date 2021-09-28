@@ -1,6 +1,22 @@
 # Data Visualization, SMM635 ― README
 
 
+- [Data Visualization, SMM635 ― README](#data-visualization-smm635--readme)
+  - [Instructor](#instructor)
+  - [Module Overview](#module-overview)
+  - [Materials & Readings](#materials--readings)
+  - [Learning Objectives](#learning-objectives)
+  - [Assessment](#assessment)
+    - [Mid-term project](#mid-term-project)
+    - [Final course project](#final-course-project)
+  - [Case studies](#case-studies)
+  - [Discretionary coursework](#discretionary-coursework)
+- [Schedule of the Module](#schedule-of-the-module)
+- [Guest speakers](#guest-speakers)
+- [Prerequisites](#prerequisites)
+- [Software requirements](#software-requirements)
+- [Version history](#version-history)
+
 ## Instructor
 
 - Dr. Simone Santoni — ✉️ [simone.santoni.1@city.ac.uk](simone.santoni.1@city.ac.uk), 
@@ -32,78 +48,80 @@ individual lecture integrates 'theory' and 'practice'.
 
 ## Materials & Readings
 
-For SMM635, you aren't required to purchase any book, whereas it is essential 
-you carefully go through:
+For SMM635, you aren't required to purchase any book, whereas it is key 
+you carefully consider the following set of __mandatory materials__:
 
-- lecture notes, available under the set of folders [~/data-viz-smm635/week](`~/data-viz-smm635/week*`)
-- case studies, to be uploaded onto
-  Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/caseStudies/)
-  weekly);
-- Python scripts/Jupyter notebooks (to be uploaded onto
-  Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/tutorials/)
-  or `week*` directories weekly);
-- journal articles (to be uploaded onto
-  Moodle/[Github](https://github.com/simoneSantoni/data-viz-smm635/references/)
-  weekly).
+- weekly [lecture notes](https://github.com/simoneSantoni/data-viz-smm635/blob/58f3593a033ac65142b512cdae15d337e1476a5f/lectureNotes)
+- weekly [video-recordings](https://github.com/simoneSantoni/data-viz-smm635/blob/3e0d27f171147becdf9d3c5ba88fa2f1cf20536a/caseStudies) 
+  attached to the lecture notes, available via the MS Office app [Streams](https://www.microsoft.com/en-gb/microsoft-365/microsoft-stream)
+  and accessible to Bayes MSc students only
+- [case studies](https://github.com/simoneSantoni/data-viz-smm635/blob/3e0d27f171147becdf9d3c5ba88fa2f1cf20536a/caseStudies)
+- ad hoc [tutorials](https://github.com/simoneSantoni/data-viz-smm635/blob/0b3db35659eb8d07791e8514c5ba285036f2c7fa/tutorials)
+  dealing with foundational aspects of data visualizations and aiming to speed
+  up students' learning
+- selected [journal articles](https://github.com/simoneSantoni/data-viz-smm635/blob/7d68179a8d0daa7869b951933adc6f811e4efb98/references),
+  made available on a rolling basis to best fit the interests and
+  needs of the students
+- selected [datasets](https://github.com/simoneSantoni/data-viz-smm635/blob/8e80fd5e328262fe15d5a4e8debf42ff623f385f/data)
+  supporting the labs offered during the weekly 'live' sessions and tutorials.
+  Note that further datasets could be uploaded onto the repo in order
+  to create labs/tutorials that best fit the interests and needs of the 
+  students
 
-__Discretionary readings/materials__ students may want to reference to are:
+__Discretionary readings/materials__ include and aren't limited to:
 
-- [Knowledge is
-  Beautiful](https://informationisbeautiful.net/2014/knowledge-is-beautiful/)
-- [The Functional
-  Art](http://www.thefunctionalart.com/p/about-book.html)
-- [The Information Capital](http://theinformationcapital.com/)
-- [The Visual Display of Quantitative
-  Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_3?ie=UTF8&qid=1537986137&sr=8-3&keywords=edward+tufte).
+- [Knowledge is Beautiful](https://informationisbeautiful.net/2014/knowledge-is-beautiful/)
+- [The Functional Art](http://www.thefunctionalart.com/p/about-book.html)
+- [The Information Capital](https://www.atlasoftheinvisible.com/also-by-the-authors/theinfocapital)
+- [The Visual Display of Quantitative Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_3?ie=UTF8&qid=1537986137&sr=8-3&keywords=edward+tufte)
+- miscellaneous materials reported in the [website of Ed Tufte](https://www.edwardtufte.com/tufte/)
+- miscallaneous materials reported in the [website of the UW Interactive Data Lab](http://idl.cs.washington.edu)
 
 ## Learning Objectives
 
 At the end of the module, students should be able to:
 
 - generate and evaluate visual forms for appropriateness, context, and
-  meaning;
-
-- design and execute statical charts with a particular emphasis on
-  massive datasets;
-
+  meaning
+- design and execute statistical charts with a particular emphasis on
+  massive datasets
 - design and execute complex visualizations involving timeliness and
-  geospatial attributes;
-
-- design and execute interactive visualizations;
-
-- leverage the visualization capabilities of the Python libraries
-  [Matplotlib](https://matplotlib.org/) and
-  [Bokeh](https://bokeh.pydata.org/).
+  geospatial attributes
+- design and execute interactive visualizations
+- leverage the visualization capabilities of best in class such as Python 
+  libraries [Matplotlib](https://matplotlib.org/) and [Bokeh](https://bokeh.pydata.org/)
 
 ## Assessment
 
 As per the module specification, students will be assessed on the basis
-of coursework submissions, which all are the outcome of group-level
-efforts (yes, you understand correctly, for this module there is no
-final examination and you are not supposed to deliver any assignment on
-your own). Specifically, there are three pieces of coursework, namely:
+of coursework submissions (yes, you understand correctly, for this module there 
+is no final examination). Specifically, there are two pieces of coursework, 
+namely:
 
-+   a 'mid-term project' (MTP)
-+   a 'final course project' (FCP)
-+   two case studies (CS)
+- a 'mid-term project' (MTP)
+- a 'final course project' (FCP)
 
-All types of assessment will be evaluated along four criteria: i)
+__Both pieces of coursework__ will be evaluated along four criteria: i)
 appropriate use of notions and frameworks discussed in class; ii)
 effectiveness of the proposed answer or solution; iii)
 originality/creativity of the proposed answer or solution; iv)
-organization an clarity of submitted materials. All criteria carry-out
+organization and clarity of submitted materials. All criteria carry-out
 equal weight in terms of mark.
 
 ### Mid-term project
 
-For the **MTP**, students are required to solve a complex
-visualization problem. The details of the MTP will be available by week 3, when the
-project will be released. Submissions will be assessed on a
-0 - 100% scale. The Groups who fail MTP can resubmit a revised version
-of the project; if the revision is sufficient, students receive a 50%
-mark. The deadline for the project is November 11 (week 6). Selected groups will be invited to present the outcome of
-their work to fellow students in week 6. Invited groups could also receive a
-maximum of 3 bonus points on the basis of the quality of their presentations.
+For the MTP, students will work in __groups__ to solve a complex visualization
+problem. The details of the MTP will be available on October 20, when the
+project will be released. Submissions will be assessed on a 0 - 100% scale. The
+Groups who fail MTP can resubmit a revised version of the project; if the
+revision is sufficient, students receive a 50% mark. The deadline for the
+project is November 15. Few groups (e.g., three) will be invited to present the
+outcome of their work to fellow students in week 6.  Invited groups could also
+receive a maximum of 3 bonus points on the basis of the quality of their
+presentations.
+
+To clarify your expectations about the MTP, please consider the [assignments
+administered to the previous cohorts of BA]().
 
 ### Final course project
 
