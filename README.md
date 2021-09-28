@@ -204,11 +204,11 @@ program — and practitioners.
 
 ## Prerequisites
 
-The SMM692 ― Python Pre-Course module defines the knowledge students
+- The SMM692 ― Python Pre-Course module defines the knowledge students
 should possess in order to proficiently attend to SMM635 ― Data
 Visualization.
-
-A minimal understanding of 
+- Basic knowledge of the Git versioning software as implemented in 
+  GitHub (see the official [GitHub Guides](https://guides.github.com))
 
 ## Software requirements
 
