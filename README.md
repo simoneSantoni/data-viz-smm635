@@ -49,7 +49,10 @@ individual lecture integrates 'theory' and 'practice'.
 
 ## Materials & readings
 
-For SMM635, you aren't required to purchase any book, whereas it is key 
+SMM635 sticks with a GitHub-based workflow. The only way to get access to 
+the latest version of lecture notes, code, and data is to use GitHub.
+
+For this module, you aren't required to purchase any book, whereas it is key 
 you carefully consider the following set of __mandatory materials__:
 
 - weekly [lecture notes](https://github.com/simoneSantoni/data-viz-smm635/blob/58f3593a033ac65142b512cdae15d337e1476a5f/lectureNotes)
