@@ -31,10 +31,10 @@
 In the digital era, we are bombarded by humongous streams of
 information. Sometimes, these 'inputs' are not interesting enough to
 breach the defensive barriers that protect our attention — hence, we
-simply decide to pass over. Other times, what we are exposed seems
+simply decide to pass over. Other times, what we are exposed to seems
 valuable, but we do not see any neat, meaningful pattern in it (that's
 the bottom line as it comes to crunch massive datasets!!). According to
-the popular idiom *"one picture is worth a thousand words"*, all what
+the popular idiom *"one picture is worth a thousand words"*, all that
 messengers and audiences need to 'click' is — often-times — just a
 simple, effective visualization.
 
@@ -76,7 +76,7 @@ __Discretionary readings/materials__ include and aren't limited to:
 - [The Information Capital](https://www.atlasoftheinvisible.com/also-by-the-authors/theinfocapital)
 - [The Visual Display of Quantitative Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_3?ie=UTF8&qid=1537986137&sr=8-3&keywords=edward+tufte)
 - miscellaneous materials reported in the [website of Ed Tufte](https://www.edwardtufte.com/tufte/)
-- miscallaneous materials reported in the [website of the UW Interactive Data Lab](http://idl.cs.washington.edu)
+- miscellaneous materials reported in the [website of the UW Interactive Data Lab](http://idl.cs.washington.edu)
 - ['r/DataIsBeautiful'](https://www.reddit.com/r/dataisbeautiful/), a source 
   of inspiration and a virtual _agora_ for millions of data viz enthusiasts
 
@@ -96,20 +96,23 @@ At the end of the module, students should be able to:
 
 ## Assessment
 
-As per the module specification, students will be assessed on the basis
-of coursework submissions (yes, you understand correctly, for this module there 
-is no final examination). Specifically, there are two pieces of coursework, 
-namely:
+As per the module specification, students will be assessed on the basis of
+coursework submissions (yes, you understand correctly, for this module there is
+no final examination). Specifically, there are two pieces of coursework, namely:
 
-- a 'mid-term project' (MTP)
-- a 'final course project' (FCP)
+- a __group-level__ 'mid-term project' (MTP)
+- an __individual-level__ 'final course project' (FCP)
 
-__Both pieces of coursework__ will be evaluated along four criteria: i)
+__Both pieces of coursework__ will be evaluated against four criteria: i)
 appropriate use of notions and frameworks discussed in class; ii)
 effectiveness of the proposed answer or solution; iii)
 originality/creativity of the proposed answer or solution; iv)
-organization and clarity of submitted materials. All criteria carry-out
+organization and clarity of submitted materials. All criteria carry out the
 equal weight in terms of marking.
+
+Here's the calculation of the Final Mark (FM):
+
+$FM = \frac{MTP + FCP}{2}$
 
 ### Mid-term project
 
@@ -145,13 +148,13 @@ will receive i) a detailed description of a business issue, and ii) relevant
 data. Then, they will be working for one week to produce their own solution.
 The views on the case will be discussed in class during an interactive session
 led by the lecturer. Students could be cold-called during the session and asked
-to share their solution.
+to share their solutions.
 
 ## Discretionary coursework
 
-__Problem sets (PS)__ will be launched weekly. Individual students may want to deal
-these problem sets and present their solution to the class. A maximum of three
-students per session will be selected on the basis of the novelty and
+__Problem sets (PS)__ will be launched weekly. Individual students may want to
+deal with these problem sets and present their solutions to the class. A maximum
+of three students per session will be selected on the basis of the novelty and
 effectiveness of the proposed solution. One bonus point (+1 FM) will be
 assigned.
 
@@ -159,6 +162,17 @@ To clarify your expectations about PSs, please consider the [assignments
 administered to the previous BA cohorts](https://github.com/simoneSantoni/data-viz-smm635/blob/c3eb44673454d975a2a5c92db514daf5fb5ac5b4/pastAssignments).
 
 ## Schedule of the module
+
+All throughout the various weeks, the module adopts a standardized structure:
+
+- Students go through the weekly video-recording on their own before the live
+  session
+- The live session has two components:
+  - In the first one, I recap the key notions, analytical frameworks, and tools
+    presented in the video-recording. Here, students will have the opportunity to 
+    raise their clarification questions
+  - The second component — that I call 'lab' — is applied in nature. Students 
+    will make their hands 'dirty' with data, code, and some tracebacks to debug ;-)
 
 | Week  | Topic                                                                                             |
 | :---: | :------------------------------------------------------------------------------------------------ |
@@ -204,21 +218,20 @@ program — and practitioners.
 
 ## Prerequisites
 
-- The SMM692 ― Python Pre-Course module defines the knowledge students
-should possess in order to proficiently attend to SMM635 ― Data
-Visualization.
-- Basic knowledge of the Git versioning software as implemented in 
-  GitHub (see the official [GitHub Guides](https://guides.github.com))
+- The SMM692 ― Python Pre-Course module defines the knowledge students should
+possess in order to proficiently attend SMM635 ― Data Visualization.  
+- Basic knowledge of the Git versioning software as implemented in GitHub (see the
+official [GitHub Guides](https://guides.github.com))
 
 ## Software requirements
 
-For this module you are supposed to run Python 3.7 or higher on your machine. Now,
-how to get Python work on your machine? There are several ways to do
+For this module, you are supposed to run Python 3.7 or higher on your machine. Now,
+how to get Python to work on your machine? There are several ways to do
 that. A fast, smooth alternative is to install
-[Anaconda](https://www.anaconda.com/what-is-anaconda/), an open source
+[Anaconda](https://www.anaconda.com/what-is-anaconda/), an open-source
 distribution of Python that includes: i) 250+ popular data science
 packages; ii) the [conda](https://conda.io/docs/index.html) package,
-which makes quick and easy to install, run, and upgrade complex data
+which makes it quick and easy to install, run, and upgrade complex data
 science and machine learning environments.
 
 Here is the workflow:
@@ -228,12 +241,12 @@ Here is the workflow:
 2. Select the installer the which suits your machine (32- or 64-bit)
    and operating system (Win, Mac OS, Linux). Mac users may want to
    download the graphical installer rather than the command-line
-   installer (students may feel less comfortable with)
+   installer (students may feel less comfortable with it)
 3. Retrieve the installer (perhaps in your download folder)
 4. Run the installer
-5. Log-out from your current session (it does not matter if you use
-   Win, Mac OS or Linux)
-6. Log-in into a new session
+5. Log out from your current session (it does not matter if you use
+   Win, Mac OS, or Linux)
+6. Log in into a new session
 7. Run 'Anaconda Navigator' — namely, a convenient place to launch the
    IPython shell or other user-interfaces to interact with IPython.
 
@@ -252,5 +265,5 @@ environment.
 
 ## Version history
 
-- Current version is 1.0
+- The current version is 1.0
 - Last change: Tue 28 Sep 17:38:52 BST 2021
