@@ -1,3 +1,4 @@
-# Past assignments – README
+# Past assignments — README
 
-This folder contains the description of the [MTP](https://github.com/simoneSantoni/data-viz-smm635/blob/master/pastAssignments/MTP.md) and [FCP](https://github.com/simoneSantoni/data-viz-smm635/blob/master/pastAssignments/FCP.md) administered to the 2019/20 cohort.
+This folder contains the description of the MTP, FCP, and PSs administered to 
+the 2019/20 and 2020/21 cohorts.

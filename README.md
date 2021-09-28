@@ -50,7 +50,8 @@ individual lecture integrates 'theory' and 'practice'.
 ## Materials & readings
 
 SMM635 sticks with a GitHub-based workflow. The only way to get access to 
-the latest version of lecture notes, code, and data is to use GitHub.
+the latest version of lecture notes, code, and data is to use this GitHub
+repo.
 
 For this module, you aren't required to purchase any book, whereas it is key 
 you carefully consider the following set of __mandatory materials__:
@@ -124,9 +125,9 @@ problem. The details of the MTP will be available on October 20, when the
 project will be released. Submissions will be assessed on a 0 - 100% scale. The
 Groups who fail MTP can resubmit a revised version of the project; if the
 revision is sufficient, students receive a 50% mark. The deadline for the
-project is November 15. Few groups (e.g., three) will be invited to present the
+project is November 15. Few groups (e.g., three groups) will be invited to present the
 outcome of their work to fellow students in week 6.  Invited groups could also
-receive a maximum of 3 bonus points on the basis of the quality of their
+receive a maximum of three (3) bonus points on the basis of the quality of their
 presentations.
 
 To clarify your expectations about the MTP, please consider the [assignments
@@ -228,7 +229,7 @@ official [GitHub Guides](https://guides.github.com))
 
 ## Software requirements
 
-For this module, you are supposed to run Python 3.7 or higher on your machine. Now,
+For this module, you're supposed to run Python 3.7 or higher on your machine. Now,
 how to get Python to work on your machine? There are several ways to do
 that. A fast, smooth alternative is to install
 [Anaconda](https://www.anaconda.com/what-is-anaconda/), an open-source
