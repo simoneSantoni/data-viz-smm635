@@ -1,5 +1,6 @@
 # Data Visualization, SMM635 ― README
 
+![](images/cover.jpg)
 
 - [Data Visualization, SMM635 ― README](#data-visualization-smm635--readme)
   - [Instructor](#instructor)
