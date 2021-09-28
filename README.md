@@ -169,10 +169,10 @@ All throughout the various weeks, the module adopts a standardized structure:
   session
 - The live session has two components:
   - In the first one, I recap the key notions, analytical frameworks, and tools
-    presented in the video-recording. Here, students will have the opportunity to 
+    presented in the video-recording. Here, students have the opportunity to 
     raise their clarification questions
   - The second component — that I call 'lab' — is applied in nature. Students 
-    will make their hands 'dirty' with data, code, and some tracebacks to debug ;-)
+    make their hands 'dirty' with data, code, and some tracebacks to debug ;-)
 
 | Week  | Topic                                                                                             |
 | :---: | :------------------------------------------------------------------------------------------------ |
