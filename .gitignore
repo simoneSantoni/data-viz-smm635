@@ -127,3 +127,9 @@ dmypy.json
 
 # Old stuff
 .archive/
+
+# JetBrains config
+.idea/
+
+# My stuff
+.mySlides
