@@ -139,7 +139,7 @@ With the FCP, students will work __individually__ to help a real-world client
 to face some data visualization challenges. Details about the client and the
 challenge will be available on November 17. Final course projects will be
 evaluated on a rolling basis and should be submitted by early January
-(e.g., January 7 — the course office will confirm the exact deadline shortly).
+(e.g., December 17 — the course office will confirm the exact deadline shortly).
 
 To clarify your expectations about the FCP, please consider the [assignments
 administered to the previous BA cohorts](https://github.com/simoneSantoni/data-viz-smm635/blob/c3eb44673454d975a2a5c92db514daf5fb5ac5b4/pastAssignments).
@@ -270,4 +270,4 @@ environment.
 ## Version history
 
 - The current version is 1.0
-- Last change: Tue 28 Sep 17:38:52 BST 2021
+- Last change: Wed 6 Oct 2021 15:30:57 BST 
