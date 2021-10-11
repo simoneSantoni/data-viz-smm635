@@ -11,9 +11,6 @@ This folder contains the following set of materials:
 - Video-recording:
   - [smm635_1, infographic and data viz](https://web.microsoftstream.com/video/58eada1b-bfac-4540-8a50-d50a55610bb1)
 - Lecture notes:
-  - [slideshow_1.ipynb](slideshow_1.ipynb) - notions and frameworks on 
-    infographics, and data viz
-  - [slideshow_2.ipynb](slideshow_2.ipynb) - Tufte's design principles
-    statistical charts
+  - [slideshow_1.ipynb](https://github.com/simoneSantoni/data-viz-smm635/blob/58f3593a033ac65142b512cdae15d337e1476a5f/lectureNotes/week2/slideshow_1.ipynb) - notions and frameworks on infographics, and data viz
 - Further materials concerning 'labs' and the problem set might be made 
   available during the Wed 13 lecture
