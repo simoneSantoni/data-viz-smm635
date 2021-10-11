@@ -17,6 +17,3 @@ This folder contains the following set of materials:
     statistical charts
 - Further materials concerning 'labs' and the problem set might be made 
   available during the Wed 13 lecture
-
-Further materials concerning 'labs' and the problem set will be made available
-during the Thursday 8 lecture.
