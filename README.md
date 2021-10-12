@@ -269,5 +269,5 @@ environment.
 
 ## Version history
 
-- The current version is 1.0
+- The current version is 1.1
 - Last change: Wed 6 Oct 2021 15:30:57 BST 
