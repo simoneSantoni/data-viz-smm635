@@ -6,7 +6,7 @@ In this second week of the module, we're going to:
 2. understand the building blocks the data visualization process
 3. use Matplotlib to operate a design chart
 
-This folder contains the following set of materials:
+Students are supposed to considr the following set of materials:
 
 - Video-recording:
   - [smm635_1, infographic and data viz](https://web.microsoftstream.com/video/58eada1b-bfac-4540-8a50-d50a55610bb1)
