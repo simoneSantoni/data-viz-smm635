@@ -10,11 +10,11 @@ Students — working in groups — are supposed:
 
 1. to familiarize with the [TikTok Trending
 Videos](https://www.kaggle.com/erikvdven/tiktok-trending-december-2020) dataset
-2. to use python to produce three statistical charts that complement an article
-   for the printed version of the New York Times on 'what makes tiktok' videos 
-   (super-)popular
+2. to use Python to analyze the above-mentioned dataset and produce three
+statistical charts that complement an article for the printed version of the New
+York Times on 'what makes TikTok' videos (super-)popular
 3. to produce a companion document that — in plain English — describes and
-   arguments the design choices behind the three statistical charts
+arguments the design choices behind the three statistical charts
 
 ## Deliverables
 
