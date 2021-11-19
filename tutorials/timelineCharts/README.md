@@ -9,4 +9,4 @@ forms such as:
     -  `_3.py` - unstacked area chart
     -  `_4.py` - stacked area chart
     -  `_5.py` - time series decomposition
-    -  `_6.py` - interrupted time series (under construction)
+    -  `_6.py` - interrupted time series
