@@ -3,14 +3,14 @@
 
 """
 --------------------------------------------------------------------------------
-    Time series decomposition
+    Time series decomposition, part I
 --------------------------------------------------------------------------------
 Author: Simone Santoni, simone.santoni.1@city.ac.uk;
         credits to https://github.com/selva86
 Dates: - created Thu Oct 24 11:06:17 UTC 2019
        - last change
-Notes: This script produces a histogram that shows the distribution of a
-       focal variable conditionally on one or multiple categorical variables
+Notes: This script uses Statsmodels for time series decomposition and visualization
+
 """
 
 
