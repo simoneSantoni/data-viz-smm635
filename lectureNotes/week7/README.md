@@ -1,6 +1,6 @@
 # Week 7 Materials
 
-In the fifth week of the module, we're going to:
+In the seventh week of the module, we're going to:
 
 - appreciating the building blocks of a geospatial visualizations
 - appreciating the challenges and opportunities of visualizing geospatial data
