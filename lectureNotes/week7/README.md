@@ -2,7 +2,7 @@
 
 In the seventh week of the module, we're going to:
 
-- appreciating the building blocks of a geospatial visualizations
+- appreciating the building blocks of geospatial visualizations
 - appreciating the challenges and opportunities of visualizing geospatial data
 
 Here are the relevant materials:
