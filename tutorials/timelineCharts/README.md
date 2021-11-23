@@ -8,5 +8,6 @@ forms such as:
     -  `_2.py` - lollipop chart
     -  `_3.py` - unstacked area chart
     -  `_4.py` - stacked area chart
-    -  `_5.py` - time series decomposition
-    -  `_6.py` - interrupted time series (under construction)
+    -  `_5.py` - time series decomposition, part I
+    -  `_6.py` - interrupted time series
+    -  `_7.ipynb` - time series decomposition, part II
