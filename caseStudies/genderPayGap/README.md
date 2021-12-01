@@ -33,12 +33,6 @@ Consider the following data tables available via [London Datastore](https://data
 
 Is there any evidence to introduce customized policies to cope with gender pay gap? If so, which industries/places customized policies should focus on?
 
-# Deliverables
-
-Create a slideshow to be used for a 10 minute presentation directed to policy makers working for the UK government. The presentation should include the recommendation(s) along with geospatial visualizations/analysis supporting the recommendation(s).
-
-Upload the slideshow via Moodle by November 25.
-
 # References
 
 [1] Auspurg, K., Hinz, T. and Sauer, C., 2017. Why should women get less? Evidence on the gender pay gap from multifactorial survey experiments. _American Sociological Review_, 82(1), pp.179-210.
