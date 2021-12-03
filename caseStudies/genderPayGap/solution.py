@@ -65,40 +65,11 @@ print(res.summary())
 df = pd.merge(
     df, pd.DataFrame(coords).T, left_index=True, right_index=True, how="inner"
 )
-# --+ and there we go
+# %% and there we go
+# slice data
+# df = df.loc[(df["Long"] < 25) & (df["Long"] > -25),]
 gdf = gp.GeoDataFrame(df, geometry=gp.points_from_xy(df.Long, df.Lat))
-# --+ check the coordinate reference systemm
+# set the coordinate reference systems
+gdf.set_crs("EPSG:3857", inplace=True)
+# check the coordinate reference systemm
 gdf.crs
-
-# %% visualization
-"""
-Contextily helper function
-==========================
-
-We define a small helper function that uses
-`contextily <https://github.com/darribas/contextily>`__ to add a map
-as background to an existing plot: 
-"""
-
-
-def add_basemap(ax, zoom):
-    xmin, xmax, ymin, ymax = ax.axis()
-    basemap, extent = cx.bounds2img(xmin, ymin, xmax, ymax, zoom=zoom)
-    ax.imshow(basemap, extent=extent, interpolation="bilinear")
-    # restore original x/y limits
-    ax.axis((xmin, xmax, ymin, ymax))
-
-
-# %%
-gdf_wm = gdf.set_crs(epsg=3857)
-
-# %%
-ax = gdf_wm.plot(color="red", figsize=(9, 9))
-cx.add_basemap(ax, zoom=10)
-
-# %%
-from contextily import Place
-madrid = Place("London")
-ax = madrid.plot()
-
-# %%
