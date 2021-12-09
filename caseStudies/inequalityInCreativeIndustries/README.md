@@ -42,9 +42,3 @@ The mounting conversation on inequality issues in Hollywood – along with some 
 # Data
 
 Address the question by drawing on the publicly available dataset included in this [Kaggle project](https://www.kaggle.com/fmejia21/demographics-of-academy-awards-oscars-winners).
-
-# Deliverables
-
-Create a slideshow to be used for a 10 minute presentation directed to movie directors. The presentation should include the recommendation(s) along with geospatial visualizations/analysis supporting the recommendation(s).
-
-Upload the slideshow via Moodle by November 25.
