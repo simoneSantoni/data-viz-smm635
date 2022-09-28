@@ -43,6 +43,29 @@
       \field{title}{The Functional Art: An Introduction to Information Graphics and Visualization}
       \field{year}{2012}
     \endentry
+    \entry{anscombe1973}{article}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labeltitlesource}{title}
+      \field{issue}{February}
+      \field{journaltitle}{American Statistician}
+      \field{title}{Graphs in Statistical Analysis}
+      \field{volume}{27}
+      \field{year}{1973}
+      \field{pages}{17\bibrangedash 21}
+      \range{pages}{5}
+    \endentry
+    \entry{tufte2001}{book}{}
+      \list{publisher}{1}{%
+        {Graphics Press LLC}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second edition}
+      \field{title}{The Visual Display of Quantitative Information}
+      \field{year}{2001}
+    \endentry
     \entry{ware2010}{book}{}
       \name{author}{1}{}{%
         {{hash=ddfcf636fe0f65b7e7300d5a22336e7c}{%

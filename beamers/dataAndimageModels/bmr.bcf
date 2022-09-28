@@ -2347,6 +2347,9 @@
     <bcf:citekey order="1">ware2010</bcf:citekey>
     <bcf:citekey order="2">ware2010</bcf:citekey>
     <bcf:citekey order="3">cairo2012</bcf:citekey>
+    <bcf:citekey order="4">tufte2001</bcf:citekey>
+    <bcf:citekey order="5">anscombe1973</bcf:citekey>
+    <bcf:citekey order="6">tufte2001</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
