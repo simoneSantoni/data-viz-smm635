@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{cairo2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5cd8c3100ea3a072b47d055f961109d8}{%
+           family={Cairo},
+           familyi={C\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {New Riders}%
+      }
+      \strng{namehash}{5cd8c3100ea3a072b47d055f961109d8}
+      \strng{fullhash}{5cd8c3100ea3a072b47d055f961109d8}
+      \strng{bibnamehash}{5cd8c3100ea3a072b47d055f961109d8}
+      \strng{authorbibnamehash}{5cd8c3100ea3a072b47d055f961109d8}
+      \strng{authornamehash}{5cd8c3100ea3a072b47d055f961109d8}
+      \strng{authorfullhash}{5cd8c3100ea3a072b47d055f961109d8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Functional Art: An Introduction to Information Graphics and Visualization}
+      \field{year}{2012}
+    \endentry
+    \entry{ware2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ddfcf636fe0f65b7e7300d5a22336e7c}{%
+           family={Ware},
+           familyi={W\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ddfcf636fe0f65b7e7300d5a22336e7c}
+      \strng{fullhash}{ddfcf636fe0f65b7e7300d5a22336e7c}
+      \strng{bibnamehash}{ddfcf636fe0f65b7e7300d5a22336e7c}
+      \strng{authorbibnamehash}{ddfcf636fe0f65b7e7300d5a22336e7c}
+      \strng{authornamehash}{ddfcf636fe0f65b7e7300d5a22336e7c}
+      \strng{authorfullhash}{ddfcf636fe0f65b7e7300d5a22336e7c}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Visual Thinking for Design}
+      \field{year}{2010}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
