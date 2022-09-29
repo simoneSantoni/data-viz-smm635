@@ -3,5 +3,5 @@
 \beamer@sectionintoc {2}{Assignment Discussion}{6}{0}{2}
 \beamer@sectionintoc {3}{Graphical Excellence}{7}{0}{3}
 \beamer@sectionintoc {4}{Graphical Integrity}{14}{0}{4}
-\beamer@sectionintoc {5}{Sources of Integrity and Sophistication}{17}{0}{5}
-\beamer@sectionintoc {6}{Session \#2 Wrap Up}{18}{0}{6}
+\beamer@sectionintoc {5}{Sources of Integrity and Sophistication}{24}{0}{5}
+\beamer@sectionintoc {6}{Session \#2 Wrap Up}{25}{0}{6}
