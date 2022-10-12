@@ -78,13 +78,13 @@
 \definecolor{tri_2}{rgb}{0.19215686274509805, 0.09803921568627451, 0.7686274509803922}
 
 % ========================= TOC  ==========================================
-%\AtBeginSubsection[]
-%{
-%	\begin{frame}
-%		       \frametitle{Outline}
-%		       \tableofcontents[currentsection,currentsubsection]
-%	\end{frame}
-%}
+\AtBeginSection[]
+{
+	\begin{frame}
+		       \frametitle{Outline}
+		       \tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
 
 % ========================= References ===================================
 \usepackage[style=numeric,backend=biber]{biblatex}
@@ -603,7 +603,7 @@ In SMM635, we focus on the following data types:
 \section{Session \#3 Wrap Up}
 
 \begin{frame}{}{}
-	\LARGE Time to wrap up!
+	\LARGE \centering Time to wrap up!
 \end{frame}
 
 % =========================== Bibliography =================================
