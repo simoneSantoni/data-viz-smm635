@@ -1,3 +1,10 @@
 {
-	"jupyter.jupyterServerType": "local"
+	"jupyter.jupyterServerType": "local",
+	"grammarly.selectors": [
+		{
+			"language": "latex",
+			"scheme": "file",
+			"pattern": "mtp/project_description.tex"
+		}
+	]
 }
