@@ -1,0 +1,5 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\beamer@sectionintoc {1}{Session \#3 Wrap Up}{3}{0}{1}
+\beamer@sectionintoc {2}{Exploratory Data Analysis Lab}{16}{0}{2}
+\beamer@sectionintoc {3}{Graphical Perception and Color}{20}{0}{3}
+\beamer@sectionintoc {4}{Session \#4 Wrap Up}{42}{0}{4}

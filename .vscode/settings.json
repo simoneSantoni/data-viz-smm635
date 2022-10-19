@@ -5,6 +5,11 @@
 			"language": "latex",
 			"scheme": "file",
 			"pattern": "mtp/project_description.tex"
+		},
+		{
+			"language": "latex",
+			"scheme": "file",
+			"pattern": "beamers/visualizationDesign/graphicalPerceptionAndColor/bmr.tex"
 		}
 	]
 }
