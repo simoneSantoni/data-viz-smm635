@@ -10,6 +10,11 @@
 			"language": "latex",
 			"scheme": "file",
 			"pattern": "beamers/visualizationDesign/graphicalPerceptionAndColor/bmr.tex"
+		},
+		{
+			"language": "latex",
+			"scheme": "file",
+			"pattern": "beamers/interactiveVisualization/bmr.tex"
 		}
 	]
 }
