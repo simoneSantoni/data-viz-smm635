@@ -1,0 +1,5 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\beamer@sectionintoc {1}{The History of Geospatial Data Visualization}{3}{0}{1}
+\beamer@sectionintoc {2}{Methodological Aspects}{5}{0}{2}
+\beamer@sectionintoc {3}{The Challenges of Geospatial Data Visualization}{11}{0}{3}
+\beamer@sectionintoc {4}{Python Modules for Geospatial Data Visualization}{19}{0}{4}
