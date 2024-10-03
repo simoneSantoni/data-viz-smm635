@@ -1,0 +1,23 @@
+name: smm635
+channels:
+  - conda-forge
+dependencies:
+  - pylsp-mypy
+  - pynvim
+  - pylint
+  - flake8
+  - anaconda
+  - pip
+  - jupyter
+  - jupyterlab
+  - r-base
+  - r-essentials
+  - r-irkernel
+  - rpy2
+  - radian
+  - r-tidyverse
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - seaborn
