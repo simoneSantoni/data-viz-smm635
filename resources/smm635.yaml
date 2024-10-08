@@ -13,7 +13,10 @@ dependencies:
   - r-base
   - r-essentials
   - r-irkernel
+  - r-languageserver
+  - r-rstudioapi
   - rpy2
+  - rstudio-desktop
   - radian
   - r-tidyverse
   - numpy

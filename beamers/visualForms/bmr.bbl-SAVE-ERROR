@@ -1,0 +1,105 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{clevelandVisualizingData1993}{book}{}
+      \name{author}{1}{}{%
+        {{hash=891ad1f1560d4ca4d59acb11065fd649}{%
+           family={Cleveland},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima S.},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Murray Hill, N.J. : [Summit, N.J}%
+      }
+      \list{publisher}{1}{%
+        {At\&T Bell Laboratories ; Published by Hobart Press}%
+      }
+      \strng{namehash}{891ad1f1560d4ca4d59acb11065fd649}
+      \strng{fullhash}{891ad1f1560d4ca4d59acb11065fd649}
+      \strng{bibnamehash}{891ad1f1560d4ca4d59acb11065fd649}
+      \strng{authorbibnamehash}{891ad1f1560d4ca4d59acb11065fd649}
+      \strng{authornamehash}{891ad1f1560d4ca4d59acb11065fd649}
+      \strng{authorfullhash}{891ad1f1560d4ca4d59acb11065fd649}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pagetotal}{360}
+      \field{title}{Visualizing Data}
+      \field{year}{1993}
+      \field{dateera}{ce}
+    \endentry
+    \entry{wickhamLayeredGrammarGraphics2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1d0f6977ce2d043e298a59a1cd75b7ef}{%
+           family={Wickham},
+           familyi={W\bibinitperiod},
+           given={Hadley},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{fullhash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{bibnamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authorbibnamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authornamehash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \strng{authorfullhash}{1d0f6977ce2d043e298a59a1cd75b7ef}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{A {{Layered Grammar}} of {{Graphics}}}
+      \field{volume}{19}
+      \field{year}{2010}
+      \field{pages}{3\bibrangedash 28}
+      \range{pages}{26}
+    \endentry
+    \entry{wilkinson2012grammar}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e476abccb4169caac943dea77ca36179}{%
+           family={Wilkinson},
+           familyi={W\bibinitperiod},
+           given={Leland},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e476abccb4169caac943dea77ca36179}
+      \strng{fullhash}{e476abccb4169caac943dea77ca36179}
+      \strng{bibnamehash}{e476abccb4169caac943dea77ca36179}
+      \strng{authorbibnamehash}{e476abccb4169caac943dea77ca36179}
+      \strng{authornamehash}{e476abccb4169caac943dea77ca36179}
+      \strng{authorfullhash}{e476abccb4169caac943dea77ca36179}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Grammar of Graphics}
+      \field{year}{2012}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
