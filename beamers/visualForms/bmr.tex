@@ -322,8 +322,98 @@
 
 \subsection{Univariate plots}
 
+
 \begin{frame}
-\frametitle{}
+	\frametitle{A Toy Dataset}
+	\framesubtitle{`Singer' -- singer's height and vocal extension data (N=235)}
+	\begin{table}
+		\begin{center}
+			\begin{tabular}[c]{c|l}
+				\multicolumn{1}{c|}{\textbf{Height}} &
+				\multicolumn{1}{c}{\textbf{Voice part}}          \\
+				\hline
+				64                                   & Soprano 1 \\
+				62                                   & Soprano 2 \\
+				65                                   & Alto 2    \\
+				67                                   & Alto 1    \\
+				72                                   & Tenor 1   \\
+				69                                   & Tenor 2   \\
+				75                                   & Basso 1   \\
+				74                                   & Basso 2   \\
+				...                                  & ...       \\
+			\end{tabular}
+		\end{center}
+	\end{table}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Quantile Plot}
+	\begin{columns}
+		\column{0.475\textwidth}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.95\textwidth]{figures/quantile_plot.png}
+			\end{center}
+		\end{figure}
+		\column{0.475\textwidth}
+		\begin{itemize}
+			\item Quantile plots are essential to visualize a distribution, i.e., the
+			      collection of positions in the data
+			\item The quantile $f$, $q(f)$, of a set of data is a value along the
+			      measurement scale of the data with the property that approximately a
+			      fraction of the data are less than of equl to $q(f)$
+			\item The property has to be approximate because there might not be a
+			      value with exactly a fraction / of the data less than or equal to it
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Quantile-Quantile Plot}
+	\begin{columns}
+		\column{0.475\textwidth}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.95\textwidth]{figures/quantile_quantile_plot.png}
+			\end{center}
+		\end{figure}
+		\column{0.475\textwidth}
+		\begin{itemize}
+			\item The quantile-quantile plot, or q-q plot
+			      \parencite{wilk1968probability}, is a powerful
+			      visualization method for comparing the distributions of two or more sets
+			      of univariate measurements
+			\item When distributions are compared, the goal is to understand how the
+			      distributions shift in going from one data set to the next
+			\item For the singers, the goal is to understand how the height
+			      distributions shift with voice part
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A QQ Plot Extension: The Pairwise QQ Plot}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.8\textwidth]{figures/pairwise_qq_plot.png}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Boxplot}
+	\begin{columns}
+		\column{0.475\textwidth}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.7\textwidth]{figures/boxplot.png}
+			\end{center}
+		\end{figure}
+		\column{0.475\textwidth}
+	\end{columns}
+\end{frame}
+
 
 \subsection{Bivariate plots}
 

@@ -28,7 +28,7 @@
            giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Murray Hill, N.J. : [Summit, N.J}%
+        {Murray Hill, N.J. : [Summit, N.JclevelandVisualizingData1993}%
       }
       \list{publisher}{1}{%
         {At\&T Bell Laboratories ; Published by Hobart Press}%
@@ -74,6 +74,40 @@
       \field{year}{2010}
       \field{pages}{3\bibrangedash 28}
       \range{pages}{26}
+    \endentry
+    \entry{wilk1968probability}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dc847f477ba7bc0ad25cfd624cca1f24}{%
+           family={Wilk},
+           familyi={W\bibinitperiod},
+           given={Martin\bibnamedelima B},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d47b342d4abff543f944b7eab175bdef}{%
+           family={Gnanadesikan},
+           familyi={G\bibinitperiod},
+           given={Ram},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{619f7b6cacf42c4145d26ce64556fc42}
+      \strng{fullhash}{619f7b6cacf42c4145d26ce64556fc42}
+      \strng{bibnamehash}{619f7b6cacf42c4145d26ce64556fc42}
+      \strng{authorbibnamehash}{619f7b6cacf42c4145d26ce64556fc42}
+      \strng{authornamehash}{619f7b6cacf42c4145d26ce64556fc42}
+      \strng{authorfullhash}{619f7b6cacf42c4145d26ce64556fc42}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{number}{1}
+      \field{title}{Probability plotting methods for the analysis of data}
+      \field{volume}{55}
+      \field{year}{1968}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
     \endentry
     \entry{wilkinson2012grammar}{book}{}
       \name{author}{1}{}{%
