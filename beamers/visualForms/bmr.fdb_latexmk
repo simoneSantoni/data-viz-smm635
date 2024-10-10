@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber bmr"] 1728466700.7233 "bmr.bcf" "bmr.bbl" "bmr" 1728469008.45768 0
+["biber bmr"] 1728466700.7233 "bmr.bcf" "bmr.bbl" "bmr" 1728553404.58615 0
   "bibliography.bib" 1728466644.79443 995 94424f0e0cef54b4ef53538d238ff5dd ""
-  "bmr.bcf" 1728469007.40574 108023 fb548b9487b3734977aed24c3149b9f2 "pdflatex"
+  "bmr.bcf" 1728553404.44611 108023 fb548b9487b3734977aed24c3149b9f2 "pdflatex"
   (generated)
   "bmr.bbl"
   "bmr.blg"
   (rewritten before read)
-["pdflatex"] 1728468981.72457 "bmr.tex" "bmr.pdf" "bmr" 1728469008.45891 0
+["pdflatex"] 1728553399.27536 "bmr.tex" "bmr.pdf" "bmr" 1728553404.5864 0
   "/etc/texmf/web2c/texmf.cnf" 1723729035.80555 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -364,17 +364,19 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723729057.35235 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723729123 8214101 bd5cc7e48d0c6498f2452da67a84f2b2 ""
-  "bmr.aux" 1728469007.38474 7170 a0ce72f637abeed3293eec5160d1e0e7 "pdflatex"
+  "bmr.aux" 1728553404.44111 8224 24385ca59d80b1caddf6a69f182be5dd "pdflatex"
   "bmr.bbl" 1728466701.39777 5144 8413919d1edd5f3f71b21466ae5a5010 "biber bmr"
-  "bmr.nav" 1728469007.41074 4144 1f5ae1b6df6bc20d138eeb1a1901dc00 "pdflatex"
-  "bmr.out" 1728469007.38974 1058 4547539d69b2ccec44bd3f0bc13803bf "pdflatex"
-  "bmr.run.xml" 1728469007.40974 2300 7df2f1e3b50e025e1c93fdf69e464563 "pdflatex"
-  "bmr.tex" 1728468979.95658 12352 98cedc92ad7acbd4565253f3f24cc3fd ""
-  "bmr.toc" 1728469007.41074 397 0edd41405b6eed18fd21dbdcb923c9f0 "pdflatex"
-  "bmr.vrb" 1728469000.7707 651 b2283397d222fa389b589be1d62f21ab "pdflatex"
+  "bmr.nav" 1728553404.44711 4989 a223b5859ac54e55d8d09c3f8b32b9ec "pdflatex"
+  "bmr.out" 1728553404.44211 907 88e8292c78f96e4bb05bd2bcff5fcb98 "pdflatex"
+  "bmr.run.xml" 1728553404.44711 2300 7df2f1e3b50e025e1c93fdf69e464563 "pdflatex"
+  "bmr.tex" 1728553391.98989 14962 9014426defb24a0dffaa533036f44e1f ""
+  "bmr.toc" 1728553404.44711 336 630ed286990c28e6afac5dcb244f0acf "pdflatex"
+  "bmr.vrb" 1728553402.37902 651 b2283397d222fa389b589be1d62f21ab "pdflatex"
   "figures/altair.png" 1728424698.67921 621985 8d08492c435d9ef67ebbaca4927ef782 ""
   "figures/boxplot.png" 1728467251.68331 27477 f3943723e04d8bc520582a6a33735986 ""
+  "figures/boxplot_explained.png" 1728513905.90211 45841 78a5a73eebaac235ed9e1ecdc2b24b3c ""
   "figures/cleveland.jpg" 1728424698.68321 203307 a1101639e843ad4fc090846ce0d78c67 ""
+  "figures/comparative_boxlot.png" 1728514293.12817 32253 ad6c21c3eb9b7a9c6d4b699d5b5f54af ""
   "figures/gadfly.png" 1728424698.68821 330971 60decc7ccc316f38fb2dfd7ad0b5e414 ""
   "figures/ggplot2.png" 1728424698.69321 283206 ab2cff652a68816069295f7d4e5d8ac7 ""
   "figures/ggplot2_gof.png" 1728424698.69421 49461 f0271e1612ae002bc73e24652c903723 ""
@@ -383,6 +385,15 @@
   "figures/plotnine.png" 1728424698.70021 204460 92641cc1ef0cda5a6b5df8abd9ff58bc ""
   "figures/quantile_plot.png" 1728462526.94701 37594 13edba808460b213156236eb64069c93 ""
   "figures/quantile_quantile_plot.png" 1728465780.33157 43339 59869616c079094e7e2e07216e9475e5 ""
+  "figures/scatterplot.png" 1728550827.26901 17764 1fa73e795671ff5ff1adb741ce968e92 ""
+  "figures/scatterplot_lm.png" 1728549422.21191 23192 497cb3e5ae4a8351f16f18def49ec0b2 ""
+  "figures/scatterplot_matrix.png" 1728551028.95202 101326 d497b344d032d94b8126d46b27d281e7 ""
+  "figures/scatterplot_qm.png" 1728549451.69692 23620 fee85a9013a055f4251dc70f44d0af8b ""
+  "figures/skewed_qplot.png" 1728548835.94489 29528 d4afcfad2d8d585914ec880ed5378ed6 ""
+  "figures/stereogram.png" 1728551426.59304 37879 7908c165a265962bb35cb62e8f4b6df3 ""
+  "figures/surfaceplot.png" 1728551399.61203 152979 07c2957d835d77f6523a5b8d22ccce63 ""
+  "figures/symmtric_qplot.png" 1728548823.46489 28912 c418472d1f4daf1abd677212b75e15eb ""
+  "figures/trivariate_scatterplot_matrix.png" 1728551205.56703 91386 2975bce0ea800ad9b2aec54c4547c3b6 ""
   "figures/zoo.png" 1728424698.71021 1537405 9c0cec9351faf9c17de68fcd25dab658 ""
   (generated)
   "bmr.aux"
