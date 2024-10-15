@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Graphical Excellence}{3}{0}{1}
+\beamer@sectionintoc {2}{Graphical Integrity}{11}{0}{2}
+\beamer@sectionintoc {3}{Design Principles}{24}{0}{3}
+\beamer@sectionintoc {4}{Chartjunks --- How Not To Design a Chart}{37}{0}{4}
+\beamer@sectionintoc {5}{Redesigning Statistical Charts}{47}{0}{5}
