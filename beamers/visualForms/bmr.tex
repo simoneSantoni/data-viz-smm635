@@ -402,12 +402,36 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Interpreting Quantile Plots}
+	\begin{columns}
+		\column{0.475\textwidth}
+		\textbf{A. A symmetric distribution}
+
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.95\textwidth]{figures/symmtric_qplot.png}
+			\end{center}
+		\end{figure}
+		\column{0.475\textwidth}
+		\textbf{B. A skewed distribution}
+
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.95\textwidth]{figures/skewed_qplot.png}
+			\end{center}
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}
 	\frametitle{The Boxplot}
 	\begin{columns}
 		\column{0.475\textwidth}
 		\begin{figure}
 			\begin{center}
 				\includegraphics[width=1.0\textwidth]{figures/boxplot.png}
+<<<<<<< HEAD
 			\end{center}
 		\end{figure}
 		\column{0.475\textwidth}
@@ -421,21 +445,106 @@
 		\begin{figure}
 			\begin{center}
 				\includegraphics[width=1.0\textwidth]{figures/boxplot.png}
+=======
+>>>>>>> 2814db7a1b7bb899242d5298103ce271ff242f7e
 			\end{center}
 		\end{figure}
 		\column{0.475\textwidth}
+		\begin{itemize}
+			\item One method for distilling the information on q-q plots is Tukey's box
+			      plot
+			\item Instead of comparing many quantiles, as on the q-q plot, a
+			      limited number of quantities are used to summarize each distribution, and
+			      these summaries are compared.
+		\end{itemize}
 	\end{columns}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Quantile Plot - Boxplot Relationship}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/boxplot_explained.png}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A Common Application of Boxplots: Comparing Distributions}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/comparative_boxlot.png}
+		\end{center}
+	\end{figure}
+\end{frame}
 
 \subsection{Bivariate plots}
+
+\begin{frame}
+	\frametitle{A Scatterplot}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/scatterplot.png}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A Scatterplot with a Linear Loess}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/scatterplot_lm.png}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A Scatterplot with a Quadratic Loess}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/scatterplot_qm.png}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A Scatterplot Matrix}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/scatterplot_matrix.png}
+		\end{center}
+	\end{figure}
+\end{frame}
 
 
 \subsection{Trivariate plots}
 
+\begin{frame}
+	\frametitle{Still a Bivariate Visual Form?}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/trivariate_scatterplot_matrix.png}
+		\end{center}
+	\end{figure}
+\end{frame}
 
-\subsection{Hypervariate plots}
+\begin{frame}
+	\frametitle{A Surface Plot}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/surfaceplot.png}
+		\end{center}
+	\end{figure}
+\end{frame}
 
+\begin{frame}
+	\frametitle{A Stereogram}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.5\textwidth]{figures/stereogram.png}
+		\end{center}
+	\end{figure}
+\end{frame}
 
 
 % ========================== Session 3 wrap up =============================
