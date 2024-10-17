@@ -72,6 +72,6 @@ kt_pivot <- kt |>
   select(PERSONID, LOGWAGE, MOTHERED, FATHERED) |>
   pivot_longer(cols = ends_with("ED"))
 
-ggplot(data = kt, mapping = aes(x = factor(value), y = LOGWAGE)) +
+ggplot(data = kt_pivot, mapping = aes(x = factor(value), y = LOGWAGE)) +
   geom_boxplot() +
-  facet_wrap(~name, ncol())
+  facet_wrap(~name, ncol = 2)
