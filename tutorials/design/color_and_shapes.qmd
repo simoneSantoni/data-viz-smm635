@@ -4,6 +4,11 @@ title: Choosing colors and shapes in ggplot2
 date: last-modified
 abstract-title: Synopsis
 abstract: This notebook illustrates how to change 
+format:
+  html:
+    fig-width: 6
+    fig-height: 4
+    code-fold: true
 ---
 
 ## Notebook setup
@@ -11,35 +16,29 @@ abstract: This notebook illustrates how to change
 ### Load libraries
 
 ```{r}
-
 library(ggplot2)
 library(readr)
-
 ```
 
-### Load data 
+### Load data
+
+The toy dataset we'll use in this notebook is `laptop_price.csv`. It contains information on the price of laptops, as well as the laptops' core featurs. The source is https://www.kaggle.com/datasets/muhammetvarl/laptop-price
 
 ```{r}
-
 df <- read_csv("/home/simone/githubRepos/data-viz-smm635/data/laptops/laptop_price.csv")
 df
 ```
 
 ## Colors
 
-In `ggplot2`, 
+In `ggplot2`, it is possible to alter a visual form's default color by passing an optional parameter to the geomtric object at hand. Let's consider a bar chart showing the distribution of laptops across different screen sizes. @fig-base illustrates a chart whose bars exhibit `ggplot2`'s default color.
 
 ```{r}
-
+#| label: fig-base
+#| fig-cap: "A bar chart with default colors"
 p <- ggplot(data = df, mapping = aes(factor(Inches)))
 p + geom_bar()
-
 ```
 
 ## Shapes
 
-```{r}
-
-
-
-```
