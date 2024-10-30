@@ -47,8 +47,8 @@ format:
     links-as-notes: true
     reference-location: document
   # ** HTML FORMAT **
-  #html:
-  #  code-fold: true
+  html:
+    code-fold: true
 ---
 
 ## MTP project scope
