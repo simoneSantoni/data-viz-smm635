@@ -1,0 +1,45 @@
+---
+author: Simone Santoni
+title: Choosing colors and shapes in ggplot2
+date: last-modified
+abstract-title: Synopsis
+abstract: This notebook illustrates how to change 
+---
+
+## Notebook setup
+
+### Load libraries
+
+```{r}
+
+library(ggplot2)
+library(readr)
+
+```
+
+### Load data 
+
+```{r}
+
+df <- read_csv("/home/simone/githubRepos/data-viz-smm635/data/laptops/laptop_price.csv")
+df
+```
+
+## Colors
+
+In `ggplot2`, 
+
+```{r}
+
+p <- ggplot(data = df, mapping = aes(factor(Inches)))
+p + geom_bar()
+
+```
+
+## Shapes
+
+```{r}
+
+
+
+```
