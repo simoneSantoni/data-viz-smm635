@@ -4,6 +4,9 @@ date: last-modified
 title: Text annotations
 abstract: This notebook shows how to add and manipulate companion text to the hard-core part of a chart, namely, data, aestehtics, and themes.
 abstract-title: Abstract
+format:
+  html:
+    code-fold: true
 ---
 
 ## Notebok setup
@@ -36,14 +39,20 @@ p + geom_point()
 
 ```{r}
 #| label: fig-themeipsum
-#| fig-cap: "Theme is "
+#| fig-cap: "Theme is 'theme_ipsum_ps()' from 'hrbrthemes'"
 theme_set(theme_ipsum_ps())
 p + geom_point() + theme_ipsum()
 ```
 
 ```{r}
 #| label: fig-withlabels
-#| fig-cap: "Theme is "
+#| fig-cap: "Now with proper text annotations"
 p + geom_point() + 
-  labs(x="Average rating", y="Number of votes", title="A scatter diagram", subtitle="Theme is theme_ipsum_ps()", caption="Fig. 1 -- That's cool!")
+  labs(
+    x="Average rating", 
+    y="Number of votes", 
+    title="A scatter diagram", 
+    subtitle="Theme is theme_ipsum_ps()", 
+    caption="Fig. 1 ― That's cool!"
+  )
 ```

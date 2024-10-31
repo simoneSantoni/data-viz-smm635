@@ -17,6 +17,7 @@ format:
 
 ```{r}
 library(ggplot2)
+library(dplyr)
 library(readr)
 ```
 
@@ -31,7 +32,9 @@ df
 
 ## Colors
 
-In `ggplot2`, it is possible to alter a visual form's default color by passing an optional parameter to the geomtric object at hand. Let's consider a bar chart showing the distribution of laptops across different screen sizes. @fig-base illustrates a chart whose bars exhibit `ggplot2`'s default color.
+### Visual forms' inner color, boarder color, and transparency
+
+In `ggplot2`, it is possible to alter a visual form's default color by passing an optional parameter to the geomtric object at hand. Let's consider a bar chart showing the distribution of laptops across different screen sizes. @fig-base illustrates a chart whose bars exhibit `ggplot2`'s default color. Populating the optional parameter `fill` would alter the chosen visual form's inner color ― see @fig-fill; the optional parameter `colour` affects the visual form's boarder color ― see @fig-fillandboard. It is also possible to regulate the transparency of the chosen color by acting on the optional `alpha` parameter ― see @fig-alpha. Note that the smaller is the scalar you pass to `alpha` the more transparent is the visual form ― see @fig-alphaagg.
 
 ```{r}
 #| label: fig-base
@@ -39,6 +42,85 @@ In `ggplot2`, it is possible to alter a visual form's default color by passing a
 p <- ggplot(data = df, mapping = aes(factor(Inches)))
 p + geom_bar()
 ```
+```{r}
+#| label: fig-fill
+#| fig-cap: "A bar chart with custom fill color"
+p <- ggplot(data = df, mapping = aes(factor(Inches)))
+p + geom_bar(fill = "magenta")
+```
+
+```{r}
+#| label: fig-fillandboard
+#| fig-cap: "A bar chart with custom fill and boarder color"
+p <- ggplot(data = df, mapping = aes(factor(Inches)))
+p + geom_bar(fill = "magenta", colour = "blue")
+```
+
+```{r}
+#| label: fig-alpha
+#| fig-cap: "A bar chart with adjusted color transparency"
+p <- ggplot(data = df, mapping = aes(factor(Inches)))
+p + geom_bar(fill = "green", alpha = 0.5)
+```
+```{r}
+#| label: fig-alphaagg
+#| fig-cap: "A bar chart with alpha = 0.1"
+p <- ggplot(data = df, mapping = aes(factor(Inches)))
+p + geom_bar(fill = "green", alpha = 0.1)
+```
+
+### Scales
+
+`ggplot2` comes with plenty of [color scales and palettes](https://ggplot2-book.org/scales-colour#brewer-scales) that can help discriminate visually various data groups. Let's suppose to expand on the visualization reported in @fig-boxplot, dealing with the distribution of laptop price across different screen size groups. Specifically, we want to add another dimension to @fig-boxplot to show how laptop prices change across screen and ram size groups. By default, `ggplot2` will use the `hue` color scale see ― @fig-boxplotdefault. To adopt a non-default color scale, the optional argument `scale_color_*` must be populated. In @fig-boxplotbrewer, I adopt a color scale for discrete data, namely [`brewer`](https://ggplot2-book.org/scales-colour#brewer-scales). *Warning*: always ensure to pair discrete (continuous) color scales with discrete (continuous) variables. Otherwise, `ggplot2` will return an error, e.g., ```Discrete values supplied to continuous scale```.
+
+```{r}
+#| label: fig-boxplot
+#| fig-cap: "Distribution of laptop prices by scree size group"
+p <- ggplot(data = df, mapping = aes(x = factor(Inches), y = Price_euros))
+p + geom_boxplot()
+```
+```{r}
+#| label: fig-boxplotdefault
+#| fig-cap: ""
+p <- ggplot(data = df, mapping = aes(x = factor(Inches), y = Price_euros))
+p + geom_boxplot(aes(colour = Ram))
+```
+
+```{r}
+#| label: fig-boxplotbrewer
+#| fig-cap: ""
+p <- ggplot(data = df, mapping = aes(x = factor(Inches), y = Price_euros))
+p + geom_boxplot(aes(colour = Ram)) + scale_color_brewer(palette = "Paired")
+```
 
 ## Shapes
+
+In data visualization, shapes can play a role similar to colors, that is, to represent a 'further' data dimension. For example, @fig-colors and @fig-shapes use color and shapes, respectively, to denote two different data series, regarding Apple and Lenovo laptops.
+
+```{r}
+#| label: fig-colors
+#| fig-cap: "Colors denote companie"
+cols <- c("Company", "Inches")
+apple_lenovo <- df |> filter(Company == "Apple" | Company == "Lenovo")
+ave <- apple_lenovo |> group_by(across(all_of(cols))) |> summarize(ave_price = mean(Price_euros))
+p <- ggplot(data = ave, mapping = aes(x = factor(Inches), y = ave_price, color = factor(Company)))
+p + geom_point()
+```
+```{r}
+#| label: fig-shapes
+#| fig-cap: "Shapes denote companies"
+p <- ggplot(data = ave, mapping = aes(x = factor(Inches), y = ave_price, shape = factor(Company)))
+p + geom_point()
+```
+
+At the same time, one may want to adopt a non-default shape across all data series. That would be the case of @fig-changingshapes, in which shape '5' ― an empty circle ― replaces `ggplot2`'s default shape. @fig-ggplot2shapes provides a summary of the shapes available in `ggplot2` and their underlying numeric codes.
+
+```{r}
+#| label: fig-changingshapes
+#| fig-cap: "A `geom_point()` with a non-default shape"
+p <- ggplot(data = ave, mapping = aes(x = factor(Inches), y = ave_price, color = factor(Company)))
+p + geom_point(shape = 5)
+```
+
+![Alternative shapes by numeric code](scale_shape-6.png){#fig-ggplot2shapes width=75%}
 
