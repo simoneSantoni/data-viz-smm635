@@ -1,0 +1,42 @@
+---
+title: "Visualizing Time-Series Data"
+author: "Simone Santoni"
+format:
+  html:
+    code-fold: true
+    colde-tools: true
+---
+
+
+# Notebook setup
+
+## Load (time-series) data visualization libraries
+
+Commong R libraries for time-series visualization include:
+
++ `ggplot2`
++ `dygraphs`
++ `ggplot2`'s extensions:
+  - `ichimoku`
+  - ``
+  - ``
+
+```{r}
+library(ggplot2)
+library(dygraphs)
+```
+
+## Load further libraries for time-series data
+
+We are also installing two libraries for fetching stock market data and manipulating time-series data
+
+```{r}
+library(tseries)
+library(quantmod)
+```
+
+# Handling time series data
+
+```{r}
+
+```
