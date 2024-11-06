@@ -69,19 +69,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="color_and_shapes_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="color_and_shapes_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="color_and_shapes_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="color_and_shapes_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="color_and_shapes_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="color_and_shapes_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#notebook-setup" id="toc-notebook-setup" class="nav-link active" data-scroll-target="#notebook-setup">Notebook setup</a>
+  <ul class="collapse">
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries">Load libraries</a></li>
+  <li><a href="#load-data" id="toc-load-data" class="nav-link" data-scroll-target="#load-data">Load data</a></li>
+  </ul></li>
+  <li><a href="#colors" id="toc-colors" class="nav-link" data-scroll-target="#colors">Colors</a>
+  <ul class="collapse">
+  <li><a href="#visual-forms-inner-color-boarder-color-and-transparency" id="toc-visual-forms-inner-color-boarder-color-and-transparency" class="nav-link" data-scroll-target="#visual-forms-inner-color-boarder-color-and-transparency">Visual forms’ inner color, boarder color, and transparency</a></li>
+  <li><a href="#scales" id="toc-scales" class="nav-link" data-scroll-target="#scales">Scales</a></li>
+  </ul></li>
+  <li><a href="#shapes" id="toc-shapes" class="nav-link" data-scroll-target="#shapes">Shapes</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="color_and_shapes.ipynb" download="color_and_shapes.ipynb"><i class="bi bi-journal-code"></i>Jupyter</a></li><li><a href="color_and_shapes.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="../../color_and_shapes.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Choosing colors and shapes in ggplot2</h1>
+<div class="quarto-title-block"><div><h1 class="title">Choosing colors and shapes in ggplot2</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -116,10 +137,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="notebook-setup" class="level2">
-<h2 class="anchored" data-anchor-id="notebook-setup">Notebook setup</h2>
-<section id="load-libraries" class="level3">
-<h3 class="anchored" data-anchor-id="load-libraries">Load libraries</h3>
+<section id="notebook-setup" class="level1">
+<h1>Notebook setup</h1>
+<section id="load-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -146,13 +167,13 @@ Attaching package: 'dplyr'</code></pre>
 </details>
 </div>
 </section>
-<section id="load-data" class="level3">
-<h3 class="anchored" data-anchor-id="load-data">Load data</h3>
-<p>The toy dataset we’ll use in this notebook is <code>laptop_price.csv</code>. It contains information on the price of laptops, as well as the laptops’ core featurs. The source is https://www.kaggle.com/datasets/muhammetvarl/laptop-price</p>
+<section id="load-data" class="level2">
+<h2 class="anchored" data-anchor-id="load-data">Load data</h2>
+<p>The toy dataset we’ll use in this notebook is <code>laptop_price.csv</code>. It contains information on the price of laptops, as well as the laptops’ core featurs. The source for the dataset is https://www.kaggle.com/datasets/muhammetvarl/laptop-price</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"/home/simone/githubRepos/data-viz-smm635/data/laptops/laptop_price.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"~/githubRepos/data-viz-smm635/data/laptops/laptop_price.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 1303 Columns: 13
@@ -188,11 +209,11 @@ dbl  (3): laptop_ID, Inches, Price_euros
 </div>
 </section>
 </section>
-<section id="colors" class="level2">
-<h2 class="anchored" data-anchor-id="colors">Colors</h2>
-<section id="visual-forms-inner-color-boarder-color-and-transparency" class="level3">
-<h3 class="anchored" data-anchor-id="visual-forms-inner-color-boarder-color-and-transparency">Visual forms’ inner color, boarder color, and transparency</h3>
-<p>In <code>ggplot2</code>, it is possible to alter a visual form’s default color by passing an optional parameter to the geomtric object at hand. Let’s consider a bar chart showing the distribution of laptops across different screen sizes. <a href="#fig-base" class="quarto-xref">Figure&nbsp;1</a> illustrates a chart whose bars exhibit <code>ggplot2</code>’s default color. Populating the optional parameter <code>fill</code> would alter the chosen visual form’s inner color ― see <a href="#fig-fill" class="quarto-xref">Figure&nbsp;2</a>; the optional parameter <code>colour</code> affects the visual form’s boarder color ― see <a href="#fig-fillandboard" class="quarto-xref">Figure&nbsp;3</a>. It is also possible to regulate the transparency of the chosen color by acting on the optional <code>alpha</code> parameter ― see <a href="#fig-alpha" class="quarto-xref">Figure&nbsp;4</a>. Note that the smaller is the scalar you pass to <code>alpha</code> the more transparent is the visual form ― see <a href="#fig-alphaagg" class="quarto-xref">Figure&nbsp;5</a>.</p>
+<section id="colors" class="level1">
+<h1>Colors</h1>
+<section id="visual-forms-inner-color-boarder-color-and-transparency" class="level2">
+<h2 class="anchored" data-anchor-id="visual-forms-inner-color-boarder-color-and-transparency">Visual forms’ inner color, boarder color, and transparency</h2>
+<p>In <code>ggplot2</code>, it is possible to alter a visual form’s default color by passing an optional parameter to the geomtric object at hand. Let’s consider a bar chart showing the distribution of laptops across different screen sizes. <a href="#fig-base" class="quarto-xref">Figure&nbsp;1</a> illustrates a chart whose bars exhibit <code>ggplot2</code>’s default color. Populating the optional parameter <code>fill</code> would alter the chosen visual form’s inner color – see <a href="#fig-fill" class="quarto-xref">Figure&nbsp;2</a>; the optional parameter <code>colour</code> affects the visual form’s boarder color – see <a href="#fig-fillandboard" class="quarto-xref">Figure&nbsp;3</a>. It is also possible to regulate the transparency of the chosen color by fixing the optional <code>alpha</code> parameter – see <a href="#fig-alpha" class="quarto-xref">Figure&nbsp;4</a>. Note that the smaller is the scalar value you pass to <code>alpha</code>, the more transparent is the visual form – see <a href="#fig-alphaagg" class="quarto-xref">Figure&nbsp;5</a>.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -203,7 +224,7 @@ dbl  (3): laptop_ID, Inches, Price_euros
 <div id="fig-base" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-base-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-base-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-base-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: A bar chart with default colors"><img src="color_and_shapes_files/figure-html/fig-base-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-base-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: A bar chart with default colors
@@ -222,7 +243,7 @@ Figure&nbsp;1: A bar chart with default colors
 <div id="fig-fill" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fill-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-fill-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-fill-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: A bar chart with custom fill color"><img src="color_and_shapes_files/figure-html/fig-fill-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fill-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: A bar chart with custom fill color
@@ -241,7 +262,7 @@ Figure&nbsp;2: A bar chart with custom fill color
 <div id="fig-fillandboard" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fillandboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-fillandboard-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-fillandboard-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: A bar chart with custom fill and boarder color"><img src="color_and_shapes_files/figure-html/fig-fillandboard-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fillandboard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: A bar chart with custom fill and boarder color
@@ -260,7 +281,7 @@ Figure&nbsp;3: A bar chart with custom fill and boarder color
 <div id="fig-alpha" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-alpha-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-alpha-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-alpha-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: A bar chart with adjusted color transparency"><img src="color_and_shapes_files/figure-html/fig-alpha-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alpha-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: A bar chart with adjusted color transparency
@@ -279,7 +300,7 @@ Figure&nbsp;4: A bar chart with adjusted color transparency
 <div id="fig-alphaagg" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-alphaagg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-alphaagg-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-alphaagg-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;5: A bar chart with alpha = 0.1"><img src="color_and_shapes_files/figure-html/fig-alphaagg-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alphaagg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;5: A bar chart with alpha = 0.1
@@ -289,8 +310,8 @@ Figure&nbsp;5: A bar chart with alpha = 0.1
 </div>
 </div>
 </section>
-<section id="scales" class="level3">
-<h3 class="anchored" data-anchor-id="scales">Scales</h3>
+<section id="scales" class="level2">
+<h2 class="anchored" data-anchor-id="scales">Scales</h2>
 <p><code>ggplot2</code> comes with plenty of <a href="https://ggplot2-book.org/scales-colour#brewer-scales">color scales and palettes</a> that can help discriminate visually various data groups. Let’s suppose to expand on the visualization reported in <a href="#fig-boxplot" class="quarto-xref">Figure&nbsp;6</a>, dealing with the distribution of laptop price across different screen size groups. Specifically, we want to add another dimension to <a href="#fig-boxplot" class="quarto-xref">Figure&nbsp;6</a> to show how laptop prices change across screen and ram size groups. By default, <code>ggplot2</code> will use the <code>hue</code> color scale see ― <a href="#fig-boxplotdefault" class="quarto-xref">Figure&nbsp;7</a>. To adopt a non-default color scale, the optional argument <code>scale_color_*</code> must be populated. In <a href="#fig-boxplotbrewer" class="quarto-xref">Figure&nbsp;8</a>, I adopt a color scale for discrete data, namely <a href="https://ggplot2-book.org/scales-colour#brewer-scales"><code>brewer</code></a>. <em>Warning</em>: always ensure to pair discrete (continuous) color scales with discrete (continuous) variables. Otherwise, <code>ggplot2</code> will return an error, e.g., <code>Discrete values supplied to continuous scale</code>.</p>
 <div class="cell">
 <details class="code-fold">
@@ -302,7 +323,7 @@ Figure&nbsp;5: A bar chart with alpha = 0.1
 <div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-boxplot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;6: Distribution of laptop prices by scree size group"><img src="color_and_shapes_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;6: Distribution of laptop prices by scree size group
@@ -318,10 +339,10 @@ Figure&nbsp;6: Distribution of laptop prices by scree size group
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">colour =</span> Ram))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="fig-boxplotdefault" class="quarto-float quarto-figure quarto-figure-center anchored" width="576">
+<div id="fig-boxplotdefault" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-boxplotdefault-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-boxplotdefault-1.png" id="fig-boxplotdefault" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-boxplotdefault-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;7: "><img src="color_and_shapes_files/figure-html/fig-boxplotdefault-1.png" id="fig-boxplotdefault" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-boxplotdefault-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 </figcaption>
@@ -336,10 +357,10 @@ Figure&nbsp;6: Distribution of laptop prices by scree size group
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">colour =</span> Ram)) <span class="sc">+</span> <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Paired"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="fig-boxplotbrewer" class="quarto-float quarto-figure quarto-figure-center anchored" width="576">
+<div id="fig-boxplotbrewer" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-boxplotbrewer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-boxplotbrewer-1.png" id="fig-boxplotbrewer" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-boxplotbrewer-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;8: "><img src="color_and_shapes_files/figure-html/fig-boxplotbrewer-1.png" id="fig-boxplotbrewer" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-boxplotbrewer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 </figcaption>
@@ -349,9 +370,9 @@ Figure&nbsp;6: Distribution of laptop prices by scree size group
 </div>
 </section>
 </section>
-<section id="shapes" class="level2">
-<h2 class="anchored" data-anchor-id="shapes">Shapes</h2>
-<p>In data visualization, shapes can play a role similar to colors, that is, to represent a ‘further’ data dimension. For example, <a href="#fig-colors" class="quarto-xref">Figure&nbsp;9</a> and <a href="#fig-shapes" class="quarto-xref">Figure&nbsp;10</a> use color and shapes, respectively, to denote two different data series, regarding Apple and Lenovo laptops.</p>
+<section id="shapes" class="level1">
+<h1>Shapes</h1>
+<p>In data visualization, shapes can play a role similar to colors, by representing further data dimensions. For example, <a href="#fig-colors" class="quarto-xref">Figure&nbsp;9</a> and <a href="#fig-shapes" class="quarto-xref">Figure&nbsp;10</a> use color and shapes, respectively, to denote two different data series regarding Apple and Lenovo laptops.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -372,7 +393,7 @@ Figure&nbsp;6: Distribution of laptop prices by scree size group
 <div id="fig-colors" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-colors-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-colors-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-colors-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;9: Colors denote companie"><img src="color_and_shapes_files/figure-html/fig-colors-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-colors-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;9: Colors denote companie
@@ -391,7 +412,7 @@ Figure&nbsp;9: Colors denote companie
 <div id="fig-shapes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-shapes-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-shapes-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;10: Shapes denote companies"><img src="color_and_shapes_files/figure-html/fig-shapes-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10: Shapes denote companies
@@ -400,7 +421,7 @@ Figure&nbsp;10: Shapes denote companies
 </div>
 </div>
 </div>
-<p>At the same time, one may want to adopt a non-default shape across all data series. That would be the case of <a href="#fig-changingshapes" class="quarto-xref">Figure&nbsp;11</a>, in which shape ‘5’ ― an empty circle ― replaces <code>ggplot2</code>’s default shape. <a href="#fig-ggplot2shapes" class="quarto-xref">Figure&nbsp;12</a> provides a summary of the shapes available in <code>ggplot2</code> and their underlying numeric codes.</p>
+<p>At the same time, one may want to adopt a non-default shape across all data series. That would be the case of <a href="#fig-changingshapes" class="quarto-xref">Figure&nbsp;11</a>, in which shape ‘5’ ― an empty circle ― replaces <code>ggplot2</code>’s default shape.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -411,7 +432,7 @@ Figure&nbsp;10: Shapes denote companies
 <div id="fig-changingshapes" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-changingshapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="color_and_shapes_files/figure-html/fig-changingshapes-1.png" class="img-fluid figure-img" width="576">
+<a href="color_and_shapes_files/figure-html/fig-changingshapes-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure&nbsp;11: A geom_point() with a non-default shape"><img src="color_and_shapes_files/figure-html/fig-changingshapes-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-changingshapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;11: A <code>geom_point()</code> with a non-default shape
@@ -420,16 +441,8 @@ Figure&nbsp;11: A <code>geom_point()</code> with a non-default shape
 </div>
 </div>
 </div>
-<div id="fig-ggplot2shapes" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-ggplot2shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="scale_shape-6.png" class="img-fluid figure-img" style="width:75.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ggplot2shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;12: Alternative shapes by numeric code
-</figcaption>
-</figure>
-</div>
+<!-- -->
+
 </section>
 
 </main>
@@ -523,6 +536,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -853,8 +917,209 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb23" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Simone Santoni</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Choosing colors and shapes in ggplot2</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="an">abstract-title:</span><span class="co"> Synopsis</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="an">abstract:</span><span class="co"> This notebook illustrates how to change</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="an">lightbox:</span><span class="co"> true</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: united</span></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a><span class="co">  ipynb: default</span></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="co">  docx: default</span></span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a><span class="co">    # engine</span></span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a><span class="co">    pdf-engine: pdflatex</span></span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a><span class="co">    # page layout</span></span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a><span class="co">    documentclass: article</span></span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a><span class="co">    papersize: letter</span></span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a><span class="co">    geometry:</span></span>
+<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a><span class="co">      - top=2.54cm</span></span>
+<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a><span class="co">      - right=2.54cm</span></span>
+<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a><span class="co">      - bottom=2.54cm</span></span>
+<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a><span class="co">      - left=2.54cm</span></span>
+<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a><span class="co">    # style</span></span>
+<span id="cb23-28"><a href="#cb23-28" aria-hidden="true" tabindex="-1"></a><span class="co">    linestretch: 1.1</span></span>
+<span id="cb23-29"><a href="#cb23-29" aria-hidden="true" tabindex="-1"></a><span class="co">    indent: true</span></span>
+<span id="cb23-30"><a href="#cb23-30" aria-hidden="true" tabindex="-1"></a><span class="co">    # sections</span></span>
+<span id="cb23-31"><a href="#cb23-31" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true</span></span>
+<span id="cb23-32"><a href="#cb23-32" aria-hidden="true" tabindex="-1"></a><span class="co">    number-depth: 3</span></span>
+<span id="cb23-33"><a href="#cb23-33" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: false</span></span>
+<span id="cb23-34"><a href="#cb23-34" aria-hidden="true" tabindex="-1"></a><span class="co">    # fonts</span></span>
+<span id="cb23-35"><a href="#cb23-35" aria-hidden="true" tabindex="-1"></a><span class="co">    fonts:</span></span>
+<span id="cb23-36"><a href="#cb23-36" aria-hidden="true" tabindex="-1"></a><span class="co">      fontenc: true</span></span>
+<span id="cb23-37"><a href="#cb23-37" aria-hidden="true" tabindex="-1"></a><span class="co">      fontsize: 11</span></span>
+<span id="cb23-38"><a href="#cb23-38" aria-hidden="true" tabindex="-1"></a><span class="co">      #mainfont:TeX Gyre Pagella</span></span>
+<span id="cb23-39"><a href="#cb23-39" aria-hidden="true" tabindex="-1"></a><span class="co">      #mainfontoptions:</span></span>
+<span id="cb23-40"><a href="#cb23-40" aria-hidden="true" tabindex="-1"></a><span class="co">      #  - Numbers=Lowercase</span></span>
+<span id="cb23-41"><a href="#cb23-41" aria-hidden="true" tabindex="-1"></a><span class="co">      #  - Numbers=Proportional</span></span>
+<span id="cb23-42"><a href="#cb23-42" aria-hidden="true" tabindex="-1"></a><span class="co">    # colors</span></span>
+<span id="cb23-43"><a href="#cb23-43" aria-hidden="true" tabindex="-1"></a><span class="co">    colors:</span></span>
+<span id="cb23-44"><a href="#cb23-44" aria-hidden="true" tabindex="-1"></a><span class="co">      linkcolor: blue</span></span>
+<span id="cb23-45"><a href="#cb23-45" aria-hidden="true" tabindex="-1"></a><span class="co">      filecolor: red</span></span>
+<span id="cb23-46"><a href="#cb23-46" aria-hidden="true" tabindex="-1"></a><span class="co">      citecolor: green</span></span>
+<span id="cb23-47"><a href="#cb23-47" aria-hidden="true" tabindex="-1"></a><span class="co">      urlcolor: magenta</span></span>
+<span id="cb23-48"><a href="#cb23-48" aria-hidden="true" tabindex="-1"></a><span class="co">      #colorlinks: true</span></span>
+<span id="cb23-49"><a href="#cb23-49" aria-hidden="true" tabindex="-1"></a><span class="co">    # captions</span></span>
+<span id="cb23-50"><a href="#cb23-50" aria-hidden="true" tabindex="-1"></a><span class="co">    fig-cap-location: bottom</span></span>
+<span id="cb23-51"><a href="#cb23-51" aria-hidden="true" tabindex="-1"></a><span class="co">    tbl-cap-location: top</span></span>
+<span id="cb23-52"><a href="#cb23-52" aria-hidden="true" tabindex="-1"></a><span class="co">    # footnotes</span></span>
+<span id="cb23-53"><a href="#cb23-53" aria-hidden="true" tabindex="-1"></a><span class="co">    links-as-notes: true</span></span>
+<span id="cb23-54"><a href="#cb23-54" aria-hidden="true" tabindex="-1"></a><span class="co">    reference-location: document</span></span>
+<span id="cb23-55"><a href="#cb23-55" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb23-56"><a href="#cb23-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-57"><a href="#cb23-57" aria-hidden="true" tabindex="-1"></a><span class="fu"># Notebook setup</span></span>
+<span id="cb23-58"><a href="#cb23-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-59"><a href="#cb23-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load libraries</span></span>
+<span id="cb23-60"><a href="#cb23-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-63"><a href="#cb23-63" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-64"><a href="#cb23-64" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb23-65"><a href="#cb23-65" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb23-66"><a href="#cb23-66" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb23-67"><a href="#cb23-67" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-68"><a href="#cb23-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-69"><a href="#cb23-69" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load data</span></span>
+<span id="cb23-70"><a href="#cb23-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-71"><a href="#cb23-71" aria-hidden="true" tabindex="-1"></a>The toy dataset we'll use in this notebook is <span class="in">`laptop_price.csv`</span>. It contains information on the price of laptops, as well as the laptops' core featurs. The source for the dataset is https://www.kaggle.com/datasets/muhammetvarl/laptop-price</span>
+<span id="cb23-72"><a href="#cb23-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-75"><a href="#cb23-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-76"><a href="#cb23-76" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"~/githubRepos/data-viz-smm635/data/laptops/laptop_price.csv"</span>)</span>
+<span id="cb23-77"><a href="#cb23-77" aria-hidden="true" tabindex="-1"></a>df</span>
+<span id="cb23-78"><a href="#cb23-78" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-79"><a href="#cb23-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-80"><a href="#cb23-80" aria-hidden="true" tabindex="-1"></a><span class="fu"># Colors</span></span>
+<span id="cb23-81"><a href="#cb23-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-82"><a href="#cb23-82" aria-hidden="true" tabindex="-1"></a><span class="fu">## Visual forms' inner color, boarder color, and transparency</span></span>
+<span id="cb23-83"><a href="#cb23-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-84"><a href="#cb23-84" aria-hidden="true" tabindex="-1"></a>In <span class="in">`ggplot2`</span>, it is possible to alter a visual form's default color by passing an optional parameter to the geomtric object at hand. Let's consider a bar chart showing the distribution of laptops across different screen sizes. @fig-base illustrates a chart whose bars exhibit <span class="in">`ggplot2`</span>'s default color. Populating the optional parameter <span class="in">`fill`</span> would alter the chosen visual form's inner color -- see @fig-fill; the optional parameter <span class="in">`colour`</span> affects the visual form's boarder color -- see @fig-fillandboard. It is also possible to regulate the transparency of the chosen color by fixing the optional <span class="in">`alpha`</span> parameter -- see @fig-alpha. Note that the smaller is the scalar value you pass to <span class="in">`alpha`</span>, the more transparent is the visual form -- see @fig-alphaagg.</span>
+<span id="cb23-85"><a href="#cb23-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-88"><a href="#cb23-88" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-89"><a href="#cb23-89" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-base</span></span>
+<span id="cb23-90"><a href="#cb23-90" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A bar chart with default colors"</span></span>
+<span id="cb23-91"><a href="#cb23-91" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="fu">factor</span>(Inches)))</span>
+<span id="cb23-92"><a href="#cb23-92" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>()</span>
+<span id="cb23-93"><a href="#cb23-93" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-94"><a href="#cb23-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-97"><a href="#cb23-97" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-98"><a href="#cb23-98" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-fill</span></span>
+<span id="cb23-99"><a href="#cb23-99" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A bar chart with custom fill color"</span></span>
+<span id="cb23-100"><a href="#cb23-100" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="fu">factor</span>(Inches)))</span>
+<span id="cb23-101"><a href="#cb23-101" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"magenta"</span>)</span>
+<span id="cb23-102"><a href="#cb23-102" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-103"><a href="#cb23-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-106"><a href="#cb23-106" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-107"><a href="#cb23-107" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-fillandboard</span></span>
+<span id="cb23-108"><a href="#cb23-108" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A bar chart with custom fill and boarder color"</span></span>
+<span id="cb23-109"><a href="#cb23-109" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="fu">factor</span>(Inches)))</span>
+<span id="cb23-110"><a href="#cb23-110" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"magenta"</span>, <span class="at">colour =</span> <span class="st">"blue"</span>)</span>
+<span id="cb23-111"><a href="#cb23-111" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-112"><a href="#cb23-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-115"><a href="#cb23-115" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-116"><a href="#cb23-116" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-alpha</span></span>
+<span id="cb23-117"><a href="#cb23-117" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A bar chart with adjusted color transparency"</span></span>
+<span id="cb23-118"><a href="#cb23-118" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="fu">factor</span>(Inches)))</span>
+<span id="cb23-119"><a href="#cb23-119" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)</span>
+<span id="cb23-120"><a href="#cb23-120" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-123"><a href="#cb23-123" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-124"><a href="#cb23-124" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-alphaagg</span></span>
+<span id="cb23-125"><a href="#cb23-125" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A bar chart with alpha = 0.1"</span></span>
+<span id="cb23-126"><a href="#cb23-126" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="fu">factor</span>(Inches)))</span>
+<span id="cb23-127"><a href="#cb23-127" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"green"</span>, <span class="at">alpha =</span> <span class="fl">0.1</span>)</span>
+<span id="cb23-128"><a href="#cb23-128" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-129"><a href="#cb23-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-130"><a href="#cb23-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## Scales</span></span>
+<span id="cb23-131"><a href="#cb23-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-132"><a href="#cb23-132" aria-hidden="true" tabindex="-1"></a><span class="in">`ggplot2`</span> comes with plenty of <span class="co">[</span><span class="ot">color scales and palettes</span><span class="co">](https://ggplot2-book.org/scales-colour#brewer-scales)</span> that can help discriminate visually various data groups. Let's suppose to expand on the visualization reported in @fig-boxplot, dealing with the distribution of laptop price across different screen size groups. Specifically, we want to add another dimension to @fig-boxplot to show how laptop prices change across screen and ram size groups. By default, <span class="in">`ggplot2`</span> will use the <span class="in">`hue`</span> color scale see ― @fig-boxplotdefault. To adopt a non-default color scale, the optional argument <span class="in">`scale_color_*`</span> must be populated. In @fig-boxplotbrewer, I adopt a color scale for discrete data, namely <span class="co">[</span><span class="ot">`brewer`</span><span class="co">](https://ggplot2-book.org/scales-colour#brewer-scales)</span>. *Warning*: always ensure to pair discrete (continuous) color scales with discrete (continuous) variables. Otherwise, <span class="in">`ggplot2`</span> will return an error, e.g., ```Discrete values supplied to continuous scale```.</span>
+<span id="cb23-133"><a href="#cb23-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-136"><a href="#cb23-136" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-137"><a href="#cb23-137" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-boxplot</span></span>
+<span id="cb23-138"><a href="#cb23-138" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Distribution of laptop prices by scree size group"</span></span>
+<span id="cb23-139"><a href="#cb23-139" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Inches), <span class="at">y =</span> Price_euros))</span>
+<span id="cb23-140"><a href="#cb23-140" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_boxplot</span>()</span>
+<span id="cb23-141"><a href="#cb23-141" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-144"><a href="#cb23-144" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-145"><a href="#cb23-145" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-boxplotdefault</span></span>
+<span id="cb23-146"><a href="#cb23-146" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: ""</span></span>
+<span id="cb23-147"><a href="#cb23-147" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Inches), <span class="at">y =</span> Price_euros))</span>
+<span id="cb23-148"><a href="#cb23-148" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">colour =</span> Ram))</span>
+<span id="cb23-149"><a href="#cb23-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-150"><a href="#cb23-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-153"><a href="#cb23-153" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-154"><a href="#cb23-154" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-boxplotbrewer</span></span>
+<span id="cb23-155"><a href="#cb23-155" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: ""</span></span>
+<span id="cb23-156"><a href="#cb23-156" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Inches), <span class="at">y =</span> Price_euros))</span>
+<span id="cb23-157"><a href="#cb23-157" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">colour =</span> Ram)) <span class="sc">+</span> <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Paired"</span>)</span>
+<span id="cb23-158"><a href="#cb23-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-159"><a href="#cb23-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-160"><a href="#cb23-160" aria-hidden="true" tabindex="-1"></a><span class="fu"># Shapes</span></span>
+<span id="cb23-161"><a href="#cb23-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-162"><a href="#cb23-162" aria-hidden="true" tabindex="-1"></a>In data visualization, shapes can play a role similar to colors, by representing further data dimensions. For example, @fig-colors and @fig-shapes use color and shapes, respectively, to denote two different data series regarding Apple and Lenovo laptops.</span>
+<span id="cb23-163"><a href="#cb23-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-166"><a href="#cb23-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-167"><a href="#cb23-167" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-colors</span></span>
+<span id="cb23-168"><a href="#cb23-168" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Colors denote companie"</span></span>
+<span id="cb23-169"><a href="#cb23-169" aria-hidden="true" tabindex="-1"></a>cols <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Company"</span>, <span class="st">"Inches"</span>)</span>
+<span id="cb23-170"><a href="#cb23-170" aria-hidden="true" tabindex="-1"></a>apple_lenovo <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span> <span class="fu">filter</span>(Company <span class="sc">==</span> <span class="st">"Apple"</span> <span class="sc">|</span> Company <span class="sc">==</span> <span class="st">"Lenovo"</span>)</span>
+<span id="cb23-171"><a href="#cb23-171" aria-hidden="true" tabindex="-1"></a>ave <span class="ot">&lt;-</span> apple_lenovo <span class="sc">|&gt;</span> <span class="fu">group_by</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(cols))) <span class="sc">|&gt;</span> <span class="fu">summarize</span>(<span class="at">ave_price =</span> <span class="fu">mean</span>(Price_euros))</span>
+<span id="cb23-172"><a href="#cb23-172" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> ave, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Inches), <span class="at">y =</span> ave_price, <span class="at">color =</span> <span class="fu">factor</span>(Company)))</span>
+<span id="cb23-173"><a href="#cb23-173" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_point</span>()</span>
+<span id="cb23-174"><a href="#cb23-174" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-177"><a href="#cb23-177" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-178"><a href="#cb23-178" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-shapes</span></span>
+<span id="cb23-179"><a href="#cb23-179" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Shapes denote companies"</span></span>
+<span id="cb23-180"><a href="#cb23-180" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> ave, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Inches), <span class="at">y =</span> ave_price, <span class="at">shape =</span> <span class="fu">factor</span>(Company)))</span>
+<span id="cb23-181"><a href="#cb23-181" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_point</span>()</span>
+<span id="cb23-182"><a href="#cb23-182" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb23-183"><a href="#cb23-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-184"><a href="#cb23-184" aria-hidden="true" tabindex="-1"></a>At the same time, one may want to adopt a non-default shape across all data series. That would be the case of @fig-changingshapes, in which shape '5' ― an empty circle ― replaces <span class="in">`ggplot2`</span>'s default shape. </span>
+<span id="cb23-185"><a href="#cb23-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-188"><a href="#cb23-188" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-189"><a href="#cb23-189" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-changingshapes</span></span>
+<span id="cb23-190"><a href="#cb23-190" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A `geom_point()` with a non-default shape"</span></span>
+<span id="cb23-191"><a href="#cb23-191" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> ave, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Inches), <span class="at">y =</span> ave_price, <span class="at">color =</span> <span class="fu">factor</span>(Company)))</span>
+<span id="cb23-192"><a href="#cb23-192" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">5</span>)</span>
+<span id="cb23-193"><a href="#cb23-193" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":false});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

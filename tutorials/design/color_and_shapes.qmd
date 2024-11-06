@@ -3,17 +3,60 @@ author: Simone Santoni
 title: Choosing colors and shapes in ggplot2
 date: last-modified
 abstract-title: Synopsis
-abstract: This notebook illustrates how to change 
+abstract: This notebook illustrates how to change
+toc: true
+lightbox: true
 format:
   html:
-    fig-width: 6
-    fig-height: 4
+    theme: united
     code-fold: true
+    code-tools: true
+  ipynb: default
+  docx: default
+  pdf:
+    # engine
+    pdf-engine: pdflatex
+    # page layout
+    documentclass: article
+    papersize: letter
+    geometry:
+      - top=2.54cm
+      - right=2.54cm
+      - bottom=2.54cm
+      - left=2.54cm
+    # style
+    linestretch: 1.1
+    indent: true
+    # sections
+    number-sections: true
+    number-depth: 3
+    toc: false
+    # fonts
+    fonts:
+      fontenc: true
+      fontsize: 11
+      #mainfont:TeX Gyre Pagella
+      #mainfontoptions:
+      #  - Numbers=Lowercase
+      #  - Numbers=Proportional
+    # colors
+    colors:
+      linkcolor: blue
+      filecolor: red
+      citecolor: green
+      urlcolor: magenta
+      #colorlinks: true
+    # captions
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    # footnotes
+    links-as-notes: true
+    reference-location: document
 ---
 
-## Notebook setup
+# Notebook setup
 
-### Load libraries
+## Load libraries
 
 ```{r}
 library(ggplot2)
@@ -21,20 +64,20 @@ library(dplyr)
 library(readr)
 ```
 
-### Load data
+## Load data
 
-The toy dataset we'll use in this notebook is `laptop_price.csv`. It contains information on the price of laptops, as well as the laptops' core featurs. The source is https://www.kaggle.com/datasets/muhammetvarl/laptop-price
+The toy dataset we'll use in this notebook is `laptop_price.csv`. It contains information on the price of laptops, as well as the laptops' core featurs. The source for the dataset is https://www.kaggle.com/datasets/muhammetvarl/laptop-price
 
 ```{r}
-df <- read_csv("/home/simone/githubRepos/data-viz-smm635/data/laptops/laptop_price.csv")
+df <- read_csv("~/githubRepos/data-viz-smm635/data/laptops/laptop_price.csv")
 df
 ```
 
-## Colors
+# Colors
 
-### Visual forms' inner color, boarder color, and transparency
+## Visual forms' inner color, boarder color, and transparency
 
-In `ggplot2`, it is possible to alter a visual form's default color by passing an optional parameter to the geomtric object at hand. Let's consider a bar chart showing the distribution of laptops across different screen sizes. @fig-base illustrates a chart whose bars exhibit `ggplot2`'s default color. Populating the optional parameter `fill` would alter the chosen visual form's inner color ― see @fig-fill; the optional parameter `colour` affects the visual form's boarder color ― see @fig-fillandboard. It is also possible to regulate the transparency of the chosen color by acting on the optional `alpha` parameter ― see @fig-alpha. Note that the smaller is the scalar you pass to `alpha` the more transparent is the visual form ― see @fig-alphaagg.
+In `ggplot2`, it is possible to alter a visual form's default color by passing an optional parameter to the geomtric object at hand. Let's consider a bar chart showing the distribution of laptops across different screen sizes. @fig-base illustrates a chart whose bars exhibit `ggplot2`'s default color. Populating the optional parameter `fill` would alter the chosen visual form's inner color -- see @fig-fill; the optional parameter `colour` affects the visual form's boarder color -- see @fig-fillandboard. It is also possible to regulate the transparency of the chosen color by fixing the optional `alpha` parameter -- see @fig-alpha. Note that the smaller is the scalar value you pass to `alpha`, the more transparent is the visual form -- see @fig-alphaagg.
 
 ```{r}
 #| label: fig-base
@@ -42,6 +85,7 @@ In `ggplot2`, it is possible to alter a visual form's default color by passing a
 p <- ggplot(data = df, mapping = aes(factor(Inches)))
 p + geom_bar()
 ```
+
 ```{r}
 #| label: fig-fill
 #| fig-cap: "A bar chart with custom fill color"
@@ -69,7 +113,7 @@ p <- ggplot(data = df, mapping = aes(factor(Inches)))
 p + geom_bar(fill = "green", alpha = 0.1)
 ```
 
-### Scales
+## Scales
 
 `ggplot2` comes with plenty of [color scales and palettes](https://ggplot2-book.org/scales-colour#brewer-scales) that can help discriminate visually various data groups. Let's suppose to expand on the visualization reported in @fig-boxplot, dealing with the distribution of laptop price across different screen size groups. Specifically, we want to add another dimension to @fig-boxplot to show how laptop prices change across screen and ram size groups. By default, `ggplot2` will use the `hue` color scale see ― @fig-boxplotdefault. To adopt a non-default color scale, the optional argument `scale_color_*` must be populated. In @fig-boxplotbrewer, I adopt a color scale for discrete data, namely [`brewer`](https://ggplot2-book.org/scales-colour#brewer-scales). *Warning*: always ensure to pair discrete (continuous) color scales with discrete (continuous) variables. Otherwise, `ggplot2` will return an error, e.g., ```Discrete values supplied to continuous scale```.
 
@@ -93,9 +137,9 @@ p <- ggplot(data = df, mapping = aes(x = factor(Inches), y = Price_euros))
 p + geom_boxplot(aes(colour = Ram)) + scale_color_brewer(palette = "Paired")
 ```
 
-## Shapes
+# Shapes
 
-In data visualization, shapes can play a role similar to colors, that is, to represent a 'further' data dimension. For example, @fig-colors and @fig-shapes use color and shapes, respectively, to denote two different data series, regarding Apple and Lenovo laptops.
+In data visualization, shapes can play a role similar to colors, by representing further data dimensions. For example, @fig-colors and @fig-shapes use color and shapes, respectively, to denote two different data series regarding Apple and Lenovo laptops.
 
 ```{r}
 #| label: fig-colors
@@ -113,7 +157,7 @@ p <- ggplot(data = ave, mapping = aes(x = factor(Inches), y = ave_price, shape =
 p + geom_point()
 ```
 
-At the same time, one may want to adopt a non-default shape across all data series. That would be the case of @fig-changingshapes, in which shape '5' ― an empty circle ― replaces `ggplot2`'s default shape. @fig-ggplot2shapes provides a summary of the shapes available in `ggplot2` and their underlying numeric codes.
+At the same time, one may want to adopt a non-default shape across all data series. That would be the case of @fig-changingshapes, in which shape '5' ― an empty circle ― replaces `ggplot2`'s default shape. 
 
 ```{r}
 #| label: fig-changingshapes
@@ -121,6 +165,3 @@ At the same time, one may want to adopt a non-default shape across all data seri
 p <- ggplot(data = ave, mapping = aes(x = factor(Inches), y = ave_price, color = factor(Company)))
 p + geom_point(shape = 5)
 ```
-
-![Alternative shapes by numeric code](scale_shape-6.png){#fig-ggplot2shapes width=75%}
-
