@@ -6,7 +6,7 @@
   "bmr.bbl"
   "bmr.blg"
   (rewritten before read)
-["pdflatex"] 1730976517.60399 "bmr.tex" "bmr.pdf" "bmr" 1730976525.77369 0
+["pdflatex"] 1730977476.38158 "bmr.tex" "bmr.pdf" "bmr" 1730977484.24708 0
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -350,13 +350,13 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1721433600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1730324183.12213 4602016 72a039a3c4aea0fa25b5d35d65138f54 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1730323994 7753269 dcbb33c5698e2f3979b7e2c21fb6744c ""
-  "bmr.aux" 1730976525.23541 4042 8d844b1c1ae9622c89ea1ce1067424a4 "pdflatex"
+  "bmr.aux" 1730977483.85124 4042 8d844b1c1ae9622c89ea1ce1067424a4 "pdflatex"
   "bmr.bbl" 0 -1 0 "biber bmr"
-  "bmr.nav" 1730976525.24641 2270 22bd98ab8cb224c19f56793c029b32e9 "pdflatex"
-  "bmr.out" 1730976525.23741 684 ec720c73757ea10d43347ec79b44b86b "pdflatex"
-  "bmr.run.xml" 1730976525.24641 2300 7df2f1e3b50e025e1c93fdf69e464563 "pdflatex"
-  "bmr.tex" 1730976517.29634 5917 b104a233ad93061a826ba76a9a549ca5 ""
-  "bmr.toc" 1730976525.24641 212 2bff2fae64c2ae6c140343b1626fc82e "pdflatex"
+  "bmr.nav" 1730977483.85824 2270 22bd98ab8cb224c19f56793c029b32e9 "pdflatex"
+  "bmr.out" 1730977483.85224 684 ec720c73757ea10d43347ec79b44b86b "pdflatex"
+  "bmr.run.xml" 1730977483.85824 2300 7df2f1e3b50e025e1c93fdf69e464563 "pdflatex"
+  "bmr.tex" 1730977476.31617 5909 5b5fd0ba4202315c721de2f22e756d8d ""
+  "bmr.toc" 1730977483.85824 212 2bff2fae64c2ae6c140343b1626fc82e "pdflatex"
   "images/1920px-Minard_Update.png" 1670165694 531744 386e1572cdf3988bdbece707f852f70a ""
   "images/20150418_WBC823_0.png" 1670165694 52000 d4496fb72af7335c9dc5aedb07651f95 ""
   "images/Day57-945x324.png" 1670165694 145359 61e6104370e35fd8c360c4a157100df1 ""
