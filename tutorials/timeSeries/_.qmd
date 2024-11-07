@@ -14,8 +14,8 @@ format:
 
 Commong R libraries for time-series visualization include:
 
-+ `ggplot2`
 + `dygraphs`
++ `ggplot2` 
 + `ggplot2`'s extensions:
   - `ichimoku`
   - ``
@@ -35,7 +35,102 @@ library(tseries)
 library(quantmod)
 ```
 
-# Handling time series data
+# Time series data structure
+
+## Historical data on wheat price
+
+Let's consider a few examples, available in the package `tseries`.
+
+```{r}
+data("bev")
+bev
+plot(bev)
+```
+## Monthly wine sales
+
+```{r}
+ws <- read.csv("../../data/wineSales/monthly-australian-wine-sales.csv", header=TRUE)
+ws.ts <- ts(ws[,2], frequency=12, start=c(1985,1))
+ws.ts
+plot(ws.ts)
+```
+
+## Stock market data
+
+```{r}
+# custom function
+fetch_stock <- function(tkr, sd, ed) {
+  data <- getSymbols(tkr, src = "yahoo", from = sd, to = ed, auto.assign = FALSE)
+  colnames(data) <- gsub(paste0(tkr, "\\."), "", colnames(data))
+  data <- data[, c("Volume", "Adjusted")]
+  return(data)
+}
+# fetch data
+nv <- fetch_stock(tkr = "NVDA", sd = "2023-01-01", ed = "2024-10-31")
+```
+
+## Terminology
+
+A time series is said to be **continuous** when observations are made continuously. The adjective ‘continuous’ is used for series of this type even when the measured variable can only take a discrete set of values.
+
+
+A time series is said to be **discrete** when observations are taken only at specific times, usually equally spaced. The term ‘discrete’ is used for series of this type even when the measured variable is a continuous variable.
+
+# Time-series decomposition
+
+Time-series decomposition is a common time-series data manipulation, which is also very helpful for data visualization purposes. The intuition is that we can express a time series $X_{t}$ as the linear combination of several terms:
+
+\begin{equation}
+X_{t} =  T_{t} + S_{t}+ \epsilon_{t}
+\end{equation}
+
+where $T_{t}$ is the trend component, $S_{t}$ is seasonal component, and $\epsilon_{t}$ is the residual component (hopefully, stochastic!!).
+
+```{r}
+ws.de<-decompose(ws.ts, type="additive")
+plot(ws.de)
+```
+
+# Visualization options
+
+## `dygraphs` and stock market data
+
+```{r}
+dygraph(nv$Adjusted)
+```
+
+```{r}
+dygraph(
+  nv$Adjusted,
+  main = "Nvidia Stock Price (NVDA)",
+  xlab = "Time period",
+  ylab = "Adjusted price (USD)",
+  width = 600,
+  height = 400
+)
+```
+
+```{r}
+dygraph(
+  nv$Adjusted,
+  main = "Nvidia Stock Price (NVDA)",
+  xlab = "Time period", 
+  ylab = "Adjusted price (USD)"
+  ) %>% dySeries(color = "red", drawPoints = TRUE, pointSize = 1.5, pointShape = "circle")
+```
+```{r}
+nv$VolumeScaled <- nv[, "Volume"] / 10000000
+
+dygraph(nv[, c("Adjusted", "VolumeScaled")], main = "Nvidia Stock Price (AAPL) and Trade Volume") %>% dySeries("Adjusted", label = "Adjusted Price (USD)", color = "magenta", drawPoints = TRUE, pointSize = 3, pointShape = "square") %>% dySeries("VolumeScaled", label = "Trade Volume (10XM)", stepPlot = TRUE, fillGraph = TRUE, color = "green")
+```
+
+## ``ggplot2`
+
+```{r}
+
+```
+
+## ``ggplot2`` extensions
 
 ```{r}
 
