@@ -116,12 +116,34 @@ dygraph(
   main = "Nvidia Stock Price (NVDA)",
   xlab = "Time period", 
   ylab = "Adjusted price (USD)"
-  ) %>% dySeries(color = "red", drawPoints = TRUE, pointSize = 1.5, pointShape = "circle")
+  ) %>% 
+  dySeries(
+    color = "red", 
+    drawPoints = TRUE, 
+    pointSize = 1.5, 
+    pointShape = "circle"
+    )
 ```
 ```{r}
 nv$VolumeScaled <- nv[, "Volume"] / 10000000
 
-dygraph(nv[, c("Adjusted", "VolumeScaled")], main = "Nvidia Stock Price (AAPL) and Trade Volume") %>% dySeries("Adjusted", label = "Adjusted Price (USD)", color = "magenta", drawPoints = TRUE, pointSize = 3, pointShape = "square") %>% dySeries("VolumeScaled", label = "Trade Volume (10XM)", stepPlot = TRUE, fillGraph = TRUE, color = "green")
+dygraph(
+  nv[, c("Adjusted", "VolumeScaled")], 
+  main = "Nvidia Stock Price (AAPL) and Trade Volume") %>% 
+  dySeries(
+    "Adjusted", 
+    label = "Adjusted Price (USD)", 
+    color = "magenta", 
+    drawPoints = TRUE, 
+    pointSize = 1.5, 
+    pointShape = "circle") %>% 
+  dySeries(
+    "VolumeScaled", 
+    label = "Trade Volume (10XM)", 
+    stepPlot = TRUE, 
+    fillGraph = TRUE, 
+    color = "green"
+    )
 ```
 
 ## ``ggplot2`
@@ -131,6 +153,8 @@ dygraph(nv[, c("Adjusted", "VolumeScaled")], main = "Nvidia Stock Price (AAPL) a
 ```
 
 ## ``ggplot2`` extensions
+
+### 
 
 ```{r}
 
