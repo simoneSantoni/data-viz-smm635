@@ -1,7 +1,7 @@
 ---
 author: Simone Santoni
 title: Choosing colors and shapes in ggplot2
-date: last-modified
+date: 2024-10-22
 abstract-title: Synopsis
 abstract: This notebook illustrates how to change
 toc: true

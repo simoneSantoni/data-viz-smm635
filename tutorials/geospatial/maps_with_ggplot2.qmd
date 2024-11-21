@@ -1,0 +1,182 @@
+---
+title: Maps with ggplot2
+author: Simone Santoni
+date: last-modified
+abstract-title: Synopsis
+abstract: This notebook shows how to create maps with ggplot2
+warning: false
+format: 
+  html:
+    code-fold: true
+    code-tools: true
+    toc: true
+    toc-title: Table of Contents 
+    toc-depth: 2
+    toc-location: right
+    number-sections: true
+    citations-hover: false
+    footnotes-hover: false
+    crossrefs-hover: false
+    theme: united 
+    fig-width: 9
+    fig-height: 6
+  ipynb: default
+  docx: default
+  typst: default
+  #pdf:
+  #  documentclass: scrartcl
+  #  papersize: letter
+---
+
+# Notebook setup
+
+## Load libraries
+
+```{r}
+library(tidyverse)
+library(socviz)
+library(maps)
+library(ggthemes)
+```
+
+## Pick up the preferred theme
+
+```{r}
+theme_set(theme_minimal())
+```
+
+## Load `election` data from the `socviz` package
+
+K. Healy's `socviz` package provides us with the `election` dataset. The dataset contains various measures of the vote and vote shares by state. FYI: Kieran Healy is a sociologist at Duke University, and the author of the book "Data Visualization: A Practical Introduction", a core reading for SMM635.
+
+```{r}
+election
+```
+
+The election dataset has various measures of the vote and vote shares by state. Here we pick some columns and sample a few rows at random.
+
+```{r}
+election %>%
+        select(state, total_vote, r_points, pct_trump, party, census) %>%
+        sample_n(5)
+```
+
+# Let's familiarize ourselves with the data
+
+```{r}
+# Hex color codes for Dem Blue and Rep Red
+party_colors <- c("#2E74C0", "#CB454A")
+
+p0 <- ggplot(data = subset(election, st %nin% "DC"), mapping = aes(x = r_points, y = reorder(state, r_points), color = party))
+
+p1 <- p0 + geom_vline(xintercept = 0, color = "gray30") + geom_point(size = 2)
+
+p2 <- p1 + scale_color_manual(values = party_colors)
+
+p3 <- p2 + scale_x_continuous(breaks = c(-30, -20, -10, 0, 10, 20, 30, 40), labels = c("30\n (Clinton)", "20", "10", "0", "10", "20", "30", "40\n(Trump)"))
+
+p3 + facet_wrap(~census, ncol = 1, scales = "free_y") + guides(color = 'none') + labs(x = "Point Margin", y = "") + theme(axis.text = element_text(size = 8))
+```
+
+# Create a map of the US
+
+The `maps` package provides us with cartographic data to pass as input to `ggplot2`'s geometric object `geom_polygon`. Here we load the data for the US states.
+
+```{r}
+us_states <- map_data("state")
+head(us_states)
+dim(us_states)
+```
+
+We can now create a map of the US states. We are not adding any data to the map, just the state boundaries.
+
+```{r}
+p <- ggplot(data = us_states, mapping = aes(x = long, y = lat, group = group))
+p + geom_polygon(fill = "white", color = "black")
+```
+
+Color-coding the states is straightforward. For illustrative purposes, we can use the `state` column in the `us_states` dataset to color the states according to their names.
+
+```{r}
+p <- ggplot(data = us_states, aes(x = long, y = lat, group = group,  fill = region))
+p + geom_polygon(color = "gray90", linewidth = 0.5) + guides(fill = 'none')
+```
+
+Does this map look good? Not really. The `maps` library uses the [Mercator projection](link). The Mercator projection (/mərˈkeɪtər/) is a conformal cylindrical map projection introduced by Flemish geographer and mapmaker Gerardus Mercator in 1569. Fun facts:
+
++ By the 18th century, it became the standard for navigation because it represents rhumb lines as straight lines
++ On world maps, the Mercator projection enlarges landmasses further from the equator, making regions like Greenland and Antarctica appear much larger than they are
++ Today, it remains popular not only for marine navigation but also for internet web maps
+
+Let us experiment with an alterntive projection system, like Albers'. The Albers projection is a conic, equal-area map projection that uses two standard parallels. It is particularly useful for maps of the United States.
+
+```{r}
+p <- ggplot(data = us_states, mapping = aes(x = long, y = lat, group = group, fill = region))
+
+p + geom_polygon(color = "gray90", size = 0.1) + coord_map(projection = "albers", lat0 = 39, lat1 = 45) + guides(fill = 'none')
+```
+
+# Time to add some data to the map
+
+Before plotting the data, we must merge the `us_states` and `election` datasets. We can do this by joining the two datasets on the `state` column. 
+
+```{r}
+election$region <- tolower(election$state)
+us_states_elec <- left_join(us_states, election)
+```
+
+```{r}
+p <- ggplot(data = us_states_elec, aes(x = long, y = lat, group = group, fill = party))
+
+p + geom_polygon(color = "gray90", size = 0.1) + coord_map(projection = "albers", lat0 = 39, lat1 = 45)
+```
+
+How abot polishing a bit the map? We can add a title, a subtitle, and a caption.
+
+```{r}
+p0 <- ggplot(data = us_states_elec,  mapping = aes(x = long, y = lat,  group = group, fill = party))
+
+p1 <- p0 + geom_polygon(color = "gray90", size = 0.1) +  coord_map(projection = "albers", lat0 = 39, lat1 = 45)
+
+p2 <- p1 + scale_fill_manual(values = party_colors) +  labs(title = "Election Results 2016", fill = NULL)
+
+p2 + theme_map()
+```
+
+## How about displaying a more granular map?
+
+The `socviz` package provides us with a 'county-level' dataset. The dataset contains various measures of the vote and vote shares by county.
+
+```{r}
+head(county_data)
+```
+
+Like in the state-level analysis, we slice the `county_map` dataset to keep only the columns we are interested in.
+
+```{r}
+county_data %>%  select(id, name, state, pop_dens, pct_black) %>%  sample_n(5)
+```
+
+The next step is retrieving the cartographic data for the US counties.
+
+```{r}
+county_map %>% sample_n(5)
+```
+
+We merge the two datasets against the `id` column.
+
+```{r}
+county_full <- left_join(county_map, county_data, by = "id")
+```
+
+Then, we can plot the data.
+
+```{r}
+p <- ggplot(data = county_full, mapping = aes(x = long, y = lat, fill = pop_dens, group = group))
+
+p1 <- p + geom_polygon(color = "gray90", size = 0.05) + coord_equal()
+
+p2 <- p1 + scale_fill_brewer(palette = "Blues", labels = c("0-10", "10-50", "50-100", "100-500", "500-1,000", "1,000-5,000", ">5,000"))
+
+p2 + labs(fill = "Population per\nsquare mile") + theme_map() + guides(fill = guide_legend(nrow = 1)) + theme(legend.position = "bottom")
+```

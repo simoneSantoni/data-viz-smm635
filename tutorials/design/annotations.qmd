@@ -1,6 +1,6 @@
 ---
 author: Simone Santoni
-date: last-modified
+date: 2024-10-31
 title: Text annotations
 abstract: This notebook shows how to add and manipulate companion text to the hard-core part of a chart, namely, data, aestehtics, and themes.
 abstract-title: Abstract

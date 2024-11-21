@@ -3,12 +3,11 @@ author: Simone Santoni
 title: Exploratory data analysis of 'New York Flights' dataset
 abstract-title: Abstract
 abstract: This notebook has a twofold objective. First, to carry out an exploratory data analysis of a popular dataset in data science, namely, 'New York Flights.' Second, to shows how to create some key bivariate data visualizations discussed in Cleveland (1993) by using R's package `ggplot2`.
-date: last-modified
-format: 
+date: 2024-10-23
+format:
   html:
-    fig-width: 6
-    fig-height: 4
     code-fold: true
+    code-tools: true
 ---
 
 ## Notebook setup
