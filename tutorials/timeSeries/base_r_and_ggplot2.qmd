@@ -1,0 +1,234 @@
+---
+title: Time-Series Data Visualization with R and ggplot2
+author: Simone Santoni
+date: last-modified
+abstract-title: Synopsis
+abstract: This notebook shows how to create some key data visualization for time series data. The first half of the notebook deals with classic visual forms in the field of time-series analysis. The second half highlights some specialized, data visualization libraries for time series data.
+warning: false
+format: 
+  html:
+    code-fold: true
+    code-tools: true
+    toc: true
+    toc-title: Table of Contents 
+    toc-depth: 2
+    toc-location: right
+    number-sections: true
+    citations-hover: false
+    footnotes-hover: false
+    crossrefs-hover: false
+    theme: journal
+    fig-width: 9
+    fig-height: 6
+  ipynb: default
+  docx: default
+  typst: default
+---
+
+
+# Notebook setup
+
+## Load (time-series) data visualization libraries
+
+Commong R libraries for time-series visualization include:
+
++ `dygraphs`
++ `ggplot2` 
++ `ggplot2`'s extension `ggTimeSeries`
+
+```{r}
+library(ggplot2)
+library(ggthemes)
+library(ggTimeSeries)
+library(dygraphs)
+```
+
+## Load further libraries for time-series data
+
+We are also installing two libraries for fetching stock market data and manipulating time-series data
+
+```{r}
+library(tseries)
+library(quantmod)
+```
+
+# Time series data structure
+
+## Toy data in R's `tseries` package
+
+Let us consider a few examples, available in the package `tseries`.
+
+### Historical data on wheat price
+
+```{r}
+#| fig-cap: Time series data regarding wheat price
+#| cap-location: margin
+#| fig-width: 6
+#| fig-height: 4
+data("bev")
+bev
+plot(bev)
+```
+
+### Monthly wine sales
+
+```{r}
+#| fig-cap: Time series data regarding wine sales in Australia
+#| cap-location: margin
+#| fig-width: 6
+#| fig-height: 4
+setwd("/home/simone/githubRepos/data-viz-smm635/data") 
+ws <- read.csv("wineSales/monthly-australian-wine-sales.csv", header=TRUE)
+ws.ts <- ts(ws[,2], frequency=12, start=c(1985,1))
+ws.ts
+plot(ws.ts)
+```
+
+## Stock market data
+
+We can also fetch stock market data using the `quantmod` package. Here, we are fetching data on Nvidia stock price.
+
+```{r}
+# custom function
+fetch_stock <- function(tkr, sd, ed) {
+  data <- getSymbols(tkr, src = "yahoo", from = sd, to = ed, auto.assign = FALSE)
+  colnames(data) <- gsub(paste0(tkr, "\\."), "", colnames(data))
+  data <- data[, c("Volume", "Adjusted")]
+  return(data)
+}
+# fetch data
+nv <- fetch_stock(tkr = "NVDA", sd = "2023-01-01", ed = "2024-10-31")
+```
+
+# Terminology
+
+A time series is said to be **continuous** when observations are made continuously. The adjective ‘continuous’ is used for series of this type even when the measured variable can only take a discrete set of values.
+
+A time series is said to be **discrete** when observations are taken only at specific times, usually equally spaced. The term ‘discrete’ is used for series of this type even when the measured variable is a continuous variable.
+
+# Time-series decomposition
+
+Time-series decomposition is a common time-series data manipulation, which is also very helpful for data visualization purposes. The intuition is that we can express a time series $X_{t}$ as the linear combination of several terms:
+X_{t} =  T_{t} + S_{t}+ \epsilon_{t}
+\end{equation}
+
+where $T_{t}$ is the trend component, $S_{t}$ is seasonal component, and $\epsilon_{t}$ is the residual component (hopefully, stochastic!!).
+
+```{r}
+#| fig-cap: Wheat price time-series data decomposed into trend, seasonal, and residual components
+#| cap-location: margin
+#| fig-width: 6
+#| fig-height: 4
+ws.de<-decompose(ws.ts, type="additive")
+plot(ws.de)
+```
+
+# Data visualization libraries for time-series data 
+
+The library `tseries` offers some options for visualizing time-series data, which are based on R's built-in plotting capabilities. The package `ggplot2` --- and some of its extensions --- provides further data visualization options, which are quite flexible and customizable.
+
+## `dygraphs` and stock market data
+
+The library [`dygraphs`](https://rstudio.github.io/dygraphs/) is a popular, specialized library for time-series data visualization. It is particularly useful for stock market data, as it allows for the visualization of time-series data in an interactive way.
+
+The following four charts show how to visualize Nvidia stock price data using `dygraphs` with increasing levels of customization.
+
+```{r}
+#| fig-cap: Nvidia stock price (NVDA) time-series data, a bare-bone visualization with `dygraphs`
+dygraph(nv$Adjusted)
+```
+
+```{r}
+#| fig-cap: Nvidia stock price (NVDA) time-series data, a more customized visualizatio
+dygraph(
+  nv$Adjusted,
+  main = "Nvidia Stock Price (NVDA)",
+  xlab = "Time period",
+  ylab = "Adjusted price (USD)",
+  width = 600,
+  height = 400
+)
+```
+
+```{r}
+#| fig-cap: Nvidia stock price (NVDA) time-series data, an even more customized visualization with `dygraphs`
+dygraph(
+  nv$Adjusted,
+  main = "Nvidia Stock Price (NVDA)",
+  xlab = "Time period", 
+  ylab = "Adjusted price (USD)"
+  ) %>% 
+  dySeries(
+    color = "red", 
+    drawPoints = TRUE, 
+    pointSize = 1.5, 
+    pointShape = "circle"
+    )
+```
+
+`dygraphs` also allows for the visualization of multiple time-series data. Here, we are plotting the adjusted price of Nvidia stock and the trade volume.
+
+```{r}
+#| fig-cap: Nvidia stock price (NVDA) and trade volume
+nv$VolumeScaled <- nv[, "Volume"] / 10000000
+
+dygraph(
+  nv[, c("Adjusted", "VolumeScaled")], 
+  main = "Nvidia Stock Price (AAPL) and Trade Volume") %>% 
+  dySeries(
+    "Adjusted", 
+    label = "Adjusted Price (USD)", 
+    color = "magenta", 
+    drawPoints = TRUE, 
+    pointSize = 1.5, 
+    pointShape = "circle") %>% 
+  dySeries(
+    "VolumeScaled", 
+    label = "Trade Volume (10XM)", 
+    stepPlot = TRUE, 
+    fillGraph = TRUE, 
+    color = "green"
+    )
+```
+
+## `ggplot2`
+
+The library `ggplot2` is a Swiss-army knife for data visualization in R, which is also very useful for time-series data. The following code snippet shows how to visualize unemployment data in the US using `ggplot2`. To do so we are using the dataset `economics` available in the package `ggplot2`.
+
+```{r}
+df <- economics[economics$date > as.Date("2000-01-01"), ]
+dim(df)
+head(df)
+```
+
+Mainly, creating a time-series plot with `ggplot2` is a matter of using the function `geom_line()`.
+
+```{r}
+#| fig-cap: Unemployment in the US
+#| cap-location: margin
+#| fig-width: 6
+#| fig-height: 4
+# set theme
+theme_set(theme_minimal())
+# create the plot 
+p <- ggplot(data = df, mapping = aes(x = date, y = unemploy))
+p + geom_line()
+```
+
+Adding a fit line is straightforward with `ggplot2`. Here, we are adding a linear fit line to the unemployment data.
+
+```{r}
+#| fig-cap: Unemployment in the US with a linear and polynomial fit lines
+#| cap-location: margin
+#| fig-width: 6
+#| fig-height: 4
+p + geom_line() + geom_smooth(method = "lm", se = FALSE, color = "purple") + geom_smooth(method = "loess", se = FALSE, color="green")
+```
+
+## `ggplot2`s extension `ggTimeSeries`
+
+One of the most developed extensions of `ggplot2` is [`ggTimeSeries`](https://github.com/AtherEnergy/ggTimeSeries), which provides at least three distinctive visual form implementations for time-series data (see https://github.com/AtherEnergy/ggTimeSeries):
+
++ Waterfall charts
++ Occurence dot plots
++ Calendar heatmaps
