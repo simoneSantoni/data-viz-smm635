@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
 # %% aesthetics
-plt.style.use('seaborn-bright')
+plt.style.use('Solarize_Light2')
 plt.rc('text', usetex=True)
 plt.rc('font', family='serif', size=10)
 
@@ -68,15 +68,15 @@ ax3.axis('off')
 # pick-up one data point to emphasize, add reference lines and textbox
 np.random.seed(333) # fix the seed to ensure reproducibility
 i = np.random.randint(0, len(x), 1)
-x_i, y_i = x[i], y[i]
+x_i, y_i = x[i][0], y[i][0]
 # vertical reference line
 ax1.plot([x_i, x_i], [np.min(y), y_i], color='black',
-         ls='--',
-         lw='1')
+          ls='--',
+          lw='1')
 # horizontal reference line
 ax1.plot([np.min(x), x_i], [y_i, y_i], color='black',
-         ls='--',
-         lw='1')
+          ls='--',
+          lw='1')
 # textbox within the scatter
 textstr = (r'$(x_{i}, y_{i})$')
 x_range = np.max(x) - np.min(x)
@@ -95,4 +95,6 @@ out_f = os.path.join(os.getcwd(), 'tufte_scatter.pdf')
 fig.savefig(out_f)
 
 # show plot
-#plt.show()
+plt.show()
+
+# %%
