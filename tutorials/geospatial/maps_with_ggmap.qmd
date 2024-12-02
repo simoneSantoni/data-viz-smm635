@@ -1,0 +1,109 @@
+---
+title: Maps with ggplot2's extension ggmap
+author: Simone Santoni
+date: last-modified
+abstract-title: Synopsis
+abstract: This notebook shows how to create maps with ggmap
+warning: false
+format: 
+  html:
+    code-fold: true
+    code-tools: true
+    toc: true
+    toc-title: Table of Contents 
+    toc-depth: 2
+    toc-location: right
+    number-sections: true
+    citations-hover: false
+    footnotes-hover: false
+    crossrefs-hover: false
+    theme: united 
+    fig-width: 9
+    fig-height: 6
+  ipynb: default
+  docx: default
+  typst: default
+  #pdf:
+  #  documentclass: scrartcl
+  #  papersize: letter
+---
+
+# Notebook setup
+
+## Load libraries
+
+We import tidyverse's `tibble` and `ggmap` to create the maps. The former is a data manipulation library, while the latter is an extension of `ggplot2` that allows us to create maps.
+
+```{r}
+library(tibble) 
+library(ggmap)
+```
+
+## Toy dataset 
+
+The data consists of a single point, namely, the location of New York Univerty. The dataset is a tibble with three columns, a label for NYU, see `name`, and `lon` and `lat` pair. As we know, `tibble` allows to initialize a dataset 'visually' by means of the `tribble` function.
+
+```{r}
+unis = tribble(
+  ~name, ~lon, ~lat,
+  "New York University", -73.9965, 40.7295
+)
+```
+
+# Create a geo-spatial chart
+
+## Fetching a map
+
+The geospatial chart creating process is straightforward. We use [`ggmap`](https://cran.r-project.org/web/packages/ggmap/readme/README.html)'s `get_map` function to download the map of the area we are interested in. In this case, we are interested in the map of New York City. The function requires the following arguments:
+
++ `center`: the coordinates of the area we are interested in *OR* the name of an entity, e.g., "New York"
++ `zoom`: the zoom level
++ `size`: the size of the map
++ `maptype`: the type of map we want to download
+
+It is worh noticinging that `ggmap` can retrieve maps from Google Maps or Stadia. In both cases, you have to register your application to get an API key.[^1] The below code snippet uses Google Maps. In this case, the center of the can be a precise pair of coordinates or the name of the area we are interested in. The map type is set to `hybrid`, which is a mix of satellite and road maps.
+
+[^1]: Having loaded `ggmap`, one can register an API key on a temporary basis with `register_google(key = "[your key]")` or permanently using `register_google(key = "[your key]", write = TRUE)`.
+
+```{r}
+#| fig-cap: Map of New York City
+#| fig-cap-location: margin
+#| labels: fig-map-ny 
+ny_map <- get_googlemap(
+  #center = c(lon = -74.0060, lat = 40.7128),
+  center = "New York",
+  zoom = 11,
+  size = c(1200, 1200),
+  maptype = "hybrid",
+  source = "google"
+)
+ny_map
+```
+
+## Plot some geo-located entities
+
+It is possible to map the data using a typical 'pipeline' approach a' la tidyverse.
+
+```{r}
+#| fig-cap: Map of New York City with a marker for NYU
+#| fig-cap-location: margin 
+#| label: fig-map-ny-marker
+get_googlemap(
+  center = c(lon = -74.0060, lat = 40.7128),
+  markers = unis[, c("lon", "lat")],
+  zoom = 11,
+  size = c(1200, 1200),
+  maptype = "hybrid",
+) |> ggmap()
+```
+
+Alternatively, we can use the `geom_point` function to plot the data.
+
+```{r}
+#| fig-cap: Map of New York City with a label for NYU
+#| fig-cap-location: margin
+#| labels: fig-map-ny-label 
+ggmap(ny_map) +
+  geom_label(data = unis, color = "purple", label = unis$name, size = 5) +
+  theme_nothing()
+```
