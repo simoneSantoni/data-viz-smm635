@@ -24,3 +24,5 @@ dependencies:
   - matplotlib
   - pandas
   - seaborn
+  - r-rstudioapi
+  - rstudio-desktop
