@@ -1,0 +1,115 @@
+---
+title: "Week 8: Student Project Presentations"
+---
+
+::: {.week-card}
+## Overview
+This week students will present their mid-term projects, showcasing the visualization techniques and design principles learned so far. We'll practice giving and receiving constructive feedback on data visualization work.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Present data visualization projects effectively
+- Provide constructive feedback on visualization design
+- Identify strengths and improvement opportunities in peer work
+- Reflect on your own design process and decisions
+- Learn from diverse approaches to similar problems
+
+## Presentation Format
+
+🎯 **5-minute presentations** followed by 2-minute Q&A
+
+**Structure your presentation:**
+1. Problem/question (30 seconds)
+2. Data and approach (1 minute)
+3. Design decisions and process (2 minutes)
+4. Key insights and findings (1 minute)
+5. Reflection and next steps (30 seconds)
+
+## Evaluation Criteria
+
+### Technical Implementation (40%)
+- Appropriate chart types for data and questions
+- Clean, well-structured code
+- Proper data handling and processing
+- Effective use of visualization libraries
+
+### Design & Aesthetics (30%)
+- Clear visual hierarchy and layout
+- Appropriate use of color and typography
+- Accessibility considerations
+- Professional presentation quality
+
+### Communication (20%)
+- Clear problem statement and context
+- Logical flow and storytelling
+- Effective annotations and explanations
+- Engagement with audience questions
+
+### Process & Reflection (10%)
+- Documentation of design decisions
+- Acknowledgment of limitations
+- Learning insights and growth
+- Plans for improvement
+
+## Presentation Schedule
+
+**Tuesday Session:**
+- Groups 1-8 present
+- 15-minute break at midpoint
+- Peer feedback forms
+
+**Thursday Session:**
+- Groups 9-16 present
+- 15-minute break at midpoint
+- Course reflection discussion
+
+## Feedback Guidelines
+
+### Giving Feedback
+- Focus on design choices, not personal preferences
+- Suggest specific improvements
+- Highlight what works well
+- Ask clarifying questions about decisions
+- Be constructive and respectful
+
+### Receiving Feedback
+- Listen actively without defending
+- Ask follow-up questions for clarity
+- Take notes for future reference
+- Thank presenters for their perspectives
+- Consider feedback in context of your goals
+
+## Resources
+
+### Presentation Tips
+- [Designing Effective Presentations](https://www.tableau.com/learn/articles/effective-presentations)
+- [Storytelling with Data Presentations](https://www.storytellingwithdata.com/blog/2016/2/1/some-slide-inspiration)
+
+### Peer Review
+- [Constructive Feedback Guidelines](https://writing.wisc.edu/handbook/assignments/feedback/)
+- [Design Critique Methods](https://www.nngroup.com/articles/design-critiques/)
+
+## Looking Ahead
+
+After presentations, we'll start working on advanced topics and final projects. Consider:
+- What techniques from peer presentations could you apply?
+- How might you extend your current project?
+- What new visualization challenges interest you?
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+Practice your presentation timing beforehand. 5 minutes goes by quickly, so focus on your most important points and insights.
+:::
+
+::: {.callout-warning}
+## Important Dates
+- **Presentations**: Tuesday & Thursday this week
+- **Peer Feedback Forms**: Due by end of week
+- **Final Project Proposals**: Due next week
+- **Office Hours**: Available for presentation prep
+:::

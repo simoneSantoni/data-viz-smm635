@@ -1,0 +1,90 @@
+---
+title: "Week 3: Chart Types & Data Relationships"
+---
+
+::: {.week-card}
+## Overview
+This week we'll explore different chart types and learn how to match visualization techniques to data types and analytical goals. We'll cover when to use bar charts, line charts, scatter plots, and more.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Identify different data types and their characteristics
+- Choose appropriate chart types for different data relationships
+- Create effective bar charts, line charts, and scatter plots
+- Understand when to use specialized chart types
+- Avoid common chart type mistakes
+
+## Lecture Slides
+
+📊 [Chart Types & Data Relationships](../slides/week03-charts.pdf)
+
+**Topics covered:**
+- Data types: categorical, ordinal, quantitative
+- Comparing values: bar charts and alternatives
+- Showing trends: line charts and time series
+- Exploring relationships: scatter plots and correlation
+- Distribution visualization: histograms and box plots
+
+## Readings
+
+### Required
+- Wilke, C. (2019). [Chapter 5: Visualizing Amounts](https://clauswilke.com/dataviz/visualizing-amounts.html)
+- Wilke, C. (2019). [Chapter 12: Visualizing Associations](https://clauswilke.com/dataviz/visualizing-associations.html)
+
+### Optional
+- [The Data Visualization Catalogue](https://datavizcatalogue.com/) - Browse chart types
+- [From Data to Viz](https://www.data-to-viz.com/) - Chart selection guide
+
+## Lab
+
+::: {.assignment-badge .lab}
+Lab 3
+:::
+
+**Exploring Chart Types**
+
+In this lab, you will:
+- Work with different data types
+- Create multiple chart types for the same dataset
+- Compare effectiveness of different approaches
+- Practice chart selection decision-making
+- Build a chart type reference guide
+
+📘 [Lab 3 Notebook](../labs/lab03.ipynb) | [Lab 3 Instructions](../labs/lab03-instructions.html)
+
+**Due:** Friday at 11:59 PM
+
+## Resources
+
+### Documentation
+- [Matplotlib Chart Gallery](https://matplotlib.org/stable/gallery/index.html)
+- [Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html)
+- [ggplot2 Cheat Sheet](https://rstudio.github.io/cheatsheets/data-visualization.pdf)
+
+### Interactive Tools
+- [Plotly Chart Types](https://plotly.com/python/)
+- [Observable Plot](https://observablehq.com/plot/) - Examples and inspiration
+
+## Looking Ahead
+
+Next week we'll dive into interactive visualizations and learn how to add user engagement to our charts. Consider:
+- Which of this week's charts would benefit from interactivity?
+- What questions might users want to explore?
+- How could tooltips or filtering enhance understanding?
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+Create a personal "chart type cheat sheet" with examples of when to use each type. Include both good and bad examples for reference.
+:::
+
+::: {.callout-warning}
+## Important Dates
+- **Lab 3 Due**: Friday, 11:59 PM
+- **Office Hours**: Tuesday, 4:00-5:00 PM
+- **Next Week**: Interactive Visualizations
+:::

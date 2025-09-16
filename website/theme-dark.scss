@@ -23,11 +23,14 @@ $code-color: #F39C12;
 // Navigation
 $navbar-bg: #0D0D0D;
 $navbar-fg: #E0E0E0;
-$sidebar-bg: #1A1A1A;
-$sidebar-fg: #E0E0E0;
-$sidebar-hl: #5DADE2;
+$sidebar-bg: #228b22;
+$sidebar-fg: #ffffff;
+$sidebar-hl: #e6ffe6;
 
 /*-- scss:rules --*/
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // Dark theme specific overrides
 .hero-banner {
@@ -98,4 +101,17 @@ $sidebar-hl: #5DADE2;
 
 .nav-footer {
   border-top-color: #34495E;
+}
+
+// Next section navigation
+.next-section-nav {
+  border-top-color: #34495E;
+  
+  .next-link {
+    background-color: #228b22;
+    
+    &:hover {
+      background-color: #2e8b57;
+    }
+  }
 }

@@ -158,7 +158,7 @@
     "href": "index.html",
     "title": "Welcome to SMM635!",
     "section": "",
-    "text": "Welcome to the course website for SMM635 - Data Visualization\nThis module will teach you how to create effective and beautiful data visualizations using modern tools and techniques. You’ll learn both the theory behind good visualization design and practical skills in Python and R.",
+    "text": "SMM635 Data Visualization is a comprehensive introduction to the principles and practice of data visualization. This module combines theoretical foundations with hands-on experience using industry-standard tools and programming languages. Students will learn to create effective, ethical, and aesthetically pleasing visualizations that communicate complex data insights to diverse audiences.",
     "crumbs": [
       "Course information",
       "Overview"
@@ -169,7 +169,7 @@
     "href": "index.html#course-overview",
     "title": "Welcome to SMM635!",
     "section": "Course overview",
-    "text": "Course overview\nData visualization is the art and science of transforming data into visual representations that effectively communicate insights, patterns, and stories. In this module, you will:\n\nLearn fundamental principles of visual perception and design\nMaster data visualization tools including matplotlib, seaborn, ggplot2, and plotly\nCreate static and interactive visualizations\nDevelop skills in exploratory data analysis\nBuild compelling data stories and dashboards\nWork with different data types: temporal, spatial, network, and text data",
+    "text": "Course overview\nData visualization is the art and science of transforming data into visual representations that effectively communicate insights, patterns, and stories. In this module, you will:\n\nCreate static and interactive visualizations\nWork with different data types: statistical estimates, temporal, spatial, network, and text data\nDevelop skills in exploratory data analysis\nBuild compelling data stories\nDesign and execute dashboards",
     "crumbs": [
       "Course information",
       "Overview"
@@ -180,7 +180,7 @@
     "href": "index.html#key-information",
     "title": "Welcome to SMM635!",
     "section": "Key information",
-    "text": "Key information\n\n\nLecture\nTuesday, 2:00 PM - 4:00 PM\nRoom TBD\nLab\nThursday, 2:00 PM - 4:00 PM\nRoom TBD\n\n\nInstructor\nDr. Simone Santoni\nOffice hours: By appointment",
+    "text": "Key information\n\n\nLecture\nThursday, 11:00 AM - 12:50 PM\nRoom FSQ510\nLab\nThursday, 3:00 PM - 4:50 PM\nRoom FSQ407\n\n\nInstructors\nSimone Santoni\nYinji (Benedict) Zhou\nOffice hours: By appointment",
     "crumbs": [
       "Course information",
       "Overview"
@@ -191,7 +191,7 @@
     "href": "index.html#learning-objectives",
     "title": "Welcome to SMM635!",
     "section": "Learning objectives",
-    "text": "Learning objectives\nBy the end of this module, you will be able to:\n\nDesign effective visualizations following perceptual and aesthetic principles\nCreate publication-quality static visualizations using Python and R\nDevelop interactive visualizations and dashboards\nCritique visualizations based on established design principles\nCommunicate data insights through visual storytelling",
+    "text": "Learning objectives\nBy the end of this module, you will be able to:\n\nDesign effective visualizations following perceptual and aesthetic principles\nCreate publication-quality static visualizations using Python and R\nCritique visualizations based on established design principles\nCommunicate data insights through visual storytelling",
     "crumbs": [
       "Course information",
       "Overview"
@@ -202,7 +202,7 @@
     "href": "index.html#course-materials",
     "title": "Welcome to SMM635!",
     "section": "Course materials",
-    "text": "Course materials\nAll course materials, including lecture slides, lab notebooks, and datasets, will be posted on this website. We will primarily use:\n\nPython (matplotlib, seaborn, plotly, altair)\nR (ggplot2, plotly, shiny)\nTableau (for rapid prototyping)\nD3.js (introduction to web-based visualizations)",
+    "text": "Course materials\nAll course materials, including lecture slides, lab notebooks, and datasets, will be posted on this website. We will primarily use:\n\nR (ggplot2, plotly, shiny)\nPython (matplotlib, seaborn, plotly, Vega-Altair)\nTableau (for rapid prototyping)",
     "crumbs": [
       "Course information",
       "Overview"
@@ -235,7 +235,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 1: Introduction to Data Visualization",
     "section": "",
-    "text": "This week we’ll explore what data visualization is, why it matters, and set up our development environment. We’ll create our first visualizations and discuss the course structure.",
+    "text": "Important Dates\n\n\n\n\nLab 1 Due: Friday, 11:59 PM\nOffice Hours: Tuesday, 4:00-5:00 PM\nNext Week: Visual Perception & Design Principles",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -642,7 +642,7 @@
     "href": "course-syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "SMM635 Data Visualization is a comprehensive introduction to the principles and practice of data visualization. This module combines theoretical foundations with hands-on experience using industry-standard tools and programming languages. Students will learn to create effective, ethical, and aesthetically pleasing visualizations that communicate complex data insights to diverse audiences.",
+    "text": "Click here to download a copy of the syllabus.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -652,8 +652,8 @@
     "objectID": "course-syllabus.html#course-description",
     "href": "course-syllabus.html#course-description",
     "title": "Syllabus",
-    "section": "",
-    "text": "SMM635 Data Visualization is a comprehensive introduction to the principles and practice of data visualization. This module combines theoretical foundations with hands-on experience using industry-standard tools and programming languages. Students will learn to create effective, ethical, and aesthetically pleasing visualizations that communicate complex data insights to diverse audiences.",
+    "section": "Course Description",
+    "text": "Course Description\nSMM635 Data Visualization is a comprehensive introduction to the principles and practice of data visualization. This module combines theoretical foundations with hands-on experience using industry-standard tools and programming languages. Students will learn to create effective, ethical, and aesthetically pleasing visualizations that communicate complex data insights to diverse audiences.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -686,7 +686,7 @@
     "href": "course-syllabus.html#assessment",
     "title": "Syllabus",
     "section": "Assessment",
-    "text": "Assessment\n\n\n\nComponent\nWeight\nDue Date\n\n\n\n\nLab Assignments (5 × 4%)\n20%\nWeekly\n\n\nMidterm Project\n30%\nWeek 6\n\n\nFinal Project\n40%\nWeek 11\n\n\nPeer Reviews\n10%\nOngoing\n\n\n\n\nLab Assignments\nShort weekly assignments that reinforce lecture concepts and develop technical skills.\n\n\nMidterm Project\nIndividual project focusing on exploratory data analysis and static visualizations.\n\n\nFinal Project\nGroup project (2-3 students) creating an interactive dashboard or data story on a topic of your choice.\n\n\nPeer Reviews\nConstructive feedback on classmates’ visualizations to develop critical evaluation skills.",
+    "text": "Assessment\n\nApplication excercises\n\n\nCase studies\n\n\nMid-term project\n\n\nFinal course project",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -741,7 +741,7 @@
     "href": "course-syllabus.html#communication",
     "title": "Syllabus",
     "section": "Communication",
-    "text": "Communication\n\nCourse website: Primary source for all materials\nOffice hours: Tuesday 4-5 PM or by appointment\nEmail: simone.santoni@institution.edu\nResponse time: Within 48 hours on weekdays",
+    "text": "Communication\nThis website provides students with access to any course materials.\nMoodle messages and forum. Email to discuss sensitive matters.",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -1042,6 +1042,1018 @@
     "crumbs": [
       "Course information",
       "Useful links"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html",
+    "href": "weeks/week-02.html",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "",
+    "text": "This week we’ll explore how humans perceive visual information and apply design principles to create effective visualizations. We’ll learn about color theory, cognitive load, and accessibility.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html#overview",
+    "href": "weeks/week-02.html#overview",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "",
+    "text": "This week we’ll explore how humans perceive visual information and apply design principles to create effective visualizations. We’ll learn about color theory, cognitive load, and accessibility.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html#learning-objectives",
+    "href": "weeks/week-02.html#learning-objectives",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nUnderstand how the human visual system processes information\nApply pre-attentive attributes in visualization design\nUse color effectively and accessibly\nReduce cognitive load through good design\nCreate visualizations that follow design principles",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html#lecture-slides",
+    "href": "weeks/week-02.html#lecture-slides",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\n📊 Visual Perception & Design\nTopics covered: - How we see: the visual system - Pre-attentive attributes - Color theory and accessibility - Gestalt principles - Reducing cognitive load",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html#readings",
+    "href": "weeks/week-02.html#readings",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nCairo, A. (2016). The Truthful Art, Chapter 6: “The Eye and the Visual Brain”\nWilke, C. (2019). Chapter 4: Color Scales\n\n\n\nOptional\n\nColorBrewer 2.0 - Explore color schemes\nViz Palette - Test color accessibility",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html#lab",
+    "href": "weeks/week-02.html#lab",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "Lab",
+    "text": "Lab\n\nLab 2\n\nApplying Design Principles\nIn this lab, you will: - Redesign poorly designed visualizations - Apply color theory principles - Test accessibility compliance - Create visualization critiques - Practice with different chart types\n📘 Lab 2 Notebook | Lab 2 Instructions\nDue: Friday at 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html#resources",
+    "href": "weeks/week-02.html#resources",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "Resources",
+    "text": "Resources\n\nTools\n\nContrast Checker\nSim Daltonism - Color blindness simulator\nAdobe Color - Color scheme generator\n\n\n\nReferences\n\nMatplotlib Color Documentation\nggplot2 Color Guide",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-02.html#looking-ahead",
+    "href": "weeks/week-02.html#looking-ahead",
+    "title": "Week 2: Visual Perception & Design Principles",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nNext week we’ll focus on choosing the right chart type for your data and message. Start noticing: - How different publications use color - Which visualizations are easy vs. difficult to read - How color affects your interpretation of data\n\n\n\n\n\n\n\nPro Tip\n\n\n\nUse your phone’s accessibility settings to test how your visualizations look with different vision types. Most phones have built-in color blindness simulators.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nLab 2 Due: Friday, 11:59 PM\nOffice Hours: Tuesday, 4:00-5:00 PM\nNext Week: Chart Types & Data Relationships",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html",
+    "href": "weeks/week-07.html",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "",
+    "text": "This week we’ll examine the ethical dimensions of data visualization, including bias, misleading representations, privacy concerns, and our responsibilities as data storytellers. We’ll learn to create honest and inclusive visualizations.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html#overview",
+    "href": "weeks/week-07.html#overview",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "",
+    "text": "This week we’ll examine the ethical dimensions of data visualization, including bias, misleading representations, privacy concerns, and our responsibilities as data storytellers. We’ll learn to create honest and inclusive visualizations.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html#learning-objectives",
+    "href": "weeks/week-07.html#learning-objectives",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nIdentify common ways visualizations can mislead\nRecognize and address bias in data representation\nApply inclusive design principles to visualizations\nConsider privacy and consent in data visualization\nCreate ethical guidelines for your visualization practice",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html#lecture-slides",
+    "href": "weeks/week-07.html#lecture-slides",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\n📊 Data Ethics & Responsible Visualization\nTopics covered: - How visualizations can lie or mislead - Cognitive biases and visual perception - Inclusive design and accessibility - Privacy, consent, and data sensitivity - Building ethical visualization practices",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html#readings",
+    "href": "weeks/week-07.html#readings",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nCairo, A. (2019). How Charts Lie, Chapters 1-3\nD’Ignazio, C. & Klein, L. (2020). Data Feminism, Chapter 6: “The Numbers Don’t Speak for Themselves”\n\n\n\nOptional\n\nSeeing Theory - Visual introduction to probability and statistics\nData Visualization Ethics - Tableau guide",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html#lab",
+    "href": "weeks/week-07.html#lab",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "Lab",
+    "text": "Lab\n\nLab 7\n\nEthical Visualization Audit\nIn this lab, you will: - Analyze misleading visualizations and identify problems - Redesign problematic charts to be more honest - Create accessibility-compliant visualizations - Develop an ethics checklist for future projects - Present your findings and recommendations\n📘 Lab 7 Notebook | Lab 7 Instructions\nDue: Friday at 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html#resources",
+    "href": "weeks/week-07.html#resources",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "Resources",
+    "text": "Resources\n\nEthics Guidelines\n\nASA Ethical Guidelines\nIEEE Visualization Ethics\nResponsible Data - Tools and practices\n\n\n\nAccessibility Tools\n\nWAVE Web Accessibility Evaluator\nColour Contrast Analyser\naxe DevTools - Accessibility testing\n\n\n\nCase Studies\n\nCOVID-19 Visualization Misinformation\nElection Maps and Bias",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-07.html#looking-ahead",
+    "href": "weeks/week-07.html#looking-ahead",
+    "title": "Week 7: Data Ethics & Responsible Visualization",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nNext week is project presentations! Time to showcase your work and see what your classmates have created. Prepare: - A 5-minute presentation of your project - Key insights and design decisions - Reflection on the visualization process\n\n\n\n\n\n\n\nPro Tip\n\n\n\nWhen in doubt, err on the side of transparency. Show uncertainty, provide context, and acknowledge limitations in your data and analysis.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nLab 7 Due: Friday, 11:59 PM\nProject Presentations: Next week\nFinal Projects Due: Week 10\nOffice Hours: Tuesday, 4:00-5:00 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html",
+    "href": "weeks/week-03.html",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "",
+    "text": "This week we’ll explore different chart types and learn how to match visualization techniques to data types and analytical goals. We’ll cover when to use bar charts, line charts, scatter plots, and more.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#overview",
+    "href": "weeks/week-03.html#overview",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "",
+    "text": "This week we’ll explore different chart types and learn how to match visualization techniques to data types and analytical goals. We’ll cover when to use bar charts, line charts, scatter plots, and more.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#learning-objectives",
+    "href": "weeks/week-03.html#learning-objectives",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nIdentify different data types and their characteristics\nChoose appropriate chart types for different data relationships\nCreate effective bar charts, line charts, and scatter plots\nUnderstand when to use specialized chart types\nAvoid common chart type mistakes",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#lecture-slides",
+    "href": "weeks/week-03.html#lecture-slides",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\n📊 Chart Types & Data Relationships\nTopics covered: - Data types: categorical, ordinal, quantitative - Comparing values: bar charts and alternatives - Showing trends: line charts and time series - Exploring relationships: scatter plots and correlation - Distribution visualization: histograms and box plots",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#readings",
+    "href": "weeks/week-03.html#readings",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nWilke, C. (2019). Chapter 5: Visualizing Amounts\nWilke, C. (2019). Chapter 12: Visualizing Associations\n\n\n\nOptional\n\nThe Data Visualization Catalogue - Browse chart types\nFrom Data to Viz - Chart selection guide",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#lab",
+    "href": "weeks/week-03.html#lab",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "Lab",
+    "text": "Lab\n\nLab 3\n\nExploring Chart Types\nIn this lab, you will: - Work with different data types - Create multiple chart types for the same dataset - Compare effectiveness of different approaches - Practice chart selection decision-making - Build a chart type reference guide\n📘 Lab 3 Notebook | Lab 3 Instructions\nDue: Friday at 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#resources",
+    "href": "weeks/week-03.html#resources",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "Resources",
+    "text": "Resources\n\nDocumentation\n\nMatplotlib Chart Gallery\nSeaborn Tutorial\nggplot2 Cheat Sheet\n\n\n\nInteractive Tools\n\nPlotly Chart Types\nObservable Plot - Examples and inspiration",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-03.html#looking-ahead",
+    "href": "weeks/week-03.html#looking-ahead",
+    "title": "Week 3: Chart Types & Data Relationships",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nNext week we’ll dive into interactive visualizations and learn how to add user engagement to our charts. Consider: - Which of this week’s charts would benefit from interactivity? - What questions might users want to explore? - How could tooltips or filtering enhance understanding?\n\n\n\n\n\n\n\nPro Tip\n\n\n\nCreate a personal “chart type cheat sheet” with examples of when to use each type. Include both good and bad examples for reference.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nLab 3 Due: Friday, 11:59 PM\nOffice Hours: Tuesday, 4:00-5:00 PM\nNext Week: Interactive Visualizations",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html",
+    "href": "weeks/week-08.html",
+    "title": "Week 8: Student Project Presentations",
+    "section": "",
+    "text": "This week students will present their mid-term projects, showcasing the visualization techniques and design principles learned so far. We’ll practice giving and receiving constructive feedback on data visualization work.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#overview",
+    "href": "weeks/week-08.html#overview",
+    "title": "Week 8: Student Project Presentations",
+    "section": "",
+    "text": "This week students will present their mid-term projects, showcasing the visualization techniques and design principles learned so far. We’ll practice giving and receiving constructive feedback on data visualization work.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#learning-objectives",
+    "href": "weeks/week-08.html#learning-objectives",
+    "title": "Week 8: Student Project Presentations",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nPresent data visualization projects effectively\nProvide constructive feedback on visualization design\nIdentify strengths and improvement opportunities in peer work\nReflect on your own design process and decisions\nLearn from diverse approaches to similar problems",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#presentation-format",
+    "href": "weeks/week-08.html#presentation-format",
+    "title": "Week 8: Student Project Presentations",
+    "section": "Presentation Format",
+    "text": "Presentation Format\n🎯 5-minute presentations followed by 2-minute Q&A\nStructure your presentation: 1. Problem/question (30 seconds) 2. Data and approach (1 minute) 3. Design decisions and process (2 minutes) 4. Key insights and findings (1 minute) 5. Reflection and next steps (30 seconds)",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#evaluation-criteria",
+    "href": "weeks/week-08.html#evaluation-criteria",
+    "title": "Week 8: Student Project Presentations",
+    "section": "Evaluation Criteria",
+    "text": "Evaluation Criteria\n\nTechnical Implementation (40%)\n\nAppropriate chart types for data and questions\nClean, well-structured code\nProper data handling and processing\nEffective use of visualization libraries\n\n\n\nDesign & Aesthetics (30%)\n\nClear visual hierarchy and layout\nAppropriate use of color and typography\nAccessibility considerations\nProfessional presentation quality\n\n\n\nCommunication (20%)\n\nClear problem statement and context\nLogical flow and storytelling\nEffective annotations and explanations\nEngagement with audience questions\n\n\n\nProcess & Reflection (10%)\n\nDocumentation of design decisions\nAcknowledgment of limitations\nLearning insights and growth\nPlans for improvement",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#presentation-schedule",
+    "href": "weeks/week-08.html#presentation-schedule",
+    "title": "Week 8: Student Project Presentations",
+    "section": "Presentation Schedule",
+    "text": "Presentation Schedule\nTuesday Session: - Groups 1-8 present - 15-minute break at midpoint - Peer feedback forms\nThursday Session: - Groups 9-16 present - 15-minute break at midpoint - Course reflection discussion",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#feedback-guidelines",
+    "href": "weeks/week-08.html#feedback-guidelines",
+    "title": "Week 8: Student Project Presentations",
+    "section": "Feedback Guidelines",
+    "text": "Feedback Guidelines\n\nGiving Feedback\n\nFocus on design choices, not personal preferences\nSuggest specific improvements\nHighlight what works well\nAsk clarifying questions about decisions\nBe constructive and respectful\n\n\n\nReceiving Feedback\n\nListen actively without defending\nAsk follow-up questions for clarity\nTake notes for future reference\nThank presenters for their perspectives\nConsider feedback in context of your goals",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#resources",
+    "href": "weeks/week-08.html#resources",
+    "title": "Week 8: Student Project Presentations",
+    "section": "Resources",
+    "text": "Resources\n\nPresentation Tips\n\nDesigning Effective Presentations\nStorytelling with Data Presentations\n\n\n\nPeer Review\n\nConstructive Feedback Guidelines\nDesign Critique Methods",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-08.html#looking-ahead",
+    "href": "weeks/week-08.html#looking-ahead",
+    "title": "Week 8: Student Project Presentations",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nAfter presentations, we’ll start working on advanced topics and final projects. Consider: - What techniques from peer presentations could you apply? - How might you extend your current project? - What new visualization challenges interest you?\n\n\n\n\n\n\n\nPro Tip\n\n\n\nPractice your presentation timing beforehand. 5 minutes goes by quickly, so focus on your most important points and insights.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nPresentations: Tuesday & Thursday this week\nPeer Feedback Forms: Due by end of week\nFinal Project Proposals: Due next week\nOffice Hours: Available for presentation prep",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html",
+    "href": "weeks/week-10.html",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "",
+    "text": "Our final week! Students will present their completed final projects and we’ll reflect on the course journey. We’ll also discuss next steps for continuing your data visualization learning and practice.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#overview",
+    "href": "weeks/week-10.html#overview",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "",
+    "text": "Our final week! Students will present their completed final projects and we’ll reflect on the course journey. We’ll also discuss next steps for continuing your data visualization learning and practice.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#learning-objectives",
+    "href": "weeks/week-10.html#learning-objectives",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nPresent a comprehensive data visualization project professionally\nEvaluate and provide feedback on complex visualization work\nReflect on your growth throughout the course\nIdentify areas for continued learning and improvement\nPlan your next steps in data visualization",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#final-presentation-format",
+    "href": "weeks/week-10.html#final-presentation-format",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "Final Presentation Format",
+    "text": "Final Presentation Format\n🎯 8-minute presentations followed by 3-minute Q&A\nStructure your presentation: 1. Problem and context (1 minute) 2. Data and methodology (1.5 minutes) 3. Design process and iterations (2 minutes) 4. Live demonstration (2 minutes) 5. Key insights and impact (1 minute) 6. Reflection and future work (30 seconds)",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#presentation-schedule",
+    "href": "weeks/week-10.html#presentation-schedule",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "Presentation Schedule",
+    "text": "Presentation Schedule\n\nTuesday: Progress Check & Prep\n\nMorning: Individual progress check-ins\nAfternoon: Presentation practice sessions\nEvening: Final project submission deadline\n\n\n\nThursday: Final Presentations\n\nSession 1: Projects 1-8 (90 minutes)\nBreak: 30 minutes with refreshments\nSession 2: Projects 9-16 (90 minutes)\nWrap-up: Course reflection and celebration",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#evaluation-rubric",
+    "href": "weeks/week-10.html#evaluation-rubric",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "Evaluation Rubric",
+    "text": "Evaluation Rubric\n\nTechnical Excellence (35%)\n\nSophisticated Implementation: Advanced techniques used appropriately\nCode Quality: Clean, documented, reproducible\nData Handling: Proper preprocessing and validation\nPerformance: Efficient and responsive\n\n\n\nDesign & User Experience (35%)\n\nVisual Design: Effective use of design principles\nAccessibility: WCAG compliance and inclusive design\nUsability: Intuitive interaction and navigation\nInnovation: Creative solutions to visualization challenges\n\n\n\nCommunication & Impact (20%)\n\nStorytelling: Clear narrative and compelling insights\nPresentation: Professional delivery and demonstration\nDocumentation: Comprehensive project documentation\nAudience Engagement: Effective Q&A and discussion\n\n\n\nProcess & Reflection (10%)\n\nIteration: Evidence of design evolution\nProblem-solving: Handling of technical challenges\nLearning: Demonstration of skill development\nCritical Thinking: Thoughtful evaluation of choices",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#course-reflection",
+    "href": "weeks/week-10.html#course-reflection",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "Course Reflection",
+    "text": "Course Reflection\n\nIndividual Reflection (Due with Final Project)\nWrite a 500-word reflection addressing: - What visualization skills have you developed? - Which projects or techniques were most challenging? - How has your understanding of design principles evolved? - What visualization work are you most proud of? - What areas do you want to continue developing?\n\n\nGroup Discussion Topics\n\nMost valuable techniques learned\nBiggest challenges overcome\nFavorite projects from the course\nAdvice for future students\nIndustry trends and opportunities",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#next-steps-in-data-visualization",
+    "href": "weeks/week-10.html#next-steps-in-data-visualization",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "Next Steps in Data Visualization",
+    "text": "Next Steps in Data Visualization\n\nContinued Learning\n\nAdvanced Courses: Machine learning visualization, scientific visualization\nConferences: IEEE VIS, EuroVis, Information+\nOnline Communities: Data Visualization Society, r/dataviz\nBooks: Advanced texts and specialized topics\n\n\n\nPortfolio Development\n\nGitHub Pages: Showcase your projects\nObservable: Interactive portfolio pieces\nLinkedIn: Professional visualization content\nPersonal Website: Comprehensive portfolio\n\n\n\nCareer Paths\n\nData Analyst/Scientist: Visualization for analysis\nUX/UI Designer: Information design and interfaces\nData Journalist: Storytelling with data\nBusiness Intelligence: Dashboard and reporting design\nResearch Visualization: Academic and scientific visualization",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10.html#resources-for-continued-growth",
+    "href": "weeks/week-10.html#resources-for-continued-growth",
+    "title": "Week 10: Final Presentations & Course Wrap-up",
+    "section": "Resources for Continued Growth",
+    "text": "Resources for Continued Growth\n\nCommunities\n\nData Visualization Society\nInformation is Beautiful\nFlowing Data\n\n\n\nTools to Explore\n\nEmerging Platforms: Observable, Figma, Framer\nSpecialized Tools: Tableau, Power BI, Qlik\nProgramming Libraries: D3.js, Three.js, Vega-Lite\n\n\n\nDatasets for Practice\n\nKaggle Datasets\nData.gov\nOur World in Data\n\n\n\n\n\n\n\n\nPro Tip\n\n\n\nKeep creating! The best way to maintain and grow your visualization skills is through regular practice and experimentation.\n\n\n\n\n\n\n\n\nFinal Deadlines\n\n\n\n\nFinal Projects: Thursday, 11:59 PM\nReflection Essays: Thursday, 11:59 PM\nPeer Evaluation Forms: Friday, 11:59 PM\n\n\n\n\n\n\n\n\n\nThank You!\n\n\n\nCongratulations on completing SMM635 Data Visualization! It’s been a pleasure learning and creating with you. Keep visualizing!",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html",
+    "href": "weeks/week-05.html",
+    "title": "Week 5: Storytelling with Data",
+    "section": "",
+    "text": "This week we’ll learn how to craft compelling narratives with data visualizations. We’ll explore different storytelling structures, annotation techniques, and how to guide audiences through data-driven insights.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html#overview",
+    "href": "weeks/week-05.html#overview",
+    "title": "Week 5: Storytelling with Data",
+    "section": "",
+    "text": "This week we’ll learn how to craft compelling narratives with data visualizations. We’ll explore different storytelling structures, annotation techniques, and how to guide audiences through data-driven insights.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html#learning-objectives",
+    "href": "weeks/week-05.html#learning-objectives",
+    "title": "Week 5: Storytelling with Data",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nStructure data stories using narrative frameworks\nCreate effective annotations and callouts\nDesign visualizations that guide reader attention\nChoose appropriate story types for different contexts\nCombine multiple visualizations into cohesive narratives",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html#lecture-slides",
+    "href": "weeks/week-05.html#lecture-slides",
+    "title": "Week 5: Storytelling with Data",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\n📊 Storytelling with Data\nTopics covered: - Elements of compelling data stories - Narrative structures: explanatory vs. exploratory - Annotation strategies and visual hierarchy - Multi-chart storytelling - Context and framing techniques",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html#readings",
+    "href": "weeks/week-05.html#readings",
+    "title": "Week 5: Storytelling with Data",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nKnaflic, C. (2015). Storytelling with Data, Chapters 1-2\nSegel, E. & Heer, J. (2010). “Narrative Visualization: Telling Stories with Data”\n\n\n\nOptional\n\nThe Pudding - Browse visual stories for inspiration\nFiveThirtyEight - Data journalism examples",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html#lab",
+    "href": "weeks/week-05.html#lab",
+    "title": "Week 5: Storytelling with Data",
+    "section": "Lab",
+    "text": "Lab\n\nLab 5\n\nCreating Data Stories\nIn this lab, you will: - Choose a dataset and identify key insights - Create a multi-panel data story - Add effective annotations and callouts - Test your story with different audiences - Present your findings in a compelling format\n📘 Lab 5 Notebook | Lab 5 Instructions\nDue: Friday at 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html#resources",
+    "href": "weeks/week-05.html#resources",
+    "title": "Week 5: Storytelling with Data",
+    "section": "Resources",
+    "text": "Resources\n\nTools for Annotation\n\nMatplotlib Annotation Guide\nggplot2 Annotation Functions\nPlotly Annotations\n\n\n\nStory Examples\n\nNew York Times Graphics\nWashington Post Graphics\nReuters Graphics\n\n\n\nPresentation Tools\n\nObservable Notebooks - Interactive stories\nQuarto Presentations - Slides with code",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-05.html#looking-ahead",
+    "href": "weeks/week-05.html#looking-ahead",
+    "title": "Week 5: Storytelling with Data",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nNext week we’ll explore advanced visualization techniques including small multiples, animation, and specialized chart types. Consider: - How could animation enhance your stories? - What patterns emerge when you create multiple views? - Which stories need more sophisticated techniques?\n\n\n\n\n\n\n\nPro Tip\n\n\n\nStart with the insight, not the data. What’s the one key message you want readers to remember? Build your story around that.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nLab 5 Due: Friday, 11:59 PM\nOffice Hours: Tuesday, 4:00-5:00 PM\nNext Week: Advanced Visualization Techniques",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html",
+    "href": "weeks/week-09.html",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "",
+    "text": "This week we’ll work on final projects and explore advanced topics based on class interests. We’ll cover emerging trends in data visualization, specialized techniques, and provide dedicated time for project development and consultation.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html#overview",
+    "href": "weeks/week-09.html#overview",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "",
+    "text": "This week we’ll work on final projects and explore advanced topics based on class interests. We’ll cover emerging trends in data visualization, specialized techniques, and provide dedicated time for project development and consultation.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html#learning-objectives",
+    "href": "weeks/week-09.html#learning-objectives",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nApply advanced visualization techniques to final projects\nEvaluate emerging trends and technologies in data visualization\nReceive and incorporate feedback on work-in-progress\nPlan and execute a comprehensive visualization project\nTroubleshoot complex visualization challenges",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html#workshop-format",
+    "href": "weeks/week-09.html#workshop-format",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "Workshop Format",
+    "text": "Workshop Format\n\nTuesday: Advanced Topics Seminar\n📊 Emerging Trends in Data Visualization\nTopics covered (student choice): - 3D visualization and virtual reality - Machine learning for visualization - Real-time and streaming data visualization - Collaborative and social visualization - Domain-specific visualization (scientific, business, etc.)\n\n\nThursday: Project Workshop\nIndividual consultations and group work time - 15-minute individual meetings with instructor - Peer collaboration and feedback - Technical troubleshooting - Design critique sessions",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html#final-project-requirements",
+    "href": "weeks/week-09.html#final-project-requirements",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "Final Project Requirements",
+    "text": "Final Project Requirements\n\nFinal Project\n\nComprehensive Data Visualization Project\n\nComponents\n\nTechnical Implementation (40%)\n\nMultiple linked visualizations\nAppropriate use of interactivity\nClean, well-documented code\nProfessional deployment/presentation\n\nDesign & Communication (30%)\n\nClear narrative and insights\nEffective visual design\nAccessibility compliance\nUser-centered design\n\nProcess Documentation (20%)\n\nDesign iteration and rationale\nData source documentation\nTechnical challenges and solutions\nUser testing and feedback incorporation\n\nPresentation (10%)\n\n8-minute final presentation\nClear communication of insights\nDemonstration of technical features\nQ&A handling\n\n\n\n\nDeliverables\n\nProject Proposal: Due this week (1-2 pages)\nProgress Check: Week 10 Tuesday\nFinal Presentation: Week 10 Thursday\nComplete Project: Due Friday of Week 10",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html#readings",
+    "href": "weeks/week-09.html#readings",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nStudent choice from advanced topic resources\nPeer review of project proposals\n\n\n\nOptional\n\nThe Future of Data Visualization\nVisualization Research Papers - Browse recent conference proceedings",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html#resources",
+    "href": "weeks/week-09.html#resources",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "Resources",
+    "text": "Resources\n\nProject Development\n\nGitHub Pages - Free hosting for projects\nObservable - Interactive notebook platform\nStreamlit Community Cloud - App deployment\n\n\n\nAdvanced Libraries\n\nD3.js - Advanced web-based visualizations\nThree.js - 3D graphics\nDeck.gl - Large-scale data visualization\n\n\n\nInspiration\n\nInformation is Beautiful Awards\nKantar Information is Beautiful\nVisual Capitalist",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-09.html#individual-consultation-topics",
+    "href": "weeks/week-09.html#individual-consultation-topics",
+    "title": "Week 9: Final Project Workshop & Advanced Topics",
+    "section": "Individual Consultation Topics",
+    "text": "Individual Consultation Topics\nCome prepared to discuss: - Project scope and feasibility - Technical implementation challenges - Design decisions and alternatives - Data sources and preprocessing needs - Timeline and milestones\n\n\n\n\n\n\n\nPro Tip\n\n\n\nUse this week to get unstuck on any technical challenges. Don’t wait until the last minute to ask for help with complex implementations.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nProject Proposal: Due Friday, 11:59 PM\nIndividual Consultations: Thursday (sign up for slot)\nProgress Check: Next Tuesday\nFinal Presentations: Next Thursday\nFinal Projects Due: Next Friday, 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html",
+    "href": "weeks/week-06.html",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "",
+    "text": "This week we’ll explore advanced visualization techniques including small multiples, animation, network diagrams, and geographic visualizations. We’ll learn when and how to use these sophisticated approaches effectively.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#overview",
+    "href": "weeks/week-06.html#overview",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "",
+    "text": "This week we’ll explore advanced visualization techniques including small multiples, animation, network diagrams, and geographic visualizations. We’ll learn when and how to use these sophisticated approaches effectively.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#learning-objectives",
+    "href": "weeks/week-06.html#learning-objectives",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nCreate small multiples and faceted visualizations\nDesign effective animated visualizations\nBuild network and tree diagrams\nCreate geographic visualizations and maps\nChoose advanced techniques appropriately for your data and audience",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#lecture-slides",
+    "href": "weeks/week-06.html#lecture-slides",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\n📊 Advanced Visualization Techniques\nTopics covered: - Small multiples and faceting strategies - Animation principles and timing - Network visualization layouts and aesthetics - Geographic data and map projections - When to use advanced techniques",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#readings",
+    "href": "weeks/week-06.html#readings",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nTufte, E. (2001). The Visual Display of Quantitative Information, Chapter 4: “Small Multiples”\nWilke, C. (2019). Chapter 21: Multi-panel Figures\n\n\n\nOptional\n\nAnimation in Data Visualization - Best practices\nObservable Animation Examples - Interactive examples",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#lab",
+    "href": "weeks/week-06.html#lab",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "Lab",
+    "text": "Lab\n\nLab 6\n\nAdvanced Techniques Workshop\nIn this lab, you will: - Create small multiples with consistent scales - Build an animated visualization showing change over time - Design a network diagram or geographic visualization - Compare static vs. animated approaches - Optimize performance for complex visualizations\n📘 Lab 6 Notebook | Lab 6 Instructions\nDue: Friday at 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#resources",
+    "href": "weeks/week-06.html#resources",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "Resources",
+    "text": "Resources\n\nSmall Multiples\n\nggplot2 Faceting\nMatplotlib Subplots\nPlotly Subplots\n\n\n\nAnimation\n\nMatplotlib Animation\ngganimate - Grammar of animated graphics\nPlotly Animation\n\n\n\nGeographic & Network\n\nFolium - Interactive maps\nNetworkX - Network analysis and visualization\nleaflet for R - Interactive maps",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-06.html#looking-ahead",
+    "href": "weeks/week-06.html#looking-ahead",
+    "title": "Week 6: Advanced Visualization Techniques",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nNext week we’ll focus on data ethics and responsible visualization practices. Reflect on: - How can advanced techniques mislead audiences? - What responsibilities do we have as visualization creators? - When does sophistication become counterproductive?\n\n\n\n\n\n\n\nPro Tip\n\n\n\nAdvanced doesn’t always mean better. Use sophisticated techniques only when they genuinely improve understanding or reveal important patterns.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nLab 6 Due: Friday, 11:59 PM\nOffice Hours: Tuesday, 4:00-5:00 PM\nNext Week: Data Ethics & Responsible Visualization",
+    "crumbs": [
+      "Weekly materials",
+      "Week 6"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html",
+    "href": "weeks/week-04.html",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "",
+    "text": "This week we’ll learn how to create interactive visualizations that allow users to explore data dynamically. We’ll cover tooltips, filtering, brushing, and building interactive dashboards.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#overview",
+    "href": "weeks/week-04.html#overview",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "",
+    "text": "This week we’ll learn how to create interactive visualizations that allow users to explore data dynamically. We’ll cover tooltips, filtering, brushing, and building interactive dashboards.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#learning-objectives",
+    "href": "weeks/week-04.html#learning-objectives",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nCreate interactive plots with tooltips and hover effects\nImplement filtering and selection mechanisms\nBuild linked visualizations and brushing interactions\nDesign effective interactive dashboards\nChoose appropriate levels of interactivity for different audiences",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#lecture-slides",
+    "href": "weeks/week-04.html#lecture-slides",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\n📊 Interactive Visualizations\nTopics covered: - Principles of interactive design - Types of interactions: select, explore, reconfigure, connect - Building interactive plots with Plotly - Dashboard design with Streamlit and Shiny - User experience considerations",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#readings",
+    "href": "weeks/week-04.html#readings",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nShneiderman, B. (1996). “The Eyes Have It: A Task by Data Type Taxonomy” (excerpt)\nInteractive Data Visualization for the Web - Chapter 1 (optional background)\n\n\n\nOptional\n\nPlotly Dash User Guide\nStreamlit Documentation",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#lab",
+    "href": "weeks/week-04.html#lab",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "Lab",
+    "text": "Lab\n\nLab 4\n\nBuilding Interactive Dashboards\nIn this lab, you will: - Create interactive plots with Plotly - Build a multi-panel dashboard - Implement user controls and filters - Test usability with different user scenarios - Deploy your dashboard online\n📘 Lab 4 Notebook | Lab 4 Instructions\nDue: Friday at 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#resources",
+    "href": "weeks/week-04.html#resources",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "Resources",
+    "text": "Resources\n\nPython Tools\n\nPlotly Python Documentation\nStreamlit Gallery\nPanel User Guide\n\n\n\nR Tools\n\nShiny Tutorial\nplotly for R\nflexdashboard\n\n\n\nDeployment\n\nStreamlit Community Cloud\nShiny Apps",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#looking-ahead",
+    "href": "weeks/week-04.html#looking-ahead",
+    "title": "Week 4: Interactive Visualizations",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nNext week we’ll focus on storytelling with data and creating narrative visualizations. Think about: - What stories are hidden in your interactive visualizations? - How can you guide users through discoveries? - What insights emerge from exploration?\n\n\n\n\n\n\n\nPro Tip\n\n\n\nKeep interactions simple and intuitive. Users should be able to understand what they can do within 10 seconds of seeing your visualization.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nLab 4 Due: Friday, 11:59 PM\nOffice Hours: Tuesday, 4:00-5:00 PM\nNext Week: Storytelling with Data",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-info",
+    "href": "course-syllabus.html#course-info",
+    "title": "Syllabus",
+    "section": "Course info",
+    "text": "Course info\n\n\n\n\nDay\nTime\nLocation\n\n\n\n\nLectures\nThursday\n11:00 AM - 12:50 PM\nFSQ511\n\n\nLabs\nThursday\n3:00 PM - 4:50 PM\nFSQ407",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#communication-1",
+    "href": "course-syllabus.html#communication-1",
+    "title": "Syllabus",
+    "section": "Communication",
+    "text": "Communication\n\nCourse website: Primary source for all materials\nOffice hours: Tuesday 4-5 PM or by appointment\nEmail: simone.santoni@institution.edu\nResponse time: Within 48 hours on weekdays",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#where-to-get-help",
+    "href": "course-syllabus.html#where-to-get-help",
+    "title": "Syllabus",
+    "section": "Where to get help",
+    "text": "Where to get help\n.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#lectures-and-labs",
+    "href": "course-syllabus.html#lectures-and-labs",
+    "title": "Syllabus",
+    "section": "Lectures and labs",
+    "text": "Lectures and labs",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#teams",
+    "href": "course-syllabus.html#teams",
+    "title": "Syllabus",
+    "section": "Teams",
+    "text": "Teams",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#assessment-1",
+    "href": "course-syllabus.html#assessment-1",
+    "title": "Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\n\n\n\nComponent\nWeight\nDue Date\n\n\n\n\nCase studies\n20%\nOngoing\n\n\nMidterm Project\n30%\nWeek 6\n\n\nFinal Project\n50%\nWeek 10\n\n\n\n\nCase studies\nShort weekly assignments that reinforce lecture concepts and develop technical skills. Emphasis will be placed on the in-class contribution to case discussion.\n\n\nMidterm Project\nIndividual project focusing on exploratory data analysis and static visualizations.\n\n\nFinal Project\nGroup project (2-3 students) creating an interactive dashboard or data story on a topic of your choice.\n\n\nPeer Reviews\nConstructive feedback on classmates’ visualizations to develop critical evaluation skills.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#grading",
+    "href": "course-syllabus.html#grading",
+    "title": "Syllabus",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nComponent\nPercentage\n\n\n\n\nCase studies\n20%\n\n\nMidterm Project\n30%\n\n\nFinal Project\n50%\n\n\n\n\n\n\nLabel grade\nFinal course grade\n\n\n\n\nCase studies\n&gt; 90\n\n\nMidterm Project\n…\n\n\nFinal Project\n&lt;50\n\n\n\n\nCase studies\nShort weekly assignments that reinforce lecture concepts and develop technical skills. Emphasis will be placed on the in-class contribution to case discussion.\n\n\nMidterm Project\nIndividual project focusing on exploratory data analysis and static visualizations.\n\n\nFinal Project\nGroup project (2-3 students) creating an interactive dashboard or data story on a topic of your choice.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#textbooks",
+    "href": "course-syllabus.html#textbooks",
+    "title": "Syllabus",
+    "section": "Textbooks",
+    "text": "Textbooks",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#tipcs-for-success",
+    "href": "course-syllabus.html#tipcs-for-success",
+    "title": "Syllabus",
+    "section": "Tipcs for success",
+    "text": "Tipcs for success",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-policies-1",
+    "href": "course-syllabus.html#course-policies-1",
+    "title": "Syllabus",
+    "section": "Course policies",
+    "text": "Course policies\n\nAcademic intergrity\n\n\nCollaboration policy\n\n\nPolicy on sharing and reusing code\n\n\nLate work policy\n\n\nRegrade request policy\n\n\nAttendance policy",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#important-dates",
+    "href": "course-syllabus.html#important-dates",
+    "title": "Syllabus",
+    "section": "Important dates",
+    "text": "Important dates",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-schedule.html",
+    "href": "course-schedule.html",
+    "title": "SMM635 - Data Visualization",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\nDate\nTopic\nPrepare\nSlides\nAE\nLab\nCase\nProject",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course-schedule.html#smm635-data-visualization",
+    "href": "course-schedule.html#smm635-data-visualization",
+    "title": "SMM635 - Data Visualization",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\nDate\nTopic\nPrepare\nSlides\nAE\nLab\nCase\nProject",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#participate",
+    "href": "weeks/week-01.html#participate",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Participate",
+    "text": "Participate",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#practice",
+    "href": "weeks/week-01.html#practice",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Practice",
+    "text": "Practice",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#perform",
+    "href": "weeks/week-01.html#perform",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Perform",
+    "text": "Perform",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#prepare",
+    "href": "weeks/week-01.html#prepare",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Prepare",
+    "text": "Prepare",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#pro-tip",
+    "href": "weeks/week-01.html#pro-tip",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Pro tip",
+    "text": "Pro tip\n\n\n\n\n\n\nCreate your visualization journal\n\n\n\nTake screenshot or save interesting visualizations you find online or in print. We’ll analyze these throughout the course.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
     ]
   }
 ]

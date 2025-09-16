@@ -30,6 +30,8 @@ website:
             text: Support
           - href: course-team.qmd
             text: Teaching team
+          - href: course-schedule.qmd
+            text: Schedule
           - href: course-links.qmd
             text: Useful links
           - href: course-faq.qmd

@@ -1,0 +1,96 @@
+---
+title: "Week 7: Data Ethics & Responsible Visualization"
+---
+
+::: {.week-card}
+## Overview
+This week we'll examine the ethical dimensions of data visualization, including bias, misleading representations, privacy concerns, and our responsibilities as data storytellers. We'll learn to create honest and inclusive visualizations.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Identify common ways visualizations can mislead
+- Recognize and address bias in data representation
+- Apply inclusive design principles to visualizations
+- Consider privacy and consent in data visualization
+- Create ethical guidelines for your visualization practice
+
+## Lecture Slides
+
+📊 [Data Ethics & Responsible Visualization](../slides/week07-ethics.pdf)
+
+**Topics covered:**
+- How visualizations can lie or mislead
+- Cognitive biases and visual perception
+- Inclusive design and accessibility
+- Privacy, consent, and data sensitivity
+- Building ethical visualization practices
+
+## Readings
+
+### Required
+- Cairo, A. (2019). *How Charts Lie*, Chapters 1-3
+- D'Ignazio, C. & Klein, L. (2020). *Data Feminism*, Chapter 6: "The Numbers Don't Speak for Themselves"
+
+### Optional
+- [Seeing Theory](https://seeing-theory.brown.edu/) - Visual introduction to probability and statistics
+- [Data Visualization Ethics](https://www.tableau.com/learn/articles/data-visualization-ethics) - Tableau guide
+
+## Lab
+
+::: {.assignment-badge .lab}
+Lab 7
+:::
+
+**Ethical Visualization Audit**
+
+In this lab, you will:
+- Analyze misleading visualizations and identify problems
+- Redesign problematic charts to be more honest
+- Create accessibility-compliant visualizations
+- Develop an ethics checklist for future projects
+- Present your findings and recommendations
+
+📘 [Lab 7 Notebook](../labs/lab07.ipynb) | [Lab 7 Instructions](../labs/lab07-instructions.html)
+
+**Due:** Friday at 11:59 PM
+
+## Resources
+
+### Ethics Guidelines
+- [ASA Ethical Guidelines](https://www.amstat.org/your-career/ethical-guidelines-for-statistical-practice)
+- [IEEE Visualization Ethics](https://ieeevis.org/year/2020/info/call-participation/ethics-guidelines)
+- [Responsible Data](https://responsibledata.io/) - Tools and practices
+
+### Accessibility Tools
+- [WAVE Web Accessibility Evaluator](https://wave.webaim.org/)
+- [Colour Contrast Analyser](https://www.tpgi.com/color-contrast-checker/)
+- [axe DevTools](https://www.deque.com/axe/devtools/) - Accessibility testing
+
+### Case Studies
+- [COVID-19 Visualization Misinformation](https://www.reuters.com/article/uk-factcheck-coronavirus-misleading-graphs/)
+- [Election Maps and Bias](https://www.washingtonpost.com/graphics/politics/2016-election/how-election-maps-lie/)
+
+## Looking Ahead
+
+Next week is project presentations! Time to showcase your work and see what your classmates have created. Prepare:
+- A 5-minute presentation of your project
+- Key insights and design decisions
+- Reflection on the visualization process
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+When in doubt, err on the side of transparency. Show uncertainty, provide context, and acknowledge limitations in your data and analysis.
+:::
+
+::: {.callout-warning}
+## Important Dates
+- **Lab 7 Due**: Friday, 11:59 PM
+- **Project Presentations**: Next week
+- **Final Projects Due**: Week 10
+- **Office Hours**: Tuesday, 4:00-5:00 PM
+:::

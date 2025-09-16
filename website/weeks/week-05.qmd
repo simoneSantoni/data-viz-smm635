@@ -1,0 +1,95 @@
+---
+title: "Week 5: Storytelling with Data"
+---
+
+::: {.week-card}
+## Overview
+This week we'll learn how to craft compelling narratives with data visualizations. We'll explore different storytelling structures, annotation techniques, and how to guide audiences through data-driven insights.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Structure data stories using narrative frameworks
+- Create effective annotations and callouts
+- Design visualizations that guide reader attention
+- Choose appropriate story types for different contexts
+- Combine multiple visualizations into cohesive narratives
+
+## Lecture Slides
+
+📊 [Storytelling with Data](../slides/week05-storytelling.pdf)
+
+**Topics covered:**
+- Elements of compelling data stories
+- Narrative structures: explanatory vs. exploratory
+- Annotation strategies and visual hierarchy
+- Multi-chart storytelling
+- Context and framing techniques
+
+## Readings
+
+### Required
+- Knaflic, C. (2015). *Storytelling with Data*, Chapters 1-2
+- Segel, E. & Heer, J. (2010). "Narrative Visualization: Telling Stories with Data"
+
+### Optional
+- [The Pudding](https://pudding.cool/) - Browse visual stories for inspiration
+- [FiveThirtyEight](https://fivethirtyeight.com/) - Data journalism examples
+
+## Lab
+
+::: {.assignment-badge .lab}
+Lab 5
+:::
+
+**Creating Data Stories**
+
+In this lab, you will:
+- Choose a dataset and identify key insights
+- Create a multi-panel data story
+- Add effective annotations and callouts
+- Test your story with different audiences
+- Present your findings in a compelling format
+
+📘 [Lab 5 Notebook](../labs/lab05.ipynb) | [Lab 5 Instructions](../labs/lab05-instructions.html)
+
+**Due:** Friday at 11:59 PM
+
+## Resources
+
+### Tools for Annotation
+- [Matplotlib Annotation Guide](https://matplotlib.org/stable/tutorials/text/annotations.html)
+- [ggplot2 Annotation Functions](https://ggplot2.tidyverse.org/reference/annotate.html)
+- [Plotly Annotations](https://plotly.com/python/text-and-annotations/)
+
+### Story Examples
+- [New York Times Graphics](https://www.nytimes.com/section/upshot)
+- [Washington Post Graphics](https://www.washingtonpost.com/graphics/)
+- [Reuters Graphics](https://graphics.reuters.com/)
+
+### Presentation Tools
+- [Observable Notebooks](https://observablehq.com/) - Interactive stories
+- [Quarto Presentations](https://quarto.org/docs/presentations/) - Slides with code
+
+## Looking Ahead
+
+Next week we'll explore advanced visualization techniques including small multiples, animation, and specialized chart types. Consider:
+- How could animation enhance your stories?
+- What patterns emerge when you create multiple views?
+- Which stories need more sophisticated techniques?
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+Start with the insight, not the data. What's the one key message you want readers to remember? Build your story around that.
+:::
+
+::: {.callout-warning}
+## Important Dates
+- **Lab 5 Due**: Friday, 11:59 PM
+- **Office Hours**: Tuesday, 4:00-5:00 PM
+- **Next Week**: Advanced Visualization Techniques
+:::

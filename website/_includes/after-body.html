@@ -1,0 +1,80 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // First, remove any existing Quarto navigation with green background
+  const existingNavs = document.querySelectorAll('.nav-page-next, .nav-footer-right');
+  existingNavs.forEach(nav => {
+    if (nav.querySelector('a')) {
+      nav.style.display = 'none';
+    }
+  });
+  // Define the navigation order
+  const navOrder = [
+    { href: 'index.html', title: 'Overview' },
+    { href: 'course-syllabus.html', title: 'Syllabus' },
+    { href: 'course-support.html', title: 'Support' },
+    { href: 'course-team.html', title: 'Teaching team' },
+    { href: 'course-links.html', title: 'Useful links' },
+    { href: 'course-faq.html', title: 'FAQ' },
+    { href: 'computing-access.html', title: 'Access computing resources' },
+    { href: 'computing-troubleshooting.html', title: 'Troubleshooting' },
+    { href: 'project-description.html', title: 'Project Instructions' },
+    { href: 'project-tips.html', title: 'Tips + resources' },
+    { href: 'weeks/week-01.html', title: 'Week 1' },
+    { href: 'weeks/week-02.html', title: 'Week 2' },
+    { href: 'weeks/week-03.html', title: 'Week 3' },
+    { href: 'weeks/week-04.html', title: 'Week 4' },
+    { href: 'weeks/week-05.html', title: 'Week 5' },
+    { href: 'weeks/week-06.html', title: 'Week 6' },
+    { href: 'weeks/week-07.html', title: 'Week 7' },
+    { href: 'weeks/week-08.html', title: 'Week 8' },
+    { href: 'weeks/week-09.html', title: 'Week 9' },
+    { href: 'weeks/week-10.html', title: 'Week 10' },
+    { href: 'supplemental/index.html', title: 'Supplemental Notes' }
+  ];
+
+  // Get current page
+  let currentPath = window.location.pathname;
+  if (currentPath.endsWith('/')) {
+    currentPath += 'index.html';
+  }
+  
+  // Extract the relative path
+  const pathParts = currentPath.split('/');
+  const fileName = pathParts[pathParts.length - 1];
+  const folderName = pathParts[pathParts.length - 2];
+  
+  // Find current page in order
+  let currentIndex = -1;
+  for (let i = 0; i < navOrder.length; i++) {
+    const navPath = navOrder[i].href;
+    if (navPath === fileName || 
+        navPath === folderName + '/' + fileName ||
+        navPath.endsWith('/' + fileName)) {
+      currentIndex = i;
+      break;
+    }
+  }
+  
+  // If we found the current page and there's a next page
+  if (currentIndex !== -1 && currentIndex < navOrder.length - 1) {
+    const nextPage = navOrder[currentIndex + 1];
+    
+    // Create the next link element
+    const mainContent = document.querySelector('main.content');
+    if (mainContent) {
+      const navDiv = document.createElement('div');
+      navDiv.className = 'next-section-nav';
+      
+      const link = document.createElement('a');
+      link.href = nextPage.href.startsWith('weeks/') || nextPage.href.startsWith('supplemental/') 
+        ? '../' + nextPage.href 
+        : nextPage.href;
+      link.className = 'next-link';
+      link.textContent = 'Next: ' + nextPage.title + ' →';
+      
+      navDiv.appendChild(link);
+      mainContent.appendChild(navDiv);
+    }
+  }
+});
+</script>

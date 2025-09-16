@@ -1,0 +1,143 @@
+---
+title: "Week 10: Final Presentations & Course Wrap-up"
+---
+
+::: {.week-card}
+## Overview
+Our final week! Students will present their completed final projects and we'll reflect on the course journey. We'll also discuss next steps for continuing your data visualization learning and practice.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Present a comprehensive data visualization project professionally
+- Evaluate and provide feedback on complex visualization work
+- Reflect on your growth throughout the course
+- Identify areas for continued learning and improvement
+- Plan your next steps in data visualization
+
+## Final Presentation Format
+
+🎯 **8-minute presentations** followed by 3-minute Q&A
+
+**Structure your presentation:**
+1. Problem and context (1 minute)
+2. Data and methodology (1.5 minutes)
+3. Design process and iterations (2 minutes)
+4. Live demonstration (2 minutes)
+5. Key insights and impact (1 minute)
+6. Reflection and future work (30 seconds)
+
+## Presentation Schedule
+
+### Tuesday: Progress Check & Prep
+- **Morning**: Individual progress check-ins
+- **Afternoon**: Presentation practice sessions
+- **Evening**: Final project submission deadline
+
+### Thursday: Final Presentations
+- **Session 1**: Projects 1-8 (90 minutes)
+- **Break**: 30 minutes with refreshments
+- **Session 2**: Projects 9-16 (90 minutes)
+- **Wrap-up**: Course reflection and celebration
+
+## Evaluation Rubric
+
+### Technical Excellence (35%)
+- **Sophisticated Implementation**: Advanced techniques used appropriately
+- **Code Quality**: Clean, documented, reproducible
+- **Data Handling**: Proper preprocessing and validation
+- **Performance**: Efficient and responsive
+
+### Design & User Experience (35%)
+- **Visual Design**: Effective use of design principles
+- **Accessibility**: WCAG compliance and inclusive design
+- **Usability**: Intuitive interaction and navigation
+- **Innovation**: Creative solutions to visualization challenges
+
+### Communication & Impact (20%)
+- **Storytelling**: Clear narrative and compelling insights
+- **Presentation**: Professional delivery and demonstration
+- **Documentation**: Comprehensive project documentation
+- **Audience Engagement**: Effective Q&A and discussion
+
+### Process & Reflection (10%)
+- **Iteration**: Evidence of design evolution
+- **Problem-solving**: Handling of technical challenges
+- **Learning**: Demonstration of skill development
+- **Critical Thinking**: Thoughtful evaluation of choices
+
+## Course Reflection
+
+### Individual Reflection (Due with Final Project)
+Write a 500-word reflection addressing:
+- What visualization skills have you developed?
+- Which projects or techniques were most challenging?
+- How has your understanding of design principles evolved?
+- What visualization work are you most proud of?
+- What areas do you want to continue developing?
+
+### Group Discussion Topics
+- Most valuable techniques learned
+- Biggest challenges overcome
+- Favorite projects from the course
+- Advice for future students
+- Industry trends and opportunities
+
+## Next Steps in Data Visualization
+
+### Continued Learning
+- **Advanced Courses**: Machine learning visualization, scientific visualization
+- **Conferences**: IEEE VIS, EuroVis, Information+
+- **Online Communities**: Data Visualization Society, r/dataviz
+- **Books**: Advanced texts and specialized topics
+
+### Portfolio Development
+- **GitHub Pages**: Showcase your projects
+- **Observable**: Interactive portfolio pieces
+- **LinkedIn**: Professional visualization content
+- **Personal Website**: Comprehensive portfolio
+
+### Career Paths
+- **Data Analyst/Scientist**: Visualization for analysis
+- **UX/UI Designer**: Information design and interfaces
+- **Data Journalist**: Storytelling with data
+- **Business Intelligence**: Dashboard and reporting design
+- **Research Visualization**: Academic and scientific visualization
+
+## Resources for Continued Growth
+
+### Communities
+- [Data Visualization Society](https://www.datavisualizationsociety.org/)
+- [Information is Beautiful](https://www.informationisbeautiful.net/)
+- [Flowing Data](https://flowingdata.com/)
+
+### Tools to Explore
+- **Emerging Platforms**: Observable, Figma, Framer
+- **Specialized Tools**: Tableau, Power BI, Qlik
+- **Programming Libraries**: D3.js, Three.js, Vega-Lite
+
+### Datasets for Practice
+- [Kaggle Datasets](https://www.kaggle.com/datasets)
+- [Data.gov](https://www.data.gov/)
+- [Our World in Data](https://ourworldindata.org/)
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+Keep creating! The best way to maintain and grow your visualization skills is through regular practice and experimentation.
+:::
+
+::: {.callout-warning}
+## Final Deadlines
+- **Final Projects**: Thursday, 11:59 PM
+- **Reflection Essays**: Thursday, 11:59 PM
+- **Peer Evaluation Forms**: Friday, 11:59 PM
+:::
+
+::: {.callout-note}
+## Thank You!
+Congratulations on completing SMM635 Data Visualization! It's been a pleasure learning and creating with you. Keep visualizing!
+:::

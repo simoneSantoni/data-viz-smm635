@@ -2,92 +2,85 @@
 title: "Syllabus"
 ---
 
-## Course Description
+**[Click here](documents/20250916.pdf) to download a copy of the syllabus.**
 
-SMM635 Data Visualization is a comprehensive introduction to the principles and practice of data visualization. This module combines theoretical foundations with hands-on experience using industry-standard tools and programming languages. Students will learn to create effective, ethical, and aesthetically pleasing visualizations that communicate complex data insights to diverse audiences.
+## Course info
+
+|          | Day      | Time                | Location|
+| -------- | -------- | ------------------- | ------- |
+| Lectures | Thursday | 11:00 AM - 12:50 PM | FSQ511  |
+| Labs     | Thursday | 3:00 PM - 4:50 PM   | FSQ407  |
 
 ## Learning Outcomes
 
 Upon successful completion of this module, students will be able to:
 
-1. **Analyze** the effectiveness of data visualizations using principles of visual perception and design
-2. **Design** appropriate visualizations for different data types and communication objectives
-3. **Implement** static and interactive visualizations using Python, R, and web technologies
-4. **Evaluate** the ethical implications of design choices in data visualization
+1. **Analyze** the effectiveness of data visualizations using principles of
+   visual perception and design
+2. **Design** appropriate visualizations for different data types and
+   communication objectives
+3. **Implement** static and interactive visualizations using Python, R, and
+   web technologies
+4. **Evaluate** the ethical implications of design choices in data
+   visualization
 5. **Create** comprehensive data stories that effectively communicate insights
 
-## Module Structure
+## Communication
 
-The module runs for 10 weeks with the following components:
+This website provides students with access to any course materials.
 
-- **Lectures** (2 hours/week): Theory, principles, and case studies
-- **Labs** (2 hours/week): Hands-on coding and visualization practice
-- **Self-study** (6 hours/week): Readings, tutorials, and assignments
+Moodle messages and forum. Email to discuss sensitive matters.
+
+## Where to get help
+
+.
+
+## Textbooks
+
+## Lectures and labs
+
+## Teams
 
 ## Assessment
 
-| Component | Weight | Due Date |
-|-----------|--------|----------|
-| Lab Assignments (5 × 4%) | 20% | Weekly |
-| Midterm Project | 30% | Week 6 |
-| Final Project | 40% | Week 11 |
-| Peer Reviews | 10% | Ongoing |
+### Application excercises
 
-### Lab Assignments
-Short weekly assignments that reinforce lecture concepts and develop technical skills.
+### Case studies
+
+### Mid-term project
+
+### Final course project
+
+
+## Grading
+
+| Component               | Percentage  |
+| ------------------------| ----------- |
+| Case studies            | 20%         |
+| Midterm Project         | 30%         |
+| Final Project           | 50%         |
+
+
+
+| Label grade       | Final course grade  |
+| ------------------| ------------------  |
+| Case studies      | > 90                |
+| Midterm Project   | ...                 |
+| Final Project     | <50                 |
+
+### Case studies
+
+Short weekly assignments that reinforce lecture concepts and develop technical
+skills. Emphasis will be placed on the in-class contribution to case
+discussion.
 
 ### Midterm Project
+
 Individual project focusing on exploratory data analysis and static visualizations.
 
 ### Final Project
+
 Group project (2-3 students) creating an interactive dashboard or data story on a topic of your choice.
-
-### Peer Reviews
-Constructive feedback on classmates' visualizations to develop critical evaluation skills.
-
-## Module Schedule
-
-| Week | Topic | Lab Focus |
-|------|-------|-----------|
-| 1 | Introduction to Data Visualization | Setup & Basic Plots |
-| 2 | Visual Perception & Design Principles | Grammar of Graphics |
-| 3 | Color Theory & Typography | Color Schemes & Accessibility |
-| 4 | Statistical Graphics | Distributions & Relationships |
-| 5 | Time Series & Temporal Data | Animated Visualizations |
-| 6 | Spatial Data & Maps | Geospatial Visualization |
-| 7 | Networks & Hierarchies | Graph Visualization |
-| 8 | Interactive Visualizations | Plotly & Shiny |
-| 9 | Dashboards & Data Stories | Dashboard Design |
-| 10 | Ethics & Future of DataViz | Project Presentations |
-
-## Required Software
-
-All software used in this module is free and open-source:
-
-- Python 3.8+ with Anaconda distribution
-- R 4.0+ with RStudio
-- Visual Studio Code or Jupyter Lab
-- Git and GitHub account
-- Tableau Public (optional)
-
-See the [Computing Resources](/computing-access.html) page for installation instructions.
-
-## Textbooks and Resources
-
-### Required Reading
-- **Cairo, A.** (2016). *The Truthful Art*. New Riders.
-- **Wilke, C.** (2019). *Fundamentals of Data Visualization*. O'Reilly. [Free online](https://clauswilke.com/dataviz/)
-
-### Recommended Reading
-- **Tufte, E.** (2001). *The Visual Display of Quantitative Information*. Graphics Press.
-- **Munzner, T.** (2014). *Visualization Analysis and Design*. CRC Press.
-- **Kirk, A.** (2019). *Data Visualisation: A Handbook for Data Driven Design*. Sage.
-
-### Online Resources
-- [Data Visualization Society](https://www.datavisualizationsociety.com/)
-- [Observable](https://observablehq.com/) - Interactive notebooks
-- [From Data to Viz](https://www.data-to-viz.com/) - Chart selection guide
-- [ColorBrewer](https://colorbrewer2.org/) - Color scheme selector
 
 ## Course Policies
 
@@ -114,13 +107,23 @@ All submitted work must be your own. You may discuss concepts with classmates, b
 - **Email**: simone.santoni@institution.edu
 - **Response time**: Within 48 hours on weekdays
 
-## Diversity and Inclusion
+## Tipcs for success
 
-This module values diversity and seeks to create an inclusive learning environment. If you have any concerns or suggestions for improving the classroom climate, please don't hesitate to speak with me.
+## Course policies
 
-## Accommodations
+### Academic intergrity
 
-Students with documented disabilities who may need accommodations should make an appointment with me as soon as possible. All discussions will remain confidential.
+### Collaboration policy
+
+### Policy on sharing and reusing code
+
+### Late work policy
+
+### Regrade request policy
+
+### Attendance policy
+
+## Important dates
 
 ## Changes to Syllabus
 

@@ -1,0 +1,95 @@
+---
+title: "Week 4: Interactive Visualizations"
+---
+
+::: {.week-card}
+## Overview
+This week we'll learn how to create interactive visualizations that allow users to explore data dynamically. We'll cover tooltips, filtering, brushing, and building interactive dashboards.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Create interactive plots with tooltips and hover effects
+- Implement filtering and selection mechanisms
+- Build linked visualizations and brushing interactions
+- Design effective interactive dashboards
+- Choose appropriate levels of interactivity for different audiences
+
+## Lecture Slides
+
+📊 [Interactive Visualizations](../slides/week04-interactive.pdf)
+
+**Topics covered:**
+- Principles of interactive design
+- Types of interactions: select, explore, reconfigure, connect
+- Building interactive plots with Plotly
+- Dashboard design with Streamlit and Shiny
+- User experience considerations
+
+## Readings
+
+### Required
+- Shneiderman, B. (1996). "The Eyes Have It: A Task by Data Type Taxonomy" (excerpt)
+- [Interactive Data Visualization for the Web](https://d3js.org/) - Chapter 1 (optional background)
+
+### Optional
+- [Plotly Dash User Guide](https://dash.plotly.com/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+
+## Lab
+
+::: {.assignment-badge .lab}
+Lab 4
+:::
+
+**Building Interactive Dashboards**
+
+In this lab, you will:
+- Create interactive plots with Plotly
+- Build a multi-panel dashboard
+- Implement user controls and filters
+- Test usability with different user scenarios
+- Deploy your dashboard online
+
+📘 [Lab 4 Notebook](../labs/lab04.ipynb) | [Lab 4 Instructions](../labs/lab04-instructions.html)
+
+**Due:** Friday at 11:59 PM
+
+## Resources
+
+### Python Tools
+- [Plotly Python Documentation](https://plotly.com/python/)
+- [Streamlit Gallery](https://streamlit.io/gallery)
+- [Panel User Guide](https://panel.holoviz.org/)
+
+### R Tools
+- [Shiny Tutorial](https://shiny.rstudio.com/tutorial/)
+- [plotly for R](https://plotly.com/r/)
+- [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)
+
+### Deployment
+- [Streamlit Community Cloud](https://streamlit.io/cloud)
+- [Shiny Apps](https://www.shinyapps.io/)
+
+## Looking Ahead
+
+Next week we'll focus on storytelling with data and creating narrative visualizations. Think about:
+- What stories are hidden in your interactive visualizations?
+- How can you guide users through discoveries?
+- What insights emerge from exploration?
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+Keep interactions simple and intuitive. Users should be able to understand what they can do within 10 seconds of seeing your visualization.
+:::
+
+::: {.callout-warning}
+## Important Dates
+- **Lab 4 Due**: Friday, 11:59 PM
+- **Office Hours**: Tuesday, 4:00-5:00 PM
+- **Next Week**: Storytelling with Data
+:::

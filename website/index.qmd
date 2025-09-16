@@ -2,71 +2,10 @@
 title: "Welcome to SMM635!"
 ---
 
-Welcome to the course website for **SMM635 - Data Visualization** 
+SMM635 Data Visualization is a comprehensive introduction to the principles
+and practice of data visualization. This module combines theoretical
+foundations with hands-on experience using industry-standard tools and
+programming languages. Students will learn to create effective, ethical, and
+aesthetically pleasing visualizations that communicate complex data insights
+to diverse audiences.
 
-This module will teach you how to create effective and beautiful data visualizations using modern tools and techniques. You'll learn both the theory behind good visualization design and practical skills in Python and R.
-
-## Course overview
-
-Data visualization is the art and science of transforming data into visual representations that effectively communicate insights, patterns, and stories. In this module, you will:
-
-- Learn fundamental principles of visual perception and design
-- Master data visualization tools including matplotlib, seaborn, ggplot2, and plotly
-- Create static and interactive visualizations
-- Develop skills in exploratory data analysis
-- Build compelling data stories and dashboards
-- Work with different data types: temporal, spatial, network, and text data
-
-## Key information
-
-::: {.grid}
-
-::: {.g-col-6}
-**Lecture**
-
-Tuesday, 2:00 PM - 4:00 PM  
-Room TBD
-
-**Lab**
-
-Thursday, 2:00 PM - 4:00 PM  
-Room TBD
-:::
-
-::: {.g-col-6}
-**Instructor**
-
-Dr. Simone Santoni  
-Office hours: By appointment
-:::
-
-:::
-
-## Learning objectives
-
-By the end of this module, you will be able to:
-
-1. **Design** effective visualizations following perceptual and aesthetic principles
-2. **Create** publication-quality static visualizations using Python and R
-3. **Develop** interactive visualizations and dashboards
-4. **Critique** visualizations based on established design principles
-5. **Communicate** data insights through visual storytelling
-
-## Course materials
-
-All course materials, including lecture slides, lab notebooks, and datasets, will be posted on this website. We will primarily use:
-
-- Python (matplotlib, seaborn, plotly, altair)
-- R (ggplot2, plotly, shiny)
-- Tableau (for rapid prototyping)
-- D3.js (introduction to web-based visualizations)
-
-## Prerequisites
-
-- Basic programming skills in Python or R
-- Understanding of basic statistics
-- No prior visualization experience required!
-
-## Getting help
-
-Check out the [Support](/course-support.html) page for information on getting help with course content, computing issues, or other concerns.

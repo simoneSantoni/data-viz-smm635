@@ -1,0 +1,90 @@
+---
+title: "Week 2: Visual Perception & Design Principles"
+---
+
+::: {.week-card}
+## Overview
+This week we'll explore how humans perceive visual information and apply design principles to create effective visualizations. We'll learn about color theory, cognitive load, and accessibility.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Understand how the human visual system processes information
+- Apply pre-attentive attributes in visualization design
+- Use color effectively and accessibly
+- Reduce cognitive load through good design
+- Create visualizations that follow design principles
+
+## Lecture Slides
+
+📊 [Visual Perception & Design](../slides/week02-perception.pdf)
+
+**Topics covered:**
+- How we see: the visual system
+- Pre-attentive attributes
+- Color theory and accessibility
+- Gestalt principles
+- Reducing cognitive load
+
+## Readings
+
+### Required
+- Cairo, A. (2016). *The Truthful Art*, Chapter 6: "The Eye and the Visual Brain"
+- Wilke, C. (2019). [Chapter 4: Color Scales](https://clauswilke.com/dataviz/color-basics.html)
+
+### Optional
+- [ColorBrewer 2.0](https://colorbrewer2.org/) - Explore color schemes
+- [Viz Palette](https://projects.susielu.com/viz-palette) - Test color accessibility
+
+## Lab
+
+::: {.assignment-badge .lab}
+Lab 2
+:::
+
+**Applying Design Principles**
+
+In this lab, you will:
+- Redesign poorly designed visualizations
+- Apply color theory principles
+- Test accessibility compliance
+- Create visualization critiques
+- Practice with different chart types
+
+📘 [Lab 2 Notebook](../labs/lab02.ipynb) | [Lab 2 Instructions](../labs/lab02-instructions.html)
+
+**Due:** Friday at 11:59 PM
+
+## Resources
+
+### Tools
+- [Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) - Color blindness simulator
+- [Adobe Color](https://color.adobe.com/) - Color scheme generator
+
+### References
+- [Matplotlib Color Documentation](https://matplotlib.org/stable/tutorials/colors/colors.html)
+- [ggplot2 Color Guide](https://ggplot2.tidyverse.org/reference/scale_colour_continuous.html)
+
+## Looking Ahead
+
+Next week we'll focus on choosing the right chart type for your data and message. Start noticing:
+- How different publications use color
+- Which visualizations are easy vs. difficult to read
+- How color affects your interpretation of data
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+Use your phone's accessibility settings to test how your visualizations look with different vision types. Most phones have built-in color blindness simulators.
+:::
+
+::: {.callout-warning}
+## Important Dates
+- **Lab 2 Due**: Friday, 11:59 PM
+- **Office Hours**: Tuesday, 4:00-5:00 PM
+- **Next Week**: Chart Types & Data Relationships
+:::
