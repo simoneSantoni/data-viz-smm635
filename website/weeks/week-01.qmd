@@ -1,0 +1,93 @@
+---
+title: "Week 1: Introduction to Data Visualization"
+---
+
+::: {.week-card}
+## Overview
+This week we'll explore what data visualization is, why it matters, and set up our development environment. We'll create our first visualizations and discuss the course structure.
+:::
+
+## Learning Objectives
+
+By the end of this week, you will be able to:
+
+- Explain the importance and applications of data visualization
+- Set up a data visualization development environment
+- Create basic plots using matplotlib and ggplot2
+- Identify different types of data and appropriate visualizations
+- Navigate course resources and tools
+
+## Lecture Slides
+
+📊 [Introduction to Data Visualization](../slides/week01-intro.pdf)
+
+**Topics covered:**
+- What is data visualization?
+- Historical perspectives
+- The visualization pipeline
+- Types of data and visualizations
+- Course overview and expectations
+
+## Readings
+
+### Required
+- Cairo, A. (2016). *The Truthful Art*, Chapter 1: "What We Talk About When We Talk About Visualization" 
+- Wilke, C. (2019). [Chapter 1: Introduction](https://clauswilke.com/dataviz/introduction.html)
+
+### Optional
+- [The Financial Times Visual Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary) - Start exploring different chart types
+
+## Lab
+
+::: {.assignment-badge .lab}
+Lab 1
+:::
+
+**Getting Started with Visualization Tools**
+
+In this lab, you will:
+- Set up Python and R environments
+- Install required packages
+- Create your first visualizations
+- Practice with different data types
+- Submit your work via GitHub
+
+📘 [Lab 1 Notebook](../labs/lab01.ipynb) | [Lab 1 Instructions](../labs/lab01-instructions.html)
+
+**Due:** Friday at 11:59 PM
+
+## Resources
+
+### Setup Guides
+- 🐍 [Python Setup Guide](../computing-access.html#python-setup)
+- 📊 [R Setup Guide](../computing-access.html#r-setup)
+- 🐙 [Git and GitHub Guide](../computing-access.html#version-control)
+
+### Troubleshooting
+- [Common Installation Issues](../computing-troubleshooting.html#installation)
+- [Package Conflicts](../computing-troubleshooting.html#packages)
+
+### Extra Practice
+- [Matplotlib Tutorial](https://matplotlib.org/stable/tutorials/introductory/pyplot.html)
+- [ggplot2 Tutorial](https://ggplot2-book.org/getting-started.html)
+
+## Looking Ahead
+
+Next week we'll dive into visual perception and design principles. Start thinking about visualizations you encounter in your daily life:
+- What makes them effective or ineffective?
+- How do they use color, shape, and position?
+- What story are they trying to tell?
+
+---
+
+::: {.callout-tip}
+## Pro Tip
+Start a visualization journal! Screenshot or save interesting visualizations you find online or in print. We'll analyze these throughout the course.
+:::
+
+::: {.callout-warning}
+## Important Dates
+- **Lab 1 Due**: Friday, 11:59 PM
+- **Office Hours**: Tuesday, 4:00-5:00 PM
+- **Next Week**: Visual Perception & Design Principles
+:::

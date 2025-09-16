@@ -1,0 +1,101 @@
+/*-- scss:defaults --*/
+
+// Dark theme colors
+$primary: #3498DB;
+$secondary: #E74C3C;
+$success: #27AE60;
+$info: #5DADE2;
+$warning: #F39C12;
+$danger: #E74C3C;
+$light: #2C3E50;
+$dark: #ECF0F1;
+
+// Body
+$body-bg: #1A1A1A;
+$body-color: #E0E0E0;
+$link-color: #5DADE2;
+$link-hover-color: #85C1F5;
+
+// Code
+$code-bg: #2C3E50;
+$code-color: #F39C12;
+
+// Navigation
+$navbar-bg: #0D0D0D;
+$navbar-fg: #E0E0E0;
+$sidebar-bg: #1A1A1A;
+$sidebar-fg: #E0E0E0;
+$sidebar-hl: #5DADE2;
+
+/*-- scss:rules --*/
+
+// Dark theme specific overrides
+.hero-banner {
+  background: linear-gradient(135deg, #2C3E50 0%, #1A1A1A 100%);
+}
+
+.viz-principle {
+  background-color: #1E2A3A;
+  border-left-color: #5DADE2;
+}
+
+.code-example {
+  background-color: #2C3E50;
+  border-color: #34495E;
+}
+
+.week-card {
+  background-color: #2C3E50;
+  border-color: #34495E;
+  
+  h3 {
+    color: #5DADE2;
+  }
+}
+
+.assignment-badge {
+  &.lab {
+    background-color: #1E2A3A;
+    color: #5DADE2;
+  }
+  
+  &.homework {
+    background-color: #3E2A1A;
+    color: #F39C12;
+  }
+  
+  &.project {
+    background-color: #1A3E2A;
+    color: #27AE60;
+  }
+}
+
+.table {
+  thead th {
+    background-color: #2C3E50;
+  }
+}
+
+.callout {
+  background-color: #2C3E50;
+  
+  &.callout-note {
+    border-left-color: #5DADE2;
+  }
+  
+  &.callout-warning {
+    border-left-color: #F39C12;
+  }
+  
+  &.callout-important {
+    border-left-color: #E74C3C;
+  }
+  
+  &.callout-tip {
+    border-left-color: #27AE60;
+  }
+}
+
+.nav-footer {
+  border-top-color: #34495E;
+}

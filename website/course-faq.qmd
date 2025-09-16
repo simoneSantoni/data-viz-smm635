@@ -1,0 +1,153 @@
+---
+title: "Frequently Asked Questions"
+---
+
+## General Questions
+
+### Do I need prior programming experience?
+Basic programming knowledge in either Python or R is required. You should be comfortable with:
+- Variables and data types
+- Control structures (if/else, loops)
+- Functions
+- Basic data manipulation
+
+If you're rusty, we recommend completing a refresher tutorial before the course starts.
+
+### Can I use only Python or only R?
+Yes! While we teach both languages to give you flexibility, you can complete all assignments in your preferred language. The final project can mix languages if desired.
+
+### Is this course suitable for designers without coding experience?
+This course emphasizes both design principles and technical implementation. While we welcome students from design backgrounds, you'll need basic programming skills to succeed. Consider taking an introductory programming course first.
+
+### How much time should I budget for this course?
+Plan for approximately 10 hours per week:
+- 2 hours lectures
+- 2 hours labs  
+- 6 hours self-study, assignments, and projects
+
+## Technical Questions
+
+### What computer specifications do I need?
+- **Minimum**: 8GB RAM, 256GB storage, any OS
+- **Recommended**: 16GB RAM, 512GB storage, dedicated graphics card
+- Lab computers are available if your laptop doesn't meet requirements
+
+### Can I use my tablet/iPad?
+Tablets are great for reading and sketching, but you'll need a laptop or desktop for coding assignments. Cloud-based options like Google Colab can work in a pinch.
+
+### Which IDE should I use?
+We recommend:
+- **Python**: VS Code or JupyterLab
+- **R**: RStudio
+- **Both**: VS Code with appropriate extensions
+
+Choose what you're comfortable with!
+
+### Do I need to install everything before the first class?
+No, we'll have an installation party during the first lab. However, attempting installation beforehand helps identify issues early.
+
+## Assignment Questions
+
+### Can I submit assignments late?
+Late submissions incur a 10% penalty per day. After 5 days, assignments won't be accepted. See syllabus for emergency extension policy.
+
+### How are group projects graded?
+Group projects receive a base grade, with individual adjustments based on:
+- Peer evaluations
+- Individual contribution statements
+- Git commit history
+
+### Can I use code from the internet?
+Yes, with proper attribution! You must:
+- Cite all sources
+- Understand any code you use
+- Adapt it to your specific needs
+- Never copy entire solutions
+
+### What constitutes plagiarism in visualization?
+- Copying code without attribution
+- Reproducing others' visualizations without credit
+- Submitting others' work as your own
+- Using generative AI without disclosure
+
+## Project Questions
+
+### Can I use my work/research data for projects?
+Absolutely! Real-world data makes projects more meaningful. Ensure:
+- You have permission to use the data
+- No confidential information is included
+- Data is appropriately anonymized
+- You can share it with classmates for peer review
+
+### What makes a good final project?
+Strong final projects typically:
+- Tell a compelling data story
+- Use appropriate visualization techniques
+- Include interactive elements
+- Show technical proficiency
+- Demonstrate design principles
+- Are well-documented
+
+### Can I continue working on my project after the course?
+Yes! Many students develop their projects into:
+- Portfolio pieces
+- Research publications
+- Open-source contributions
+- Startup ideas
+
+## Career Questions
+
+### What careers use data visualization?
+- Data Scientist/Analyst
+- Business Intelligence Developer
+- UX/UI Designer
+- Data Journalist
+- Research Scientist
+- Product Manager
+- Consultant
+
+### Should I specialize in one tool or learn many?
+We recommend:
+1. Master one language deeply (Python or R)
+2. Understand multiple tools' capabilities
+3. Learn underlying principles that transfer
+4. Stay curious about new developments
+
+### How do I build a visualization portfolio?
+- Complete all course projects thoughtfully
+- Contribute to open-source projects
+- Participate in visualization challenges
+- Create personal projects with interesting data
+- Document your process, not just results
+
+## Practical Matters
+
+### Is lecture attendance mandatory?
+Lectures aren't mandatory but strongly encouraged. We don't record lectures to encourage participation and discussion. Slides are posted after class.
+
+### Can I audit the course?
+Contact the instructor to discuss auditing options. Auditors are welcome in lectures but may have limited access to labs and computing resources.
+
+### Are there prerequisites I should review?
+Review these topics before the course:
+- Basic statistics (mean, median, distributions)
+- Data manipulation (filtering, grouping, joining)
+- File I/O in your chosen language
+
+### How do I get help if I'm struggling?
+1. Attend office hours early and often
+2. Form study groups
+3. Post on the course forum
+4. Visit TA hours
+5. Reach out to the instructor
+
+Don't wait until you're behind!
+
+---
+
+::: {.callout-note}
+## Didn't find your question?
+Post it on the course forum or ask during office hours. We'll add common questions to this FAQ throughout the term.
+:::
+
+Remember: There are no stupid questions! If you're wondering about something, others probably are too.

@@ -1,0 +1,1047 @@
+[
+  {
+    "objectID": "supplemental/index.html",
+    "href": "supplemental/index.html",
+    "title": "Supplemental Notes",
+    "section": "",
+    "text": "Additional resources and extended topics that complement the main course material.",
+    "crumbs": [
+      "Supplemental notes",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "supplemental/index.html#advanced-topics",
+    "href": "supplemental/index.html#advanced-topics",
+    "title": "Supplemental Notes",
+    "section": "Advanced Topics",
+    "text": "Advanced Topics\nThese optional materials dive deeper into specialized areas of data visualization:\n\n1. Advanced Color Theory\n\nColor spaces and perceptual uniformity\nAdvanced accessibility considerations\nCultural color associations\n\n\n\n2. Statistical Visualization\n\nUncertainty visualization\nBayesian visualization\nHigh-dimensional data techniques\n\n\n\n3. Web Technologies\n\nD3.js advanced patterns\nCanvas vs SVG performance\nWebGL for visualization\n\n\n\n4. Visualization Research\n\nCurrent research trends\nEvaluation methodologies\nPerception studies",
+    "crumbs": [
+      "Supplemental notes",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "supplemental/index.html#extended-examples",
+    "href": "supplemental/index.html#extended-examples",
+    "title": "Supplemental Notes",
+    "section": "Extended Examples",
+    "text": "Extended Examples\n\nLarge-Scale Visualizations\n\nWorking with millions of data points\nPerformance optimization strategies\nProgressive rendering techniques\n\n\n\nDomain-Specific Applications\n\nScientific visualization\nBusiness intelligence dashboards\nJournalism and storytelling\nSocial network analysis",
+    "crumbs": [
+      "Supplemental notes",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "supplemental/index.html#additional-tutorials",
+    "href": "supplemental/index.html#additional-tutorials",
+    "title": "Supplemental Notes",
+    "section": "Additional Tutorials",
+    "text": "Additional Tutorials\n\nPython Deep Dives\n\nMatplotlib internals\nCustom Plotly components\nAltair advanced grammar\n\n\n\nR Explorations\n\nggplot2 extensions ecosystem\nBuilding custom geoms\nAdvanced Shiny applications",
+    "crumbs": [
+      "Supplemental notes",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "supplemental/index.html#reading-lists",
+    "href": "supplemental/index.html#reading-lists",
+    "title": "Supplemental Notes",
+    "section": "Reading Lists",
+    "text": "Reading Lists\n\nClassic Papers\n\nBertin, J. (1983). Semiology of Graphics\nCleveland, W. S. & McGill, R. (1984). Graphical Perception\nTufte, E. R. (1983). The Visual Display of Quantitative Information\n\n\n\nRecent Research\n\nIEEE VIS Best Papers\nEuroVis Proceedings\nCHI Visualization Papers",
+    "crumbs": [
+      "Supplemental notes",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "supplemental/index.html#tools-and-libraries",
+    "href": "supplemental/index.html#tools-and-libraries",
+    "title": "Supplemental Notes",
+    "section": "Tools and Libraries",
+    "text": "Tools and Libraries\n\nCutting-Edge Libraries\n\nVega-Lite\nDeck.gl\nKepler.gl\nApache Superset\n\n\n\nSpecialized Tools\n\nNetwork: Gephi, Cytoscape\nGeographic: QGIS, Mapbox\nScientific: ParaView, VisIt\nBusiness: PowerBI, Looker",
+    "crumbs": [
+      "Supplemental notes",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "supplemental/index.html#community-resources",
+    "href": "supplemental/index.html#community-resources",
+    "title": "Supplemental Notes",
+    "section": "Community Resources",
+    "text": "Community Resources\n\nOnline Communities\n\nData Visualization Society Slack\nr/dataisbeautiful\nObservable Community\n\n\n\nConferences and Events\n\nIEEE VIS Conference\nOpenVis Conference\n\nTapestry Conference\nLocal meetups and workshops\n\n\n\n\n\n\n\n\nContributing\n\n\n\nHave a resource to share? Submit a pull request or let us know on the forum!\n\n\nThese materials are optional but can greatly enhance your understanding and skills in data visualization.",
+    "crumbs": [
+      "Supplemental notes",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html",
+    "href": "computing-troubleshooting.html",
+    "title": "Troubleshooting Guide",
+    "section": "",
+    "text": "Common issues and solutions for SMM635 computing setup.",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html#installation-issues",
+    "href": "computing-troubleshooting.html#installation-issues",
+    "title": "Troubleshooting Guide",
+    "section": "Installation Issues",
+    "text": "Installation Issues\n\nPython/Anaconda\n\n\n\n\n\n\nconda: command not found\n\n\n\n\n\nProblem: Terminal doesn’t recognize conda commands\nSolutions: 1. Windows: Add Anaconda to PATH - Search “Environment Variables” in Start Menu - Add C:\\Users\\YourName\\Anaconda3\\Scripts to PATH - Restart terminal\n\nMac/Linux: Source conda\nsource ~/anaconda3/bin/activate\nconda init\nAlternative: Use Anaconda Prompt (Windows) or full path\n\n\n\n\n\n\n\n\n\n\nPackage conflicts during installation\n\n\n\n\n\nProblem: “Solving environment” takes forever or fails\nSolutions: 1. Create fresh environment: bash    conda create -n smm635_fresh python=3.9    conda activate smm635_fresh    conda install matplotlib seaborn plotly\n\nUse mamba (faster solver):\nconda install -n base mamba\nmamba install package_name\nUse pip for specific packages:\npip install plotly --upgrade\n\n\n\n\n\n\nR/RStudio\n\n\n\n\n\n\n“Package not available for R version”\n\n\n\n\n\nProblem: Can’t install certain packages\nSolutions: 1. Update R to latest version 2. Install from source: r    install.packages(\"package_name\", type = \"source\") 3. Use development version: r    devtools::install_github(\"author/package\")\n\n\n\n\n\n\n\n\n\nRStudio won’t start\n\n\n\n\n\nProblem: RStudio crashes or shows blank screen\nSolutions: 1. Reset RStudio state: - Mac: rm -rf ~/.rstudio-desktop - Windows: Delete %localappdata%\\RStudio-Desktop\n\nUpdate graphics drivers\nTry RStudio Cloud as temporary solution",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html#runtime-errors",
+    "href": "computing-troubleshooting.html#runtime-errors",
+    "title": "Troubleshooting Guide",
+    "section": "Runtime Errors",
+    "text": "Runtime Errors\n\nPython\n\n\n\n\n\n\nModuleNotFoundError\n\n\n\n\n\nProblem: Python can’t find installed package\nSolutions: 1. Check you’re in correct environment: bash    conda activate smm635    conda list  # Should show your packages\n\nReinstall package:\nconda install package_name -c conda-forge\nCheck Jupyter kernel:\npython -m ipykernel install --user --name smm635\n\n\n\n\n\n\n\n\n\n\nMatplotlib figures not showing\n\n\n\n\n\nProblem: Plots don’t appear in notebook\nSolutions: 1. Add magic command: python    %matplotlib inline\n\nFor interactive plots:\n%matplotlib widget\nExplicitly show plots:\nimport matplotlib.pyplot as plt\nplt.show()\n\n\n\n\n\n\nR\n\n\n\n\n\n\n“could not find function”\n\n\n\n\n\nProblem: R doesn’t recognize function\nSolutions: 1. Load the library: r    library(ggplot2)  # or appropriate package\n\nUse full namespace:\nggplot2::ggplot(...)\nCheck spelling and case sensitivity\n\n\n\n\n\n\n\n\n\n\nggplot shows blank plot\n\n\n\n\n\nProblem: No output from ggplot\nSolutions: 1. Assign and print: r    p &lt;- ggplot(data, aes(x, y)) + geom_point()    print(p)\n\nCheck data isn’t empty:\nnrow(data)  # Should be &gt; 0",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html#performance-issues",
+    "href": "computing-troubleshooting.html#performance-issues",
+    "title": "Troubleshooting Guide",
+    "section": "Performance Issues",
+    "text": "Performance Issues\n\n\n\n\n\n\nSlow plotting with large datasets\n\n\n\n\n\nSolutions: 1. Sample data: python    df_sample = df.sample(n=10000)\n\nUse datashader for millions of points:\nimport datashader as ds\nAggregate before plotting:\ndf_summary &lt;- df %&gt;%\n  group_by(category) %&gt;%\n  summarize(mean_value = mean(value))\n\n\n\n\n\n\n\n\n\n\nJupyter notebook keeps crashing\n\n\n\n\n\nSolutions: 1. Increase memory limit: python    import resource    resource.setrlimit(resource.RLIMIT_AS, (2147483648, 2147483648))\n\nClear output regularly:\n\nCell → All Output → Clear\n\nUse .py scripts for heavy processing",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html#gitgithub-issues",
+    "href": "computing-troubleshooting.html#gitgithub-issues",
+    "title": "Troubleshooting Guide",
+    "section": "Git/GitHub Issues",
+    "text": "Git/GitHub Issues\n\n\n\n\n\n\nPermission denied (publickey)\n\n\n\n\n\nProblem: Can’t push to GitHub\nSolutions: 1. Use HTTPS instead of SSH: bash    git remote set-url origin https://github.com/user/repo.git\n\nSet up SSH key:\nssh-keygen -t ed25519\ncat ~/.ssh/id_ed25519.pub\n# Copy and add to GitHub settings\nUse GitHub Desktop or VS Code git integration\n\n\n\n\n\n\n\n\n\n\nLarge files rejected\n\n\n\n\n\nProblem: GitHub won’t accept files &gt; 100MB\nSolutions: 1. Use .gitignore: *.csv    data/    *.pkl\n\nUse Git LFS:\ngit lfs track \"*.csv\"\ngit add .gitattributes\nStore data externally (Google Drive, Dropbox)",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html#quick-fixes",
+    "href": "computing-troubleshooting.html#quick-fixes",
+    "title": "Troubleshooting Guide",
+    "section": "Quick Fixes",
+    "text": "Quick Fixes\n\nReset Everything\nIf all else fails, here’s how to start fresh:\n# Backup your work first!\n\n# Remove conda environment\nconda env remove -n smm635\n\n# Clear conda cache\nconda clean --all\n\n# Reinstall from scratch\nconda env create -f smm635.yaml\n\n\nEmergency Alternatives\nWhen you need to work RIGHT NOW:\n\nGoogle Colab: No setup needed\n!pip install plotly seaborn\nBinder: Share environment\n\nAdd requirements.txt to repo\nVisit mybinder.org\n\nUniversity computers: Usually have everything installed",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "computing-troubleshooting.html#getting-more-help",
+    "href": "computing-troubleshooting.html#getting-more-help",
+    "title": "Troubleshooting Guide",
+    "section": "Getting More Help",
+    "text": "Getting More Help\nIf these solutions don’t work:\n\nDocument the problem:\n\nExact error message\nWhat you were trying to do\nYour operating system\nScreenshot if helpful\n\nSearch first:\n\nGoogle the exact error\nCheck Stack Overflow\nSearch course forum\n\nAsk for help:\n\nPost on course forum\nCome to office hours\nEmail TA with details\n\n\n\n\n\n\n\n\nRemember\n\n\n\nMost problems have been solved before! Don’t spend hours struggling alone - ask for help after 30 minutes of troubleshooting.",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to SMM635!",
+    "section": "",
+    "text": "Welcome to the course website for SMM635 - Data Visualization\nThis module will teach you how to create effective and beautiful data visualizations using modern tools and techniques. You’ll learn both the theory behind good visualization design and practical skills in Python and R.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "Welcome to SMM635!",
+    "section": "Course overview",
+    "text": "Course overview\nData visualization is the art and science of transforming data into visual representations that effectively communicate insights, patterns, and stories. In this module, you will:\n\nLearn fundamental principles of visual perception and design\nMaster data visualization tools including matplotlib, seaborn, ggplot2, and plotly\nCreate static and interactive visualizations\nDevelop skills in exploratory data analysis\nBuild compelling data stories and dashboards\nWork with different data types: temporal, spatial, network, and text data",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#key-information",
+    "href": "index.html#key-information",
+    "title": "Welcome to SMM635!",
+    "section": "Key information",
+    "text": "Key information\n\n\nLecture\nTuesday, 2:00 PM - 4:00 PM\nRoom TBD\nLab\nThursday, 2:00 PM - 4:00 PM\nRoom TBD\n\n\nInstructor\nDr. Simone Santoni\nOffice hours: By appointment",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Welcome to SMM635!",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nBy the end of this module, you will be able to:\n\nDesign effective visualizations following perceptual and aesthetic principles\nCreate publication-quality static visualizations using Python and R\nDevelop interactive visualizations and dashboards\nCritique visualizations based on established design principles\nCommunicate data insights through visual storytelling",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-materials",
+    "href": "index.html#course-materials",
+    "title": "Welcome to SMM635!",
+    "section": "Course materials",
+    "text": "Course materials\nAll course materials, including lecture slides, lab notebooks, and datasets, will be posted on this website. We will primarily use:\n\nPython (matplotlib, seaborn, plotly, altair)\nR (ggplot2, plotly, shiny)\nTableau (for rapid prototyping)\nD3.js (introduction to web-based visualizations)",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Welcome to SMM635!",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nBasic programming skills in Python or R\nUnderstanding of basic statistics\nNo prior visualization experience required!",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-help",
+    "href": "index.html#getting-help",
+    "title": "Welcome to SMM635!",
+    "section": "Getting help",
+    "text": "Getting help\nCheck out the Support page for information on getting help with course content, computing issues, or other concerns.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html",
+    "href": "weeks/week-01.html",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "",
+    "text": "This week we’ll explore what data visualization is, why it matters, and set up our development environment. We’ll create our first visualizations and discuss the course structure.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#overview",
+    "href": "weeks/week-01.html#overview",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "",
+    "text": "This week we’ll explore what data visualization is, why it matters, and set up our development environment. We’ll create our first visualizations and discuss the course structure.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#learning-objectives",
+    "href": "weeks/week-01.html#learning-objectives",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this week, you will be able to:\n\nExplain the importance and applications of data visualization\nSet up a data visualization development environment\nCreate basic plots using matplotlib and ggplot2\nIdentify different types of data and appropriate visualizations\nNavigate course resources and tools",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#lecture-slides",
+    "href": "weeks/week-01.html#lecture-slides",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Lecture Slides",
+    "text": "Lecture Slides\n📊 Introduction to Data Visualization\nTopics covered: - What is data visualization? - Historical perspectives - The visualization pipeline - Types of data and visualizations - Course overview and expectations",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#readings",
+    "href": "weeks/week-01.html#readings",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Readings",
+    "text": "Readings\n\nRequired\n\nCairo, A. (2016). The Truthful Art, Chapter 1: “What We Talk About When We Talk About Visualization”\nWilke, C. (2019). Chapter 1: Introduction\n\n\n\nOptional\n\nThe Financial Times Visual Vocabulary - Start exploring different chart types",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#lab",
+    "href": "weeks/week-01.html#lab",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Lab",
+    "text": "Lab\n\nLab 1\n\nGetting Started with Visualization Tools\nIn this lab, you will: - Set up Python and R environments - Install required packages - Create your first visualizations - Practice with different data types - Submit your work via GitHub\n📘 Lab 1 Notebook | Lab 1 Instructions\nDue: Friday at 11:59 PM",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#resources",
+    "href": "weeks/week-01.html#resources",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Resources",
+    "text": "Resources\n\nSetup Guides\n\n🐍 Python Setup Guide\n📊 R Setup Guide\n🐙 Git and GitHub Guide\n\n\n\nTroubleshooting\n\nCommon Installation Issues\nPackage Conflicts\n\n\n\nExtra Practice\n\nMatplotlib Tutorial\nggplot2 Tutorial",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-01.html#looking-ahead",
+    "href": "weeks/week-01.html#looking-ahead",
+    "title": "Week 1: Introduction to Data Visualization",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nNext week we’ll dive into visual perception and design principles. Start thinking about visualizations you encounter in your daily life: - What makes them effective or ineffective? - How do they use color, shape, and position? - What story are they trying to tell?\n\n\n\n\n\n\n\nPro Tip\n\n\n\nStart a visualization journal! Screenshot or save interesting visualizations you find online or in print. We’ll analyze these throughout the course.\n\n\n\n\n\n\n\n\nImportant Dates\n\n\n\n\nLab 1 Due: Friday, 11:59 PM\nOffice Hours: Tuesday, 4:00-5:00 PM\nNext Week: Visual Perception & Design Principles",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "course-support.html",
+    "href": "course-support.html",
+    "title": "Support",
+    "section": "",
+    "text": "Learning data visualization involves both creative design thinking and technical implementation. We’re here to support you throughout your learning journey!",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#getting-help",
+    "href": "course-support.html#getting-help",
+    "title": "Support",
+    "section": "",
+    "text": "Learning data visualization involves both creative design thinking and technical implementation. We’re here to support you throughout your learning journey!",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#support-resources",
+    "href": "course-support.html#support-resources",
+    "title": "Support",
+    "section": "Support Resources",
+    "text": "Support Resources\n\n1. Office Hours\nDr. Simone Santoni - Tuesday, 4:00-5:00 PM (after lecture) - Thursday, by appointment - Location: Room TBD or via Zoom\nCome to office hours for: - Conceptual questions about visualization design - Help with coding problems - Feedback on project ideas - Career advice in data visualization\n\n\n2. Lab Support\nTeaching Assistants - Available during all lab sessions - Additional TA hours: Monday & Wednesday, 3:00-5:00 PM - Location: Computer Lab TBD\nTAs can help with: - Technical setup issues - Debugging code - Understanding error messages - Best practices for specific libraries\n\n\n3. Online Resources\n\nCourse Forum\n\nPost questions visible to all students\nTAs and instructors monitor regularly\nPeer learning encouraged\nPlease search before posting duplicates\n\n\n\nQuick Links\n\nPython Data Visualization Cookbook\nR Graph Gallery\nStack Overflow - Data Visualization\nD3.js Documentation\n\n\n\n\n4. Peer Support\nStudy Groups - Form groups of 3-4 students - Register your group with the instructor - Book group study rooms through the library\nPeer Mentoring - Connect with students who previously took the course - Join the Data Visualization Student Society",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#common-issues-and-solutions",
+    "href": "course-support.html#common-issues-and-solutions",
+    "title": "Support",
+    "section": "Common Issues and Solutions",
+    "text": "Common Issues and Solutions\n\nInstallation Problems\n\n\n\n\n\n\nCan’t install Python packages?\n\n\n\nTry using conda instead of pip:\nconda install -c conda-forge matplotlib seaborn plotly\n\n\n\n\n\n\n\n\nR package installation fails?\n\n\n\nCheck you have the latest R version and try:\ninstall.packages(\"tidyverse\", dependencies = TRUE)\n\n\n\n\nCoding Challenges\n\n\n\n\n\n\nGeneral debugging steps\n\n\n\n\nRead the error message carefully\nGoogle the exact error message\nCheck the documentation\nCreate a minimal reproducible example\nPost on the course forum with your example\n\n\n\n\n\nVisualization Design\n\n\n\n\n\n\nNot sure which chart type to use?\n\n\n\n\nVisit From Data to Viz\nIdentify your data type\nFollow the decision tree\nReview examples in the gallery",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#emergency-support",
+    "href": "course-support.html#emergency-support",
+    "title": "Support",
+    "section": "Emergency Support",
+    "text": "Emergency Support\n\nTechnical Emergencies\n\nComputer lab is available 24/7 with your student ID\nBackup computers available during exams\nCloud-based options (Google Colab, RStudio Cloud) as fallback\n\n\n\nPersonal Emergencies\n\nContact the instructor as soon as possible\nDocumentation may be required for extensions\nStudent wellness services available",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#tips-for-success",
+    "href": "course-support.html#tips-for-success",
+    "title": "Support",
+    "section": "Tips for Success",
+    "text": "Tips for Success\n\nStart early - Don’t wait until the deadline\nAsk questions - No question is too basic\nPractice regularly - Visualization is a skill that improves with practice\nShare your work - Get feedback from peers\nStay curious - Explore visualizations you find “in the wild”",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#additional-resources",
+    "href": "course-support.html#additional-resources",
+    "title": "Support",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nBooks in the Library\n\nReserve shelf with all required textbooks\nAdditional visualization books in QA76.9.I52\nDesign books in NC997-1003\n\n\n\nSoftware Resources\n\nFree academic licenses for Tableau\nAccess to Adobe Creative Suite\nHigh-performance computing cluster for large datasets\n\n\n\nCareer Support\n\nPortfolio development workshops\nGuest speakers from industry\nInternship opportunities in data visualization",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#contact-information",
+    "href": "course-support.html#contact-information",
+    "title": "Support",
+    "section": "Contact Information",
+    "text": "Contact Information\n\n\n\n\n\n\nPrimary Contacts\n\n\n\nCourse Instructor: Dr. Simone Santoni\nEmail: simone.santoni@institution.edu\nOffice: Building TBD, Room TBD\nLead TA: [Name]\nEmail: ta.name@institution.edu\nIT Support: it.support@institution.edu\nPhone: +XX XXX XXXX\n\n\nRemember: We want you to succeed! Don’t hesitate to reach out when you need help.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-faq.html",
+    "href": "course-faq.html",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "Basic programming knowledge in either Python or R is required. You should be comfortable with: - Variables and data types - Control structures (if/else, loops) - Functions - Basic data manipulation\nIf you’re rusty, we recommend completing a refresher tutorial before the course starts.\n\n\n\nYes! While we teach both languages to give you flexibility, you can complete all assignments in your preferred language. The final project can mix languages if desired.\n\n\n\nThis course emphasizes both design principles and technical implementation. While we welcome students from design backgrounds, you’ll need basic programming skills to succeed. Consider taking an introductory programming course first.\n\n\n\nPlan for approximately 10 hours per week: - 2 hours lectures - 2 hours labs\n- 6 hours self-study, assignments, and projects",
+    "crumbs": [
+      "Course information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "course-faq.html#general-questions",
+    "href": "course-faq.html#general-questions",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "Basic programming knowledge in either Python or R is required. You should be comfortable with: - Variables and data types - Control structures (if/else, loops) - Functions - Basic data manipulation\nIf you’re rusty, we recommend completing a refresher tutorial before the course starts.\n\n\n\nYes! While we teach both languages to give you flexibility, you can complete all assignments in your preferred language. The final project can mix languages if desired.\n\n\n\nThis course emphasizes both design principles and technical implementation. While we welcome students from design backgrounds, you’ll need basic programming skills to succeed. Consider taking an introductory programming course first.\n\n\n\nPlan for approximately 10 hours per week: - 2 hours lectures - 2 hours labs\n- 6 hours self-study, assignments, and projects",
+    "crumbs": [
+      "Course information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "course-faq.html#technical-questions",
+    "href": "course-faq.html#technical-questions",
+    "title": "Frequently Asked Questions",
+    "section": "Technical Questions",
+    "text": "Technical Questions\n\nWhat computer specifications do I need?\n\nMinimum: 8GB RAM, 256GB storage, any OS\nRecommended: 16GB RAM, 512GB storage, dedicated graphics card\nLab computers are available if your laptop doesn’t meet requirements\n\n\n\nCan I use my tablet/iPad?\nTablets are great for reading and sketching, but you’ll need a laptop or desktop for coding assignments. Cloud-based options like Google Colab can work in a pinch.\n\n\nWhich IDE should I use?\nWe recommend: - Python: VS Code or JupyterLab - R: RStudio - Both: VS Code with appropriate extensions\nChoose what you’re comfortable with!\n\n\nDo I need to install everything before the first class?\nNo, we’ll have an installation party during the first lab. However, attempting installation beforehand helps identify issues early.",
+    "crumbs": [
+      "Course information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "course-faq.html#assignment-questions",
+    "href": "course-faq.html#assignment-questions",
+    "title": "Frequently Asked Questions",
+    "section": "Assignment Questions",
+    "text": "Assignment Questions\n\nCan I submit assignments late?\nLate submissions incur a 10% penalty per day. After 5 days, assignments won’t be accepted. See syllabus for emergency extension policy.\n\n\nHow are group projects graded?\nGroup projects receive a base grade, with individual adjustments based on: - Peer evaluations - Individual contribution statements - Git commit history\n\n\nCan I use code from the internet?\nYes, with proper attribution! You must: - Cite all sources - Understand any code you use - Adapt it to your specific needs - Never copy entire solutions\n\n\nWhat constitutes plagiarism in visualization?\n\nCopying code without attribution\nReproducing others’ visualizations without credit\nSubmitting others’ work as your own\nUsing generative AI without disclosure",
+    "crumbs": [
+      "Course information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "course-faq.html#project-questions",
+    "href": "course-faq.html#project-questions",
+    "title": "Frequently Asked Questions",
+    "section": "Project Questions",
+    "text": "Project Questions\n\nCan I use my work/research data for projects?\nAbsolutely! Real-world data makes projects more meaningful. Ensure: - You have permission to use the data - No confidential information is included - Data is appropriately anonymized - You can share it with classmates for peer review\n\n\nWhat makes a good final project?\nStrong final projects typically: - Tell a compelling data story - Use appropriate visualization techniques - Include interactive elements - Show technical proficiency - Demonstrate design principles - Are well-documented\n\n\nCan I continue working on my project after the course?\nYes! Many students develop their projects into: - Portfolio pieces - Research publications - Open-source contributions - Startup ideas",
+    "crumbs": [
+      "Course information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "course-faq.html#career-questions",
+    "href": "course-faq.html#career-questions",
+    "title": "Frequently Asked Questions",
+    "section": "Career Questions",
+    "text": "Career Questions\n\nWhat careers use data visualization?\n\nData Scientist/Analyst\nBusiness Intelligence Developer\nUX/UI Designer\nData Journalist\nResearch Scientist\nProduct Manager\nConsultant\n\n\n\nShould I specialize in one tool or learn many?\nWe recommend: 1. Master one language deeply (Python or R) 2. Understand multiple tools’ capabilities 3. Learn underlying principles that transfer 4. Stay curious about new developments\n\n\nHow do I build a visualization portfolio?\n\nComplete all course projects thoughtfully\nContribute to open-source projects\nParticipate in visualization challenges\nCreate personal projects with interesting data\nDocument your process, not just results",
+    "crumbs": [
+      "Course information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "course-faq.html#practical-matters",
+    "href": "course-faq.html#practical-matters",
+    "title": "Frequently Asked Questions",
+    "section": "Practical Matters",
+    "text": "Practical Matters\n\nIs lecture attendance mandatory?\nLectures aren’t mandatory but strongly encouraged. We don’t record lectures to encourage participation and discussion. Slides are posted after class.\n\n\nCan I audit the course?\nContact the instructor to discuss auditing options. Auditors are welcome in lectures but may have limited access to labs and computing resources.\n\n\nAre there prerequisites I should review?\nReview these topics before the course: - Basic statistics (mean, median, distributions) - Data manipulation (filtering, grouping, joining) - File I/O in your chosen language\n\n\nHow do I get help if I’m struggling?\n\nAttend office hours early and often\nForm study groups\nPost on the course forum\nVisit TA hours\nReach out to the instructor\n\nDon’t wait until you’re behind!\n\n\n\n\n\n\n\nDidn’t find your question?\n\n\n\nPost it on the course forum or ask during office hours. We’ll add common questions to this FAQ throughout the term.\n\n\nRemember: There are no stupid questions! If you’re wondering about something, others probably are too.",
+    "crumbs": [
+      "Course information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "computing-access.html",
+    "href": "computing-access.html",
+    "title": "Access Computing Resources",
+    "section": "",
+    "text": "This guide will help you set up all the software needed for SMM635. All tools are free and open-source.",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "computing-access.html#quick-start",
+    "href": "computing-access.html#quick-start",
+    "title": "Access Computing Resources",
+    "section": "Quick Start",
+    "text": "Quick Start\n\n\n\n\n\n\nInstallation Party\n\n\n\nWe’ll have a dedicated session in Week 1 Lab to help everyone get set up. Don’t worry if you run into issues!",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "computing-access.html#required-software",
+    "href": "computing-access.html#required-software",
+    "title": "Access Computing Resources",
+    "section": "Required Software",
+    "text": "Required Software\n\n1. Python Environment\nWe recommend using Anaconda, which includes Python and essential data science packages.\n\nInstallation Steps\n\nDownload Anaconda\n\nVisit anaconda.com/download\nChoose Python 3.9+ version for your operating system\nDownload the installer (graphical installer recommended)\n\nInstall Anaconda\n\nRun the installer\nAccept default settings\nImportant: Add Anaconda to your PATH (Windows users)\n\nCreate Course Environment\n# Download the environment file from course repo\ncurl -O https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/main/resources/smm635.yaml\n\n# Create the environment\nconda env create -f smm635.yaml\n\n# Activate the environment\nconda activate smm635\nVerify Installation\npython --version  # Should show Python 3.9+\njupyter --version # Should show jupyter installation\n\n\n\n\n2. R and RStudio\n\nInstallation Steps\n\nInstall R\n\nVisit r-project.org\nChoose your CRAN mirror\nDownload R 4.0+ for your operating system\n\nInstall RStudio\n\nVisit posit.co/downloads\nDownload RStudio Desktop (free version)\nInstall following default settings\n\nInstall Required Packages\n# Run in RStudio console\ninstall.packages(c(\n  \"tidyverse\",\n  \"plotly\", \n  \"shiny\",\n  \"gganimate\",\n  \"RColorBrewer\",\n  \"viridis\",\n  \"patchwork\",\n  \"here\"\n))\n\n\n\n\n3. Visual Studio Code (Optional but Recommended)\nVS Code is a powerful editor that works well with both Python and R.\n\nDownload VS Code\n\nVisit code.visualstudio.com\nDownload for your operating system\n\nInstall Extensions\n\nPython\nR\nJupyter\nRainbow CSV\nLive Share (for collaboration)\n\n\n\n\n4. Git and GitHub\nVersion control is essential for tracking your work and collaborating.\n\nInstall Git\n\nVisit git-scm.com\nDownload and install\nConfigure with your information:\n\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\nCreate GitHub Account\n\nVisit github.com\nSign up for free account\nConsider applying for GitHub Student Pack\n\nSet up SSH Key (Optional)\nssh-keygen -t ed25519 -C \"your.email@example.com\"\n# Follow prompts, then add to GitHub settings",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "computing-access.html#platform-specific-instructions",
+    "href": "computing-access.html#platform-specific-instructions",
+    "title": "Access Computing Resources",
+    "section": "Platform-Specific Instructions",
+    "text": "Platform-Specific Instructions\n\nWindowsmacOSLinux\n\n\nAdditional Tools - Install Windows Terminal for better command line experience - Consider WSL2 for Linux environment\nCommon Issues - If conda commands don’t work, add to PATH manually - Disable antivirus temporarily during installation - Run installers as administrator\n\n\nPrerequisites - Install Xcode Command Line Tools: bash   xcode-select --install\nHomebrew (Optional) - Install Homebrew for easier package management - Then use: brew install git r\nCommon Issues - Grant terminal permissions in Security settings - M1 Macs: Some packages may need Rosetta 2\n\n\nPackage Managers - Ubuntu/Debian: apt-get - Fedora: dnf - Arch: pacman\nExample (Ubuntu)\nsudo apt update\nsudo apt install python3-pip git r-base\nCommon Issues - May need to install additional system libraries - Check your distribution’s documentation",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "computing-access.html#cloud-alternatives",
+    "href": "computing-access.html#cloud-alternatives",
+    "title": "Access Computing Resources",
+    "section": "Cloud Alternatives",
+    "text": "Cloud Alternatives\nIf you have trouble with local installation, these cloud services work well:\n\nFor Python\n\nGoogle Colab - Free, no setup required\nKaggle Notebooks - Free, includes datasets\nDeepnote - Free tier available\n\n\n\nFor R\n\nRStudio Cloud - Free tier with 25 hours/month\nCoCalc - Free tier available\n\n\n\nFor Both\n\nBinder - Turn any GitHub repo into interactive environment\nUniversity computing clusters (check with IT)",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "computing-access.html#verifying-your-setup",
+    "href": "computing-access.html#verifying-your-setup",
+    "title": "Access Computing Resources",
+    "section": "Verifying Your Setup",
+    "text": "Verifying Your Setup\nRun this verification script to check everything is working:\n\nPython CheckR Check\n\n\n# save as check_setup.py\nimport sys\nimport importlib\n\npackages = [\n    'numpy', 'pandas', 'matplotlib', \n    'seaborn', 'plotly', 'altair',\n    'jupyter', 'notebook'\n]\n\nprint(f\"Python {sys.version}\")\nprint(\"-\" * 50)\n\nfor package in packages:\n    try:\n        mod = importlib.import_module(package)\n        version = getattr(mod, '__version__', 'installed')\n        print(f\"✓ {package}: {version}\")\n    except ImportError:\n        print(f\"✗ {package}: NOT INSTALLED\")\n\n\n# save as check_setup.R\npackages &lt;- c(\n  \"tidyverse\", \"plotly\", \"shiny\",\n  \"gganimate\", \"RColorBrewer\", \"viridis\"\n)\n\ncat(\"R\", R.version.string, \"\\n\")\ncat(rep(\"-\", 50), \"\\n\", sep=\"\")\n\nfor (pkg in packages) {\n  if (requireNamespace(pkg, quietly = TRUE)) {\n    ver &lt;- packageVersion(pkg)\n    cat(\"✓\", pkg, \":\", as.character(ver), \"\\n\")\n  } else {\n    cat(\"✗\", pkg, \": NOT INSTALLED\\n\")\n  }\n}",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "computing-access.html#getting-help",
+    "href": "computing-access.html#getting-help",
+    "title": "Access Computing Resources",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nDuring Installation\n\nCheck the Troubleshooting Guide\nSearch error messages online\nPost on course forum with:\n\nYour operating system\nComplete error message\nSteps you’ve tried\n\n\n\n\nAfter Installation\n\nTest with simple plots first\nKeep environments updated\nRegular backups of your work\n\n\n\n\n\n\n\nBest Practice\n\n\n\nCreate a dedicated folder for this course and organize by week:\nSMM635/\n├── week01/\n├── week02/\n├── projects/\n└── data/",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "computing-access.html#next-steps",
+    "href": "computing-access.html#next-steps",
+    "title": "Access Computing Resources",
+    "section": "Next Steps",
+    "text": "Next Steps\nOnce everything is installed: 1. Complete Lab 1 to test your setup 2. Join the course GitHub organization 3. Explore the example notebooks 4. Start your visualization journal!\nQuestions? See the Support page for help options.",
+    "crumbs": [
+      "Computing",
+      "Access computing resources"
+    ]
+  },
+  {
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching Team",
+    "section": "",
+    "text": "Associate Professor\nDepartment of Management\nsimone.santoni@institution.edu\nOffice Hours: Tuesday 4:00-5:00 PM or by appointment\nOffice: Building TBD, Room TBD\nResearch Interests: Data visualization, computational social science, network analysis, organizational behavior\nBackground: Dr. Santoni brings extensive experience in data science and visualization to this course. His research focuses on using visual analytics to understand complex organizational and social phenomena.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#instructor",
+    "href": "course-team.html#instructor",
+    "title": "Teaching Team",
+    "section": "",
+    "text": "Associate Professor\nDepartment of Management\nsimone.santoni@institution.edu\nOffice Hours: Tuesday 4:00-5:00 PM or by appointment\nOffice: Building TBD, Room TBD\nResearch Interests: Data visualization, computational social science, network analysis, organizational behavior\nBackground: Dr. Santoni brings extensive experience in data science and visualization to this course. His research focuses on using visual analytics to understand complex organizational and social phenomena.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#teaching-assistants",
+    "href": "course-team.html#teaching-assistants",
+    "title": "Teaching Team",
+    "section": "Teaching Assistants",
+    "text": "Teaching Assistants\n\nLead TA\n\n\n\n\n[TA Name]\nPhD Student, Data Science\nta1.email@institution.edu\nOffice Hours: Monday & Wednesday 3:00-5:00 PM\nSpecialization: Interactive visualizations, D3.js, dashboard design\n\n\n\n\nTeaching Assistants\n\n\n\n\n[TA Name]\nMSc Student, Computer Science\nta2.email@institution.edu\nLab Sessions: Thursday 2:00-4:00 PM\nSpecialization: Python visualization libraries, machine learning\n\n\n\n\n\n\n[TA Name]\nMSc Student, Statistics\nta3.email@institution.edu\nLab Sessions: Tuesday (overflow session)\nSpecialization: R/ggplot2, statistical graphics",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#guest-speakers",
+    "href": "course-team.html#guest-speakers",
+    "title": "Teaching Team",
+    "section": "Guest Speakers",
+    "text": "Guest Speakers\nThroughout the term, we’ll host industry professionals who use data visualization in their work:\n\n\n\nWeek\nSpeaker\nOrganization\nTopic\n\n\n\n\n3\nTBD\nFinancial Times\nData Journalism & Visualization\n\n\n5\nTBD\nGoogle\nVisualization at Scale\n\n\n7\nTBD\nLocal Government\nCivic Data & Public Communication\n\n\n9\nTBD\nHealthcare Startup\nVisualizing Health Data",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#how-to-contact-us",
+    "href": "course-team.html#how-to-contact-us",
+    "title": "Teaching Team",
+    "section": "How to Contact Us",
+    "text": "How to Contact Us\n\nFor Questions About…\n\n\nCourse Content - Lecture clarifications - Concept explanations - Reading materials\n→ Post on course forum or attend office hours\n\n\nAssignments - Submission issues - Clarifications - Extensions\n→ Email the Lead TA with instructor CC’d\n\n\nTechnical Issues - Software installation - Coding errors - Library problems\n→ Post on forum or visit TA hours\n\n\nPersonal Matters - Accommodations - Extended absences - Special circumstances\n→ Email instructor directly\n\n\n\n\nResponse Times\n\nCourse forum: Within 24 hours\nEmail: Within 48 hours on weekdays\nUrgent matters: Include “URGENT” in subject line\n\n\n\nBest Practices for Communication\n\nCheck existing resources first (syllabus, FAQ, forum)\nBe specific in your questions\nInclude context (assignment name, error messages, what you’ve tried)\nUse professional communication\nPlan ahead - don’t wait until the last minute",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#teaching-philosophy",
+    "href": "course-team.html#teaching-philosophy",
+    "title": "Teaching Team",
+    "section": "Teaching Philosophy",
+    "text": "Teaching Philosophy\nOur teaching team believes in:\n\nLearning by doing - Hands-on practice with real data\nConstructive feedback - Growth through iteration\nInclusive environment - All backgrounds and perspectives welcome\nReal-world relevance - Connecting theory to practice\nStudent agency - You drive your own learning journey\n\nWe’re here to guide and support your learning. Don’t hesitate to reach out!",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html",
+    "href": "course-syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "SMM635 Data Visualization is a comprehensive introduction to the principles and practice of data visualization. This module combines theoretical foundations with hands-on experience using industry-standard tools and programming languages. Students will learn to create effective, ethical, and aesthetically pleasing visualizations that communicate complex data insights to diverse audiences.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-description",
+    "href": "course-syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "",
+    "text": "SMM635 Data Visualization is a comprehensive introduction to the principles and practice of data visualization. This module combines theoretical foundations with hands-on experience using industry-standard tools and programming languages. Students will learn to create effective, ethical, and aesthetically pleasing visualizations that communicate complex data insights to diverse audiences.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#learning-outcomes",
+    "href": "course-syllabus.html#learning-outcomes",
+    "title": "Syllabus",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nUpon successful completion of this module, students will be able to:\n\nAnalyze the effectiveness of data visualizations using principles of visual perception and design\nDesign appropriate visualizations for different data types and communication objectives\nImplement static and interactive visualizations using Python, R, and web technologies\nEvaluate the ethical implications of design choices in data visualization\nCreate comprehensive data stories that effectively communicate insights",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#module-structure",
+    "href": "course-syllabus.html#module-structure",
+    "title": "Syllabus",
+    "section": "Module Structure",
+    "text": "Module Structure\nThe module runs for 10 weeks with the following components:\n\nLectures (2 hours/week): Theory, principles, and case studies\nLabs (2 hours/week): Hands-on coding and visualization practice\nSelf-study (6 hours/week): Readings, tutorials, and assignments",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#assessment",
+    "href": "course-syllabus.html#assessment",
+    "title": "Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\n\n\n\nComponent\nWeight\nDue Date\n\n\n\n\nLab Assignments (5 × 4%)\n20%\nWeekly\n\n\nMidterm Project\n30%\nWeek 6\n\n\nFinal Project\n40%\nWeek 11\n\n\nPeer Reviews\n10%\nOngoing\n\n\n\n\nLab Assignments\nShort weekly assignments that reinforce lecture concepts and develop technical skills.\n\n\nMidterm Project\nIndividual project focusing on exploratory data analysis and static visualizations.\n\n\nFinal Project\nGroup project (2-3 students) creating an interactive dashboard or data story on a topic of your choice.\n\n\nPeer Reviews\nConstructive feedback on classmates’ visualizations to develop critical evaluation skills.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#module-schedule",
+    "href": "course-syllabus.html#module-schedule",
+    "title": "Syllabus",
+    "section": "Module Schedule",
+    "text": "Module Schedule\n\n\n\nWeek\nTopic\nLab Focus\n\n\n\n\n1\nIntroduction to Data Visualization\nSetup & Basic Plots\n\n\n2\nVisual Perception & Design Principles\nGrammar of Graphics\n\n\n3\nColor Theory & Typography\nColor Schemes & Accessibility\n\n\n4\nStatistical Graphics\nDistributions & Relationships\n\n\n5\nTime Series & Temporal Data\nAnimated Visualizations\n\n\n6\nSpatial Data & Maps\nGeospatial Visualization\n\n\n7\nNetworks & Hierarchies\nGraph Visualization\n\n\n8\nInteractive Visualizations\nPlotly & Shiny\n\n\n9\nDashboards & Data Stories\nDashboard Design\n\n\n10\nEthics & Future of DataViz\nProject Presentations",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#required-software",
+    "href": "course-syllabus.html#required-software",
+    "title": "Syllabus",
+    "section": "Required Software",
+    "text": "Required Software\nAll software used in this module is free and open-source:\n\nPython 3.8+ with Anaconda distribution\nR 4.0+ with RStudio\nVisual Studio Code or Jupyter Lab\nGit and GitHub account\nTableau Public (optional)\n\nSee the Computing Resources page for installation instructions.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#textbooks-and-resources",
+    "href": "course-syllabus.html#textbooks-and-resources",
+    "title": "Syllabus",
+    "section": "Textbooks and Resources",
+    "text": "Textbooks and Resources\n\nRequired Reading\n\nCairo, A. (2016). The Truthful Art. New Riders.\nWilke, C. (2019). Fundamentals of Data Visualization. O’Reilly. Free online\n\n\n\nRecommended Reading\n\nTufte, E. (2001). The Visual Display of Quantitative Information. Graphics Press.\nMunzner, T. (2014). Visualization Analysis and Design. CRC Press.\nKirk, A. (2019). Data Visualisation: A Handbook for Data Driven Design. Sage.\n\n\n\nOnline Resources\n\nData Visualization Society\nObservable - Interactive notebooks\nFrom Data to Viz - Chart selection guide\nColorBrewer - Color scheme selector",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-policies",
+    "href": "course-syllabus.html#course-policies",
+    "title": "Syllabus",
+    "section": "Course Policies",
+    "text": "Course Policies\n\nAttendance\nWhile lectures are not mandatory, regular attendance is strongly encouraged. Lab sessions include peer activities that cannot be made up.\n\n\nLate Submission\n\n10% penalty per day for late submissions\nAssignments more than 5 days late will not be accepted\nExtensions may be granted for documented emergencies\n\n\n\nAcademic Integrity\nAll submitted work must be your own. You may discuss concepts with classmates, but code and visualizations must be created independently. Proper attribution is required for all external resources.\n\n\nCollaboration Policy\n\nLab assignments: Individual work, discussion encouraged\nMidterm project: Individual work only\nFinal project: Group work with individual contributions clearly identified",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#communication",
+    "href": "course-syllabus.html#communication",
+    "title": "Syllabus",
+    "section": "Communication",
+    "text": "Communication\n\nCourse website: Primary source for all materials\nOffice hours: Tuesday 4-5 PM or by appointment\nEmail: simone.santoni@institution.edu\nResponse time: Within 48 hours on weekdays",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#diversity-and-inclusion",
+    "href": "course-syllabus.html#diversity-and-inclusion",
+    "title": "Syllabus",
+    "section": "Diversity and Inclusion",
+    "text": "Diversity and Inclusion\nThis module values diversity and seeks to create an inclusive learning environment. If you have any concerns or suggestions for improving the classroom climate, please don’t hesitate to speak with me.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#accommodations",
+    "href": "course-syllabus.html#accommodations",
+    "title": "Syllabus",
+    "section": "Accommodations",
+    "text": "Accommodations\nStudents with documented disabilities who may need accommodations should make an appointment with me as soon as possible. All discussions will remain confidential.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#changes-to-syllabus",
+    "href": "course-syllabus.html#changes-to-syllabus",
+    "title": "Syllabus",
+    "section": "Changes to Syllabus",
+    "text": "Changes to Syllabus\nThis syllabus may be revised during the term. Any changes will be announced in class and posted on the course website.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "project-tips.html",
+    "href": "project-tips.html",
+    "title": "Project Tips & Resources",
+    "section": "",
+    "text": "What makes a good dataset for visualization? - Multiple variables (quantitative and categorical) - Temporal or spatial components - Sufficient observations for meaningful patterns - Clean enough to use, messy enough to be interesting - Tells a story you care about\nWhere to find datasets: - See our data sources list - Your own research or work (with permission) - APIs from services you use - Web scraping (check robots.txt) - Government open data portals\n\n\n\nAlways start with exploratory data analysis:\n# Quick data overview\nimport pandas as pd\ndf = pd.read_csv('your_data.csv')\nprint(df.info())\nprint(df.describe())\nprint(df.head())\n\n# Check for missing values\nprint(df.isnull().sum())\n\n# Quick visualizations\nimport matplotlib.pyplot as plt\ndf.hist(figsize=(12, 8))\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nPaper First!\n\n\n\nSketch at least 5 different visualization approaches on paper before coding. This helps you: - Think through the story - Identify required data transformations\n- Plan interactive elements - Save time overall",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-tips.html#getting-started",
+    "href": "project-tips.html#getting-started",
+    "title": "Project Tips & Resources",
+    "section": "",
+    "text": "What makes a good dataset for visualization? - Multiple variables (quantitative and categorical) - Temporal or spatial components - Sufficient observations for meaningful patterns - Clean enough to use, messy enough to be interesting - Tells a story you care about\nWhere to find datasets: - See our data sources list - Your own research or work (with permission) - APIs from services you use - Web scraping (check robots.txt) - Government open data portals\n\n\n\nAlways start with exploratory data analysis:\n# Quick data overview\nimport pandas as pd\ndf = pd.read_csv('your_data.csv')\nprint(df.info())\nprint(df.describe())\nprint(df.head())\n\n# Check for missing values\nprint(df.isnull().sum())\n\n# Quick visualizations\nimport matplotlib.pyplot as plt\ndf.hist(figsize=(12, 8))\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nPaper First!\n\n\n\nSketch at least 5 different visualization approaches on paper before coding. This helps you: - Think through the story - Identify required data transformations\n- Plan interactive elements - Save time overall",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-tips.html#design-best-practices",
+    "href": "project-tips.html#design-best-practices",
+    "title": "Project Tips & Resources",
+    "section": "Design Best Practices",
+    "text": "Design Best Practices\n\nColor Selection\n\nStart with grayscale - Ensure it works without color\nUse color purposefully - Highlight, group, or encode\nCheck accessibility - Use colorblind-safe palettes\nBe consistent - Same color = same meaning\n\n\n\nTypography\n\nHierarchy: Use size and weight to guide the eye\nReadability: Sans-serif for screens, adequate size\nConsistency: Maximum 2 font families\nLabels: Direct labeling &gt; legends when possible\n\n\n\nLayout Principles\n\nVisual hierarchy: Most important elements prominent\nWhite space: Let visualizations breathe\nAlignment: Create clean sight lines\nBalance: Distribute visual weight evenly",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-tips.html#technical-tips",
+    "href": "project-tips.html#technical-tips",
+    "title": "Project Tips & Resources",
+    "section": "Technical Tips",
+    "text": "Technical Tips\n\nPerformance Optimization\nFor large datasets:\n# Sampling for development\ndf_dev = df.sample(n=10000, random_state=42)\n\n# Aggregation before plotting\ndf_agg = df.groupby('category').agg({\n    'value': ['mean', 'std', 'count']\n}).reset_index()\n\n# Use efficient libraries\nimport datashader as ds  # For millions of points\nimport vaex  # For out-of-core computation\n\n\nInteractive Features\nStart simple, add complexity: 1. Hover tooltips - Show details on demand 2. Filtering - Let users focus on subsets 3. Zooming/panning - Explore dense regions 4. Linked views - Coordinate multiple charts 5. Animations - Show change over time\n\n\nDeployment Options\nFor sharing your work: - Static: GitHub Pages, Netlify - Python apps: Streamlit, Dash, Heroku - R apps: Shiny, shinyapps.io - Notebooks: Binder, Google Colab - Dashboards: Tableau Public, Observable",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-tips.html#project-management",
+    "href": "project-tips.html#project-management",
+    "title": "Project Tips & Resources",
+    "section": "Project Management",
+    "text": "Project Management\n\nVersion Control\n# Initialize git repository\ngit init\ngit add .\ngit commit -m \"Initial project setup\"\n\n# Create .gitignore\necho \"data/large_file.csv\" &gt;&gt; .gitignore\necho \"*.pyc\" &gt;&gt; .gitignore\necho \".DS_Store\" &gt;&gt; .gitignore\n\n\nProject Structure\nmy_project/\n├── README.md           # Project description\n├── data/              \n│   ├── raw/           # Original data\n│   └── processed/     # Cleaned data\n├── notebooks/         # Exploration\n├── src/              # Source code\n├── visuals/          # Output images\n├── docs/             # Documentation\n└── requirements.txt   # Dependencies\n\n\nDocumentation Template\nYour README should include: 1. Project title and description 2. Data source and collection method 3. Key findings/insights 4. Technical requirements 5. How to run the code 6. Future improvements",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-tips.html#common-pitfalls-to-avoid",
+    "href": "project-tips.html#common-pitfalls-to-avoid",
+    "title": "Project Tips & Resources",
+    "section": "Common Pitfalls to Avoid",
+    "text": "Common Pitfalls to Avoid\n\nDesign Mistakes\n\n🚫 Too many colors\n🚫 3D charts for 2D data\n\n🚫 Truncated y-axes\n🚫 Overcrowded layouts\n🚫 Decoration over function\n\n\n\nTechnical Mistakes\n\n🚫 Not handling missing data\n🚫 Hardcoded values\n🚫 No error handling\n🚫 Poor performance with large data\n🚫 Not testing edge cases\n\n\n\nProcess Mistakes\n\n🚫 Starting coding too early\n🚫 Not iterating on designs\n🚫 Ignoring user feedback\n🚫 Last-minute deployment\n🚫 Poor time management",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-tips.html#inspiration-and-examples",
+    "href": "project-tips.html#inspiration-and-examples",
+    "title": "Project Tips & Resources",
+    "section": "Inspiration and Examples",
+    "text": "Inspiration and Examples\n\nAward-Winning Projects\n\nInformation is Beautiful Awards\nKantar Awards Showcase\nD3.js Gallery\n\n\n\nStudent Project Examples\n\nPrevious years’ showcases (coming soon)\nTemplate repositories",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-tips.html#final-checklist",
+    "href": "project-tips.html#final-checklist",
+    "title": "Project Tips & Resources",
+    "section": "Final Checklist",
+    "text": "Final Checklist\nBefore submission: - [ ] Code runs without errors - [ ] Documentation is complete - [ ] Visualizations are accessible - [ ] Story is clear and compelling - [ ] All sources are cited - [ ] Tested on different devices - [ ] Peer feedback incorporated - [ ] Repository is clean and organized\n\n\n\n\n\n\nRemember\n\n\n\nThe best visualizations are rarely the first attempt. Iterate, get feedback, and refine!\n\n\nNeed help? Visit office hours or post on the course forum!",
+    "crumbs": [
+      "Project",
+      "Tips + resources"
+    ]
+  },
+  {
+    "objectID": "project-description.html",
+    "href": "project-description.html",
+    "title": "Project Instructions",
+    "section": "",
+    "text": "The course includes two main projects that allow you to apply data visualization principles to real-world data:\n\nMidterm Project (Week 6) - Individual static visualization project\nFinal Project (Week 11) - Group interactive visualization project",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project-description.html#overview",
+    "href": "project-description.html#overview",
+    "title": "Project Instructions",
+    "section": "",
+    "text": "The course includes two main projects that allow you to apply data visualization principles to real-world data:\n\nMidterm Project (Week 6) - Individual static visualization project\nFinal Project (Week 11) - Group interactive visualization project",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project-description.html#midterm-project-30",
+    "href": "project-description.html#midterm-project-30",
+    "title": "Project Instructions",
+    "section": "Midterm Project (30%)",
+    "text": "Midterm Project (30%)\n\nObjectives\nCreate a comprehensive static visualization report that demonstrates your understanding of design principles and technical skills.\n\n\nRequirements\n\nUse a dataset of your choice (minimum 1000 observations)\nCreate at least 5 different visualization types\nApply appropriate color schemes and typography\nInclude written analysis and design justifications\nSubmit as a PDF report (8-10 pages)\n\n\n\nDeliverables\n\nProject proposal (Week 3)\nData exploration notebook\nFinal visualization report\nCode repository",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project-description.html#final-project-40",
+    "href": "project-description.html#final-project-40",
+    "title": "Project Instructions",
+    "section": "Final Project (40%)",
+    "text": "Final Project (40%)\n\nObjectives\nWork in teams to create an interactive dashboard or data story that provides insights into a complex dataset.\n\n\nRequirements\n\nTeams of 2-3 students\nInteractive elements (filters, hover, zoom)\nMultiple coordinated views\nResponsive design\nClear narrative structure\n\n\n\nDeliverables\n\nProject proposal (Week 7)\nDesign mockups\nInteractive visualization (deployed)\nTechnical documentation\nTeam presentation (Week 10)",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project-description.html#project-guidelines",
+    "href": "project-description.html#project-guidelines",
+    "title": "Project Instructions",
+    "section": "Project Guidelines",
+    "text": "Project Guidelines\n\nChoosing a Dataset\n\nPublicly available data\nSufficient complexity for analysis\nEthical considerations addressed\nNovel insights possible\n\n\n\nEvaluation Criteria\n\nDesign (30%): Aesthetics, clarity, appropriateness\nTechnical (30%): Code quality, functionality, performance\nAnalysis (25%): Insights, storytelling, accuracy\nDocumentation (15%): Clarity, completeness, reproducibility",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project-description.html#timeline",
+    "href": "project-description.html#timeline",
+    "title": "Project Instructions",
+    "section": "Timeline",
+    "text": "Timeline\n\nMidterm Project\n\nWeek 3: Proposal due\nWeek 4: Feedback on proposals\nWeek 5: Check-in during office hours\nWeek 6: Final submission\n\n\n\nFinal Project\n\nWeek 7: Team formation and proposals\nWeek 8: Design review\nWeek 9: Implementation support\nWeek 10: Presentations\nWeek 11: Final submission",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "project-description.html#resources",
+    "href": "project-description.html#resources",
+    "title": "Project Instructions",
+    "section": "Resources",
+    "text": "Resources\n\nExample projects from previous years\nDataset suggestions\nDeployment guides\nPresentation templates\n\n\n\n\n\n\n\nStart Early!\n\n\n\nGood visualizations require iteration. Begin exploring data and sketching ideas as soon as possible.\n\n\nQuestions? See Project Tips or visit office hours.",
+    "crumbs": [
+      "Project",
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "course-links.html",
+    "href": "course-links.html",
+    "title": "Useful Links",
+    "section": "",
+    "text": "Course GitHub Repository - All code and materials\nLecture Recordings - Available 24 hours after each lecture\nReading List - Library access to all required readings",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#course-resources",
+    "href": "course-links.html#course-resources",
+    "title": "Useful Links",
+    "section": "",
+    "text": "Course GitHub Repository - All code and materials\nLecture Recordings - Available 24 hours after each lecture\nReading List - Library access to all required readings",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#visualization-tools-libraries",
+    "href": "course-links.html#visualization-tools-libraries",
+    "title": "Useful Links",
+    "section": "Visualization Tools & Libraries",
+    "text": "Visualization Tools & Libraries\n\nPython Libraries\n\nMatplotlib Documentation - Fundamental plotting library\nSeaborn Tutorial - Statistical data visualization\nPlotly Python - Interactive visualizations\nAltair - Declarative visualization\nBokeh - Interactive visualization library\n\n\n\nR Libraries\n\nggplot2 - Grammar of graphics for R\nR Graph Gallery - ggplot2 examples\nPlotly R - Interactive plots in R\ngganimate - Animated ggplot2 visualizations\nShiny - Interactive web applications\n\n\n\nWeb-based Tools\n\nD3.js - Data-driven documents\nObservable - Reactive notebooks\nVega-Lite - High-level visualization grammar\nTableau Public - Free version of Tableau",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#inspiration-examples",
+    "href": "course-links.html#inspiration-examples",
+    "title": "Useful Links",
+    "section": "Inspiration & Examples",
+    "text": "Inspiration & Examples\n\nGalleries & Showcases\n\nFlowingData - Nathan Yau’s visualization blog\nInformation is Beautiful - David McCandless’s work\nPudding.cool - Visual essays\nFiveThirtyEight - Data journalism\nNew York Times Graphics - Interactive storytelling\n\n\n\nAwards & Competitions\n\nInformation is Beautiful Awards\nKantar Information is Beautiful Awards\nMalofiej Awards\nData Visualization Society",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#learning-resources",
+    "href": "course-links.html#learning-resources",
+    "title": "Useful Links",
+    "section": "Learning Resources",
+    "text": "Learning Resources\n\nOnline Courses & Tutorials\n\nCoursera - Data Visualization\nDataCamp - Data Visualization\nUdacity - Data Visualization\n\n\n\nBooks (Free Online)\n\nFundamentals of Data Visualization - Claus Wilke\nData Visualization: A Practical Introduction - Kieran Healy\nInteractive Data Visualization for the Web - Scott Murray\n\n\n\nStyle Guides\n\nFinancial Times Visual Vocabulary\nBBC Visual and Data Journalism Cookbook\nUrban Institute Data Visualization Style Guide",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#color-design-resources",
+    "href": "course-links.html#color-design-resources",
+    "title": "Useful Links",
+    "section": "Color & Design Resources",
+    "text": "Color & Design Resources\n\nColor Tools\n\nColorBrewer 2.0 - Color schemes for maps\nCoolors - Color palette generator\nAdobe Color - Color wheel and themes\nAccessible Colors - Check color accessibility\nContrast Checker - WCAG compliance\n\n\n\nTypography & Icons\n\nGoogle Fonts - Free web fonts\nFont Pair - Font combinations\nThe Noun Project - Icons and symbols\nFeather Icons - Simple icons",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#data-sources",
+    "href": "course-links.html#data-sources",
+    "title": "Useful Links",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nOpen Data Portals\n\nOur World in Data - Research and data on global issues\nWorld Bank Open Data - Development data\nUN Data - United Nations statistics\ndata.gov - US government data\ndata.gov.uk - UK government data\nEuropean Data Portal - EU open data\n\n\n\nSpecialized Datasets\n\nKaggle Datasets - Community datasets\nGoogle Dataset Search - Dataset search engine\nFiveThirtyEight Data - Journalism datasets\nGapminder - Global development data",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#professional-development",
+    "href": "course-links.html#professional-development",
+    "title": "Useful Links",
+    "section": "Professional Development",
+    "text": "Professional Development\n\nCommunities\n\nData Visualization Society - Global community\nr/dataisbeautiful - Reddit community\n#dataviz on Twitter - Twitter community\nData Visualization LinkedIn Groups - Professional networking\n\n\n\nConferences & Events\n\nIEEE VIS - Premier visualization conference\nOpenVis Conference - Open source visualization\nTapestry Conference - Storytelling with data\nNACIS - Cartography and GIS\n\n\n\nCareer Resources\n\nData Visualization Jobs - Job boards\nHow to Build a Data Visualization Portfolio - Portfolio guide\nData Viz Career Guide - Nightingale magazine",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
+    "objectID": "course-links.html#tools-for-collaboration",
+    "href": "course-links.html#tools-for-collaboration",
+    "title": "Useful Links",
+    "section": "Tools for Collaboration",
+    "text": "Tools for Collaboration\n\nVersion Control\n\nGitHub - Code repository and collaboration\nGitLab - Alternative to GitHub\nGit LFS - Large file storage for data\n\n\n\nProject Management\n\nTrello - Kanban boards\nNotion - All-in-one workspace\nMiro - Visual collaboration\n\n\n\n\n\n\n\n\nBookmark This Page!\n\n\n\nThis list is updated throughout the term as we discover new resources. Check back regularly for updates.\n\n\nHave a great resource to share? Let us know on the course forum!",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  }
+]

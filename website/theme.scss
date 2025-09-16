@@ -1,0 +1,198 @@
+/*-- scss:defaults --*/
+
+// Colors - Data Viz inspired palette
+$primary: #2C3E50;        // Dark blue-gray
+$secondary: #E74C3C;      // Vibrant red for accents
+$success: #27AE60;        // Green
+$info: #3498DB;           // Bright blue
+$warning: #F39C12;        // Orange
+$danger: #E74C3C;         // Red
+$light: #ECF0F1;          // Light gray
+$dark: #2C3E50;           // Dark blue-gray
+
+// Body
+$body-bg: #FFFFFF;
+$body-color: #2C3E50;
+$link-color: #3498DB;
+$link-hover-color: #2980B9;
+
+// Typography
+$font-family-sans-serif: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 700;
+$headings-color: #2C3E50;
+
+// Code
+$code-bg: #F8F9FA;
+$code-color: #E74C3C;
+
+// Navigation
+$navbar-bg: #2C3E50;
+$navbar-fg: #FFFFFF;
+$sidebar-bg: #F8F9FA;
+$sidebar-fg: #2C3E50;
+$sidebar-hl: #3498DB;
+
+/*-- scss:rules --*/
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Custom classes for course content
+.hero-banner {
+  background: linear-gradient(135deg, #3498DB 0%, #2C3E50 100%);
+  color: white;
+  padding: 3rem 2rem;
+  margin: -1rem -1rem 2rem -1rem;
+  text-align: center;
+  
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+}
+
+// Data viz specific styling
+.viz-principle {
+  background-color: #E8F4FD;
+  border-left: 4px solid #3498DB;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  
+  &::before {
+    content: "💡 ";
+    font-size: 1.2rem;
+  }
+}
+
+.code-example {
+  background-color: #F8F9FA;
+  border: 1px solid #DEE2E6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+// Week cards
+.week-card {
+  border: 1px solid #DEE2E6;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+  }
+  
+  h3 {
+    color: #3498DB;
+    margin-top: 0;
+  }
+}
+
+// Assignment badges
+.assignment-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  
+  &.lab {
+    background-color: #E8F4FD;
+    color: #2980B9;
+  }
+  
+  &.homework {
+    background-color: #FFF3CD;
+    color: #856404;
+  }
+  
+  &.project {
+    background-color: #D4EDDA;
+    color: #155724;
+  }
+}
+
+// Sidebar enhancements
+.sidebar nav[role="navigation"] {
+  .sidebar-section-text {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    color: #6C757D;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar-item {
+    .sidebar-item-text {
+      &:hover {
+        color: #3498DB;
+      }
+    }
+  }
+}
+
+// Tables
+.table {
+  thead th {
+    background-color: #F8F9FA;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.025em;
+  }
+}
+
+// Callout boxes
+.callout {
+  margin: 1.5rem 0;
+  
+  &.callout-note {
+    border-left-color: #3498DB;
+  }
+  
+  &.callout-warning {
+    border-left-color: #F39C12;
+  }
+  
+  &.callout-important {
+    border-left-color: #E74C3C;
+  }
+  
+  &.callout-tip {
+    border-left-color: #27AE60;
+  }
+}
+
+// Footer
+.nav-footer {
+  border-top: 2px solid #E9ECEF;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 2rem 1rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+}

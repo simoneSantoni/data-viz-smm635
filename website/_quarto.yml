@@ -1,0 +1,94 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "SMM635 - Data Visualization"
+  description: "MSc Module on Data Visualization - Learn to create effective and beautiful data visualizations"
+  site-url: https://github.com/simoneSantoni/data-viz-smm635
+  repo-url: https://github.com/simoneSantoni/data-viz-smm635
+  repo-actions: [edit, issue]
+  
+  page-footer:
+    left: |
+      ©Copyright 2024, Simone Santoni
+    right: |
+      This website is built with [Quarto](https://quarto.org/)
+    
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Course information"
+        contents:
+        - href: index.qmd
+          text: Overview
+        - href: course-syllabus.qmd
+          text: Syllabus
+        - href: course-support.qmd
+          text: Support
+        - href: course-team.qmd
+          text: Teaching team
+        - href: course-links.qmd
+          text: Useful links
+        - href: course-faq.qmd
+          text: FAQ
+      
+      - section: "Computing"
+        contents:
+        - href: computing-access.qmd
+          text: Access computing resources
+        - href: computing-troubleshooting.qmd
+          text: Troubleshooting
+      
+      - section: "Project"
+        contents:
+        - href: project-description.qmd
+          text: Instructions
+        - href: project-tips.qmd
+          text: Tips + resources
+      
+      - section: "Weekly materials"
+        contents:
+        - href: weeks/week-01.qmd
+          text: "Week 1"
+        - href: weeks/week-02.qmd
+          text: "Week 2"
+        - href: weeks/week-03.qmd
+          text: "Week 3"
+        - href: weeks/week-04.qmd
+          text: "Week 4"
+        - href: weeks/week-05.qmd
+          text: "Week 5"
+        - href: weeks/week-06.qmd
+          text: "Week 6"
+        - href: weeks/week-07.qmd
+          text: "Week 7"
+        - href: weeks/week-08.qmd
+          text: "Week 8"
+        - href: weeks/week-09.qmd
+          text: "Week 9"
+        - href: weeks/week-10.qmd
+          text: "Week 10"
+      
+      - section: "Supplemental notes"
+        contents:
+        - href: supplemental/index.qmd
+          text: Overview
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+execute:
+  freeze: auto
+
+
+

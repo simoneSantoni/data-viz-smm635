@@ -1,0 +1,102 @@
+---
+title: "Supplemental Notes"
+---
+
+Additional resources and extended topics that complement the main course material.
+
+## Advanced Topics
+
+These optional materials dive deeper into specialized areas of data visualization:
+
+### 1. Advanced Color Theory
+- [Color spaces and perceptual uniformity](#)
+- [Advanced accessibility considerations](#)
+- [Cultural color associations](#)
+
+### 2. Statistical Visualization
+- [Uncertainty visualization](#)
+- [Bayesian visualization](#)
+- [High-dimensional data techniques](#)
+
+### 3. Web Technologies
+- [D3.js advanced patterns](#)
+- [Canvas vs SVG performance](#)
+- [WebGL for visualization](#)
+
+### 4. Visualization Research
+- [Current research trends](#)
+- [Evaluation methodologies](#)
+- [Perception studies](#)
+
+## Extended Examples
+
+### Large-Scale Visualizations
+- Working with millions of data points
+- Performance optimization strategies
+- Progressive rendering techniques
+
+### Domain-Specific Applications
+- Scientific visualization
+- Business intelligence dashboards
+- Journalism and storytelling
+- Social network analysis
+
+## Additional Tutorials
+
+### Python Deep Dives
+- [Matplotlib internals](#)
+- [Custom Plotly components](#)
+- [Altair advanced grammar](#)
+
+### R Explorations  
+- [ggplot2 extensions ecosystem](#)
+- [Building custom geoms](#)
+- [Advanced Shiny applications](#)
+
+## Reading Lists
+
+### Classic Papers
+- Bertin, J. (1983). Semiology of Graphics
+- Cleveland, W. S. & McGill, R. (1984). Graphical Perception
+- Tufte, E. R. (1983). The Visual Display of Quantitative Information
+
+### Recent Research
+- [IEEE VIS Best Papers](https://ieeevis.org/)
+- [EuroVis Proceedings](https://www.eurovis.org/)
+- [CHI Visualization Papers](https://chi2024.acm.org/)
+
+## Tools and Libraries
+
+### Cutting-Edge Libraries
+- [Vega-Lite](https://vega.github.io/vega-lite/)
+- [Deck.gl](https://deck.gl/)
+- [Kepler.gl](https://kepler.gl/)
+- [Apache Superset](https://superset.apache.org/)
+
+### Specialized Tools
+- Network: Gephi, Cytoscape
+- Geographic: QGIS, Mapbox
+- Scientific: ParaView, VisIt
+- Business: PowerBI, Looker
+
+## Community Resources
+
+### Online Communities
+- [Data Visualization Society Slack](https://www.datavisualizationsociety.com/)
+- [r/dataisbeautiful](https://reddit.com/r/dataisbeautiful)
+- [Observable Community](https://observablehq.com/community)
+
+### Conferences and Events
+- IEEE VIS Conference
+- OpenVis Conference  
+- Tapestry Conference
+- Local meetups and workshops
+
+---
+
+::: {.callout-note}
+## Contributing
+Have a resource to share? Submit a pull request or let us know on the forum!
+:::
+
+These materials are optional but can greatly enhance your understanding and skills in data visualization.

@@ -1,0 +1,135 @@
+---
+title: "Useful Links"
+---
+
+## Course Resources
+
+### Course Materials
+- [Course GitHub Repository](https://github.com/simoneSantoni/data-viz-smm635) - All code and materials
+- [Lecture Recordings](#) - Available 24 hours after each lecture
+- [Reading List](#) - Library access to all required readings
+
+## Visualization Tools & Libraries
+
+### Python Libraries
+- [Matplotlib Documentation](https://matplotlib.org/) - Fundamental plotting library
+- [Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html) - Statistical data visualization
+- [Plotly Python](https://plotly.com/python/) - Interactive visualizations
+- [Altair](https://altair-viz.github.io/) - Declarative visualization
+- [Bokeh](https://docs.bokeh.org/) - Interactive visualization library
+
+### R Libraries  
+- [ggplot2](https://ggplot2.tidyverse.org/) - Grammar of graphics for R
+- [R Graph Gallery](https://r-graph-gallery.com/) - ggplot2 examples
+- [Plotly R](https://plotly.com/r/) - Interactive plots in R
+- [gganimate](https://gganimate.com/) - Animated ggplot2 visualizations
+- [Shiny](https://shiny.rstudio.com/) - Interactive web applications
+
+### Web-based Tools
+- [D3.js](https://d3js.org/) - Data-driven documents
+- [Observable](https://observablehq.com/) - Reactive notebooks
+- [Vega-Lite](https://vega.github.io/vega-lite/) - High-level visualization grammar
+- [Tableau Public](https://public.tableau.com/) - Free version of Tableau
+
+## Inspiration & Examples
+
+### Galleries & Showcases
+- [FlowingData](https://flowingdata.com/) - Nathan Yau's visualization blog
+- [Information is Beautiful](https://informationisbeautiful.net/) - David McCandless's work
+- [Pudding.cool](https://pudding.cool/) - Visual essays
+- [FiveThirtyEight](https://fivethirtyeight.com/) - Data journalism
+- [New York Times Graphics](https://www.nytimes.com/section/upshot) - Interactive storytelling
+
+### Awards & Competitions
+- [Information is Beautiful Awards](https://www.informationisbeautifulawards.com/)
+- [Kantar Information is Beautiful Awards](https://www.informationisbeautifulawards.com/)
+- [Malofiej Awards](https://www.malofiejgraphics.com/)
+- [Data Visualization Society](https://www.datavisualizationsociety.com/)
+
+## Learning Resources
+
+### Online Courses & Tutorials
+- [Coursera - Data Visualization](https://www.coursera.org/learn/datavisualization)
+- [DataCamp - Data Visualization](https://www.datacamp.com/tracks/data-visualization)
+- [Udacity - Data Visualization](https://www.udacity.com/course/data-visualization-nanodegree--nd197)
+
+### Books (Free Online)
+- [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/) - Claus Wilke
+- [Data Visualization: A Practical Introduction](https://socviz.co/) - Kieran Healy
+- [Interactive Data Visualization for the Web](https://alignedleft.com/work/d3-book-2e) - Scott Murray
+
+### Style Guides
+- [Financial Times Visual Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
+- [BBC Visual and Data Journalism Cookbook](https://bbc.github.io/rcookbook/)
+- [Urban Institute Data Visualization Style Guide](https://urbaninstitute.github.io/graphics-styleguide/)
+
+## Color & Design Resources
+
+### Color Tools
+- [ColorBrewer 2.0](https://colorbrewer2.org/) - Color schemes for maps
+- [Coolors](https://coolors.co/) - Color palette generator
+- [Adobe Color](https://color.adobe.com/) - Color wheel and themes
+- [Accessible Colors](https://accessible-colors.com/) - Check color accessibility
+- [Contrast Checker](https://webaim.org/resources/contrastchecker/) - WCAG compliance
+
+### Typography & Icons
+- [Google Fonts](https://fonts.google.com/) - Free web fonts
+- [Font Pair](https://fontpair.co/) - Font combinations
+- [The Noun Project](https://thenounproject.com/) - Icons and symbols
+- [Feather Icons](https://feathericons.com/) - Simple icons
+
+## Data Sources
+
+### Open Data Portals
+- [Our World in Data](https://ourworldindata.org/) - Research and data on global issues
+- [World Bank Open Data](https://data.worldbank.org/) - Development data
+- [UN Data](http://data.un.org/) - United Nations statistics
+- [data.gov](https://www.data.gov/) - US government data
+- [data.gov.uk](https://data.gov.uk/) - UK government data
+- [European Data Portal](https://data.europa.eu/) - EU open data
+
+### Specialized Datasets
+- [Kaggle Datasets](https://www.kaggle.com/datasets) - Community datasets
+- [Google Dataset Search](https://datasetsearch.research.google.com/) - Dataset search engine
+- [FiveThirtyEight Data](https://data.fivethirtyeight.com/) - Journalism datasets
+- [Gapminder](https://www.gapminder.org/data/) - Global development data
+
+## Professional Development
+
+### Communities
+- [Data Visualization Society](https://www.datavisualizationsociety.com/) - Global community
+- [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/) - Reddit community
+- [#dataviz on Twitter](https://twitter.com/hashtag/dataviz) - Twitter community
+- [Data Visualization LinkedIn Groups](https://www.linkedin.com/groups/) - Professional networking
+
+### Conferences & Events
+- [IEEE VIS](http://ieeevis.org/) - Premier visualization conference
+- [OpenVis Conference](https://openvisconf.com/) - Open source visualization
+- [Tapestry Conference](https://www.tapestryconference.com/) - Storytelling with data
+- [NACIS](https://nacis.org/) - Cartography and GIS
+
+### Career Resources
+- [Data Visualization Jobs](https://www.visualisingdata.com/resources/) - Job boards
+- [How to Build a Data Visualization Portfolio](https://www.dataquest.io/blog/build-a-data-visualization-portfolio/) - Portfolio guide
+- [Data Viz Career Guide](https://nightingaledvs.com/career-guide/) - Nightingale magazine
+
+## Tools for Collaboration
+
+### Version Control
+- [GitHub](https://github.com/) - Code repository and collaboration
+- [GitLab](https://gitlab.com/) - Alternative to GitHub
+- [Git LFS](https://git-lfs.github.com/) - Large file storage for data
+
+### Project Management
+- [Trello](https://trello.com/) - Kanban boards
+- [Notion](https://notion.so/) - All-in-one workspace
+- [Miro](https://miro.com/) - Visual collaboration
+
+---
+
+::: {.callout-tip}
+## Bookmark This Page!
+This list is updated throughout the term as we discover new resources. Check back regularly for updates.
+:::
+
+Have a great resource to share? Let us know on the course forum!

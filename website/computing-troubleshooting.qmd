@@ -1,0 +1,308 @@
+---
+title: "Troubleshooting Guide"
+---
+
+Common issues and solutions for SMM635 computing setup.
+
+## Installation Issues
+
+### Python/Anaconda
+
+::: {.callout-tip collapse="true"}
+## conda: command not found
+**Problem**: Terminal doesn't recognize conda commands
+
+**Solutions**:
+1. **Windows**: Add Anaconda to PATH
+   - Search "Environment Variables" in Start Menu
+   - Add `C:\Users\YourName\Anaconda3\Scripts` to PATH
+   - Restart terminal
+
+2. **Mac/Linux**: Source conda
+   ```bash
+   source ~/anaconda3/bin/activate
+   conda init
+   ```
+
+3. **Alternative**: Use Anaconda Prompt (Windows) or full path
+:::
+
+::: {.callout-tip collapse="true"}
+## Package conflicts during installation
+**Problem**: "Solving environment" takes forever or fails
+
+**Solutions**:
+1. Create fresh environment:
+   ```bash
+   conda create -n smm635_fresh python=3.9
+   conda activate smm635_fresh
+   conda install matplotlib seaborn plotly
+   ```
+
+2. Use mamba (faster solver):
+   ```bash
+   conda install -n base mamba
+   mamba install package_name
+   ```
+
+3. Use pip for specific packages:
+   ```bash
+   pip install plotly --upgrade
+   ```
+:::
+
+### R/RStudio
+
+::: {.callout-tip collapse="true"}
+## "Package not available for R version"
+**Problem**: Can't install certain packages
+
+**Solutions**:
+1. Update R to latest version
+2. Install from source:
+   ```r
+   install.packages("package_name", type = "source")
+   ```
+3. Use development version:
+   ```r
+   devtools::install_github("author/package")
+   ```
+:::
+
+::: {.callout-tip collapse="true"}
+## RStudio won't start
+**Problem**: RStudio crashes or shows blank screen
+
+**Solutions**:
+1. Reset RStudio state:
+   - Mac: `rm -rf ~/.rstudio-desktop`
+   - Windows: Delete `%localappdata%\RStudio-Desktop`
+
+2. Update graphics drivers
+3. Try RStudio Cloud as temporary solution
+:::
+
+## Runtime Errors
+
+### Python
+
+::: {.callout-tip collapse="true"}
+## ModuleNotFoundError
+**Problem**: Python can't find installed package
+
+**Solutions**:
+1. Check you're in correct environment:
+   ```bash
+   conda activate smm635
+   conda list  # Should show your packages
+   ```
+
+2. Reinstall package:
+   ```bash
+   conda install package_name -c conda-forge
+   ```
+
+3. Check Jupyter kernel:
+   ```bash
+   python -m ipykernel install --user --name smm635
+   ```
+:::
+
+::: {.callout-tip collapse="true"}
+## Matplotlib figures not showing
+**Problem**: Plots don't appear in notebook
+
+**Solutions**:
+1. Add magic command:
+   ```python
+   %matplotlib inline
+   ```
+
+2. For interactive plots:
+   ```python
+   %matplotlib widget
+   ```
+
+3. Explicitly show plots:
+   ```python
+   import matplotlib.pyplot as plt
+   plt.show()
+   ```
+:::
+
+### R
+
+::: {.callout-tip collapse="true"}
+## "could not find function"
+**Problem**: R doesn't recognize function
+
+**Solutions**:
+1. Load the library:
+   ```r
+   library(ggplot2)  # or appropriate package
+   ```
+
+2. Use full namespace:
+   ```r
+   ggplot2::ggplot(...)
+   ```
+
+3. Check spelling and case sensitivity
+:::
+
+::: {.callout-tip collapse="true"}
+## ggplot shows blank plot
+**Problem**: No output from ggplot
+
+**Solutions**:
+1. Assign and print:
+   ```r
+   p <- ggplot(data, aes(x, y)) + geom_point()
+   print(p)
+   ```
+
+2. Check data isn't empty:
+   ```r
+   nrow(data)  # Should be > 0
+   ```
+:::
+
+## Performance Issues
+
+::: {.callout-tip collapse="true"}
+## Slow plotting with large datasets
+**Solutions**:
+1. **Sample data**:
+   ```python
+   df_sample = df.sample(n=10000)
+   ```
+
+2. **Use datashader** for millions of points:
+   ```python
+   import datashader as ds
+   ```
+
+3. **Aggregate before plotting**:
+   ```r
+   df_summary <- df %>%
+     group_by(category) %>%
+     summarize(mean_value = mean(value))
+   ```
+:::
+
+::: {.callout-tip collapse="true"}
+## Jupyter notebook keeps crashing
+**Solutions**:
+1. Increase memory limit:
+   ```python
+   import resource
+   resource.setrlimit(resource.RLIMIT_AS, (2147483648, 2147483648))
+   ```
+
+2. Clear output regularly:
+   - Cell → All Output → Clear
+
+3. Use `.py` scripts for heavy processing
+:::
+
+## Git/GitHub Issues
+
+::: {.callout-tip collapse="true"}
+## Permission denied (publickey)
+**Problem**: Can't push to GitHub
+
+**Solutions**:
+1. Use HTTPS instead of SSH:
+   ```bash
+   git remote set-url origin https://github.com/user/repo.git
+   ```
+
+2. Set up SSH key:
+   ```bash
+   ssh-keygen -t ed25519
+   cat ~/.ssh/id_ed25519.pub
+   # Copy and add to GitHub settings
+   ```
+
+3. Use GitHub Desktop or VS Code git integration
+:::
+
+::: {.callout-tip collapse="true"}
+## Large files rejected
+**Problem**: GitHub won't accept files > 100MB
+
+**Solutions**:
+1. Use `.gitignore`:
+   ```
+   *.csv
+   data/
+   *.pkl
+   ```
+
+2. Use Git LFS:
+   ```bash
+   git lfs track "*.csv"
+   git add .gitattributes
+   ```
+
+3. Store data externally (Google Drive, Dropbox)
+:::
+
+## Quick Fixes
+
+### Reset Everything
+
+If all else fails, here's how to start fresh:
+
+```bash
+# Backup your work first!
+
+# Remove conda environment
+conda env remove -n smm635
+
+# Clear conda cache
+conda clean --all
+
+# Reinstall from scratch
+conda env create -f smm635.yaml
+```
+
+### Emergency Alternatives
+
+When you need to work RIGHT NOW:
+
+1. **Google Colab**: No setup needed
+   ```python
+   !pip install plotly seaborn
+   ```
+
+2. **Binder**: Share environment
+   - Add `requirements.txt` to repo
+   - Visit mybinder.org
+
+3. **University computers**: Usually have everything installed
+
+## Getting More Help
+
+If these solutions don't work:
+
+1. **Document the problem**:
+   - Exact error message
+   - What you were trying to do
+   - Your operating system
+   - Screenshot if helpful
+
+2. **Search first**:
+   - Google the exact error
+   - Check Stack Overflow
+   - Search course forum
+
+3. **Ask for help**:
+   - Post on course forum
+   - Come to office hours
+   - Email TA with details
+
+::: {.callout-warning}
+## Remember
+Most problems have been solved before! Don't spend hours struggling alone - ask for help after 30 minutes of troubleshooting.
+:::
