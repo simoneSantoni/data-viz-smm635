@@ -5,7 +5,7 @@ website:
   page-navigation: true
   title: "SMM635 - Data Visualization"
   description: "MSc Module on Data Visualization - Learn to create effective and beautiful data visualizations"
-  site-url: https://github.com/simoneSantoni/data-viz-smm635
+  site-url: https://simonesantoni.github.io/data-viz-smm635
   repo-url: https://github.com/simoneSantoni/data-viz-smm635
   repo-actions: [edit, issue]
   
