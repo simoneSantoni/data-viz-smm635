@@ -65,7 +65,6 @@ Introductory session, no laboratory session.
 
 - Tufte, E. R. (1983). *The visual display of quantitative information*, Chapters 1-2
 - Cairo, A. (2012). *The Functional Art*, Introduction and Chapter 1
-- [Data Visualization Design Process](design_process.qmd) - Overview of the visualization design workflow
 
 ### Core Visualization Principles
 
