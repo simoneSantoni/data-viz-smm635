@@ -15,8 +15,8 @@ format:
     transition: slide
     background-transition: fade
     incremental: false
-    smaller: false
-    scrollable: false
+    smaller: true
+    scrollable: true
     css: presentation-styles.css
 ---
 
