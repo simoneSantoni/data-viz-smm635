@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{The History of Geospatial Data Visualization}{3}{0}{1}
-\beamer@sectionintoc {2}{Methodological Aspects}{6}{0}{2}
-\beamer@sectionintoc {3}{The Challenges of Geospatial Data Visualization}{13}{0}{3}
-\beamer@sectionintoc {4}{Python Modules for Geospatial Data Visualization}{21}{0}{4}

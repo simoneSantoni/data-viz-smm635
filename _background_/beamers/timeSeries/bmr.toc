@@ -1,3 +1,0 @@
-\beamer@sectionintoc {1}{The Nuts and Bolts of Temporal Data Viz}{3}{0}{1}
-\beamer@sectionintoc {2}{Exemplars of Temporal Data Viz}{12}{0}{2}
-\beamer@sectionintoc {3}{Handling Time-Related Data with R}{15}{0}{3}
