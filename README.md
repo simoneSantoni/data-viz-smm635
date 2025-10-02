@@ -5,7 +5,10 @@ repository is actively maintained and will be updated throughout the term.
 
 ## Course Website
 
-The course website contains comprehensive materials including lectures, assignments, and interactive visualizations. Visit the [course website](https://simonesantoni.github.io/data-viz-smm635/) for the complete learning experience.
+The course website contains comprehensive materials including lectures,
+assignments, and interactive visualizations. Visit the [course
+website](https://simonesantoni.github.io/data-viz-smm635/) for the complete
+learning experience.
 
 ### Latest Updates
 
@@ -60,7 +63,7 @@ actionable insights through thoughtful visual design.
 ### Course Topics (10 weeks)
 
 1. **Week 1**: Designing charts: processes and principles
-2. **Week 2**: Design variables and the grammar of graphics  
+2. **Week 2**: Design variables and the grammar of graphics
 3. **Week 3**: Exploratory data analysis and Nomis Solutions case
 4. **Week 4**: Multidimensional data visualization and Saving Lives with Data case
 5. **Week 5**: Storytelling and Crop Residue case
@@ -102,11 +105,13 @@ conda activate smm635
 ### Key Libraries
 
 **R Packages:**
+
 - `ggplot2`, `plotly`, `shiny` for visualizations
 - `tidyverse` for data manipulation
 - `viridis`, `RColorBrewer` for color schemes
 
 **Python Libraries:**
+
 - `matplotlib`, `seaborn`, `plotly` for plotting
 - `pandas`, `numpy` for data handling
 - `altair`, `bokeh`, `dash` for interactive visualizations
@@ -119,19 +124,21 @@ conda activate smm635
 
 ## Essential Readings
 
-1. **Tufte, E. R. (1983).** *The visual display of quantitative information*
-2. **Cairo, A. (2012).** *The Functional Art: An introduction to information graphics and visualization*
-3. **Wilkinson, L. (2011).** *The grammar of graphics*
-4. **Healy, K. (2024).** *Data visualization: a practical introduction*
+1. **Tufte, E. R. (1983).** _The visual display of quantitative information_
+2. **Cairo, A. (2012).** _The Functional Art: An introduction to information graphics and visualization_
+3. **Wilkinson, L. (2011).** _The grammar of graphics_
+4. **Healy, K. (2024).** _Data visualization: a practical introduction_
 
 ## Getting Started
 
 1. **Clone this repository**:
+
    ```bash
    git clone https://github.com/simoneSantoni/data-viz-smm635.git
    ```
 
 2. **Set up environment**:
+
    ```bash
    conda env create -f smm635.yaml
    conda activate smm635
@@ -143,13 +150,14 @@ conda activate smm635
 
 ## Support
 
-- **Office Hours**: Wednesdays 14:00-16:00 (by appointment)
+- **Office Hours**: Wednesdays 15:00-17:00 (by appointment)
 - **Email**: [simone.santoni.1@city.ac.uk](mailto:simone.santoni.1@city.ac.uk)
 - **Course Forum**: Available on Moodle
 
 ## Contributing
 
 This repository is actively maintained. Students are encouraged to:
+
 - Report issues with course materials
 - Suggest improvements to visualizations
 - Share interesting data visualization resources

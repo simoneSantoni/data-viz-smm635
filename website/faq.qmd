@@ -5,10 +5,14 @@ title: "Frequently Asked Questions"
 ## General Questions
 
 ### What is Data Visualization?
-Data visualization is the graphical representation of information and data using visual elements like charts, graphs, and maps. It helps communicate complex data insights clearly and effectively to various audiences.
+Data visualization is the graphical representation of information and data
+using visual elements like charts, graphs, and maps. It helps communicate
+complex data insights clearly and effectively to various audiences.
 
 ### Do I need programming experience?
-Basic programming knowledge is helpful but not required. We'll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.
+Basic programming knowledge is helpful but not required. We'll cover R and
+Python fundamentals in the first week. The course is designed to accommodate
+beginners while challenging advanced students.
 
 ### Which software should I use - R or Python?
 Both are excellent choices. R has powerful visualization packages (ggplot2, plotly), while Python offers great libraries like matplotlib, seaborn, and plotly. We'll teach both and you can choose based on your preference.
@@ -22,10 +26,12 @@ Expect to spend 8-10 hours per week:
 - 2-3 hours: Assignments and practice
 
 ### Can I audit the course?
-Please contact the instructor to discuss auditing options. Priority is given to enrolled students.
+Please contact the instructor to discuss auditing options. Priority is given
+to enrolled students.
 
 ### Are lectures recorded?
-Yes, all lectures are recorded and available on Moodle within 24 hours. However, live attendance is strongly encouraged for interactive elements.
+Yes, all lectures are recorded and available on Moodle within 24 hours.
+However, live attendance is strongly encouraged for interactive elements.
 
 ## Technical Questions
 
@@ -36,7 +42,8 @@ Yes, all lectures are recorded and available on Moodle within 24 hours. However,
 - Internet connection for package downloads
 
 ### How do I install the required software?
-Detailed installation guides are provided in Week 1 materials. We also offer installation support sessions.
+Detailed installation guides are provided in Week 1 materials. We also offer
+installation support sessions.
 
 ### Can I use cloud-based tools instead?
 Yes! Options include:
@@ -52,7 +59,8 @@ Yes! Options include:
 - Weekly exercises: Discussion encouraged, but submit your own work
 
 ### What if I submit late?
-Late submissions receive a 10% penalty per day. Extensions may be granted for documented emergencies.
+Late submissions receive a 10% penalty per day. Extensions may be granted for
+documented emergencies.
 
 ### How are projects graded?
 Projects are evaluated on:
@@ -81,7 +89,9 @@ Common applications include:
 - Product Managers
 
 ### Will this help with my dissertation/thesis?
-Absolutely! Data visualization is essential for presenting research findings effectively. We can discuss how to apply these methods to your research interests.
+Absolutely! Data visualization is essential for presenting research findings
+effectively. We can discuss how to apply these methods to your research
+interests.
 
 ## Getting Help
 
@@ -99,7 +109,8 @@ Absolutely! Data visualization is essential for presenting research findings eff
 - Kaggle competitions
 
 ### What if I have accessibility needs?
-Please contact Student Services and the instructor as soon as possible. We'll work together to ensure appropriate accommodations.
+Please contact Student Services and the instructor as soon as possible. We'll
+work together to ensure appropriate accommodations.
 
 ---
 
