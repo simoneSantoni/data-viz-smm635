@@ -312,7 +312,7 @@
     "href": "course/schedule.html",
     "title": "Course Schedule",
     "section": "",
-    "text": "📅 Weekly Breakdown\n\n\n\nWeek\nTopic\nPrepare\nSlides\nCase\nLab\nPonder\nProject\n\n\n\n\n1\nDesigning charts - processes and principles\n\n🙾\n\n\n🤔\n\n\n\n2\nDesign variables and the grammar of graphics\n📚\n🙾\n\n\n\n\n\n\n3\nExplortory data analysis\n\n\n🙋\n\n\n\n\n\n4\nMultidimensional data visualization\n📚\n🙾\n\n🥼\n\n\n\n\n5\nStorytelling with data\n\n\n🙋\n🥼\n\n\n\n\n6\nMid-term project\n\n\n\n\n\n💻\n\n\n7\nIntroduction to Tableau\n📚\n🙾\n\n🥼\n\n\n\n\n8\n(cont’ed)\n\n\n🙋\n🥼\n\n\n\n\n9\nDashboards with Tableau\n📚\n🙾\n\n\n\n\n\n\n10\n(cont’ed)\n\n\n🙋\n\n\n💻\n\n\n\n\n\n\n\n\n\nAdjustments and Updates\n\n\n\nThis schedule is subject to change based on:\n\nClass progress and needs\nUniversity calendar changes\nUnexpected closures\n\nAll changes will be announced in class and posted on the course website.",
+    "text": "📅 Weekly Breakdown\n\n\n\nWeek\nTopic\nPrepare\nSlides\nCase\nLab\nPonder\nProject\n\n\n\n\n1\nDesigning charts - processes and principles\n\n🙾\n\n\n🤔\n\n\n\n2\nDesign variables and the grammar of graphics\n📚\n🙾\n🙋\n\n\n\n\n\n3\nExplortory data analysis\n📚\n\n🙋\n\n\n\n\n\n4\nMultidimensional data visualization\n📚\n\n\n🥼\n\n\n\n\n5\nStorytelling with data\n📚\n\n🙋\n🥼\n\n\n\n\n6\nMid-term project\n\n\n\n\n\n💻\n\n\n7\nIntroduction to Tableau\n📚\n🙾\n\n🥼\n\n\n\n\n8\n(cont’ed)\n\n\n🙋\n🥼\n\n\n\n\n9\nDashboards with Tableau\n📚\n🙾\n\n\n\n💻\n\n\n10\n(cont’ed)\n\n\n🙋\n\n\n\n\n\n\n\n\n\n\n\n\nAdjustments and Updates\n\n\n\nThis schedule is subject to change based on:\n\nClass progress and needs\nUniversity calendar changes\nUnexpected closures\n\nAll changes will be announced in class and posted on the course website.",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -460,7 +460,7 @@
     "href": "course/support.html#support-resources",
     "title": "Course Support",
     "section": "Support Resources",
-    "text": "Support Resources\n\nCourse Forum\nAccess the course forum through module SMM635’s Moodle website for:\n\nAsking questions (conceptual or technical)\nSharing helpful resources\nDiscussing course material\nFinding study partners\n\nForum Guidelines:\n\nSearch before posting (your question may be answered)\nUse descriptive titles\nInclude error messages and code snippets\nBe respectful and helpful\nDon’t share complete assignment solutions\n\n\n\nEmail Support\nModule Leader: Simone.Santoni.1@city.ac.uk\nInstructor: Erwanghao.Yu@bayes.ac.uk\nWhen to email:\n\nPersonal matters (illness, accommodations)\nScheduling appointments\nUrgent technical issues\nAdministrative questions\n\nResponse time: 24-48 hours on weekdays\nEmail tips:\n\nUse clear subject line: “SMM635: [Topic]”\nInclude your student ID\nBe specific about your issue\nAttach relevant files if needed",
+    "text": "Support Resources\n\nCourse Forum\nAccess the course forum through module SMM635’s Moodle website for:\n\nAsking questions (conceptual or technical)\nSharing helpful resources\nDiscussing course material\nFinding study partners\n\nForum Guidelines:\n\nSearch before posting (your question may be answered)\nUse descriptive titles\nInclude error messages and code snippets\nBe respectful and helpful\nDon’t share complete assignment solutions\n\n\n\nEmail Support\nModule Leader: Simone.Santoni.1@city.ac.uk\nInstructor: Yinji.Zhou.2@city.ac.uk\nWhen to email:\n\nPersonal matters (illness, accommodations)\nScheduling appointments\nUrgent technical issues\nAdministrative questions\n\nResponse time: 24-48 hours on weekdays\nEmail tips:\n\nUse clear subject line: “SMM635: [Topic]”\nInclude your student ID\nBe specific about your issue\nAttach relevant files if needed",
     "crumbs": [
       "Course Information",
       "Support"
@@ -526,7 +526,7 @@
     "href": "course/team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Yinji (Benedict) Zhou\nInstructor\nPh.D. student in strategy at the Bayes Business School\n📬 Yinji.Zhou.2@bayes.ac.uk\n\n\n\n\nSimone Santoni\nModule leader\nAssociate professor in strategy at the Bayes Business School\n📬 Simone.Santoni.1@city.ac.uk",
+    "text": "Yinji (Benedict) Zhou\nInstructor\nPh.D. student in strategy at the Bayes Business School\n📬 Yinji.Zhou.2@city.ac.uk\n\n\n\n\nSimone Santoni\nModule leader\nAssociate professor in strategy at the Bayes Business School\n📬 Simone.Santoni.1@city.ac.uk",
     "crumbs": [
       "Course Information",
       "Teaching team"

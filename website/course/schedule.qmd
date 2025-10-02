@@ -4,18 +4,18 @@ title: "Course Schedule"
 
 ### 📅 Weekly Breakdown
 
-| Week   | Topic                               | Prepare | Slides | Case | Lab  | Ponder   | Project |
-| :----: | ----------------------------------- | ------- | ------ | ---- | ---- |--- | ----    |
-| **1**  |  Designing charts - processes and principles   |         |  🙾         |      |      |  [🤔](../weeks/week-1/main.qmd#ponder)  |         |
-| **2**  | Design variables and the grammar of graphics       |   📚      | 🙾      |      |      |    |         |
-| **3**  | Explortory data analysis                           |         |        | 🙋   |      |    |         |
-| **4**  | Multidimensional data visualization | 📚      | 🙾      |      | 🥼    |    |         |
-| **5**  | Storytelling with data                           |         |        | 🙋   | 🥼   |    |         |
-| **6**  | *Mid-term project*                  |         |        |      |      |    | 💻      |
-| **7**  | Introduction to Tableau    | 📚      | 🙾      |      | 🥼   |    |         |
-| **8**  | (cont'ed)                           |         |        | 🙋   | 🥼   |    |         |
-| **9**  | Dashboards with Tableau    | 📚      | 🙾      |      |      |    |         |
-| **10** | (cont'ed)                           |         |        | 🙋   |      |    | 💻      |
+| Week   | Topic                                        | Prepare | Slides | Case | Lab  | Ponder                                | Project |
+| :----: | -----------------------------------          | ------- | ------ | ---- | ---- | ---                                   | ----    |
+| **1**  | Designing charts - processes and principles  |         | 🙾      |      |      | [🤔](../weeks/week-1/main.qmd#ponder) |         |
+| **2**  | Design variables and the grammar of graphics | 📚      | 🙾      | 🙋   |      |                                       |         |
+| **3**  | Explortory data analysis                     | 📚      |        | 🙋   |      |                                       |         |
+| **4**  | Multidimensional data visualization          | 📚      |        |      | 🥼   |                                       |         |
+| **5**  | Storytelling with data                       | 📚      |        | 🙋   | 🥼   |                                       |         |
+| **6**  | *Mid-term project*                           |         |        |      |      |                                       | 💻      |
+| **7**  | Introduction to Tableau                      | 📚      | 🙾      |      | 🥼   |                                       |         |
+| **8**  | (cont'ed)                                    |         |        | 🙋   | 🥼   |                                       |         |
+| **9**  | Dashboards with Tableau                      | 📚      | 🙾      |      |      |                                       | 💻      |
+| **10** | (cont'ed)                                    |         |        | 🙋   |      |                                       |         |
 
 ::: {.callout-note}
 ## Adjustments and Updates
