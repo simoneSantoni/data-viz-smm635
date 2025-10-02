@@ -1,0 +1,13 @@
+---
+title: "Week 2"
+subtitle: "Design variables and the grammar of graphics"
+callout-appearance: default
+---
+
+::: {.callout-note}
+## Materials Coming Soon
+
+Content for Week 2 is currently being developed and will be available soon.
+
+Check back regularly for updates or visit the course Moodle page for the latest information.
+:::

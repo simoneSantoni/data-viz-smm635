@@ -1,0 +1,10 @@
+---
+title: "Mid-Term Project"
+subtitle: "Network Analysis of Real-World Systems"
+---
+
+::: {.callout-note}
+Content coming soon.
+
+:::
+

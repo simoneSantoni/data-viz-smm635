@@ -1,0 +1,202 @@
+---
+title: "Course Support"
+---
+
+Network analysis can be challenging, but you don't have to navigate it alone.
+This page provides information about all the support resources available to
+help you succeed in SMM635 - Network Analytics.
+
+::: {.callout-tip}
+**Where to get help**:
+
+- **R/Python setup issues** → Office hours or lab sessions
+- **Network analysis questions** → Course forum, then office hours
+- **Conceptual questions** → Lecture Q&A or course forum
+- **Project guidance** → Schedule appointment with instructor
+- **Technical emergencies** → Email instructor directly
+:::
+
+## Support Resources
+
+### Course Forum
+
+Access the course forum through module SMM635's Moodle website for:
+
+- Asking questions (conceptual or technical)
+- Sharing helpful resources
+- Discussing course material
+- Finding study partners
+
+**Forum Guidelines**:
+
+1. Search before posting (your question may be answered)
+2. Use descriptive titles
+3. Include error messages and code snippets
+4. Be respectful and helpful
+5. Don't share complete assignment solutions
+
+### Email Support
+
+**Module Leader**: [Simone.Santoni.1@city.ac.uk](mailto:Simone.Santoni.1@city.ac.uk)
+
+**Instructor**: [Erwanghao.Yu@bayes.ac.uk](mailto:Erwanghao.Yu@bayes.ac.uk)
+
+**When to email**:
+
+- Personal matters (illness, accommodations)
+- Scheduling appointments
+- Urgent technical issues
+- Administrative questions
+
+**Response time**: 24-48 hours on weekdays
+
+**Email tips**:
+
+- Use clear subject line: "SMM635: [Topic]"
+- Include your student ID
+- Be specific about your issue
+- Attach relevant files if needed
+
+## Common Issues and Solutions
+
+### Installation Problems
+
+::: {.callout-warning}
+**Common Installation Issues**:
+
+**Problem**: R/RStudio won't install
+
+- **Quick fix attempt**: Check system requirements, disable antivirus temporarily, run as administrator
+
+**Problem**: Python packages won't install
+
+- **Quick fix attempt**: Update conda/pip, check firewall settings, try different repository
+
+**Problem**: Network analysis packages won't import
+
+- **Quick fix attempt**: Verify installation with `library()` in R or `import` in Python, reinstall package, check dependencies (igraph, networkx, etc.)
+:::
+
+### Network Analysis Challenges
+
+**"I don't know where to start with network analysis"**:
+
+1. Start with simple network visualizations
+2. Understand your data structure (nodes and edges)
+3. Begin with basic centrality measures
+4. Use sample networks before your own data
+5. Look at similar network examples in the literature
+
+**"My network code doesn't work"**:
+
+1. Check your data format (edge list, adjacency matrix)
+2. Verify node and edge attributes
+3. Ensure proper package loading (igraph, networkx)
+4. Test with small sample networks first
+5. Check for isolated nodes or missing edges
+
+**"I don't understand network concepts"**:
+
+1. Review the network terminology glossary
+2. Practice with interactive network examples
+3. Visualize concepts with simple networks
+4. Ask specific questions on the forum
+5. Attend office hours with concrete examples
+
+## Study Resources
+
+### Recommended Learning Path
+
+1. **Before Class**:
+   - Review previous material
+   - Read assigned sections
+   - Note questions
+
+2. **During Class**:
+   - Take active notes
+   - Try examples
+   - Ask questions
+
+3. **After Class**:
+   - Review notes same day
+   - Complete exercises
+   - Practice additional problems
+
+### Peer Support
+
+**Study Groups**:
+
+- Form groups of 3-4 students
+- Meet regularly to review material
+- Work through problems together
+- Share different approaches
+
+**Peer Tutoring**:
+
+- Advanced students available for tutoring
+- Sign up through course website
+- Free service for enrolled students
+
+## Mental Health and Wellbeing
+
+Programming can be frustrating at times. Remember:
+
+::: {.callout-note}
+**It's normal to**:
+
+- Feel stuck sometimes
+- Need multiple attempts
+- Make lots of errors
+- Need to ask for help
+- Take breaks when frustrated
+:::
+
+**Campus Resources**: See ["Your health and
+wellbeing"](https://www.citystgeorges.ac.uk/prospective-students/student-life/student-wellbeing/your-health-wellbeing)
+page, hosted in the University's website.
+
+### Personal Emergencies
+
+**Illness or emergency**:
+- Email instructor ASAP
+- Provide documentation if extended
+- Discuss makeup options
+- Don't fall behind
+
+## FAQ
+
+**Q: How much time should I spend on this course?**
+A: Plan for 2-3 hours outside class for every hour in class (6-9 hours/week total).
+
+**Q: Do I need prior programming experience?**
+A: Basic programming experience in R or Python is helpful but not required. We'll cover the essentials for network analysis.
+
+**Q: Can I use AI tools like ChatGPT?**
+A: You may use them for learning and understanding concepts, but submitted work must be your own. Always cite any AI assistance received.
+
+**Q: What if I'm falling behind?**
+A: Seek help immediately. Network analysis concepts build on each other, so early gaps become bigger problems later.
+
+**Q: Do I need a powerful computer?**
+A: No, basic network analysis doesn't require much computing power. Any computer from the last 5 years should work fine.
+
+**Q: Should I use R or Python for network analysis?**
+A: Both are excellent. We'll primarily use R with igraph, but Python with NetworkX is also supported. Choose based on your comfort level.
+
+## Success Tips
+
+::: {.callout-tip}
+
+**Top tips from successful network analysis students**:
+
+1. **Start with simple networks** - Build complexity gradually
+2. **Visualize first** - Always plot your networks to understand structure
+3. **Think about the domain** - Network interpretation depends on context
+4. **Practice with real data** - Work with networks from your field of interest
+5. **Learn the terminology** - Master key concepts like centrality, clustering, paths
+6. **Ask "why" questions** - Don't just calculate metrics, understand their meaning
+7. **Document your analysis** - Network studies require clear interpretation
+8. **Compare measures** - Different centrality metrics tell different stories
+:::
+
+Remember: We want you to succeed! Don't hesitate to reach out when you need help.

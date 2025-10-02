@@ -1,0 +1,17 @@
+{
+  "hash": "5e4e92f50ef83997399be6db7339f152",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Data Visualization－SMM635\"\nsubtitle: \"Materials on data visualization principles, methods, and tools for analytics students\"\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){fig-align='center' width=960}\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

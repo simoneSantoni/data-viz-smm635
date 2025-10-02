@@ -1,93 +1,116 @@
 project:
   type: website
+  output-dir: _site
+  render:
+    - "**/*.qmd"
 
 website:
-  page-navigation: true
   title: "SMM635 - Data Visualization"
-  description: "MSc Module on Data Visualization - Learn to create effective and beautiful data visualizations"
+  description: "MSc Module on Data Visualization - Learn principles and methods for effective data visualization"
   site-url: https://simonesantoni.github.io/data-viz-smm635
   repo-url: https://github.com/simoneSantoni/data-viz-smm635
-  repo-actions: [edit, issue]
+
+  page-navigation: true
 
   page-footer:
     left: |
-      ©Copyright 2024, Simone Santoni
+      &copy; 2025 Simone Santoni
+    center: |
+      [SMM635 - Data Visualization](https://simonesantoni.github.io/data-viz-smm635)
     right: |
-      This website is built with [Quarto](https://quarto.org/)
+      Made with [Quarto](https://quarto.org/)
 
   sidebar:
-    style: "docked"
+    style: docked
     search: true
-    collapse-level: 1
-    contents:
-      - section: "Course information"
-        contents:
-          - href: index.qmd
-            text: Overview
-          - href: course-syllabus.qmd
-            text: Syllabus
-          - href: course-support.qmd
-            text: Support
-          - href: course-team.qmd
-            text: Teaching team
-          - href: course-schedule.qmd
-            text: Schedule
-          - href: course-links.qmd
-            text: Useful links
-          - href: course-faq.qmd
-            text: FAQ
+    logo: imgs/r-module-icon-light.svg
+    #title: "SMM635"
+    tools:
+      - icon: github
+        href: https://github.com/simoneSantoni/data-viz-smm635
+        text: "Repository"
+      - icon: pencil-square
+        href: https://github.com/simoneSantoni/data-viz-smm635/edit/master
+        text: "Edit this page"
+      - icon: bug
+        href: https://github.com/simoneSantoni/data-viz-smm635/issues/new
+        text: "Report an issue"
 
-      - section: "Computing"
+    contents:
+      - section: "Course Information"
         contents:
-          - href: computing-access.qmd
-            text: Access computing resources
-          - href: computing-troubleshooting.qmd
-            text: Troubleshooting
+          - text: "Syllabus"
+            href: course/syllabus.qmd
+          - text: "Schedule"
+            href: course/schedule.qmd
+          - text: "Support"
+            href: course/support.qmd
+          - text: "Teaching team"
+            href: course/team.qmd
+          - text: "FAQ"
+            href: faq.qmd
 
       - section: "Project"
         contents:
-          - href: project-description.qmd
-            text: Instructions
-          - href: project-tips.qmd
-            text: Tips + resources
+          - text: "Mid-term project"
+            href: project/midTermProject/main.qmd
+          - text: "Final course project"
+            href: project/finalCourseProject/main.qmd
 
       - section: "Weekly materials"
         contents:
-          - href: weeks/week-01.qmd
-            text: "Week 1"
-          - href: weeks/week-02.qmd
-            text: "Week 2"
-          - href: weeks/week-03.qmd
-            text: "Week 3"
-          - href: weeks/week-04.qmd
-            text: "Week 4"
-          - href: weeks/week-05.qmd
-            text: "Week 5"
-          - href: weeks/week-06.qmd
-            text: "Week 6"
-          - href: weeks/week-07.qmd
-            text: "Week 7"
-          - href: weeks/week-08.qmd
-            text: "Week 8"
-          - href: weeks/week-09.qmd
-            text: "Week 9"
-          - href: weeks/week-10.qmd
-            text: "Week 10"
+          - text: "Week 1"
+            href: weeks/week-1/main.qmd
+          - text: "Week 2"
+            href: weeks/week-2/main.qmd
+          - text: "Week 3"
+            href: weeks/week-3/main.qmd
+          - text: "Week 4"
+            href: weeks/week-4/main.qmd
+          - text: "Week 5"
+            href: weeks/week-5/main.qmd
+          - text: "Week 6"
+            href: weeks/week-5/main.qmd
+          - text: "Week 7"
+            href: weeks/week-7/main.qmd
+          - text: "Week 8"
+            href: weeks/week-8/main.qmd
+          - text: "Week 9"
+            href: weeks/week-9/main.qmd
+          - text: "Week 10"
+            href: weeks/week-10/main.qmd
 
       - section: "Supplemental notes"
         contents:
-          - href: supplemental/index.qmd
-            text: Overview
+          - text: "Overview"
+            href: notes/overview.qmd
 
 format:
   html:
     theme:
-      light: [united, theme.scss]
-      dark: [united, theme-dark.scss]
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
     mainfont: "Atkinson Hyperlegible"
     code-copy: true
     code-overflow: wrap
     toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: false
+    number-depth: 3
+    callout-appearance: simple
+    callout-icon: false
+    citations-hover: true
+    footnotes-hover: true
 
 execute:
   freeze: auto
+  echo: true
+  warning: false
+  message: false
+
+jupyter:
+  kernelspec:
+    name: "ir"
+    language: "R"
+    display_name: "R (ind215)"

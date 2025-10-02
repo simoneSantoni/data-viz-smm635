@@ -1,0 +1,13 @@
+---
+title: "Week 5"
+subtitle: "Storytelling and Crop Residue case"
+callout-appearance: default
+---
+
+::: {.callout-note}
+## Materials Coming Soon
+
+Content for Week 5 is currently being developed and will be available soon.
+
+Check back regularly for updates or visit the course Moodle page for the latest information.
+:::

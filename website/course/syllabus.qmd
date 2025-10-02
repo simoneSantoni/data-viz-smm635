@@ -1,0 +1,418 @@
+---
+title: "Course Syllabus"
+subtitle: "SMM635 - Data Visualization | Term I 2025/26"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+  pdf:
+    toc: true
+    toc-depth: 3
+    geometry: margin=1in
+    fontsize: 11pt
+---
+
+## Course Overview
+
+### 🎯 Module Description
+
+Data Visualization (SMM635) provides a comprehensive introduction to the principles
+and practice of creating effective data visualizations for business analytics.
+This module equips students with fundamental design principles, practical tools,
+and hands-on experience to transform complex data into clear, compelling visual
+narratives that drive decision-making.
+
+### 🌟 Learning Objectives
+
+By the end of this module, you will be able to:
+
+::: {.callout-note appearance="minimal"}
+## Core Competencies
+
+1. **Design Foundation**
+   - Master fundamental principles of effective data visualization design
+   - Understand visual perception and cognitive principles
+   - Apply design best practices for clarity and impact
+
+2. **Technical Skills**
+   - Apply the grammar of graphics to create meaningful visualizations
+   - Design appropriate charts for different data types and analytical goals
+   - Create interactive visualizations and dashboards using modern tools
+   - Leverage Python libraries and Tableau for professional visualizations
+
+3. **Analytical Capabilities**
+   - Perform exploratory data analysis through visualization
+   - Identify patterns, trends, and anomalies in data
+   - Choose optimal visual encodings for different data dimensions
+   - Evaluate visualization effectiveness
+
+4. **Business Applications**
+   - Apply storytelling techniques to communicate data insights effectively
+   - Design dashboards for different audiences and use cases
+   - Produce elegant, effective visual solutions to practical business problems
+   - Transform data insights into actionable business recommendations
+:::
+
+### 📊 Module Relevance
+
+In today's data-driven world, effective visualization is crucial for:
+
+- **Decision Making**: Transform complex data into actionable insights
+- **Communication**: Bridge the gap between analysts and stakeholders
+- **Exploration**: Discover patterns and relationships in data
+- **Persuasion**: Support arguments with compelling visual evidence
+
+### 🔧 Topic 1: Designing Charts - Processes and Principles
+**Week 1**
+
+**Learning Outcomes:**
+
+- Understand the data visualization design process
+- Master fundamental design principles (clarity, efficiency, aesthetics)
+- Apply visual perception theories to chart design
+- Critique and improve existing visualizations
+
+**Topics Covered:**
+
+- The visualization design process
+- Pre-attentive attributes and visual hierarchy
+- Gestalt principles in data visualization
+- Color theory and accessibility
+- Common visualization pitfalls and how to avoid them
+
+### 🎯 Topic 2: Design Variables and the Grammar of Graphics
+**Week 2**
+
+**Learning Outcomes:**
+
+- Understand the grammar of graphics framework
+- Map data to visual variables effectively
+- Build complex visualizations from simple components
+- Implement layered graphics approaches
+
+**Topics Covered:**
+
+- Introduction to the grammar of graphics
+- Visual encoding: position, size, shape, color, orientation
+- Scales, coordinates, and transformations
+- Faceting and small multiples
+- Layering and composition
+
+### 🔄 Topic 3: Exploratory Data Analysis
+**Week 3**
+
+**Learning Outcomes:**
+
+- Apply visualization techniques for data exploration
+- Identify patterns, outliers, and relationships
+- Create effective summary visualizations
+- Document exploratory findings visually
+
+**Topics Covered:**
+
+- EDA workflow and visualization
+- Distribution visualization techniques
+- Correlation and relationship exploration
+- Time series exploration
+- Missing data visualization
+
+**Case Study:** Nomis Solutions (A and B) - Customer analytics
+
+### 🏘️ Topic 4: Multidimensional Data Visualization
+**Week 4**
+
+**Learning Outcomes:**
+
+- Handle high-dimensional data effectively
+- Apply dimensionality reduction techniques
+- Create parallel coordinates and other multidimensional plots
+- Design interactive exploration tools
+
+**Topics Covered:**
+
+- Challenges of high-dimensional data
+- Dimensionality reduction visualization
+- Parallel coordinates and radar charts
+- Heatmaps and matrix visualizations
+- Interactive filtering and brushing
+
+**Case Study:** Saving Lives with Data (A and B) - Healthcare analytics and intervention design
+
+### 💡 Topic 5: Storytelling with Data
+**Week 5**
+
+**Learning Outcomes:**
+
+- Structure data stories for maximum impact
+- Create narrative flow through visualization
+- Balance analysis and narrative
+- Present insights persuasively
+
+**Topics Covered:**
+
+- Narrative structure in data stories
+- Annotation and emphasis techniques
+- Progressive disclosure of information
+- Creating memorable data moments
+- Presentation best practices
+
+**Case Study:** Crop Residue - Agricultural sustainability and environmental impact
+
+### 📊 Topic 6: Introduction to Tableau
+**Weeks 7-8**
+
+**Learning Outcomes:**
+
+- Navigate Tableau's interface and features
+- Create basic to intermediate visualizations
+- Implement calculated fields and parameters
+- Design interactive worksheets
+
+**Topics Covered:**
+
+- Tableau fundamentals and data connections
+- Building views with marks and filters
+- Calculations and table calculations
+- Maps and geographic visualization
+- Best practices for Tableau development
+
+**Case Study:** Accounting and Auditing at Toby Biotech Inc.
+
+### 🎨 Topic 7: Dashboards with Tableau
+**Weeks 9-10**
+
+**Learning Outcomes:**
+
+- Design effective dashboard layouts
+- Implement interactivity and filtering
+- Optimize dashboard performance
+- Deploy and share dashboards
+
+**Topics Covered:**
+
+- Dashboard design principles
+- Layout and composition strategies
+- Actions and interactivity
+- Mobile and responsive design
+- Publishing and sharing options
+
+**Case Study:** Market Street Wine - Retail analytics and performance monitoring
+
+## Assessment Strategy
+
+### 📊 Assessment Components
+
+::: {.grid}
+::: {.g-col-4}
+**Class Participation (10%)**
+
+- Active engagement in discussions
+- Quality of visualization critiques
+- In-class exercise completion
+
+*Ongoing throughout term*
+:::
+
+::: {.g-col-4}
+**Mid-Term Project (50%)**
+
+- Team-based analysis (3-4 students)
+- Real-world dataset visualization
+- Design documentation
+- Interactive dashboard
+- 15-minute presentation
+
+*Due: November 11, 2025*
+:::
+
+::: {.g-col-4}
+**Final Project (40%)**
+
+- Individual visualization project
+- Business case requiring data visualization
+- Complete visual analysis and recommendations
+- Professional presentation
+
+*Due: December 1, 2025*
+:::
+:::
+
+### 📝 Assessment Criteria
+
+All assessments will be evaluated on:
+
+1. **Design Quality** (30%)
+   - Appropriate chart selection
+   - Visual clarity and aesthetics
+   - Effective use of color and layout
+
+2. **Technical Execution** (30%)
+   - Correct implementation
+   - Code quality and documentation
+   - Tool proficiency
+
+3. **Analytical Insight** (30%)
+   - Data understanding
+   - Pattern identification
+   - Meaningful conclusions
+
+4. **Communication** (10%)
+   - Clear narrative
+   - Professional presentation
+   - Audience appropriateness
+
+## Course Resources
+
+### 💻 Technical Requirements
+
+::: {.callout-important}
+## Essential Software Setup
+
+**Programming Environments:**
+
+- **R** (version 4.3+) with RStudio
+- **Python** (version 3.9+) with Jupyter Lab
+- **Tableau** (student license provided)
+- Git for version control
+
+**Sample R Packages:**
+```r
+# Core visualization
+install.packages(c("ggplot2", "plotly", "highcharter"))
+
+# Data manipulation
+install.packages(c("tidyverse", "data.table"))
+
+# Specialized visualizations
+install.packages(c("treemap", "gganimate", "patchwork"))
+
+# Color and themes
+install.packages(c("viridis", "RColorBrewer", "scales"))
+```
+
+**Sample Python Modules:**
+```python
+# Data manipulation
+conda install -c conda-forge pandas numpy
+
+# Visualization libraries
+conda install -c conda-forge matplotlib seaborn plotly
+
+# Interactive tools
+conda install -c conda-forge altair bokeh dash
+```
+:::
+
+Alternatively, you can create the environment directly using the provided `smm635.yaml` file:
+
+```bash
+conda env create -f smm635.yaml
+conda activate smm635
+```
+
+### 📚 Reading List
+
+**Core Textbooks:**
+
+1. **Tufte, E. R., & Graves-Morris, P. R. (1983).** *The visual display of quantitative information* (Vol. 2, No. 9). Cheshire, CT: Graphics press.
+   - The seminal work on data visualization principles
+   - Foundation for understanding visual design excellence
+
+2. **Cairo, A. (2012).** *The Functional Art: An introduction to information graphics and visualization*. New Riders.
+   - Practical guide to creating effective visualizations
+   - Balances theory with hands-on examples
+
+3. **Wilkinson, L. (2011).** *The grammar of graphics*. In Handbook of computational statistics: Concepts and methods (pp. 375-414). Berlin, Heidelberg: Springer Berlin Heidelberg.
+   - Theoretical foundation for modern visualization tools
+   - Essential for understanding ggplot2 and similar frameworks
+
+4. **Healy, K. (2024).** *Data visualization: a practical introduction*. Princeton University Press.
+   - Modern approach to visualization with R
+   - Excellent practical examples and code
+
+### 🌐 Online Resources
+
+**Course Materials:**
+- GitHub repository: [github.com/simoneSantoni/data-viz-smm635](https://github.com/simoneSantoni/data-viz-smm635)
+- Moodle page with lectures and assignments
+- Slack workspace for discussions
+
+**External Resources:**
+- [Data Visualization Society](https://www.datavisualizationsociety.com/)
+- [Observable](https://observablehq.com/) - Interactive visualization notebooks
+- [Tableau Public Gallery](https://public.tableau.com/gallery/)
+
+## Course Policies
+
+### 📋 Attendance and Participation
+
+- **Attendance**: Mandatory for all sessions
+- **Punctuality**: Sessions start promptly; late arrivals disrupt learning
+- **Preparation**: Complete readings and exercises before class
+- **Engagement**: Active participation expected in all activities
+
+### 🤝 Collaboration Policy
+
+- **Teamwork**: Encouraged for designated group projects
+- **Individual Work**: Must be completed independently
+- **Code Sharing**: Allowed for learning, not for assignments
+- **Citation**: Always attribute sources and collaborators
+- **AI**: Disclose how you use LLMs to get your work done
+
+### 📧 Communication
+
+::: {.callout-tip}
+## Getting Help
+
+1. **Moodle Forum**: First point of contact for content questions
+   - Response time: 24-48 hours on weekdays
+   
+2. **Office Hours**: Wednesdays 14:00-16:00 (by appointment)
+   - Book via: [simone.santoni.1@city.ac.uk](mailto:simone.santoni.1@city.ac.uk)
+   
+3. **Email**: For personal/administrative matters only
+   - Use clear subject lines: "SMM635 - [Topic]"
+   
+4. **Peer Support**: Join study groups on Slack
+:::
+
+### ♿ Accessibility and Accommodations
+
+Students requiring accommodations should:
+
+1. Contact Student Services for documentation
+2. Notify instructor within first two weeks
+3. Discuss specific needs and arrangements
+
+All accommodations will be made in accordance with university policies.
+
+### 📝 Academic Integrity
+
+- **Plagiarism**: Zero tolerance; all work must be original
+- **Collaboration**: Clearly acknowledge all contributions
+- **Data Sources**: Properly cite all datasets used
+- **Code Attribution**: Credit all borrowed/adapted code (including LLM generated code)
+
+Violations will be reported to the Academic Misconduct Committee.
+
+### 🔄 Syllabus Modifications
+
+This syllabus may be adjusted to:
+
+- Accommodate class progress
+- Incorporate current events/examples
+- Respond to student feedback
+
+All changes will be announced via Moodle with one week's notice.
+
+---
+
+::: {.callout-note appearance="minimal"}
+## Ready to Start?
+
+Data Visualization is both an art and a science. This module will challenge you
+to think critically about how we present information and equip you with the tools
+to create visualizations that inform, engage, and inspire action.
+
+**Let's bring data to life together!** 📊
+:::

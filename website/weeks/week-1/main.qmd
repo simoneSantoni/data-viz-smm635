@@ -1,0 +1,79 @@
+---
+title: "Week 1"
+subtitle: "Designing charts: processes and principles"
+callout-appearance: default
+---
+
+## Prepare
+
+::: {.callout-note}
+## Note
+
+Introductory session, no preparation needed.
+
+:::
+
+## Participate
+
+::: {.callout-note}
+## Lecture materials
+
+📊 **[Design Principles Presentation](design-principles-presentation.html)** - Interactive slides covering visualization design principles and processes
+
+## In-class activities
+
+- Visual perception exercise: identifying pre-attentive attributes
+- Chart critique workshop: analyzing good and bad visualizations
+- Design principles application: redesigning a poorly designed chart
+
+:::
+
+## Practice
+
+::: {.callout-note}
+## Laboratory session
+
+Introduction to R/Python visualization environments:
+- Setting up RStudio/Jupyter notebooks
+- Basic plotting with ggplot2/matplotlib
+- Saving and exporting visualizations
+- Version control with Git
+
+## Application exercise
+
+Create your first visualization following the design process:
+1. Define your audience and purpose
+2. Sketch multiple design alternatives
+3. Implement your best design in R or Python
+4. Apply visual hierarchy and Gestalt principles
+5. Submit with a brief design rationale (200 words)
+
+:::
+
+## Perform
+
+::: {.callout-note}
+## Note
+
+Introductory session, no laboratory session.
+
+:::
+
+## Ponder
+
+### Essential Readings
+
+- Tufte, E. R. (1983). *The visual display of quantitative information*, Chapters 1-2
+- Cairo, A. (2012). *The Functional Art*, Introduction and Chapter 1
+- [Data Visualization Design Process](design_process.qmd) - Overview of the visualization design workflow
+
+### Core Visualization Principles
+
+- [Visual Perception and Design](visual_perception.qmd) - How we see and process visual information
+- [Common Visualization Mistakes](common_mistakes.qmd) - Pitfalls to avoid
+- Color Theory for Data Visualization (in Moodle, "Resources" section)
+
+### Design Excellence Examples
+
+- Tufte's Principles in Practice (in Moodle, "Case Studies" section)
+- [Before and After: Visualization Makeovers](makeovers.md)

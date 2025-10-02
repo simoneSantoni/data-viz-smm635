@@ -1,0 +1,17 @@
+\frametitle{Layers}
+
+	\begin{quote}
+
+		``The heart of any graphic is the layers. They take the mapped data and display it
+		in something humans can understand as a representation of the data. Every layer
+		consists of three important parts:
+
+		\begin{enumerate}
+			\item The geometry that determines how data are displayed, such as points, lines,
+			      or rectanglesThe
+			\item The statistical transformation that may compute new variables
+			      from the data and affect what of the data is displayed
+			\item The position adjustment that primarily determines where a piece of data
+			      is being displayed.''
+		\end{enumerate}
+	\end{quote}

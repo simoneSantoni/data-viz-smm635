@@ -1,0 +1,13 @@
+---
+title: "Week 7"
+subtitle: "Introduction to Tableau (Part 1)"
+callout-appearance: default
+---
+
+::: {.callout-note}
+## Materials Coming Soon
+
+Content for Week 7 is currently being developed and will be available soon.
+
+Check back regularly for updates or visit the course Moodle page for the latest information.
+:::

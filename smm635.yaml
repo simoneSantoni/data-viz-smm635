@@ -1,0 +1,34 @@
+name: smm635
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - jupyter
+  - r-base
+  - r-essentials
+  - r-irkernel
+  - r-tidyverse
+  - r-ggplot2
+  - r-plotly
+  - r-shiny
+  - r-leaflet
+  - r-DT
+  - r-knitr
+  - r-rmarkdown
+  - r-viridis
+  - r-scales
+  - r-RColorBrewer
+  - r-treemap
+  - r-highcharter
+  - r-gganimate
+  - r-patchwork
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - seaborn
+  - altair
+  - dash
+  - plotly
+  - bokeh
+  - pyvis

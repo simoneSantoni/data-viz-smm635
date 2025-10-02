@@ -1,0 +1,11 @@
+# integer addition
+>>> 1 + 1
+2
+
+# floating-point multiplication
+>>> 10 * 0.5
+5.0
+
+# 3 to the power 100
+>>> 3 ** 100
+515377520732011331036461129765621272702107522001

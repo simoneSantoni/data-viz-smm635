@@ -1,0 +1,232 @@
+---
+title: "Data Visualization: Design Principles and Processes"
+subtitle: "SMM635 - Week 1"
+author: "Prof. Simone Santoni"
+institute: "Bayes Business School"
+format:
+  revealjs:
+    theme: [default, ../../theme.scss]
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: ../../imgs/module-icon-light.svg
+    footer: "SMM635 - Data Visualization | Week 1"
+    margin: 0.1
+    transition: slide
+    background-transition: fade
+    incremental: false
+    smaller: false
+    scrollable: false
+    css: presentation-styles.css
+---
+
+## What is Good Data Visualization? {.center}
+
+::: {.r-fit-text}
+**The fundamental question every data analyst must ask**
+:::
+
+![](images/subjectivity.jpg){fig-align="center" width="60%"}
+
+::: {.fragment}
+> *"Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency."* - Edward Tufte
+:::
+
+---
+
+## Tale of Two Visualizations
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Example A: Technical Plot**
+![](images/plotly_scatter.png){width="100%"}
+
+::: {.fragment}
+✓ Shows data relationships  
+⚠️ Cluttered interface  
+⚠️ Distracting elements  
+:::
+:::
+
+::: {.column width="50%"}
+**Example B: The Economist**
+![](images/economist_scatter.png){width="100%"}
+
+::: {.fragment}
+✓ Clean, focused design  
+✓ Clear narrative  
+✓ Professional aesthetics  
+:::
+:::
+
+::::
+
+---
+
+## Tufte's Principles of Graphical Excellence
+
+:::: {.columns}
+::: {.column width="75%"}
+Excellent visualizations should:
+
+::: {.incremental}
+- **Show the data** clearly and accurately
+- **Induce thinking** about substance, not methodology  
+- **Avoid distortion** of what the data reveal
+- **Present many numbers** in a small space
+- **Make large datasets coherent**
+- **Encourage comparison** between data elements
+- **Reveal data** at multiple levels of detail
+- **Serve a clear purpose**: description, exploration, or decoration
+- **Integrate** with statistical and verbal descriptions
+:::
+:::
+
+::: {.column width="25%"}
+![Edward Tufte](images/edward-tufte.jpeg){width="100%"}
+:::
+::::
+
+---
+
+## The Power of "Show the Data" - Anscombe's Quartet
+
+**Four datasets with identical summary statistics**
+
+![](images/anscombe_i.png){fig-align="center" width="80%"}
+
+::: {.fragment}
+**Same means, same correlations, same regression lines...**
+:::
+
+---
+
+## Anscombe's Quartet Revealed
+
+**...but completely different data patterns!**
+
+![](images/anscombe_ii.png){fig-align="center" width="70%"}
+
+::: {.callout-important}
+**Key Lesson**: Summary statistics alone are insufficient. Always visualize your data to understand its true nature.
+:::
+
+---
+
+## The Design Process Framework
+
+![](images/cairo_model.png){fig-align="center" width="100%" height="80vh"}
+
+::: {.fragment}
+*Source: Cairo, A. (2012). The Functional Art*
+:::
+
+---
+
+## Design Principles in Action
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Traditional Approach**
+![](images/trad_scatter.png){width="100%"}
+
+Heavy gridlines, excessive decoration
+:::
+
+::: {.column width="50%"}
+**Tufte's Approach**
+![](images/tufte_scatter.png){width="100%"}
+
+::: {.fragment}
+Minimalist, data-focused design
+:::
+:::
+
+::::
+
+::: {.fragment}
+**Principle**: Maximize the **data-ink ratio** - every mark should represent data
+:::
+
+---
+
+## Chart Junk - What Not to Do
+
+![](images/a_duck_chart.png){fig-align="center" width="100%" height="70vh"}
+
+::: {.callout-warning}
+**Chart Junk**: Visual elements that distract from the data
+
+- Unnecessary 3D effects
+- Decorative images  
+- Excessive colors
+- Heavy borders and gridlines
+- Moiré patterns and visual noise
+:::
+
+---
+
+## Before and After - Redesign Example
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Before: Cluttered Design**
+![](images/fuel_economy.png){width="100%"}
+
+Issues: 3D effects, poor labeling, distracting elements
+:::
+
+::: {.column width="50%"}
+**After: Clean Redesign**
+![](images/redo_fuel_economy.png){width="100%"}
+
+::: {.fragment}
+Solutions: Clear hierarchy, direct labeling, focused design
+:::
+:::
+
+::::
+
+---
+
+## Key Takeaways for Week 1 {.center}
+
+::: {.r-fit-text}
+**Your visualization design checklist**
+:::
+
+::: {.incremental}
+🎯 **Purpose**: Does your chart serve a clear analytical goal?
+
+📊 **Data**: Does your visualization accurately represent the data?
+
+👁️ **Clarity**: Can viewers understand the message quickly?
+
+✂️ **Simplicity**: Have you removed unnecessary elements?
+
+🎨 **Aesthetics**: Is the design professional and appropriate?
+
+🔄 **Iteration**: Have you tested and refined your design?
+:::
+
+::: {.fragment}
+> **Remember**: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles.
+:::
+
+---
+
+## Next Steps
+
+📚 **For next week**: Read Tufte Chapter 1 and Cairo Introduction
+
+💻 **Practice**: Complete the design principles exercise
+
+::: {.callout-tip}
+## Resources
+- Course GitHub: [github.com/simoneSantoni/data-viz-smm635](https://github.com/simoneSantoni/data-viz-smm635)
+- Design principles checklist in Moodle
+- Office hours: Wednesdays 14:00-16:00
+:::

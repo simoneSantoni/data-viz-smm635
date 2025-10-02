@@ -1,0 +1,11 @@
+---
+title: "Final Course Project"
+subtitle: "Individual Network Analysis Research"
+---
+
+
+::: {.callout-note}
+Content coming soon.
+
+:::
+
