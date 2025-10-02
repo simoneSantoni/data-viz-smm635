@@ -1,6 +1,7 @@
 ---
 title: "Data Visualization－SMM635"
 subtitle: "Materials on data visualization principles, methods, and tools for analytics students"
+date: "2025-10-02"
 ---
 
 ![Edward Tufte's classic visualization of the Challenger O-ring failure analysis - a powerful example of how clear data presentation can reveal critical insights and potentially save lives.](imgs/tufte_visual_and_stat_thinking.png){fig-align="center" width="80%"}
