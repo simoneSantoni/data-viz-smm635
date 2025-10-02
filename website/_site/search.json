@@ -136,7 +136,7 @@
     "href": "weeks/week-1/main.html#ponder",
     "title": "Week 1",
     "section": "Ponder",
-    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1-2\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\nData Visualization Design Process - Overview of the visualization design workflow\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section)",
+    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1-2\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section)",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -166,6 +166,13 @@
       "Project",
       "Final course project"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Visualization－SMM635",
+    "section": "",
+    "text": "Edward Tufte’s classic visualization of the Challenger O-ring failure analysis - a powerful example of how clear data presentation can reveal critical insights and potentially save lives."
   },
   {
     "objectID": "course/team.html",
@@ -558,11 +565,18 @@
     ]
   },
   {
+    "objectID": "weeks/week-1/design-principles-presentation.html",
+    "href": "weeks/week-1/design-principles-presentation.html",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "",
+    "text": "The fundamental question every data analyst must ask\n\n\n\n\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
+  },
+  {
     "objectID": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
     "href": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
     "title": "Data Visualization: Design Principles and Processes",
-    "section": "What is Good Data Visualization?",
-    "text": "What is Good Data Visualization?\n\nThe fundamental question every data analyst must ask\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
+    "section": "",
+    "text": "The fundamental question every data analyst must ask\n\n\n\n\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#tale-of-two-visualizations",
@@ -576,42 +590,42 @@
     "href": "weeks/week-1/design-principles-presentation.html#tuftes-principles-of-graphical-excellence",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Tufte’s Principles of Graphical Excellence",
-    "text": "Tufte’s Principles of Graphical Excellence\n\n\nExcellent visualizations should:\n\nShow the data clearly and accurately\nInduce thinking about substance, not methodology\n\nAvoid distortion of what the data reveal\nPresent many numbers in a small space\nMake large datasets coherent\nEncourage comparison between data elements\nReveal data at multiple levels of detail\nServe a clear purpose: description, exploration, or decoration\nIntegrate with statistical and verbal descriptions\n\n\n\n\n\nEdward Tufte"
+    "text": "Tufte’s Principles of Graphical Excellence\n\n\nExcellent visualizations should:\n\n\nShow the data clearly and accurately\nInduce thinking about substance, not methodology\n\nAvoid distortion of what the data reveal\nPresent many numbers in a small space\nMake large datasets coherent\nEncourage comparison between data elements\nReveal data at multiple levels of detail\nServe a clear purpose: description, exploration, or decoration\nIntegrate with statistical and verbal descriptions\n\n\n\n\n\n\nEdward Tufte"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
     "href": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "The Power of “Show the Data” - Anscombe’s Quartet",
-    "text": "The Power of “Show the Data” - Anscombe’s Quartet\nFour datasets with identical summary statistics\n\n\nSame means, same correlations, same regression lines…"
+    "text": "The Power of “Show the Data” - Anscombe’s Quartet\nFour datasets with identical summary statistics\n\n\n\n\n\n\nSame means, same correlations, same regression lines…"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
     "href": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Anscombe’s Quartet Revealed",
-    "text": "Anscombe’s Quartet Revealed\n…but completely different data patterns!\n\n\n\n\n\n\n\nImportant\n\n\nKey Lesson: Summary statistics alone are insufficient. Always visualize your data to understand its true nature."
+    "text": "Anscombe’s Quartet Revealed\n…but completely different data patterns!\n\n\n\n\n\n\n\n\n\n\n\nKey Lesson: Summary statistics alone are insufficient. Always visualize your data to understand its true nature."
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
     "href": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "The Design Process Framework",
-    "text": "The Design Process Framework\n\n\nSource: Cairo, A. (2012). The Functional Art"
+    "text": "The Design Process Framework\n\n\n\n\n\n\nSource: Cairo, A. (2012). The Functional Art"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
     "href": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Design Principles in Action",
-    "text": "Design Principles in Action\n\n\nTraditional Approach \nHeavy gridlines, excessive decoration\n\nTufte’s Approach \n\nMinimalist, data-focused design\n\n\n\nPrinciple: Maximize the data-ink ratio - every mark should represent data"
+    "text": "Design Principles in Action\n\n\nTraditional Approach \nHeavy gridlines, excessive decoration\n\nTufte’s Approach \n\nMinimalist, data-focused design\n\n\n\n\nPrinciple: Maximize the data-ink ratio - every mark should represent data"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
     "href": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Chart Junk - What Not to Do",
-    "text": "Chart Junk - What Not to Do\n\n\n\n\n\n\n\nWarning\n\n\nChart Junk: Visual elements that distract from the data\n\nUnnecessary 3D effects\nDecorative images\n\nExcessive colors\nHeavy borders and gridlines\nMoiré patterns and visual noise"
+    "text": "Chart Junk - What Not to Do\n\n\n\n\n\n\n\n\n\n\n\nChart Junk: Visual elements that distract from the data\n\nUnnecessary 3D effects\nDecorative images\n\nExcessive colors\nHeavy borders and gridlines\nMoiré patterns and visual noise"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#before-and-after---redesign-example",
@@ -625,14 +639,14 @@
     "href": "weeks/week-1/design-principles-presentation.html#key-takeaways-for-week-1",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Key Takeaways for Week 1",
-    "text": "Key Takeaways for Week 1\n\nYour visualization design checklist\n\n🎯 Purpose: Does your chart serve a clear analytical goal?\n📊 Data: Does your visualization accurately represent the data?\n👁️ Clarity: Can viewers understand the message quickly?\n✂️ Simplicity: Have you removed unnecessary elements?\n🎨 Aesthetics: Is the design professional and appropriate?\n🔄 Iteration: Have you tested and refined your design?\n\n\nRemember: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles."
+    "text": "Key Takeaways for Week 1\n\nYour visualization design checklist\n\n\n🎯 Purpose: Does your chart serve a clear analytical goal?\n📊 Data: Does your visualization accurately represent the data?\n👁️ Clarity: Can viewers understand the message quickly?\n✂️ Simplicity: Have you removed unnecessary elements?\n🎨 Aesthetics: Is the design professional and appropriate?\n🔄 Iteration: Have you tested and refined your design?\n\n\n\nRemember: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles."
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#next-steps",
     "href": "weeks/week-1/design-principles-presentation.html#next-steps",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Next Steps",
-    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction\n💻 Practice: Complete the design principles exercise\n\n\n\n\n\n\nResources\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 14:00-16:00"
+    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction\n💻 Practice: Complete the design principles exercise\n\n\n\n\n\n\nResources\n\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 14:00-16:00"
   },
   {
     "objectID": "weeks/week-1/network_terms.html",
@@ -705,12 +719,5 @@
       "Weekly materials",
       "Week 8"
     ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Visualization－SMM635",
-    "section": "",
-    "text": "Edward Tufte’s classic visualization of the Challenger O-ring failure analysis - a powerful example of how clear data presentation can reveal critical insights and potentially save lives."
   }
 ]
