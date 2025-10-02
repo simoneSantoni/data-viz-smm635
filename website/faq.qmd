@@ -4,14 +4,14 @@ title: "Frequently Asked Questions"
 
 ## General Questions
 
-### What is Network Analytics?
-Network analytics is the study of relationships and connections between entities (nodes) in complex systems. It combines graph theory, statistics, and computational methods to uncover patterns in networked data.
+### What is Data Visualization?
+Data visualization is the graphical representation of information and data using visual elements like charts, graphs, and maps. It helps communicate complex data insights clearly and effectively to various audiences.
 
 ### Do I need programming experience?
 Basic programming knowledge is helpful but not required. We'll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.
 
 ### Which software should I use - R or Python?
-Both are excellent choices. R has stronger statistical packages for network analysis (igraph, statnet), while Python offers better integration with machine learning tools. We'll teach both and you can choose based on your preference.
+Both are excellent choices. R has powerful visualization packages (ggplot2, plotly), while Python offers great libraries like matplotlib, seaborn, and plotly. We'll teach both and you can choose based on your preference.
 
 ## Course Logistics
 
@@ -63,25 +63,25 @@ Projects are evaluated on:
 
 ## Career & Applications
 
-### How is network analytics used in industry?
+### How is data visualization used in industry?
 Common applications include:
-- Social media analysis
-- Supply chain optimization
-- Fraud detection
-- Recommendation systems
-- Organizational design
-- Market structure analysis
+- Business intelligence dashboards
+- Financial reporting
+- Marketing analytics
+- Customer insights
+- Performance monitoring
+- Strategic decision-making
 
-### What career paths benefit from network analytics?
+### What career paths benefit from data visualization skills?
 - Data Scientists
 - Business Analysts
 - Marketing Analysts
-- Operations Research
+- Data Analysts
 - Management Consultants
-- Social Media Strategists
+- Product Managers
 
 ### Will this help with my dissertation/thesis?
-Absolutely! Network analysis is increasingly used in business research. We can discuss how to apply these methods to your research interests.
+Absolutely! Data visualization is essential for presenting research findings effectively. We can discuss how to apply these methods to your research interests.
 
 ## Getting Help
 
