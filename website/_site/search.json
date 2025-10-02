@@ -389,7 +389,7 @@
     "href": "weeks/week-1/main.html#ponder",
     "title": "Week 1",
     "section": "Ponder",
-    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1-2\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\nData Visualization Design Process - Overview of the visualization design workflow\n\n\n\nCore Visualization Principles\n\nVisual Perception and Design - How we see and process visual information\nCommon Visualization Mistakes - Pitfalls to avoid\nColor Theory for Data Visualization (in Moodle, “Resources” section)\n\n\n\nDesign Excellence Examples\n\nTufte’s Principles in Practice (in Moodle, “Case Studies” section)\nBefore and After: Visualization Makeovers",
+    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1-2\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\nData Visualization Design Process - Overview of the visualization design workflow\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section)",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -997,5 +997,93 @@
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Key Takeaways for Week 1",
     "text": "Key Takeaways for Week 1\n\nYour visualization design checklist\n\n🎯 Purpose: Does your chart serve a clear analytical goal?\n📊 Data: Does your visualization accurately represent the data?\n👁️ Clarity: Can viewers understand the message quickly?\n✂️ Simplicity: Have you removed unnecessary elements?\n🎨 Aesthetics: Is the design professional and appropriate?\n🔄 Iteration: Have you tested and refined your design?\n\n\nRemember: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles."
+  },
+  {
+    "objectID": "course/team.html",
+    "href": "course/team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Yinji (Benedict) Zhou\nInstructor\nPh.D. student in strategy at the Bayes Business School\n📬 Yinji.Zhou@bayes.ac.uk\n\n\n\n\nSimone Santoni\nModule leader\nAssociate professor in strategy at the Bayes Business School\n📬 Simone.Santoni.1@city.ac.uk",
+    "crumbs": [
+      "Course Information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "Network analytics is the study of relationships and connections between entities (nodes) in complex systems. It combines graph theory, statistics, and computational methods to uncover patterns in networked data.\n\n\n\nBasic programming knowledge is helpful but not required. We’ll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.\n\n\n\nBoth are excellent choices. R has stronger statistical packages for network analysis (igraph, statnet), while Python offers better integration with machine learning tools. We’ll teach both and you can choose based on your preference.",
+    "crumbs": [
+      "Course Information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "faq.html#general-questions",
+    "href": "faq.html#general-questions",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "Network analytics is the study of relationships and connections between entities (nodes) in complex systems. It combines graph theory, statistics, and computational methods to uncover patterns in networked data.\n\n\n\nBasic programming knowledge is helpful but not required. We’ll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.\n\n\n\nBoth are excellent choices. R has stronger statistical packages for network analysis (igraph, statnet), while Python offers better integration with machine learning tools. We’ll teach both and you can choose based on your preference.",
+    "crumbs": [
+      "Course Information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "faq.html#course-logistics",
+    "href": "faq.html#course-logistics",
+    "title": "Frequently Asked Questions",
+    "section": "Course Logistics",
+    "text": "Course Logistics\n\nHow much time should I dedicate to this course?\nExpect to spend 8-10 hours per week: - 3 hours: Lectures and tutorials - 3-4 hours: Readings and videos - 2-3 hours: Assignments and practice\n\n\nCan I audit the course?\nPlease contact the instructor to discuss auditing options. Priority is given to enrolled students.\n\n\nAre lectures recorded?\nYes, all lectures are recorded and available on Moodle within 24 hours. However, live attendance is strongly encouraged for interactive elements.",
+    "crumbs": [
+      "Course Information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "faq.html#technical-questions",
+    "href": "faq.html#technical-questions",
+    "title": "Frequently Asked Questions",
+    "section": "Technical Questions",
+    "text": "Technical Questions\n\nWhat computer specifications do I need?\n\nRAM: 8GB minimum (16GB recommended)\nStorage: 10GB free space\nOS: Windows 10+, macOS 10.14+, or Linux\nInternet connection for package downloads\n\n\n\nHow do I install the required software?\nDetailed installation guides are provided in Week 1 materials. We also offer installation support sessions.\n\n\nCan I use cloud-based tools instead?\nYes! Options include: - Google Colab (Python) - RStudio Cloud - Binder for Jupyter notebooks",
+    "crumbs": [
+      "Course Information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "faq.html#assessment",
+    "href": "faq.html#assessment",
+    "title": "Frequently Asked Questions",
+    "section": "Assessment",
+    "text": "Assessment\n\nCan I work with others on assignments?\n\nMid-term project: Yes (teams of 3-4)\nFinal project: No (individual work)\nWeekly exercises: Discussion encouraged, but submit your own work\n\n\n\nWhat if I submit late?\nLate submissions receive a 10% penalty per day. Extensions may be granted for documented emergencies.\n\n\nHow are projects graded?\nProjects are evaluated on: - Technical correctness (30%) - Analytical depth (30%) - Business relevance (30%) - Presentation quality (10%)",
+    "crumbs": [
+      "Course Information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "faq.html#career-applications",
+    "href": "faq.html#career-applications",
+    "title": "Frequently Asked Questions",
+    "section": "Career & Applications",
+    "text": "Career & Applications\n\nHow is network analytics used in industry?\nCommon applications include: - Social media analysis - Supply chain optimization - Fraud detection - Recommendation systems - Organizational design - Market structure analysis\n\n\nWhat career paths benefit from network analytics?\n\nData Scientists\nBusiness Analysts\nMarketing Analysts\nOperations Research\nManagement Consultants\nSocial Media Strategists\n\n\n\nWill this help with my dissertation/thesis?\nAbsolutely! Network analysis is increasingly used in business research. We can discuss how to apply these methods to your research interests.",
+    "crumbs": [
+      "Course Information",
+      "FAQ"
+    ]
+  },
+  {
+    "objectID": "faq.html#getting-help",
+    "href": "faq.html#getting-help",
+    "title": "Frequently Asked Questions",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nI’m struggling with the material. What should I do?\n\nAttend office hours\nPost questions on Moodle forums\nForm study groups with classmates\nReview recorded lectures\nSchedule one-on-one meeting with instructor\n\n\n\nWhere can I find additional practice problems?\n\nEnd of chapter exercises in textbooks\nGitHub repository practice sets\nOnline courses (Coursera, DataCamp)\nKaggle competitions\n\n\n\nWhat if I have accessibility needs?\nPlease contact Student Services and the instructor as soon as possible. We’ll work together to ensure appropriate accommodations.\n\n\n\n\n\n\n\nStill have questions?\n\n\n\nPost on the Moodle forum or email the instructor at simone.santoni.1@city.ac.uk",
+    "crumbs": [
+      "Course Information",
+      "FAQ"
+    ]
   }
 ]

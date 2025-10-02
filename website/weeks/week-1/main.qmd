@@ -69,11 +69,4 @@ Introductory session, no laboratory session.
 
 ### Core Visualization Principles
 
-- [Visual Perception and Design](visual_perception.qmd) - How we see and process visual information
-- [Common Visualization Mistakes](common_mistakes.qmd) - Pitfalls to avoid
-- Color Theory for Data Visualization (in Moodle, "Resources" section)
-
-### Design Excellence Examples
-
-- Tufte's Principles in Practice (in Moodle, "Case Studies" section)
-- [Before and After: Visualization Makeovers](makeovers.md)
+- Data Visualization and Communication Exercise (in Moodle, "Case studies" section)
