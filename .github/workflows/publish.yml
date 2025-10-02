@@ -45,13 +45,13 @@ jobs:
 
       - name: Install minimal R dependencies
         run: |
-          install.packages(c('rmarkdown', 'knitr', 'igraph'))
+          install.packages(c('rmarkdown', 'knitr'))
         shell: Rscript {0}
 
       - name: Render Quarto site
         run: |
           cd website
-          quarto render --execute-daemon-restart
+          quarto render --no-execute
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
