@@ -81,7 +81,7 @@
     "href": "weeks/week-1/main.html#participate",
     "title": "Week 1",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\nLecture materials\n\n\n\n📊 Design Principles Presentation - Interactive slides covering visualization design principles and processes\n\nIn-class activities\n\nVisual perception exercise: identifying pre-attentive attributes\nChart critique workshop: analyzing good and bad visualizations\nDesign principles application: redesigning a poorly designed chart",
+    "text": "Participate\n\n\n\n\n\n\nLecture materials\n\n\n\n📊 Design Principles Presentation - Interactive slides covering visualization design principles and processes",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -103,7 +103,7 @@
     "href": "weeks/week-1/main.html#practice",
     "title": "Week 1",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\nLaboratory session\n\n\n\nIntroduction to R/Python visualization environments: - Setting up RStudio/Jupyter notebooks - Basic plotting with ggplot2/matplotlib - Saving and exporting visualizations - Version control with Git\n\nApplication exercise\nCreate your first visualization following the design process: 1. Define your audience and purpose 2. Sketch multiple design alternatives 3. Implement your best design in R or Python 4. Apply visual hierarchy and Gestalt principles 5. Submit with a brief design rationale (200 words)",
+    "text": "Practice\n\n\n\n\n\n\nLaboratory session\n\n\n\n\nIntroduction to R/Python visualization environments:\nVersion control with Git",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -136,7 +136,7 @@
     "href": "weeks/week-1/main.html#ponder",
     "title": "Week 1",
     "section": "Ponder",
-    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1-2\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section)",
+    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section1)",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -312,7 +312,7 @@
     "href": "course/schedule.html",
     "title": "Course Schedule",
     "section": "",
-    "text": "📅 Weekly Breakdown\n\n\n\nWeek\nTopic\nPrepare\nSlides\nCase\nLab\nPonder\nProject\n\n\n\n\n1\nDesigning charts - processes and principles\n\n🙾\n\n\n🤔\n\n\n\n2\nDesign variables and the grammar of graphics\n📚\n🙾\n🙋\n\n\n\n\n\n3\nExplortory data analysis\n📚\n\n🙋\n\n\n\n\n\n4\nMultidimensional data visualization\n📚\n\n\n🥼\n\n\n\n\n5\nStorytelling with data\n📚\n\n🙋\n🥼\n\n\n\n\n6\nMid-term project\n\n\n\n\n\n💻\n\n\n7\nIntroduction to Tableau\n📚\n🙾\n\n🥼\n\n\n\n\n8\n(cont’ed)\n\n\n🙋\n🥼\n\n\n\n\n9\nDashboards with Tableau\n📚\n🙾\n\n\n\n💻\n\n\n10\n(cont’ed)\n\n\n🙋\n\n\n\n\n\n\n\n\n\n\n\n\nAdjustments and Updates\n\n\n\nThis schedule is subject to change based on:\n\nClass progress and needs\nUniversity calendar changes\nUnexpected closures\n\nAll changes will be announced in class and posted on the course website.",
+    "text": "📅 Weekly Breakdown\n\n\n\nWeek\nTopic\nPrepare\nSlides\nCase\nLab\nPonder\nProject\n\n\n\n\n1\nDesigning charts - processes and principles\n\n🙾\n\n\n🤔\n\n\n\n2\nDesign variables and the grammar of graphics\n📚\n🙾\n🙋\n🥼\n\n\n\n\n3\nExplortory data analysis\n📚\n\n🙋\n🥼\n\n\n\n\n4\nMultidimensional data visualization\n📚\n\n\n\n\n\n\n\n5\nStorytelling with data\n📚\n\n🙋\n🥼\n\n\n\n\n6\nMid-term project\n\n\n\n\n\n💻\n\n\n7\nIntroduction to Tableau\n📚\n🙾\n\n\n\n\n\n\n8\n(cont’ed)\n\n\n🙋\n\n\n\n\n\n9\nDashboards with Tableau\n📚\n🙾\n\n\n\n💻\n\n\n10\n(cont’ed)\n\n\n🙋\n\n\n\n\n\n\n\n\n\n\n\n\nAdjustments and Updates\n\n\n\nThis schedule is subject to change based on:\n\nClass progress and needs\nUniversity calendar changes\nUnexpected closures\n\nAll changes will be announced in class and posted on the course website.",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -697,6 +697,17 @@
     "crumbs": [
       "Weekly materials",
       "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-1/main.html#footnotes",
+    "href": "weeks/week-1/main.html#footnotes",
+    "title": "Week 1",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nTeaching case studies will not be posted because of intellectual property rights.↩︎",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
     ]
   }
 ]

@@ -20,12 +20,6 @@ Introductory session, no preparation needed.
 
 📊 **[Design Principles Presentation](design-principles-presentation.html)** - Interactive slides covering visualization design principles and processes
 
-## In-class activities
-
-- Visual perception exercise: identifying pre-attentive attributes
-- Chart critique workshop: analyzing good and bad visualizations
-- Design principles application: redesigning a poorly designed chart
-
 :::
 
 ## Practice
@@ -33,20 +27,8 @@ Introductory session, no preparation needed.
 ::: {.callout-note}
 ## Laboratory session
 
-Introduction to R/Python visualization environments:
-- Setting up RStudio/Jupyter notebooks
-- Basic plotting with ggplot2/matplotlib
-- Saving and exporting visualizations
+- Introduction to R/Python visualization environments:
 - Version control with Git
-
-## Application exercise
-
-Create your first visualization following the design process:
-1. Define your audience and purpose
-2. Sketch multiple design alternatives
-3. Implement your best design in R or Python
-4. Apply visual hierarchy and Gestalt principles
-5. Submit with a brief design rationale (200 words)
 
 :::
 
@@ -63,9 +45,11 @@ Introductory session, no laboratory session.
 
 ### Essential Readings
 
-- Tufte, E. R. (1983). *The visual display of quantitative information*, Chapters 1-2
-- Cairo, A. (2012). *The Functional Art*, Introduction and Chapter 1
+- Tufte, E. R. (1983). [*The visual display of quantitative information*](https://kyl.neocities.org/books/%5BTEC%20TUF%5D%20the%20visual%20display%20of%20quantitative%20information.pdf), Chapters 1
+- Cairo, A. (2012). [*The Functional Art*](https://paul.zhdk.ch/pluginfile.php/93337/mod_resource/content/1/The%20Functional%20Art%20-%20An%20Introduction%20to%20Information%20Graphics%20and%20Visualization%20by%20Alberto%20Cairo%20%28z-lib.org%29.pdf), Introduction and Chapter 1
 
 ### Core Visualization Principles
 
-- Data Visualization and Communication Exercise (in Moodle, "Case studies" section)
+- Data Visualization and Communication Exercise (in Moodle, "Case studies" section[^1])
+
+[^1]: Teaching case studies will not be posted because of intellectual property rights.
