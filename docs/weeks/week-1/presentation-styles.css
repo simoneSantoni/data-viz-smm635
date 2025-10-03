@@ -1,0 +1,73 @@
+/* Custom styles for presentation */
+
+/* Smaller font sizes for all text elements */
+.reveal {
+    font-size: 28px; /* Base font size (default is usually 40px) */
+}
+
+.reveal h1 {
+    font-size: 2.0em; /* Reduced from default 2.5em */
+    color: #dc2626 !important;
+}
+
+.reveal h2 {
+    font-size: 1.6em; /* Reduced from default 2.0em */
+    color: #dc2626 !important;
+}
+
+.reveal h3 {
+    font-size: 1.3em; /* Reduced from default 1.55em */
+    color: #dc2626 !important;
+}
+
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-size: 1.1em; /* Reduced from default 1.25em */
+    color: #dc2626 !important;
+}
+
+/* Smaller text in lists and paragraphs */
+.reveal p,
+.reveal li,
+.reveal blockquote {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Code blocks with smaller font */
+.reveal pre {
+    font-size: 0.75em;
+}
+
+.reveal code {
+    font-size: 0.85em;
+}
+
+/* Title slide adjustments */
+.reveal .slides section .title,
+.reveal .title-slide h1,
+.reveal .title-slide .title {
+    font-size: 2.2em; /* Smaller title on title slide */
+    color: #dc2626 !important;
+}
+
+.reveal .title-slide .subtitle {
+    font-size: 1.2em;
+}
+
+.reveal .title-slide .author,
+.reveal .title-slide .institute {
+    font-size: 0.9em;
+}
+
+/* Fragments and special text */
+.reveal .r-fit-text {
+    max-width: 100%;
+    font-size: 1.2em !important;
+}
+
+/* Ensure all heading elements are red */
+h1, h2, h3, h4, h5, h6 {
+    color: #dc2626 !important;
+}
