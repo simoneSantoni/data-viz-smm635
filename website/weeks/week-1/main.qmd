@@ -50,6 +50,6 @@ Introductory session, no laboratory session.
 
 ### Core Visualization Principles
 
-- Data Visualization and Communication Exercise (in Moodle, "Case studies" section[^1])
+- [Data Visualization and Communication Exercise](dviz_communication_exc.qmd) (in Moodle, "Case studies" section[^1])
 
 [^1]: Teaching case studies will not be posted because of intellectual property rights.

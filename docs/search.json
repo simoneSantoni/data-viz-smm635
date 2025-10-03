@@ -625,7 +625,7 @@
     "href": "weeks/week-1/design-principles-presentation.html#next-steps",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Next Steps",
-    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1\n💻 Practice: Complete the design principles exercise\n\n\n\n\n\n\nResources\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 15:00-17:00"
+    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1\n💻 Practice: Complete the Data visualization and communication excercise\n\n\n\n\n\n\nResources\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 15:00-17:00"
   },
   {
     "objectID": "weeks/week-1/network_terms.html",
@@ -709,5 +709,19 @@
       "Weekly materials",
       "Week 1"
     ]
+  },
+  {
+    "objectID": "weeks/week-1/dviz_communication_exc.html",
+    "href": "weeks/week-1/dviz_communication_exc.html",
+    "title": "Reflection excercise",
+    "section": "",
+    "text": "Consider the Harvard Business School case 9-118-107, “Data Visualization & Communication Excercise” and address the questions poresented at page 3.\n\n\nWrite a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
+  },
+  {
+    "objectID": "weeks/week-1/dviz_communication_exc.html#submission",
+    "href": "weeks/week-1/dviz_communication_exc.html#submission",
+    "title": "Reflection excercise",
+    "section": "",
+    "text": "Write a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
   }
 ]

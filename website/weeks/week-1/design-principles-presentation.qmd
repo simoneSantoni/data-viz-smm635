@@ -222,7 +222,7 @@ Solutions: Clear hierarchy, direct labeling, focused design
 
 📚 **For next week**: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1
 
-💻 **Practice**: Complete the design principles exercise
+💻 **Practice**: Complete the [Data visualization and communication excercise](dviz_communication_exc.qmd)
 
 ::: {.callout-tip}
 ## Resources
