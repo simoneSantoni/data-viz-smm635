@@ -111,7 +111,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#pie-chart-bar-chart-polar-coordinates",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Pie Chart = Bar Chart + Polar Coordinates",
-    "text": "Pie Chart = Bar Chart + Polar Coordinates\n\nlibrary(ggplot2)\n\n# Create data with five categories\ndata &lt;- data.frame(\n  category = c(\"A\", \"B\", \"C\", \"D\", \"E\"),\n  value = c(23, 45, 31, 52, 38)\n)\n\n# Create bar chart\nggplot(data, aes(x = \"\", y = value, fill = category)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\", start = 0) +\n  theme_void(base_size = 32)"
+    "text": "Pie Chart = Bar Chart + Polar Coordinates\n\n# Create data with five categories\ndata &lt;- data.frame(\n  category = c(\"A\", \"B\", \"C\", \"D\", \"E\"),\n  value = c(23, 45, 31, 52, 38)\n)\n\n# Create bar chart\nggplot(data, aes(x = \"\", y = value, fill = category)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\", start = 0) +\n  theme_void()"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#core-components-of-the-gog",
@@ -132,7 +132,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#aesthetics-visual-mappings",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "2. Aesthetics: Visual Mappings",
-    "text": "2. Aesthetics: Visual Mappings\nMapping Data → Visual Properties\n\n\n\n\n\nData Variables\n\n\n\nContinuous values\nCategories\nOrdered factors\nTime series\n\n\n\n\n\n\n\n\n\ndate\nregion\nsales\nprofit\n\n\n\n\n2024-01-01\nNorth\n1250.50\n325.15\n\n\n2024-02-01\nSouth\n980.75\n245.20\n\n\n2024-03-01\nEast\n1450.25\n410.75\n\n\n2024-04-01\nWest\n1100.00\n290.50\n\n\n\n\n\n\n\n\n\nVisual Variables\n\n\n\nPosition (x, y)\nSize\nColor\nShape\nTransparency\nLine type"
+    "text": "2. Aesthetics: Visual Mappings\nMapping Data → Visual Properties\n\n\n\n\n\nData Variables\n\n\n\nContinuous values\nCategories\nOrdered factors\nTime series\n\n\n\n\n\n\n\n\n\ndate\nregion\nsales\nprofit\n\n\n\n\n2024-01-01\nNorth\n1250.50\n325.15\n\n\n2024-02-01\nNorth\n980.75\n245.20\n\n\n2024-01-01\nSouth\n1450.25\n410.75\n\n\n2024-02-01\nSouth\n1100.00\n290.50\n\n\n\n\n\n\n\n\n\nVisual Variables\n\n\n\nPosition (x, y)\nSize\nColor\nShape\nTransparency\nLine type"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#visual-variables-in-action",
@@ -160,21 +160,21 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#statistics-transforming-data",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "5. Statistics: Transforming Data",
-    "text": "5. Statistics: Transforming Data\n\nRaw DataSmooth TrendSummary Statistics\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nNo statistical transformation\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAdds linear regression line with confidence interval\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_point() +\n  stat_summary(fun = mean, geom = \"point\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nCalculates and displays mean values"
+    "text": "5. Statistics: Transforming Data\n\nRaw DataSmooth TrendSummary Statistics\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nNo statistical transformation\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAdds linear regression line with confidence interval\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_point() +\n  stat_summary(fun = mean, geom = \"point\", color = \"red\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nCalculates and displays mean values"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
     "href": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "6. Coordinates: The Canvas",
-    "text": "6. Coordinates: The Canvas\n\nCartesian (default)FlippedPolar\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_cartesian()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nThe standard x-y coordinate system\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nSwaps x and y axes for horizontal bars\n\n\n\n\n\n\nggplot(sample_data, aes(x = \"\", y = sales, fill = region)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nTransform to polar coordinates (e.g., pie charts)"
+    "text": "6. Coordinates: The Canvas\n\nCartesian (default)FlippedPolar\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_cartesian()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nThe standard x-y coordinate system\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nSwaps x and y axes for horizontal bars\n\n\n\n\n\n\nggplot(sample_data, aes(x = \"\", y = sales, fill = region)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\") + \n  theme_void()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nTransforms to polar coordinates (e.g., pie charts)"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
     "href": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "7. Themes: Overall Visual Appearance",
-    "text": "7. Themes: Overall Visual Appearance\n\ntheme_minimal()theme_bw()theme_classic()Custom Theme\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nClean, minimal design\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_bw()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nBlack and white with borders\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nClassic look with axis lines only\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal() +\n  theme(panel.grid.major = element_line(color = \"gray80\"),\n        panel.grid.minor = element_blank(),\n        legend.position = \"bottom\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nCustomized theme elements"
+    "text": "7. Themes: Overall Visual Appearance\n\ntheme_minimal()theme_bw()theme_classic()Custom Theme\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nClean, minimal design\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_bw()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nBlack and white with borders\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nClassic look with axis lines only\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal() +\n  theme(panel.grid.major = element_line(color = \"gray80\"),\n        panel.grid.minor = element_blank(),\n        legend.position = \"bottom\")"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#building-complex-from-simple",
@@ -265,7 +265,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Multivariate Example",
-    "text": "Multivariate Example\n\n# 5 variables in one plot!\nlibrary(dplyr)\n\n# Create decade variable for grouping\neconomics_extended &lt;- economics %&gt;%\n  mutate(decade = paste0(floor(as.numeric(format(date, \"%Y\")) / 10) * 10, \"s\"))\n\nggplot(economics_extended,\n       aes(x = date,           # Variable 1\n           y = unemploy,       # Variable 2\n           color = psavert,    # Variable 3\n           size = pop)) +      # Variable 4\n  geom_point(alpha = 0.7) +\n  facet_wrap(~decade) +       # Variable 5\n  scale_color_viridis_c() +\n  labs(color = \"Savings Rate (%)\",\n       size = \"Population (1000s)\")"
+    "text": "Multivariate Example"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-1",
@@ -925,11 +925,33 @@
     ]
   },
   {
+    "objectID": "weeks/week-2/main.html",
+    "href": "weeks/week-2/main.html",
+    "title": "Week 2",
+    "section": "",
+    "text": "📖 Note\n\n\n\nReview the course syllabus.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#prepare",
+    "href": "weeks/week-2/main.html#prepare",
+    "title": "Week 2",
+    "section": "",
+    "text": "📖 Note\n\n\n\nReview the course syllabus.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
     "objectID": "weeks/week-2/main.html#participate",
     "href": "weeks/week-2/main.html#participate",
     "title": "Week 2",
     "section": "Participate",
-    "text": "Participate\nGrammar of Graphics and Visual Forms",
+    "text": "Participate\n\n\n\n\n\n\n🎓 Lecture materials\n\n\n\n📊 Grammar of Graphics and Visual Forms - Interactive slides covering the grammar of graphics and visual forms",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -940,7 +962,7 @@
     "href": "weeks/week-2/main.html#practice",
     "title": "Week 2",
     "section": "Practice",
-    "text": "Practice",
+    "text": "Practice\n\n\n\n\n\n\n💻 Laboratory session\n\n\n\n\nApplying the grammar of graphics in R/Python\nWorking with visual design variables",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -951,7 +973,7 @@
     "href": "weeks/week-2/main.html#perform",
     "title": "Week 2",
     "section": "Perform",
-    "text": "Perform",
+    "text": "Perform\n\n\n\n\n\n\n✏️ Laboratory exercises\n\n\n\nHands-on practice implementing visualization designs using the grammar of graphics framework.",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -962,7 +984,7 @@
     "href": "weeks/week-2/main.html#ponder",
     "title": "Week 2",
     "section": "Ponder",
-    "text": "Ponder",
+    "text": "Ponder\n\n📚 Essential Readings\n\nWilkinson, L. (2005). The Grammar of Graphics, Chapters 1-2\nWickham, H. (2010). “A Layered Grammar of Graphics”, Journal of Computational and Graphical Statistics\n\n\n\n🔗 Additional Resources\n\nReview examples of effective use of visual variables in data visualization",
     "crumbs": [
       "Weekly materials",
       "Week 2"

@@ -6,14 +6,49 @@ callout-appearance: default
 
 ## Prepare
 
+::: {.callout-note}
+## 📖 Note
+
+Review the [course syllabus](../../course/syllabus.qmd).
+
+:::
+
 ## Participate
 
-[Grammar of Graphics and Visual Forms](gog_and_visual_forms.qmd)
+::: {.callout-note}
+## 🎓 Lecture materials
+
+📊 **[Grammar of Graphics and Visual Forms](gog_and_visual_forms.qmd)** - Interactive slides covering the grammar of graphics and visual forms
+
+:::
 
 ## Practice
 
+::: {.callout-note}
+## 💻 Laboratory session
+
+- Applying the grammar of graphics in R/Python
+- Working with visual design variables
+
+:::
+
 ## Perform
+
+::: {.callout-note}
+## ✏️ Laboratory exercises
+
+Hands-on practice implementing visualization designs using the grammar of graphics framework.
+
+:::
 
 ## Ponder
 
+### 📚 Essential Readings
+
+- Wilkinson, L. (2005). [*The Grammar of Graphics*](https://go.exlibris.link/M2mYhfpy), Chapters 1-2
+- Wickham, H. (2010). ["A Layered Grammar of Graphics"](https://go.exlibris.link/2CTjrd3H), *Journal of Computational and Graphical Statistics*
+
+### 🔗 Additional Resources
+
+- Review examples of effective use of visual variables in data visualization
 

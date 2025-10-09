@@ -160,14 +160,6 @@ A pie chart is just a stacked bar chart in polar coordinates! 🤯
 ## A Bar Chart
 
 ```{r}
-#| echo: false
-#| eval: true
-
-library(ggplot2)
-theme_set(theme_minimal(base_size = 24))
-```
-
-```{r}
 #| echo: true
 #| eval: true
 #| fig-width: 8
@@ -203,8 +195,6 @@ theme_set(theme_minimal(base_size = 24))
 #| fig-width: 8
 #| fig-height: 5
 
-library(ggplot2)
-
 # Create data with five categories
 data <- data.frame(
   category = c("A", "B", "C", "D", "E"),
@@ -215,7 +205,7 @@ data <- data.frame(
 ggplot(data, aes(x = "", y = value, fill = category)) +
   geom_bar(stat = "identity") +
   coord_polar(theta = "y", start = 0) +
-  theme_void(base_size = 32)
+  theme_void()
 ```
 ---
 
@@ -298,8 +288,8 @@ Good visualization starts with well-structured data
 library(knitr)
 
 sample_data <- data.frame(
-  date = as.Date(c("2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01")),
-  region = c("North", "South", "East", "West"),
+  date = as.Date(c("2024-01-01", "2024-02-01", "2024-01-01", "2024-02-01")),
+  region = c("North", "North", "South", "South"),
   sales = c(1250.50, 980.75, 1450.25, 1100.00),
   profit = c(325.15, 245.20, 410.75, 290.50)
 )
@@ -411,8 +401,8 @@ Best for: Proportions over time
 ```{r}
 #| echo: true
 #| eval: true
-#| fig-width: 6
-#| fig-height: 3.5
+#| fig-width: 9
+#| fig-height: 3
 
 ggplot(sample_data, aes(x = date, y = sales, color = region)) +
   geom_point()
@@ -427,8 +417,8 @@ All data in a single plot
 ```{r}
 #| echo: true
 #| eval: true
-#| fig-width: 6
-#| fig-height: 5
+#| fig-width: 10
+#| fig-height: 3
 
 ggplot(sample_data, aes(x = date, y = sales)) +
   geom_point() +
@@ -445,8 +435,8 @@ Creates separate panels for each region
 ```{r}
 #| echo: true
 #| eval: true
-#| fig-width: 6
-#| fig-height: 5
+#| fig-width: 10
+#| fig-height: 3
 
 ggplot(sample_data, aes(x = date, y = profit)) +
   geom_point() +
@@ -509,7 +499,7 @@ Adds linear regression line with confidence interval
 
 ggplot(sample_data, aes(x = region, y = sales)) +
   geom_point() +
-  stat_summary(fun = mean, geom = "point")
+  stat_summary(fun = mean, geom = "point", color = "red")
 ```
 ::: {.callout-note}
 
@@ -530,7 +520,7 @@ Calculates and displays mean values
 #| echo: true
 #| eval: true
 #| fig-width: 8
-#| fig-height: 3.5
+#| fig-height: 3
 
 ggplot(sample_data, aes(x = region, y = sales)) +
   geom_bar(stat = "identity") +
@@ -547,7 +537,7 @@ The standard x-y coordinate system
 #| echo: true
 #| eval: true
 #| fig-width: 8
-#| fig-height: 3.5
+#| fig-height: 3
 
 ggplot(sample_data, aes(x = region, y = sales)) +
   geom_bar(stat = "identity") +
@@ -565,11 +555,12 @@ Swaps x and y axes for horizontal bars
 #| echo: true
 #| eval: true
 #| fig-width: 8
-#| fig-height: 3.5
+#| fig-height: 2.75
 
 ggplot(sample_data, aes(x = "", y = sales, fill = region)) +
   geom_bar(stat = "identity") +
-  coord_polar(theta = "y")
+  coord_polar(theta = "y") + 
+  theme_void()
 ```
 ::: {.callout-note}
 
@@ -590,7 +581,7 @@ Transforms to polar coordinates (e.g., pie charts)
 #| echo: true
 #| eval: true
 #| fig-width: 6
-#| fig-height: 3.5
+#| fig-height: 2.5
 
 ggplot(sample_data, aes(x = date, y = sales, color = region)) +
   geom_point() +
@@ -650,12 +641,6 @@ ggplot(sample_data, aes(x = date, y = sales, color = region)) +
         panel.grid.minor = element_blank(),
         legend.position = "bottom")
 ```
-::: {.callout-note}
-
-Customized theme elements
-
-:::
-
 :::
 
 ---
@@ -1040,7 +1025,7 @@ kable(head(economics), caption = "US Economic Time Series Data (1967-2015)")
 ## Multivariate Example
 
 ```{r}
-#| echo: true
+#| echo: false
 #| eval: true
 # 5 variables in one plot!
 library(dplyr)
@@ -1068,6 +1053,8 @@ ggplot(economics_extended,
 ```{r}
 #| echo: false
 #| eval: true
+#| fig-height: 12
+#| fig-width: 18
 # 5 variables in one plot!
 library(dplyr)
 
