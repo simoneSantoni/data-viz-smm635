@@ -44,103 +44,312 @@
     ]
   },
   {
-    "objectID": "weeks/week-10/main.html",
-    "href": "weeks/week-10/main.html",
-    "title": "Week 10",
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#todays-journey",
+    "href": "weeks/week-2/gog_and_visual_forms.html#todays-journey",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Today’s Journey",
+    "text": "Today’s Journey\n\n\nPart 1: Grammar of Graphics\n\nFramework & Philosophy\nCore Components\nBuilding Blocks\n\n\nPart 2: Visual Forms\n\nUnivariate Charts\nBivariate Charts\n\nMultivariate Charts"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#learning-objectives",
+    "href": "weeks/week-2/gog_and_visual_forms.html#learning-objectives",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of today’s session, you will:\n\nUnderstand the grammar of graphics framework\nMap data to visual variables effectively\n\nBuild complex visualizations from simple components\nImplement layered graphics approaches\nCreate appropriate charts for different data types"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#part-1-grammar-of-graphics",
+    "href": "weeks/week-2/gog_and_visual_forms.html#part-1-grammar-of-graphics",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Part 1: Grammar of Graphics",
+    "text": "Part 1: Grammar of Graphics\nMoving Beyond Chart Types"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart",
+    "href": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "How Do We Describe a Chart?",
+    "text": "How Do We Describe a Chart?"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart-1",
+    "href": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart-1",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "How Do We Describe a Chart?",
+    "text": "How Do We Describe a Chart?\n\n\nTraditional Approach:\n\nPie chart\nBar chart\nLine chart\nScatter plot\n\n\n\n\n\n\n\nNote\n\n\nWe can use labels or conceptual categories\n\n\n\n\nGrammar Approach:\n\nData\nAesthetics\nGeometries\nScales\nCoordinates\n\n\n\n\n\n\n\nNote\n\n\nWe can refer to a chart’s constitutive components"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#what-is-grammar-of-graphics-gog",
+    "href": "weeks/week-2/gog_and_visual_forms.html#what-is-grammar-of-graphics-gog",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "What is Grammar of Graphics (GoG)?",
+    "text": "What is Grammar of Graphics (GoG)?\n\n\n\n“Grammar makes language expressive. A language consisting of words and no grammar expresses only as many ideas as there are words.” - Leland Wilkinson"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#whats-the-connection-between-gog-and-ggplot2",
+    "href": "weeks/week-2/gog_and_visual_forms.html#whats-the-connection-between-gog-and-ggplot2",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "What’s the Connection between GoG and ggplot2?",
+    "text": "What’s the Connection between GoG and ggplot2?\n\n\n\nggplot2 is an implementation of the Grammar of Graphics in R\nCreated by Hadley Wickham based on Leland Wilkinson’s framework\nThe “gg” in ggplot2 stands for “Grammar of Graphics”\nAllows users to build plots layer by layer using the grammar components\nInstead of choosing from pre-made chart types, you compose visualizations from fundamental building blocks"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#the-power-of-gog",
+    "href": "weeks/week-2/gog_and_visual_forms.html#the-power-of-gog",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "The Power of GoG",
+    "text": "The Power of GoG\n\n# Traditional thinking\nmake_pie_chart(data)\nmake_bar_chart(data)\n\n# Grammar thinking\nggplot(data) +\n  geom_bar() +\n  coord_polar()  # Bar chart → Pie chart!\n\n\n\n\n\n\n\nImportant\n\n\nA pie chart is just a stacked bar chart in polar coordinates! 🤯"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#a-bar-chart",
+    "href": "weeks/week-2/gog_and_visual_forms.html#a-bar-chart",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "A Bar Chart",
+    "text": "A Bar Chart\n\nlibrary(ggplot2)\n\n# Create data with five categories\ndata &lt;- data.frame(\n  category = c(\"A\", \"B\", \"C\", \"D\", \"E\"),\n  value = c(23, 45, 31, 52, 38)\n)\n\n# Create bar chart\nggplot(data, aes(x = category, y = value)) +\n  geom_bar(stat = \"identity\")"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#pie-chart-bar-chart-polar-coordinates",
+    "href": "weeks/week-2/gog_and_visual_forms.html#pie-chart-bar-chart-polar-coordinates",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Pie Chart = Bar Chart + Polar Coordinates",
+    "text": "Pie Chart = Bar Chart + Polar Coordinates\n\nlibrary(ggplot2)\n\n# Create data with five categories\ndata &lt;- data.frame(\n  category = c(\"A\", \"B\", \"C\", \"D\", \"E\"),\n  value = c(23, 45, 31, 52, 38)\n)\n\n# Create bar chart\nggplot(data, aes(x = \"\", y = value, fill = category)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\", start = 0) +\n  theme_void(base_size = 32)"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#core-components-of-the-gog",
+    "href": "weeks/week-2/gog_and_visual_forms.html#core-components-of-the-gog",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Core Components of the GoG",
+    "text": "Core Components of the GoG\n\n\n\nDATA: What we want to visualize\nAESTHETICS: How we map data to visual properties\nGEOMETRIES: The visual marks we use\nFACETS: Creating small multiples\nSTATISTICS: How to transform or summarize the raw data\nCOORDINATES: The space we’re working in\nTHEMES: Overall visual appearance\n\n\n Source: https://r.qcbs.ca/"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#data-the-foundation",
+    "href": "weeks/week-2/gog_and_visual_forms.html#data-the-foundation",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "1. Data: The Foundation",
+    "text": "1. Data: The Foundation\n\n\n\n# Data is structured information\nsales_data &lt;- data.frame(\n  month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\"),\n  revenue = c(45000, 52000, 48000, 61000),\n  region = c(\"North\", \"North\", \"South\", \"South\")\n)\n\n\n\n\n\n\n\nTip\n\n\nGood visualization starts with well-structured data\nTidyverse is your friend!"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#aesthetics-visual-mappings",
+    "href": "weeks/week-2/gog_and_visual_forms.html#aesthetics-visual-mappings",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "2. Aesthetics: Visual Mappings",
+    "text": "2. Aesthetics: Visual Mappings\nMapping Data → Visual Properties\n\n\n\n\n\nData Variables\n\n\n\nContinuous values\nCategories\nOrdered factors\nTime series\n\n\n\n\n\n\n\n\n\ndate\nregion\nsales\nprofit\n\n\n\n\n2024-01-01\nNorth\n1250.50\n325.15\n\n\n2024-02-01\nSouth\n980.75\n245.20\n\n\n2024-03-01\nEast\n1450.25\n410.75\n\n\n2024-04-01\nWest\n1100.00\n290.50\n\n\n\n\n\n\n\n\n\nVisual Variables\n\n\n\nPosition (x, y)\nSize\nColor\nShape\nTransparency\nLine type"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#visual-variables-in-action",
+    "href": "weeks/week-2/gog_and_visual_forms.html#visual-variables-in-action",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Visual Variables in Action",
+    "text": "Visual Variables in Action\n\nggplot(sample_data, aes(\n  x = date,        # Position\n  y = sales,       # Position\n  color = region,  # Color\n  size = profit    # Size\n)) +\n  geom_point()\n\n\nSales by Date, Region, and Profit"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#geometries-visual-marks",
+    "href": "weeks/week-2/gog_and_visual_forms.html#geometries-visual-marks",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "3. Geometries: Visual Marks",
+    "text": "3. Geometries: Visual Marks\n\nPointsLinesBarsAreas\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\n\n\n\n\n\n\n\nBest for: Scatter plots, distributions\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_line()\n\n\n\n\n\n\n\n\nBest for: Trends, time series\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\")\n\n\n\n\n\n\n\n\nBest for: Comparisons, counts\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_area()\n\n\n\n\n\n\n\n\nBest for: Proportions over time"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#facets-small-multiples",
+    "href": "weeks/week-2/gog_and_visual_forms.html#facets-small-multiples",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "4. Facets: Small Multiples",
+    "text": "4. Facets: Small Multiples\n\nNo FacetsFacet WrapFacet with Free Scales\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAll data in a single plot\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  facet_wrap(~region)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nCreates separate panels for each region\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = profit)) +\n  geom_point() +\n  facet_wrap(~region, scales = \"free_y\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nIndependent y-axis scales per facet"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#statistics-transforming-data",
+    "href": "weeks/week-2/gog_and_visual_forms.html#statistics-transforming-data",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "5. Statistics: Transforming Data",
+    "text": "5. Statistics: Transforming Data\n\nRaw DataSmooth TrendSummary Statistics\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nNo statistical transformation\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAdds linear regression line with confidence interval\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_point() +\n  stat_summary(fun = mean, geom = \"point\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nCalculates and displays mean values"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
+    "href": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "6. Coordinates: The Canvas",
+    "text": "6. Coordinates: The Canvas\n\nCartesian (default)FlippedPolar\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_cartesian()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nThe standard x-y coordinate system\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nSwaps x and y axes for horizontal bars\n\n\n\n\n\n\nggplot(sample_data, aes(x = \"\", y = sales, fill = region)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nTransform to polar coordinates (e.g., pie charts)"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
+    "href": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "7. Themes: Overall Visual Appearance",
+    "text": "7. Themes: Overall Visual Appearance\n\ntheme_minimal()theme_bw()theme_classic()Custom Theme\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nClean, minimal design\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_bw()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nBlack and white with borders\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_classic()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nClassic look with axis lines only\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal() +\n  theme(panel.grid.major = element_line(color = \"gray80\"),\n        panel.grid.minor = element_blank(),\n        legend.position = \"bottom\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nCustomized theme elements"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#building-complex-from-simple",
+    "href": "weeks/week-2/gog_and_visual_forms.html#building-complex-from-simple",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Building Complex from Simple",
+    "text": "Building Complex from Simple\n\n\nPart 1: Foundation\n\n\n\n\n\nflowchart TD\n    START((\" \")) --&gt; A[\"DATA\"] --&gt; B[\"AESTHETICS\"] --&gt; C[\"GEOMETRY\"]\n\n    style START fill:#90EE90,stroke:#333,stroke-width:1px\n    style A fill:#e1f5ff\n    style B fill:#e1f5ff\n    style C fill:#e1f5ff\n\n\n\n\n\n\n\nPart 2: Refinement\n\n\n\n\n\nflowchart TD\n    D[\"FACETS\"] --&gt; E[\"STATISTICS\"] --&gt; F[\"COORDINATES\"] --&gt; G[\"THEME\"] --&gt; END((\" \"))\n\n    style D fill:#e1f5ff\n    style E fill:#e1f5ff\n    style F fill:#e1f5ff\n    style G fill:#e1f5ff\n    style END fill:#FF6B6B,stroke:#333,stroke-width:1px\n\n\n\n\n\n\n\nExample: Layer by Layer\n\n# 1. Data + Aesthetics\nggplot(data, aes(x, y)) +\n\n  # 2. Geometry\n  geom_point() +\n\n  # 3. Facets\n  facet_wrap(~category) +\n\n  # 4. Statistics\n  geom_smooth() +\n\n  # 5. Coordinates\n  coord_cartesian() +\n\n  # 6. Theme\n  theme_minimal()"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#layering-the-power-of-composition",
+    "href": "weeks/week-2/gog_and_visual_forms.html#layering-the-power-of-composition",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Layering: The Power of Composition",
+    "text": "Layering: The Power of Composition\n\nggplot(economics, aes(date, unemploy)) +\n  geom_area(alpha = 0.3) +           # Layer 1: Area\n  geom_line(size = 1.2) +            # Layer 2: Line\n  geom_smooth(se = FALSE, col = \"red\") # Layer 3: Trend\n\n\n\n\n\n\n\n\nNote\n\n\nEach layer adds information without obscuring previous layers"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#part-2-visual-forms",
+    "href": "weeks/week-2/gog_and_visual_forms.html#part-2-visual-forms",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Part 2: Visual Forms",
+    "text": "Part 2: Visual Forms\nFrom Simple to Complex"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-charts",
+    "href": "weeks/week-2/gog_and_visual_forms.html#univariate-charts",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Univariate Charts",
+    "text": "Univariate Charts\nExploring Single Variables\n\n\n\n\n\nContinuous Data\n\n\n\nHistograms\nDensity plots\nBox plots\nViolin plots\n\n\n\n\n\n\n\n\nCategorical Data\n\n\n\nBar charts\nPie charts\nWaffle charts\nDot plots"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-continuous-data",
+    "href": "weeks/week-2/gog_and_visual_forms.html#univariate-continuous-data",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Univariate: Continuous Data",
+    "text": "Univariate: Continuous Data\n\nHistogramDensityBox Plot\n\n\n\nggplot(data, aes(x = value)) +\n  geom_histogram(bins = 30)\n\nHistograms divide data into bins and count observations in each bin.\n\nBest for: Understanding the distribution shape and identifying patterns\nShows: Frequency, central tendency, spread, and skewness\nKey parameter: Number of bins affects granularity\n\n\n\n\nggplot(data, aes(x = value)) +\n  geom_density(fill = \"skyblue\", alpha = 0.5)\n\nDensity plots show a smoothed version of the distribution.\n\nBest for: Comparing multiple distributions, identifying modes\nShows: Probability density across the range of values\nAdvantage: Smooth curve makes patterns easier to see\n\n\n\n\nggplot(data, aes(y = value)) +\n  geom_boxplot()\n\nBox plots display the five-number summary: min, Q1, median, Q3, max.\n\nBest for: Identifying outliers and comparing distributions\nShows: Central tendency, spread, and asymmetry\nKey insight: Box contains middle 50% of data"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-categorical-data",
+    "href": "weeks/week-2/gog_and_visual_forms.html#univariate-categorical-data",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Univariate: Categorical Data",
+    "text": "Univariate: Categorical Data\n\nBar ChartPie ChartCleveland Dot Plot\n\n\n\nggplot(data, aes(x = category)) +\n  geom_bar()\n\nBar charts use bar length to encode category counts or values.\n\nBest for: Comparing categories, showing rankings\nShows: Frequency or magnitude for each category\nAdvantage: Easy to compare values, natural visual ordering\n\n\n\n\nggplot(data, aes(x = \"\", fill = category)) +\n  geom_bar() +\n  coord_polar(\"y\")\n\nPie charts show parts of a whole as slices of a circle.\n\nBest for: Showing proportions when there are few categories (2-5)\nShows: Relative proportions and percentages\nLimitation: Difficult to compare similar-sized slices\n\n\n\n\nggplot(data, aes(x = value, y = category)) +\n  geom_point()\n\nCleveland dot plots use position to encode values with minimal ink.\n\nBest for: Precise value comparisons, when space is limited\nShows: Exact values for each category\nAdvantage: More accurate than bars, less cluttered"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#bivariate-charts",
+    "href": "weeks/week-2/gog_and_visual_forms.html#bivariate-charts",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Bivariate Charts",
+    "text": "Bivariate Charts\nExploring Relationships Between Two Variables\n\n\n\nX Variable\nY Variable\nBest Chart Types\n\n\n\n\nContinuous\nContinuous\nScatter plot, Line chart\n\n\nContinuous\nCategorical\nBox plot, Violin plot\n\n\nCategorical\nCategorical\nHeatmap, Grouped bars\n\n\nTime\nContinuous\nLine chart, Area chart"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#bivariate-continuous-continuous",
+    "href": "weeks/week-2/gog_and_visual_forms.html#bivariate-continuous-continuous",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Bivariate: Continuous × Continuous",
+    "text": "Bivariate: Continuous × Continuous\n\nScatter PlotWith Trend2D Density\n\n\n\nggplot(data, aes(x = height, y = weight)) +\n  geom_point()\n\nScatter plots display individual data points in 2D space.\n\nBest for: Exploring relationships, identifying correlations, spotting outliers\nShows: Direction, strength, and form of relationship between two variables\nKey insight: Patterns reveal linear, non-linear, or no correlation\n\n\n\n\nggplot(data, aes(x = height, y = weight)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\nScatter plot with trend line adds a fitted model to show the relationship.\n\nBest for: Confirming correlation patterns, making predictions\nShows: Overall trend and strength of linear relationship\nOptions: Linear (lm), loess (local smoothing), or other methods\n\n\n\n\nggplot(data, aes(x = height, y = weight)) +\n  geom_density_2d_filled()\n\n2D density plots show concentration of points as contours or filled regions.\n\nBest for: Large datasets where overplotting obscures patterns\nShows: Areas of high and low data concentration\nAdvantage: Reveals patterns in dense data clouds"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#bivariate-categorical-continuous",
+    "href": "weeks/week-2/gog_and_visual_forms.html#bivariate-categorical-continuous",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Bivariate: Categorical × Continuous",
+    "text": "Bivariate: Categorical × Continuous\n\nGrouped Box PlotViolin PlotStrip Chart\n\n\n\nggplot(data, aes(x = category, y = value)) +\n  geom_boxplot()\n\nGrouped box plots compare distributions across multiple categories.\n\nBest for: Comparing central tendency and spread across groups\nShows: Median, quartiles, and outliers for each category\nAdvantage: Compact representation of multiple distributions side-by-side\n\n\n\n\nggplot(data, aes(x = category, y = value)) +\n  geom_violin()\n\nViolin plots combine box plots with kernel density estimation.\n\nBest for: Revealing distribution shapes and multimodality\nShows: Full distribution shape for each category\nAdvantage: More informative than box plots for complex distributions\n\n\n\n\nggplot(data, aes(x = category, y = value)) +\n  geom_jitter(width = 0.2)\n\nStrip charts (jittered) show all individual data points.\n\nBest for: Small to medium datasets, showing actual observations\nShows: Individual values and sample size per category\nAdvantage: Transparency - shows the actual data, not summaries"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-charts",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-charts",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Charts",
+    "text": "Multivariate Charts\nBeyond Two Dimensions\nStrategies for encoding multiple variables:\n\nColor/Fill: 3rd dimension\nSize: 4th dimension\n\nShape: 5th dimension (categorical only)\nFaceting: Create small multiples\nAnimation: Time as dimension"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example: The Economics Dataset",
+    "text": "Multivariate Example: The Economics Dataset\n\n\n\nUS Economic Time Series Data (1967-2015)\n\n\ndate\npce\npop\npsavert\nuempmed\nunemploy\n\n\n\n\n1967-07-01\n506.7\n198712\n12.6\n4.5\n2944\n\n\n1967-08-01\n509.8\n198911\n12.6\n4.7\n2945\n\n\n1967-09-01\n515.6\n199113\n11.9\n4.6\n2958\n\n\n1967-10-01\n512.2\n199311\n12.9\n4.9\n3143\n\n\n1967-11-01\n517.4\n199498\n12.8\n4.7\n3066\n\n\n1967-12-01\n525.1\n199657\n11.8\n4.8\n3018"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset-1",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset-1",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example: The Economics Dataset",
+    "text": "Multivariate Example: The Economics Dataset\n\n\n\n\n\n\nNote\n\n\nDataset Variables:\n\ndate: Month of data collection\npce: Personal consumption expenditures (billions USD)\npop: Total population (thousands)\npsavert: Personal savings rate (%)\nuempmed: Median duration of unemployment (weeks)\nunemploy: Number of unemployed (thousands)"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example",
+    "text": "Multivariate Example\n\n# 5 variables in one plot!\nlibrary(dplyr)\n\n# Create decade variable for grouping\neconomics_extended &lt;- economics %&gt;%\n  mutate(decade = paste0(floor(as.numeric(format(date, \"%Y\")) / 10) * 10, \"s\"))\n\nggplot(economics_extended,\n       aes(x = date,           # Variable 1\n           y = unemploy,       # Variable 2\n           color = psavert,    # Variable 3\n           size = pop)) +      # Variable 4\n  geom_point(alpha = 0.7) +\n  facet_wrap(~decade) +       # Variable 5\n  scale_color_viridis_c() +\n  labs(color = \"Savings Rate (%)\",\n       size = \"Population (1000s)\")"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-1",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-1",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example",
+    "text": "Multivariate Example"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#best-practices-for-multivariate",
+    "href": "weeks/week-2/gog_and_visual_forms.html#best-practices-for-multivariate",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Best Practices for Multivariate",
+    "text": "Best Practices for Multivariate\n\nStart simple: Add dimensions gradually\nPrioritize: Most important variables get best encodings\nTest perception: Can viewers decode all dimensions?\nConsider alternatives: Sometimes multiple simple charts &gt; one complex chart\nInteractive solutions: Tooltips, filtering, zooming"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#putting-it-all-together",
+    "href": "weeks/week-2/gog_and_visual_forms.html#putting-it-all-together",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Putting It All Together",
+    "text": "Putting It All Together\nA Practical Workflow\n\n\n\n\n\n\nTip\n\n\n\nUnderstand your data\n\nTypes of variables\nRelationships to explore\n\nChoose appropriate forms\n\nMatch chart to data type\nConsider your message\n\nApply the grammar\n\nMap variables to aesthetics\nLayer geometries\nRefine with scales"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#key-takeaways",
+    "href": "weeks/week-2/gog_and_visual_forms.html#key-takeaways",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n📊 The Grammar of Graphics provides a systematic framework for creating any visualization\n🔧 Complex visualizations are built from simple, reusable components\n🎨 Visual variables (position, size, color, etc.) are tools for encoding information\n📈 Choose chart types based on data types and relationships\n🔄 Iteration and layering lead to rich, informative graphics"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#next-week",
+    "href": "weeks/week-2/gog_and_visual_forms.html#next-week",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Next Week",
+    "text": "Next Week\nTopic 3: Exploratory Data Analysis\n\nEDA workflow and visualization\nDistribution visualization techniques\n\nCorrelation and relationship exploration\nTime series exploration\nCase Study: Nomis Solutions\n\nHomework\n\nPractice creating layered visualizations\nExperiment with different coordinate systems\nRead: Wickham’s “Layered Grammar of Graphics”"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#questions",
+    "href": "weeks/week-2/gog_and_visual_forms.html#questions",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Questions?",
+    "text": "Questions?\nLet’s explore the grammar together!\n📧 Simone.Santoni.1@city.ac.uk\n🌐 Course website: https://simonesantoni.github.io/data-viz-smm635\n💬 Office hours: Wednesdays 3-5 PM"
+  },
+  {
+    "objectID": "weeks/week-1/network_terms.html",
+    "href": "weeks/week-1/network_terms.html",
+    "title": "Network Analysis Glossary",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 10 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
-    "crumbs": [
-      "Weekly materials",
-      "Week 10"
-    ]
+    "text": "A graph is a mathematical structure consisting of a set of objects (vertices) and a set of connections (edges) between pairs of these objects. In network analysis, graphs provide the fundamental framework for representing relationships and interactions between entities. Graphs can be directed (edges have direction) or undirected (edges have no inherent direction).\n\\[\nG = {v, e}\n\\]\nwhere\n\\[v = [v_1, v_2, ..., v_i, ... v_n]\\]\nand\n\\[e = [(v_1, v_2), (v_1, v_i), ..., (v_i, v_j), ..., (v_j, v_n)]\\]\n\n\n\nVertices (also called nodes) are the fundamental units or entities in a network. They represent the objects being studied, such as:\n\nPeople in social networks\nComputers in technological networks\nProteins in biological networks\nCities in transportation networks\n\nEach vertex can have attributes (e.g., age, location, type) that provide additional information about the entity it represents.\n\n\n\nEdges (also called links or ties) represent the connections or relationships between vertices. They encode the interactions, associations, or dependencies between entities in the network. Edges can have various properties:\n\nDirection (directed vs. undirected)\nWeight (strength of connection)\nType (multiple relationship types)\nTemporal information (when the connection exists)\n\n\n\n\nA network relationship defines the nature of connections between entities in a network. These relationships determine:\n\nWhat constitutes a connection (e.g., friendship, communication, transaction)\nHow connections are measured or identified\nWhether relationships are symmetric or asymmetric\nThe meaning and interpretation of network patterns"
   },
   {
-    "objectID": "weeks/week-1/main.html",
-    "href": "weeks/week-1/main.html",
-    "title": "Week 1",
+    "objectID": "weeks/week-1/network_terms.html#core-network-components",
+    "href": "weeks/week-1/network_terms.html#core-network-components",
+    "title": "Network Analysis Glossary",
     "section": "",
-    "text": "Note\n\n\n\nIntroductory session, no preparation needed.",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
+    "text": "A graph is a mathematical structure consisting of a set of objects (vertices) and a set of connections (edges) between pairs of these objects. In network analysis, graphs provide the fundamental framework for representing relationships and interactions between entities. Graphs can be directed (edges have direction) or undirected (edges have no inherent direction).\n\\[\nG = {v, e}\n\\]\nwhere\n\\[v = [v_1, v_2, ..., v_i, ... v_n]\\]\nand\n\\[e = [(v_1, v_2), (v_1, v_i), ..., (v_i, v_j), ..., (v_j, v_n)]\\]\n\n\n\nVertices (also called nodes) are the fundamental units or entities in a network. They represent the objects being studied, such as:\n\nPeople in social networks\nComputers in technological networks\nProteins in biological networks\nCities in transportation networks\n\nEach vertex can have attributes (e.g., age, location, type) that provide additional information about the entity it represents.\n\n\n\nEdges (also called links or ties) represent the connections or relationships between vertices. They encode the interactions, associations, or dependencies between entities in the network. Edges can have various properties:\n\nDirection (directed vs. undirected)\nWeight (strength of connection)\nType (multiple relationship types)\nTemporal information (when the connection exists)\n\n\n\n\nA network relationship defines the nature of connections between entities in a network. These relationships determine:\n\nWhat constitutes a connection (e.g., friendship, communication, transaction)\nHow connections are measured or identified\nWhether relationships are symmetric or asymmetric\nThe meaning and interpretation of network patterns"
   },
   {
-    "objectID": "weeks/week-1/main.html#prepare",
-    "href": "weeks/week-1/main.html#prepare",
-    "title": "Week 1",
+    "objectID": "weeks/week-1/network_terms.html#network-types",
+    "href": "weeks/week-1/network_terms.html#network-types",
+    "title": "Network Analysis Glossary",
+    "section": "Network Types",
+    "text": "Network Types\n\nOne-mode vs Two-mode Networks\n\nOne-mode Networks\nOne-mode networks (also called unipartite networks) contain only one type of vertex. All connections occur between vertices of the same type. Examples include:\n\nFriendship networks (people connected to people)\nCitation networks (papers citing papers)\nTrade networks (countries trading with countries)\n\nHere’s an example of creating a one-mode network visualization concerning a collaboration network among five co-workers:\n\n\n\n\n\nExample of a one-mode collaboration network showing connections between individuals\n\n\n\n\n\n\nDirected Vs Undirected Networks\nDirected networks (also called digraphs) have edges with a specific direction, indicating asymmetric relationships where the connection flows from one vertex to another. Examples include:\n\nEmail networks (sender → receiver)\nCitation networks (citing paper → cited paper)\n\nFood webs (predator → prey)\nTwitter follower networks (follower → followed)\n\nHere’s an example of a directed network:\n\n\n\n\n\nDirected Email Communication Network\n\n\n\n\nUndirected networks have edges without direction, representing symmetric relationships where connections are mutual. Examples include:\n\nFriendship networks (mutual friendships)\nCo-authorship networks (collaborations)\nInfrastructure networks (roads, power grids)\nProtein interaction networks\n\nThe choice between directed and undirected representation depends on whether the relationship being modeled is inherently asymmetric or symmetric.\n\n\nTwo-mode Networks\nTwo-mode networks (also called bipartite networks) contain two distinct types of vertices, and edges only connect vertices of different types. Examples include:\n\nActor-movie networks (actors connected to movies they appear in)\nAuthor-paper networks (authors connected to papers they wrote)\nCustomer-product networks (customers connected to products they purchased)\n\nHere’s an example of a two-mode purchasing network:\n\n\n\n\n\nTwo-Mode Customer-Product Purchasing Network\n\n\n\n\n\n\n\nSigned Networks\nSigned networks are networks where edges carry positive or negative values, representing different types of relationships:\n\nPositive edges: friendship, alliance, cooperation\nNegative edges: animosity, conflict, competition\n\nSigned networks are particularly useful for studying:\n\nSocial balance theory\nCoalition formation\nConflict dynamics\nOpinion polarization\n\nHere’s an example of a signed social network like cooperative Vs. competitive ties among co-workers:\n\n\n\n\n\nSigned Social Network with Positive and Negative Relationships\n\n\n\n\n\n\nWeighted vs Unweighted Networks\n\nWeighted Networks\nWeighted networks have edges with numerical values (weights) representing the strength, frequency, or capacity of connections. Examples include:\n\nCommunication networks (number of messages exchanged)\nTransportation networks (traffic volume or distance)\nNeural networks (synaptic strength)\nFinancial networks (transaction amounts)\n\nHere’s an example of a weighted communication network:\n\n\n\n\n\nWeighted Communication Network (Edge Width = Message Volume)\n\n\n\n\n\n\nUnweighted Networks\nUnweighted networks (also called binary networks) have edges that simply indicate the presence or absence of a connection. All edges are treated equally, focusing on the topology rather than connection strength. These are simpler to analyze but may lose important information about relationship intensity."
+  },
+  {
+    "objectID": "weeks/week-1/network_terms.html#network-substructures",
+    "href": "weeks/week-1/network_terms.html#network-substructures",
+    "title": "Network Analysis Glossary",
+    "section": "Network Substructures",
+    "text": "Network Substructures\n\nDyads\nA dyad is the simplest possible network substructure, consisting of a pair of vertices and the possible edge(s) between them. In directed networks, dyads can be classified as:\n\nNull dyad: no connection in either direction\nAsymmetric dyad: connection in one direction only\nMutual/Reciprocal dyad: connections in both directions\n\nDyadic analysis examines pairwise relationships and forms the foundation for understanding reciprocity and basic network patterns.\nHere’s a visualization showing a dyad within a larger network:\n\n\n\n\n\nNetwork with Emphasized Dyad (Alice-Bob)\n\n\n\n\n\n\nTriads\nA triad consists of three vertices and the possible edges among them. Triads are fundamental for understanding:\n\nTransitivity (“friend of a friend” patterns)\nStructural balance\nClustering tendencies\nLocal network motifs\n\nHere’s a visualization showing a triad within a larger network:\n\n\n\n\n\nNetwork with Emphasized Triad (Alice-Bob-Charlie)\n\n\n\n\nWe will deal with these in weeks 4 and 5."
+  },
+  {
+    "objectID": "weeks/week-1/dviz_communication_exc.html",
+    "href": "weeks/week-1/dviz_communication_exc.html",
+    "title": "Reflection excercise",
     "section": "",
-    "text": "Note\n\n\n\nIntroductory session, no preparation needed.",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
+    "text": "Consider the Harvard Business School case 9-118-107, “Data Visualization & Communication Excercise” and address the questions poresented at page 3.\n\n\nWrite a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
   },
   {
-    "objectID": "weeks/week-1/main.html#participate",
-    "href": "weeks/week-1/main.html#participate",
-    "title": "Week 1",
-    "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\nLecture materials\n\n\n\n📊 Design Principles Presentation - Interactive slides covering visualization design principles and processes",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#in-class-activities",
-    "href": "weeks/week-1/main.html#in-class-activities",
-    "title": "Week 1",
-    "section": "In-class activities",
-    "text": "In-class activities\n\nVisual perception exercise: identifying pre-attentive attributes\nChart critique workshop: analyzing good and bad visualizations\nDesign principles application: redesigning a poorly designed chart",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#practice",
-    "href": "weeks/week-1/main.html#practice",
-    "title": "Week 1",
-    "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\nLaboratory session\n\n\n\n\nIntroduction to R/Python visualization environments:\nVersion control with Git",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#application-exercise",
-    "href": "weeks/week-1/main.html#application-exercise",
-    "title": "Week 1",
-    "section": "Application exercise",
-    "text": "Application exercise\nCreate your first visualization following the design process: 1. Define your audience and purpose 2. Sketch multiple design alternatives 3. Implement your best design in R or Python 4. Apply visual hierarchy and Gestalt principles 5. Submit with a brief design rationale (200 words)",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#perform",
-    "href": "weeks/week-1/main.html#perform",
-    "title": "Week 1",
-    "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\nNote\n\n\n\nIntroductory session, no laboratory session.",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#ponder",
-    "href": "weeks/week-1/main.html#ponder",
-    "title": "Week 1",
-    "section": "Ponder",
-    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section1)",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
+    "objectID": "weeks/week-1/dviz_communication_exc.html#submission",
+    "href": "weeks/week-1/dviz_communication_exc.html#submission",
+    "title": "Reflection excercise",
+    "section": "",
+    "text": "Write a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
   },
   {
     "objectID": "project/midTermProject/main.html",
@@ -628,39 +837,132 @@
     "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1\n💻 Practice: Complete the Data visualization and communication excercise\n\n\n\n\n\n\nResources\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 15:00-17:00"
   },
   {
-    "objectID": "weeks/week-1/network_terms.html",
-    "href": "weeks/week-1/network_terms.html",
-    "title": "Network Analysis Glossary",
+    "objectID": "weeks/week-1/main.html",
+    "href": "weeks/week-1/main.html",
+    "title": "Week 1",
     "section": "",
-    "text": "A graph is a mathematical structure consisting of a set of objects (vertices) and a set of connections (edges) between pairs of these objects. In network analysis, graphs provide the fundamental framework for representing relationships and interactions between entities. Graphs can be directed (edges have direction) or undirected (edges have no inherent direction).\n\\[\nG = {v, e}\n\\]\nwhere\n\\[v = [v_1, v_2, ..., v_i, ... v_n]\\]\nand\n\\[e = [(v_1, v_2), (v_1, v_i), ..., (v_i, v_j), ..., (v_j, v_n)]\\]\n\n\n\nVertices (also called nodes) are the fundamental units or entities in a network. They represent the objects being studied, such as:\n\nPeople in social networks\nComputers in technological networks\nProteins in biological networks\nCities in transportation networks\n\nEach vertex can have attributes (e.g., age, location, type) that provide additional information about the entity it represents.\n\n\n\nEdges (also called links or ties) represent the connections or relationships between vertices. They encode the interactions, associations, or dependencies between entities in the network. Edges can have various properties:\n\nDirection (directed vs. undirected)\nWeight (strength of connection)\nType (multiple relationship types)\nTemporal information (when the connection exists)\n\n\n\n\nA network relationship defines the nature of connections between entities in a network. These relationships determine:\n\nWhat constitutes a connection (e.g., friendship, communication, transaction)\nHow connections are measured or identified\nWhether relationships are symmetric or asymmetric\nThe meaning and interpretation of network patterns"
+    "text": "Note\n\n\n\nIntroductory session, no preparation needed.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
   },
   {
-    "objectID": "weeks/week-1/network_terms.html#core-network-components",
-    "href": "weeks/week-1/network_terms.html#core-network-components",
-    "title": "Network Analysis Glossary",
+    "objectID": "weeks/week-1/main.html#prepare",
+    "href": "weeks/week-1/main.html#prepare",
+    "title": "Week 1",
     "section": "",
-    "text": "A graph is a mathematical structure consisting of a set of objects (vertices) and a set of connections (edges) between pairs of these objects. In network analysis, graphs provide the fundamental framework for representing relationships and interactions between entities. Graphs can be directed (edges have direction) or undirected (edges have no inherent direction).\n\\[\nG = {v, e}\n\\]\nwhere\n\\[v = [v_1, v_2, ..., v_i, ... v_n]\\]\nand\n\\[e = [(v_1, v_2), (v_1, v_i), ..., (v_i, v_j), ..., (v_j, v_n)]\\]\n\n\n\nVertices (also called nodes) are the fundamental units or entities in a network. They represent the objects being studied, such as:\n\nPeople in social networks\nComputers in technological networks\nProteins in biological networks\nCities in transportation networks\n\nEach vertex can have attributes (e.g., age, location, type) that provide additional information about the entity it represents.\n\n\n\nEdges (also called links or ties) represent the connections or relationships between vertices. They encode the interactions, associations, or dependencies between entities in the network. Edges can have various properties:\n\nDirection (directed vs. undirected)\nWeight (strength of connection)\nType (multiple relationship types)\nTemporal information (when the connection exists)\n\n\n\n\nA network relationship defines the nature of connections between entities in a network. These relationships determine:\n\nWhat constitutes a connection (e.g., friendship, communication, transaction)\nHow connections are measured or identified\nWhether relationships are symmetric or asymmetric\nThe meaning and interpretation of network patterns"
+    "text": "Note\n\n\n\nIntroductory session, no preparation needed.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
   },
   {
-    "objectID": "weeks/week-1/network_terms.html#network-types",
-    "href": "weeks/week-1/network_terms.html#network-types",
-    "title": "Network Analysis Glossary",
-    "section": "Network Types",
-    "text": "Network Types\n\nOne-mode vs Two-mode Networks\n\nOne-mode Networks\nOne-mode networks (also called unipartite networks) contain only one type of vertex. All connections occur between vertices of the same type. Examples include:\n\nFriendship networks (people connected to people)\nCitation networks (papers citing papers)\nTrade networks (countries trading with countries)\n\nHere’s an example of creating a one-mode network visualization concerning a collaboration network among five co-workers:\n\n\n\n\n\nExample of a one-mode collaboration network showing connections between individuals\n\n\n\n\n\n\nDirected Vs Undirected Networks\nDirected networks (also called digraphs) have edges with a specific direction, indicating asymmetric relationships where the connection flows from one vertex to another. Examples include:\n\nEmail networks (sender → receiver)\nCitation networks (citing paper → cited paper)\n\nFood webs (predator → prey)\nTwitter follower networks (follower → followed)\n\nHere’s an example of a directed network:\n\n\n\n\n\nDirected Email Communication Network\n\n\n\n\nUndirected networks have edges without direction, representing symmetric relationships where connections are mutual. Examples include:\n\nFriendship networks (mutual friendships)\nCo-authorship networks (collaborations)\nInfrastructure networks (roads, power grids)\nProtein interaction networks\n\nThe choice between directed and undirected representation depends on whether the relationship being modeled is inherently asymmetric or symmetric.\n\n\nTwo-mode Networks\nTwo-mode networks (also called bipartite networks) contain two distinct types of vertices, and edges only connect vertices of different types. Examples include:\n\nActor-movie networks (actors connected to movies they appear in)\nAuthor-paper networks (authors connected to papers they wrote)\nCustomer-product networks (customers connected to products they purchased)\n\nHere’s an example of a two-mode purchasing network:\n\n\n\n\n\nTwo-Mode Customer-Product Purchasing Network\n\n\n\n\n\n\n\nSigned Networks\nSigned networks are networks where edges carry positive or negative values, representing different types of relationships:\n\nPositive edges: friendship, alliance, cooperation\nNegative edges: animosity, conflict, competition\n\nSigned networks are particularly useful for studying:\n\nSocial balance theory\nCoalition formation\nConflict dynamics\nOpinion polarization\n\nHere’s an example of a signed social network like cooperative Vs. competitive ties among co-workers:\n\n\n\n\n\nSigned Social Network with Positive and Negative Relationships\n\n\n\n\n\n\nWeighted vs Unweighted Networks\n\nWeighted Networks\nWeighted networks have edges with numerical values (weights) representing the strength, frequency, or capacity of connections. Examples include:\n\nCommunication networks (number of messages exchanged)\nTransportation networks (traffic volume or distance)\nNeural networks (synaptic strength)\nFinancial networks (transaction amounts)\n\nHere’s an example of a weighted communication network:\n\n\n\n\n\nWeighted Communication Network (Edge Width = Message Volume)\n\n\n\n\n\n\nUnweighted Networks\nUnweighted networks (also called binary networks) have edges that simply indicate the presence or absence of a connection. All edges are treated equally, focusing on the topology rather than connection strength. These are simpler to analyze but may lose important information about relationship intensity."
+    "objectID": "weeks/week-1/main.html#participate",
+    "href": "weeks/week-1/main.html#participate",
+    "title": "Week 1",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\nLecture materials\n\n\n\n📊 Design Principles Presentation - Interactive slides covering visualization design principles and processes",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
   },
   {
-    "objectID": "weeks/week-1/network_terms.html#network-substructures",
-    "href": "weeks/week-1/network_terms.html#network-substructures",
-    "title": "Network Analysis Glossary",
-    "section": "Network Substructures",
-    "text": "Network Substructures\n\nDyads\nA dyad is the simplest possible network substructure, consisting of a pair of vertices and the possible edge(s) between them. In directed networks, dyads can be classified as:\n\nNull dyad: no connection in either direction\nAsymmetric dyad: connection in one direction only\nMutual/Reciprocal dyad: connections in both directions\n\nDyadic analysis examines pairwise relationships and forms the foundation for understanding reciprocity and basic network patterns.\nHere’s a visualization showing a dyad within a larger network:\n\n\n\n\n\nNetwork with Emphasized Dyad (Alice-Bob)\n\n\n\n\n\n\nTriads\nA triad consists of three vertices and the possible edges among them. Triads are fundamental for understanding:\n\nTransitivity (“friend of a friend” patterns)\nStructural balance\nClustering tendencies\nLocal network motifs\n\nHere’s a visualization showing a triad within a larger network:\n\n\n\n\n\nNetwork with Emphasized Triad (Alice-Bob-Charlie)\n\n\n\n\nWe will deal with these in weeks 4 and 5."
+    "objectID": "weeks/week-1/main.html#practice",
+    "href": "weeks/week-1/main.html#practice",
+    "title": "Week 1",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\nLaboratory session\n\n\n\n\nIntroduction to R/Python visualization environments:\nVersion control with Git",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
   },
   {
-    "objectID": "weeks/week-2/main.html",
-    "href": "weeks/week-2/main.html",
+    "objectID": "weeks/week-1/main.html#perform",
+    "href": "weeks/week-1/main.html#perform",
+    "title": "Week 1",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\nNote\n\n\n\nIntroductory session, no laboratory session.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-1/main.html#ponder",
+    "href": "weeks/week-1/main.html#ponder",
+    "title": "Week 1",
+    "section": "Ponder",
+    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section1)",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-1/main.html#footnotes",
+    "href": "weeks/week-1/main.html#footnotes",
+    "title": "Week 1",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nTeaching case studies will not be posted because of intellectual property rights.↩︎",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10/main.html",
+    "href": "weeks/week-10/main.html",
+    "title": "Week 10",
+    "section": "",
+    "text": "Materials Coming Soon\n\n\n\nContent for Week 10 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#participate",
+    "href": "weeks/week-2/main.html#participate",
     "title": "Week 2",
-    "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 2 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "section": "Participate",
+    "text": "Participate\nGrammar of Graphics and Visual Forms",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#practice",
+    "href": "weeks/week-2/main.html#practice",
+    "title": "Week 2",
+    "section": "Practice",
+    "text": "Practice",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#perform",
+    "href": "weeks/week-2/main.html#perform",
+    "title": "Week 2",
+    "section": "Perform",
+    "text": "Perform",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#ponder",
+    "href": "weeks/week-2/main.html#ponder",
+    "title": "Week 2",
+    "section": "Ponder",
+    "text": "Ponder",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -698,30 +1000,5 @@
       "Weekly materials",
       "Week 8"
     ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#footnotes",
-    "href": "weeks/week-1/main.html#footnotes",
-    "title": "Week 1",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nTeaching case studies will not be posted because of intellectual property rights.↩︎",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/dviz_communication_exc.html",
-    "href": "weeks/week-1/dviz_communication_exc.html",
-    "title": "Reflection excercise",
-    "section": "",
-    "text": "Consider the Harvard Business School case 9-118-107, “Data Visualization & Communication Excercise” and address the questions poresented at page 3.\n\n\nWrite a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
-  },
-  {
-    "objectID": "weeks/week-1/dviz_communication_exc.html#submission",
-    "href": "weeks/week-1/dviz_communication_exc.html#submission",
-    "title": "Reflection excercise",
-    "section": "",
-    "text": "Write a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
   }
 ]

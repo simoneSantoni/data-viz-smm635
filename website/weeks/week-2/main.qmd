@@ -4,10 +4,16 @@ subtitle: "Design variables and the grammar of graphics"
 callout-appearance: default
 ---
 
-::: {.callout-note}
-## Materials Coming Soon
+## Prepare
 
-Content for Week 2 is currently being developed and will be available soon.
+## Participate
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
-:::
+[Grammar of Graphics and Visual Forms](gog_and_visual_forms.qmd)
+
+## Practice
+
+## Perform
+
+## Ponder
+
+

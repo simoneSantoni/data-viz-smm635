@@ -1,7 +1,7 @@
 name: smm635
 channels:
   - conda-forge
-dependencies:
+sependencies:
   - pip
   - jupyter
   - r-base
