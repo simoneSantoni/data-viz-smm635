@@ -1,0 +1,19 @@
+{
+  "hash": "cb9b1c8ffcf23268e4947fc611bde676",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Design Variables and the Grammar of Graphics\"\nsubtitle: \"SMM635 - Week 2\"\nauthor: \"Prof. Simone Santoni\"\ninstitute: \"Bayes Business School\"\nformat:\n  revealjs:\n    theme: [default, ../../theme.scss]\n    slide-number: true\n    chalkboard: true\n    preview-links: auto\n    logo: ../../imgs/module-icon-light.svg\n    footer: \"SMM635 - Data Visualization | Week 2\"\n    margin: 0.1\n    transition: slide\n    background-transition: fade\n    incremental: false\n    smaller: true\n    scrollable: true\n    css: presentation-styles.css\n---\n\n## Today's Journey\n\n:::: {.columns}\n::: {.column width=\"50%\"}\n**Part 1: Grammar of Graphics**\n\n- Framework & Philosophy\n- Core Components\n- Building Blocks\n:::\n\n::: {.column width=\"50%\"}\n**Part 2: Visual Forms**\n\n- Univariate Charts\n- Bivariate Charts  \n- Multivariate Charts\n:::\n::::\n\n---\n\n## Learning Objectives\n\nBy the end of today's session, you will:\n\n1. **Understand** the grammar of graphics framework\n2. **Map** data to visual variables effectively  \n3. **Build** complex visualizations from simple components\n4. **Implement** layered graphics approaches\n5. **Create** appropriate charts for different data types\n\n---\n\n## Part 1: Grammar of Graphics {background-color=\"#ffffff\"}\n\n### Moving Beyond Chart Types\n\n---\n\n## What is a Grammar? \n\n> \"Grammar makes language expressive. A language consisting of words and no grammar expresses only as many ideas as there are words.\" - Leland Wilkinson\n\n:::: {.columns}\n::: {.column width=\"50%\"}\n**Traditional Approach:**\n\n- Pie chart\n- Bar chart\n- Line chart\n- Scatter plot\n:::\n\n::: {.column width=\"50%\"}\n**Grammar Approach:**\n- Data\n- Aesthetics\n- Geometries\n- Scales\n- Coordinates\n:::\n::::\n\n---\n## The Power of Grammar\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nggplot(data) +\n  geom_bar() +\n  coord_polar()  # Bar chart → Pie chart!\n```\n:::\n\n\n## The Power of Grammar\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Traditional thinking\nmake_pie_chart(data)\nmake_bar_chart(data)\n\n# Grammar thinking\nggplot(data) +\n  geom_bar() +\n  coord_polar()  # Bar chart → Pie chart!\n```\n:::\n\n::: {.callout-note}\nA pie chart is just a stacked bar chart in polar coordinates! 🤯\n:::\n\n---\n\n## Core Components of the Grammar\n\n::: {.incremental}\n1. **DATA**: What we want to visualize\n2. **AESTHETICS**: How we map data to visual properties\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

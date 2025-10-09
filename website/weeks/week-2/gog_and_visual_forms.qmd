@@ -1,0 +1,1168 @@
+---
+title: "Design Variables and the Grammar of Graphics"
+subtitle: "SMM635 - Week 2"
+author: "Prof. Simone Santoni"
+institute: "Bayes Business School"
+format:
+  revealjs:
+    theme: [default, ../../theme.scss]
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: ../../imgs/module-icon-light.svg
+    footer: "SMM635 - Data Visualization | Week 2"
+    margin: 0.1
+    transition: slide
+    background-transition: fade
+    incremental: false
+    smaller: true
+    scrollable: true
+    css: presentation-styles.css
+---
+
+## Today's Journey
+
+:::: {.columns}
+::: {.column width="50%"}
+**Part 1: Grammar of Graphics**
+
+- Framework & Philosophy
+- Core Components
+- Building Blocks
+:::
+
+::: {.column width="50%"}
+**Part 2: Visual Forms**
+
+- Univariate Charts
+- Bivariate Charts  
+- Multivariate Charts
+:::
+::::
+
+---
+
+## Learning Objectives
+
+By the end of today's session, you will:
+
+1. **Understand** the grammar of graphics framework
+2. **Map** data to visual variables effectively  
+3. **Build** complex visualizations from simple components
+4. **Implement** layered graphics approaches
+5. **Create** appropriate charts for different data types
+
+---
+
+## Part 1: Grammar of Graphics {background-color="#ffffff"}
+
+### Moving Beyond Chart Types
+
+---
+
+## How Do We Describe a Chart? {.center}
+
+---
+
+## How Do We Describe a Chart?
+
+:::: {.columns}
+::: {.column width="50%"}
+**Traditional Approach:**
+
+- Pie chart
+- Bar chart
+- Line chart
+- Scatter plot
+
+::: {.callout-note}
+**We can use labels or conceptual categories**
+:::
+
+:::
+
+::: {.column width="50%"}
+**Grammar Approach:**
+
+- Data
+- Aesthetics
+- Geometries
+- Scales
+- Coordinates
+
+::: {.callout-note}
+**We can refer to a chart's constitutive components**
+:::
+
+:::
+::::
+
+---
+
+## What is Grammar of Graphics (GoG)?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+> "Grammar makes language expressive. A language consisting of words and no grammar expresses only as many ideas as there are words." - Leland Wilkinson
+:::
+
+::: {.column width="50%"}
+![](imgs/gog.jpeg){width=300}
+:::
+
+::::
+
+---
+
+## What's the Connection between GoG and ggplot2? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- **ggplot2** is an implementation of the Grammar of Graphics in R
+- Created by Hadley Wickham based on Leland Wilkinson's framework
+- The "gg" in ggplot2 stands for "Grammar of Graphics"
+- Allows users to build plots **layer by layer** using the grammar components
+- Instead of choosing from pre-made chart types, you **compose** visualizations from fundamental building blocks
+
+:::
+
+::: {.column width="40%"}
+![](imgs/ggplot2.jpeg){width=300}
+:::
+
+::::
+
+---
+
+## The Power of GoG
+
+```{r}
+#| echo: true
+#| eval: false
+# Traditional thinking
+make_pie_chart(data)
+make_bar_chart(data)
+
+# Grammar thinking
+ggplot(data) +
+  geom_bar() +
+  coord_polar()  # Bar chart → Pie chart!
+```
+::: {.callout-important}
+A pie chart is just a stacked bar chart in polar coordinates! 🤯
+:::
+
+---
+
+## A Bar Chart
+
+```{r}
+#| echo: false
+#| eval: true
+
+library(ggplot2)
+theme_set(theme_minimal(base_size = 24))
+```
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 5
+
+library(ggplot2)
+
+# Create data with five categories
+data <- data.frame(
+  category = c("A", "B", "C", "D", "E"),
+  value = c(23, 45, 31, 52, 38)
+)
+
+# Create bar chart
+ggplot(data, aes(x = category, y = value)) +
+  geom_bar(stat = "identity")
+```
+---
+
+## Pie Chart = Bar Chart + Polar Coordinates
+
+```{r}
+#| echo: false
+#| eval: true
+
+library(ggplot2)
+theme_set(theme_minimal(base_size = 24))
+```
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 5
+
+library(ggplot2)
+
+# Create data with five categories
+data <- data.frame(
+  category = c("A", "B", "C", "D", "E"),
+  value = c(23, 45, 31, 52, 38)
+)
+
+# Create bar chart
+ggplot(data, aes(x = "", y = value, fill = category)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y", start = 0) +
+  theme_void(base_size = 32)
+```
+---
+
+## Core Components of the GoG
+:::: {.columns}
+
+::: {.column}
+
+1. **DATA**: What we want to visualize
+2. **AESTHETICS**: How we map data to visual properties
+3. **GEOMETRIES**: The visual marks we use
+4. **FACETS**: Creating small multiples
+5. **STATISTICS**: How to transform or summarize the raw data
+6. **COORDINATES**: The space we're working in
+7. **THEMES**: Overall visual appearance
+
+:::
+
+::: {.column}
+![](imgs/gog_layers.jpg)
+*Source:* https://r.qcbs.ca/
+:::
+
+::::
+
+---
+
+## 1. Data: The Foundation
+
+:::: {.columns}
+
+::: {.column}
+
+```{r}
+#| echo: true
+#| eval: false
+# Data is structured information
+sales_data <- data.frame(
+  month = c("Jan", "Feb", "Mar", "Apr"),
+  revenue = c(45000, 52000, 48000, 61000),
+  region = c("North", "North", "South", "South")
+)
+```
+::: {.callout-tip}
+Good visualization starts with well-structured data
+
+**Tidyverse** is your friend!
+:::
+
+:::
+
+::: {.column}
+![](imgs/tidyr.png)
+:::
+
+::::
+
+---
+
+## 2. Aesthetics: Visual Mappings
+
+### Mapping Data → Visual Properties {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+::: {.callout-note icon=false}
+## Data Variables
+
+- Continuous values
+- Categories
+- Ordered factors
+- Time series
+:::
+
+```{r}
+#| echo: false
+#| eval: true
+
+library(knitr)
+
+sample_data <- data.frame(
+  date = as.Date(c("2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01")),
+  region = c("North", "South", "East", "West"),
+  sales = c(1250.50, 980.75, 1450.25, 1100.00),
+  profit = c(325.15, 245.20, 410.75, 290.50)
+)
+kable(sample_data)
+```
+
+
+:::
+
+::: {.column width="50%"}
+
+::: {.callout-tip icon=false}
+## Visual Variables
+
+- Position (x, y)
+- Size
+- Color
+- Shape
+- Transparency
+- Line type
+:::
+
+:::
+::::
+
+---
+
+## Visual Variables in Action
+
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 10
+#| fig-height: 6
+#| fig-cap: "Sales by Date, Region, and Profit"
+
+ggplot(sample_data, aes(
+  x = date,        # Position
+  y = sales,       # Position
+  color = region,  # Color
+  size = profit    # Size
+)) +
+  geom_point()
+```
+
+---
+
+## 3. Geometries: Visual Marks
+
+::: {.panel-tabset}
+
+### Points
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 5
+
+ggplot(sample_data, aes(x = date, y = sales)) +
+  geom_point()
+```
+Best for: Scatter plots, distributions
+
+### Lines
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 5
+
+ggplot(sample_data, aes(x = date, y = sales)) +
+  geom_line()
+```
+Best for: Trends, time series
+
+### Bars
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 5
+
+ggplot(sample_data, aes(x = region, y = sales)) +
+  geom_bar(stat = "identity")
+```
+Best for: Comparisons, counts
+
+### Areas
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 5
+
+ggplot(sample_data, aes(x = date, y = sales)) +
+  geom_area()
+```
+Best for: Proportions over time
+
+:::
+
+---
+
+## 4. Facets: Small Multiples
+
+::: {.panel-tabset}
+
+### No Facets
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 3.5
+
+ggplot(sample_data, aes(x = date, y = sales, color = region)) +
+  geom_point()
+```
+::: {.callout-note}
+
+All data in a single plot
+
+:::
+
+### Facet Wrap
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 5
+
+ggplot(sample_data, aes(x = date, y = sales)) +
+  geom_point() +
+  facet_wrap(~region)
+```
+
+::: {.callout-note}
+
+Creates separate panels for each region
+
+:::
+
+### Facet with Free Scales
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 5
+
+ggplot(sample_data, aes(x = date, y = profit)) +
+  geom_point() +
+  facet_wrap(~region, scales = "free_y")
+```
+
+::: {.callout-note}
+
+Independent y-axis scales per facet
+
+:::
+
+:::
+
+---
+
+## 5. Statistics: Transforming Data
+
+::: {.panel-tabset}
+
+### Raw Data
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 3
+
+ggplot(sample_data, aes(x = date, y = sales)) +
+  geom_point()
+```
+::: {.callout-note}
+
+No statistical transformation
+
+:::
+
+### Smooth Trend
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 3
+
+ggplot(sample_data, aes(x = date, y = sales)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+::: {.callout-note}
+
+Adds linear regression line with confidence interval
+
+:::
+
+### Summary Statistics
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 3
+
+ggplot(sample_data, aes(x = region, y = sales)) +
+  geom_point() +
+  stat_summary(fun = mean, geom = "point")
+```
+::: {.callout-note}
+
+Calculates and displays mean values
+
+:::
+
+:::
+
+---
+
+## 6. Coordinates: The Canvas
+
+::: {.panel-tabset}
+
+### Cartesian (default)
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 3.5
+
+ggplot(sample_data, aes(x = region, y = sales)) +
+  geom_bar(stat = "identity") +
+  coord_cartesian()
+```
+::: {.callout-note}
+
+The standard x-y coordinate system
+
+:::
+
+### Flipped
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 3.5
+
+ggplot(sample_data, aes(x = region, y = sales)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+```
+
+::: {.callout-note}
+
+Swaps x and y axes for horizontal bars
+
+:::
+
+### Polar
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 3.5
+
+ggplot(sample_data, aes(x = "", y = sales, fill = region)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y")
+```
+::: {.callout-note}
+
+Transforms to polar coordinates (e.g., pie charts)
+
+:::
+
+:::
+
+---
+
+## 7. Themes: Overall Visual Appearance
+
+::: {.panel-tabset}
+
+### theme_minimal()
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 3.5
+
+ggplot(sample_data, aes(x = date, y = sales, color = region)) +
+  geom_point() +
+  theme_minimal()
+```
+::: {.callout-note}
+
+Clean, minimal design
+
+:::
+
+### theme_bw()
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 2.5
+
+ggplot(sample_data, aes(x = date, y = sales, color = region)) +
+  geom_point() +
+  theme_bw()
+```
+::: {.callout-note}
+
+Black and white with borders
+
+:::
+
+### theme_classic()
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 2.5
+
+ggplot(sample_data, aes(x = date, y = sales, color = region)) +
+  geom_point() +
+  theme_classic()
+```
+::: {.callout-note}
+
+Classic look with axis lines only
+
+:::
+
+### Custom Theme
+```{r}
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 2.5
+
+ggplot(sample_data, aes(x = date, y = sales, color = region)) +
+  geom_point() +
+  theme_minimal() +
+  theme(panel.grid.major = element_line(color = "gray80"),
+        panel.grid.minor = element_blank(),
+        legend.position = "bottom")
+```
+::: {.callout-note}
+
+Customized theme elements
+
+:::
+
+:::
+
+---
+
+## Building Complex from Simple {.smaller}
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+**Part 1: Foundation**
+
+```{mermaid}
+%%| echo: false
+flowchart TD
+    START((" ")) --> A["DATA"] --> B["AESTHETICS"] --> C["GEOMETRY"]
+
+    style START fill:#90EE90,stroke:#333,stroke-width:1px
+    style A fill:#e1f5ff
+    style B fill:#e1f5ff
+    style C fill:#e1f5ff
+```
+:::
+
+::: {.column width="30%"}
+
+**Part 2: Refinement**
+
+```{mermaid}
+%%| echo: false
+flowchart TD
+    D["FACETS"] --> E["STATISTICS"] --> F["COORDINATES"] --> G["THEME"] --> END((" "))
+
+    style D fill:#e1f5ff
+    style E fill:#e1f5ff
+    style F fill:#e1f5ff
+    style G fill:#e1f5ff
+    style END fill:#FF6B6B,stroke:#333,stroke-width:1px
+```
+:::
+
+::: {.column width="40%"}
+
+**Example: Layer by Layer**
+
+```{r}
+#| echo: true
+#| eval: false
+
+# 1. Data + Aesthetics
+ggplot(data, aes(x, y)) +
+
+  # 2. Geometry
+  geom_point() +
+
+  # 3. Facets
+  facet_wrap(~category) +
+
+  # 4. Statistics
+  geom_smooth() +
+
+  # 5. Coordinates
+  coord_cartesian() +
+
+  # 6. Theme
+  theme_minimal()
+```
+
+:::
+
+::::
+
+---
+
+## Layering: The Power of Composition
+
+```{r}
+#| echo: true
+#| eval: true
+ggplot(economics, aes(date, unemploy)) +
+  geom_area(alpha = 0.3) +           # Layer 1: Area
+  geom_line(size = 1.2) +            # Layer 2: Line
+  geom_smooth(se = FALSE, col = "red") # Layer 3: Trend
+```
+
+::: {.callout-note}
+
+Each layer adds information without obscuring previous layers
+
+:::
+
+---
+
+## Part 2: Visual Forms {background-color="#ffffff"}
+
+### From Simple to Complex
+
+---
+
+## Univariate Charts
+
+### Exploring Single Variables
+
+:::: {.columns}
+::: {.column width="50%"}
+
+::: {.callout-note icon=false}
+## Continuous Data
+
+- Histograms
+- Density plots
+- Box plots
+- Violin plots
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.callout-tip icon=false}
+## Categorical Data
+
+- Bar charts
+- Pie charts
+- Waffle charts
+- Dot plots
+:::
+
+:::
+::::
+
+---
+
+## Univariate: Continuous Data
+
+::: {.panel-tabset}
+
+### Histogram
+```{r}
+#| eval: false
+ggplot(data, aes(x = value)) +
+  geom_histogram(bins = 30)
+```
+
+**Histograms** divide data into bins and count observations in each bin.
+
+- **Best for:** Understanding the distribution shape and identifying patterns
+- **Shows:** Frequency, central tendency, spread, and skewness
+- **Key parameter:** Number of bins affects granularity
+
+### Density
+```{r}
+#| eval: false
+ggplot(data, aes(x = value)) +
+  geom_density(fill = "skyblue", alpha = 0.5)
+```
+
+**Density plots** show a smoothed version of the distribution.
+
+- **Best for:** Comparing multiple distributions, identifying modes
+- **Shows:** Probability density across the range of values
+- **Advantage:** Smooth curve makes patterns easier to see
+
+### Box Plot
+```{r}
+#| eval: false
+ggplot(data, aes(y = value)) +
+  geom_boxplot()
+```
+
+**Box plots** display the five-number summary: min, Q1, median, Q3, max.
+
+- **Best for:** Identifying outliers and comparing distributions
+- **Shows:** Central tendency, spread, and asymmetry
+- **Key insight:** Box contains middle 50% of data
+
+:::
+
+---
+
+## Univariate: Categorical Data
+
+::: {.panel-tabset}
+
+### Bar Chart
+```{r}
+#| eval: false
+ggplot(data, aes(x = category)) +
+  geom_bar()
+```
+
+**Bar charts** use bar length to encode category counts or values.
+
+- **Best for:** Comparing categories, showing rankings
+- **Shows:** Frequency or magnitude for each category
+- **Advantage:** Easy to compare values, natural visual ordering
+
+### Pie Chart
+```{r}
+#| eval: false
+ggplot(data, aes(x = "", fill = category)) +
+  geom_bar() +
+  coord_polar("y")
+```
+
+**Pie charts** show parts of a whole as slices of a circle.
+
+- **Best for:** Showing proportions when there are few categories (2-5)
+- **Shows:** Relative proportions and percentages
+- **Limitation:** Difficult to compare similar-sized slices
+
+### Cleveland Dot Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = value, y = category)) +
+  geom_point()
+```
+
+**Cleveland dot plots** use position to encode values with minimal ink.
+
+- **Best for:** Precise value comparisons, when space is limited
+- **Shows:** Exact values for each category
+- **Advantage:** More accurate than bars, less cluttered
+
+:::
+
+---
+
+## Bivariate Charts
+
+### Exploring Relationships Between Two Variables
+
+| X Variable   | Y Variable   | Best Chart Types         |
+| ------------ | ------------ | ------------------       |
+| Continuous   | Continuous   | Scatter plot, Line chart |
+| Continuous   | Categorical  | Box plot, Violin plot    |
+| Categorical  | Categorical  | Heatmap, Grouped bars    |
+| Time         | Continuous   | Line chart, Area chart   |
+
+---
+
+## Bivariate: Continuous × Continuous
+
+::: {.panel-tabset}
+
+### Scatter Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = height, y = weight)) +
+  geom_point()
+```
+
+**Scatter plots** display individual data points in 2D space.
+
+- **Best for:** Exploring relationships, identifying correlations, spotting outliers
+- **Shows:** Direction, strength, and form of relationship between two variables
+- **Key insight:** Patterns reveal linear, non-linear, or no correlation
+
+### With Trend
+```{r}
+#| eval: false
+ggplot(data, aes(x = height, y = weight)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+**Scatter plot with trend line** adds a fitted model to show the relationship.
+
+- **Best for:** Confirming correlation patterns, making predictions
+- **Shows:** Overall trend and strength of linear relationship
+- **Options:** Linear (lm), loess (local smoothing), or other methods
+
+### 2D Density
+```{r}
+#| eval: false
+ggplot(data, aes(x = height, y = weight)) +
+  geom_density_2d_filled()
+```
+
+**2D density plots** show concentration of points as contours or filled regions.
+
+- **Best for:** Large datasets where overplotting obscures patterns
+- **Shows:** Areas of high and low data concentration
+- **Advantage:** Reveals patterns in dense data clouds
+
+:::
+
+---
+
+## Bivariate: Categorical × Continuous
+
+::: {.panel-tabset}
+
+### Grouped Box Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = category, y = value)) +
+  geom_boxplot()
+```
+
+**Grouped box plots** compare distributions across multiple categories.
+
+- **Best for:** Comparing central tendency and spread across groups
+- **Shows:** Median, quartiles, and outliers for each category
+- **Advantage:** Compact representation of multiple distributions side-by-side
+
+### Violin Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = category, y = value)) +
+  geom_violin()
+```
+
+**Violin plots** combine box plots with kernel density estimation.
+
+- **Best for:** Revealing distribution shapes and multimodality
+- **Shows:** Full distribution shape for each category
+- **Advantage:** More informative than box plots for complex distributions
+
+### Strip Chart
+```{r}
+#| eval: false
+ggplot(data, aes(x = category, y = value)) +
+  geom_jitter(width = 0.2)
+```
+
+**Strip charts (jittered)** show all individual data points.
+
+- **Best for:** Small to medium datasets, showing actual observations
+- **Shows:** Individual values and sample size per category
+- **Advantage:** Transparency - shows the actual data, not summaries
+
+:::
+
+---
+
+## Multivariate Charts
+
+### Beyond Two Dimensions
+
+Strategies for encoding multiple variables:
+
+1. **Color/Fill**: 3rd dimension
+2. **Size**: 4th dimension  
+3. **Shape**: 5th dimension (categorical only)
+4. **Faceting**: Create small multiples
+5. **Animation**: Time as dimension
+
+---
+
+## Multivariate Example: The Economics Dataset
+
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+
+# Preview the economics dataset from ggplot2
+library(ggplot2)
+library(knitr)
+
+# Show first 6 rows
+kable(head(economics), caption = "US Economic Time Series Data (1967-2015)")
+```
+---
+
+## Multivariate Example: The Economics Dataset
+
+::: {.callout-note}
+**Dataset Variables:**
+
+- **date**: Month of data collection
+- **pce**: Personal consumption expenditures (billions USD)
+- **pop**: Total population (thousands)
+- **psavert**: Personal savings rate (%)
+- **uempmed**: Median duration of unemployment (weeks)
+- **unemploy**: Number of unemployed (thousands)
+:::
+
+---
+
+## Multivariate Example
+
+```{r}
+#| echo: true
+#| eval: true
+# 5 variables in one plot!
+library(dplyr)
+
+# Create decade variable for grouping
+economics_extended <- economics %>%
+  mutate(decade = paste0(floor(as.numeric(format(date, "%Y")) / 10) * 10, "s"))
+
+ggplot(economics_extended,
+       aes(x = date,           # Variable 1
+           y = unemploy,       # Variable 2
+           color = psavert,    # Variable 3
+           size = pop)) +      # Variable 4
+  geom_point(alpha = 0.7) +
+  facet_wrap(~decade) +       # Variable 5
+  scale_color_viridis_c() +
+  labs(color = "Savings Rate (%)",
+       size = "Population (1000s)")
+```
+
+---
+
+## Multivariate Example
+
+```{r}
+#| echo: false
+#| eval: true
+# 5 variables in one plot!
+library(dplyr)
+
+# Create decade variable for grouping
+economics_extended <- economics %>%
+  mutate(decade = paste0(floor(as.numeric(format(date, "%Y")) / 10) * 10, "s"))
+
+ggplot(economics_extended,
+       aes(x = date,           # Variable 1
+           y = unemploy,       # Variable 2
+           color = psavert,    # Variable 3
+           size = pop)) +      # Variable 4
+  geom_point(alpha = 0.7) +
+  facet_wrap(~decade) +       # Variable 5
+  scale_color_viridis_c() +
+  labs(color = "Savings Rate (%)",
+       size = "Population (1000s)")
+```
+
+---
+
+## Best Practices for Multivariate
+
+::: {.incremental}
+1. **Start simple**: Add dimensions gradually
+2. **Prioritize**: Most important variables get best encodings
+3. **Test perception**: Can viewers decode all dimensions?
+4. **Consider alternatives**: Sometimes multiple simple charts > one complex chart
+5. **Interactive solutions**: Tooltips, filtering, zooming
+:::
+
+---
+
+## Putting It All Together
+
+### A Practical Workflow
+
+::: {.callout-tip}
+
+1. **Understand your data**
+   - Types of variables
+   - Relationships to explore
+
+2. **Choose appropriate forms**
+   - Match chart to data type
+   - Consider your message
+
+3. **Apply the grammar**
+   - Map variables to aesthetics
+   - Layer geometries
+   - Refine with scales
+
+:::
+
+---
+
+## Key Takeaways
+
+::: {.incremental}
+- 📊 The Grammar of Graphics provides a **systematic framework** for creating any visualization
+
+- 🔧 Complex visualizations are built from **simple, reusable components**
+
+- 🎨 Visual variables (position, size, color, etc.) are tools for **encoding information**
+
+- 📈 Choose chart types based on **data types and relationships**
+
+- 🔄 Iteration and layering lead to **rich, informative graphics**
+:::
+
+---
+
+## Next Week
+
+### Topic 3: Exploratory Data Analysis
+
+- EDA workflow and visualization
+- Distribution visualization techniques  
+- Correlation and relationship exploration
+- Time series exploration
+- Case Study: Nomis Solutions
+
+### Homework
+- Practice creating layered visualizations
+- Experiment with different coordinate systems
+- Read: Wickham's "Layered Grammar of Graphics"
+
+---
+
+## Questions? {background-color="#d7dde0"}
+
+### Let's explore the grammar together!
+
+📧 [Simone.Santoni.1@city.ac.uk](mailto:Simone.Santoni.1@city.ac.uk)
+
+🌐 Course website: [https://simonesantoni.github.io/data-viz-smm635](https://simonesantoni.github.io/data-viz-smm635)
+
+💬 Office hours: Wednesdays 3-5 PM

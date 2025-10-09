@@ -1,0 +1,572 @@
+---
+title: "Design Variables and the Grammar of Graphics"
+subtitle: "Week 2: Building Visual Language"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    chalkboard: true
+---
+
+## Today's Journey {.center}
+
+:::: {.columns}
+::: {.column width="50%"}
+**Part 1: Grammar of Graphics**
+
+- Framework & Philosophy
+- Core Components
+- Building Blocks
+:::
+
+::: {.column width="50%"}
+**Part 2: Visual Forms**
+
+- Univariate Charts
+- Bivariate Charts  
+- Multivariate Charts
+:::
+::::
+
+---
+
+## Learning Objectives
+
+By the end of today's session, you will:
+
+1. **Understand** the grammar of graphics framework
+2. **Map** data to visual variables effectively  
+3. **Build** complex visualizations from simple components
+4. **Implement** layered graphics approaches
+5. **Create** appropriate charts for different data types
+
+---
+
+## Part 1: Grammar of Graphics {background-color="#2E86AB"}
+
+### Moving Beyond Chart Types
+
+---
+
+## What is a Grammar? 
+
+> "Grammar makes language expressive. A language consisting of words and no grammar expresses only as many ideas as there are words." - Leland Wilkinson
+
+:::: {.columns}
+::: {.column width="50%"}
+**Traditional Approach:**
+- Pie chart
+- Bar chart
+- Line chart
+- Scatter plot
+:::
+
+::: {.column width="50%"}
+**Grammar Approach:**
+- Data
+- Aesthetics
+- Geometries
+- Scales
+- Coordinates
+:::
+::::
+
+---
+
+## The Power of Grammar
+
+```{r}
+#| echo: true
+#| eval: false
+# Traditional thinking
+make_pie_chart(data)
+make_bar_chart(data)
+
+# Grammar thinking
+ggplot(data) +
+  geom_bar() +
+  coord_polar()  # Bar chart → Pie chart!
+```
+
+A pie chart is just a stacked bar chart in polar coordinates! 🤯
+
+---
+
+## Core Components of the Grammar
+
+::: {.incremental}
+1. **DATA**: What we want to visualize
+2. **AESTHETICS**: How we map data to visual properties
+3. **GEOMETRIES**: The visual marks we use
+4. **SCALES**: How we translate data to visual space
+5. **COORDINATES**: The space we're working in
+6. **FACETS**: Creating small multiples
+7. **THEMES**: Overall visual appearance
+:::
+
+---
+
+## 1. Data: The Foundation
+
+```{r}
+#| echo: true
+#| eval: false
+# Data is structured information
+sales_data <- data.frame(
+  month = c("Jan", "Feb", "Mar", "Apr"),
+  revenue = c(45000, 52000, 48000, 61000),
+  region = c("North", "North", "South", "South")
+)
+```
+
+::: {.callout-tip}
+Good visualization starts with well-structured data
+:::
+
+---
+
+## 2. Aesthetics: Visual Mappings
+
+### Mapping Data → Visual Properties
+
+:::: {.columns}
+::: {.column width="50%"}
+**Data Variables**
+- Continuous values
+- Categories
+- Ordered factors
+- Time series
+:::
+
+::: {.column width="50%"}
+**Visual Variables**
+- Position (x, y)
+- Size
+- Color
+- Shape
+- Transparency
+- Line type
+:::
+::::
+
+---
+
+## Visual Variables in Action
+
+```{r}
+#| echo: true
+#| eval: false
+ggplot(data, aes(
+  x = date,        # Position
+  y = sales,       # Position
+  color = region,  # Color
+  size = profit    # Size
+)) + 
+  geom_point()
+```
+
+![](images/visual-variables.png)
+
+---
+
+## 3. Geometries: Visual Marks
+
+::: {.panel-tabset}
+
+### Points
+```{r}
+#| eval: false
+geom_point()
+```
+Best for: Scatter plots, distributions
+
+### Lines
+```{r}
+#| eval: false
+geom_line()
+```
+Best for: Trends, time series
+
+### Bars
+```{r}
+#| eval: false
+geom_bar()
+```
+Best for: Comparisons, counts
+
+### Areas
+```{r}
+#| eval: false
+geom_area()
+```
+Best for: Proportions over time
+
+:::
+
+---
+
+## 4. Scales: Data to Visual Space
+
+Scales control how data values are mapped to visual values:
+
+```{r}
+#| echo: true
+#| eval: false
+# Linear scale (default)
+scale_y_continuous()
+
+# Log scale
+scale_y_log10()
+
+# Color scales
+scale_color_gradient(low = "blue", high = "red")
+scale_color_manual(values = c("#FF0000", "#0000FF"))
+```
+
+---
+
+## 5. Coordinates: The Canvas
+
+:::: {.columns}
+::: {.column width="50%"}
+**Cartesian** (default)
+```{r}
+#| eval: false
+coord_cartesian()
+coord_flip()
+```
+
+**Polar**
+```{r}
+#| eval: false
+coord_polar()
+```
+:::
+
+::: {.column width="50%"}
+**Geographic**
+```{r}
+#| eval: false
+coord_map()
+```
+
+**Transformed**
+```{r}
+#| eval: false
+coord_trans()
+```
+:::
+::::
+
+---
+
+## Building Complex from Simple
+
+::: {.incremental}
+1. Start with data
+2. Map to aesthetics
+3. Choose geometry
+4. Add layers
+5. Adjust scales
+6. Transform coordinates
+:::
+
+```{r}
+#| echo: true
+#| eval: false
+# Layer by layer construction
+p <- ggplot(data, aes(x, y))
+p <- p + geom_point()
+p <- p + geom_smooth()
+p <- p + facet_wrap(~category)
+```
+
+---
+
+## Layering: The Power of Composition
+
+```{r}
+#| echo: true
+#| eval: false
+ggplot(economics, aes(date, unemploy)) +
+  geom_area(alpha = 0.3) +           # Layer 1: Area
+  geom_line(size = 1.2) +            # Layer 2: Line
+  geom_smooth(se = FALSE, col = "red") # Layer 3: Trend
+```
+
+Each layer adds information without obscuring previous layers
+
+---
+
+## Part 2: Visual Forms {background-color="#A23B72"}
+
+### From Simple to Complex
+
+---
+
+## Univariate Charts
+
+### Exploring Single Variables
+
+:::: {.columns}
+::: {.column width="50%"}
+**Continuous Data**
+- Histograms
+- Density plots
+- Box plots
+- Violin plots
+:::
+
+::: {.column width="50%"}
+**Categorical Data**
+- Bar charts
+- Pie charts
+- Waffle charts
+- Dot plots
+:::
+::::
+
+---
+
+## Univariate: Continuous Data
+
+::: {.panel-tabset}
+
+### Histogram
+```{r}
+#| eval: false
+ggplot(data, aes(x = value)) +
+  geom_histogram(bins = 30)
+```
+Shows frequency distribution
+
+### Density
+```{r}
+#| eval: false
+ggplot(data, aes(x = value)) +
+  geom_density(fill = "skyblue", alpha = 0.5)
+```
+Shows smooth distribution
+
+### Box Plot
+```{r}
+#| eval: false
+ggplot(data, aes(y = value)) +
+  geom_boxplot()
+```
+Shows quartiles and outliers
+
+:::
+
+---
+
+## Univariate: Categorical Data
+
+::: {.panel-tabset}
+
+### Bar Chart
+```{r}
+#| eval: false
+ggplot(data, aes(x = category)) +
+  geom_bar()
+```
+Shows counts or proportions
+
+### Pie Chart
+```{r}
+#| eval: false
+ggplot(data, aes(x = "", fill = category)) +
+  geom_bar() +
+  coord_polar("y")
+```
+Shows parts of a whole
+
+### Cleveland Dot Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = value, y = category)) +
+  geom_point()
+```
+More accurate than bars
+
+:::
+
+---
+
+## Bivariate Charts
+
+### Exploring Relationships Between Two Variables
+
+| X Variable | Y Variable | Best Chart Types |
+|------------|------------|------------------|
+| Continuous | Continuous | Scatter plot, Line chart |
+| Continuous | Categorical | Box plot, Violin plot |
+| Categorical | Categorical | Heatmap, Grouped bars |
+| Time | Continuous | Line chart, Area chart |
+
+---
+
+## Bivariate: Continuous × Continuous
+
+::: {.panel-tabset}
+
+### Scatter Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = height, y = weight)) +
+  geom_point()
+```
+
+### With Trend
+```{r}
+#| eval: false
+ggplot(data, aes(x = height, y = weight)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+### 2D Density
+```{r}
+#| eval: false
+ggplot(data, aes(x = height, y = weight)) +
+  geom_density_2d_filled()
+```
+
+:::
+
+---
+
+## Bivariate: Categorical × Continuous
+
+::: {.panel-tabset}
+
+### Grouped Box Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = category, y = value)) +
+  geom_boxplot()
+```
+
+### Violin Plot
+```{r}
+#| eval: false
+ggplot(data, aes(x = category, y = value)) +
+  geom_violin()
+```
+
+### Strip Chart
+```{r}
+#| eval: false
+ggplot(data, aes(x = category, y = value)) +
+  geom_jitter(width = 0.2)
+```
+
+:::
+
+---
+
+## Multivariate Charts
+
+### Beyond Two Dimensions
+
+Strategies for encoding multiple variables:
+
+1. **Color/Fill**: 3rd dimension
+2. **Size**: 4th dimension  
+3. **Shape**: 5th dimension (categorical only)
+4. **Faceting**: Create small multiples
+5. **Animation**: Time as dimension
+
+---
+
+## Multivariate Example
+
+```{r}
+#| echo: true
+#| eval: false
+# 5 variables in one plot!
+ggplot(gapminder, 
+       aes(x = gdpPercap,      # Variable 1
+           y = lifeExp,        # Variable 2
+           color = continent,  # Variable 3
+           size = pop)) +      # Variable 4
+  geom_point(alpha = 0.7) +
+  facet_wrap(~year) +         # Variable 5
+  scale_x_log10()
+```
+
+---
+
+## Best Practices for Multivariate
+
+::: {.incremental}
+1. **Start simple**: Add dimensions gradually
+2. **Prioritize**: Most important variables get best encodings
+3. **Test perception**: Can viewers decode all dimensions?
+4. **Consider alternatives**: Sometimes multiple simple charts > one complex chart
+5. **Interactive solutions**: Tooltips, filtering, zooming
+:::
+
+---
+
+## Putting It All Together
+
+### A Practical Workflow
+
+1. **Understand your data**
+   - Types of variables
+   - Relationships to explore
+
+2. **Choose appropriate forms**
+   - Match chart to data type
+   - Consider your message
+
+3. **Apply the grammar**
+   - Map variables to aesthetics
+   - Layer geometries
+   - Refine with scales
+
+---
+
+## Key Takeaways
+
+::: {.incremental}
+- 📊 The Grammar of Graphics provides a **systematic framework** for creating any visualization
+
+- 🔧 Complex visualizations are built from **simple, reusable components**
+
+- 🎨 Visual variables (position, size, color, etc.) are tools for **encoding information**
+
+- 📈 Choose chart types based on **data types and relationships**
+
+- 🔄 Iteration and layering lead to **rich, informative graphics**
+:::
+
+---
+
+## Next Week
+
+### Topic 3: Exploratory Data Analysis
+
+- EDA workflow and visualization
+- Distribution visualization techniques  
+- Correlation and relationship exploration
+- Time series exploration
+- Case Study: Nomis Solutions
+
+### Homework
+- Practice creating layered visualizations
+- Experiment with different coordinate systems
+- Read: Wickham's "Layered Grammar of Graphics"
+
+---
+
+## Questions? {background-color="#F18F01"}
+
+### Let's explore the grammar together!
+
+📧 [instructor@university.edu](mailto:instructor@university.edu)
+
+🌐 Course website: [datavis2024.course.edu](https://datavis2024.course.edu)
+
+💬 Office hours: Wednesdays 2-4 PM
