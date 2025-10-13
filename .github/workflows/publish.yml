@@ -57,27 +57,25 @@ jobs:
           sed '/^  pdf:/,/^[[:space:]]*[^[:space:]]/d' course/syllabus.qmd.bak > course/syllabus.qmd
 
           # Remove Beamer format from presentations to skip PDF generation in CI
-          # Using Python for more reliable YAML manipulation
-          python3 << 'PYTHON_SCRIPT'
-import re
-import glob
+          python3 -c '
+          import re
+          import glob
 
-for pattern in ['weeks/week-*/design-principles-presentation.qmd', 'weeks/week-*/gog_and_visual_forms.qmd']:
-    for filepath in glob.glob(pattern):
-        with open(filepath, 'r') as f:
-            content = f.read()
+          for pattern in ["weeks/week-*/design-principles-presentation.qmd", "weeks/week-*/gog_and_visual_forms.qmd"]:
+              for filepath in glob.glob(pattern):
+                  with open(filepath, "r") as f:
+                      content = f.read()
 
-        # Backup
-        with open(filepath + '.bak', 'w') as f:
-            f.write(content)
+                  # Backup
+                  with open(filepath + ".bak", "w") as f:
+                      f.write(content)
 
-        # Remove beamer section: from '  beamer:' to the next top-level key or '---'
-        # Match beamer section with its indented properties
-        content = re.sub(r'^  beamer:.*?\n(?=^(?:\S|---))', '', content, flags=re.MULTILINE | re.DOTALL)
+                  # Remove beamer section
+                  content = re.sub(r"^  beamer:.*?\n(?=^(?:\S|---))", "", content, flags=re.MULTILINE | re.DOTALL)
 
-        with open(filepath, 'w') as f:
-            f.write(content)
-PYTHON_SCRIPT
+                  with open(filepath, "w") as f:
+                      f.write(content)
+          '
 
           # Render the site
           quarto render --no-execute
