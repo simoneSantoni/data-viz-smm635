@@ -18,6 +18,11 @@ format:
     smaller: true
     scrollable: true
     css: presentation-styles.css
+  beamer:
+    aspectratio: 169
+    navigation: horizontal
+    theme: default
+    colortheme: default
 ---
 
 ## Today's Journey
@@ -225,7 +230,7 @@ ggplot(data, aes(x = "", y = value, fill = category)) +
 :::
 
 ::: {.column}
-![](imgs/gog_layers.jpg)
+![](imgs/gog_layers.png)
 *Source:* https://r.qcbs.ca/
 :::
 

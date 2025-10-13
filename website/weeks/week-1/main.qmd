@@ -20,6 +20,8 @@ Introductory session, no preparation needed.
 
 📊 **[Design Principles Presentation](design-principles-presentation.html)** - Interactive slides covering visualization design principles and processes
 
+📄 **[Download PDF](design-principles-presentation.pdf)** - Printable version of the slides
+
 :::
 
 ## Practice
