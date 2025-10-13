@@ -1205,7 +1205,7 @@
     "href": "weeks/week-3/main.html#perform",
     "title": "Week 3",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Apply EDA techniques to explore datasets and identify patterns, outliers, and relationships\n✏️ Analyze the Nomis Solutions case study using visualization-driven exploration",
+    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Analyze the Nomis Solutions A and B case study using visualization-driven exploration (refer to the case studies section of SMM635’s Moodle page).",
     "crumbs": [
       "Weekly materials",
       "Week 3"
@@ -1216,10 +1216,94 @@
     "href": "weeks/week-3/main.html#ponder",
     "title": "Week 3",
     "section": "Ponder",
-    "text": "Ponder\nEssential Readings\nTukey, J. W. (1977). Exploratory Data Analysis, Chapters 1-2\nWickham, H., & Grolemund, G. (2017). R for Data Science, Chapter 7: Exploratory Data Analysis\nAdditional Resources\nPeng, R. D. (2016). Exploratory Data Analysis with R\nUnwin, A. (2015). Graphical Data Analysis with R, Chapters 1-3",
+    "text": "Ponder\nEssential Readings\nTukey, J. W. (1977). Exploratory Data Analysis. Pearson.\nWickham, H., & Grolemund, G. (2017). R for Data Science, Chapters 2, 3, 5, 7.\nPeng, R. D. (2016). Exploratory Data Analysis with R.",
     "crumbs": [
       "Weekly materials",
       "Week 3"
     ]
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html",
+    "href": "weeks/week-3/prepare.html",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "",
+    "text": "Exploratory Data Analysis (EDA) is a fundamental approach to analyzing datasets to summarize their main characteristics, often through visual methods. Pioneered by John Tukey in the 1970s, EDA emphasizes an open-minded, detective-like approach to data, prioritizing discovery over confirmation.\n\n\n\n\n\n\nKey Philosophy\n\n\n\n“Exploratory data analysis is detective work—numerical detective work—or counting detective work—or graphical detective work.” — John Tukey"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#introduction",
+    "href": "weeks/week-3/prepare.html#introduction",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "",
+    "text": "Exploratory Data Analysis (EDA) is a fundamental approach to analyzing datasets to summarize their main characteristics, often through visual methods. Pioneered by John Tukey in the 1970s, EDA emphasizes an open-minded, detective-like approach to data, prioritizing discovery over confirmation.\n\n\n\n\n\n\nKey Philosophy\n\n\n\n“Exploratory data analysis is detective work—numerical detective work—or counting detective work—or graphical detective work.” — John Tukey"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#nature-of-eda",
+    "href": "weeks/week-3/prepare.html#nature-of-eda",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Nature of EDA",
+    "text": "Nature of EDA\n\nWhat is EDA?\nEDA is an iterative cycle of:\n\nGenerating questions about your data\nSearching for answers through visualization, transformation, and modeling\nRefining questions based on discoveries\nGenerating new questions to deepen understanding\n\n\n\nFundamental Characteristics\nOpen-ended Investigation: Unlike confirmatory analysis, EDA doesn’t start with specific hypotheses. Instead, it embraces exploration to uncover unexpected patterns, anomalies, and relationships.\nVisual Emphasis: Graphics are central to EDA. The human visual system excels at pattern recognition, making visualization an essential tool for understanding data structure.\nFlexibility: EDA employs diverse techniques without rigid procedural constraints. Analysts adapt their approach based on data characteristics and emerging insights.\nIterative Process: EDA is cyclical, not linear. Each discovery informs the next investigation, creating a dynamic dialogue between analyst and data."
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#scope-of-eda",
+    "href": "weeks/week-3/prepare.html#scope-of-eda",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Scope of EDA",
+    "text": "Scope of EDA\n\nPrimary Domains\nEDA encompasses several interconnected analytical domains:\n\n1. Data Quality Assessment\n\nMissing values: Identify patterns in missingness\nOutliers and anomalies: Detect unusual observations\nData entry errors: Spot inconsistencies and typos\nMeasurement issues: Identify implausible values\n\n\n\n2. Distribution Analysis\n\nUnivariate distributions: Examine individual variable characteristics\nCentral tendency: Mean, median, mode\nSpread: Variance, standard deviation, range, IQR\nShape: Symmetry, skewness, kurtosis, modality\n\n\n\n3. Relationship Discovery\n\nBivariate relationships: Explore associations between pairs of variables\nCorrelation patterns: Identify linear and non-linear relationships\nConditional distributions: Examine how distributions vary across groups\nMultivariate structure: Investigate complex interdependencies\n\n\n\n4. Pattern Recognition\n\nClustering: Natural groupings in data\nTrends: Temporal or ordinal patterns\nSeasonality: Cyclical patterns\nStructural breaks: Shifts in data-generating processes"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#objectives-of-eda",
+    "href": "weeks/week-3/prepare.html#objectives-of-eda",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Objectives of EDA",
+    "text": "Objectives of EDA\n\n1. Understand Data Structure\nGoal: Develop comprehensive knowledge of dataset composition, variable types, dimensions, and overall organization.\nKey Questions:\n\nWhat variables are present?\nWhat data types characterize each variable?\nWhat is the observational unit?\nHow is the data organized?\n\n\n\n2. Assess Data Quality\nGoal: Identify and document data quality issues that may affect analysis validity.\nKey Questions:\n\nWhere are values missing?\nAre there outliers or extreme values?\nDo values fall within expected ranges?\nAre there inconsistencies or contradictions?\n\n\n\n3. Discover Patterns and Relationships\nGoal: Uncover interesting relationships, trends, and structures in the data.\nKey Questions:\n\nHow do variables relate to each other?\nAre there distinct subgroups?\nWhat are the dominant patterns?\nAre there unexpected associations?\n\n\n\n4. Generate Hypotheses\nGoal: Develop informed hypotheses for subsequent confirmatory analysis.\nKey Questions:\n\nWhat mechanisms might explain observed patterns?\nWhat relationships warrant formal testing?\nWhat predictive models might be appropriate?\n\n\n\n5. Inform Analysis Strategy\nGoal: Guide decisions about appropriate statistical methods, transformations, and modeling approaches.\nKey Questions:\n\nAre parametric assumptions met?\nAre transformations needed?\nWhich variables should be included in models?\nWhat modeling approaches are appropriate?"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#criticalities-and-challenges",
+    "href": "weeks/week-3/prepare.html#criticalities-and-challenges",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Criticalities and Challenges",
+    "text": "Criticalities and Challenges\n\nCritical Considerations\n\n1. Cognitive Biases\nConfirmation Bias: Tendency to seek patterns that confirm pre-existing beliefs while ignoring contradictory evidence.\nMitigation:\n\nActively seek disconfirming evidence\nConsider alternative explanations\nDocument unexpected findings\n\nApophenia: Seeing meaningful patterns in random data (Type I error in visual analysis).\nMitigation:\n\nValidate visual discoveries statistically\nConsider multiple comparisons problem\nUse cross-validation techniques\n\n\n\n2. Multiple Testing Problem\nWhen exploring many relationships simultaneously, spurious patterns emerge by chance.\nExample: Testing 100 independent relationships at α=0.05 yields ~5 false positives on average.\nMitigation:\n\nApply multiple testing corrections (Bonferroni, FDR)\nValidate findings on holdout data\nDistinguish exploratory from confirmatory phases\n\n\n\n3. Data Snooping and P-Hacking\nRisk: Using the same data for exploration and inference inflates false discovery rates.\nBest Practice:\n\nSplit data: exploration set and confirmation set\nPre-register confirmatory hypotheses\nReport exploratory analyses as hypothesis-generating\n\n\n\n4. Overplotting and Visualization Artifacts\nChallenge: Dense data creates overlapping points that obscure patterns.\nSolutions:\n\nAlpha transparency\nBinning and aggregation (hexbin plots)\nSampling for large datasets\nAlternative encodings (density plots)\n\n\n\n5. Dimensionality Challenges\nIssue: High-dimensional data makes comprehensive exploration difficult.\nApproaches:\n\nDimensionality reduction (PCA, t-SNE, UMAP)\nFeature selection\nFocusing on variable subsets\nParallel coordinates plots\n\n\n\n\nCommon Pitfalls\n\n\n\n\n\n\nAvoid These Mistakes\n\n\n\n\nSkipping EDA: Rushing to modeling without understanding data structure\nOver-interpreting noise: Treating random variation as meaningful patterns\nIgnoring context: Analyzing data without domain knowledge\nInadequate documentation: Failing to record exploration process and decisions\nCherry-picking: Reporting only interesting findings while ignoring the broader picture"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#examples-of-eda-in-practice",
+    "href": "weeks/week-3/prepare.html#examples-of-eda-in-practice",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Examples of EDA in Practice",
+    "text": "Examples of EDA in Practice\n\nExample 1: Understanding Customer Churn\nContext: A telecommunications company wants to understand customer attrition patterns.\nEDA Approach:\n\nData Quality:\n\nCheck for missing values in customer records\nIdentify outliers in usage metrics\nValidate temporal consistency\n\nDistribution Analysis:\n\nExamine tenure distributions for churned vs. retained customers\nCompare service usage patterns\nAnalyze demographic characteristics\n\nRelationship Discovery:\n\nContract type vs. churn rate\nService usage trends before churn\nCustomer support interactions and retention\n\nPattern Recognition:\n\nSeasonal churn patterns\nHigh-risk customer segments\nEarly warning indicators\n\n\nKey Insight: Customers on month-to-month contracts with high customer service call volumes and decreasing usage show elevated churn risk, informing targeted retention strategies.\n\n\nExample 2: Product Launch Performance\nContext: An e-commerce platform analyzes new product adoption.\nEDA Approach:\n\nSales Trajectory:\n\nPlot daily sales over launch period\nIdentify growth phases\nDetect promotional impacts\n\nGeographic Patterns:\n\nMap regional adoption rates\nCompare urban vs. rural uptake\nIdentify market penetration gaps\n\nCustomer Segments:\n\nAge demographic breakdown\nPurchase channel preferences\nCustomer lifetime value distributions\n\nCross-sell Opportunities:\n\nBasket analysis with new product\nComplementary product associations\nSequential purchase patterns\n\n\nKey Insight: Strong initial urban adoption with viral word-of-mouth effect, but rural markets require different marketing approaches due to distinct purchase behaviors.\n\n\nExample 3: Healthcare Outcomes Analysis\nContext: A hospital system examines patient readmission rates.\nEDA Approach:\n\nOutcome Distribution:\n\nReadmission rates by department\nTime-to-readmission patterns\nSeverity score distributions\n\nRisk Factor Exploration:\n\nComorbidity relationships\nSocioeconomic indicators\nTreatment protocol variations\n\nTemporal Patterns:\n\nDay-of-week effects\nSeasonal variations\nStaffing level correlations\n\nSubgroup Analysis:\n\nHigh-risk patient profiles\nProcedure-specific patterns\nProvider-level variation\n\n\nKey Insight: Weekend discharges show elevated readmission rates, particularly for patients with multiple comorbidities and limited follow-up care access, suggesting need for enhanced discharge protocols."
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#eda-workflow",
+    "href": "weeks/week-3/prepare.html#eda-workflow",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "EDA Workflow",
+    "text": "EDA Workflow\n\n\n\n\n\nflowchart TB\n    Start([Start]) --&gt; A[1 - Initial Data Inspection]\n    A --&gt; B[2 -  Data Quality Assessment]\n    B --&gt; C[3 -  Univariate Analysis]\n    C --&gt; D[4 -  Bivariate Analysis]\n    D --&gt; E[5 -  Multivariate Analysis]\n    E --&gt; F[6 -  Synthesis & Hypothesis]\n    F --&gt; Decision{New insights?}\n    Decision --&gt;|Yes| C\n    Decision --&gt;|No| End([End])\n\n\n\n\n\n\nStage Details:\n\nStage 1: Load data, examine structure, check dimensions and types, display first/last rows\nStage 2: Count missing values, identify duplicates and outliers, validate ranges and constraints\nStage 3: Plot distributions per variable, calculate summary statistics, identify patterns and anomalies\nStage 4: Create scatterplots and boxplots, calculate correlations, examine conditional distributions\nStage 5: Explore 3-way relationships, apply dimensionality reduction, build preliminary models\nStage 6: Document key findings, identify data limitations, formulate testable hypotheses, plan confirmatory analyses\n\n\nStage 1: Initial Data Inspection\n1. Load data and examine structure\n2. Check dimensions (rows, columns)\n3. Review variable types and names\n4. Display first/last rows\n5. Generate summary statistics\n\n\nStage 2: Data Quality Assessment\n1. Count missing values by variable\n2. Identify duplicate records\n3. Check value ranges and constraints\n4. Detect obvious outliers\n5. Validate categorical levels\n\n\nStage 3: Univariate Analysis\nFor each variable:\n1. Plot distribution (histogram, density, bar chart)\n2. Calculate summary statistics\n3. Identify outliers\n4. Assess normality (if relevant)\n5. Note interesting features\n\n\nStage 4: Bivariate Analysis\nFor key variable pairs:\n1. Create appropriate visualizations\n   - Scatterplots (numeric vs. numeric)\n   - Box plots (categorical vs. numeric)\n   - Grouped bar charts (categorical vs. categorical)\n2. Calculate correlation coefficients\n3. Examine conditional distributions\n4. Identify potential confounders\n\n\nStage 5: Multivariate Analysis\n1. Explore three-way relationships\n2. Use faceting and conditioning\n3. Apply dimensionality reduction\n4. Identify interaction effects\n5. Build preliminary models\n\n\nStage 6: Synthesis and Hypothesis Generation\n1. Document key findings\n2. Identify data limitations\n3. Formulate hypotheses for testing\n4. Plan confirmatory analyses\n5. Outline next steps"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#essential-eda-techniques",
+    "href": "weeks/week-3/prepare.html#essential-eda-techniques",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Essential EDA Techniques",
+    "text": "Essential EDA Techniques\n\nVisualization Methods\n\n\n\n\n\n\n\nVariable Types\nRecommended Visualizations\n\n\n\n\nSingle continuous\nHistogram, density plot, boxplot, violin plot\n\n\nSingle categorical\nBar chart, dot plot\n\n\nTwo continuous\nScatterplot, hexbin, contour plot, 2D density\n\n\nContinuous + categorical\nGrouped boxplots, violin plots, faceted histograms\n\n\nTwo categorical\nGrouped bar chart, mosaic plot, heatmap\n\n\nThree+ variables\nFaceting, small multiples, interactive plots, dimensionality reduction\n\n\nTime series\nLine plots, seasonal decomposition, autocorrelation plots\n\n\n\n\n\nStatistical Summaries\nMeasures of Central Tendency:\n\nMean: Sensitive to outliers\nMedian: Robust central value\nMode: Most frequent value\n\nMeasures of Spread:\n\nStandard deviation: Average distance from mean\nIQR: Middle 50% range, robust to outliers\nRange: Minimum to maximum\n\nMeasures of Shape:\n\nSkewness: Asymmetry direction\nKurtosis: Tail heaviness\nQuantiles: Distribution percentiles\n\nMeasures of Association:\n\nPearson correlation: Linear relationships\nSpearman correlation: Monotonic relationships\nCramér’s V: Categorical associations"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#best-practices",
+    "href": "weeks/week-3/prepare.html#best-practices",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Best Practices",
+    "text": "Best Practices\n\n\n\n\n\n\nEDA Best Practices\n\n\n\n\nStart Simple: Begin with univariate analysis before multivariate exploration\nVisualize First: Look at the data before calculating statistics\nQuestion Everything: Challenge assumptions and look for anomalies\nDocument Process: Record exploration steps, decisions, and discoveries\nIterate: Cycle between questions, visualization, and refinement\nValidate Findings: Check surprising results with alternative methods\nConsider Context: Integrate domain knowledge throughout exploration\nBe Systematic: Cover key aspects while remaining flexible\nCommunicate Findings: Share insights with stakeholders iteratively\nKnow When to Stop: Balance thoroughness with diminishing returns"
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#conclusion",
+    "href": "weeks/week-3/prepare.html#conclusion",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Conclusion",
+    "text": "Conclusion\nExploratory Data Analysis is not merely a preliminary step before “real” analysis—it is a critical discipline that shapes all subsequent analytical work. By systematically examining data structure, quality, distributions, and relationships, EDA reveals the stories hidden in data while exposing limitations and potential pitfalls.\nEffective EDA requires balancing structure with flexibility, skepticism with curiosity, and pattern recognition with statistical rigor. It is both art and science: the art of asking productive questions and the science of answering them systematically.\n\n\n\n\n\n\nRemember\n\n\n\nEDA is an iterative, thoughtful process of dialogue with data. It requires patience, curiosity, and critical thinking. The goal is not just to find patterns, but to understand them—and to know which patterns are worth pursuing."
+  },
+  {
+    "objectID": "weeks/week-3/prepare.html#further-reading",
+    "href": "weeks/week-3/prepare.html#further-reading",
+    "title": "Exploratory Data Analysis: Foundations and Practice",
+    "section": "Further Reading",
+    "text": "Further Reading\nFoundational Texts:\nTukey, J. W. (1977). Exploratory Data Analysis. Pearson.\nWickham, H., & Grolemund, G. (2017). R for Data Science, Chapters 2, 3, 5, 7.\nPeng, R. D. (2016). Exploratory Data Analysis with R.\nAdvanced Topics:\nUnwin, A. (2015). Graphical Data Analysis with R. CRC Press.\nWilkinson, L. (2005). The Grammar of Graphics (2nd ed.). Springer.\nHealy, K. (2018). Data Visualization: A Practical Introduction. Princeton University Press."
   }
 ]

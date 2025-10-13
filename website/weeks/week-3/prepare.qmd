@@ -78,6 +78,7 @@ EDA encompasses several interconnected analytical domains:
 **Goal**: Develop comprehensive knowledge of dataset composition, variable types, dimensions, and overall organization.
 
 **Key Questions**:
+
 - What variables are present?
 - What data types characterize each variable?
 - What is the observational unit?
@@ -88,6 +89,7 @@ EDA encompasses several interconnected analytical domains:
 **Goal**: Identify and document data quality issues that may affect analysis validity.
 
 **Key Questions**:
+
 - Where are values missing?
 - Are there outliers or extreme values?
 - Do values fall within expected ranges?
@@ -98,6 +100,7 @@ EDA encompasses several interconnected analytical domains:
 **Goal**: Uncover interesting relationships, trends, and structures in the data.
 
 **Key Questions**:
+
 - How do variables relate to each other?
 - Are there distinct subgroups?
 - What are the dominant patterns?
@@ -108,6 +111,7 @@ EDA encompasses several interconnected analytical domains:
 **Goal**: Develop informed hypotheses for subsequent confirmatory analysis.
 
 **Key Questions**:
+
 - What mechanisms might explain observed patterns?
 - What relationships warrant formal testing?
 - What predictive models might be appropriate?
@@ -117,6 +121,7 @@ EDA encompasses several interconnected analytical domains:
 **Goal**: Guide decisions about appropriate statistical methods, transformations, and modeling approaches.
 
 **Key Questions**:
+
 - Are parametric assumptions met?
 - Are transformations needed?
 - Which variables should be included in models?
@@ -131,6 +136,7 @@ EDA encompasses several interconnected analytical domains:
 **Confirmation Bias**: Tendency to seek patterns that confirm pre-existing beliefs while ignoring contradictory evidence.
 
 **Mitigation**:
+
 - Actively seek disconfirming evidence
 - Consider alternative explanations
 - Document unexpected findings
@@ -138,6 +144,7 @@ EDA encompasses several interconnected analytical domains:
 **Apophenia**: Seeing meaningful patterns in random data (Type I error in visual analysis).
 
 **Mitigation**:
+
 - Validate visual discoveries statistically
 - Consider multiple comparisons problem
 - Use cross-validation techniques
@@ -149,6 +156,7 @@ When exploring many relationships simultaneously, spurious patterns emerge by ch
 **Example**: Testing 100 independent relationships at α=0.05 yields ~5 false positives on average.
 
 **Mitigation**:
+
 - Apply multiple testing corrections (Bonferroni, FDR)
 - Validate findings on holdout data
 - Distinguish exploratory from confirmatory phases
@@ -158,6 +166,7 @@ When exploring many relationships simultaneously, spurious patterns emerge by ch
 **Risk**: Using the same data for exploration and inference inflates false discovery rates.
 
 **Best Practice**:
+
 - Split data: exploration set and confirmation set
 - Pre-register confirmatory hypotheses
 - Report exploratory analyses as hypothesis-generating
@@ -167,6 +176,7 @@ When exploring many relationships simultaneously, spurious patterns emerge by ch
 **Challenge**: Dense data creates overlapping points that obscure patterns.
 
 **Solutions**:
+
 - Alpha transparency
 - Binning and aggregation (hexbin plots)
 - Sampling for large datasets
@@ -177,6 +187,7 @@ When exploring many relationships simultaneously, spurious patterns emerge by ch
 **Issue**: High-dimensional data makes comprehensive exploration difficult.
 
 **Approaches**:
+
 - Dimensionality reduction (PCA, t-SNE, UMAP)
 - Feature selection
 - Focusing on variable subsets
@@ -203,6 +214,7 @@ When exploring many relationships simultaneously, spurious patterns emerge by ch
 **EDA Approach**:
 
 1. **Data Quality**:
+
    - Check for missing values in customer records
    - Identify outliers in usage metrics
    - Validate temporal consistency
@@ -281,6 +293,30 @@ When exploring many relationships simultaneously, spurious patterns emerge by ch
 **Key Insight**: Weekend discharges show elevated readmission rates, particularly for patients with multiple comorbidities and limited follow-up care access, suggesting need for enhanced discharge protocols.
 
 ## EDA Workflow
+
+```{mermaid}
+%%| echo: false
+flowchart TB
+    Start([Start]) --> A[1 - Initial Data Inspection]
+    A --> B[2 -  Data Quality Assessment]
+    B --> C[3 -  Univariate Analysis]
+    C --> D[4 -  Bivariate Analysis]
+    D --> E[5 -  Multivariate Analysis]
+    E --> F[6 -  Synthesis & Hypothesis]
+    F --> Decision{New insights?}
+    Decision -->|Yes| C
+    Decision -->|No| End([End])
+```
+
+**Stage Details:**
+
+- **Stage 1**: Load data, examine structure, check dimensions and types, display first/last rows
+- **Stage 2**: Count missing values, identify duplicates and outliers, validate ranges and constraints
+- **Stage 3**: Plot distributions per variable, calculate summary statistics, identify patterns and anomalies
+- **Stage 4**: Create scatterplots and boxplots, calculate correlations, examine conditional distributions
+- **Stage 5**: Explore 3-way relationships, apply dimensionality reduction, build preliminary models
+- **Stage 6**: Document key findings, identify data limitations, formulate testable hypotheses, plan confirmatory analyses
+
 
 ### Stage 1: Initial Data Inspection
 
@@ -363,21 +399,25 @@ For key variable pairs:
 ### Statistical Summaries
 
 **Measures of Central Tendency**:
+
 - Mean: Sensitive to outliers
 - Median: Robust central value
 - Mode: Most frequent value
 
 **Measures of Spread**:
+
 - Standard deviation: Average distance from mean
 - IQR: Middle 50% range, robust to outliers
 - Range: Minimum to maximum
 
 **Measures of Shape**:
+
 - Skewness: Asymmetry direction
 - Kurtosis: Tail heaviness
 - Quantiles: Distribution percentiles
 
 **Measures of Association**:
+
 - Pearson correlation: Linear relationships
 - Spearman correlation: Monotonic relationships
 - Cramér's V: Categorical associations
@@ -401,30 +441,19 @@ For key variable pairs:
 
 ## Conclusion
 
-Exploratory Data Analysis is not merely a preliminary step before "real" analysis—it is a critical discipline that shapes all subsequent analytical work. By systematically examining data structure, quality, distributions, and relationships, EDA reveals the stories hidden in data while exposing limitations and potential pitfalls.
+Exploratory Data Analysis is not merely a preliminary step before "real"
+analysis—it is a critical discipline that shapes all subsequent analytical
+work. By systematically examining data structure, quality, distributions, and
+relationships, EDA reveals the stories hidden in data while exposing
+limitations and potential pitfalls.
 
-Effective EDA requires balancing structure with flexibility, skepticism with curiosity, and pattern recognition with statistical rigor. It is both art and science: the art of asking productive questions and the science of answering them systematically.
+Effective EDA requires balancing structure with flexibility, skepticism with
+curiosity, and pattern recognition with statistical rigor. It is both art and
+science: the art of asking productive questions and the science of answering
+them systematically.
 
 ::: {.callout-important}
 ## Remember
 
 EDA is an iterative, thoughtful process of dialogue with data. It requires patience, curiosity, and critical thinking. The goal is not just to find patterns, but to understand them—and to know which patterns are worth pursuing.
 :::
-
-## Further Reading
-
-**Foundational Texts**:
-
-Tukey, J. W. (1977). *Exploratory Data Analysis*. Pearson.
-
-Wickham, H., & Grolemund, G. (2017). [*R for Data Science*](https://r4ds.had.co.nz/), Chapters 2, 3, 5, 7.
-
-Peng, R. D. (2016). [*Exploratory Data Analysis with R*](https://bookdown.org/rdpeng/exdata/).
-
-**Advanced Topics**:
-
-Unwin, A. (2015). *Graphical Data Analysis with R*. CRC Press.
-
-Wilkinson, L. (2005). *The Grammar of Graphics* (2nd ed.). Springer.
-
-Healy, K. (2018). [*Data Visualization: A Practical Introduction*](https://socviz.co/). Princeton University Press.
