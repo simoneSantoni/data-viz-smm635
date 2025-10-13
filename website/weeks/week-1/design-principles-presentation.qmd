@@ -45,7 +45,7 @@ format:
 
 ::: {.column width="50%"}
 **Example A: Technical Plot**
-![](images/plotly_scatter.png){width="100%"}
+![](images/plotly_scatter.png){width="90%"}
 
 ::: {.fragment}
 ✓ Shows data relationships  
@@ -56,7 +56,7 @@ format:
 
 ::: {.column width="50%"}
 **Example B: The Economist**
-![](images/economist_scatter.png){width="100%"}
+![](images/economist_scatter.png){width="90%"}
 
 ::: {.fragment}
 ✓ Clean, focused design  
@@ -89,7 +89,7 @@ Excellent visualizations should:
 :::
 
 ::: {.column width="25%"}
-![Edward Tufte](images/edward-tufte.jpeg){width="100%"}
+![Edward Tufte](images/edward-tufte.jpeg){width="90%"}
 :::
 ::::
 
@@ -121,7 +121,7 @@ Excellent visualizations should:
 
 ## The Design Process Framework
 
-![](images/cairo_model.png){fig-align="center" width="100%" height="80vh"}
+![](images/cairo_model.png){fig-align="center" width="90%"}
 
 ::: {.fragment}
 *Source: Cairo, A. (2012). The Functional Art*
@@ -135,14 +135,14 @@ Excellent visualizations should:
 
 ::: {.column width="50%"}
 **Traditional Approach**
-![](images/trad_scatter.png){width="100%"}
+![](images/trad_scatter.png){width="90%"}
 
 Heavy gridlines, excessive decoration
 :::
 
 ::: {.column width="50%"}
 **Tufte's Approach**
-![](images/tufte_scatter.png){width="100%"}
+![](images/tufte_scatter.png){width="90%"}
 
 ::: {.fragment}
 Minimalist, data-focused design
@@ -159,7 +159,7 @@ Minimalist, data-focused design
 
 ## Chart Junk - What Not to Do
 
-![](images/a_duck_chart.png){fig-align="center" width="100%" height="70vh"}
+![](images/a_duck_chart.png){fig-align="center" width="85%"}
 
 ::: {.callout-warning}
 **Chart Junk**: Visual elements that distract from the data
@@ -179,14 +179,14 @@ Minimalist, data-focused design
 
 ::: {.column width="50%"}
 **Before: Cluttered Design**
-![](images/fuel_economy.png){width="100%"}
+![](images/fuel_economy.png){width="90%"}
 
 Issues: 3D effects, poor labeling, distracting elements
 :::
 
 ::: {.column width="50%"}
 **After: Clean Redesign**
-![](images/redo_fuel_economy.png){width="100%"}
+![](images/redo_fuel_economy.png){width="90%"}
 
 ::: {.fragment}
 Solutions: Clear hierarchy, direct labeling, focused design

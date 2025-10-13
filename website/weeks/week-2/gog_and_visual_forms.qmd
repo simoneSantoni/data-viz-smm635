@@ -113,7 +113,7 @@ By the end of today's session, you will:
 :::
 
 ::: {.column width="50%"}
-![](imgs/gog.jpeg){width=300}
+![](imgs/gog.jpeg){width="60%"}
 :::
 
 ::::
@@ -135,7 +135,7 @@ By the end of today's session, you will:
 :::
 
 ::: {.column width="40%"}
-![](imgs/ggplot2.jpeg){width=300}
+![](imgs/ggplot2.jpeg){width="60%"}
 :::
 
 ::::
@@ -230,7 +230,7 @@ ggplot(data, aes(x = "", y = value, fill = category)) +
 :::
 
 ::: {.column}
-![](imgs/gog_layers.png)
+![](imgs/gog_layers.png){width="90%"}
 *Source:* https://r.qcbs.ca/
 :::
 
@@ -263,7 +263,7 @@ Good visualization starts with well-structured data
 :::
 
 ::: {.column}
-![](imgs/tidyr.png)
+![](imgs/tidyr.png){width="90%"}
 :::
 
 ::::
