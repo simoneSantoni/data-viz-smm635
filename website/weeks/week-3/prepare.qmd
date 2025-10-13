@@ -29,13 +29,20 @@ EDA is an iterative cycle of:
 
 ### Fundamental Characteristics
 
-**Open-ended Investigation**: Unlike confirmatory analysis, EDA doesn't start with specific hypotheses. Instead, it embraces exploration to uncover unexpected patterns, anomalies, and relationships.
+**Open-ended Investigation**: Unlike confirmatory analysis, EDA doesn't start
+with specific hypotheses. Instead, it embraces exploration to uncover
+unexpected patterns, anomalies, and relationships.
 
-**Visual Emphasis**: Graphics are central to EDA. The human visual system excels at pattern recognition, making visualization an essential tool for understanding data structure.
+**Visual Emphasis**: Graphics are central to EDA. The human visual system
+excels at pattern recognition, making visualization an essential tool for
+understanding data structure.
 
-**Flexibility**: EDA employs diverse techniques without rigid procedural constraints. Analysts adapt their approach based on data characteristics and emerging insights.
+**Flexibility**: EDA employs diverse techniques without rigid procedural
+constraints. Analysts adapt their approach based on data characteristics and
+emerging insights.
 
-**Iterative Process**: EDA is cyclical, not linear. Each discovery informs the next investigation, creating a dynamic dialogue between analyst and data.
+**Iterative Process**: EDA is cyclical, not linear. Each discovery informs the
+next investigation, creating a dynamic dialogue between analyst and data.
 
 ## Scope of EDA
 
