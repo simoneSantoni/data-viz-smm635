@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Network Analysis Glossary – SMM635 - Data Visualization</title>
+<title>Google Play Store Apps: Data Exploration – SMM635 - Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -275,7 +310,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Network Analysis Glossary</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Google Play Store Apps: Data Exploration</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -468,24 +503,17 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#core-network-components" id="toc-core-network-components" class="nav-link active" data-scroll-target="#core-network-components">Core Network Components</a>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a>
   <ul class="collapse">
-  <li><a href="#graph" id="toc-graph" class="nav-link" data-scroll-target="#graph">Graph</a></li>
-  <li><a href="#vertices-nodes" id="toc-vertices-nodes" class="nav-link" data-scroll-target="#vertices-nodes">Vertices (Nodes)</a></li>
-  <li><a href="#edges-linksties" id="toc-edges-linksties" class="nav-link" data-scroll-target="#edges-linksties">Edges (Links/Ties)</a></li>
-  <li><a href="#network-relationship" id="toc-network-relationship" class="nav-link" data-scroll-target="#network-relationship">Network Relationship</a></li>
+  <li><a href="#key-variables" id="toc-key-variables" class="nav-link" data-scroll-target="#key-variables">Key Variables</a></li>
   </ul></li>
-  <li><a href="#network-types" id="toc-network-types" class="nav-link" data-scroll-target="#network-types">Network Types</a>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a>
   <ul class="collapse">
-  <li><a href="#one-mode-vs-two-mode-networks" id="toc-one-mode-vs-two-mode-networks" class="nav-link" data-scroll-target="#one-mode-vs-two-mode-networks">One-mode vs Two-mode Networks</a></li>
-  <li><a href="#signed-networks" id="toc-signed-networks" class="nav-link" data-scroll-target="#signed-networks">Signed Networks</a></li>
-  <li><a href="#weighted-vs-unweighted-networks" id="toc-weighted-vs-unweighted-networks" class="nav-link" data-scroll-target="#weighted-vs-unweighted-networks">Weighted vs Unweighted Networks</a></li>
+  <li><a href="#univariate-distributions" id="toc-univariate-distributions" class="nav-link" data-scroll-target="#univariate-distributions">Univariate Distributions</a></li>
+  <li><a href="#bivariate-relationships" id="toc-bivariate-relationships" class="nav-link" data-scroll-target="#bivariate-relationships">Bivariate Relationships</a></li>
   </ul></li>
-  <li><a href="#network-substructures" id="toc-network-substructures" class="nav-link" data-scroll-target="#network-substructures">Network Substructures</a>
-  <ul class="collapse">
-  <li><a href="#dyads" id="toc-dyads" class="nav-link" data-scroll-target="#dyads">Dyads</a></li>
-  <li><a href="#triads" id="toc-triads" class="nav-link" data-scroll-target="#triads">Triads</a></li>
-  </ul></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
   </ul>
 </nav>
     </div>
@@ -495,8 +523,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Network Analysis Glossary</h1>
-<p class="subtitle lead">Essential Terms and Concepts</p>
+<h1 class="title">Google Play Store Apps: Data Exploration</h1>
 </div>
 
 
@@ -513,158 +540,356 @@ window.Quarto = {
 </header>
 
 
-<section id="core-network-components" class="level2">
-<h2 class="anchored" data-anchor-id="core-network-components">Core Network Components</h2>
-<section id="graph" class="level3">
-<h3 class="anchored" data-anchor-id="graph">Graph</h3>
-<p>A <strong>graph</strong> is a mathematical structure consisting of a set of objects (vertices) and a set of connections (edges) between pairs of these objects. In network analysis, graphs provide the fundamental framework for representing relationships and interactions between entities. Graphs can be directed (edges have direction) or undirected (edges have no inherent direction).</p>
-<p><span class="math display">\[
-G = {v, e}
-\]</span></p>
-<p>where</p>
-<p><span class="math display">\[v = [v_1, v_2, ..., v_i, ... v_n]\]</span></p>
-<p>and</p>
-<p><span class="math display">\[e = [(v_1, v_2), (v_1, v_i), ..., (v_i, v_j), ..., (v_j, v_n)]\]</span></p>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>data_source <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>apps <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_source)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This dataset from <a href="https://www.kaggle.com/datasets/lava18/google-play-store-apps">Kaggle’s Google Play Store Apps project</a> contains information on ~10K Android apps including ratings, reviews, pricing, and categories.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="vertices-nodes" class="level3">
-<h3 class="anchored" data-anchor-id="vertices-nodes">Vertices (Nodes)</h3>
-<p><strong>Vertices</strong> (also called nodes) are the fundamental units or entities in a network. They represent the objects being studied, such as:</p>
+<section id="data-overview" class="level2">
+<h2 class="anchored" data-anchor-id="data-overview">Data Overview</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(apps)  <span class="co"># Column specifications</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>apps        <span class="co"># Data preview</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="key-variables" class="level3">
+<h3 class="anchored" data-anchor-id="key-variables">Key Variables</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 16%">
+<col style="width: 36%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>App</strong></td>
+<td>String</td>
+<td>Application name</td>
+<td>May contain special characters</td>
+</tr>
+<tr class="even">
+<td><strong>Category</strong></td>
+<td>Categorical</td>
+<td>Primary app category (33 categories)</td>
+<td>Contains some miscoded entries</td>
+</tr>
+<tr class="odd">
+<td><strong>Rating</strong></td>
+<td>Float</td>
+<td>Average user rating (1.0-5.0)</td>
+<td>Missing for unrated apps</td>
+</tr>
+<tr class="even">
+<td><strong>Reviews</strong></td>
+<td>Integer</td>
+<td>Total number of user reviews</td>
+<td>Indicator of popularity</td>
+</tr>
+<tr class="odd">
+<td><strong>Size</strong></td>
+<td>String</td>
+<td>App size with units (e.g., “19M”)</td>
+<td>Requires parsing; “Varies with device” for some</td>
+</tr>
+<tr class="even">
+<td><strong>Installs</strong></td>
+<td>Categorical</td>
+<td>Install count ranges (e.g., “10,000+”)</td>
+<td>Ordinal categories, not exact counts</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>Binary</td>
+<td>“Free” or “Paid”</td>
+<td>Contains data quality issues</td>
+</tr>
+<tr class="even">
+<td><strong>Price</strong></td>
+<td>String</td>
+<td>Price in USD (e.g., “$2.99”)</td>
+<td>“0” for free apps</td>
+</tr>
+<tr class="odd">
+<td><strong>Content Rating</strong></td>
+<td>Categorical</td>
+<td>Age appropriateness</td>
+<td>“Everyone”, “Teen”, “Mature 17+”, etc.</td>
+</tr>
+<tr class="even">
+<td><strong>Genres</strong></td>
+<td>String</td>
+<td>Detailed genre (may be multiple)</td>
+<td>Semicolon-separated</td>
+</tr>
+<tr class="odd">
+<td><strong>Last Updated</strong></td>
+<td>Date</td>
+<td>Last update date</td>
+<td>Format: “Month Day, Year”</td>
+</tr>
+<tr class="even">
+<td><strong>Current Ver</strong></td>
+<td>String</td>
+<td>App version</td>
+<td>Non-standardized format</td>
+</tr>
+<tr class="odd">
+<td><strong>Android Ver</strong></td>
+<td>String</td>
+<td>Minimum Android version required</td>
+<td>Format: “X.X.X and up”</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+<section id="univariate-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="univariate-distributions">Univariate Distributions</h3>
+<section id="categorical-variables" class="level4">
+<h4 class="anchored" data-anchor-id="categorical-variables">Categorical Variables</h4>
+<p><strong>Bar charts</strong> are the standard approach for visualizing categorical distributions. <strong>?@fig-bar-chart</strong> reveals data quality issues: some apps have <span class="math inline">\(Type = 0\)</span> and missing values (<span class="math inline">\(NaN\)</span>).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Pie Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Data Quality Check</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">!=</span> <span class="st">"Free"</span> <span class="sc">&amp;</span> Type <span class="sc">!=</span> <span class="st">"Paid"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="continuous-variables" class="level4">
+<h4 class="anchored" data-anchor-id="continuous-variables">Continuous Variables</h4>
+<p>The <strong>Reviews</strong> variable exhibits strong right skew. Multiple visualization approaches reveal different aspects of the distribution. Note: <code>geom_histogram()</code> defaults to 30 bins; adjust with <code>bins</code> argument.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Histogram</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Histogram (Log Scale)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Boxplot (Horizontal)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Boxplot (Vertical)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Density Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">y =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="bivariate-relationships" class="level3">
+<h3 class="anchored" data-anchor-id="bivariate-relationships">Bivariate Relationships</h3>
+<section id="categorical-vs-continuous" class="level4">
+<h4 class="anchored" data-anchor-id="categorical-vs-continuous">Categorical vs Continuous</h4>
+<p><strong>Grouped visualizations</strong> reveal how continuous variables differ across categories. <strong>?@fig-rating-by-type</strong> compares rating distributions between free and paid apps.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Grouped Boxplots</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Violin Plots</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Grouped Histograms</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Free"</span>, <span class="st">"Paid"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Type, <span class="at">y =</span> Rating, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Free"</span>, <span class="st">"Paid"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Type, <span class="at">y =</span> Rating, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Free"</span>, <span class="st">"Paid"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Rating, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">30</span>) <span class="sc">+</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>Type, <span class="at">ncol =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="continuous-vs-continuous" class="level4">
+<h4 class="anchored" data-anchor-id="continuous-vs-continuous">Continuous vs Continuous</h4>
+<p><strong>Scatterplots</strong> visualize relationships between two continuous variables. <strong>?@fig-reviews-rating</strong> explores whether highly-reviewed apps have better ratings.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Basic Scatterplot</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">With Smoothing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Colored by Type</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Rating)) <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Reviews, <span class="at">y =</span> Rating)) <span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Rating)) <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Reviews, <span class="at">y =</span> Rating)) <span class="sc">+</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Rating), Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Free"</span>, <span class="st">"Paid"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Reviews, <span class="at">y =</span> Rating, <span class="at">color =</span> Type)) <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="categorical-vs-categorical" class="level4">
+<h4 class="anchored" data-anchor-id="categorical-vs-categorical">Categorical vs Categorical</h4>
+<p><strong>Stacked and grouped bar charts</strong> show relationships between categorical variables. <strong>?@fig-type-by-content</strong> examines how app pricing varies across content ratings.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Stacked Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Grouped Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Heatmap</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Free"</span>, <span class="st">"Paid"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Content Rating</span><span class="st">`</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Free"</span>, <span class="st">"Paid"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Content Rating</span><span class="st">`</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Free"</span>, <span class="st">"Paid"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(Type, <span class="st">`</span><span class="at">Content Rating</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Content Rating</span><span class="st">`</span>, <span class="at">y =</span> Type, <span class="at">fill =</span> n)) <span class="sc">+</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> n), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"lightblue"</span>, <span class="at">high =</span> <span class="st">"darkblue"</span>) <span class="sc">+</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">fill =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
 <ul>
-<li>People in social networks</li>
-<li>Computers in technological networks</li>
-<li>Proteins in biological networks</li>
-<li>Cities in transportation networks</li>
+<li><strong>Data Cleaning</strong>: Address missing values and miscoded entries in Type, Category, and other fields</li>
+<li><strong>Feature Engineering</strong>: Parse Size and Installs into numeric formats for quantitative analysis</li>
+<li><strong>Advanced Analysis</strong>: Examine temporal patterns using Last Updated, analyze price elasticity, investigate category-specific trends</li>
+<li><strong>Multivariate Analysis</strong>: Build models to predict ratings or success metrics based on app characteristics</li>
 </ul>
-<p>Each vertex can have attributes (e.g., age, location, type) that provide additional information about the entity it represents.</p>
-</section>
-<section id="edges-linksties" class="level3">
-<h3 class="anchored" data-anchor-id="edges-linksties">Edges (Links/Ties)</h3>
-<p><strong>Edges</strong> (also called links or ties) represent the connections or relationships between vertices. They encode the interactions, associations, or dependencies between entities in the network. Edges can have various properties:</p>
-<ul>
-<li>Direction (directed vs.&nbsp;undirected)</li>
-<li>Weight (strength of connection)</li>
-<li>Type (multiple relationship types)</li>
-<li>Temporal information (when the connection exists)</li>
-</ul>
-</section>
-<section id="network-relationship" class="level3">
-<h3 class="anchored" data-anchor-id="network-relationship">Network Relationship</h3>
-<p>A <strong>network relationship</strong> defines the nature of connections between entities in a network. These relationships determine:</p>
-<ul>
-<li>What constitutes a connection (e.g., friendship, communication, transaction)</li>
-<li>How connections are measured or identified</li>
-<li>Whether relationships are symmetric or asymmetric</li>
-<li>The meaning and interpretation of network patterns</li>
-</ul>
-</section>
-</section>
-<section id="network-types" class="level2">
-<h2 class="anchored" data-anchor-id="network-types">Network Types</h2>
-<section id="one-mode-vs-two-mode-networks" class="level3">
-<h3 class="anchored" data-anchor-id="one-mode-vs-two-mode-networks">One-mode vs Two-mode Networks</h3>
-<section id="one-mode-networks" class="level4">
-<h4 class="anchored" data-anchor-id="one-mode-networks">One-mode Networks</h4>
-<p><strong>One-mode networks</strong> (also called unipartite networks) contain only one type of vertex. All connections occur between vertices of the same type. Examples include:</p>
-<ul>
-<li>Friendship networks (people connected to people)</li>
-<li>Citation networks (papers citing papers)</li>
-<li>Trade networks (countries trading with countries)</li>
-</ul>
-<p>Here’s an example of creating a one-mode network visualization concerning a collaboration network among five co-workers:</p>
-</section>
-<section id="directed-vs-undirected-networks" class="level4">
-<h4 class="anchored" data-anchor-id="directed-vs-undirected-networks">Directed Vs Undirected Networks</h4>
-<p><strong>Directed networks</strong> (also called digraphs) have edges with a specific direction, indicating asymmetric relationships where the connection flows from one vertex to another. Examples include:</p>
-<ul>
-<li>Email networks (sender → receiver)</li>
-<li>Citation networks (citing paper → cited paper)<br>
-</li>
-<li>Food webs (predator → prey)</li>
-<li>Twitter follower networks (follower → followed)</li>
-</ul>
-<p>Here’s an example of a directed network:</p>
-<p><strong>Undirected networks</strong> have edges without direction, representing symmetric relationships where connections are mutual. Examples include:</p>
-<ul>
-<li>Friendship networks (mutual friendships)</li>
-<li>Co-authorship networks (collaborations)</li>
-<li>Infrastructure networks (roads, power grids)</li>
-<li>Protein interaction networks</li>
-</ul>
-<p>The choice between directed and undirected representation depends on whether the relationship being modeled is inherently asymmetric or symmetric.</p>
-</section>
-<section id="two-mode-networks" class="level4">
-<h4 class="anchored" data-anchor-id="two-mode-networks">Two-mode Networks</h4>
-<p><strong>Two-mode networks</strong> (also called bipartite networks) contain two distinct types of vertices, and edges only connect vertices of different types. Examples include:</p>
-<ul>
-<li>Actor-movie networks (actors connected to movies they appear in)</li>
-<li>Author-paper networks (authors connected to papers they wrote)</li>
-<li>Customer-product networks (customers connected to products they purchased)</li>
-</ul>
-<p>Here’s an example of a two-mode purchasing network:</p>
-</section>
-</section>
-<section id="signed-networks" class="level3">
-<h3 class="anchored" data-anchor-id="signed-networks">Signed Networks</h3>
-<p><strong>Signed networks</strong> are networks where edges carry positive or negative values, representing different types of relationships:</p>
-<ul>
-<li>Positive edges: friendship, alliance, cooperation</li>
-<li>Negative edges: animosity, conflict, competition</li>
-</ul>
-<p>Signed networks are particularly useful for studying:</p>
-<ul>
-<li>Social balance theory</li>
-<li>Coalition formation</li>
-<li>Conflict dynamics</li>
-<li>Opinion polarization</li>
-</ul>
-<p>Here’s an example of a signed social network like cooperative Vs. competitive ties among co-workers:</p>
-</section>
-<section id="weighted-vs-unweighted-networks" class="level3">
-<h3 class="anchored" data-anchor-id="weighted-vs-unweighted-networks">Weighted vs Unweighted Networks</h3>
-<section id="weighted-networks" class="level4">
-<h4 class="anchored" data-anchor-id="weighted-networks">Weighted Networks</h4>
-<p><strong>Weighted networks</strong> have edges with numerical values (weights) representing the strength, frequency, or capacity of connections. Examples include:</p>
-<ul>
-<li>Communication networks (number of messages exchanged)</li>
-<li>Transportation networks (traffic volume or distance)</li>
-<li>Neural networks (synaptic strength)</li>
-<li>Financial networks (transaction amounts)</li>
-</ul>
-<p>Here’s an example of a weighted communication network:</p>
-</section>
-<section id="unweighted-networks" class="level4">
-<h4 class="anchored" data-anchor-id="unweighted-networks">Unweighted Networks</h4>
-<p><strong>Unweighted networks</strong> (also called binary networks) have edges that simply indicate the presence or absence of a connection. All edges are treated equally, focusing on the topology rather than connection strength. These are simpler to analyze but may lose important information about relationship intensity.</p>
-</section>
-</section>
-</section>
-<section id="network-substructures" class="level2">
-<h2 class="anchored" data-anchor-id="network-substructures">Network Substructures</h2>
-<section id="dyads" class="level3">
-<h3 class="anchored" data-anchor-id="dyads">Dyads</h3>
-<p>A <strong>dyad</strong> is the simplest possible network substructure, consisting of a pair of vertices and the possible edge(s) between them. In directed networks, dyads can be classified as:</p>
-<ul>
-<li>Null dyad: no connection in either direction</li>
-<li>Asymmetric dyad: connection in one direction only</li>
-<li>Mutual/Reciprocal dyad: connections in both directions</li>
-</ul>
-<p>Dyadic analysis examines pairwise relationships and forms the foundation for understanding reciprocity and basic network patterns.</p>
-<p>Here’s a visualization showing a dyad within a larger network:</p>
-</section>
-<section id="triads" class="level3">
-<h3 class="anchored" data-anchor-id="triads">Triads</h3>
-<p>A <strong>triad</strong> consists of three vertices and the possible edges among them. Triads are fundamental for understanding:</p>
-<ul>
-<li>Transitivity (“friend of a friend” patterns)</li>
-<li>Structural balance</li>
-<li>Clustering tendencies</li>
-<li>Local network motifs</li>
-</ul>
-<p>Here’s a visualization showing a triad within a larger network:</p>
-<p>We will deal with these in weeks 4 and 5.</p>
+</div>
+</div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

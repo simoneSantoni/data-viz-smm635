@@ -44,6 +44,72 @@
     ]
   },
   {
+    "objectID": "weeks/week-2/main.html",
+    "href": "weeks/week-2/main.html",
+    "title": "Week 2",
+    "section": "",
+    "text": "📖 Note\n\n\n\nReview the course syllabus.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#prepare",
+    "href": "weeks/week-2/main.html#prepare",
+    "title": "Week 2",
+    "section": "",
+    "text": "📖 Note\n\n\n\nReview the course syllabus.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#participate",
+    "href": "weeks/week-2/main.html#participate",
+    "title": "Week 2",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\n🎓 Lecture materials\n\n\n\n📊 Grammar of Graphics and Visual Forms - Interactive slides covering the grammar of graphics and visual forms",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#practice",
+    "href": "weeks/week-2/main.html#practice",
+    "title": "Week 2",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\n💻 Laboratory session\n\n\n\n\nApplying the grammar of graphics in R/Python\nWorking with visual design variables",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#perform",
+    "href": "weeks/week-2/main.html#perform",
+    "title": "Week 2",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\n✏️ Laboratory exercises\n\n\n\nHands-on practice implementing visualization designs using the grammar of graphics framework.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/main.html#ponder",
+    "href": "weeks/week-2/main.html#ponder",
+    "title": "Week 2",
+    "section": "Ponder",
+    "text": "Ponder\n\n📚 Essential Readings\n\nWilkinson, L. (2005). The Grammar of Graphics, Chapters 1-2\nWickham, H. (2010). “A Layered Grammar of Graphics”, Journal of Computational and Graphical Statistics\n\n\n\n🔗 Additional Resources\n\nReview examples of effective use of visual variables in data visualization",
+    "crumbs": [
+      "Weekly materials",
+      "Week 2"
+    ]
+  },
+  {
     "objectID": "weeks/week-10/main.html",
     "href": "weeks/week-10/main.html",
     "title": "Week 10",
@@ -81,18 +147,7 @@
     "href": "weeks/week-1/main.html#participate",
     "title": "Week 1",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\nLecture materials\n\n\n\n📊 Design Principles Presentation - Interactive slides covering visualization design principles and processes\n\nIn-class activities\n\nVisual perception exercise: identifying pre-attentive attributes\nChart critique workshop: analyzing good and bad visualizations\nDesign principles application: redesigning a poorly designed chart",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#in-class-activities",
-    "href": "weeks/week-1/main.html#in-class-activities",
-    "title": "Week 1",
-    "section": "In-class activities",
-    "text": "In-class activities\n\nVisual perception exercise: identifying pre-attentive attributes\nChart critique workshop: analyzing good and bad visualizations\nDesign principles application: redesigning a poorly designed chart",
+    "text": "Participate\n\n\n\n\n\n\nLecture materials\n\n\n\n📊 Design Principles Presentation - Interactive slides covering visualization design principles and processes",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -103,18 +158,7 @@
     "href": "weeks/week-1/main.html#practice",
     "title": "Week 1",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\nLaboratory session\n\n\n\nIntroduction to R/Python visualization environments: - Setting up RStudio/Jupyter notebooks - Basic plotting with ggplot2/matplotlib - Saving and exporting visualizations - Version control with Git\n\nApplication exercise\nCreate your first visualization following the design process: 1. Define your audience and purpose 2. Sketch multiple design alternatives 3. Implement your best design in R or Python 4. Apply visual hierarchy and Gestalt principles 5. Submit with a brief design rationale (200 words)",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-1/main.html#application-exercise",
-    "href": "weeks/week-1/main.html#application-exercise",
-    "title": "Week 1",
-    "section": "Application exercise",
-    "text": "Application exercise\nCreate your first visualization following the design process: 1. Define your audience and purpose 2. Sketch multiple design alternatives 3. Implement your best design in R or Python 4. Apply visual hierarchy and Gestalt principles 5. Submit with a brief design rationale (200 words)",
+    "text": "Practice\n\n\n\n\n\n\nLaboratory session\n\n\n\n\nIntroduction to R/Python visualization environments:\nVersion control with Git",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -136,43 +180,396 @@
     "href": "weeks/week-1/main.html#ponder",
     "title": "Week 1",
     "section": "Ponder",
-    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1-2\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section)",
+    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section1)",
     "crumbs": [
       "Weekly materials",
       "Week 1"
     ]
   },
   {
-    "objectID": "project/midTermProject/main.html",
-    "href": "project/midTermProject/main.html",
-    "title": "Mid-Term Project",
+    "objectID": "weeks/week-1/main.html#footnotes",
+    "href": "weeks/week-1/main.html#footnotes",
+    "title": "Week 1",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nTeaching case studies will not be posted because of intellectual property rights.↩︎",
+    "crumbs": [
+      "Weekly materials",
+      "Week 1"
+    ]
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
+    "href": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "What is Good Data Visualization?",
+    "text": "What is Good Data Visualization?\n\nThe fundamental question every data analyst must ask\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#tale-of-two-visualizations",
+    "href": "weeks/week-1/design-principles-presentation.html#tale-of-two-visualizations",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Tale of Two Visualizations",
+    "text": "Tale of Two Visualizations\n\n\nExample A: Technical Plot \n\n✓ Shows data relationships\n⚠️ Cluttered interface\n⚠️ Distracting elements\n\n\nExample B: The Economist \n\n✓ Clean, focused design\n✓ Clear narrative\n✓ Professional aesthetics"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#tuftes-principles-of-graphical-excellence",
+    "href": "weeks/week-1/design-principles-presentation.html#tuftes-principles-of-graphical-excellence",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Tufte’s Principles of Graphical Excellence",
+    "text": "Tufte’s Principles of Graphical Excellence\n\n\nExcellent visualizations should:\n\nShow the data clearly and accurately\nInduce thinking about substance, not methodology\n\nAvoid distortion of what the data reveal\nPresent many numbers in a small space\nMake large datasets coherent\nEncourage comparison between data elements\nReveal data at multiple levels of detail\nServe a clear purpose: description, exploration, or decoration\nIntegrate with statistical and verbal descriptions\n\n\n\n\n\nEdward Tufte"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
+    "href": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "The Power of “Show the Data” - Anscombe’s Quartet",
+    "text": "The Power of “Show the Data” - Anscombe’s Quartet\nFour datasets with identical summary statistics\n\n\nSame means, same correlations, same regression lines…"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
+    "href": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Anscombe’s Quartet Revealed",
+    "text": "Anscombe’s Quartet Revealed\n…but completely different data patterns!\n\n\n\n\n\n\n\nImportant\n\n\nKey Lesson: Summary statistics alone are insufficient. Always visualize your data to understand its true nature."
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
+    "href": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "The Design Process Framework",
+    "text": "The Design Process Framework\n\n\nSource: Cairo, A. (2012). The Functional Art"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
+    "href": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Design Principles in Action",
+    "text": "Design Principles in Action\n\n\nTraditional Approach \nHeavy gridlines, excessive decoration\n\nTufte’s Approach \n\nMinimalist, data-focused design\n\n\n\nPrinciple: Maximize the data-ink ratio - every mark should represent data"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
+    "href": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Chart Junk - What Not to Do",
+    "text": "Chart Junk - What Not to Do\n\n\n\n\n\n\n\nWarning\n\n\nChart Junk: Visual elements that distract from the data\n\nUnnecessary 3D effects\nDecorative images\n\nExcessive colors\nHeavy borders and gridlines\nMoiré patterns and visual noise"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#before-and-after---redesign-example",
+    "href": "weeks/week-1/design-principles-presentation.html#before-and-after---redesign-example",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Before and After - Redesign Example",
+    "text": "Before and After - Redesign Example\n\n\nBefore: Cluttered Design \nIssues: 3D effects, poor labeling, distracting elements\n\nAfter: Clean Redesign \n\nSolutions: Clear hierarchy, direct labeling, focused design"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#key-takeaways-for-week-1",
+    "href": "weeks/week-1/design-principles-presentation.html#key-takeaways-for-week-1",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Key Takeaways for Week 1",
+    "text": "Key Takeaways for Week 1\n\nYour visualization design checklist\n\n🎯 Purpose: Does your chart serve a clear analytical goal?\n📊 Data: Does your visualization accurately represent the data?\n👁️ Clarity: Can viewers understand the message quickly?\n✂️ Simplicity: Have you removed unnecessary elements?\n🎨 Aesthetics: Is the design professional and appropriate?\n🔄 Iteration: Have you tested and refined your design?\n\n\nRemember: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles."
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html#next-steps",
+    "href": "weeks/week-1/design-principles-presentation.html#next-steps",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "Next Steps",
+    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1\n💻 Practice: Complete the Data visualization and communication excercise\n\n\n\n\n\n\nResources\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 15:00-17:00"
+  },
+  {
+    "objectID": "project/finalCourseProject/main.html",
+    "href": "project/finalCourseProject/main.html",
+    "title": "Final Course Project",
     "section": "",
     "text": "Content coming soon.",
     "crumbs": [
       "Project",
-      "Mid-term project"
+      "Final course project"
     ]
   },
   {
-    "objectID": "notes/overview.html",
-    "href": "notes/overview.html",
-    "title": "Supplemental Notes",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Visualization－SMM635",
     "section": "",
-    "text": "This section contains supplemental materials and advanced topics not covered in the main course.\n\n\n\nAdvanced network models (ERGM, TERGM)\nMachine learning on graphs\nTemporal network analysis\nMultilayer networks\nNetwork sampling techniques\n\nCheck back for updates throughout the course.",
+    "text": "Edward Tufte’s classic visualization of the Challenger O-ring failure analysis - a powerful example of how clear data presentation can reveal critical insights and potentially save lives."
+  },
+  {
+    "objectID": "course/team.html",
+    "href": "course/team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Yinji (Benedict) Zhou\nInstructor\nPh.D. student in strategy at the Bayes Business School\n📬 Yinji.Zhou.2@city.ac.uk\n\n\n\n\nSimone Santoni\nModule leader\nAssociate professor in strategy at the Bayes Business School\n📬 Simone.Santoni.1@city.ac.uk",
     "crumbs": [
-      "Supplemental notes",
-      "Overview"
+      "Course Information",
+      "Teaching team"
     ]
   },
   {
-    "objectID": "notes/overview.html#additional-resources",
-    "href": "notes/overview.html#additional-resources",
-    "title": "Supplemental Notes",
+    "objectID": "course/support.html",
+    "href": "course/support.html",
+    "title": "Course Support",
     "section": "",
-    "text": "This section contains supplemental materials and advanced topics not covered in the main course.\n\n\n\nAdvanced network models (ERGM, TERGM)\nMachine learning on graphs\nTemporal network analysis\nMultilayer networks\nNetwork sampling techniques\n\nCheck back for updates throughout the course.",
+    "text": "Network analysis can be challenging, but you don’t have to navigate it alone. This page provides information about all the support resources available to help you succeed in SMM635 - Network Analytics.",
     "crumbs": [
-      "Supplemental notes",
-      "Overview"
+      "Course Information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course/support.html#support-resources",
+    "href": "course/support.html#support-resources",
+    "title": "Course Support",
+    "section": "Support Resources",
+    "text": "Support Resources\n\nCourse Forum\nAccess the course forum through module SMM635’s Moodle website for:\n\nAsking questions (conceptual or technical)\nSharing helpful resources\nDiscussing course material\nFinding study partners\n\nForum Guidelines:\n\nSearch before posting (your question may be answered)\nUse descriptive titles\nInclude error messages and code snippets\nBe respectful and helpful\nDon’t share complete assignment solutions\n\n\n\nEmail Support\nModule Leader: Simone.Santoni.1@city.ac.uk\nInstructor: Yinji.Zhou.2@city.ac.uk\nWhen to email:\n\nPersonal matters (illness, accommodations)\nScheduling appointments\nUrgent technical issues\nAdministrative questions\n\nResponse time: 24-48 hours on weekdays\nEmail tips:\n\nUse clear subject line: “SMM635: [Topic]”\nInclude your student ID\nBe specific about your issue\nAttach relevant files if needed",
+    "crumbs": [
+      "Course Information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course/support.html#common-issues-and-solutions",
+    "href": "course/support.html#common-issues-and-solutions",
+    "title": "Course Support",
+    "section": "Common Issues and Solutions",
+    "text": "Common Issues and Solutions\n\nInstallation Problems\n\n\n\n\n\n\nCommon Installation Issues:\nProblem: R/RStudio won’t install\n\nQuick fix attempt: Check system requirements, disable antivirus temporarily, run as administrator\n\nProblem: Python packages won’t install\n\nQuick fix attempt: Update conda/pip, check firewall settings, try different repository\n\nProblem: Network analysis packages won’t import\n\nQuick fix attempt: Verify installation with library() in R or import in Python, reinstall package, check dependencies (igraph, networkx, etc.)\n\n\n\n\n\n\nNetwork Analysis Challenges\n“I don’t know where to start with network analysis”:\n\nStart with simple network visualizations\nUnderstand your data structure (nodes and edges)\nBegin with basic centrality measures\nUse sample networks before your own data\nLook at similar network examples in the literature\n\n“My network code doesn’t work”:\n\nCheck your data format (edge list, adjacency matrix)\nVerify node and edge attributes\nEnsure proper package loading (igraph, networkx)\nTest with small sample networks first\nCheck for isolated nodes or missing edges\n\n“I don’t understand network concepts”:\n\nReview the network terminology glossary\nPractice with interactive network examples\nVisualize concepts with simple networks\nAsk specific questions on the forum\nAttend office hours with concrete examples",
+    "crumbs": [
+      "Course Information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course/support.html#study-resources",
+    "href": "course/support.html#study-resources",
+    "title": "Course Support",
+    "section": "Study Resources",
+    "text": "Study Resources\n\nRecommended Learning Path\n\nBefore Class:\n\nReview previous material\nRead assigned sections\nNote questions\n\nDuring Class:\n\nTake active notes\nTry examples\nAsk questions\n\nAfter Class:\n\nReview notes same day\nComplete exercises\nPractice additional problems\n\n\n\n\nPeer Support\nStudy Groups:\n\nForm groups of 3-4 students\nMeet regularly to review material\nWork through problems together\nShare different approaches\n\nPeer Tutoring:\n\nAdvanced students available for tutoring\nSign up through course website\nFree service for enrolled students",
+    "crumbs": [
+      "Course Information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course/support.html#mental-health-and-wellbeing",
+    "href": "course/support.html#mental-health-and-wellbeing",
+    "title": "Course Support",
+    "section": "Mental Health and Wellbeing",
+    "text": "Mental Health and Wellbeing\nProgramming can be frustrating at times. Remember:\n\n\n\n\n\n\nIt’s normal to:\n\nFeel stuck sometimes\nNeed multiple attempts\nMake lots of errors\nNeed to ask for help\nTake breaks when frustrated\n\n\n\n\nCampus Resources: See “Your health and wellbeing” page, hosted in the University’s website.\n\nPersonal Emergencies\nIllness or emergency: - Email instructor ASAP - Provide documentation if extended - Discuss makeup options - Don’t fall behind",
+    "crumbs": [
+      "Course Information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course/support.html#faq",
+    "href": "course/support.html#faq",
+    "title": "Course Support",
+    "section": "FAQ",
+    "text": "FAQ\nQ: How much time should I spend on this course? A: Plan for 2-3 hours outside class for every hour in class (6-9 hours/week total).\nQ: Do I need prior programming experience? A: Basic programming experience in R or Python is helpful but not required. We’ll cover the essentials for network analysis.\nQ: Can I use AI tools like ChatGPT? A: You may use them for learning and understanding concepts, but submitted work must be your own. Always cite any AI assistance received.\nQ: What if I’m falling behind? A: Seek help immediately. Network analysis concepts build on each other, so early gaps become bigger problems later.\nQ: Do I need a powerful computer? A: No, basic network analysis doesn’t require much computing power. Any computer from the last 5 years should work fine.\nQ: Should I use R or Python for network analysis? A: Both are excellent. We’ll primarily use R with igraph, but Python with NetworkX is also supported. Choose based on your comfort level.",
+    "crumbs": [
+      "Course Information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course/support.html#success-tips",
+    "href": "course/support.html#success-tips",
+    "title": "Course Support",
+    "section": "Success Tips",
+    "text": "Success Tips\n\n\n\n\n\n\nTop tips from successful network analysis students:\n\nStart with simple networks - Build complexity gradually\nVisualize first - Always plot your networks to understand structure\nThink about the domain - Network interpretation depends on context\nPractice with real data - Work with networks from your field of interest\nLearn the terminology - Master key concepts like centrality, clustering, paths\nAsk “why” questions - Don’t just calculate metrics, understand their meaning\nDocument your analysis - Network studies require clear interpretation\nCompare measures - Different centrality metrics tell different stories\n\n\n\n\nRemember: We want you to succeed! Don’t hesitate to reach out when you need help.",
+    "crumbs": [
+      "Course Information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course/info.html",
+    "href": "course/info.html",
+    "title": "Course Information",
+    "section": "",
+    "text": "IND215 - Introduction to R for Analytics is designed specifically for MSc students in analytics who want to develop practical programming skills for data analysis. This course provides a foundation in R programming with a focus on statistical computing, data manipulation, and the tidyverse ecosystem."
+  },
+  {
+    "objectID": "course/info.html#course-overview",
+    "href": "course/info.html#course-overview",
+    "title": "Course Information",
+    "section": "",
+    "text": "IND215 - Introduction to R for Analytics is designed specifically for MSc students in analytics who want to develop practical programming skills for data analysis. This course provides a foundation in R programming with a focus on statistical computing, data manipulation, and the tidyverse ecosystem."
+  },
+  {
+    "objectID": "course/info.html#learning-philosophy",
+    "href": "course/info.html#learning-philosophy",
+    "title": "Course Information",
+    "section": "Learning Philosophy",
+    "text": "Learning Philosophy\nThis course takes a practical, hands-on approach to learning R. Rather than covering every aspect of the language, we focus on the fundamental concepts and packages that analytics professionals use daily:\n\nPractical Focus: Learn by doing with real-world examples and exercises\nAnalytics-Oriented: Emphasis on statistical thinking, data manipulation, and visualization\nProgressive Learning: Build skills incrementally from basic R concepts to tidyverse mastery\nModern Tools: Use current best practices and the tidyverse ecosystem"
+  },
+  {
+    "objectID": "course/info.html#course-structure",
+    "href": "course/info.html#course-structure",
+    "title": "Course Information",
+    "section": "Course Structure",
+    "text": "Course Structure\nThe course is organized into four substantive modules:\n\nModule 1: Getting Started with R\n\nR and RStudio installation and setup\nR as a calculator and basic operations\nUnderstanding the RStudio interface\nCreating and managing R scripts and projects\n\n\n\nModule 2: R Fundamentals\n\nObjects, assignment, and basic data types\nVectors, lists, and data frames\nFactors and their importance in statistical analysis\nControl structures (if statements, loops) and functions\nFile handling and data import/export\n\n\n\nModule 3: Introduction to Tidyverse\n\nUnderstanding the tidyverse philosophy\nData import with readr\nBasic data manipulation with dplyr\nData tidying principles with tidyr\n\n\n\nModule 4: Data Wrangling with dplyr\n\nFiltering, selecting, and arranging data\nCreating new variables with mutate\nGrouping and summarizing data\nJoining datasets and advanced data manipulation"
+  },
+  {
+    "objectID": "course/info.html#learning-objectives",
+    "href": "course/info.html#learning-objectives",
+    "title": "Course Information",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this course, students will be able to:\n\nSet up and manage R environments for data analysis projects using RStudio\nWrite clean, efficient R code following tidyverse principles and best practices\nManipulate and analyze data using base R and tidyverse functions\nProcess and transform datasets using dplyr for data wrangling\nImport and export data from various file formats using readr and base R\nCreate reproducible data analysis workflows with R scripts and R Markdown\nApply statistical thinking to data exploration and basic analysis tasks"
+  },
+  {
+    "objectID": "course/info.html#prerequisites",
+    "href": "course/info.html#prerequisites",
+    "title": "Course Information",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nNo prior programming experience required\nBasic computer literacy (file management, using applications)\nWillingness to learn through trial and error\nAccess to a computer for hands-on practice"
+  },
+  {
+    "objectID": "course/info.html#software-requirements",
+    "href": "course/info.html#software-requirements",
+    "title": "Course Information",
+    "section": "Software Requirements",
+    "text": "Software Requirements\n\nR 4.0+ (we recommend R 4.3 or newer)\nRStudio Desktop (latest version for the best experience)\nEssential R packages (tidyverse, readr, dplyr, ggplot2, and others)\nGit for version control (optional but recommended)"
+  },
+  {
+    "objectID": "course/info.html#assessment-and-practice",
+    "href": "course/info.html#assessment-and-practice",
+    "title": "Course Information",
+    "section": "Assessment and Practice",
+    "text": "Assessment and Practice\nThis course emphasizes practical skill development through:\n\nInteractive exercises embedded in each module\nHands-on coding assignments using real datasets\nProgressive projects that build on previous concepts\nSelf-assessment opportunities to check understanding"
+  },
+  {
+    "objectID": "course/info.html#getting-help",
+    "href": "course/info.html#getting-help",
+    "title": "Course Information",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nUse the course materials and examples as your first reference\nPractice with the provided exercises and datasets\nConsult Python documentation and community resources\nAsk questions during class sessions or office hours"
+  },
+  {
+    "objectID": "course/info.html#success-tips",
+    "href": "course/info.html#success-tips",
+    "title": "Course Information",
+    "section": "Success Tips",
+    "text": "Success Tips\n\nPractice regularly: Programming is a skill that improves with consistent practice\nStart small: Begin with simple examples and gradually tackle more complex problems\nRead error messages: They often contain helpful information about what went wrong\nUse online resources: The R community has excellent documentation and tutorials\nDon’t be afraid to experiment: Try different approaches and see what works\nThink in data frames: Most R operations work naturally with tabular data"
+  },
+  {
+    "objectID": "course/info.html#course-resources",
+    "href": "course/info.html#course-resources",
+    "title": "Course Information",
+    "section": "Course Resources",
+    "text": "Course Resources\n\nOfficial R Documentation: r-project.org\nRStudio Resources: rstudio.com\nTidyverse Documentation: tidyverse.org\nR for Data Science Book: r4ds.had.co.nz"
+  },
+  {
+    "objectID": "course/faq.html",
+    "href": "course/faq.html",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "Network analytics is the study of relationships and connections between entities (nodes) in complex systems. It combines graph theory, statistics, and computational methods to uncover patterns in networked data.\n\n\n\nBasic programming knowledge is helpful but not required. We’ll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.\n\n\n\nBoth are excellent choices. R has stronger statistical packages for network analysis (igraph, statnet), while Python offers better integration with machine learning tools. We’ll teach both and you can choose based on your preference."
+  },
+  {
+    "objectID": "course/faq.html#general-questions",
+    "href": "course/faq.html#general-questions",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "Network analytics is the study of relationships and connections between entities (nodes) in complex systems. It combines graph theory, statistics, and computational methods to uncover patterns in networked data.\n\n\n\nBasic programming knowledge is helpful but not required. We’ll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.\n\n\n\nBoth are excellent choices. R has stronger statistical packages for network analysis (igraph, statnet), while Python offers better integration with machine learning tools. We’ll teach both and you can choose based on your preference."
+  },
+  {
+    "objectID": "course/faq.html#course-logistics",
+    "href": "course/faq.html#course-logistics",
+    "title": "Frequently Asked Questions",
+    "section": "Course Logistics",
+    "text": "Course Logistics\n\nHow much time should I dedicate to this course?\nExpect to spend 8-10 hours per week:\n\n3 hours: Lectures and tutorials\n3-4 hours: Readings and videos\n2-3 hours: Assignments and practice\n\n\n\nCan I audit the course?\nPlease contact the instructor to discuss auditing options. Priority is given to enrolled students.\n\n\nAre lectures recorded?\nYes, all lectures are recorded and available on Moodle within 24 hours. However, live attendance is strongly encouraged for interactive elements."
+  },
+  {
+    "objectID": "course/faq.html#technical-questions",
+    "href": "course/faq.html#technical-questions",
+    "title": "Frequently Asked Questions",
+    "section": "Technical Questions",
+    "text": "Technical Questions\n\nWhat computer specifications do I need?\n\nRAM: 8GB minimum (16GB recommended)\nStorage: 10GB free space\nOS: Windows 10+, macOS 10.14+, or Linux\nInternet connection for package downloads\n\n\n\nHow do I install the required software?\nDetailed installation guides are provided in Week 1 materials. We also offer installation support sessions.\n\n\nCan I use cloud-based tools instead?\nYes! Options include:\n\nGoogle Colab (Python)\nRStudio Cloud\nBinder for Jupyter notebooks"
+  },
+  {
+    "objectID": "course/faq.html#assessment",
+    "href": "course/faq.html#assessment",
+    "title": "Frequently Asked Questions",
+    "section": "Assessment",
+    "text": "Assessment\n\nCan I work with others on assignments?\n\nMid-term project: Yes (teams of 3-4)\nFinal project: No (individual work)\nWeekly exercises: Discussion encouraged, but submit your own work\n\n\n\nWhat if I submit late?\nLate submissions receive a 10% penalty per day. Extensions may be granted for documented emergencies.\n\n\nHow are projects graded?\nProjects are evaluated on:\n\nTechnical correctness (30%)\nAnalytical depth (30%)\nBusiness relevance (30%)\nPresentation quality (10%)"
+  },
+  {
+    "objectID": "course/faq.html#career-applications",
+    "href": "course/faq.html#career-applications",
+    "title": "Frequently Asked Questions",
+    "section": "Career & Applications",
+    "text": "Career & Applications\n\nHow is network analytics used in industry?\nCommon applications include:\n\nSocial media analysis\nSupply chain optimization\nFraud detection\nRecommendation systems\nOrganizational design\nMarket structure analysis\n\n\n\nWhat career paths benefit from network analytics?\n\nData Scientists\nBusiness Analysts\nMarketing Analysts\nOperations Research\nManagement Consultants\nSocial Media Strategists\n\n\n\nWill this help with my dissertation/thesis?\nAbsolutely! Network analysis is increasingly used in business research. We can discuss how to apply these methods to your research interests."
+  },
+  {
+    "objectID": "course/faq.html#getting-help",
+    "href": "course/faq.html#getting-help",
+    "title": "Frequently Asked Questions",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nI’m struggling with the material. What should I do?\n\nAttend office hours\nPost questions on Moodle forums\nForm study groups with classmates\nReview recorded lectures\nSchedule one-on-one meeting with instructor\n\n\n\nWhere can I find additional practice problems?\n\nEnd of chapter exercises in textbooks\nGitHub repository practice sets\nOnline courses (Coursera, DataCamp)\nKaggle competitions\n\n\n\nWhat if I have accessibility needs?\nPlease contact Student Services and the instructor as soon as possible. We’ll work together to ensure appropriate accommodations.\n\n\n\n\n\n\n\nStill have questions?\n\n\n\nPost on the Moodle forum or email the instructor at simone.santoni.1@city.ac.uk"
+  },
+  {
+    "objectID": "course/schedule.html",
+    "href": "course/schedule.html",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "📅 Weekly Breakdown\n\n\n\nWeek\nTopic\nPrepare\nSlides\nCase\nLab\nPonder\nProject\n\n\n\n\n1\nDesigning charts - processes and principles\n\n🙾\n\n\n🤔\n\n\n\n2\nDesign variables and the grammar of graphics\n📚\n🙾\n🙋\n🥼\n\n\n\n\n3\nExplortory data analysis\n📚\n\n🙋\n🥼\n\n\n\n\n4\nMultidimensional data visualization\n📚\n\n\n\n\n\n\n\n5\nStorytelling with data\n📚\n\n🙋\n🥼\n\n\n\n\n6\nMid-term project\n\n\n\n\n\n💻\n\n\n7\nIntroduction to Tableau\n📚\n🙾\n\n\n\n\n\n\n8\n(cont’ed)\n\n\n🙋\n\n\n\n\n\n9\nDashboards with Tableau\n📚\n🙾\n\n\n\n💻\n\n\n10\n(cont’ed)\n\n\n🙋\n\n\n\n\n\n\n\n\n\n\n\n\nAdjustments and Updates\n\n\n\nThis schedule is subject to change based on:\n\nClass progress and needs\nUniversity calendar changes\nUnexpected closures\n\nAll changes will be announced in class and posted on the course website.",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course/syllabus.html",
+    "href": "course/syllabus.html",
+    "title": "Course Syllabus",
+    "section": "",
+    "text": "Data Visualization (SMM635) provides a comprehensive introduction to the principles and practice of creating effective data visualizations for business analytics. This module equips students with fundamental design principles, practical tools, and hands-on experience to transform complex data into clear, compelling visual narratives that drive decision-making.\n\n\n\nBy the end of this module, you will be able to:\n\n\n\n\n\n\nCore Competencies\n\n\n\n\nDesign Foundation\n\nMaster fundamental principles of effective data visualization design\nUnderstand visual perception and cognitive principles\nApply design best practices for clarity and impact\n\nTechnical Skills\n\nApply the grammar of graphics to create meaningful visualizations\nDesign appropriate charts for different data types and analytical goals\nCreate interactive visualizations and dashboards using modern tools\nLeverage Python libraries and Tableau for professional visualizations\n\nAnalytical Capabilities\n\nPerform exploratory data analysis through visualization\nIdentify patterns, trends, and anomalies in data\nChoose optimal visual encodings for different data dimensions\nEvaluate visualization effectiveness\n\nBusiness Applications\n\nApply storytelling techniques to communicate data insights effectively\nDesign dashboards for different audiences and use cases\nProduce elegant, effective visual solutions to practical business problems\nTransform data insights into actionable business recommendations\n\n\n\n\n\n\n\nIn today’s data-driven world, effective visualization is crucial for:\n\nDecision Making: Transform complex data into actionable insights\nCommunication: Bridge the gap between analysts and stakeholders\nExploration: Discover patterns and relationships in data\nPersuasion: Support arguments with compelling visual evidence\n\n\n\n\nWeek 1\nLearning Outcomes:\n\nUnderstand the data visualization design process\nMaster fundamental design principles (clarity, efficiency, aesthetics)\nApply visual perception theories to chart design\nCritique and improve existing visualizations\n\nTopics Covered:\n\nThe visualization design process\nPre-attentive attributes and visual hierarchy\nGestalt principles in data visualization\nColor theory and accessibility\nCommon visualization pitfalls and how to avoid them\n\n\n\n\nWeek 2\nLearning Outcomes:\n\nUnderstand the grammar of graphics framework\nMap data to visual variables effectively\nBuild complex visualizations from simple components\nImplement layered graphics approaches\n\nTopics Covered:\n\nIntroduction to the grammar of graphics\nVisual encoding: position, size, shape, color, orientation\nScales, coordinates, and transformations\nFaceting and small multiples\nLayering and composition\n\n\n\n\nWeek 3\nLearning Outcomes:\n\nApply visualization techniques for data exploration\nIdentify patterns, outliers, and relationships\nCreate effective summary visualizations\nDocument exploratory findings visually\n\nTopics Covered:\n\nEDA workflow and visualization\nDistribution visualization techniques\nCorrelation and relationship exploration\nTime series exploration\nMissing data visualization\n\nCase Study: Nomis Solutions (A and B) - Customer analytics\n\n\n\nWeek 4\nLearning Outcomes:\n\nHandle high-dimensional data effectively\nApply dimensionality reduction techniques\nCreate parallel coordinates and other multidimensional plots\nDesign interactive exploration tools\n\nTopics Covered:\n\nChallenges of high-dimensional data\nDimensionality reduction visualization\nParallel coordinates and radar charts\nHeatmaps and matrix visualizations\nInteractive filtering and brushing\n\nCase Study: Saving Lives with Data (A and B) - Healthcare analytics and intervention design\n\n\n\nWeek 5\nLearning Outcomes:\n\nStructure data stories for maximum impact\nCreate narrative flow through visualization\nBalance analysis and narrative\nPresent insights persuasively\n\nTopics Covered:\n\nNarrative structure in data stories\nAnnotation and emphasis techniques\nProgressive disclosure of information\nCreating memorable data moments\nPresentation best practices\n\nCase Study: Crop Residue - Agricultural sustainability and environmental impact\n\n\n\nWeeks 7-8\nLearning Outcomes:\n\nNavigate Tableau’s interface and features\nCreate basic to intermediate visualizations\nImplement calculated fields and parameters\nDesign interactive worksheets\n\nTopics Covered:\n\nTableau fundamentals and data connections\nBuilding views with marks and filters\nCalculations and table calculations\nMaps and geographic visualization\nBest practices for Tableau development\n\nCase Study: Accounting and Auditing at Toby Biotech Inc.\n\n\n\nWeeks 9-10\nLearning Outcomes:\n\nDesign effective dashboard layouts\nImplement interactivity and filtering\nOptimize dashboard performance\nDeploy and share dashboards\n\nTopics Covered:\n\nDashboard design principles\nLayout and composition strategies\nActions and interactivity\nMobile and responsive design\nPublishing and sharing options\n\nCase Study: Market Street Wine - Retail analytics and performance monitoring",
+    "crumbs": [
+      "Course Information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course/syllabus.html#course-overview",
+    "href": "course/syllabus.html#course-overview",
+    "title": "Course Syllabus",
+    "section": "",
+    "text": "Data Visualization (SMM635) provides a comprehensive introduction to the principles and practice of creating effective data visualizations for business analytics. This module equips students with fundamental design principles, practical tools, and hands-on experience to transform complex data into clear, compelling visual narratives that drive decision-making.\n\n\n\nBy the end of this module, you will be able to:\n\n\n\n\n\n\nCore Competencies\n\n\n\n\nDesign Foundation\n\nMaster fundamental principles of effective data visualization design\nUnderstand visual perception and cognitive principles\nApply design best practices for clarity and impact\n\nTechnical Skills\n\nApply the grammar of graphics to create meaningful visualizations\nDesign appropriate charts for different data types and analytical goals\nCreate interactive visualizations and dashboards using modern tools\nLeverage Python libraries and Tableau for professional visualizations\n\nAnalytical Capabilities\n\nPerform exploratory data analysis through visualization\nIdentify patterns, trends, and anomalies in data\nChoose optimal visual encodings for different data dimensions\nEvaluate visualization effectiveness\n\nBusiness Applications\n\nApply storytelling techniques to communicate data insights effectively\nDesign dashboards for different audiences and use cases\nProduce elegant, effective visual solutions to practical business problems\nTransform data insights into actionable business recommendations\n\n\n\n\n\n\n\nIn today’s data-driven world, effective visualization is crucial for:\n\nDecision Making: Transform complex data into actionable insights\nCommunication: Bridge the gap between analysts and stakeholders\nExploration: Discover patterns and relationships in data\nPersuasion: Support arguments with compelling visual evidence\n\n\n\n\nWeek 1\nLearning Outcomes:\n\nUnderstand the data visualization design process\nMaster fundamental design principles (clarity, efficiency, aesthetics)\nApply visual perception theories to chart design\nCritique and improve existing visualizations\n\nTopics Covered:\n\nThe visualization design process\nPre-attentive attributes and visual hierarchy\nGestalt principles in data visualization\nColor theory and accessibility\nCommon visualization pitfalls and how to avoid them\n\n\n\n\nWeek 2\nLearning Outcomes:\n\nUnderstand the grammar of graphics framework\nMap data to visual variables effectively\nBuild complex visualizations from simple components\nImplement layered graphics approaches\n\nTopics Covered:\n\nIntroduction to the grammar of graphics\nVisual encoding: position, size, shape, color, orientation\nScales, coordinates, and transformations\nFaceting and small multiples\nLayering and composition\n\n\n\n\nWeek 3\nLearning Outcomes:\n\nApply visualization techniques for data exploration\nIdentify patterns, outliers, and relationships\nCreate effective summary visualizations\nDocument exploratory findings visually\n\nTopics Covered:\n\nEDA workflow and visualization\nDistribution visualization techniques\nCorrelation and relationship exploration\nTime series exploration\nMissing data visualization\n\nCase Study: Nomis Solutions (A and B) - Customer analytics\n\n\n\nWeek 4\nLearning Outcomes:\n\nHandle high-dimensional data effectively\nApply dimensionality reduction techniques\nCreate parallel coordinates and other multidimensional plots\nDesign interactive exploration tools\n\nTopics Covered:\n\nChallenges of high-dimensional data\nDimensionality reduction visualization\nParallel coordinates and radar charts\nHeatmaps and matrix visualizations\nInteractive filtering and brushing\n\nCase Study: Saving Lives with Data (A and B) - Healthcare analytics and intervention design\n\n\n\nWeek 5\nLearning Outcomes:\n\nStructure data stories for maximum impact\nCreate narrative flow through visualization\nBalance analysis and narrative\nPresent insights persuasively\n\nTopics Covered:\n\nNarrative structure in data stories\nAnnotation and emphasis techniques\nProgressive disclosure of information\nCreating memorable data moments\nPresentation best practices\n\nCase Study: Crop Residue - Agricultural sustainability and environmental impact\n\n\n\nWeeks 7-8\nLearning Outcomes:\n\nNavigate Tableau’s interface and features\nCreate basic to intermediate visualizations\nImplement calculated fields and parameters\nDesign interactive worksheets\n\nTopics Covered:\n\nTableau fundamentals and data connections\nBuilding views with marks and filters\nCalculations and table calculations\nMaps and geographic visualization\nBest practices for Tableau development\n\nCase Study: Accounting and Auditing at Toby Biotech Inc.\n\n\n\nWeeks 9-10\nLearning Outcomes:\n\nDesign effective dashboard layouts\nImplement interactivity and filtering\nOptimize dashboard performance\nDeploy and share dashboards\n\nTopics Covered:\n\nDashboard design principles\nLayout and composition strategies\nActions and interactivity\nMobile and responsive design\nPublishing and sharing options\n\nCase Study: Market Street Wine - Retail analytics and performance monitoring",
+    "crumbs": [
+      "Course Information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course/syllabus.html#assessment-strategy",
+    "href": "course/syllabus.html#assessment-strategy",
+    "title": "Course Syllabus",
+    "section": "Assessment Strategy",
+    "text": "Assessment Strategy\n\n📊 Assessment Components\n\n\nClass Participation (10%)\n\nActive engagement in discussions\nQuality of visualization critiques\nIn-class exercise completion\n\nOngoing throughout term\n\n\nMid-Term Project (50%)\n\nTeam-based analysis (3-4 students)\nReal-world dataset visualization\nDesign documentation\nInteractive dashboard\n15-minute presentation\n\nDue: November 11, 2025\n\n\nFinal Project (40%)\n\nIndividual visualization project\nBusiness case requiring data visualization\nComplete visual analysis and recommendations\nProfessional presentation\n\nDue: December 1, 2025\n\n\n\n\n📝 Assessment Criteria\nAll assessments will be evaluated on:\n\nDesign Quality (30%)\n\nAppropriate chart selection\nVisual clarity and aesthetics\nEffective use of color and layout\n\nTechnical Execution (30%)\n\nCorrect implementation\nCode quality and documentation\nTool proficiency\n\nAnalytical Insight (30%)\n\nData understanding\nPattern identification\nMeaningful conclusions\n\nCommunication (10%)\n\nClear narrative\nProfessional presentation\nAudience appropriateness",
+    "crumbs": [
+      "Course Information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course/syllabus.html#course-resources",
+    "href": "course/syllabus.html#course-resources",
+    "title": "Course Syllabus",
+    "section": "Course Resources",
+    "text": "Course Resources\n\n💻 Technical Requirements\n\n\n\n\n\n\nEssential Software Setup\n\n\n\nProgramming Environments:\n\nR (version 4.3+) with RStudio\nPython (version 3.9+) with Jupyter Lab\nTableau (student license provided)\nGit for version control\n\nSample R Packages:\n# Core visualization\ninstall.packages(c(\"ggplot2\", \"plotly\", \"highcharter\"))\n\n# Data manipulation\ninstall.packages(c(\"tidyverse\", \"data.table\"))\n\n# Specialized visualizations\ninstall.packages(c(\"treemap\", \"gganimate\", \"patchwork\"))\n\n# Color and themes\ninstall.packages(c(\"viridis\", \"RColorBrewer\", \"scales\"))\nSample Python Modules:\n# Data manipulation\nconda install -c conda-forge pandas numpy\n\n# Visualization libraries\nconda install -c conda-forge matplotlib seaborn plotly\n\n# Interactive tools\nconda install -c conda-forge altair bokeh dash\n\n\nAlternatively, you can create the environment directly using the provided smm635.yaml file:\nconda env create -f smm635.yaml\nconda activate smm635\n\n\n📚 Reading List\nCore Textbooks:\n\nTufte, E. R., & Graves-Morris, P. R. (1983). The visual display of quantitative information (Vol. 2, No. 9). Cheshire, CT: Graphics press.\n\nThe seminal work on data visualization principles\nFoundation for understanding visual design excellence\n\nCairo, A. (2012). The Functional Art: An introduction to information graphics and visualization. New Riders.\n\nPractical guide to creating effective visualizations\nBalances theory with hands-on examples\n\nWilkinson, L. (2011). The grammar of graphics. In Handbook of computational statistics: Concepts and methods (pp. 375-414). Berlin, Heidelberg: Springer Berlin Heidelberg.\n\nTheoretical foundation for modern visualization tools\nEssential for understanding ggplot2 and similar frameworks\n\nHealy, K. (2024). Data visualization: a practical introduction. Princeton University Press.\n\nModern approach to visualization with R\nExcellent practical examples and code\n\n\n\n\n🌐 Online Resources\nCourse Materials: - GitHub repository: github.com/simoneSantoni/data-viz-smm635 - Moodle page with lectures and assignments - Slack workspace for discussions\nExternal Resources: - Data Visualization Society - Observable - Interactive visualization notebooks - Tableau Public Gallery",
+    "crumbs": [
+      "Course Information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course/syllabus.html#course-policies",
+    "href": "course/syllabus.html#course-policies",
+    "title": "Course Syllabus",
+    "section": "Course Policies",
+    "text": "Course Policies\n\n📋 Attendance and Participation\n\nAttendance: Mandatory for all sessions\nPunctuality: Sessions start promptly; late arrivals disrupt learning\nPreparation: Complete readings and exercises before class\nEngagement: Active participation expected in all activities\n\n\n\n🤝 Collaboration Policy\n\nTeamwork: Encouraged for designated group projects\nIndividual Work: Must be completed independently\nCode Sharing: Allowed for learning, not for assignments\nCitation: Always attribute sources and collaborators\nAI: Disclose how you use LLMs to get your work done\n\n\n\n📧 Communication\n\n\n\n\n\n\nGetting Help\n\n\n\n\nMoodle Forum: First point of contact for content questions\n\nResponse time: 24-48 hours on weekdays\n\nOffice Hours: Wednesdays 14:00-16:00 (by appointment)\n\nBook via: simone.santoni.1@city.ac.uk\n\nEmail: For personal/administrative matters only\n\nUse clear subject lines: “SMM635 - [Topic]”\n\nPeer Support: Join study groups on Slack\n\n\n\n\n\n♿ Accessibility and Accommodations\nStudents requiring accommodations should:\n\nContact Student Services for documentation\nNotify instructor within first two weeks\nDiscuss specific needs and arrangements\n\nAll accommodations will be made in accordance with university policies.\n\n\n📝 Academic Integrity\n\nPlagiarism: Zero tolerance; all work must be original\nCollaboration: Clearly acknowledge all contributions\nData Sources: Properly cite all datasets used\nCode Attribution: Credit all borrowed/adapted code (including LLM generated code)\n\nViolations will be reported to the Academic Misconduct Committee.\n\n\n🔄 Syllabus Modifications\nThis syllabus may be adjusted to:\n\nAccommodate class progress\nIncorporate current events/examples\nRespond to student feedback\n\nAll changes will be announced via Moodle with one week’s notice.\n\n\n\n\n\n\n\nReady to Start?\n\n\n\nData Visualization is both an art and a science. This module will challenge you to think critically about how we present information and equip you with the tools to create visualizations that inform, engage, and inspire action.\nLet’s bring data to life together! 📊",
+    "crumbs": [
+      "Course Information",
+      "Syllabus"
     ]
   },
   {
@@ -253,379 +650,51 @@
     ]
   },
   {
-    "objectID": "course/syllabus.html",
-    "href": "course/syllabus.html",
-    "title": "Course Syllabus",
+    "objectID": "notes/overview.html",
+    "href": "notes/overview.html",
+    "title": "Supplemental Notes",
     "section": "",
-    "text": "Data Visualization (SMM635) provides a comprehensive introduction to the principles and practice of creating effective data visualizations for business analytics. This module equips students with fundamental design principles, practical tools, and hands-on experience to transform complex data into clear, compelling visual narratives that drive decision-making.\n\n\n\nBy the end of this module, you will be able to:\n\n\n\n\n\n\nCore Competencies\n\n\n\n\nDesign Foundation\n\nMaster fundamental principles of effective data visualization design\nUnderstand visual perception and cognitive principles\nApply design best practices for clarity and impact\n\nTechnical Skills\n\nApply the grammar of graphics to create meaningful visualizations\nDesign appropriate charts for different data types and analytical goals\nCreate interactive visualizations and dashboards using modern tools\nLeverage Python libraries and Tableau for professional visualizations\n\nAnalytical Capabilities\n\nPerform exploratory data analysis through visualization\nIdentify patterns, trends, and anomalies in data\nChoose optimal visual encodings for different data dimensions\nEvaluate visualization effectiveness\n\nBusiness Applications\n\nApply storytelling techniques to communicate data insights effectively\nDesign dashboards for different audiences and use cases\nProduce elegant, effective visual solutions to practical business problems\nTransform data insights into actionable business recommendations\n\n\n\n\n\n\n\nIn today’s data-driven world, effective visualization is crucial for:\n\nDecision Making: Transform complex data into actionable insights\nCommunication: Bridge the gap between analysts and stakeholders\nExploration: Discover patterns and relationships in data\nPersuasion: Support arguments with compelling visual evidence\n\n\n\n\nWeek 1\nLearning Outcomes:\n\nUnderstand the data visualization design process\nMaster fundamental design principles (clarity, efficiency, aesthetics)\nApply visual perception theories to chart design\nCritique and improve existing visualizations\n\nTopics Covered:\n\nThe visualization design process\nPre-attentive attributes and visual hierarchy\nGestalt principles in data visualization\nColor theory and accessibility\nCommon visualization pitfalls and how to avoid them\n\n\n\n\nWeek 2\nLearning Outcomes:\n\nUnderstand the grammar of graphics framework\nMap data to visual variables effectively\nBuild complex visualizations from simple components\nImplement layered graphics approaches\n\nTopics Covered:\n\nIntroduction to the grammar of graphics\nVisual encoding: position, size, shape, color, orientation\nScales, coordinates, and transformations\nFaceting and small multiples\nLayering and composition\n\n\n\n\nWeek 3\nLearning Outcomes:\n\nApply visualization techniques for data exploration\nIdentify patterns, outliers, and relationships\nCreate effective summary visualizations\nDocument exploratory findings visually\n\nTopics Covered:\n\nEDA workflow and visualization\nDistribution visualization techniques\nCorrelation and relationship exploration\nTime series exploration\nMissing data visualization\n\nCase Study: Nomis Solutions (A and B) - Customer analytics\n\n\n\nWeek 4\nLearning Outcomes:\n\nHandle high-dimensional data effectively\nApply dimensionality reduction techniques\nCreate parallel coordinates and other multidimensional plots\nDesign interactive exploration tools\n\nTopics Covered:\n\nChallenges of high-dimensional data\nDimensionality reduction visualization\nParallel coordinates and radar charts\nHeatmaps and matrix visualizations\nInteractive filtering and brushing\n\nCase Study: Saving Lives with Data (A and B) - Healthcare analytics and intervention design\n\n\n\nWeek 5\nLearning Outcomes:\n\nStructure data stories for maximum impact\nCreate narrative flow through visualization\nBalance analysis and narrative\nPresent insights persuasively\n\nTopics Covered:\n\nNarrative structure in data stories\nAnnotation and emphasis techniques\nProgressive disclosure of information\nCreating memorable data moments\nPresentation best practices\n\nCase Study: Crop Residue - Agricultural sustainability and environmental impact\n\n\n\nWeeks 7-8\nLearning Outcomes:\n\nNavigate Tableau’s interface and features\nCreate basic to intermediate visualizations\nImplement calculated fields and parameters\nDesign interactive worksheets\n\nTopics Covered:\n\nTableau fundamentals and data connections\nBuilding views with marks and filters\nCalculations and table calculations\nMaps and geographic visualization\nBest practices for Tableau development\n\nCase Study: Accounting and Auditing at Toby Biotech Inc.\n\n\n\nWeeks 9-10\nLearning Outcomes:\n\nDesign effective dashboard layouts\nImplement interactivity and filtering\nOptimize dashboard performance\nDeploy and share dashboards\n\nTopics Covered:\n\nDashboard design principles\nLayout and composition strategies\nActions and interactivity\nMobile and responsive design\nPublishing and sharing options\n\nCase Study: Market Street Wine - Retail analytics and performance monitoring",
+    "text": "This section contains supplemental materials and advanced topics not covered in the main course.\n\n\n\nAdvanced network models (ERGM, TERGM)\nMachine learning on graphs\nTemporal network analysis\nMultilayer networks\nNetwork sampling techniques\n\nCheck back for updates throughout the course.",
     "crumbs": [
-      "Course Information",
-      "Syllabus"
+      "Supplemental notes",
+      "Overview"
     ]
   },
   {
-    "objectID": "course/syllabus.html#course-overview",
-    "href": "course/syllabus.html#course-overview",
-    "title": "Course Syllabus",
+    "objectID": "notes/overview.html#additional-resources",
+    "href": "notes/overview.html#additional-resources",
+    "title": "Supplemental Notes",
     "section": "",
-    "text": "Data Visualization (SMM635) provides a comprehensive introduction to the principles and practice of creating effective data visualizations for business analytics. This module equips students with fundamental design principles, practical tools, and hands-on experience to transform complex data into clear, compelling visual narratives that drive decision-making.\n\n\n\nBy the end of this module, you will be able to:\n\n\n\n\n\n\nCore Competencies\n\n\n\n\nDesign Foundation\n\nMaster fundamental principles of effective data visualization design\nUnderstand visual perception and cognitive principles\nApply design best practices for clarity and impact\n\nTechnical Skills\n\nApply the grammar of graphics to create meaningful visualizations\nDesign appropriate charts for different data types and analytical goals\nCreate interactive visualizations and dashboards using modern tools\nLeverage Python libraries and Tableau for professional visualizations\n\nAnalytical Capabilities\n\nPerform exploratory data analysis through visualization\nIdentify patterns, trends, and anomalies in data\nChoose optimal visual encodings for different data dimensions\nEvaluate visualization effectiveness\n\nBusiness Applications\n\nApply storytelling techniques to communicate data insights effectively\nDesign dashboards for different audiences and use cases\nProduce elegant, effective visual solutions to practical business problems\nTransform data insights into actionable business recommendations\n\n\n\n\n\n\n\nIn today’s data-driven world, effective visualization is crucial for:\n\nDecision Making: Transform complex data into actionable insights\nCommunication: Bridge the gap between analysts and stakeholders\nExploration: Discover patterns and relationships in data\nPersuasion: Support arguments with compelling visual evidence\n\n\n\n\nWeek 1\nLearning Outcomes:\n\nUnderstand the data visualization design process\nMaster fundamental design principles (clarity, efficiency, aesthetics)\nApply visual perception theories to chart design\nCritique and improve existing visualizations\n\nTopics Covered:\n\nThe visualization design process\nPre-attentive attributes and visual hierarchy\nGestalt principles in data visualization\nColor theory and accessibility\nCommon visualization pitfalls and how to avoid them\n\n\n\n\nWeek 2\nLearning Outcomes:\n\nUnderstand the grammar of graphics framework\nMap data to visual variables effectively\nBuild complex visualizations from simple components\nImplement layered graphics approaches\n\nTopics Covered:\n\nIntroduction to the grammar of graphics\nVisual encoding: position, size, shape, color, orientation\nScales, coordinates, and transformations\nFaceting and small multiples\nLayering and composition\n\n\n\n\nWeek 3\nLearning Outcomes:\n\nApply visualization techniques for data exploration\nIdentify patterns, outliers, and relationships\nCreate effective summary visualizations\nDocument exploratory findings visually\n\nTopics Covered:\n\nEDA workflow and visualization\nDistribution visualization techniques\nCorrelation and relationship exploration\nTime series exploration\nMissing data visualization\n\nCase Study: Nomis Solutions (A and B) - Customer analytics\n\n\n\nWeek 4\nLearning Outcomes:\n\nHandle high-dimensional data effectively\nApply dimensionality reduction techniques\nCreate parallel coordinates and other multidimensional plots\nDesign interactive exploration tools\n\nTopics Covered:\n\nChallenges of high-dimensional data\nDimensionality reduction visualization\nParallel coordinates and radar charts\nHeatmaps and matrix visualizations\nInteractive filtering and brushing\n\nCase Study: Saving Lives with Data (A and B) - Healthcare analytics and intervention design\n\n\n\nWeek 5\nLearning Outcomes:\n\nStructure data stories for maximum impact\nCreate narrative flow through visualization\nBalance analysis and narrative\nPresent insights persuasively\n\nTopics Covered:\n\nNarrative structure in data stories\nAnnotation and emphasis techniques\nProgressive disclosure of information\nCreating memorable data moments\nPresentation best practices\n\nCase Study: Crop Residue - Agricultural sustainability and environmental impact\n\n\n\nWeeks 7-8\nLearning Outcomes:\n\nNavigate Tableau’s interface and features\nCreate basic to intermediate visualizations\nImplement calculated fields and parameters\nDesign interactive worksheets\n\nTopics Covered:\n\nTableau fundamentals and data connections\nBuilding views with marks and filters\nCalculations and table calculations\nMaps and geographic visualization\nBest practices for Tableau development\n\nCase Study: Accounting and Auditing at Toby Biotech Inc.\n\n\n\nWeeks 9-10\nLearning Outcomes:\n\nDesign effective dashboard layouts\nImplement interactivity and filtering\nOptimize dashboard performance\nDeploy and share dashboards\n\nTopics Covered:\n\nDashboard design principles\nLayout and composition strategies\nActions and interactivity\nMobile and responsive design\nPublishing and sharing options\n\nCase Study: Market Street Wine - Retail analytics and performance monitoring",
+    "text": "This section contains supplemental materials and advanced topics not covered in the main course.\n\n\n\nAdvanced network models (ERGM, TERGM)\nMachine learning on graphs\nTemporal network analysis\nMultilayer networks\nNetwork sampling techniques\n\nCheck back for updates throughout the course.",
     "crumbs": [
-      "Course Information",
-      "Syllabus"
+      "Supplemental notes",
+      "Overview"
     ]
   },
   {
-    "objectID": "course/syllabus.html#assessment-strategy",
-    "href": "course/syllabus.html#assessment-strategy",
-    "title": "Course Syllabus",
-    "section": "Assessment Strategy",
-    "text": "Assessment Strategy\n\n📊 Assessment Components\n\n\nClass Participation (10%)\n\nActive engagement in discussions\nQuality of visualization critiques\nIn-class exercise completion\n\nOngoing throughout term\n\n\nMid-Term Project (50%)\n\nTeam-based analysis (3-4 students)\nReal-world dataset visualization\nDesign documentation\nInteractive dashboard\n15-minute presentation\n\nDue: November 11, 2025\n\n\nFinal Project (40%)\n\nIndividual visualization project\nBusiness case requiring data visualization\nComplete visual analysis and recommendations\nProfessional presentation\n\nDue: December 1, 2025\n\n\n\n\n📝 Assessment Criteria\nAll assessments will be evaluated on:\n\nDesign Quality (30%)\n\nAppropriate chart selection\nVisual clarity and aesthetics\nEffective use of color and layout\n\nTechnical Execution (30%)\n\nCorrect implementation\nCode quality and documentation\nTool proficiency\n\nAnalytical Insight (30%)\n\nData understanding\nPattern identification\nMeaningful conclusions\n\nCommunication (10%)\n\nClear narrative\nProfessional presentation\nAudience appropriateness",
-    "crumbs": [
-      "Course Information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course/syllabus.html#course-resources",
-    "href": "course/syllabus.html#course-resources",
-    "title": "Course Syllabus",
-    "section": "Course Resources",
-    "text": "Course Resources\n\n💻 Technical Requirements\n\n\n\n\n\n\nEssential Software Setup\n\n\n\nProgramming Environments:\n\nR (version 4.3+) with RStudio\nPython (version 3.9+) with Jupyter Lab\nTableau (student license provided)\nGit for version control\n\nSample R Packages:\n# Core visualization\ninstall.packages(c(\"ggplot2\", \"plotly\", \"highcharter\"))\n\n# Data manipulation\ninstall.packages(c(\"tidyverse\", \"data.table\"))\n\n# Specialized visualizations\ninstall.packages(c(\"treemap\", \"gganimate\", \"patchwork\"))\n\n# Color and themes\ninstall.packages(c(\"viridis\", \"RColorBrewer\", \"scales\"))\nSample Python Modules:\n# Data manipulation\nconda install -c conda-forge pandas numpy\n\n# Visualization libraries\nconda install -c conda-forge matplotlib seaborn plotly\n\n# Interactive tools\nconda install -c conda-forge altair bokeh dash\n\n\nAlternatively, you can create the environment directly using the provided smm635.yaml file:\nconda env create -f smm635.yaml\nconda activate smm635\n\n\n📚 Reading List\nCore Textbooks:\n\nTufte, E. R., & Graves-Morris, P. R. (1983). The visual display of quantitative information (Vol. 2, No. 9). Cheshire, CT: Graphics press.\n\nThe seminal work on data visualization principles\nFoundation for understanding visual design excellence\n\nCairo, A. (2012). The Functional Art: An introduction to information graphics and visualization. New Riders.\n\nPractical guide to creating effective visualizations\nBalances theory with hands-on examples\n\nWilkinson, L. (2011). The grammar of graphics. In Handbook of computational statistics: Concepts and methods (pp. 375-414). Berlin, Heidelberg: Springer Berlin Heidelberg.\n\nTheoretical foundation for modern visualization tools\nEssential for understanding ggplot2 and similar frameworks\n\nHealy, K. (2024). Data visualization: a practical introduction. Princeton University Press.\n\nModern approach to visualization with R\nExcellent practical examples and code\n\n\n\n\n🌐 Online Resources\nCourse Materials: - GitHub repository: github.com/simoneSantoni/data-viz-smm635 - Moodle page with lectures and assignments - Slack workspace for discussions\nExternal Resources: - Data Visualization Society - Observable - Interactive visualization notebooks - Tableau Public Gallery",
-    "crumbs": [
-      "Course Information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course/syllabus.html#course-policies",
-    "href": "course/syllabus.html#course-policies",
-    "title": "Course Syllabus",
-    "section": "Course Policies",
-    "text": "Course Policies\n\n📋 Attendance and Participation\n\nAttendance: Mandatory for all sessions\nPunctuality: Sessions start promptly; late arrivals disrupt learning\nPreparation: Complete readings and exercises before class\nEngagement: Active participation expected in all activities\n\n\n\n🤝 Collaboration Policy\n\nTeamwork: Encouraged for designated group projects\nIndividual Work: Must be completed independently\nCode Sharing: Allowed for learning, not for assignments\nCitation: Always attribute sources and collaborators\nAI: Disclose how you use LLMs to get your work done\n\n\n\n📧 Communication\n\n\n\n\n\n\nGetting Help\n\n\n\n\nMoodle Forum: First point of contact for content questions\n\nResponse time: 24-48 hours on weekdays\n\nOffice Hours: Wednesdays 14:00-16:00 (by appointment)\n\nBook via: simone.santoni.1@city.ac.uk\n\nEmail: For personal/administrative matters only\n\nUse clear subject lines: “SMM635 - [Topic]”\n\nPeer Support: Join study groups on Slack\n\n\n\n\n\n♿ Accessibility and Accommodations\nStudents requiring accommodations should:\n\nContact Student Services for documentation\nNotify instructor within first two weeks\nDiscuss specific needs and arrangements\n\nAll accommodations will be made in accordance with university policies.\n\n\n📝 Academic Integrity\n\nPlagiarism: Zero tolerance; all work must be original\nCollaboration: Clearly acknowledge all contributions\nData Sources: Properly cite all datasets used\nCode Attribution: Credit all borrowed/adapted code (including LLM generated code)\n\nViolations will be reported to the Academic Misconduct Committee.\n\n\n🔄 Syllabus Modifications\nThis syllabus may be adjusted to:\n\nAccommodate class progress\nIncorporate current events/examples\nRespond to student feedback\n\nAll changes will be announced via Moodle with one week’s notice.\n\n\n\n\n\n\n\nReady to Start?\n\n\n\nData Visualization is both an art and a science. This module will challenge you to think critically about how we present information and equip you with the tools to create visualizations that inform, engage, and inspire action.\nLet’s bring data to life together! 📊",
-    "crumbs": [
-      "Course Information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "course/schedule.html",
-    "href": "course/schedule.html",
-    "title": "Course Schedule",
-    "section": "",
-    "text": "📅 Weekly Breakdown\n\n\n\nWeek\nTopic\nPrepare\nSlides\nCase\nLab\nPonder\nProject\n\n\n\n\n1\nDesigning charts - processes and principles\n\n🙾\n\n\n🤔\n\n\n\n2\nDesign variables and the grammar of graphics\n📚\n🙾\n🙋\n\n\n\n\n\n3\nExplortory data analysis\n📚\n\n🙋\n\n\n\n\n\n4\nMultidimensional data visualization\n📚\n\n\n🥼\n\n\n\n\n5\nStorytelling with data\n📚\n\n🙋\n🥼\n\n\n\n\n6\nMid-term project\n\n\n\n\n\n💻\n\n\n7\nIntroduction to Tableau\n📚\n🙾\n\n🥼\n\n\n\n\n8\n(cont’ed)\n\n\n🙋\n🥼\n\n\n\n\n9\nDashboards with Tableau\n📚\n🙾\n\n\n\n💻\n\n\n10\n(cont’ed)\n\n\n🙋\n\n\n\n\n\n\n\n\n\n\n\n\nAdjustments and Updates\n\n\n\nThis schedule is subject to change based on:\n\nClass progress and needs\nUniversity calendar changes\nUnexpected closures\n\nAll changes will be announced in class and posted on the course website.",
-    "crumbs": [
-      "Course Information",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "course/faq.html",
-    "href": "course/faq.html",
-    "title": "Frequently Asked Questions",
-    "section": "",
-    "text": "Network analytics is the study of relationships and connections between entities (nodes) in complex systems. It combines graph theory, statistics, and computational methods to uncover patterns in networked data.\n\n\n\nBasic programming knowledge is helpful but not required. We’ll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.\n\n\n\nBoth are excellent choices. R has stronger statistical packages for network analysis (igraph, statnet), while Python offers better integration with machine learning tools. We’ll teach both and you can choose based on your preference."
-  },
-  {
-    "objectID": "course/faq.html#general-questions",
-    "href": "course/faq.html#general-questions",
-    "title": "Frequently Asked Questions",
-    "section": "",
-    "text": "Network analytics is the study of relationships and connections between entities (nodes) in complex systems. It combines graph theory, statistics, and computational methods to uncover patterns in networked data.\n\n\n\nBasic programming knowledge is helpful but not required. We’ll cover R and Python fundamentals in the first week. The course is designed to accommodate beginners while challenging advanced students.\n\n\n\nBoth are excellent choices. R has stronger statistical packages for network analysis (igraph, statnet), while Python offers better integration with machine learning tools. We’ll teach both and you can choose based on your preference."
-  },
-  {
-    "objectID": "course/faq.html#course-logistics",
-    "href": "course/faq.html#course-logistics",
-    "title": "Frequently Asked Questions",
-    "section": "Course Logistics",
-    "text": "Course Logistics\n\nHow much time should I dedicate to this course?\nExpect to spend 8-10 hours per week:\n\n3 hours: Lectures and tutorials\n3-4 hours: Readings and videos\n2-3 hours: Assignments and practice\n\n\n\nCan I audit the course?\nPlease contact the instructor to discuss auditing options. Priority is given to enrolled students.\n\n\nAre lectures recorded?\nYes, all lectures are recorded and available on Moodle within 24 hours. However, live attendance is strongly encouraged for interactive elements."
-  },
-  {
-    "objectID": "course/faq.html#technical-questions",
-    "href": "course/faq.html#technical-questions",
-    "title": "Frequently Asked Questions",
-    "section": "Technical Questions",
-    "text": "Technical Questions\n\nWhat computer specifications do I need?\n\nRAM: 8GB minimum (16GB recommended)\nStorage: 10GB free space\nOS: Windows 10+, macOS 10.14+, or Linux\nInternet connection for package downloads\n\n\n\nHow do I install the required software?\nDetailed installation guides are provided in Week 1 materials. We also offer installation support sessions.\n\n\nCan I use cloud-based tools instead?\nYes! Options include:\n\nGoogle Colab (Python)\nRStudio Cloud\nBinder for Jupyter notebooks"
-  },
-  {
-    "objectID": "course/faq.html#assessment",
-    "href": "course/faq.html#assessment",
-    "title": "Frequently Asked Questions",
-    "section": "Assessment",
-    "text": "Assessment\n\nCan I work with others on assignments?\n\nMid-term project: Yes (teams of 3-4)\nFinal project: No (individual work)\nWeekly exercises: Discussion encouraged, but submit your own work\n\n\n\nWhat if I submit late?\nLate submissions receive a 10% penalty per day. Extensions may be granted for documented emergencies.\n\n\nHow are projects graded?\nProjects are evaluated on:\n\nTechnical correctness (30%)\nAnalytical depth (30%)\nBusiness relevance (30%)\nPresentation quality (10%)"
-  },
-  {
-    "objectID": "course/faq.html#career-applications",
-    "href": "course/faq.html#career-applications",
-    "title": "Frequently Asked Questions",
-    "section": "Career & Applications",
-    "text": "Career & Applications\n\nHow is network analytics used in industry?\nCommon applications include:\n\nSocial media analysis\nSupply chain optimization\nFraud detection\nRecommendation systems\nOrganizational design\nMarket structure analysis\n\n\n\nWhat career paths benefit from network analytics?\n\nData Scientists\nBusiness Analysts\nMarketing Analysts\nOperations Research\nManagement Consultants\nSocial Media Strategists\n\n\n\nWill this help with my dissertation/thesis?\nAbsolutely! Network analysis is increasingly used in business research. We can discuss how to apply these methods to your research interests."
-  },
-  {
-    "objectID": "course/faq.html#getting-help",
-    "href": "course/faq.html#getting-help",
-    "title": "Frequently Asked Questions",
-    "section": "Getting Help",
-    "text": "Getting Help\n\nI’m struggling with the material. What should I do?\n\nAttend office hours\nPost questions on Moodle forums\nForm study groups with classmates\nReview recorded lectures\nSchedule one-on-one meeting with instructor\n\n\n\nWhere can I find additional practice problems?\n\nEnd of chapter exercises in textbooks\nGitHub repository practice sets\nOnline courses (Coursera, DataCamp)\nKaggle competitions\n\n\n\nWhat if I have accessibility needs?\nPlease contact Student Services and the instructor as soon as possible. We’ll work together to ensure appropriate accommodations.\n\n\n\n\n\n\n\nStill have questions?\n\n\n\nPost on the Moodle forum or email the instructor at simone.santoni.1@city.ac.uk"
-  },
-  {
-    "objectID": "course/info.html",
-    "href": "course/info.html",
-    "title": "Course Information",
-    "section": "",
-    "text": "IND215 - Introduction to R for Analytics is designed specifically for MSc students in analytics who want to develop practical programming skills for data analysis. This course provides a foundation in R programming with a focus on statistical computing, data manipulation, and the tidyverse ecosystem."
-  },
-  {
-    "objectID": "course/info.html#course-overview",
-    "href": "course/info.html#course-overview",
-    "title": "Course Information",
-    "section": "",
-    "text": "IND215 - Introduction to R for Analytics is designed specifically for MSc students in analytics who want to develop practical programming skills for data analysis. This course provides a foundation in R programming with a focus on statistical computing, data manipulation, and the tidyverse ecosystem."
-  },
-  {
-    "objectID": "course/info.html#learning-philosophy",
-    "href": "course/info.html#learning-philosophy",
-    "title": "Course Information",
-    "section": "Learning Philosophy",
-    "text": "Learning Philosophy\nThis course takes a practical, hands-on approach to learning R. Rather than covering every aspect of the language, we focus on the fundamental concepts and packages that analytics professionals use daily:\n\nPractical Focus: Learn by doing with real-world examples and exercises\nAnalytics-Oriented: Emphasis on statistical thinking, data manipulation, and visualization\nProgressive Learning: Build skills incrementally from basic R concepts to tidyverse mastery\nModern Tools: Use current best practices and the tidyverse ecosystem"
-  },
-  {
-    "objectID": "course/info.html#course-structure",
-    "href": "course/info.html#course-structure",
-    "title": "Course Information",
-    "section": "Course Structure",
-    "text": "Course Structure\nThe course is organized into four substantive modules:\n\nModule 1: Getting Started with R\n\nR and RStudio installation and setup\nR as a calculator and basic operations\nUnderstanding the RStudio interface\nCreating and managing R scripts and projects\n\n\n\nModule 2: R Fundamentals\n\nObjects, assignment, and basic data types\nVectors, lists, and data frames\nFactors and their importance in statistical analysis\nControl structures (if statements, loops) and functions\nFile handling and data import/export\n\n\n\nModule 3: Introduction to Tidyverse\n\nUnderstanding the tidyverse philosophy\nData import with readr\nBasic data manipulation with dplyr\nData tidying principles with tidyr\n\n\n\nModule 4: Data Wrangling with dplyr\n\nFiltering, selecting, and arranging data\nCreating new variables with mutate\nGrouping and summarizing data\nJoining datasets and advanced data manipulation"
-  },
-  {
-    "objectID": "course/info.html#learning-objectives",
-    "href": "course/info.html#learning-objectives",
-    "title": "Course Information",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this course, students will be able to:\n\nSet up and manage R environments for data analysis projects using RStudio\nWrite clean, efficient R code following tidyverse principles and best practices\nManipulate and analyze data using base R and tidyverse functions\nProcess and transform datasets using dplyr for data wrangling\nImport and export data from various file formats using readr and base R\nCreate reproducible data analysis workflows with R scripts and R Markdown\nApply statistical thinking to data exploration and basic analysis tasks"
-  },
-  {
-    "objectID": "course/info.html#prerequisites",
-    "href": "course/info.html#prerequisites",
-    "title": "Course Information",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\nNo prior programming experience required\nBasic computer literacy (file management, using applications)\nWillingness to learn through trial and error\nAccess to a computer for hands-on practice"
-  },
-  {
-    "objectID": "course/info.html#software-requirements",
-    "href": "course/info.html#software-requirements",
-    "title": "Course Information",
-    "section": "Software Requirements",
-    "text": "Software Requirements\n\nR 4.0+ (we recommend R 4.3 or newer)\nRStudio Desktop (latest version for the best experience)\nEssential R packages (tidyverse, readr, dplyr, ggplot2, and others)\nGit for version control (optional but recommended)"
-  },
-  {
-    "objectID": "course/info.html#assessment-and-practice",
-    "href": "course/info.html#assessment-and-practice",
-    "title": "Course Information",
-    "section": "Assessment and Practice",
-    "text": "Assessment and Practice\nThis course emphasizes practical skill development through:\n\nInteractive exercises embedded in each module\nHands-on coding assignments using real datasets\nProgressive projects that build on previous concepts\nSelf-assessment opportunities to check understanding"
-  },
-  {
-    "objectID": "course/info.html#getting-help",
-    "href": "course/info.html#getting-help",
-    "title": "Course Information",
-    "section": "Getting Help",
-    "text": "Getting Help\n\nUse the course materials and examples as your first reference\nPractice with the provided exercises and datasets\nConsult Python documentation and community resources\nAsk questions during class sessions or office hours"
-  },
-  {
-    "objectID": "course/info.html#success-tips",
-    "href": "course/info.html#success-tips",
-    "title": "Course Information",
-    "section": "Success Tips",
-    "text": "Success Tips\n\nPractice regularly: Programming is a skill that improves with consistent practice\nStart small: Begin with simple examples and gradually tackle more complex problems\nRead error messages: They often contain helpful information about what went wrong\nUse online resources: The R community has excellent documentation and tutorials\nDon’t be afraid to experiment: Try different approaches and see what works\nThink in data frames: Most R operations work naturally with tabular data"
-  },
-  {
-    "objectID": "course/info.html#course-resources",
-    "href": "course/info.html#course-resources",
-    "title": "Course Information",
-    "section": "Course Resources",
-    "text": "Course Resources\n\nOfficial R Documentation: r-project.org\nRStudio Resources: rstudio.com\nTidyverse Documentation: tidyverse.org\nR for Data Science Book: r4ds.had.co.nz"
-  },
-  {
-    "objectID": "course/support.html",
-    "href": "course/support.html",
-    "title": "Course Support",
-    "section": "",
-    "text": "Network analysis can be challenging, but you don’t have to navigate it alone. This page provides information about all the support resources available to help you succeed in SMM635 - Network Analytics.",
-    "crumbs": [
-      "Course Information",
-      "Support"
-    ]
-  },
-  {
-    "objectID": "course/support.html#support-resources",
-    "href": "course/support.html#support-resources",
-    "title": "Course Support",
-    "section": "Support Resources",
-    "text": "Support Resources\n\nCourse Forum\nAccess the course forum through module SMM635’s Moodle website for:\n\nAsking questions (conceptual or technical)\nSharing helpful resources\nDiscussing course material\nFinding study partners\n\nForum Guidelines:\n\nSearch before posting (your question may be answered)\nUse descriptive titles\nInclude error messages and code snippets\nBe respectful and helpful\nDon’t share complete assignment solutions\n\n\n\nEmail Support\nModule Leader: Simone.Santoni.1@city.ac.uk\nInstructor: Yinji.Zhou.2@city.ac.uk\nWhen to email:\n\nPersonal matters (illness, accommodations)\nScheduling appointments\nUrgent technical issues\nAdministrative questions\n\nResponse time: 24-48 hours on weekdays\nEmail tips:\n\nUse clear subject line: “SMM635: [Topic]”\nInclude your student ID\nBe specific about your issue\nAttach relevant files if needed",
-    "crumbs": [
-      "Course Information",
-      "Support"
-    ]
-  },
-  {
-    "objectID": "course/support.html#common-issues-and-solutions",
-    "href": "course/support.html#common-issues-and-solutions",
-    "title": "Course Support",
-    "section": "Common Issues and Solutions",
-    "text": "Common Issues and Solutions\n\nInstallation Problems\n\n\n\n\n\n\nCommon Installation Issues:\nProblem: R/RStudio won’t install\n\nQuick fix attempt: Check system requirements, disable antivirus temporarily, run as administrator\n\nProblem: Python packages won’t install\n\nQuick fix attempt: Update conda/pip, check firewall settings, try different repository\n\nProblem: Network analysis packages won’t import\n\nQuick fix attempt: Verify installation with library() in R or import in Python, reinstall package, check dependencies (igraph, networkx, etc.)\n\n\n\n\n\n\nNetwork Analysis Challenges\n“I don’t know where to start with network analysis”:\n\nStart with simple network visualizations\nUnderstand your data structure (nodes and edges)\nBegin with basic centrality measures\nUse sample networks before your own data\nLook at similar network examples in the literature\n\n“My network code doesn’t work”:\n\nCheck your data format (edge list, adjacency matrix)\nVerify node and edge attributes\nEnsure proper package loading (igraph, networkx)\nTest with small sample networks first\nCheck for isolated nodes or missing edges\n\n“I don’t understand network concepts”:\n\nReview the network terminology glossary\nPractice with interactive network examples\nVisualize concepts with simple networks\nAsk specific questions on the forum\nAttend office hours with concrete examples",
-    "crumbs": [
-      "Course Information",
-      "Support"
-    ]
-  },
-  {
-    "objectID": "course/support.html#study-resources",
-    "href": "course/support.html#study-resources",
-    "title": "Course Support",
-    "section": "Study Resources",
-    "text": "Study Resources\n\nRecommended Learning Path\n\nBefore Class:\n\nReview previous material\nRead assigned sections\nNote questions\n\nDuring Class:\n\nTake active notes\nTry examples\nAsk questions\n\nAfter Class:\n\nReview notes same day\nComplete exercises\nPractice additional problems\n\n\n\n\nPeer Support\nStudy Groups:\n\nForm groups of 3-4 students\nMeet regularly to review material\nWork through problems together\nShare different approaches\n\nPeer Tutoring:\n\nAdvanced students available for tutoring\nSign up through course website\nFree service for enrolled students",
-    "crumbs": [
-      "Course Information",
-      "Support"
-    ]
-  },
-  {
-    "objectID": "course/support.html#mental-health-and-wellbeing",
-    "href": "course/support.html#mental-health-and-wellbeing",
-    "title": "Course Support",
-    "section": "Mental Health and Wellbeing",
-    "text": "Mental Health and Wellbeing\nProgramming can be frustrating at times. Remember:\n\n\n\n\n\n\nIt’s normal to:\n\nFeel stuck sometimes\nNeed multiple attempts\nMake lots of errors\nNeed to ask for help\nTake breaks when frustrated\n\n\n\n\nCampus Resources: See “Your health and wellbeing” page, hosted in the University’s website.\n\nPersonal Emergencies\nIllness or emergency: - Email instructor ASAP - Provide documentation if extended - Discuss makeup options - Don’t fall behind",
-    "crumbs": [
-      "Course Information",
-      "Support"
-    ]
-  },
-  {
-    "objectID": "course/support.html#faq",
-    "href": "course/support.html#faq",
-    "title": "Course Support",
-    "section": "FAQ",
-    "text": "FAQ\nQ: How much time should I spend on this course? A: Plan for 2-3 hours outside class for every hour in class (6-9 hours/week total).\nQ: Do I need prior programming experience? A: Basic programming experience in R or Python is helpful but not required. We’ll cover the essentials for network analysis.\nQ: Can I use AI tools like ChatGPT? A: You may use them for learning and understanding concepts, but submitted work must be your own. Always cite any AI assistance received.\nQ: What if I’m falling behind? A: Seek help immediately. Network analysis concepts build on each other, so early gaps become bigger problems later.\nQ: Do I need a powerful computer? A: No, basic network analysis doesn’t require much computing power. Any computer from the last 5 years should work fine.\nQ: Should I use R or Python for network analysis? A: Both are excellent. We’ll primarily use R with igraph, but Python with NetworkX is also supported. Choose based on your comfort level.",
-    "crumbs": [
-      "Course Information",
-      "Support"
-    ]
-  },
-  {
-    "objectID": "course/support.html#success-tips",
-    "href": "course/support.html#success-tips",
-    "title": "Course Support",
-    "section": "Success Tips",
-    "text": "Success Tips\n\n\n\n\n\n\nTop tips from successful network analysis students:\n\nStart with simple networks - Build complexity gradually\nVisualize first - Always plot your networks to understand structure\nThink about the domain - Network interpretation depends on context\nPractice with real data - Work with networks from your field of interest\nLearn the terminology - Master key concepts like centrality, clustering, paths\nAsk “why” questions - Don’t just calculate metrics, understand their meaning\nDocument your analysis - Network studies require clear interpretation\nCompare measures - Different centrality metrics tell different stories\n\n\n\n\nRemember: We want you to succeed! Don’t hesitate to reach out when you need help.",
-    "crumbs": [
-      "Course Information",
-      "Support"
-    ]
-  },
-  {
-    "objectID": "course/team.html",
-    "href": "course/team.html",
-    "title": "Teaching team",
-    "section": "",
-    "text": "Yinji (Benedict) Zhou\nInstructor\nPh.D. student in strategy at the Bayes Business School\n📬 Yinji.Zhou.2@city.ac.uk\n\n\n\n\nSimone Santoni\nModule leader\nAssociate professor in strategy at the Bayes Business School\n📬 Simone.Santoni.1@city.ac.uk",
-    "crumbs": [
-      "Course Information",
-      "Teaching team"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Visualization－SMM635",
-    "section": "",
-    "text": "Edward Tufte’s classic visualization of the Challenger O-ring failure analysis - a powerful example of how clear data presentation can reveal critical insights and potentially save lives."
-  },
-  {
-    "objectID": "project/finalCourseProject/main.html",
-    "href": "project/finalCourseProject/main.html",
-    "title": "Final Course Project",
+    "objectID": "project/midTermProject/main.html",
+    "href": "project/midTermProject/main.html",
+    "title": "Mid-Term Project",
     "section": "",
     "text": "Content coming soon.",
     "crumbs": [
       "Project",
-      "Final course project"
+      "Mid-term project"
     ]
   },
   {
-    "objectID": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
-    "href": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "What is Good Data Visualization?",
-    "text": "What is Good Data Visualization?\n\nThe fundamental question every data analyst must ask\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
+    "objectID": "weeks/week-1/dviz_communication_exc.html",
+    "href": "weeks/week-1/dviz_communication_exc.html",
+    "title": "Reflection excercise",
+    "section": "",
+    "text": "Consider the Harvard Business School case 9-118-107, “Data Visualization & Communication Excercise” and address the questions poresented at page 3.\n\n\nWrite a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
   },
   {
-    "objectID": "weeks/week-1/design-principles-presentation.html#tale-of-two-visualizations",
-    "href": "weeks/week-1/design-principles-presentation.html#tale-of-two-visualizations",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Tale of Two Visualizations",
-    "text": "Tale of Two Visualizations\n\n\nExample A: Technical Plot \n\n✓ Shows data relationships\n⚠️ Cluttered interface\n⚠️ Distracting elements\n\n\nExample B: The Economist \n\n✓ Clean, focused design\n✓ Clear narrative\n✓ Professional aesthetics"
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#tuftes-principles-of-graphical-excellence",
-    "href": "weeks/week-1/design-principles-presentation.html#tuftes-principles-of-graphical-excellence",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Tufte’s Principles of Graphical Excellence",
-    "text": "Tufte’s Principles of Graphical Excellence\n\n\nExcellent visualizations should:\n\nShow the data clearly and accurately\nInduce thinking about substance, not methodology\n\nAvoid distortion of what the data reveal\nPresent many numbers in a small space\nMake large datasets coherent\nEncourage comparison between data elements\nReveal data at multiple levels of detail\nServe a clear purpose: description, exploration, or decoration\nIntegrate with statistical and verbal descriptions\n\n\n\n\n\nEdward Tufte"
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
-    "href": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "The Power of “Show the Data” - Anscombe’s Quartet",
-    "text": "The Power of “Show the Data” - Anscombe’s Quartet\nFour datasets with identical summary statistics\n\n\nSame means, same correlations, same regression lines…"
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
-    "href": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Anscombe’s Quartet Revealed",
-    "text": "Anscombe’s Quartet Revealed\n…but completely different data patterns!\n\n\n\n\n\n\n\nImportant\n\n\nKey Lesson: Summary statistics alone are insufficient. Always visualize your data to understand its true nature."
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
-    "href": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "The Design Process Framework",
-    "text": "The Design Process Framework\n\n\nSource: Cairo, A. (2012). The Functional Art"
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
-    "href": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Design Principles in Action",
-    "text": "Design Principles in Action\n\n\nTraditional Approach \nHeavy gridlines, excessive decoration\n\nTufte’s Approach \n\nMinimalist, data-focused design\n\n\n\nPrinciple: Maximize the data-ink ratio - every mark should represent data"
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
-    "href": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Chart Junk - What Not to Do",
-    "text": "Chart Junk - What Not to Do\n\n\n\n\n\n\n\nWarning\n\n\nChart Junk: Visual elements that distract from the data\n\nUnnecessary 3D effects\nDecorative images\n\nExcessive colors\nHeavy borders and gridlines\nMoiré patterns and visual noise"
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#before-and-after---redesign-example",
-    "href": "weeks/week-1/design-principles-presentation.html#before-and-after---redesign-example",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Before and After - Redesign Example",
-    "text": "Before and After - Redesign Example\n\n\nBefore: Cluttered Design \nIssues: 3D effects, poor labeling, distracting elements\n\nAfter: Clean Redesign \n\nSolutions: Clear hierarchy, direct labeling, focused design"
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#key-takeaways-for-week-1",
-    "href": "weeks/week-1/design-principles-presentation.html#key-takeaways-for-week-1",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Key Takeaways for Week 1",
-    "text": "Key Takeaways for Week 1\n\nYour visualization design checklist\n\n🎯 Purpose: Does your chart serve a clear analytical goal?\n📊 Data: Does your visualization accurately represent the data?\n👁️ Clarity: Can viewers understand the message quickly?\n✂️ Simplicity: Have you removed unnecessary elements?\n🎨 Aesthetics: Is the design professional and appropriate?\n🔄 Iteration: Have you tested and refined your design?\n\n\nRemember: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles."
-  },
-  {
-    "objectID": "weeks/week-1/design-principles-presentation.html#next-steps",
-    "href": "weeks/week-1/design-principles-presentation.html#next-steps",
-    "title": "Data Visualization: Design Principles and Processes",
-    "section": "Next Steps",
-    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1\n💻 Practice: Complete the design principles exercise\n\n\n\n\n\n\nResources\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 15:00-17:00"
+    "objectID": "weeks/week-1/dviz_communication_exc.html#submission",
+    "href": "weeks/week-1/dviz_communication_exc.html#submission",
+    "title": "Reflection excercise",
+    "section": "",
+    "text": "Write a 300-word essay responding to these questions and submit it via email to Simone.Santoni.1@city.ac.uk by October 7."
   },
   {
     "objectID": "weeks/week-1/network_terms.html",
@@ -656,15 +725,305 @@
     "text": "Network Substructures\n\nDyads\nA dyad is the simplest possible network substructure, consisting of a pair of vertices and the possible edge(s) between them. In directed networks, dyads can be classified as:\n\nNull dyad: no connection in either direction\nAsymmetric dyad: connection in one direction only\nMutual/Reciprocal dyad: connections in both directions\n\nDyadic analysis examines pairwise relationships and forms the foundation for understanding reciprocity and basic network patterns.\nHere’s a visualization showing a dyad within a larger network:\n\n\nTriads\nA triad consists of three vertices and the possible edges among them. Triads are fundamental for understanding:\n\nTransitivity (“friend of a friend” patterns)\nStructural balance\nClustering tendencies\nLocal network motifs\n\nHere’s a visualization showing a triad within a larger network:\nWe will deal with these in weeks 4 and 5."
   },
   {
-    "objectID": "weeks/week-2/main.html",
-    "href": "weeks/week-2/main.html",
-    "title": "Week 2",
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#todays-journey",
+    "href": "weeks/week-2/gog_and_visual_forms.html#todays-journey",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Today’s Journey",
+    "text": "Today’s Journey\n\n\nPart 1: Grammar of Graphics\n\nFramework & Philosophy\nCore Components\nBuilding Blocks\n\n\nPart 2: Visual Forms\n\nUnivariate Charts\nBivariate Charts\n\nMultivariate Charts"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#learning-objectives",
+    "href": "weeks/week-2/gog_and_visual_forms.html#learning-objectives",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of today’s session, you will:\n\nUnderstand the grammar of graphics framework\nMap data to visual variables effectively\n\nBuild complex visualizations from simple components\nImplement layered graphics approaches\nCreate appropriate charts for different data types"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#part-1-grammar-of-graphics",
+    "href": "weeks/week-2/gog_and_visual_forms.html#part-1-grammar-of-graphics",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Part 1: Grammar of Graphics",
+    "text": "Part 1: Grammar of Graphics\nMoving Beyond Chart Types"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart",
+    "href": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "How Do We Describe a Chart?",
+    "text": "How Do We Describe a Chart?"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart-1",
+    "href": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart-1",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "How Do We Describe a Chart?",
+    "text": "How Do We Describe a Chart?\n\n\nTraditional Approach:\n\nPie chart\nBar chart\nLine chart\nScatter plot\n\n\n\n\n\n\n\nNote\n\n\nWe can use labels or conceptual categories\n\n\n\n\nGrammar Approach:\n\nData\nAesthetics\nGeometries\nScales\nCoordinates\n\n\n\n\n\n\n\nNote\n\n\nWe can refer to a chart’s constitutive components"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#what-is-grammar-of-graphics-gog",
+    "href": "weeks/week-2/gog_and_visual_forms.html#what-is-grammar-of-graphics-gog",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "What is Grammar of Graphics (GoG)?",
+    "text": "What is Grammar of Graphics (GoG)?\n\n\n\n“Grammar makes language expressive. A language consisting of words and no grammar expresses only as many ideas as there are words.” - Leland Wilkinson"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#whats-the-connection-between-gog-and-ggplot2",
+    "href": "weeks/week-2/gog_and_visual_forms.html#whats-the-connection-between-gog-and-ggplot2",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "What’s the Connection between GoG and ggplot2?",
+    "text": "What’s the Connection between GoG and ggplot2?\n\n\n\nggplot2 is an implementation of the Grammar of Graphics in R\nCreated by Hadley Wickham based on Leland Wilkinson’s framework\nThe “gg” in ggplot2 stands for “Grammar of Graphics”\nAllows users to build plots layer by layer using the grammar components\nInstead of choosing from pre-made chart types, you compose visualizations from fundamental building blocks"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#the-power-of-gog",
+    "href": "weeks/week-2/gog_and_visual_forms.html#the-power-of-gog",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "The Power of GoG",
+    "text": "The Power of GoG\n\n# Traditional thinking\nmake_pie_chart(data)\nmake_bar_chart(data)\n\n# Grammar thinking\nggplot(data) +\n  geom_bar() +\n  coord_polar()  # Bar chart → Pie chart!\n\n\n\n\n\n\n\nImportant\n\n\nA pie chart is just a stacked bar chart in polar coordinates! 🤯"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#a-bar-chart",
+    "href": "weeks/week-2/gog_and_visual_forms.html#a-bar-chart",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "A Bar Chart",
+    "text": "A Bar Chart\n\nlibrary(ggplot2)\n\n# Create data with five categories\ndata &lt;- data.frame(\n  category = c(\"A\", \"B\", \"C\", \"D\", \"E\"),\n  value = c(23, 45, 31, 52, 38)\n)\n\n# Create bar chart\nggplot(data, aes(x = category, y = value)) +\n  geom_bar(stat = \"identity\")"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#pie-chart-bar-chart-polar-coordinates",
+    "href": "weeks/week-2/gog_and_visual_forms.html#pie-chart-bar-chart-polar-coordinates",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Pie Chart = Bar Chart + Polar Coordinates",
+    "text": "Pie Chart = Bar Chart + Polar Coordinates\n\n# Create data with five categories\ndata &lt;- data.frame(\n  category = c(\"A\", \"B\", \"C\", \"D\", \"E\"),\n  value = c(23, 45, 31, 52, 38)\n)\n\n# Create bar chart\nggplot(data, aes(x = \"\", y = value, fill = category)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\", start = 0) +\n  theme_void()"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#core-components-of-the-gog",
+    "href": "weeks/week-2/gog_and_visual_forms.html#core-components-of-the-gog",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Core Components of the GoG",
+    "text": "Core Components of the GoG\n\n\n\nDATA: What we want to visualize\nAESTHETICS: How we map data to visual properties\nGEOMETRIES: The visual marks we use\nFACETS: Creating small multiples\nSTATISTICS: How to transform or summarize the raw data\nCOORDINATES: The space we’re working in\nTHEMES: Overall visual appearance\n\n\n Source: https://r.qcbs.ca/"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#data-the-foundation",
+    "href": "weeks/week-2/gog_and_visual_forms.html#data-the-foundation",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "1. Data: The Foundation",
+    "text": "1. Data: The Foundation\n\n\n\n# Data is structured information\nsales_data &lt;- data.frame(\n  month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\"),\n  revenue = c(45000, 52000, 48000, 61000),\n  region = c(\"North\", \"North\", \"South\", \"South\")\n)\n\n\n\n\n\n\n\nTip\n\n\nGood visualization starts with well-structured data\nTidyverse is your friend!"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#aesthetics-visual-mappings",
+    "href": "weeks/week-2/gog_and_visual_forms.html#aesthetics-visual-mappings",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "2. Aesthetics: Visual Mappings",
+    "text": "2. Aesthetics: Visual Mappings\nMapping Data → Visual Properties\n\n\n\n\n\nData Variables\n\n\n\nContinuous values\nCategories\nOrdered factors\nTime series\n\n\n\n\n\n\n\n\nVisual Variables\n\n\n\nPosition (x, y)\nSize\nColor\nShape\nTransparency\nLine type"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#visual-variables-in-action",
+    "href": "weeks/week-2/gog_and_visual_forms.html#visual-variables-in-action",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Visual Variables in Action",
+    "text": "Visual Variables in Action\n\nggplot(sample_data, aes(\n  x = date,        # Position\n  y = sales,       # Position\n  color = region,  # Color\n  size = profit    # Size\n)) +\n  geom_point()"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#geometries-visual-marks",
+    "href": "weeks/week-2/gog_and_visual_forms.html#geometries-visual-marks",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "3. Geometries: Visual Marks",
+    "text": "3. Geometries: Visual Marks\n\nPointsLinesBarsAreas\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\nBest for: Scatter plots, distributions\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_line()\n\nBest for: Trends, time series\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\")\n\nBest for: Comparisons, counts\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_area()\n\nBest for: Proportions over time"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#facets-small-multiples",
+    "href": "weeks/week-2/gog_and_visual_forms.html#facets-small-multiples",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "4. Facets: Small Multiples",
+    "text": "4. Facets: Small Multiples\n\nNo FacetsFacet WrapFacet with Free Scales\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point()\n\n\n\n\n\n\n\nNote\n\n\nAll data in a single plot\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  facet_wrap(~region)\n\n\n\n\n\n\n\nNote\n\n\nCreates separate panels for each region\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = profit)) +\n  geom_point() +\n  facet_wrap(~region, scales = \"free_y\")\n\n\n\n\n\n\n\nNote\n\n\nIndependent y-axis scales per facet"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#statistics-transforming-data",
+    "href": "weeks/week-2/gog_and_visual_forms.html#statistics-transforming-data",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "5. Statistics: Transforming Data",
+    "text": "5. Statistics: Transforming Data\n\nRaw DataSmooth TrendSummary Statistics\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\n\n\n\n\n\n\nNote\n\n\nNo statistical transformation\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\nNote\n\n\nAdds linear regression line with confidence interval\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_point() +\n  stat_summary(fun = mean, geom = \"point\", color = \"red\")\n\n\n\n\n\n\n\nNote\n\n\nCalculates and displays mean values"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
+    "href": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "6. Coordinates: The Canvas",
+    "text": "6. Coordinates: The Canvas\n\nCartesian (default)FlippedPolar\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_cartesian()\n\n\n\n\n\n\n\nNote\n\n\nThe standard x-y coordinate system\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip()\n\n\n\n\n\n\n\nNote\n\n\nSwaps x and y axes for horizontal bars\n\n\n\n\n\n\nggplot(sample_data, aes(x = \"\", y = sales, fill = region)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\") + \n  theme_void()\n\n\n\n\n\n\n\nNote\n\n\nTransforms to polar coordinates (e.g., pie charts)"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
+    "href": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "7. Themes: Overall Visual Appearance",
+    "text": "7. Themes: Overall Visual Appearance\n\ntheme_minimal()theme_bw()theme_classic()Custom Theme\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal()\n\n\n\n\n\n\n\nNote\n\n\nClean, minimal design\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_bw()\n\n\n\n\n\n\n\nNote\n\n\nBlack and white with borders\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_classic()\n\n\n\n\n\n\n\nNote\n\n\nClassic look with axis lines only\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal() +\n  theme(panel.grid.major = element_line(color = \"gray80\"),\n        panel.grid.minor = element_blank(),\n        legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#building-complex-from-simple",
+    "href": "weeks/week-2/gog_and_visual_forms.html#building-complex-from-simple",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Building Complex from Simple",
+    "text": "Building Complex from Simple\n\n\nPart 1: Foundation\n\n\n\n\n\nflowchart TD\n    START((\" \")) --&gt; A[\"DATA\"] --&gt; B[\"AESTHETICS\"] --&gt; C[\"GEOMETRY\"]\n\n    style START fill:#90EE90,stroke:#333,stroke-width:1px\n    style A fill:#e1f5ff\n    style B fill:#e1f5ff\n    style C fill:#e1f5ff\n\n\n\n\n\n\n\nPart 2: Refinement\n\n\n\n\n\nflowchart TD\n    D[\"FACETS\"] --&gt; E[\"STATISTICS\"] --&gt; F[\"COORDINATES\"] --&gt; G[\"THEME\"] --&gt; END((\" \"))\n\n    style D fill:#e1f5ff\n    style E fill:#e1f5ff\n    style F fill:#e1f5ff\n    style G fill:#e1f5ff\n    style END fill:#FF6B6B,stroke:#333,stroke-width:1px\n\n\n\n\n\n\n\nExample: Layer by Layer\n\n# 1. Data + Aesthetics\nggplot(data, aes(x, y)) +\n\n  # 2. Geometry\n  geom_point() +\n\n  # 3. Facets\n  facet_wrap(~category) +\n\n  # 4. Statistics\n  geom_smooth() +\n\n  # 5. Coordinates\n  coord_cartesian() +\n\n  # 6. Theme\n  theme_minimal()"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#layering-the-power-of-composition",
+    "href": "weeks/week-2/gog_and_visual_forms.html#layering-the-power-of-composition",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Layering: The Power of Composition",
+    "text": "Layering: The Power of Composition\n\nggplot(economics, aes(date, unemploy)) +\n  geom_area(alpha = 0.3) +           # Layer 1: Area\n  geom_line(size = 1.2) +            # Layer 2: Line\n  geom_smooth(se = FALSE, col = \"red\") # Layer 3: Trend\n\n\n\n\n\n\n\nNote\n\n\nEach layer adds information without obscuring previous layers"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#part-2-visual-forms",
+    "href": "weeks/week-2/gog_and_visual_forms.html#part-2-visual-forms",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Part 2: Visual Forms",
+    "text": "Part 2: Visual Forms\nFrom Simple to Complex"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-charts",
+    "href": "weeks/week-2/gog_and_visual_forms.html#univariate-charts",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Univariate Charts",
+    "text": "Univariate Charts\nExploring Single Variables\n\n\n\n\n\nContinuous Data\n\n\n\nHistograms\nDensity plots\nBox plots\nViolin plots\n\n\n\n\n\n\n\n\nCategorical Data\n\n\n\nBar charts\nPie charts\nWaffle charts\nDot plots"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-continuous-data",
+    "href": "weeks/week-2/gog_and_visual_forms.html#univariate-continuous-data",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Univariate: Continuous Data",
+    "text": "Univariate: Continuous Data\n\nHistogramDensityBox Plot\n\n\n\nggplot(data, aes(x = value)) +\n  geom_histogram(bins = 30)\n\nHistograms divide data into bins and count observations in each bin.\n\nBest for: Understanding the distribution shape and identifying patterns\nShows: Frequency, central tendency, spread, and skewness\nKey parameter: Number of bins affects granularity\n\n\n\n\nggplot(data, aes(x = value)) +\n  geom_density(fill = \"skyblue\", alpha = 0.5)\n\nDensity plots show a smoothed version of the distribution.\n\nBest for: Comparing multiple distributions, identifying modes\nShows: Probability density across the range of values\nAdvantage: Smooth curve makes patterns easier to see\n\n\n\n\nggplot(data, aes(y = value)) +\n  geom_boxplot()\n\nBox plots display the five-number summary: min, Q1, median, Q3, max.\n\nBest for: Identifying outliers and comparing distributions\nShows: Central tendency, spread, and asymmetry\nKey insight: Box contains middle 50% of data"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-categorical-data",
+    "href": "weeks/week-2/gog_and_visual_forms.html#univariate-categorical-data",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Univariate: Categorical Data",
+    "text": "Univariate: Categorical Data\n\nBar ChartPie ChartCleveland Dot Plot\n\n\n\nggplot(data, aes(x = category)) +\n  geom_bar()\n\nBar charts use bar length to encode category counts or values.\n\nBest for: Comparing categories, showing rankings\nShows: Frequency or magnitude for each category\nAdvantage: Easy to compare values, natural visual ordering\n\n\n\n\nggplot(data, aes(x = \"\", fill = category)) +\n  geom_bar() +\n  coord_polar(\"y\")\n\nPie charts show parts of a whole as slices of a circle.\n\nBest for: Showing proportions when there are few categories (2-5)\nShows: Relative proportions and percentages\nLimitation: Difficult to compare similar-sized slices\n\n\n\n\nggplot(data, aes(x = value, y = category)) +\n  geom_point()\n\nCleveland dot plots use position to encode values with minimal ink.\n\nBest for: Precise value comparisons, when space is limited\nShows: Exact values for each category\nAdvantage: More accurate than bars, less cluttered"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#bivariate-charts",
+    "href": "weeks/week-2/gog_and_visual_forms.html#bivariate-charts",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Bivariate Charts",
+    "text": "Bivariate Charts\nExploring Relationships Between Two Variables\n\n\n\nX Variable\nY Variable\nBest Chart Types\n\n\n\n\nContinuous\nContinuous\nScatter plot, Line chart\n\n\nContinuous\nCategorical\nBox plot, Violin plot\n\n\nCategorical\nCategorical\nHeatmap, Grouped bars\n\n\nTime\nContinuous\nLine chart, Area chart"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#bivariate-continuous-continuous",
+    "href": "weeks/week-2/gog_and_visual_forms.html#bivariate-continuous-continuous",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Bivariate: Continuous × Continuous",
+    "text": "Bivariate: Continuous × Continuous\n\nScatter PlotWith Trend2D Density\n\n\n\nggplot(data, aes(x = height, y = weight)) +\n  geom_point()\n\nScatter plots display individual data points in 2D space.\n\nBest for: Exploring relationships, identifying correlations, spotting outliers\nShows: Direction, strength, and form of relationship between two variables\nKey insight: Patterns reveal linear, non-linear, or no correlation\n\n\n\n\nggplot(data, aes(x = height, y = weight)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\nScatter plot with trend line adds a fitted model to show the relationship.\n\nBest for: Confirming correlation patterns, making predictions\nShows: Overall trend and strength of linear relationship\nOptions: Linear (lm), loess (local smoothing), or other methods\n\n\n\n\nggplot(data, aes(x = height, y = weight)) +\n  geom_density_2d_filled()\n\n2D density plots show concentration of points as contours or filled regions.\n\nBest for: Large datasets where overplotting obscures patterns\nShows: Areas of high and low data concentration\nAdvantage: Reveals patterns in dense data clouds"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#bivariate-categorical-continuous",
+    "href": "weeks/week-2/gog_and_visual_forms.html#bivariate-categorical-continuous",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Bivariate: Categorical × Continuous",
+    "text": "Bivariate: Categorical × Continuous\n\nGrouped Box PlotViolin PlotStrip Chart\n\n\n\nggplot(data, aes(x = category, y = value)) +\n  geom_boxplot()\n\nGrouped box plots compare distributions across multiple categories.\n\nBest for: Comparing central tendency and spread across groups\nShows: Median, quartiles, and outliers for each category\nAdvantage: Compact representation of multiple distributions side-by-side\n\n\n\n\nggplot(data, aes(x = category, y = value)) +\n  geom_violin()\n\nViolin plots combine box plots with kernel density estimation.\n\nBest for: Revealing distribution shapes and multimodality\nShows: Full distribution shape for each category\nAdvantage: More informative than box plots for complex distributions\n\n\n\n\nggplot(data, aes(x = category, y = value)) +\n  geom_jitter(width = 0.2)\n\nStrip charts (jittered) show all individual data points.\n\nBest for: Small to medium datasets, showing actual observations\nShows: Individual values and sample size per category\nAdvantage: Transparency - shows the actual data, not summaries"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-charts",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-charts",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Charts",
+    "text": "Multivariate Charts\nBeyond Two Dimensions\nStrategies for encoding multiple variables:\n\nColor/Fill: 3rd dimension\nSize: 4th dimension\n\nShape: 5th dimension (categorical only)\nFaceting: Create small multiples\nAnimation: Time as dimension"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example: The Economics Dataset",
+    "text": "Multivariate Example: The Economics Dataset"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset-1",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset-1",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example: The Economics Dataset",
+    "text": "Multivariate Example: The Economics Dataset\n\n\n\n\n\n\nNote\n\n\nDataset Variables:\n\ndate: Month of data collection\npce: Personal consumption expenditures (billions USD)\npop: Total population (thousands)\npsavert: Personal savings rate (%)\nuempmed: Median duration of unemployment (weeks)\nunemploy: Number of unemployed (thousands)"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example",
+    "text": "Multivariate Example"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-1",
+    "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-1",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Multivariate Example",
+    "text": "Multivariate Example"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#best-practices-for-multivariate",
+    "href": "weeks/week-2/gog_and_visual_forms.html#best-practices-for-multivariate",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Best Practices for Multivariate",
+    "text": "Best Practices for Multivariate\n\nStart simple: Add dimensions gradually\nPrioritize: Most important variables get best encodings\nTest perception: Can viewers decode all dimensions?\nConsider alternatives: Sometimes multiple simple charts &gt; one complex chart\nInteractive solutions: Tooltips, filtering, zooming"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#putting-it-all-together",
+    "href": "weeks/week-2/gog_and_visual_forms.html#putting-it-all-together",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Putting It All Together",
+    "text": "Putting It All Together\nA Practical Workflow\n\n\n\n\n\n\nTip\n\n\n\nUnderstand your data\n\nTypes of variables\nRelationships to explore\n\nChoose appropriate forms\n\nMatch chart to data type\nConsider your message\n\nApply the grammar\n\nMap variables to aesthetics\nLayer geometries\nRefine with scales"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#key-takeaways",
+    "href": "weeks/week-2/gog_and_visual_forms.html#key-takeaways",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n📊 The Grammar of Graphics provides a systematic framework for creating any visualization\n🔧 Complex visualizations are built from simple, reusable components\n🎨 Visual variables (position, size, color, etc.) are tools for encoding information\n📈 Choose chart types based on data types and relationships\n🔄 Iteration and layering lead to rich, informative graphics"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#next-week",
+    "href": "weeks/week-2/gog_and_visual_forms.html#next-week",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Next Week",
+    "text": "Next Week\nTopic 3: Exploratory Data Analysis\n\nEDA workflow and visualization\nDistribution visualization techniques\n\nCorrelation and relationship exploration\nTime series exploration\nCase Study: Nomis Solutions\n\nHomework\n\nPractice creating layered visualizations\nExperiment with different coordinate systems\nRead: Wickham’s “Layered Grammar of Graphics”"
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html#questions",
+    "href": "weeks/week-2/gog_and_visual_forms.html#questions",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "Questions?",
+    "text": "Questions?\nLet’s explore the grammar together!\n📧 Simone.Santoni.1@city.ac.uk\n🌐 Course website: https://simonesantoni.github.io/data-viz-smm635\n💬 Office hours: Wednesdays 3-5 PM"
+  },
+  {
+    "objectID": "weeks/week-2/practice_1.html",
+    "href": "weeks/week-2/practice_1.html",
+    "title": "Google Play Store Apps: Data Exploration",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 2 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
-    "crumbs": [
-      "Weekly materials",
-      "Week 2"
-    ]
+    "text": "library(readr)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# Load data\ndata_source &lt;- \"https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv\"\napps &lt;- read_csv(data_source)\n\n\n\n\n\n\n\nThis dataset from Kaggle’s Google Play Store Apps project contains information on ~10K Android apps including ratings, reviews, pricing, and categories."
+  },
+  {
+    "objectID": "weeks/week-2/practice_1.html#setup",
+    "href": "weeks/week-2/practice_1.html#setup",
+    "title": "Google Play Store Apps: Data Exploration",
+    "section": "",
+    "text": "library(readr)\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# Load data\ndata_source &lt;- \"https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv\"\napps &lt;- read_csv(data_source)\n\n\n\n\n\n\n\nThis dataset from Kaggle’s Google Play Store Apps project contains information on ~10K Android apps including ratings, reviews, pricing, and categories."
+  },
+  {
+    "objectID": "weeks/week-2/practice_1.html#data-overview",
+    "href": "weeks/week-2/practice_1.html#data-overview",
+    "title": "Google Play Store Apps: Data Exploration",
+    "section": "Data Overview",
+    "text": "Data Overview\n\nspec(apps)  # Column specifications\napps        # Data preview\n\n\nKey Variables\n\n\n\n\n\n\n\n\n\nVariable\nType\nDescription\nNotes\n\n\n\n\nApp\nString\nApplication name\nMay contain special characters\n\n\nCategory\nCategorical\nPrimary app category (33 categories)\nContains some miscoded entries\n\n\nRating\nFloat\nAverage user rating (1.0-5.0)\nMissing for unrated apps\n\n\nReviews\nInteger\nTotal number of user reviews\nIndicator of popularity\n\n\nSize\nString\nApp size with units (e.g., “19M”)\nRequires parsing; “Varies with device” for some\n\n\nInstalls\nCategorical\nInstall count ranges (e.g., “10,000+”)\nOrdinal categories, not exact counts\n\n\nType\nBinary\n“Free” or “Paid”\nContains data quality issues\n\n\nPrice\nString\nPrice in USD (e.g., “$2.99”)\n“0” for free apps\n\n\nContent Rating\nCategorical\nAge appropriateness\n“Everyone”, “Teen”, “Mature 17+”, etc.\n\n\nGenres\nString\nDetailed genre (may be multiple)\nSemicolon-separated\n\n\nLast Updated\nDate\nLast update date\nFormat: “Month Day, Year”\n\n\nCurrent Ver\nString\nApp version\nNon-standardized format\n\n\nAndroid Ver\nString\nMinimum Android version required\nFormat: “X.X.X and up”"
+  },
+  {
+    "objectID": "weeks/week-2/practice_1.html#data-visualization",
+    "href": "weeks/week-2/practice_1.html#data-visualization",
+    "title": "Google Play Store Apps: Data Exploration",
+    "section": "Data Visualization",
+    "text": "Data Visualization\n\nUnivariate Distributions\n\nCategorical Variables\nBar charts are the standard approach for visualizing categorical distributions. ?@fig-bar-chart reveals data quality issues: some apps have \\(Type = 0\\) and missing values (\\(NaN\\)).\n\nBar ChartPie ChartData Quality Check\n\n\n\nggplot(apps, aes(x = Type)) +\n  geom_bar()\n\n\n\n\nggplot(apps, aes(x = \"\", fill = Type)) +\n  geom_bar(width = 1) +\n  coord_polar(theta = \"y\") +\n  theme_void()\n\n\n\n\napps %&gt;%\n  filter(Type != \"Free\" & Type != \"Paid\") %&gt;%\n  ggplot(aes(x = Type)) +\n  geom_bar()\n\n\n\n\n\n\nContinuous Variables\nThe Reviews variable exhibits strong right skew. Multiple visualization approaches reveal different aspects of the distribution. Note: geom_histogram() defaults to 30 bins; adjust with bins argument.\n\nHistogramHistogram (Log Scale)Boxplot (Horizontal)Boxplot (Vertical)Density Plot\n\n\n\nggplot(apps, aes(x = Reviews)) +\n  geom_histogram()\n\n\n\n\nggplot(apps, aes(x = Reviews)) +\n  geom_histogram() +\n  scale_x_log10()\n\n\n\n\nggplot(apps, aes(x = Reviews)) +\n  geom_boxplot() +\n  scale_x_log10()\n\n\n\n\nggplot(apps, aes(y = Reviews)) +\n  geom_boxplot() +\n  scale_y_log10()\n\n\n\n\nggplot(apps, aes(x = Reviews)) +\n  geom_density() +\n  scale_x_log10()\n\n\n\n\n\n\n\nBivariate Relationships\n\nCategorical vs Continuous\nGrouped visualizations reveal how continuous variables differ across categories. ?@fig-rating-by-type compares rating distributions between free and paid apps.\n\nGrouped BoxplotsViolin PlotsGrouped Histograms\n\n\n\napps %&gt;%\n  filter(Type %in% c(\"Free\", \"Paid\")) %&gt;%\n  ggplot(aes(x = Type, y = Rating, fill = Type)) +\n  geom_boxplot() +\n  theme_minimal()\n\n\n\n\napps %&gt;%\n  filter(Type %in% c(\"Free\", \"Paid\")) %&gt;%\n  ggplot(aes(x = Type, y = Rating, fill = Type)) +\n  geom_violin() +\n  theme_minimal()\n\n\n\n\napps %&gt;%\n  filter(Type %in% c(\"Free\", \"Paid\")) %&gt;%\n  ggplot(aes(x = Rating, fill = Type)) +\n  geom_histogram(bins = 30) +\n  facet_wrap(~Type, ncol = 1) +\n  theme_minimal()\n\n\n\n\n\n\nContinuous vs Continuous\nScatterplots visualize relationships between two continuous variables. ?@fig-reviews-rating explores whether highly-reviewed apps have better ratings.\n\nBasic ScatterplotWith SmoothingColored by Type\n\n\n\napps %&gt;%\n  filter(!is.na(Rating)) %&gt;%\n  ggplot(aes(x = Reviews, y = Rating)) +\n  geom_point(alpha = 0.3) +\n  scale_x_log10() +\n  theme_minimal()\n\n\n\n\napps %&gt;%\n  filter(!is.na(Rating)) %&gt;%\n  ggplot(aes(x = Reviews, y = Rating)) +\n  geom_point(alpha = 0.2) +\n  geom_smooth(method = \"loess\", color = \"red\") +\n  scale_x_log10() +\n  theme_minimal()\n\n\n\n\napps %&gt;%\n  filter(!is.na(Rating), Type %in% c(\"Free\", \"Paid\")) %&gt;%\n  ggplot(aes(x = Reviews, y = Rating, color = Type)) +\n  geom_point(alpha = 0.4) +\n  scale_x_log10() +\n  theme_minimal()\n\n\n\n\n\n\nCategorical vs Categorical\nStacked and grouped bar charts show relationships between categorical variables. ?@fig-type-by-content examines how app pricing varies across content ratings.\n\nStacked Bar ChartGrouped Bar ChartHeatmap\n\n\n\napps %&gt;%\n  filter(Type %in% c(\"Free\", \"Paid\")) %&gt;%\n  ggplot(aes(x = `Content Rating`, fill = Type)) +\n  geom_bar() +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\napps %&gt;%\n  filter(Type %in% c(\"Free\", \"Paid\")) %&gt;%\n  ggplot(aes(x = `Content Rating`, fill = Type)) +\n  geom_bar(position = \"dodge\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\napps %&gt;%\n  filter(Type %in% c(\"Free\", \"Paid\")) %&gt;%\n  count(Type, `Content Rating`) %&gt;%\n  ggplot(aes(x = `Content Rating`, y = Type, fill = n)) +\n  geom_tile() +\n  geom_text(aes(label = n), color = \"white\", size = 4) +\n  scale_fill_gradient(low = \"lightblue\", high = \"darkblue\") +\n  labs(fill = \"Count\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
+  },
+  {
+    "objectID": "weeks/week-2/practice_1.html#next-steps",
+    "href": "weeks/week-2/practice_1.html#next-steps",
+    "title": "Google Play Store Apps: Data Exploration",
+    "section": "Next Steps",
+    "text": "Next Steps\n\n\n\n\n\n\n\nData Cleaning: Address missing values and miscoded entries in Type, Category, and other fields\nFeature Engineering: Parse Size and Installs into numeric formats for quantitative analysis\nAdvanced Analysis: Examine temporal patterns using Last Updated, analyze price elasticity, investigate category-specific trends\nMultivariate Analysis: Build models to predict ratings or success metrics based on app characteristics"
   },
   {
     "objectID": "weeks/week-4/main.html",
