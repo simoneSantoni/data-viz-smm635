@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>practice_1 – SMM635 - Data Visualization</title>
+<title>Google Play Store Apps: Data Exploration – SMM635 - Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -310,7 +310,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">practice_1</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Google Play Store Apps: Data Exploration</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -503,17 +503,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link active" data-scroll-target="#load-libraries">Load libraries</a></li>
-  <li><a href="#ingest-the-data-from-github-smm635-repo1" id="toc-ingest-the-data-from-github-smm635-repo1" class="nav-link" data-scroll-target="#ingest-the-data-from-github-smm635-repo1">Ingest the data from GitHub SMM635 repo</a></li>
-  <li><a href="#familiarize-with-data" id="toc-familiarize-with-data" class="nav-link" data-scroll-target="#familiarize-with-data">Familiarize with data</a>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a>
   <ul class="collapse">
-  <li><a href="#key-figures" id="toc-key-figures" class="nav-link" data-scroll-target="#key-figures">Key Figures</a></li>
-  <li><a href="#data-preview" id="toc-data-preview" class="nav-link" data-scroll-target="#data-preview">Data Preview</a></li>
-  <li><a href="#variable-definitions" id="toc-variable-definitions" class="nav-link" data-scroll-target="#variable-definitions">Variable Definitions</a></li>
+  <li><a href="#key-variables" id="toc-key-variables" class="nav-link" data-scroll-target="#key-variables">Key Variables</a></li>
   </ul></li>
   <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a>
   <ul class="collapse">
-  <li><a href="#univariate-charts" id="toc-univariate-charts" class="nav-link" data-scroll-target="#univariate-charts">Univariate Charts</a></li>
+  <li><a href="#univariate-distributions" id="toc-univariate-distributions" class="nav-link" data-scroll-target="#univariate-distributions">Univariate Distributions</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -524,7 +521,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">practice_1</h1>
+<h1 class="title">Google Play Store Apps: Data Exploration</h1>
 </div>
 
 
@@ -541,29 +538,32 @@ window.Quarto = {
 </header>
 
 
-<section id="load-libraries" class="level2">
-<h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>data_source <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>apps <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_source)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This dataset from <a href="https://www.kaggle.com/datasets/lava18/google-play-store-apps">Kaggle’s Google Play Store Apps project</a> contains information on ~10K Android apps including ratings, reviews, pricing, and categories.</p>
+</div>
+</div>
 </div>
 </section>
-<section id="ingest-the-data-from-github-smm635-repo1" class="level2">
-<h2 class="anchored" data-anchor-id="ingest-the-data-from-github-smm635-repo1">Ingest the data from <a href="https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv">GitHub SMM635 repo</a></h2>
-<p>The dataset comes from Kaggle’s <a href="https://www.kaggle.com/datasets/lava18/google-play-store-apps">Google Play Store Apps</a> project. Please refer to the project description for details concerning the data gathering and structuring aspects.</p>
-<p>The project comprises two data tables: app- and review-level data. We will focus on the former.</p>
+<section id="data-overview" class="level2">
+<h2 class="anchored" data-anchor-id="data-overview">Data Overview</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_source <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>apps <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_source)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="familiarize-with-data" class="level2">
-<h2 class="anchored" data-anchor-id="familiarize-with-data">Familiarize with data</h2>
-<section id="key-figures" class="level3">
-<h3 class="anchored" data-anchor-id="key-figures">Key Figures</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(apps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(apps)  <span class="co"># Column specifications</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>cols(
   App = col_character(),
@@ -581,12 +581,7 @@ window.Quarto = {
   `Android Ver` = col_character()
 )</code></pre>
 </div>
-</div>
-</section>
-<section id="data-preview" class="level3">
-<h3 class="anchored" data-anchor-id="data-preview">Data Preview</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>apps        <span class="co"># Data preview</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10,841 × 13
    App       Category Rating Reviews Size  Installs Type  Price `Content Rating`
@@ -606,244 +601,120 @@ window.Quarto = {
 #   `Android Ver` &lt;chr&gt;</code></pre>
 </div>
 </div>
-</section>
-<section id="variable-definitions" class="level3">
-<h3 class="anchored" data-anchor-id="variable-definitions">Variable Definitions</h3>
-<section id="app" class="level4">
-<h4 class="anchored" data-anchor-id="app">App</h4>
-<ul>
-<li><strong>Type:</strong> Text (String)<br>
-</li>
-<li><strong>Description:</strong> Name of the application<br>
-</li>
-<li><strong>Example Values:</strong>
-<ul>
-<li>“Photo Editor &amp; Candy Camera &amp; Grid &amp; ScrapBook”<br>
-</li>
-<li>“Coloring book moana”<br>
-</li>
-<li>“U Launcher Lite – FREE Live Cool Themes, Hide Apps”<br>
-</li>
-<li>“Sketch - Draw &amp; Paint”<br>
-</li>
-</ul></li>
-<li><strong>Missing Values:</strong> Expected to be minimal/none (key identifier)<br>
-</li>
-<li><strong>Notes:</strong> May contain special characters, emojis, and version information</li>
-</ul>
-</section>
-<section id="category" class="level4">
-<h4 class="anchored" data-anchor-id="category">Category</h4>
-<ul>
-<li><strong>Type:</strong> Categorical (String)<br>
-</li>
-<li><strong>Description:</strong> Primary category classification of the app on Google Play Store<br>
-</li>
-<li><strong>Unique Categories:</strong> 33 main categories + some miscoded entries<br>
-</li>
-<li><strong>Data Quality Issues:</strong> Contains miscoded entries (app names/descriptions appearing as category values)</li>
-</ul>
-</section>
-<section id="rating" class="level4">
-<h4 class="anchored" data-anchor-id="rating">Rating</h4>
-<ul>
-<li><strong>Type:</strong> Numeric (Float)<br>
-</li>
-<li><strong>Description:</strong> Average user rating on a scale of 1.0 to 5.0<br>
-</li>
-<li><strong>Range:</strong> 1.0 - 5.0 (expected)<br>
-</li>
-<li><strong>Example Values:</strong> 4.1, 3.9, 4.7, 4.5<br>
-</li>
-<li><strong>Missing Values:</strong> Expected to be present for apps with no ratings<br>
-</li>
-<li><strong>Notes:</strong> Higher values indicate better user satisfaction</li>
-</ul>
-</section>
-<section id="reviews" class="level4">
-<h4 class="anchored" data-anchor-id="reviews">Reviews</h4>
-<ul>
-<li><strong>Type:</strong> Numeric (Integer)<br>
-</li>
-<li><strong>Description:</strong> Total number of user reviews submitted for the app<br>
-</li>
-<li><strong>Example Values:</strong> 159, 967, 87510, 215644<br>
-</li>
-<li><strong>Range:</strong> 0 to millions<br>
-</li>
-<li><strong>Notes:</strong> Indicator of app popularity and user engagement</li>
-</ul>
-</section>
-<section id="size" class="level4">
-<h4 class="anchored" data-anchor-id="size">Size</h4>
-<ul>
-<li><strong>Type:</strong> Text (String with units)<br>
-</li>
-<li><strong>Description:</strong> Size of the application<br>
-</li>
-<li><strong>Format:</strong> Number followed by unit (M for megabytes, k for kilobytes)<br>
-</li>
-<li><strong>Example Values:</strong> “19M”, “14M”, “8.7M”, “25M”<br>
-</li>
-<li><strong>Special Values:</strong>
-<ul>
-<li>“Varies with device” - size depends on device specifications<br>
-</li>
-</ul></li>
-<li><strong>Notes:</strong> Requires parsing to convert to numeric format for analysis</li>
-</ul>
-</section>
-<section id="installs" class="level4">
-<h4 class="anchored" data-anchor-id="installs">Installs</h4>
-<ul>
-<li><strong>Type:</strong> Categorical (String)<br>
-</li>
-<li><strong>Description:</strong> Number of times the app has been installed (in ranges)<br>
-</li>
-<li><strong>Format:</strong> Comma-separated numbers with plus sign<br>
-</li>
-<li><strong>Example Values:</strong> “10,000+”, “500,000+”, “5,000,000+”, “50,000,000+”<br>
-</li>
-<li><strong>Notes:</strong> Requires parsing to convert to numeric format; provides order of magnitude rather than exact counts</li>
-</ul>
-</section>
-<section id="type" class="level4">
-<h4 class="anchored" data-anchor-id="type">Type</h4>
-<ul>
-<li><strong>Type:</strong> Binary Categorical (String)<br>
-</li>
-<li><strong>Description:</strong> Whether the app is free or paid<br>
-</li>
-<li><strong>Distribution:</strong> Majority of apps are free<br>
-</li>
-<li><strong>Notes:</strong> Some data quality issues with miscoded entries</li>
-</ul>
-</section>
-<section id="price" class="level4">
-<h4 class="anchored" data-anchor-id="price">Price</h4>
-<ul>
-<li><strong>Type:</strong> Text (String with currency symbol)<br>
-</li>
-<li><strong>Description:</strong> Price of the app (if paid)<br>
-</li>
-<li><strong>Format:</strong> Usually “0” for free apps or “$X.XX” for paid apps<br>
-</li>
-<li><strong>Example Values:</strong> “0”, “$0.99”, “$2.99”, “$4.99”<br>
-</li>
-<li><strong>Notes:</strong>
-<ul>
-<li>Free apps should have “0” value<br>
-</li>
-<li>Requires parsing to remove currency symbol for numeric analysis<br>
-</li>
-<li>Currency is primarily USD ($)</li>
-</ul></li>
-</ul>
-</section>
-<section id="content-rating" class="level4">
-<h4 class="anchored" data-anchor-id="content-rating">Content Rating</h4>
-<ul>
-<li><strong>Type:</strong> Categorical (String)<br>
-</li>
-<li><strong>Description:</strong> Age group suitability rating for the app<br>
-</li>
-<li><strong>Standard Values:</strong>
-<ul>
-<li>“Everyone” - Suitable for all ages<br>
-</li>
-<li>“Everyone 10+” - Suitable for ages 10 and up<br>
-</li>
-<li>“Teen” - Suitable for ages 13 and up<br>
-</li>
-<li>“Mature 17+” - Suitable for ages 17 and up<br>
-</li>
-<li>“Adults only 18+” - Suitable for ages 18 and up<br>
-</li>
-<li>“Unrated” - No rating assigned<br>
-</li>
-</ul></li>
-<li><strong>Example Values:</strong> “Everyone”, “Teen”<br>
-</li>
-<li><strong>Notes:</strong> Follows Google Play Store’s content rating system</li>
-</ul>
-</section>
-<section id="genres" class="level4">
-<h4 class="anchored" data-anchor-id="genres">Genres</h4>
-<ul>
-<li><strong>Type:</strong> Text (String, may contain multiple values)<br>
-</li>
-<li><strong>Description:</strong> Detailed genre classification (may include subcategories)<br>
-</li>
-<li><strong>Format:</strong> Primary genre, sometimes followed by semicolon and secondary genre<br>
-</li>
-<li><strong>Example Values:</strong>
-<ul>
-<li>“Art &amp; Design”<br>
-</li>
-<li>“Art &amp; Design;Pretend Play”<br>
-</li>
-</ul></li>
-<li><strong>Notes:</strong> More specific than Category field; can contain multiple genres separated by semicolons</li>
-</ul>
-</section>
-<section id="last-updated" class="level4">
-<h4 class="anchored" data-anchor-id="last-updated">Last Updated</h4>
-<ul>
-<li><strong>Type:</strong> Date (String)<br>
-</li>
-<li><strong>Description:</strong> Date when the app was last updated<br>
-</li>
-<li><strong>Format:</strong> “Month Day, Year” (e.g., “January 7, 2018”)<br>
-</li>
-<li><strong>Example Values:</strong> “January 7, 2018”, “January 15, 2018”, “August 1, 2018”, “June 8, 2018”<br>
-</li>
-<li><strong>Notes:</strong> Can be used to assess app maintenance and developer activity; requires date parsing for analysis</li>
-</ul>
-</section>
-<section id="current-ver" class="level4">
-<h4 class="anchored" data-anchor-id="current-ver">Current Ver</h4>
-<ul>
-<li><strong>Type:</strong> Text (String)<br>
-</li>
-<li><strong>Description:</strong> Current version of the application<br>
-</li>
-<li><strong>Format:</strong> Varies widely (semantic versioning, numeric versions, descriptive text)<br>
-</li>
-<li><strong>Example Values:</strong> “1.0.0”, “2.0.0”, “1.2.4”, “Varies with device”<br>
-</li>
-<li><strong>Special Values:</strong> “Varies with device” - version depends on device<br>
-</li>
-<li><strong>Notes:</strong> No standardized format across apps</li>
-</ul>
-</section>
-<section id="android-ver" class="level4">
-<h4 class="anchored" data-anchor-id="android-ver">Android Ver</h4>
-<ul>
-<li><strong>Type:</strong> Text (String)<br>
-</li>
-<li><strong>Description:</strong> Minimum Android version required to run the app<br>
-</li>
-<li><strong>Format:</strong> Version number followed by “and up”<br>
-</li>
-<li><strong>Example Values:</strong> “4.0.3 and up”, “4.2 and up”<br>
-</li>
-<li><strong>Special Values:</strong> “Varies with device” - requirement depends on device<br>
-</li>
-<li><strong>Notes:</strong> Indicates app compatibility range</li>
-</ul>
-</section>
+<section id="key-variables" class="level3">
+<h3 class="anchored" data-anchor-id="key-variables">Key Variables</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 16%">
+<col style="width: 36%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>App</strong></td>
+<td>String</td>
+<td>Application name</td>
+<td>May contain special characters</td>
+</tr>
+<tr class="even">
+<td><strong>Category</strong></td>
+<td>Categorical</td>
+<td>Primary app category (33 categories)</td>
+<td>Contains some miscoded entries</td>
+</tr>
+<tr class="odd">
+<td><strong>Rating</strong></td>
+<td>Float</td>
+<td>Average user rating (1.0-5.0)</td>
+<td>Missing for unrated apps</td>
+</tr>
+<tr class="even">
+<td><strong>Reviews</strong></td>
+<td>Integer</td>
+<td>Total number of user reviews</td>
+<td>Indicator of popularity</td>
+</tr>
+<tr class="odd">
+<td><strong>Size</strong></td>
+<td>String</td>
+<td>App size with units (e.g., “19M”)</td>
+<td>Requires parsing; “Varies with device” for some</td>
+</tr>
+<tr class="even">
+<td><strong>Installs</strong></td>
+<td>Categorical</td>
+<td>Install count ranges (e.g., “10,000+”)</td>
+<td>Ordinal categories, not exact counts</td>
+</tr>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>Binary</td>
+<td>“Free” or “Paid”</td>
+<td>Contains data quality issues</td>
+</tr>
+<tr class="even">
+<td><strong>Price</strong></td>
+<td>String</td>
+<td>Price in USD (e.g., “$2.99”)</td>
+<td>“0” for free apps</td>
+</tr>
+<tr class="odd">
+<td><strong>Content Rating</strong></td>
+<td>Categorical</td>
+<td>Age appropriateness</td>
+<td>“Everyone”, “Teen”, “Mature 17+”, etc.</td>
+</tr>
+<tr class="even">
+<td><strong>Genres</strong></td>
+<td>String</td>
+<td>Detailed genre (may be multiple)</td>
+<td>Semicolon-separated</td>
+</tr>
+<tr class="odd">
+<td><strong>Last Updated</strong></td>
+<td>Date</td>
+<td>Last update date</td>
+<td>Format: “Month Day, Year”</td>
+</tr>
+<tr class="even">
+<td><strong>Current Ver</strong></td>
+<td>String</td>
+<td>App version</td>
+<td>Non-standardized format</td>
+</tr>
+<tr class="odd">
+<td><strong>Android Ver</strong></td>
+<td>String</td>
+<td>Minimum Android version required</td>
+<td>Format: “X.X.X and up”</td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
-<section id="univariate-charts" class="level3">
-<h3 class="anchored" data-anchor-id="univariate-charts">Univariate Charts</h3>
+<section id="univariate-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="univariate-distributions">Univariate Distributions</h3>
 <section id="categorical-variables" class="level4">
 <h4 class="anchored" data-anchor-id="categorical-variables">Categorical Variables</h4>
-<p><a href="#fig-bar-chart" class="quarto-xref">Figure&nbsp;1</a> shows possible data quality issues: some cases present value <span class="math inline">\(0\)</span>, whose meaning is unclear in the context of this variable; other cases present missing values, displayed as <span class="math inline">\(NaN\)</span>.</p>
+<p><strong>Bar charts</strong> are the standard approach for visualizing categorical distributions. <a href="#fig-bar-chart" class="quarto-xref">Figure&nbsp;1</a> reveals data quality issues: some apps have <span class="math inline">\(Type = 0\)</span> and missing values (<span class="math inline">\(NaN\)</span>).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Pie Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Data Quality Check</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-bar-chart" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -851,18 +722,19 @@ window.Quarto = {
 <img src="practice_1_files/figure-html/fig-bar-chart-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bar-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Counts of apps by pricing type
+Figure&nbsp;1: App distribution by pricing type
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>The same information content can be displayed by using a pie chart as per <a href="#fig-pie-chart" class="quarto-xref">Figure&nbsp;2</a></p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-pie-chart" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -870,18 +742,19 @@ Figure&nbsp;1: Counts of apps by pricing type
 <img src="practice_1_files/figure-html/fig-pie-chart-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pie-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Pie charts can also be used to visualize categorical variables’ univariate distributions
+Figure&nbsp;2: Alternative pie chart representation
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>To explore the data quality issues further, we can filter and visualize only the cases where Type is neither “Free” nor “Paid.” To do so, we can apply <strong>ggplot</strong> functions over the ouput of a <strong>dplyr</strong>. <a href="#fig-type-issues" class="quarto-xref">Figure&nbsp;3</a> indicates one case compatible with data regitration error (<span class="math inline">\(Type == 1\)</span>) and one case that does not present a value for</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">!=</span> <span class="st">"Free"</span> <span class="sc">&amp;</span> Type <span class="sc">!=</span> <span class="st">"Paid"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">!=</span> <span class="st">"Free"</span> <span class="sc">&amp;</span> Type <span class="sc">!=</span> <span class="st">"Paid"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-type-issues" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -889,19 +762,26 @@ Figure&nbsp;2: Pie charts can also be used to visualize categorical variables’
 <img src="practice_1_files/figure-html/fig-type-issues-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-type-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Distribution of miscoded Type values
+Figure&nbsp;3: Miscoded Type values (neither Free nor Paid)
 </figcaption>
 </figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </section>
 <section id="continuous-variables" class="level4">
 <h4 class="anchored" data-anchor-id="continuous-variables">Continuous Variables</h4>
-<p><a href="#fig-reviews-hist" class="quarto-xref">Figure&nbsp;4</a> shows the distribution of apps by level of reviews. It is worth noticing that <strong>ggplot</strong> groups the cases into 30 bins, that is ranges of variation for <span class="math inline">\(X\)</span>. To change the number of bins, populate the <span class="math inline">\(\texttt{bins}\)</span> optional argument.</p>
+<p>The <strong>Reviews</strong> variable exhibits strong right skew. Multiple visualization approaches reveal different aspects of the distribution. Note: <code>geom_histogram()</code> defaults to 30 bins; adjust with <code>bins</code> argument.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Histogram</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Histogram (Log Scale)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Boxplot (Horizontal)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Boxplot (Vertical)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Density Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-reviews-hist" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -909,17 +789,18 @@ Figure&nbsp;3: Distribution of miscoded Type values
 <img src="practice_1_files/figure-html/fig-reviews-hist-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Distribution of app reviews
+Figure&nbsp;4: Review count distribution (raw scale)
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>The distribution of reviews is highly skewed. To better visualize the pattern, we can apply a log transformation to the x-axis as per <a href="#fig-reviews-hist-log" class="quarto-xref">Figure&nbsp;5</a>.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-reviews-hist-log" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -927,17 +808,18 @@ Figure&nbsp;4: Distribution of app reviews
 <img src="practice_1_files/figure-html/fig-reviews-hist-log-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-hist-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Distribution of app reviews with log-transformed x-axis
+Figure&nbsp;5: Review count distribution (log₁₀ scale)
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>To display the univariate distribution of a continuous variable, one can also use a boxplot, as shown in <a href="#fig-boxplot" class="quarto-xref">Figure&nbsp;6</a></p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -945,17 +827,18 @@ Figure&nbsp;5: Distribution of app reviews with log-transformed x-axis
 <img src="practice_1_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Distribution of app reviews with log-transformed x-axis
+Figure&nbsp;6: Review summary statistics (log₁₀ scale)
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>By default, <strong>ggplot</strong> proposes a horizontal boxplot. To get a vertical boxplot, one has to populate the <strong>y-axis</strong> ― as shown in <a href="#fig-boxplot-vertical" class="quarto-xref">Figure&nbsp;7</a> ― instead of the <strong>x-axis</strong> as in the previous example.</p>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">y =</span> Reviews)) <span class="sc">+</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">y =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-boxplot-vertical" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -963,9 +846,31 @@ Figure&nbsp;6: Distribution of app reviews with log-transformed x-axis
 <img src="practice_1_files/figure-html/fig-boxplot-vertical-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-vertical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Distribution of app reviews with log-transformed x-axis
+Figure&nbsp;7: Vertical boxplot using y aesthetic
 </figcaption>
 </figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(apps, <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-density" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-density-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-density-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-density-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Smoothed density estimate (log₁₀ scale)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

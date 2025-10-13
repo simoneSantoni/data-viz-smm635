@@ -1,275 +1,350 @@
 ---
-title: "practice_1"
+title: "Google Play Store Apps: Data Exploration"
 format: html
 execute:
   warning: false
+  message: false
 ---
 
-## Load libraries
+## Setup
 
 ```{r}
 library(readr)
 library(ggplot2)
 library(dplyr)
-```
 
-## Ingest the data from [GitHub SMM635 repo][1]
-
-The dataset comes from Kaggle's [Google Play Store Apps][0] project. Please refer
-to the project description for details concerning the data gathering and structuring
-aspects.
-
-The project comprises two data tables: app- and review-level data. We will focus 
-on the former. 
-
-[0]: https://www.kaggle.com/datasets/lava18/google-play-store-apps
-
-```{r}
+# Load data
 data_source <- "https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"
 apps <- read_csv(data_source)
 ```
 
-[1]:https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv
+::: {.callout-note}
+This dataset from [Kaggle's Google Play Store Apps project](https://www.kaggle.com/datasets/lava18/google-play-store-apps) contains information on ~10K Android apps including ratings, reviews, pricing, and categories.
+:::
 
-## Familiarize with data
-
-
-### Key Figures
-
-```{r}
-spec(apps)
-```
-
-### Data Preview
+## Data Overview
 
 ```{r}
-apps
+spec(apps)  # Column specifications
+apps        # Data preview
 ```
 
-### Variable Definitions                                                                                                            
-#### App                                                                                                                         
-- **Type:** Text (String)                                                                                                            
-- **Description:** Name of the application                                                                                           
-- **Example Values:**                                                                                                                
-  - "Photo Editor & Candy Camera & Grid & ScrapBook"                                                                                 
-  - "Coloring book moana"                                                                                                            
-  - "U Launcher Lite – FREE Live Cool Themes, Hide Apps"                                                                             
-  - "Sketch - Draw & Paint"                                                                                                          
-- **Missing Values:** Expected to be minimal/none (key identifier)                                                                   
-- **Notes:** May contain special characters, emojis, and version information                                                         
+### Key Variables
 
-#### Category                                                                                                                     
-- **Type:** Categorical (String)                                                                                                     
-- **Description:** Primary category classification of the app on Google Play Store                                                   
-- **Unique Categories:** 33 main categories + some miscoded entries                                                                  
-- **Data Quality Issues:** Contains miscoded entries (app names/descriptions appearing as category values)                           
-                                                                                                                                     
-#### Rating                                                                                                                       
-- **Type:** Numeric (Float)                                                                                                          
-- **Description:** Average user rating on a scale of 1.0 to 5.0                                                                      
-- **Range:** 1.0 - 5.0 (expected)                                                                                                    
-- **Example Values:** 4.1, 3.9, 4.7, 4.5                                                                                             
-- **Missing Values:** Expected to be present for apps with no ratings                                                                
-- **Notes:** Higher values indicate better user satisfaction                                                                         
-                                                                                                                                     
-#### Reviews                                                                                                                      
-- **Type:** Numeric (Integer)                                                                                                        
-- **Description:** Total number of user reviews submitted for the app                                                                
-- **Example Values:** 159, 967, 87510, 215644                                                                                        
-- **Range:** 0 to millions                                                                                                           
-- **Notes:** Indicator of app popularity and user engagement                                                                         
-                                                                                                                                     
-#### Size                                                                                                                         
-- **Type:** Text (String with units)                                                                                                 
-- **Description:** Size of the application                                                                                           
-- **Format:** Number followed by unit (M for megabytes, k for kilobytes)                                                             
-- **Example Values:** "19M", "14M", "8.7M", "25M"                                                                                    
-- **Special Values:**                                                                                                                
-  - "Varies with device" - size depends on device specifications                                                                     
-- **Notes:** Requires parsing to convert to numeric format for analysis                                                              
-                                                                                                                                     
-#### Installs                                                                                                                     
-- **Type:** Categorical (String)                                                                                                     
-- **Description:** Number of times the app has been installed (in ranges)                                                            
-- **Format:** Comma-separated numbers with plus sign                                                                                 
-- **Example Values:** "10,000+", "500,000+", "5,000,000+", "50,000,000+"                                                             
-- **Notes:** Requires parsing to convert to numeric format; provides order of magnitude rather than exact counts                     
-                                                                                                                                     
-#### Type                                                                                                                         
-- **Type:** Binary Categorical (String)                                                                                              
-- **Description:** Whether the app is free or paid                                                                                   
-- **Distribution:** Majority of apps are free                                                                                        
-- **Notes:** Some data quality issues with miscoded entries                                                                          
-                                                                                                                                     
-#### Price                                                                                                                        
-- **Type:** Text (String with currency symbol)                                                                                       
-- **Description:** Price of the app (if paid)                                                                                        
-- **Format:** Usually "0" for free apps or "$X.XX" for paid apps                                                                     
-- **Example Values:** "0", "$0.99", "$2.99", "$4.99"                                                                                 
-- **Notes:**                                                                                                                         
-  - Free apps should have "0" value                                                                                                  
-  - Requires parsing to remove currency symbol for numeric analysis                                                                  
-  - Currency is primarily USD ($)                                                                                                    
-                                                                                                                                     
-#### Content Rating                                                                                                               
-- **Type:** Categorical (String)                                                                                                     
-- **Description:** Age group suitability rating for the app                                                                          
-- **Standard Values:**                                                                                                               
-  - "Everyone" - Suitable for all ages                                                                                               
-  - "Everyone 10+" - Suitable for ages 10 and up                                                                                     
-  - "Teen" - Suitable for ages 13 and up                                                                                             
-  - "Mature 17+" - Suitable for ages 17 and up                                                                                       
-  - "Adults only 18+" - Suitable for ages 18 and up                                                                                  
-  - "Unrated" - No rating assigned                                                                                                   
-- **Example Values:** "Everyone", "Teen"                                                                                             
-- **Notes:** Follows Google Play Store's content rating system                                                                       
-                                                                                                                                     
-#### Genres                                                                                                                      
-- **Type:** Text (String, may contain multiple values)                                                                               
-- **Description:** Detailed genre classification (may include subcategories)                                                         
-- **Format:** Primary genre, sometimes followed by semicolon and secondary genre                                                     
-- **Example Values:**                                                                                                                
-  - "Art & Design"                                                                                                                   
-  - "Art & Design;Pretend Play"                                                                                                      
-- **Notes:** More specific than Category field; can contain multiple genres separated by semicolons                                  
-                                                                                                                                     
-#### Last Updated                                                                                                                
-- **Type:** Date (String)                                                                                                            
-- **Description:** Date when the app was last updated                                                                                
-- **Format:** "Month Day, Year" (e.g., "January 7, 2018")                                                                            
-- **Example Values:** "January 7, 2018", "January 15, 2018", "August 1, 2018", "June 8, 2018"                                        
-- **Notes:** Can be used to assess app maintenance and developer activity; requires date parsing for analysis                        
-                                                                                                                                     
-#### Current Ver                                                                                                                 
-- **Type:** Text (String)                                                                                                            
-- **Description:** Current version of the application                                                                                
-- **Format:** Varies widely (semantic versioning, numeric versions, descriptive text)                                                
-- **Example Values:** "1.0.0", "2.0.0", "1.2.4", "Varies with device"                                                                
-- **Special Values:** "Varies with device" - version depends on device                                                               
-- **Notes:** No standardized format across apps                                                                                      
-                                                                                                                                     
-#### Android Ver                                                                                                                 
-- **Type:** Text (String)                                                                                                            
-- **Description:** Minimum Android version required to run the app                                                                   
-- **Format:** Version number followed by "and up"                                                                                    
-- **Example Values:** "4.0.3 and up", "4.2 and up"                                                                                   
-- **Special Values:** "Varies with device" - requirement depends on device                                                           
-- **Notes:** Indicates app compatibility range      
+| Variable | Type | Description | Notes |
+|----------|------|-------------|-------|
+| **App** | String | Application name | May contain special characters |
+| **Category** | Categorical | Primary app category (33 categories) | Contains some miscoded entries |
+| **Rating** | Float | Average user rating (1.0-5.0) | Missing for unrated apps |
+| **Reviews** | Integer | Total number of user reviews | Indicator of popularity |
+| **Size** | String | App size with units (e.g., "19M") | Requires parsing; "Varies with device" for some |
+| **Installs** | Categorical | Install count ranges (e.g., "10,000+") | Ordinal categories, not exact counts |
+| **Type** | Binary | "Free" or "Paid" | Contains data quality issues |
+| **Price** | String | Price in USD (e.g., "$2.99") | "0" for free apps |
+| **Content Rating** | Categorical | Age appropriateness | "Everyone", "Teen", "Mature 17+", etc. |
+| **Genres** | String | Detailed genre (may be multiple) | Semicolon-separated |
+| **Last Updated** | Date | Last update date | Format: "Month Day, Year" |
+| **Current Ver** | String | App version | Non-standardized format |
+| **Android Ver** | String | Minimum Android version required | Format: "X.X.X and up" |      
 
 ## Data Visualization
 
-### Univariate Charts
+### Univariate Distributions
 
 #### Categorical Variables
 
-@fig-bar-chart shows possible data quality issues: some cases present value $0$,
-whose meaning is unclear in the context of this variable; other cases present 
-missing values, displayed as $NaN$.
+**Bar charts** are the standard approach for visualizing categorical distributions. @fig-bar-chart reveals data quality issues: some apps have $Type = 0$ and missing values ($NaN$).
 
+::: {.panel-tabset}
+
+## Bar Chart
 ```{r}
-#| fig-cap: Counts of apps by pricing type
-#| echo: true
+#| fig-cap: App distribution by pricing type
 #| label: fig-bar-chart
 
-ggplot(data = apps, mapping = aes(x = Type)) +
+ggplot(apps, aes(x = Type)) +
   geom_bar()
 ```
 
-The same information content can be displayed by using a pie chart as per @fig-pie-chart
-
+## Pie Chart
 ```{r}
-#| fig-cap: Pie charts can also be used to visualize categorical variables' univariate distributions
+#| fig-cap: Alternative pie chart representation
 #| label: fig-pie-chart
 
-ggplot(data = apps, mapping = aes(x = "", fill = Type)) +
+ggplot(apps, aes(x = "", fill = Type)) +
   geom_bar(width = 1) +
   coord_polar(theta = "y") +
   theme_void()
 ```
 
-To explore the data quality issues further, we can filter and visualize only the 
-cases where Type is neither "Free" nor "Paid." To do so, we can apply **ggplot**
-functions over the ouput of a **dplyr**. @fig-type-issues 
-indicates one case compatible with data regitration error ($Type == 1$) and 
-one case that does not present a value for 
-
+## Data Quality Check
 ```{r}
-#| fig-cap: Distribution of miscoded Type values
+#| fig-cap: Miscoded Type values (neither Free nor Paid)
 #| label: fig-type-issues
 
 apps %>%
   filter(Type != "Free" & Type != "Paid") %>%
-  ggplot(mapping = aes(x = Type)) +
+  ggplot(aes(x = Type)) +
   geom_bar()
 ```
+:::
 
 #### Continuous Variables
 
-@fig-reviews-hist shows the distribution of apps by level of reviews. It is worth
-noticing that **ggplot** groups the cases into 30 bins, that is ranges of variation
-for $X$. To change the number of bins, populate the $\texttt{bins}$ optional 
-argument.
+The **Reviews** variable exhibits strong right skew. Multiple visualization approaches reveal different aspects of the distribution. Note: `geom_histogram()` defaults to 30 bins; adjust with `bins` argument.
 
+::: {.panel-tabset}
+
+## Histogram
 ```{r}
-#| fig-cap: Distribution of app reviews
+#| fig-cap: Review count distribution (raw scale)
 #| label: fig-reviews-hist
 
-ggplot(data = apps, mapping = aes(x = Reviews)) +
+ggplot(apps, aes(x = Reviews)) +
   geom_histogram()
 ```
 
-The distribution of reviews is highly skewed. To better visualize the pattern, we 
-can apply a log transformation to the x-axis as per @fig-reviews-hist-log.
-
+## Histogram (Log Scale)
 ```{r}
+#| fig-cap: Review count distribution (log₁₀ scale)
 #| label: fig-reviews-hist-log
-#| message: false
-#| warning: false
-#| fig-cap: Distribution of app reviews with log-transformed x-axis
 
-ggplot(data = apps, mapping = aes(x = Reviews)) +
+ggplot(apps, aes(x = Reviews)) +
   geom_histogram() +
   scale_x_log10()
 ```
-To display the univariate distribution of a continuous variable, one can also 
-use a boxplot, as shown in @fig-boxplot
 
+## Boxplot (Horizontal)
 ```{r}
+#| fig-cap: Review summary statistics (log₁₀ scale)
 #| label: fig-boxplot
-#| message: false
-#| warning: false
-#| fig-cap: Distribution of app reviews with log-transformed x-axis
 
-ggplot(data = apps, mapping = aes(x = Reviews)) +
+ggplot(apps, aes(x = Reviews)) +
   geom_boxplot() +
   scale_x_log10()
 ```
 
-By default, **ggplot** proposes a horizontal boxplot. To get a vertical boxplot, 
-one has to populate the **y-axis** ― as shown in @fig-boxplot-vertical ― instead 
-of the **x-axis** as in the previous example.
-
+## Boxplot (Vertical)
 ```{r}
+#| fig-cap: Vertical boxplot using y aesthetic
 #| label: fig-boxplot-vertical
-#| message: false
-#| warning: false
-#| fig-cap: Distribution of app reviews with log-transformed x-axis
 
-ggplot(data = apps, mapping = aes(y = Reviews)) +
+ggplot(apps, aes(y = Reviews)) +
   geom_boxplot() +
   scale_y_log10()
 ```
 
-Another way to visualize the distribution of a continuous variable is through a density plot, which shows a smoothed version of the distribution as shown in @fig-density.
-
+## Density Plot
 ```{r}
+#| fig-cap: Smoothed density estimate (log₁₀ scale)
 #| label: fig-density
-#| message: false
-#| warning: false
-#| fig-cap: Density plot of app reviews with log-transformed x-axis
 
-ggplot(data = apps, mapping = aes(x = Reviews)) +
+ggplot(apps, aes(x = Reviews)) +
   geom_density() +
   scale_x_log10()
 ```
+:::
+
+### Bivariate Relationships
+
+#### Categorical vs Continuous
+
+**Grouped visualizations** reveal how continuous variables differ across categories. @fig-rating-by-type compares rating distributions between free and paid apps.
+
+::: {.panel-tabset}
+
+## Grouped Boxplots
+```{r}
+#| fig-cap: Rating distribution by app type
+#| label: fig-rating-by-type
+
+apps %>%
+  filter(Type %in% c("Free", "Paid")) %>%
+  ggplot(aes(x = Type, y = Rating, fill = Type)) +
+  geom_boxplot() +
+  theme_minimal()
+```
+
+## Violin Plots
+```{r}
+#| fig-cap: Rating density by app type
+#| label: fig-rating-violin
+
+apps %>%
+  filter(Type %in% c("Free", "Paid")) %>%
+  ggplot(aes(x = Type, y = Rating, fill = Type)) +
+  geom_violin() +
+  theme_minimal()
+```
+
+## Grouped Histograms
+```{r}
+#| fig-cap: Rating distribution faceted by type
+#| label: fig-rating-facet
+
+apps %>%
+  filter(Type %in% c("Free", "Paid")) %>%
+  ggplot(aes(x = Rating, fill = Type)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~Type, ncol = 1) +
+  theme_minimal()
+```
+:::
+
+#### Continuous vs Continuous
+
+**Scatterplots** visualize relationships between two continuous variables. @fig-reviews-rating explores whether highly-reviewed apps have better ratings.
+
+::: {.panel-tabset}
+
+## Basic Scatterplot
+```{r}
+#| fig-cap: Relationship between reviews and ratings
+#| label: fig-reviews-rating
+
+apps %>%
+  filter(!is.na(Rating)) %>%
+  ggplot(aes(x = Reviews, y = Rating)) +
+  geom_point(alpha = 0.3) +
+  scale_x_log10() +
+  theme_minimal()
+```
+
+## With Smoothing
+```{r}
+#| fig-cap: Reviews vs ratings with LOESS smoother
+#| label: fig-reviews-rating-smooth
+
+apps %>%
+  filter(!is.na(Rating)) %>%
+  ggplot(aes(x = Reviews, y = Rating)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(method = "loess", color = "red") +
+  scale_x_log10() +
+  theme_minimal()
+```
+
+## Colored by Type
+```{r}
+#| fig-cap: Reviews vs ratings, colored by app type
+#| label: fig-reviews-rating-type
+
+apps %>%
+  filter(!is.na(Rating), Type %in% c("Free", "Paid")) %>%
+  ggplot(aes(x = Reviews, y = Rating, color = Type)) +
+  geom_point(alpha = 0.4) +
+  scale_x_log10() +
+  theme_minimal()
+```
+:::
+
+#### Categorical vs Categorical
+
+**Stacked and grouped bar charts** show relationships between categorical variables. @fig-type-by-content examines how app pricing varies across content ratings.
+
+::: {.panel-tabset}
+
+## Stacked Bar Chart
+```{r}
+#| fig-cap: App type distribution by content rating
+#| label: fig-type-by-content
+
+apps %>%
+  filter(Type %in% c("Free", "Paid")) %>%
+  ggplot(aes(x = `Content Rating`, fill = Type)) +
+  geom_bar() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+## Grouped Bar Chart
+```{r}
+#| fig-cap: Side-by-side comparison of app types
+#| label: fig-type-by-content-dodge
+
+apps %>%
+  filter(Type %in% c("Free", "Paid")) %>%
+  ggplot(aes(x = `Content Rating`, fill = Type)) +
+  geom_bar(position = "dodge") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+## Proportional (Filled)
+```{r}
+#| fig-cap: Proportion of free vs paid apps by content rating
+#| label: fig-type-by-content-fill
+
+apps %>%
+  filter(Type %in% c("Free", "Paid")) %>%
+  ggplot(aes(x = `Content Rating`, fill = Type)) +
+  geom_bar(position = "fill") +
+  labs(y = "Proportion") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+:::
+
+### Advanced Visualizations
+
+#### Top Categories Analysis
+
+Examining the most popular app categories reveals market concentration.
+
+```{r}
+#| fig-cap: Top 10 app categories by count
+#| label: fig-top-categories
+
+apps %>%
+  count(Category, sort = TRUE) %>%
+  head(10) %>%
+  ggplot(aes(x = reorder(Category, n), y = n)) +
+  geom_col(fill = "steelblue") +
+  coord_flip() +
+  labs(x = "Category", y = "Number of Apps") +
+  theme_minimal()
+```
+
+#### Rating Distribution by Top Categories
+
+```{r}
+#| fig-cap: Rating distributions across top 5 categories
+#| label: fig-rating-by-category
+
+top_categories <- apps %>%
+  count(Category, sort = TRUE) %>%
+  head(5) %>%
+  pull(Category)
+
+apps %>%
+  filter(Category %in% top_categories, !is.na(Rating)) %>%
+  ggplot(aes(x = Category, y = Rating, fill = Category)) +
+  geom_boxplot() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
+```
+
+## Summary Insights
+
+::: {.callout-tip}
+## Key Findings
+
+1. **Market Composition**: The majority of apps are free (~92%), with paid apps representing a small fraction of the market.
+
+2. **Data Quality**: Several variables contain miscoded entries (Type field) and missing values that require cleaning for robust analysis.
+
+3. **Distribution Patterns**: Review counts are highly right-skewed, suggesting a few apps dominate user engagement while most receive minimal reviews.
+
+4. **Category Concentration**: Family and Game categories dominate the app store, together accounting for ~28% of all apps.
+
+5. **Rating Patterns**: Most apps cluster around 4.0-4.5 stars, with paid apps showing slightly higher median ratings than free apps.
+:::
+
+## Next Steps
+
+- **Data Cleaning**: Address missing values and miscoded entries in Type, Category, and other fields
+- **Feature Engineering**: Parse Size and Installs into numeric formats for quantitative analysis
+- **Advanced Analysis**: Examine temporal patterns using Last Updated, analyze price elasticity, investigate category-specific trends
+- **Multivariate Analysis**: Build models to predict ratings or success metrics based on app characteristics
 
