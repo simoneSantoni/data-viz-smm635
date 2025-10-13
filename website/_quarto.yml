@@ -109,6 +109,9 @@ execute:
   warning: false
   message: false
 
+r:
+  r-path: /home/simon/miniconda3/envs/smm635/bin/R
+
 jupyter:
   kernelspec:
     name: "ir"
