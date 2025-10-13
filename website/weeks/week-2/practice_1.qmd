@@ -1,6 +1,8 @@
 ---
 title: "practice_1"
 format: html
+execute:
+  warning: false
 ---
 
 ## Load libraries
@@ -8,6 +10,7 @@ format: html
 ```{r}
 library(readr)
 library(ggplot2)
+library(dplyr)
 ```
 
 ## Ingest the data from [GitHub SMM635 repo][1]
@@ -172,6 +175,8 @@ ggplot(data = apps, mapping = aes(x = Type)) +
   geom_bar()
 ```
 
+The same information content can be displayed by using a pie chart as per @fig-pie-chart
+
 ```{r}
 #| fig-cap: Pie charts can also be used to visualize categorical variables' univariate distributions
 #| label: fig-pie-chart
@@ -180,5 +185,91 @@ ggplot(data = apps, mapping = aes(x = "", fill = Type)) +
   geom_bar(width = 1) +
   coord_polar(theta = "y") +
   theme_void()
+```
+
+To explore the data quality issues further, we can filter and visualize only the 
+cases where Type is neither "Free" nor "Paid." To do so, we can apply **ggplot**
+functions over the ouput of a **dplyr**. @fig-type-issues 
+indicates one case compatible with data regitration error ($Type == 1$) and 
+one case that does not present a value for 
+
+```{r}
+#| fig-cap: Distribution of miscoded Type values
+#| label: fig-type-issues
+
+apps %>%
+  filter(Type != "Free" & Type != "Paid") %>%
+  ggplot(mapping = aes(x = Type)) +
+  geom_bar()
+```
+
+#### Continuous Variables
+
+@fig-reviews-hist shows the distribution of apps by level of reviews. It is worth
+noticing that **ggplot** groups the cases into 30 bins, that is ranges of variation
+for $X$. To change the number of bins, populate the $\texttt{bins}$ optional 
+argument.
+
+```{r}
+#| fig-cap: Distribution of app reviews
+#| label: fig-reviews-hist
+
+ggplot(data = apps, mapping = aes(x = Reviews)) +
+  geom_histogram()
+```
+
+The distribution of reviews is highly skewed. To better visualize the pattern, we 
+can apply a log transformation to the x-axis as per @fig-reviews-hist-log.
+
+```{r}
+#| label: fig-reviews-hist-log
+#| message: false
+#| warning: false
+#| fig-cap: Distribution of app reviews with log-transformed x-axis
+
+ggplot(data = apps, mapping = aes(x = Reviews)) +
+  geom_histogram() +
+  scale_x_log10()
+```
+To display the univariate distribution of a continuous variable, one can also 
+use a boxplot, as shown in @fig-boxplot
+
+```{r}
+#| label: fig-boxplot
+#| message: false
+#| warning: false
+#| fig-cap: Distribution of app reviews with log-transformed x-axis
+
+ggplot(data = apps, mapping = aes(x = Reviews)) +
+  geom_boxplot() +
+  scale_x_log10()
+```
+
+By default, **ggplot** proposes a horizontal boxplot. To get a vertical boxplot, 
+one has to populate the **y-axis** ― as shown in @fig-boxplot-vertical ― instead 
+of the **x-axis** as in the previous example.
+
+```{r}
+#| label: fig-boxplot-vertical
+#| message: false
+#| warning: false
+#| fig-cap: Distribution of app reviews with log-transformed x-axis
+
+ggplot(data = apps, mapping = aes(y = Reviews)) +
+  geom_boxplot() +
+  scale_y_log10()
+```
+
+Another way to visualize the distribution of a continuous variable is through a density plot, which shows a smoothed version of the distribution as shown in @fig-density.
+
+```{r}
+#| label: fig-density
+#| message: false
+#| warning: false
+#| fig-cap: Density plot of app reviews with log-transformed x-axis
+
+ggplot(data = apps, mapping = aes(x = Reviews)) +
+  geom_density() +
+  scale_x_log10()
 ```
 

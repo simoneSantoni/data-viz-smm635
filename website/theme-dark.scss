@@ -20,12 +20,12 @@ $link-hover-color: #85c1f5;
 $code-bg: #0d1117; // Much darker background for better contrast
 $code-color: #e6edf3; // Lighter text for better readability
 
-// Navigation
+// Navigation - Dark gray tones
 $navbar-bg: #0d0d0d;
 $navbar-fg: #e0e0e0;
-$sidebar-bg: #2c2c2c;
-$sidebar-fg: #ffffff;
-$sidebar-hl: #3a3a3a;
+$sidebar-bg: #2c2c2c;  // Dark gray matching module icon
+$sidebar-fg: #e0e0e0;  // Light gray text for readability
+$sidebar-hl: #3a3a3a;  // Slightly lighter gray for hover
 
 /*-- scss:rules --*/
 

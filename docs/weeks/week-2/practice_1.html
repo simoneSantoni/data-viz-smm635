@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-013a2ff5afcbb2d8175ca216702ea117.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-0a4d6fc9d58d8fdd59235c27c3f47fdc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark-a57b18b5321b865341cd2de65746db47.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../../site_libs/bootstrap/bootstrap-013a2ff5afcbb2d8175ca216702ea117.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -545,7 +545,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="ingest-the-data-from-github-smm635-repo1" class="level2">
@@ -563,12 +564,47 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="key-figures">Key Figures</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(apps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>cols(
+  App = col_character(),
+  Category = col_character(),
+  Rating = col_double(),
+  Reviews = col_double(),
+  Size = col_character(),
+  Installs = col_character(),
+  Type = col_character(),
+  Price = col_character(),
+  `Content Rating` = col_character(),
+  Genres = col_character(),
+  `Last Updated` = col_character(),
+  `Current Ver` = col_character(),
+  `Android Ver` = col_character()
+)</code></pre>
+</div>
 </div>
 </section>
 <section id="data-preview" class="level3">
 <h3 class="anchored" data-anchor-id="data-preview">Data Preview</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>apps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,841 × 13
+   App       Category Rating Reviews Size  Installs Type  Price `Content Rating`
+   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;           
+ 1 Photo Ed… ART_AND…    4.1     159 19M   10,000+  Free  0     Everyone        
+ 2 Coloring… ART_AND…    3.9     967 14M   500,000+ Free  0     Everyone        
+ 3 U Launch… ART_AND…    4.7   87510 8.7M  5,000,0… Free  0     Everyone        
+ 4 Sketch -… ART_AND…    4.5  215644 25M   50,000,… Free  0     Teen            
+ 5 Pixel Dr… ART_AND…    4.3     967 2.8M  100,000+ Free  0     Everyone        
+ 6 Paper fl… ART_AND…    4.4     167 5.6M  50,000+  Free  0     Everyone        
+ 7 Smoke Ef… ART_AND…    3.8     178 19M   50,000+  Free  0     Everyone        
+ 8 Infinite… ART_AND…    4.1   36815 29M   1,000,0… Free  0     Everyone        
+ 9 Garden C… ART_AND…    4.4   13791 33M   1,000,0… Free  0     Everyone        
+10 Kids Pai… ART_AND…    4.7     121 3.1M  10,000+  Free  0     Everyone        
+# ℹ 10,831 more rows
+# ℹ 4 more variables: Genres &lt;chr&gt;, `Last Updated` &lt;chr&gt;, `Current Ver` &lt;chr&gt;,
+#   `Android Ver` &lt;chr&gt;</code></pre>
+</div>
 </div>
 </section>
 <section id="variable-definitions" class="level3">
@@ -804,16 +840,134 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="univariate-charts">Univariate Charts</h3>
 <section id="categorical-variables" class="level4">
 <h4 class="anchored" data-anchor-id="categorical-variables">Categorical Variables</h4>
-<p><strong>?@fig-bar-chart</strong> shows possible data quality issues: some cases present value <span class="math inline">\(0\)</span>, whose meaning is unclear in the context of this variable; other cases present missing values, displayed as <span class="math inline">\(NaN\)</span>.</p>
+<p><a href="#fig-bar-chart" class="quarto-xref">Figure&nbsp;1</a> shows possible data quality issues: some cases present value <span class="math inline">\(0\)</span>, whose meaning is unclear in the context of this variable; other cases present missing values, displayed as <span class="math inline">\(NaN\)</span>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-bar-chart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bar-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-bar-chart-1.png" class="img-fluid figure-img" width="672">
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bar-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Counts of apps by pricing type
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The same information content can be displayed by using a pie chart as per <a href="#fig-pie-chart" class="quarto-xref">Figure&nbsp;2</a></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-pie-chart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pie-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-pie-chart-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pie-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Pie charts can also be used to visualize categorical variables’ univariate distributions
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To explore the data quality issues further, we can filter and visualize only the cases where Type is neither “Free” nor “Paid.” To do so, we can apply <strong>ggplot</strong> functions over the ouput of a <strong>dplyr</strong>. <a href="#fig-type-issues" class="quarto-xref">Figure&nbsp;3</a> indicates one case compatible with data regitration error (<span class="math inline">\(Type == 1\)</span>) and one case that does not present a value for</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>apps <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Type <span class="sc">!=</span> <span class="st">"Free"</span> <span class="sc">&amp;</span> Type <span class="sc">!=</span> <span class="st">"Paid"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-type-issues" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-type-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-type-issues-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-type-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Distribution of miscoded Type values
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="continuous-variables" class="level4">
+<h4 class="anchored" data-anchor-id="continuous-variables">Continuous Variables</h4>
+<p><a href="#fig-reviews-hist" class="quarto-xref">Figure&nbsp;4</a> shows the distribution of apps by level of reviews. It is worth noticing that <strong>ggplot</strong> groups the cases into 30 bins, that is ranges of variation for <span class="math inline">\(X\)</span>. To change the number of bins, populate the <span class="math inline">\(\texttt{bins}\)</span> optional argument.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-reviews-hist" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reviews-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-reviews-hist-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Distribution of app reviews
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The distribution of reviews is highly skewed. To better visualize the pattern, we can apply a log transformation to the x-axis as per <a href="#fig-reviews-hist-log" class="quarto-xref">Figure&nbsp;5</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-reviews-hist-log" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reviews-hist-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-reviews-hist-log-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-hist-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Distribution of app reviews with log-transformed x-axis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To display the univariate distribution of a continuous variable, one can also use a boxplot, as shown in <a href="#fig-boxplot" class="quarto-xref">Figure&nbsp;6</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Distribution of app reviews with log-transformed x-axis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>By default, <strong>ggplot</strong> proposes a horizontal boxplot. To get a vertical boxplot, one has to populate the <strong>y-axis</strong> ― as shown in <a href="#fig-boxplot-vertical" class="quarto-xref">Figure&nbsp;7</a> ― instead of the <strong>x-axis</strong> as in the previous example.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">y =</span> Reviews)) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-boxplot-vertical" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-vertical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="practice_1_files/figure-html/fig-boxplot-vertical-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-vertical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Distribution of app reviews with log-transformed x-axis
+</figcaption>
+</figure>
+</div>
+</div>
 </div>
 
 
