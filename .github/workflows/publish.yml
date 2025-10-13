@@ -53,8 +53,8 @@ jobs:
           cd website
           # Temporarily rename PDF output to skip PDF generation for syllabus
           mv course/syllabus.qmd course/syllabus.qmd.bak
-          # Create HTML-only version of syllabus
-          sed '/^  pdf:/,/^[[:space:]]*[^[:space:]]/d' course/syllabus.qmd.bak > course/syllabus.qmd
+          # Create HTML-only version of syllabus - remove PDF section but keep closing ---
+          sed '/^  pdf:/,/^---/{/^---/!d}' course/syllabus.qmd.bak > course/syllabus.qmd
 
           # Render the site
           quarto render --no-execute
