@@ -1,0 +1,340 @@
+---
+title: "Google Play Store Apps: Data Exploration with Python's plotnine"
+format: html
+jupyter: python3
+execute:
+  warning: false
+  message: false
+---
+
+## Python's plotnine
+
+**plotnine** is Python's implementation of R's ggplot2, providing Grammar of
+Graphics-based visualization capabilities. It offers familiar syntax for R
+users while enabling declarative plot construction through layered components.
+The library translates ggplot2's elegant API to Python, supporting aesthetic
+mappings, geometric objects (geoms), statistical transformations, scales,
+coordinate systems, and themes. This approach promotes reproducible,
+customizable visualizations with intuitive code structure, making plotnine
+ideal for data scientists transitioning between R and Python or seeking
+ggplot2's expressiveness in Python workflows.
+
+## Setup
+
+```{python}
+import pandas as pd
+from plotnine import *
+import warnings
+warnings.filterwarnings('ignore')
+
+# Load data
+data_source = "https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"
+apps = pd.read_csv(data_source)
+
+# Convert numeric columns
+apps['Reviews'] = pd.to_numeric(apps['Reviews'], errors='coerce')
+apps['Rating'] = pd.to_numeric(apps['Rating'], errors='coerce')
+```
+
+::: {.callout-note}
+This dataset from [Kaggle's Google Play Store Apps project](https://www.kaggle.com/datasets/lava18/google-play-store-apps) contains information on ~10K Android apps including ratings, reviews, pricing, and categories.
+:::
+
+## Data Overview
+
+```{python}
+apps.dtypes  # Column types
+apps         # Data preview
+```
+
+### Key Variables
+
+| Variable | Type | Description | Notes |
+|----------|------|-------------|-------|
+| **App** | String | Application name | May contain special characters |
+| **Category** | Categorical | Primary app category (33 categories) | Contains some miscoded entries |
+| **Rating** | Float | Average user rating (1.0-5.0) | Missing for unrated apps |
+| **Reviews** | Integer | Total number of user reviews | Indicator of popularity |
+| **Size** | String | App size with units (e.g., "19M") | Requires parsing; "Varies with device" for some |
+| **Installs** | Categorical | Install count ranges (e.g., "10,000+") | Ordinal categories, not exact counts |
+| **Type** | Binary | "Free" or "Paid" | Contains data quality issues |
+| **Price** | String | Price in USD (e.g., "$2.99") | "0" for free apps |
+| **Content Rating** | Categorical | Age appropriateness | "Everyone", "Teen", "Mature 17+", etc. |
+| **Genres** | String | Detailed genre (may be multiple) | Semicolon-separated |
+| **Last Updated** | Date | Last update date | Format: "Month Day, Year" |
+| **Current Ver** | String | App version | Non-standardized format |
+| **Android Ver** | String | Minimum Android version required | Format: "X.X.X and up" |      
+
+## Data Visualization
+
+### Univariate Distributions
+
+#### Categorical Variables
+
+**Bar charts** are the standard approach for visualizing categorical distributions. @fig-bar-chart reveals data quality issues: some apps have $Type = 0$ and missing values ($NaN$).
+
+::: {.panel-tabset}
+
+## Bar Chart
+```{python}
+#| fig-cap: App distribution by pricing type
+#| label: fig-bar-chart
+
+(ggplot(apps, aes(x='Type')) +
+  geom_bar())
+```
+
+## Proportional Bar Chart
+```{python}
+#| fig-cap: Proportional representation (coord_polar not available in plotnine)
+#| label: fig-prop-bar
+
+(apps
+  .assign(category='All Apps')
+  .pipe(lambda d: ggplot(d, aes(x='category', fill='Type')) +
+    geom_bar(position='fill') +
+    coord_flip() +
+    labs(x='', y='Proportion') +
+    theme_minimal()))
+```
+
+## Data Quality Check
+```{python}
+#| fig-cap: Miscoded Type values (neither Free nor Paid)
+#| label: fig-type-issues
+
+(apps
+  .query('Type != "Free" & Type != "Paid"')
+  .pipe(lambda d: ggplot(d, aes(x='Type')) + geom_bar()))
+```
+:::
+
+#### Continuous Variables
+
+The **Reviews** variable exhibits strong right skew. Multiple visualization approaches reveal different aspects of the distribution. Note: `geom_histogram()` defaults to 30 bins; adjust with `bins` argument.
+
+::: {.panel-tabset}
+
+## Histogram
+```{python}
+#| fig-cap: Review count distribution (raw scale)
+#| label: fig-reviews-hist
+
+(ggplot(apps, aes(x='Reviews')) +
+  geom_histogram())
+```
+
+## Histogram (Log Scale)
+```{python}
+#| fig-cap: Review count distribution (log₁₀ scale)
+#| label: fig-reviews-hist-log
+
+(apps
+  .query('Reviews > 0')
+  .pipe(lambda d: ggplot(d, aes(x='Reviews')) +
+    geom_histogram() +
+    scale_x_log10()))
+```
+
+## Boxplot (Horizontal)
+```{python}
+#| fig-cap: Review summary statistics (log₁₀ scale)
+#| label: fig-boxplot
+
+(apps
+  .query('Reviews > 0')
+  .assign(category='Reviews')
+  .pipe(lambda d: ggplot(d, aes(x='category', y='Reviews')) +
+    geom_boxplot() +
+    scale_y_log10() +
+    coord_flip() +
+    labs(x='') +
+    theme_minimal()))
+```
+
+## Boxplot (Vertical)
+```{python}
+#| fig-cap: Vertical boxplot using y aesthetic
+#| label: fig-boxplot-vertical
+
+(apps
+  .query('Reviews > 0')
+  .assign(category='Reviews')
+  .pipe(lambda d: ggplot(d, aes(x='category', y='Reviews')) +
+    geom_boxplot() +
+    scale_y_log10() +
+    labs(x='') +
+    theme_minimal()))
+```
+
+## Density Plot
+```{python}
+#| fig-cap: Smoothed density estimate (log₁₀ scale)
+#| label: fig-density
+
+(apps
+  .query('Reviews > 0')
+  .pipe(lambda d: ggplot(d, aes(x='Reviews')) +
+    geom_density() +
+    scale_x_log10()))
+```
+:::
+
+### Bivariate Relationships
+
+#### Categorical vs Continuous
+
+**Grouped visualizations** reveal how continuous variables differ across categories. @fig-rating-by-type compares rating distributions between free and paid apps.
+
+::: {.panel-tabset}
+
+## Grouped Boxplots
+```{python}
+#| fig-cap: Rating distribution by app type
+#| label: fig-rating-by-type
+
+(apps
+  .query('Type in ["Free", "Paid"]')
+  .pipe(lambda d: ggplot(d, aes(x='Type', y='Rating', fill='Type')) +
+    geom_boxplot() +
+    theme_minimal()))
+```
+
+## Violin Plots
+```{python}
+#| fig-cap: Rating density by app type
+#| label: fig-rating-violin
+
+(apps
+  .query('Type in ["Free", "Paid"]')
+  .pipe(lambda d: ggplot(d, aes(x='Type', y='Rating', fill='Type')) +
+    geom_violin() +
+    theme_minimal()))
+```
+
+## Grouped Histograms
+```{python}
+#| fig-cap: Rating distribution faceted by type
+#| label: fig-rating-facet
+
+(apps
+  .query('Type in ["Free", "Paid"]')
+  .pipe(lambda d: ggplot(d, aes(x='Rating', fill='Type')) +
+    geom_histogram(bins=30) +
+    facet_wrap('~Type', ncol=1) +
+    theme_minimal()))
+```
+:::
+
+#### Continuous vs Continuous
+
+**Scatterplots** visualize relationships between two continuous variables. @fig-reviews-rating explores whether highly-reviewed apps have better ratings.
+
+::: {.panel-tabset}
+
+## Basic Scatterplot
+```{python}
+#| fig-cap: Relationship between reviews and ratings
+#| label: fig-reviews-rating
+
+(apps
+  .dropna(subset=['Rating'])
+  .query('Reviews > 0')
+  .pipe(lambda d: ggplot(d, aes(x='Reviews', y='Rating')) +
+    geom_point(alpha=0.3) +
+    scale_x_log10() +
+    theme_minimal()))
+```
+
+## With Smoothing
+```{python}
+#| fig-cap: Reviews vs ratings with linear smoother (loess requires scikit-misc)
+#| label: fig-reviews-rating-smooth
+
+(apps
+  .dropna(subset=['Rating'])
+  .query('Reviews > 0')
+  .pipe(lambda d: ggplot(d, aes(x='Reviews', y='Rating')) +
+    geom_point(alpha=0.2) +
+    geom_smooth(method='lm', color='red') +
+    scale_x_log10() +
+    theme_minimal()))
+```
+
+## Colored by Type
+```{python}
+#| fig-cap: Reviews vs ratings, colored by app type
+#| label: fig-reviews-rating-type
+
+(apps
+  .dropna(subset=['Rating'])
+  .query('Type in ["Free", "Paid"] and Reviews > 0')
+  .pipe(lambda d: ggplot(d, aes(x='Reviews', y='Rating', color='Type')) +
+    geom_point(alpha=0.4) +
+    scale_x_log10() +
+    theme_minimal()))
+```
+:::
+
+#### Categorical vs Categorical
+
+**Stacked and grouped bar charts** show relationships between categorical variables. @fig-type-by-content examines how app pricing varies across content ratings.
+
+::: {.panel-tabset}
+
+## Stacked Bar Chart
+```{python}
+#| fig-cap: App type distribution by content rating
+#| label: fig-type-by-content
+
+(apps
+  .query('Type in ["Free", "Paid"]')
+  .pipe(lambda d: ggplot(d, aes(x='Content Rating', fill='Type')) +
+    geom_bar() +
+    theme_minimal() +
+    theme(axis_text_x=element_text(angle=45, hjust=1))))
+```
+
+## Grouped Bar Chart
+```{python}
+#| fig-cap: Side-by-side comparison of app types
+#| label: fig-type-by-content-dodge
+
+(apps
+  .query('Type in ["Free", "Paid"]')
+  .pipe(lambda d: ggplot(d, aes(x='Content Rating', fill='Type')) +
+    geom_bar(position='dodge') +
+    theme_minimal() +
+    theme(axis_text_x=element_text(angle=45, hjust=1))))
+```
+
+## Heatmap
+```{python}
+#| fig-cap: Count heatmap of app type by content rating
+#| label: fig-type-by-content-heatmap
+
+(apps
+  .query('Type in ["Free", "Paid"]')
+  .groupby(['Type', 'Content Rating'], as_index=False)
+  .size()
+  .rename(columns={'size': 'n'})
+  .pipe(lambda d: ggplot(d, aes(x='Content Rating', y='Type', fill='n')) +
+    geom_tile() +
+    geom_text(aes(label='n'), color='white', size=4) +
+    scale_fill_gradient(low='lightblue', high='darkblue') +
+    labs(fill='Count') +
+    theme_minimal() +
+    theme(axis_text_x=element_text(angle=45, hjust=1))))
+```
+:::
+
+## Next Steps
+
+::: {.callout-tip}
+
+- **Data Cleaning**: Address missing values and miscoded entries in Type, Category, and other fields
+- **Feature Engineering**: Parse Size and Installs into numeric formats for quantitative analysis
+- **Advanced Analysis**: Examine temporal patterns using Last Updated, analyze price elasticity, investigate category-specific trends
+- **Multivariate Analysis**: Build models to predict ratings or success metrics based on app characteristics
+
+:::
