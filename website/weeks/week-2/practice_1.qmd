@@ -270,81 +270,31 @@ apps %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-## Proportional (Filled)
+## Heatmap
 ```{r}
-#| fig-cap: Proportion of free vs paid apps by content rating
-#| label: fig-type-by-content-fill
+#| fig-cap: Count heatmap of app type by content rating
+#| label: fig-type-by-content-heatmap
 
 apps %>%
   filter(Type %in% c("Free", "Paid")) %>%
-  ggplot(aes(x = `Content Rating`, fill = Type)) +
-  geom_bar(position = "fill") +
-  labs(y = "Proportion") +
+  count(Type, `Content Rating`) %>%
+  ggplot(aes(x = `Content Rating`, y = Type, fill = n)) +
+  geom_tile() +
+  geom_text(aes(label = n), color = "white", size = 4) +
+  scale_fill_gradient(low = "lightblue", high = "darkblue") +
+  labs(fill = "Count") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 :::
 
-### Advanced Visualizations
-
-#### Top Categories Analysis
-
-Examining the most popular app categories reveals market concentration.
-
-```{r}
-#| fig-cap: Top 10 app categories by count
-#| label: fig-top-categories
-
-apps %>%
-  count(Category, sort = TRUE) %>%
-  head(10) %>%
-  ggplot(aes(x = reorder(Category, n), y = n)) +
-  geom_col(fill = "steelblue") +
-  coord_flip() +
-  labs(x = "Category", y = "Number of Apps") +
-  theme_minimal()
-```
-
-#### Rating Distribution by Top Categories
-
-```{r}
-#| fig-cap: Rating distributions across top 5 categories
-#| label: fig-rating-by-category
-
-top_categories <- apps %>%
-  count(Category, sort = TRUE) %>%
-  head(5) %>%
-  pull(Category)
-
-apps %>%
-  filter(Category %in% top_categories, !is.na(Rating)) %>%
-  ggplot(aes(x = Category, y = Rating, fill = Category)) +
-  geom_boxplot() +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        legend.position = "none")
-```
-
-## Summary Insights
+## Next Steps
 
 ::: {.callout-tip}
-## Key Findings
-
-1. **Market Composition**: The majority of apps are free (~92%), with paid apps representing a small fraction of the market.
-
-2. **Data Quality**: Several variables contain miscoded entries (Type field) and missing values that require cleaning for robust analysis.
-
-3. **Distribution Patterns**: Review counts are highly right-skewed, suggesting a few apps dominate user engagement while most receive minimal reviews.
-
-4. **Category Concentration**: Family and Game categories dominate the app store, together accounting for ~28% of all apps.
-
-5. **Rating Patterns**: Most apps cluster around 4.0-4.5 stars, with paid apps showing slightly higher median ratings than free apps.
-:::
-
-## Next Steps
 
 - **Data Cleaning**: Address missing values and miscoded entries in Type, Category, and other fields
 - **Feature Engineering**: Parse Size and Installs into numeric formats for quantitative analysis
 - **Advanced Analysis**: Examine temporal patterns using Last Updated, analyze price elasticity, investigate category-specific trends
 - **Multivariate Analysis**: Build models to predict ratings or success metrics based on app characteristics
 
+:::
