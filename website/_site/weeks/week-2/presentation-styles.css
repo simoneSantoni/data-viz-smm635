@@ -1,22 +1,25 @@
 /* Custom styles for presentation */
 
-/* Larger font sizes for all text elements */
+/* Adjusted font sizes for all text elements */
 .reveal {
-    font-size: 36px; /* Base font size (default is usually 40px) */
+    font-size: 24px; /* Base font size (default is usually 40px) */
 }
 
 .reveal h1 {
-    font-size: 2.3em; /* Increased for better visibility */
+    font-size: 1.8em; /* Adjusted for better visibility */
     color: #dc2626 !important;
 }
 
 .reveal h2 {
-    font-size: 1.8em; /* Increased for better visibility */
+    font-size: 1.4em; /* Adjusted for better visibility */
     color: #dc2626 !important;
+    border-bottom: 3px solid #dc2626;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.5em;
 }
 
 .reveal h3 {
-    font-size: 1.5em; /* Increased for better visibility */
+    font-size: 1.2em; /* Adjusted for better visibility */
     color: #dc2626 !important;
 }
 
