@@ -27,6 +27,9 @@ Review the [course syllabus](../../course/syllabus.qmd).
 ::: {.callout-note}
 ## 💻 Laboratory session
 
+💻 **[Practice Session 1](practice_1.html)** - Hands-on exercises applying the grammar of graphics in R/Python
+
+Topics covered:
 - Applying the grammar of graphics in R/Python
 - Working with visual design variables
 
