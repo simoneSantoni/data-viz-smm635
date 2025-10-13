@@ -18,6 +18,8 @@ format:
     smaller: true
     scrollable: false
     css: presentation-styles.css
+    standalone: true
+    self-contained: false
 ---
 
 ## What is Good Data Visualization? {.center}

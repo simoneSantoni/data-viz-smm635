@@ -3,6 +3,8 @@ project:
   output-dir: ../docs
   render:
     - "**/*.qmd"
+  resources:
+    - "**/*presentation*.html"
 
 website:
   title: "SMM635 - Data Visualization"
