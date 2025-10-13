@@ -32,3 +32,4 @@ sependencies:
   - plotly
   - bokeh
   - pyvis
+  - plotnine

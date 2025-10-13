@@ -1,10 +1,23 @@
 ---
-title: "Google Play Store Apps: Data Exploration"
+title: "Google Play Store Apps: Data Exploration with R's ggplot2" 
 format: html
 execute:
   warning: false
   message: false
 ---
+
+## R's ggplot2
+
+**ggplot2** is R's premier visualization library and the canonical
+implementation of the Grammar of Graphics. Created by Hadley Wickham, it
+revolutionized data visualization by providing a coherent system for
+declaratively building plots through layered components. The library enables
+users to construct complex visualizations by combining data, aesthetic
+mappings, geometric objects (geoms), statistical transformations, scales,
+coordinate systems, facets, and themes. This layered grammar promotes
+principled, reproducible graphics with exceptional flexibility, making ggplot2
+the de facto standard for publication-quality visualizations in R and a model
+for visualization libraries across programming languages.
 
 ## Setup
 

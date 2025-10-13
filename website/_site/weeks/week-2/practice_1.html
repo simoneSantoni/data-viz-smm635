@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Google Play Store Apps: Data Exploration – SMM635 - Data Visualization</title>
+<title>Google Play Store Apps: Data Exploration with R’s ggplot2 – SMM635 - Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -310,7 +310,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Google Play Store Apps: Data Exploration</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Google Play Store Apps: Data Exploration with R’s ggplot2</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -503,7 +503,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#rs-ggplot2" id="toc-rs-ggplot2" class="nav-link active" data-scroll-target="#rs-ggplot2">R’s ggplot2</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
   <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data Overview</a>
   <ul class="collapse">
   <li><a href="#key-variables" id="toc-key-variables" class="nav-link" data-scroll-target="#key-variables">Key Variables</a></li>
@@ -523,7 +524,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Google Play Store Apps: Data Exploration</h1>
+<h1 class="title">Google Play Store Apps: Data Exploration with R’s ggplot2</h1>
 </div>
 
 
@@ -540,6 +541,10 @@ window.Quarto = {
 </header>
 
 
+<section id="rs-ggplot2" class="level2">
+<h2 class="anchored" data-anchor-id="rs-ggplot2">R’s ggplot2</h2>
+<p><strong>ggplot2</strong> is R’s premier visualization library and the canonical implementation of the Grammar of Graphics. Created by Hadley Wickham, it revolutionized data visualization by providing a coherent system for declaratively building plots through layered components. The library enables users to construct complex visualizations by combining data, aesthetic mappings, geometric objects (geoms), statistical transformations, scales, coordinate systems, facets, and themes. This layered grammar promotes principled, reproducible graphics with exceptional flexibility, making ggplot2 the de facto standard for publication-quality visualizations in R and a model for visualization libraries across programming languages.</p>
+</section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
 <div class="cell">

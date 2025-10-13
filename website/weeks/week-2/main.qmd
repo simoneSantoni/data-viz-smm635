@@ -27,9 +27,11 @@ Review the [course syllabus](../../course/syllabus.qmd).
 ::: {.callout-note}
 ## 💻 Laboratory session
 
-💻 **[GoG with R's Ggplot2](practice_1.html)**
-![R](https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white)
+- [GoG with R's ggplot2](practice_1.html)[^1]
 
+- [GoG with Python's Plotnine](practice_2.html)[^2]
+
+- [Faceting with ggplot2 and patchwork](practice_3.qmd)
 :::
 
 ## Perform
@@ -52,3 +54,13 @@ Hands-on practice implementing visualization designs using the grammar of graphi
 
 - Review examples of effective use of visual variables in data visualization
 
+---
+[^1]: [ggplot2](https://ggplot2.tidyverse.org/) is R's powerful data visualization library based on the Grammar
+of Graphics, enabling users to build complex, layered plots declaratively
+through aesthetic mappings, geometric objects, and flexible customization
+options.
+
+[^2]: [plotnine](https://plotnine.org/) is Python's implementation of R's ggplot2, providing Grammar of
+Graphics-based visualization capabilities. It offers familiar syntax for R
+users, enabling declarative plot construction through layered components,
+aesthetics, and geometries for elegant data visualization.
