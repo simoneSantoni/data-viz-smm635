@@ -56,38 +56,11 @@ jobs:
           # Create HTML-only version of syllabus
           sed '/^  pdf:/,/^[[:space:]]*[^[:space:]]/d' course/syllabus.qmd.bak > course/syllabus.qmd
 
-          # Remove Beamer format from presentations to skip PDF generation in CI
-          python3 -c '
-          import re
-          import glob
-
-          for pattern in ["weeks/week-*/design-principles-presentation.qmd", "weeks/week-*/gog_and_visual_forms.qmd"]:
-              for filepath in glob.glob(pattern):
-                  with open(filepath, "r") as f:
-                      content = f.read()
-
-                  # Backup
-                  with open(filepath + ".bak", "w") as f:
-                      f.write(content)
-
-                  # Remove beamer section
-                  content = re.sub(r"^  beamer:.*?\n(?=^(?:\S|---))", "", content, flags=re.MULTILINE | re.DOTALL)
-
-                  with open(filepath, "w") as f:
-                      f.write(content)
-          '
-
           # Render the site
           quarto render --no-execute
 
-          # Restore the original files
+          # Restore the original file
           mv course/syllabus.qmd.bak course/syllabus.qmd
-          for backup in weeks/week-*/*.qmd.bak; do
-            if [ -f "$backup" ]; then
-              original="${backup%.bak}"
-              mv "$backup" "$original"
-            fi
-          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
