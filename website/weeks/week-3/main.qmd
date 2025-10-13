@@ -41,6 +41,9 @@ callout-appearance: default
 ✏️ Analyze the Nomis Solutions A and B case study using visualization-driven
 exploration (refer to the case studies section of SMM635's Moodle 
 page).
+
+💡 Resources on how to discuss business case studies: [The Case Method](https://www.hbs.edu/mba/academic-experience/the-case-method)
+
 :::
 
 ## Ponder
