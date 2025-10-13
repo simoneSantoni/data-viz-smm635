@@ -51,14 +51,45 @@ jobs:
       - name: Render Quarto site (HTML only, skip PDF generation)
         run: |
           cd website
-          # Temporarily rename PDF output to skip PDF generation
+          # Temporarily rename PDF output to skip PDF generation for syllabus
           mv course/syllabus.qmd course/syllabus.qmd.bak
-          # Create HTML-only version
+          # Create HTML-only version of syllabus
           sed '/^  pdf:/,/^[[:space:]]*[^[:space:]]/d' course/syllabus.qmd.bak > course/syllabus.qmd
+
+          # Remove Beamer format from presentations to skip PDF generation in CI
+          # Using Python for more reliable YAML manipulation
+          python3 << 'PYTHON_SCRIPT'
+import re
+import glob
+
+for pattern in ['weeks/week-*/design-principles-presentation.qmd', 'weeks/week-*/gog_and_visual_forms.qmd']:
+    for filepath in glob.glob(pattern):
+        with open(filepath, 'r') as f:
+            content = f.read()
+
+        # Backup
+        with open(filepath + '.bak', 'w') as f:
+            f.write(content)
+
+        # Remove beamer section: from '  beamer:' to the next top-level key or '---'
+        # Match beamer section with its indented properties
+        content = re.sub(r'^  beamer:.*?\n(?=^(?:\S|---))', '', content, flags=re.MULTILINE | re.DOTALL)
+
+        with open(filepath, 'w') as f:
+            f.write(content)
+PYTHON_SCRIPT
+
           # Render the site
           quarto render --no-execute
-          # Restore the original file
+
+          # Restore the original files
           mv course/syllabus.qmd.bak course/syllabus.qmd
+          for backup in weeks/week-*/*.qmd.bak; do
+            if [ -f "$backup" ]; then
+              original="${backup%.bak}"
+              mv "$backup" "$original"
+            fi
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

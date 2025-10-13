@@ -367,9 +367,8 @@ Prof.&nbsp;Simone Santoni
 <span id="cb2-9"><a></a><span class="co"># Create bar chart</span></span>
 <span id="cb2-10"><a></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value)) <span class="sc">+</span></span>
 <span id="cb2-11"><a></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
 </div>
-<img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-2-1.png" width="768" class="r-stretch"></section>
+</section>
 <section id="pie-chart-bar-chart-polar-coordinates" class="slide level2">
 <h2>Pie Chart = Bar Chart + Polar Coordinates</h2>
 <div class="cell">
@@ -384,9 +383,8 @@ Prof.&nbsp;Simone Santoni
 <span id="cb3-9"><a></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
 <span id="cb3-10"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>, <span class="at">start =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
 <span id="cb3-11"><a></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
 </div>
-<img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-4-1.png" width="768" class="r-stretch"></section>
+</section>
 <section id="core-components-of-the-gog" class="slide level2">
 <h2>Core Components of the GoG</h2>
 <div class="columns">
@@ -454,46 +452,6 @@ Prof.&nbsp;Simone Santoni
 </div>
 </div>
 </div>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">date</th>
-<th style="text-align: left;">region</th>
-<th style="text-align: right;">sales</th>
-<th style="text-align: right;">profit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2024-01-01</td>
-<td style="text-align: left;">North</td>
-<td style="text-align: right;">1250.50</td>
-<td style="text-align: right;">325.15</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2024-02-01</td>
-<td style="text-align: left;">North</td>
-<td style="text-align: right;">980.75</td>
-<td style="text-align: right;">245.20</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2024-01-01</td>
-<td style="text-align: left;">South</td>
-<td style="text-align: right;">1450.25</td>
-<td style="text-align: right;">410.75</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2024-02-01</td>
-<td style="text-align: left;">South</td>
-<td style="text-align: right;">1100.00</td>
-<td style="text-align: right;">290.50</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 </div><div class="column" style="width:50%;">
 <div class="callout callout-tip no-icon callout-titled callout-style-default">
 <div class="callout-body">
@@ -524,9 +482,8 @@ Prof.&nbsp;Simone Santoni
 <span id="cb5-5"><a></a>  <span class="at">size =</span> profit    <span class="co"># Size</span></span>
 <span id="cb5-6"><a></a>)) <span class="sc">+</span></span>
 <span id="cb5-7"><a></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
 </div>
-<img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch quarto-figure-center"><p class="caption">Sales by Date, Region, and Profit</p></section>
+</section>
 <section id="geometries-visual-marks" class="slide level2">
 <h2>3. Geometries: Visual Marks</h2>
 <div class="panel-tabset">
@@ -536,13 +493,6 @@ Prof.&nbsp;Simone Santoni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb6-2"><a></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-8-1.png" width="768"></p>
-</figure>
-</div>
-</div>
 </div>
 <p>Best for: Scatter plots, distributions</p>
 </div>
@@ -550,13 +500,6 @@ Prof.&nbsp;Simone Santoni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb7-2"><a></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-9-1.png" width="768"></p>
-</figure>
-</div>
-</div>
 </div>
 <p>Best for: Trends, time series</p>
 </div>
@@ -564,13 +507,6 @@ Prof.&nbsp;Simone Santoni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb8-2"><a></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-10-1.png" width="768"></p>
-</figure>
-</div>
-</div>
 </div>
 <p>Best for: Comparisons, counts</p>
 </div>
@@ -578,13 +514,6 @@ Prof.&nbsp;Simone Santoni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb9-2"><a></a>  <span class="fu">geom_area</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-11-1.png" width="768"></p>
-</figure>
-</div>
-</div>
 </div>
 <p>Best for: Proportions over time</p>
 </div>
@@ -600,13 +529,6 @@ Prof.&nbsp;Simone Santoni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales, <span class="at">color =</span> region)) <span class="sc">+</span></span>
 <span id="cb10-2"><a></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-12-1.png" width="864"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -627,13 +549,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb11-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb11-3"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>region)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -654,13 +569,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> profit)) <span class="sc">+</span></span>
 <span id="cb12-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb12-3"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>region, <span class="at">scales =</span> <span class="st">"free_y"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-14-1.png" width="960"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -688,13 +596,6 @@ Prof.&nbsp;Simone Santoni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb13-2"><a></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-15-1.png" width="576"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -715,13 +616,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb14-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb14-3"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-16-1.png" width="576"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -742,13 +636,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb15-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb15-3"><a></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"point"</span>, <span class="at">color =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-17-1.png" width="576"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -777,13 +664,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb16-2"><a></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
 <span id="cb16-3"><a></a>  <span class="fu">coord_cartesian</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-18-1.png" width="768"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -804,13 +684,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> region, <span class="at">y =</span> sales)) <span class="sc">+</span></span>
 <span id="cb17-2"><a></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
 <span id="cb17-3"><a></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-19-1.png" width="768"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -832,13 +705,6 @@ Prof.&nbsp;Simone Santoni
 <span id="cb18-2"><a></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
 <span id="cb18-3"><a></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span> </span>
 <span id="cb18-4"><a></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-20-1.png" width="768"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -867,13 +733,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales, <span class="at">color =</span> region)) <span class="sc">+</span></span>
 <span id="cb19-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb19-3"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-21-1.png" width="576"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -894,13 +753,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales, <span class="at">color =</span> region)) <span class="sc">+</span></span>
 <span id="cb20-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb20-3"><a></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-22-1.png" width="576"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -921,13 +773,6 @@ Prof.&nbsp;Simone Santoni
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">ggplot</span>(sample_data, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> sales, <span class="at">color =</span> region)) <span class="sc">+</span></span>
 <span id="cb21-2"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb21-3"><a></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-23-1.png" width="576"></p>
-</figure>
-</div>
-</div>
 </div>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -951,13 +796,6 @@ Prof.&nbsp;Simone Santoni
 <span id="cb22-4"><a></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"gray80"</span>),</span>
 <span id="cb22-5"><a></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
 <span id="cb22-6"><a></a>        <span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-24-1.png" width="576"></p>
-</figure>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1037,9 +875,8 @@ Prof.&nbsp;Simone Santoni
 <span id="cb24-2"><a></a>  <span class="fu">geom_area</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span>           <span class="co"># Layer 1: Area</span></span>
 <span id="cb24-3"><a></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="fl">1.2</span>) <span class="sc">+</span>            <span class="co"># Layer 2: Line</span></span>
 <span id="cb24-4"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">col =</span> <span class="st">"red"</span>) <span class="co"># Layer 3: Trend</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
 </div>
-<img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"><div class="callout callout-note callout-titled callout-style-default">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
@@ -1323,73 +1160,6 @@ Prof.&nbsp;Simone Santoni
 </section>
 <section id="multivariate-example-the-economics-dataset" class="slide level2">
 <h2>Multivariate Example: The Economics Dataset</h2>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top">
-<caption>US Economic Time Series Data (1967-2015)</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">date</th>
-<th style="text-align: right;">pce</th>
-<th style="text-align: right;">pop</th>
-<th style="text-align: right;">psavert</th>
-<th style="text-align: right;">uempmed</th>
-<th style="text-align: right;">unemploy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">1967-07-01</td>
-<td style="text-align: right;">506.7</td>
-<td style="text-align: right;">198712</td>
-<td style="text-align: right;">12.6</td>
-<td style="text-align: right;">4.5</td>
-<td style="text-align: right;">2944</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1967-08-01</td>
-<td style="text-align: right;">509.8</td>
-<td style="text-align: right;">198911</td>
-<td style="text-align: right;">12.6</td>
-<td style="text-align: right;">4.7</td>
-<td style="text-align: right;">2945</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">1967-09-01</td>
-<td style="text-align: right;">515.6</td>
-<td style="text-align: right;">199113</td>
-<td style="text-align: right;">11.9</td>
-<td style="text-align: right;">4.6</td>
-<td style="text-align: right;">2958</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1967-10-01</td>
-<td style="text-align: right;">512.2</td>
-<td style="text-align: right;">199311</td>
-<td style="text-align: right;">12.9</td>
-<td style="text-align: right;">4.9</td>
-<td style="text-align: right;">3143</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">1967-11-01</td>
-<td style="text-align: right;">517.4</td>
-<td style="text-align: right;">199498</td>
-<td style="text-align: right;">12.8</td>
-<td style="text-align: right;">4.7</td>
-<td style="text-align: right;">3066</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1967-12-01</td>
-<td style="text-align: right;">525.1</td>
-<td style="text-align: right;">199657</td>
-<td style="text-align: right;">11.8</td>
-<td style="text-align: right;">4.8</td>
-<td style="text-align: right;">3018</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 </section>
 <section id="multivariate-example-the-economics-dataset-1" class="slide level2">
 <h2>Multivariate Example: The Economics Dataset</h2>
@@ -1417,12 +1187,10 @@ Prof.&nbsp;Simone Santoni
 </section>
 <section id="multivariate-example" class="slide level2">
 <h2>Multivariate Example</h2>
-
-<img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-42-1.png" width="960" class="r-stretch"></section>
+</section>
 <section id="multivariate-example-1" class="slide level2">
 <h2>Multivariate Example</h2>
-
-<img data-src="gog_and_visual_forms_files/figure-revealjs/unnamed-chunk-43-1.png" width="1728" class="r-stretch"></section>
+</section>
 <section id="best-practices-for-multivariate" class="slide level2">
 <h2>Best Practices for Multivariate</h2>
 <ol type="1">

@@ -7,8 +7,8 @@ format: html
 
 ```{r}
 library(readr)
+library(ggplot2)
 ```
-
 
 ## Ingest the data from [GitHub SMM635 repo][1]
 
@@ -16,11 +16,14 @@ The dataset comes from Kaggle's [Google Play Store Apps][0] project. Please refe
 to the project description for details concerning the data gathering and structuring
 aspects.
 
+The project comprises two data tables: app- and review-level data. We will focus 
+on the former. 
+
 [0]: https://www.kaggle.com/datasets/lava18/google-play-store-apps
 
 ```{r}
 data_source <- "https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"
-df <- read_csv(data_source)
+apps <- read_csv(data_source)
 ```
 
 [1]:https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv
@@ -31,13 +34,13 @@ df <- read_csv(data_source)
 ### Key Figures
 
 ```{r}
-spec(df)
+spec(apps)
 ```
 
 ### Data Preview
 
 ```{r}
-df
+apps
 ```
 
 ### Variable Definitions                                                                                                            
@@ -56,51 +59,6 @@ df
 - **Type:** Categorical (String)                                                                                                     
 - **Description:** Primary category classification of the app on Google Play Store                                                   
 - **Unique Categories:** 33 main categories + some miscoded entries                                                                  
-- **Top Categories by Frequency:**                                                                                                   
-  - FAMILY (1,935 apps, 17.9%)                                                                                                       
-  - GAME (1,138 apps, 10.5%)                                                                                                         
-  - TOOLS (805 apps, 7.4%)                                                                                                           
-  - MEDICAL (452 apps, 4.2%)                                                                                                         
-  - BUSINESS (449 apps, 4.1%)                                                                                                        
-  - PRODUCTIVITY (391 apps, 3.6%)                                                                                                    
-  - PERSONALIZATION (376 apps, 3.5%)                                                                                                 
-  - LIFESTYLE (368 apps, 3.4%)                                                                                                       
-  - COMMUNICATION (368 apps, 3.4%)                                                                                                   
-  - SPORTS (348 apps, 3.2%)                                                                                                          
-- **Standard Categories:**                                                                                                           
-  - ART_AND_DESIGN                                                                                                                   
-  - AUTO_AND_VEHICLES                                                                                                                
-  - BEAUTY                                                                                                                           
-  - BOOKS_AND_REFERENCE                                                                                                              
-  - BUSINESS                                                                                                                         
-  - COMICS                                                                                                                           
-  - COMMUNICATION                                                                                                                    
-  - DATING                                                                                                                           
-  - EDUCATION                                                                                                                        
-  - ENTERTAINMENT                                                                                                                    
-  - EVENTS                                                                                                                           
-  - FAMILY                                                                                                                           
-  - FINANCE                                                                                                                          
-  - FOOD_AND_DRINK                                                                                                                   
-  - GAME                                                                                                                             
-  - HEALTH_AND_FITNESS                                                                                                               
-  - HOUSE_AND_HOME                                                                                                                   
-  - LIBRARIES_AND_DEMO                                                                                                               
-  - LIFESTYLE                                                                                                                        
-  - MAPS_AND_NAVIGATION                                                                                                              
-  - MEDICAL                                                                                                                          
-  - NEWS_AND_MAGAZINES                                                                                                               
-  - PARENTING                                                                                                                        
-  - PERSONALIZATION                                                                                                                  
-  - PHOTOGRAPHY                                                                                                                      
-  - PRODUCTIVITY                                                                                                                     
-  - SHOPPING                                                                                                                         
-  - SOCIAL                                                                                                                           
-  - SPORTS                                                                                                                           
-  - TOOLS                                                                                                                            
-  - TRAVEL_AND_LOCAL                                                                                                                 
-  - VIDEO_PLAYERS                                                                                                                    
-  - WEATHER                                                                                                                          
 - **Data Quality Issues:** Contains miscoded entries (app names/descriptions appearing as category values)                           
                                                                                                                                      
 #### Rating                                                                                                                       
@@ -132,36 +90,11 @@ df
 - **Description:** Number of times the app has been installed (in ranges)                                                            
 - **Format:** Comma-separated numbers with plus sign                                                                                 
 - **Example Values:** "10,000+", "500,000+", "5,000,000+", "50,000,000+"                                                             
-- **Common Ranges:**                                                                                                                 
-  - "0+"                                                                                                                             
-  - "1+"                                                                                                                             
-  - "5+"                                                                                                                             
-  - "10+"                                                                                                                            
-  - "50+"                                                                                                                            
-  - "100+"                                                                                                                           
-  - "500+"                                                                                                                           
-  - "1,000+"                                                                                                                         
-  - "5,000+"                                                                                                                         
-  - "10,000+"                                                                                                                        
-  - "50,000+"                                                                                                                        
-  - "100,000+"                                                                                                                       
-  - "500,000+"                                                                                                                       
-  - "1,000,000+"                                                                                                                     
-  - "5,000,000+"                                                                                                                     
-  - "10,000,000+"                                                                                                                    
-  - "50,000,000+"                                                                                                                    
-  - "100,000,000+"                                                                                                                   
-  - "500,000,000+"                                                                                                                   
-  - "1,000,000,000+"                                                                                                                 
 - **Notes:** Requires parsing to convert to numeric format; provides order of magnitude rather than exact counts                     
                                                                                                                                      
 #### Type                                                                                                                         
 - **Type:** Binary Categorical (String)                                                                                              
 - **Description:** Whether the app is free or paid                                                                                   
-- **Values:**                                                                                                                        
-  - "Free" (1,509 apps in sample, ~83%)                                                                                              
-  - "Paid" (274 apps in sample, ~15%)                                                                                                
-  - "NaN" or missing (2 cases)                                                                                                       
 - **Distribution:** Majority of apps are free                                                                                        
 - **Notes:** Some data quality issues with miscoded entries                                                                          
                                                                                                                                      
@@ -220,4 +153,24 @@ df
 - **Special Values:** "Varies with device" - requirement depends on device                                                           
 - **Notes:** Indicates app compatibility range      
 
-## 
+## Data Visualization
+
+### Univariate Charts
+
+#### Categorical Variables
+
+```{r}
+#| fig-cap: Counts of apps by pricing type
+#| echo: true
+
+ggplot(data = apps, mapping = aes(x = Type)) +
+  geom_bar()
+```
+
+```{r}
+ggplot(data = apps, mapping = aes(x = Type, fill = Type)) +
+  geom_bar() +
+  coord_polar(theta = "y") + 
+  theme_void()
+```
+

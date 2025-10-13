@@ -482,7 +482,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#data-preview" id="toc-data-preview" class="nav-link" data-scroll-target="#data-preview">Data Preview</a></li>
   <li><a href="#variable-definitions" id="toc-variable-definitions" class="nav-link" data-scroll-target="#variable-definitions">Variable Definitions</a></li>
   </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a>
+  <ul class="collapse">
+  <li><a href="#univariate-charts" id="toc-univariate-charts" class="nav-link" data-scroll-target="#univariate-charts">Univariate Charts</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -512,15 +515,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="ingest-the-data-from-github-smm635-repo1" class="level2">
 <h2 class="anchored" data-anchor-id="ingest-the-data-from-github-smm635-repo1">Ingest the data from <a href="https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv">GitHub SMM635 repo</a></h2>
 <p>The dataset comes from Kaggle’s <a href="https://www.kaggle.com/datasets/lava18/google-play-store-apps">Google Play Store Apps</a> project. Please refer to the project description for details concerning the data gathering and structuring aspects.</p>
+<p>The project comprises two data tables: app- and review-level data. We will focus on the former.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_source <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_source)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>apps <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_source)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="familiarize-with-data" class="level2">
@@ -528,7 +533,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="key-figures" class="level3">
 <h3 class="anchored" data-anchor-id="key-figures">Key Figures</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(apps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>cols(
   App = col_character(),
@@ -551,7 +556,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="data-preview" class="level3">
 <h3 class="anchored" data-anchor-id="data-preview">Data Preview</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10,841 × 13
    App       Category Rating Reviews Size  Installs Type  Price `Content Rating`
@@ -606,98 +611,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
 <li><strong>Unique Categories:</strong> 33 main categories + some miscoded entries<br>
 </li>
-<li><strong>Top Categories by Frequency:</strong>
-<ul>
-<li>FAMILY (1,935 apps, 17.9%)<br>
-</li>
-<li>GAME (1,138 apps, 10.5%)<br>
-</li>
-<li>TOOLS (805 apps, 7.4%)<br>
-</li>
-<li>MEDICAL (452 apps, 4.2%)<br>
-</li>
-<li>BUSINESS (449 apps, 4.1%)<br>
-</li>
-<li>PRODUCTIVITY (391 apps, 3.6%)<br>
-</li>
-<li>PERSONALIZATION (376 apps, 3.5%)<br>
-</li>
-<li>LIFESTYLE (368 apps, 3.4%)<br>
-</li>
-<li>COMMUNICATION (368 apps, 3.4%)<br>
-</li>
-<li>SPORTS (348 apps, 3.2%)<br>
-</li>
-</ul></li>
-<li><strong>Standard Categories:</strong>
-<ul>
-<li>ART_AND_DESIGN<br>
-</li>
-<li>AUTO_AND_VEHICLES<br>
-</li>
-<li>BEAUTY<br>
-</li>
-<li>BOOKS_AND_REFERENCE<br>
-</li>
-<li>BUSINESS<br>
-</li>
-<li>COMICS<br>
-</li>
-<li>COMMUNICATION<br>
-</li>
-<li>DATING<br>
-</li>
-<li>EDUCATION<br>
-</li>
-<li>ENTERTAINMENT<br>
-</li>
-<li>EVENTS<br>
-</li>
-<li>FAMILY<br>
-</li>
-<li>FINANCE<br>
-</li>
-<li>FOOD_AND_DRINK<br>
-</li>
-<li>GAME<br>
-</li>
-<li>HEALTH_AND_FITNESS<br>
-</li>
-<li>HOUSE_AND_HOME<br>
-</li>
-<li>LIBRARIES_AND_DEMO<br>
-</li>
-<li>LIFESTYLE<br>
-</li>
-<li>MAPS_AND_NAVIGATION<br>
-</li>
-<li>MEDICAL<br>
-</li>
-<li>NEWS_AND_MAGAZINES<br>
-</li>
-<li>PARENTING<br>
-</li>
-<li>PERSONALIZATION<br>
-</li>
-<li>PHOTOGRAPHY<br>
-</li>
-<li>PRODUCTIVITY<br>
-</li>
-<li>SHOPPING<br>
-</li>
-<li>SOCIAL<br>
-</li>
-<li>SPORTS<br>
-</li>
-<li>TOOLS<br>
-</li>
-<li>TRAVEL_AND_LOCAL<br>
-</li>
-<li>VIDEO_PLAYERS<br>
-</li>
-<li>WEATHER<br>
-</li>
-</ul></li>
 <li><strong>Data Quality Issues:</strong> Contains miscoded entries (app names/descriptions appearing as category values)</li>
 </ul>
 </section>
@@ -761,49 +674,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
 <li><strong>Example Values:</strong> “10,000+”, “500,000+”, “5,000,000+”, “50,000,000+”<br>
 </li>
-<li><strong>Common Ranges:</strong>
-<ul>
-<li>“0+”<br>
-</li>
-<li>“1+”<br>
-</li>
-<li>“5+”<br>
-</li>
-<li>“10+”<br>
-</li>
-<li>“50+”<br>
-</li>
-<li>“100+”<br>
-</li>
-<li>“500+”<br>
-</li>
-<li>“1,000+”<br>
-</li>
-<li>“5,000+”<br>
-</li>
-<li>“10,000+”<br>
-</li>
-<li>“50,000+”<br>
-</li>
-<li>“100,000+”<br>
-</li>
-<li>“500,000+”<br>
-</li>
-<li>“1,000,000+”<br>
-</li>
-<li>“5,000,000+”<br>
-</li>
-<li>“10,000,000+”<br>
-</li>
-<li>“50,000,000+”<br>
-</li>
-<li>“100,000,000+”<br>
-</li>
-<li>“500,000,000+”<br>
-</li>
-<li>“1,000,000,000+”<br>
-</li>
-</ul></li>
 <li><strong>Notes:</strong> Requires parsing to convert to numeric format; provides order of magnitude rather than exact counts</li>
 </ul>
 </section>
@@ -814,15 +684,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
 <li><strong>Description:</strong> Whether the app is free or paid<br>
 </li>
-<li><strong>Values:</strong>
-<ul>
-<li>“Free” (1,509 apps in sample, ~83%)<br>
-</li>
-<li>“Paid” (274 apps in sample, ~15%)<br>
-</li>
-<li>“NaN” or missing (2 cases)<br>
-</li>
-</ul></li>
 <li><strong>Distribution:</strong> Majority of apps are free<br>
 </li>
 <li><strong>Notes:</strong> Some data quality issues with miscoded entries</li>
@@ -943,10 +804,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 </section>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+<section id="univariate-charts" class="level3">
+<h3 class="anchored" data-anchor-id="univariate-charts">Univariate Charts</h3>
+<section id="categorical-variables" class="level4">
+<h4 class="anchored" data-anchor-id="categorical-variables">Categorical Variables</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="practice_1_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>Counts of apps by pricing type</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span> </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="practice_1_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
