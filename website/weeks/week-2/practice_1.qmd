@@ -159,18 +159,26 @@ apps
 
 #### Categorical Variables
 
+@fig-bar-chart shows possible data quality issues: some cases present value $0$,
+whose meaning is unclear in the context of this variable; other cases present 
+missing values, displayed as $NaN$.
+
 ```{r}
 #| fig-cap: Counts of apps by pricing type
 #| echo: true
+#| label: fig-bar-chart
 
 ggplot(data = apps, mapping = aes(x = Type)) +
   geom_bar()
 ```
 
 ```{r}
-ggplot(data = apps, mapping = aes(x = Type, fill = Type)) +
-  geom_bar() +
-  coord_polar(theta = "y") + 
+#| fig-cap: Pie charts can also be used to visualize categorical variables' univariate distributions
+#| label: fig-pie-chart
+
+ggplot(data = apps, mapping = aes(x = "", fill = Type)) +
+  geom_bar(width = 1) +
+  coord_polar(theta = "y") +
   theme_void()
 ```
 

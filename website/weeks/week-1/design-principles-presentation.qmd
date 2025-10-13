@@ -18,11 +18,6 @@ format:
     smaller: true
     scrollable: false
     css: presentation-styles.css
-  beamer:
-    aspectratio: 169
-    navigation: horizontal
-    theme: default
-    colortheme: default
 ---
 
 ## What is Good Data Visualization? {.center}

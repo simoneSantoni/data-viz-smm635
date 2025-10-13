@@ -18,7 +18,7 @@ Review the [course syllabus](../../course/syllabus.qmd).
 ::: {.callout-note}
 ## 🎓 Lecture materials
 
-📊 **[Grammar of Graphics and Visual Forms](gog_and_visual_forms.html)** ([PDF](gog_and_visual_forms.pdf)) - Interactive slides covering the grammar of graphics and visual forms
+📊 **[Grammar of Graphics and Visual Forms](gog_and_visual_forms.html)** - Interactive slides covering the grammar of graphics and visual forms
 
 :::
 

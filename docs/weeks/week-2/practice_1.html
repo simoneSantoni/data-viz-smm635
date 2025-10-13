@@ -107,6 +107,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -534,47 +563,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="key-figures">Key Figures</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(apps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>cols(
-  App = col_character(),
-  Category = col_character(),
-  Rating = col_double(),
-  Reviews = col_double(),
-  Size = col_character(),
-  Installs = col_character(),
-  Type = col_character(),
-  Price = col_character(),
-  `Content Rating` = col_character(),
-  Genres = col_character(),
-  `Last Updated` = col_character(),
-  `Current Ver` = col_character(),
-  `Android Ver` = col_character()
-)</code></pre>
-</div>
 </div>
 </section>
 <section id="data-preview" class="level3">
 <h3 class="anchored" data-anchor-id="data-preview">Data Preview</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>apps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 10,841 × 13
-   App       Category Rating Reviews Size  Installs Type  Price `Content Rating`
-   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;           
- 1 Photo Ed… ART_AND…    4.1     159 19M   10,000+  Free  0     Everyone        
- 2 Coloring… ART_AND…    3.9     967 14M   500,000+ Free  0     Everyone        
- 3 U Launch… ART_AND…    4.7   87510 8.7M  5,000,0… Free  0     Everyone        
- 4 Sketch -… ART_AND…    4.5  215644 25M   50,000,… Free  0     Teen            
- 5 Pixel Dr… ART_AND…    4.3     967 2.8M  100,000+ Free  0     Everyone        
- 6 Paper fl… ART_AND…    4.4     167 5.6M  50,000+  Free  0     Everyone        
- 7 Smoke Ef… ART_AND…    3.8     178 19M   50,000+  Free  0     Everyone        
- 8 Infinite… ART_AND…    4.1   36815 29M   1,000,0… Free  0     Everyone        
- 9 Garden C… ART_AND…    4.4   13791 33M   1,000,0… Free  0     Everyone        
-10 Kids Pai… ART_AND…    4.7     121 3.1M  10,000+  Free  0     Everyone        
-# ℹ 10,831 more rows
-# ℹ 4 more variables: Genres &lt;chr&gt;, `Last Updated` &lt;chr&gt;, `Current Ver` &lt;chr&gt;,
-#   `Android Ver` &lt;chr&gt;</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>apps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="variable-definitions" class="level3">
@@ -810,30 +804,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="univariate-charts">Univariate Charts</h3>
 <section id="categorical-variables" class="level4">
 <h4 class="anchored" data-anchor-id="categorical-variables">Categorical Variables</h4>
+<p><strong>?@fig-bar-chart</strong> shows possible data quality issues: some cases present value <span class="math inline">\(0\)</span>, whose meaning is unclear in the context of this variable; other cases present missing values, displayed as <span class="math inline">\(NaN\)</span>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="practice_1_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption>Counts of apps by pricing type</figcaption>
-</figure>
-</div>
-</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type)) <span class="sc">+</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> Type, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span> </span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="practice_1_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> apps, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">fill =</span> Type)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

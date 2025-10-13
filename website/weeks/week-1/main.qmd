@@ -18,7 +18,7 @@ Introductory session, no preparation needed.
 ::: {.callout-note}
 ## Lecture materials
 
-📊 **[Design Principles Presentation](design-principles-presentation.html)** ([PDF](design-principles-presentation.pdf)) - Interactive slides covering visualization design principles and processes
+📊 **[Design Principles Presentation](design-principles-presentation.html)** - Interactive slides covering visualization design principles and processes
 
 :::
 
