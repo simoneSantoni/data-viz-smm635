@@ -37,7 +37,7 @@
     "href": "weeks/week-3/main.html",
     "title": "Week 3",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 3 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "📚 Prepare\n\n\n\n📖 Review Grammar of Graphics materials from Week 2\n📖 Notes on the nature, scope, objectives, criticalities, and examples of EDA",
     "crumbs": [
       "Weekly materials",
       "Week 3"
@@ -48,7 +48,7 @@
     "href": "weeks/week-2/main.html",
     "title": "Week 2",
     "section": "",
-    "text": "📖 Note\n\n\n\nReview the course syllabus.",
+    "text": "📚 Prepare\n\n\n\n📖 Review the course syllabus",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -59,7 +59,7 @@
     "href": "weeks/week-2/main.html#prepare",
     "title": "Week 2",
     "section": "",
-    "text": "📖 Note\n\n\n\nReview the course syllabus.",
+    "text": "📚 Prepare\n\n\n\n📖 Review the course syllabus",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -70,7 +70,7 @@
     "href": "weeks/week-2/main.html#participate",
     "title": "Week 2",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\n🎓 Lecture materials\n\n\n\n📊 Grammar of Graphics and Visual Forms - Interactive slides covering the grammar of graphics and visual forms",
+    "text": "Participate\n\n\n\n\n\n\n👥 Participate\n\n\n\n📊 Slideshows:\n\nGrammar of Graphics and Visual Forms",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -81,7 +81,7 @@
     "href": "weeks/week-2/main.html#practice",
     "title": "Week 2",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\n💻 Laboratory session\n\n\n\n\nGoG with R’s ggplot21\nGoG with Python’s Plotnine2\nFaceting with ggplot2 and patchwork",
+    "text": "Practice\n\n\n\n\n\n\n💻 Practice\n\n\n\n🧮 GoG with R’s ggplot21\n🧮 GoG with Python’s Plotnine2\n🧮 Faceting with ggplot2 and patchwork",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -92,7 +92,7 @@
     "href": "weeks/week-2/main.html#perform",
     "title": "Week 2",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\n✏️ Laboratory exercises\n\n\n\nHands-on practice implementing visualization designs using the grammar of graphics framework.",
+    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Hands-on practice implementing visualization designs using the grammar of graphics framework",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -103,7 +103,7 @@
     "href": "weeks/week-2/main.html#ponder",
     "title": "Week 2",
     "section": "Ponder",
-    "text": "Ponder\n\n📚 Essential Readings\n\nWilkinson, L. (2005). The Grammar of Graphics, Chapters 1-2\nWickham, H. (2010). “A Layered Grammar of Graphics”, Journal of Computational and Graphical Statistics\n\n\n\n🔗 Additional Resources\n\nReview examples of effective use of visual variables in data visualization",
+    "text": "Ponder\nEssential Readings\nWilkinson, L. (2005). The Grammar of Graphics, Chapters 1-2\nWickham, H. (2010). “A Layered Grammar of Graphics”, Journal of Computational and Graphical Statistics\nAdditional Resources\nReview examples of effective use of visual variables in data visualization",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -125,7 +125,7 @@
     "href": "weeks/week-1/main.html",
     "title": "Week 1",
     "section": "",
-    "text": "Note\n\n\n\nIntroductory session, no preparation needed.",
+    "text": "📚 Prepare\n\n\n\n📖 Introductory session, no preparation needed",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -136,7 +136,7 @@
     "href": "weeks/week-1/main.html#prepare",
     "title": "Week 1",
     "section": "",
-    "text": "Note\n\n\n\nIntroductory session, no preparation needed.",
+    "text": "📚 Prepare\n\n\n\n📖 Introductory session, no preparation needed",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -147,7 +147,7 @@
     "href": "weeks/week-1/main.html#participate",
     "title": "Week 1",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\nLecture materials\n\n\n\n📊 Design Principles Presentation - Interactive slides covering visualization design principles and processes",
+    "text": "Participate\n\n\n\n\n\n\n👥 Participate\n\n\n\n📊 Slideshows:\n\nDesign Principles Presentation",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -158,7 +158,7 @@
     "href": "weeks/week-1/main.html#practice",
     "title": "Week 1",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\nLaboratory session\n\n\n\n\nIntroduction to R/Python visualization environments:\nVersion control with Git",
+    "text": "Practice\n\n\n\n\n\n\n💻 Practice\n\n\n\n🧮 Introduction to R/Python visualization environments\n🧮 Version control with Git",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -169,7 +169,7 @@
     "href": "weeks/week-1/main.html#perform",
     "title": "Week 1",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\nNote\n\n\n\nIntroductory session, no laboratory session.",
+    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Introductory session, no laboratory exercises",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -180,7 +180,7 @@
     "href": "weeks/week-1/main.html#ponder",
     "title": "Week 1",
     "section": "Ponder",
-    "text": "Ponder\n\nEssential Readings\n\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\n\n\n\nCore Visualization Principles\n\nData Visualization and Communication Exercise (in Moodle, “Case studies” section1)",
+    "text": "Ponder\nEssential Readings\nTufte, E. R. (1983). The visual display of quantitative information, Chapters 1\nCairo, A. (2012). The Functional Art, Introduction and Chapter 1\nCore Visualization Principles\nData Visualization and Communication Exercise (in Moodle, “Case studies” section1)",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -1166,5 +1166,60 @@
     "title": "Faceting and Multi-Panel Layouts with ggplot2",
     "section": "Summary",
     "text": "Summary\nThis document demonstrated:\n\nfacet_wrap(): For wrapping panels in a ribbon\nfacet_grid(): For creating rectangular grids\nPatchwork operators: + (side-by-side), / (stacked), | (compose)\nplot_layout(): Fine control over dimensions and arrangement\nplot_annotation(): Adding titles, tags, and themes\nCollecting guides: Unifying legends across plots\n\n\n\n\n\n\n\nFurther Learning\n\n\n\n\nPatchwork GitHub\nPatchwork documentation\nggplot2 book on faceting"
+  },
+  {
+    "objectID": "weeks/week-3/main.html#prepare",
+    "href": "weeks/week-3/main.html#prepare",
+    "title": "Week 3",
+    "section": "",
+    "text": "📚 Prepare\n\n\n\n📖 Review Grammar of Graphics materials from Week 2\n📖 Notes on the nature, scope, objectives, criticalities, and examples of EDA",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-3/main.html#participate",
+    "href": "weeks/week-3/main.html#participate",
+    "title": "Week 3",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\n👥 Participate\n\n\n\n📖 No slideshows this week",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-3/main.html#practice",
+    "href": "weeks/week-3/main.html#practice",
+    "title": "Week 3",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\n💻 Practice\n\n\n\n🧮 No practice sessions this week",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-3/main.html#perform",
+    "href": "weeks/week-3/main.html#perform",
+    "title": "Week 3",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Apply EDA techniques to explore datasets and identify patterns, outliers, and relationships\n✏️ Analyze the Nomis Solutions case study using visualization-driven exploration",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
+  },
+  {
+    "objectID": "weeks/week-3/main.html#ponder",
+    "href": "weeks/week-3/main.html#ponder",
+    "title": "Week 3",
+    "section": "Ponder",
+    "text": "Ponder\nEssential Readings\nTukey, J. W. (1977). Exploratory Data Analysis, Chapters 1-2\nWickham, H., & Grolemund, G. (2017). R for Data Science, Chapter 7: Exploratory Data Analysis\nAdditional Resources\nPeng, R. D. (2016). Exploratory Data Analysis with R\nUnwin, A. (2015). Graphical Data Analysis with R, Chapters 1-3",
+    "crumbs": [
+      "Weekly materials",
+      "Week 3"
+    ]
   }
 ]

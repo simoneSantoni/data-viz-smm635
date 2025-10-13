@@ -4,10 +4,56 @@ subtitle: "Exploratory data analysis and Nomis Solutions case"
 callout-appearance: default
 ---
 
+## Prepare
+
 ::: {.callout-note}
-## Materials Coming Soon
+## 📚 Prepare
 
-Content for Week 3 is currently being developed and will be available soon.
+📖 Review [Grammar of Graphics](../week-2/main.qmd) materials from Week 2
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
+📖 [Notes on the nature, scope, objectives, criticalities, and examples of EDA](prepare.html)
+
 :::
+
+## Participate
+
+::: {.callout-note}
+## 👥 Participate
+
+📖 No slideshows this week
+
+:::
+
+## Practice
+
+::: {.callout-note}
+## 💻 Practice
+
+🧮 No practice sessions this week
+
+:::
+
+## Perform
+
+::: {.callout-note}
+## 📝 Perform
+
+✏️ Apply EDA techniques to explore datasets and identify patterns, outliers, and relationships
+
+✏️ Analyze the Nomis Solutions case study using visualization-driven exploration
+
+:::
+
+## Ponder
+
+**Essential Readings**
+
+Tukey, J. W. (1977). [*Exploratory Data Analysis*](https://go.exlibris.link/placeholder), Chapters 1-2
+
+Wickham, H., & Grolemund, G. (2017). [*R for Data Science*](https://r4ds.had.co.nz/), Chapter 7: Exploratory Data Analysis
+
+**Additional Resources**
+
+Peng, R. D. (2016). [*Exploratory Data Analysis with R*](https://bookdown.org/rdpeng/exdata/)
+
+Unwin, A. (2015). [*Graphical Data Analysis with R*](https://go.exlibris.link/placeholder), Chapters 1-3

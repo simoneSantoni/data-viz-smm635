@@ -7,49 +7,53 @@ callout-appearance: default
 ## Prepare
 
 ::: {.callout-note}
-## Note
+## 📚 Prepare
 
-Introductory session, no preparation needed.
+📖 Introductory session, no preparation needed
 
 :::
 
 ## Participate
 
 ::: {.callout-note}
-## Lecture materials
+## 👥 Participate
 
-📊 **[Design Principles Presentation](design-principles-presentation.html)** - Interactive slides covering visualization design principles and processes
+📊 Slideshows:
+
+1. [Design Principles Presentation](design-principles-presentation.html)
 
 :::
 
 ## Practice
 
 ::: {.callout-note}
-## Laboratory session
+## 💻 Practice
 
-- Introduction to R/Python visualization environments:
-- Version control with Git
+🧮 Introduction to R/Python visualization environments
+
+🧮 Version control with Git
 
 :::
 
 ## Perform
 
 ::: {.callout-note}
-## Note
+## 📝 Perform
 
-Introductory session, no laboratory session.
+✏️ Introductory session, no laboratory exercises
 
 :::
 
 ## Ponder
 
-### Essential Readings
+**Essential Readings**
 
-- Tufte, E. R. (1983). [*The visual display of quantitative information*](https://kyl.neocities.org/books/%5BTEC%20TUF%5D%20the%20visual%20display%20of%20quantitative%20information.pdf), Chapters 1
-- Cairo, A. (2012). [*The Functional Art*](https://paul.zhdk.ch/pluginfile.php/93337/mod_resource/content/1/The%20Functional%20Art%20-%20An%20Introduction%20to%20Information%20Graphics%20and%20Visualization%20by%20Alberto%20Cairo%20%28z-lib.org%29.pdf), Introduction and Chapter 1
+Tufte, E. R. (1983). [*The visual display of quantitative information*](https://kyl.neocities.org/books/%5BTEC%20TUF%5D%20the%20visual%20display%20of%20quantitative%20information.pdf), Chapters 1
 
-### Core Visualization Principles
+Cairo, A. (2012). [*The Functional Art*](https://paul.zhdk.ch/pluginfile.php/93337/mod_resource/content/1/The%20Functional%20Art%20-%20An%20Introduction%20to%20Information%20Graphics%20and%20Visualization%20by%20Alberto%20Cairo%20%28z-lib.org%29.pdf), Introduction and Chapter 1
 
-- [Data Visualization and Communication Exercise](dviz_communication_exc.qmd) (in Moodle, "Case studies" section[^1])
+**Core Visualization Principles**
+
+[Data Visualization and Communication Exercise](dviz_communication_exc.qmd) (in Moodle, "Case studies" section[^1])
 
 [^1]: Teaching case studies will not be posted because of intellectual property rights.

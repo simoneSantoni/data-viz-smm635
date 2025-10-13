@@ -7,52 +7,55 @@ callout-appearance: default
 ## Prepare
 
 ::: {.callout-note}
-## 📖 Note
+## 📚 Prepare
 
-Review the [course syllabus](../../course/syllabus.qmd).
+📖 Review the [course syllabus](../../course/syllabus.qmd)
 
 :::
 
 ## Participate
 
 ::: {.callout-note}
-## 🎓 Lecture materials
+## 👥 Participate
 
-📊 **[Grammar of Graphics and Visual Forms](gog_and_visual_forms.html)** - Interactive slides covering the grammar of graphics and visual forms
+📊 Slideshows:
+
+1. [Grammar of Graphics and Visual Forms](gog_and_visual_forms.html)
 
 :::
 
 ## Practice
 
 ::: {.callout-note}
-## 💻 Laboratory session
+## 💻 Practice
 
-- [GoG with R's ggplot2](practice_1.html)[^1]
+🧮 [GoG with R's ggplot2](practice_1.html)[^1]
 
-- [GoG with Python's Plotnine](practice_2.html)[^2]
+🧮 [GoG with Python's Plotnine](practice_2.html)[^2]
 
-- [Faceting with ggplot2 and patchwork](practice_3.qmd)
+🧮 [Faceting with ggplot2 and patchwork](practice_3.html)
 :::
 
 ## Perform
 
 ::: {.callout-note}
-## ✏️ Laboratory exercises
+## 📝 Perform
 
-Hands-on practice implementing visualization designs using the grammar of graphics framework.
+✏️ Hands-on practice implementing visualization designs using the grammar of graphics framework
 
 :::
 
 ## Ponder
 
-### 📚 Essential Readings
+**Essential Readings**
 
-- Wilkinson, L. (2005). [*The Grammar of Graphics*](https://go.exlibris.link/M2mYhfpy), Chapters 1-2
-- Wickham, H. (2010). ["A Layered Grammar of Graphics"](https://go.exlibris.link/2CTjrd3H), *Journal of Computational and Graphical Statistics*
+Wilkinson, L. (2005). [*The Grammar of Graphics*](https://go.exlibris.link/M2mYhfpy), Chapters 1-2
 
-### 🔗 Additional Resources
+Wickham, H. (2010). ["A Layered Grammar of Graphics"](https://go.exlibris.link/2CTjrd3H), *Journal of Computational and Graphical Statistics*
 
-- Review examples of effective use of visual variables in data visualization
+**Additional Resources**
+
+Review examples of effective use of visual variables in data visualization
 
 ---
 [^1]: [ggplot2](https://ggplot2.tidyverse.org/) is R's powerful data visualization library based on the Grammar
