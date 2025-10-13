@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -434,8 +469,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link active" data-scroll-target="#load-libraries">Load libraries</a></li>
+  <li><a href="#ingest-the-data-from-github-smm635-repo1" id="toc-ingest-the-data-from-github-smm635-repo1" class="nav-link" data-scroll-target="#ingest-the-data-from-github-smm635-repo1">Ingest the data from GitHub SMM635 repo</a></li>
+  <li><a href="#familiarize-with-data" id="toc-familiarize-with-data" class="nav-link" data-scroll-target="#familiarize-with-data">Familiarize with data</a>
+  <ul class="collapse">
+  <li><a href="#key-figures" id="toc-key-figures" class="nav-link" data-scroll-target="#key-figures">Key Figures</a></li>
+  <li><a href="#data-preview" id="toc-data-preview" class="nav-link" data-scroll-target="#data-preview">Data Preview</a></li>
+  <li><a href="#variable-definitions" id="toc-variable-definitions" class="nav-link" data-scroll-target="#variable-definitions">Variable Definitions</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -460,8 +509,445 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="load-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="load-libraries">Load libraries</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ingest-the-data-from-github-smm635-repo1" class="level2">
+<h2 class="anchored" data-anchor-id="ingest-the-data-from-github-smm635-repo1">Ingest the data from <a href="https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv">GitHub SMM635 repo</a></h2>
+<p>The dataset comes from Kaggle’s <a href="https://www.kaggle.com/datasets/lava18/google-play-store-apps">Google Play Store Apps</a> project. Please refer to the project description for details concerning the data gathering and structuring aspects.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_source <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(data_source)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="familiarize-with-data" class="level2">
+<h2 class="anchored" data-anchor-id="familiarize-with-data">Familiarize with data</h2>
+<section id="key-figures" class="level3">
+<h3 class="anchored" data-anchor-id="key-figures">Key Figures</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>cols(
+  App = col_character(),
+  Category = col_character(),
+  Rating = col_double(),
+  Reviews = col_double(),
+  Size = col_character(),
+  Installs = col_character(),
+  Type = col_character(),
+  Price = col_character(),
+  `Content Rating` = col_character(),
+  Genres = col_character(),
+  `Last Updated` = col_character(),
+  `Current Ver` = col_character(),
+  `Android Ver` = col_character()
+)</code></pre>
+</div>
+</div>
+</section>
+<section id="data-preview" class="level3">
+<h3 class="anchored" data-anchor-id="data-preview">Data Preview</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,841 × 13
+   App       Category Rating Reviews Size  Installs Type  Price `Content Rating`
+   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;           
+ 1 Photo Ed… ART_AND…    4.1     159 19M   10,000+  Free  0     Everyone        
+ 2 Coloring… ART_AND…    3.9     967 14M   500,000+ Free  0     Everyone        
+ 3 U Launch… ART_AND…    4.7   87510 8.7M  5,000,0… Free  0     Everyone        
+ 4 Sketch -… ART_AND…    4.5  215644 25M   50,000,… Free  0     Teen            
+ 5 Pixel Dr… ART_AND…    4.3     967 2.8M  100,000+ Free  0     Everyone        
+ 6 Paper fl… ART_AND…    4.4     167 5.6M  50,000+  Free  0     Everyone        
+ 7 Smoke Ef… ART_AND…    3.8     178 19M   50,000+  Free  0     Everyone        
+ 8 Infinite… ART_AND…    4.1   36815 29M   1,000,0… Free  0     Everyone        
+ 9 Garden C… ART_AND…    4.4   13791 33M   1,000,0… Free  0     Everyone        
+10 Kids Pai… ART_AND…    4.7     121 3.1M  10,000+  Free  0     Everyone        
+# ℹ 10,831 more rows
+# ℹ 4 more variables: Genres &lt;chr&gt;, `Last Updated` &lt;chr&gt;, `Current Ver` &lt;chr&gt;,
+#   `Android Ver` &lt;chr&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="variable-definitions" class="level3">
+<h3 class="anchored" data-anchor-id="variable-definitions">Variable Definitions</h3>
+<section id="app" class="level4">
+<h4 class="anchored" data-anchor-id="app">App</h4>
+<ul>
+<li><strong>Type:</strong> Text (String)<br>
+</li>
+<li><strong>Description:</strong> Name of the application<br>
+</li>
+<li><strong>Example Values:</strong>
+<ul>
+<li>“Photo Editor &amp; Candy Camera &amp; Grid &amp; ScrapBook”<br>
+</li>
+<li>“Coloring book moana”<br>
+</li>
+<li>“U Launcher Lite – FREE Live Cool Themes, Hide Apps”<br>
+</li>
+<li>“Sketch - Draw &amp; Paint”<br>
+</li>
+</ul></li>
+<li><strong>Missing Values:</strong> Expected to be minimal/none (key identifier)<br>
+</li>
+<li><strong>Notes:</strong> May contain special characters, emojis, and version information</li>
+</ul>
+</section>
+<section id="category" class="level4">
+<h4 class="anchored" data-anchor-id="category">Category</h4>
+<ul>
+<li><strong>Type:</strong> Categorical (String)<br>
+</li>
+<li><strong>Description:</strong> Primary category classification of the app on Google Play Store<br>
+</li>
+<li><strong>Unique Categories:</strong> 33 main categories + some miscoded entries<br>
+</li>
+<li><strong>Top Categories by Frequency:</strong>
+<ul>
+<li>FAMILY (1,935 apps, 17.9%)<br>
+</li>
+<li>GAME (1,138 apps, 10.5%)<br>
+</li>
+<li>TOOLS (805 apps, 7.4%)<br>
+</li>
+<li>MEDICAL (452 apps, 4.2%)<br>
+</li>
+<li>BUSINESS (449 apps, 4.1%)<br>
+</li>
+<li>PRODUCTIVITY (391 apps, 3.6%)<br>
+</li>
+<li>PERSONALIZATION (376 apps, 3.5%)<br>
+</li>
+<li>LIFESTYLE (368 apps, 3.4%)<br>
+</li>
+<li>COMMUNICATION (368 apps, 3.4%)<br>
+</li>
+<li>SPORTS (348 apps, 3.2%)<br>
+</li>
+</ul></li>
+<li><strong>Standard Categories:</strong>
+<ul>
+<li>ART_AND_DESIGN<br>
+</li>
+<li>AUTO_AND_VEHICLES<br>
+</li>
+<li>BEAUTY<br>
+</li>
+<li>BOOKS_AND_REFERENCE<br>
+</li>
+<li>BUSINESS<br>
+</li>
+<li>COMICS<br>
+</li>
+<li>COMMUNICATION<br>
+</li>
+<li>DATING<br>
+</li>
+<li>EDUCATION<br>
+</li>
+<li>ENTERTAINMENT<br>
+</li>
+<li>EVENTS<br>
+</li>
+<li>FAMILY<br>
+</li>
+<li>FINANCE<br>
+</li>
+<li>FOOD_AND_DRINK<br>
+</li>
+<li>GAME<br>
+</li>
+<li>HEALTH_AND_FITNESS<br>
+</li>
+<li>HOUSE_AND_HOME<br>
+</li>
+<li>LIBRARIES_AND_DEMO<br>
+</li>
+<li>LIFESTYLE<br>
+</li>
+<li>MAPS_AND_NAVIGATION<br>
+</li>
+<li>MEDICAL<br>
+</li>
+<li>NEWS_AND_MAGAZINES<br>
+</li>
+<li>PARENTING<br>
+</li>
+<li>PERSONALIZATION<br>
+</li>
+<li>PHOTOGRAPHY<br>
+</li>
+<li>PRODUCTIVITY<br>
+</li>
+<li>SHOPPING<br>
+</li>
+<li>SOCIAL<br>
+</li>
+<li>SPORTS<br>
+</li>
+<li>TOOLS<br>
+</li>
+<li>TRAVEL_AND_LOCAL<br>
+</li>
+<li>VIDEO_PLAYERS<br>
+</li>
+<li>WEATHER<br>
+</li>
+</ul></li>
+<li><strong>Data Quality Issues:</strong> Contains miscoded entries (app names/descriptions appearing as category values)</li>
+</ul>
+</section>
+<section id="rating" class="level4">
+<h4 class="anchored" data-anchor-id="rating">Rating</h4>
+<ul>
+<li><strong>Type:</strong> Numeric (Float)<br>
+</li>
+<li><strong>Description:</strong> Average user rating on a scale of 1.0 to 5.0<br>
+</li>
+<li><strong>Range:</strong> 1.0 - 5.0 (expected)<br>
+</li>
+<li><strong>Example Values:</strong> 4.1, 3.9, 4.7, 4.5<br>
+</li>
+<li><strong>Missing Values:</strong> Expected to be present for apps with no ratings<br>
+</li>
+<li><strong>Notes:</strong> Higher values indicate better user satisfaction</li>
+</ul>
+</section>
+<section id="reviews" class="level4">
+<h4 class="anchored" data-anchor-id="reviews">Reviews</h4>
+<ul>
+<li><strong>Type:</strong> Numeric (Integer)<br>
+</li>
+<li><strong>Description:</strong> Total number of user reviews submitted for the app<br>
+</li>
+<li><strong>Example Values:</strong> 159, 967, 87510, 215644<br>
+</li>
+<li><strong>Range:</strong> 0 to millions<br>
+</li>
+<li><strong>Notes:</strong> Indicator of app popularity and user engagement</li>
+</ul>
+</section>
+<section id="size" class="level4">
+<h4 class="anchored" data-anchor-id="size">Size</h4>
+<ul>
+<li><strong>Type:</strong> Text (String with units)<br>
+</li>
+<li><strong>Description:</strong> Size of the application<br>
+</li>
+<li><strong>Format:</strong> Number followed by unit (M for megabytes, k for kilobytes)<br>
+</li>
+<li><strong>Example Values:</strong> “19M”, “14M”, “8.7M”, “25M”<br>
+</li>
+<li><strong>Special Values:</strong>
+<ul>
+<li>“Varies with device” - size depends on device specifications<br>
+</li>
+</ul></li>
+<li><strong>Notes:</strong> Requires parsing to convert to numeric format for analysis</li>
+</ul>
+</section>
+<section id="installs" class="level4">
+<h4 class="anchored" data-anchor-id="installs">Installs</h4>
+<ul>
+<li><strong>Type:</strong> Categorical (String)<br>
+</li>
+<li><strong>Description:</strong> Number of times the app has been installed (in ranges)<br>
+</li>
+<li><strong>Format:</strong> Comma-separated numbers with plus sign<br>
+</li>
+<li><strong>Example Values:</strong> “10,000+”, “500,000+”, “5,000,000+”, “50,000,000+”<br>
+</li>
+<li><strong>Common Ranges:</strong>
+<ul>
+<li>“0+”<br>
+</li>
+<li>“1+”<br>
+</li>
+<li>“5+”<br>
+</li>
+<li>“10+”<br>
+</li>
+<li>“50+”<br>
+</li>
+<li>“100+”<br>
+</li>
+<li>“500+”<br>
+</li>
+<li>“1,000+”<br>
+</li>
+<li>“5,000+”<br>
+</li>
+<li>“10,000+”<br>
+</li>
+<li>“50,000+”<br>
+</li>
+<li>“100,000+”<br>
+</li>
+<li>“500,000+”<br>
+</li>
+<li>“1,000,000+”<br>
+</li>
+<li>“5,000,000+”<br>
+</li>
+<li>“10,000,000+”<br>
+</li>
+<li>“50,000,000+”<br>
+</li>
+<li>“100,000,000+”<br>
+</li>
+<li>“500,000,000+”<br>
+</li>
+<li>“1,000,000,000+”<br>
+</li>
+</ul></li>
+<li><strong>Notes:</strong> Requires parsing to convert to numeric format; provides order of magnitude rather than exact counts</li>
+</ul>
+</section>
+<section id="type" class="level4">
+<h4 class="anchored" data-anchor-id="type">Type</h4>
+<ul>
+<li><strong>Type:</strong> Binary Categorical (String)<br>
+</li>
+<li><strong>Description:</strong> Whether the app is free or paid<br>
+</li>
+<li><strong>Values:</strong>
+<ul>
+<li>“Free” (1,509 apps in sample, ~83%)<br>
+</li>
+<li>“Paid” (274 apps in sample, ~15%)<br>
+</li>
+<li>“NaN” or missing (2 cases)<br>
+</li>
+</ul></li>
+<li><strong>Distribution:</strong> Majority of apps are free<br>
+</li>
+<li><strong>Notes:</strong> Some data quality issues with miscoded entries</li>
+</ul>
+</section>
+<section id="price" class="level4">
+<h4 class="anchored" data-anchor-id="price">Price</h4>
+<ul>
+<li><strong>Type:</strong> Text (String with currency symbol)<br>
+</li>
+<li><strong>Description:</strong> Price of the app (if paid)<br>
+</li>
+<li><strong>Format:</strong> Usually “0” for free apps or “$X.XX” for paid apps<br>
+</li>
+<li><strong>Example Values:</strong> “0”, “$0.99”, “$2.99”, “$4.99”<br>
+</li>
+<li><strong>Notes:</strong>
+<ul>
+<li>Free apps should have “0” value<br>
+</li>
+<li>Requires parsing to remove currency symbol for numeric analysis<br>
+</li>
+<li>Currency is primarily USD ($)</li>
+</ul></li>
+</ul>
+</section>
+<section id="content-rating" class="level4">
+<h4 class="anchored" data-anchor-id="content-rating">Content Rating</h4>
+<ul>
+<li><strong>Type:</strong> Categorical (String)<br>
+</li>
+<li><strong>Description:</strong> Age group suitability rating for the app<br>
+</li>
+<li><strong>Standard Values:</strong>
+<ul>
+<li>“Everyone” - Suitable for all ages<br>
+</li>
+<li>“Everyone 10+” - Suitable for ages 10 and up<br>
+</li>
+<li>“Teen” - Suitable for ages 13 and up<br>
+</li>
+<li>“Mature 17+” - Suitable for ages 17 and up<br>
+</li>
+<li>“Adults only 18+” - Suitable for ages 18 and up<br>
+</li>
+<li>“Unrated” - No rating assigned<br>
+</li>
+</ul></li>
+<li><strong>Example Values:</strong> “Everyone”, “Teen”<br>
+</li>
+<li><strong>Notes:</strong> Follows Google Play Store’s content rating system</li>
+</ul>
+</section>
+<section id="genres" class="level4">
+<h4 class="anchored" data-anchor-id="genres">Genres</h4>
+<ul>
+<li><strong>Type:</strong> Text (String, may contain multiple values)<br>
+</li>
+<li><strong>Description:</strong> Detailed genre classification (may include subcategories)<br>
+</li>
+<li><strong>Format:</strong> Primary genre, sometimes followed by semicolon and secondary genre<br>
+</li>
+<li><strong>Example Values:</strong>
+<ul>
+<li>“Art &amp; Design”<br>
+</li>
+<li>“Art &amp; Design;Pretend Play”<br>
+</li>
+</ul></li>
+<li><strong>Notes:</strong> More specific than Category field; can contain multiple genres separated by semicolons</li>
+</ul>
+</section>
+<section id="last-updated" class="level4">
+<h4 class="anchored" data-anchor-id="last-updated">Last Updated</h4>
+<ul>
+<li><strong>Type:</strong> Date (String)<br>
+</li>
+<li><strong>Description:</strong> Date when the app was last updated<br>
+</li>
+<li><strong>Format:</strong> “Month Day, Year” (e.g., “January 7, 2018”)<br>
+</li>
+<li><strong>Example Values:</strong> “January 7, 2018”, “January 15, 2018”, “August 1, 2018”, “June 8, 2018”<br>
+</li>
+<li><strong>Notes:</strong> Can be used to assess app maintenance and developer activity; requires date parsing for analysis</li>
+</ul>
+</section>
+<section id="current-ver" class="level4">
+<h4 class="anchored" data-anchor-id="current-ver">Current Ver</h4>
+<ul>
+<li><strong>Type:</strong> Text (String)<br>
+</li>
+<li><strong>Description:</strong> Current version of the application<br>
+</li>
+<li><strong>Format:</strong> Varies widely (semantic versioning, numeric versions, descriptive text)<br>
+</li>
+<li><strong>Example Values:</strong> “1.0.0”, “2.0.0”, “1.2.4”, “Varies with device”<br>
+</li>
+<li><strong>Special Values:</strong> “Varies with device” - version depends on device<br>
+</li>
+<li><strong>Notes:</strong> No standardized format across apps</li>
+</ul>
+</section>
+<section id="android-ver" class="level4">
+<h4 class="anchored" data-anchor-id="android-ver">Android Ver</h4>
+<ul>
+<li><strong>Type:</strong> Text (String)<br>
+</li>
+<li><strong>Description:</strong> Minimum Android version required to run the app<br>
+</li>
+<li><strong>Format:</strong> Version number followed by “and up”<br>
+</li>
+<li><strong>Example Values:</strong> “4.0.3 and up”, “4.2 and up”<br>
+</li>
+<li><strong>Special Values:</strong> “Varies with device” - requirement depends on device<br>
+</li>
+<li><strong>Notes:</strong> Indicates app compatibility range</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

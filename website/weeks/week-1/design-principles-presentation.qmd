@@ -5,7 +5,7 @@ author: "Prof. Simone Santoni"
 institute: "Bayes Business School"
 format:
   revealjs:
-    theme: [default, ../../theme.scss]
+    theme: default
     slide-number: true
     chalkboard: true
     preview-links: auto
@@ -16,7 +16,7 @@ format:
     background-transition: fade
     incremental: false
     smaller: true
-    scrollable: true
+    scrollable: false
     css: presentation-styles.css
   beamer:
     aspectratio: 169

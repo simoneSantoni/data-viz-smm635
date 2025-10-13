@@ -3,3 +3,221 @@ title: "practice_1"
 format: html
 ---
 
+## Load libraries
+
+```{r}
+library(readr)
+```
+
+
+## Ingest the data from [GitHub SMM635 repo][1]
+
+The dataset comes from Kaggle's [Google Play Store Apps][0] project. Please refer
+to the project description for details concerning the data gathering and structuring
+aspects.
+
+[0]: https://www.kaggle.com/datasets/lava18/google-play-store-apps
+
+```{r}
+data_source <- "https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv"
+df <- read_csv(data_source)
+```
+
+[1]:https://raw.githubusercontent.com/simoneSantoni/data-viz-smm635/refs/heads/master/data/googleplaystore.csv
+
+## Familiarize with data
+
+
+### Key Figures
+
+```{r}
+spec(df)
+```
+
+### Data Preview
+
+```{r}
+df
+```
+
+### Variable Definitions                                                                                                            
+#### App                                                                                                                         
+- **Type:** Text (String)                                                                                                            
+- **Description:** Name of the application                                                                                           
+- **Example Values:**                                                                                                                
+  - "Photo Editor & Candy Camera & Grid & ScrapBook"                                                                                 
+  - "Coloring book moana"                                                                                                            
+  - "U Launcher Lite – FREE Live Cool Themes, Hide Apps"                                                                             
+  - "Sketch - Draw & Paint"                                                                                                          
+- **Missing Values:** Expected to be minimal/none (key identifier)                                                                   
+- **Notes:** May contain special characters, emojis, and version information                                                         
+
+#### Category                                                                                                                     
+- **Type:** Categorical (String)                                                                                                     
+- **Description:** Primary category classification of the app on Google Play Store                                                   
+- **Unique Categories:** 33 main categories + some miscoded entries                                                                  
+- **Top Categories by Frequency:**                                                                                                   
+  - FAMILY (1,935 apps, 17.9%)                                                                                                       
+  - GAME (1,138 apps, 10.5%)                                                                                                         
+  - TOOLS (805 apps, 7.4%)                                                                                                           
+  - MEDICAL (452 apps, 4.2%)                                                                                                         
+  - BUSINESS (449 apps, 4.1%)                                                                                                        
+  - PRODUCTIVITY (391 apps, 3.6%)                                                                                                    
+  - PERSONALIZATION (376 apps, 3.5%)                                                                                                 
+  - LIFESTYLE (368 apps, 3.4%)                                                                                                       
+  - COMMUNICATION (368 apps, 3.4%)                                                                                                   
+  - SPORTS (348 apps, 3.2%)                                                                                                          
+- **Standard Categories:**                                                                                                           
+  - ART_AND_DESIGN                                                                                                                   
+  - AUTO_AND_VEHICLES                                                                                                                
+  - BEAUTY                                                                                                                           
+  - BOOKS_AND_REFERENCE                                                                                                              
+  - BUSINESS                                                                                                                         
+  - COMICS                                                                                                                           
+  - COMMUNICATION                                                                                                                    
+  - DATING                                                                                                                           
+  - EDUCATION                                                                                                                        
+  - ENTERTAINMENT                                                                                                                    
+  - EVENTS                                                                                                                           
+  - FAMILY                                                                                                                           
+  - FINANCE                                                                                                                          
+  - FOOD_AND_DRINK                                                                                                                   
+  - GAME                                                                                                                             
+  - HEALTH_AND_FITNESS                                                                                                               
+  - HOUSE_AND_HOME                                                                                                                   
+  - LIBRARIES_AND_DEMO                                                                                                               
+  - LIFESTYLE                                                                                                                        
+  - MAPS_AND_NAVIGATION                                                                                                              
+  - MEDICAL                                                                                                                          
+  - NEWS_AND_MAGAZINES                                                                                                               
+  - PARENTING                                                                                                                        
+  - PERSONALIZATION                                                                                                                  
+  - PHOTOGRAPHY                                                                                                                      
+  - PRODUCTIVITY                                                                                                                     
+  - SHOPPING                                                                                                                         
+  - SOCIAL                                                                                                                           
+  - SPORTS                                                                                                                           
+  - TOOLS                                                                                                                            
+  - TRAVEL_AND_LOCAL                                                                                                                 
+  - VIDEO_PLAYERS                                                                                                                    
+  - WEATHER                                                                                                                          
+- **Data Quality Issues:** Contains miscoded entries (app names/descriptions appearing as category values)                           
+                                                                                                                                     
+#### Rating                                                                                                                       
+- **Type:** Numeric (Float)                                                                                                          
+- **Description:** Average user rating on a scale of 1.0 to 5.0                                                                      
+- **Range:** 1.0 - 5.0 (expected)                                                                                                    
+- **Example Values:** 4.1, 3.9, 4.7, 4.5                                                                                             
+- **Missing Values:** Expected to be present for apps with no ratings                                                                
+- **Notes:** Higher values indicate better user satisfaction                                                                         
+                                                                                                                                     
+#### Reviews                                                                                                                      
+- **Type:** Numeric (Integer)                                                                                                        
+- **Description:** Total number of user reviews submitted for the app                                                                
+- **Example Values:** 159, 967, 87510, 215644                                                                                        
+- **Range:** 0 to millions                                                                                                           
+- **Notes:** Indicator of app popularity and user engagement                                                                         
+                                                                                                                                     
+#### Size                                                                                                                         
+- **Type:** Text (String with units)                                                                                                 
+- **Description:** Size of the application                                                                                           
+- **Format:** Number followed by unit (M for megabytes, k for kilobytes)                                                             
+- **Example Values:** "19M", "14M", "8.7M", "25M"                                                                                    
+- **Special Values:**                                                                                                                
+  - "Varies with device" - size depends on device specifications                                                                     
+- **Notes:** Requires parsing to convert to numeric format for analysis                                                              
+                                                                                                                                     
+#### Installs                                                                                                                     
+- **Type:** Categorical (String)                                                                                                     
+- **Description:** Number of times the app has been installed (in ranges)                                                            
+- **Format:** Comma-separated numbers with plus sign                                                                                 
+- **Example Values:** "10,000+", "500,000+", "5,000,000+", "50,000,000+"                                                             
+- **Common Ranges:**                                                                                                                 
+  - "0+"                                                                                                                             
+  - "1+"                                                                                                                             
+  - "5+"                                                                                                                             
+  - "10+"                                                                                                                            
+  - "50+"                                                                                                                            
+  - "100+"                                                                                                                           
+  - "500+"                                                                                                                           
+  - "1,000+"                                                                                                                         
+  - "5,000+"                                                                                                                         
+  - "10,000+"                                                                                                                        
+  - "50,000+"                                                                                                                        
+  - "100,000+"                                                                                                                       
+  - "500,000+"                                                                                                                       
+  - "1,000,000+"                                                                                                                     
+  - "5,000,000+"                                                                                                                     
+  - "10,000,000+"                                                                                                                    
+  - "50,000,000+"                                                                                                                    
+  - "100,000,000+"                                                                                                                   
+  - "500,000,000+"                                                                                                                   
+  - "1,000,000,000+"                                                                                                                 
+- **Notes:** Requires parsing to convert to numeric format; provides order of magnitude rather than exact counts                     
+                                                                                                                                     
+#### Type                                                                                                                         
+- **Type:** Binary Categorical (String)                                                                                              
+- **Description:** Whether the app is free or paid                                                                                   
+- **Values:**                                                                                                                        
+  - "Free" (1,509 apps in sample, ~83%)                                                                                              
+  - "Paid" (274 apps in sample, ~15%)                                                                                                
+  - "NaN" or missing (2 cases)                                                                                                       
+- **Distribution:** Majority of apps are free                                                                                        
+- **Notes:** Some data quality issues with miscoded entries                                                                          
+                                                                                                                                     
+#### Price                                                                                                                        
+- **Type:** Text (String with currency symbol)                                                                                       
+- **Description:** Price of the app (if paid)                                                                                        
+- **Format:** Usually "0" for free apps or "$X.XX" for paid apps                                                                     
+- **Example Values:** "0", "$0.99", "$2.99", "$4.99"                                                                                 
+- **Notes:**                                                                                                                         
+  - Free apps should have "0" value                                                                                                  
+  - Requires parsing to remove currency symbol for numeric analysis                                                                  
+  - Currency is primarily USD ($)                                                                                                    
+                                                                                                                                     
+#### Content Rating                                                                                                               
+- **Type:** Categorical (String)                                                                                                     
+- **Description:** Age group suitability rating for the app                                                                          
+- **Standard Values:**                                                                                                               
+  - "Everyone" - Suitable for all ages                                                                                               
+  - "Everyone 10+" - Suitable for ages 10 and up                                                                                     
+  - "Teen" - Suitable for ages 13 and up                                                                                             
+  - "Mature 17+" - Suitable for ages 17 and up                                                                                       
+  - "Adults only 18+" - Suitable for ages 18 and up                                                                                  
+  - "Unrated" - No rating assigned                                                                                                   
+- **Example Values:** "Everyone", "Teen"                                                                                             
+- **Notes:** Follows Google Play Store's content rating system                                                                       
+                                                                                                                                     
+#### Genres                                                                                                                      
+- **Type:** Text (String, may contain multiple values)                                                                               
+- **Description:** Detailed genre classification (may include subcategories)                                                         
+- **Format:** Primary genre, sometimes followed by semicolon and secondary genre                                                     
+- **Example Values:**                                                                                                                
+  - "Art & Design"                                                                                                                   
+  - "Art & Design;Pretend Play"                                                                                                      
+- **Notes:** More specific than Category field; can contain multiple genres separated by semicolons                                  
+                                                                                                                                     
+#### Last Updated                                                                                                                
+- **Type:** Date (String)                                                                                                            
+- **Description:** Date when the app was last updated                                                                                
+- **Format:** "Month Day, Year" (e.g., "January 7, 2018")                                                                            
+- **Example Values:** "January 7, 2018", "January 15, 2018", "August 1, 2018", "June 8, 2018"                                        
+- **Notes:** Can be used to assess app maintenance and developer activity; requires date parsing for analysis                        
+                                                                                                                                     
+#### Current Ver                                                                                                                 
+- **Type:** Text (String)                                                                                                            
+- **Description:** Current version of the application                                                                                
+- **Format:** Varies widely (semantic versioning, numeric versions, descriptive text)                                                
+- **Example Values:** "1.0.0", "2.0.0", "1.2.4", "Varies with device"                                                                
+- **Special Values:** "Varies with device" - version depends on device                                                               
+- **Notes:** No standardized format across apps                                                                                      
+                                                                                                                                     
+#### Android Ver                                                                                                                 
+- **Type:** Text (String)                                                                                                            
+- **Description:** Minimum Android version required to run the app                                                                   
+- **Format:** Version number followed by "and up"                                                                                    
+- **Example Values:** "4.0.3 and up", "4.2 and up"                                                                                   
+- **Special Values:** "Varies with device" - requirement depends on device                                                           
+- **Notes:** Indicates app compatibility range      
+
+## 
