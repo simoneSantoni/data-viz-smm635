@@ -1,10 +1,111 @@
 ---
 title: "Mid-Term Project"
-subtitle: "Network Analysis of Real-World Systems"
+subtitle: "Nomis Solutions B"
 ---
 
-::: {.callout-note}
-Content coming soon.
+## Project Overview
 
+The mid-term project is a **group assignment** that requires you to apply
+data visualization methodologies to solve a real business problem. You will work
+with the case study "Nomis Solutions B" to demonstrate your understanding of
+data visualization and analytical techniques.
+
+
+::: {.callout-warning}
+## Case questions
+You are required to address the following questions:
+
+- What is the right price to quote?
+- Has e-Car been mispricing its APR quotes? How do you know?
+- How should we start analyzing the data that e-Ca has provided?
+- Which variable should we manipulate>
+- Do you see any particular challenges in evaluating the data?
 :::
 
+::: {.callout-important}
+## Key Information
+- **Group Size**: 3-4 students per group
+- **Due Date**: November 11, 2025
+- **Presentation**: November 13, 2025
+- **Weight**: 50% of final grade
+:::
+
+## Deliverables
+
+1. Written Report (3,000 words maximum)
+  - 10 plots (max)
+  - Executive summary
+  - Methodology
+  - Results & analysis
+  - Your recommendations to address the case problem 
+2. Reproducible Code
+  - Well-documented computer code[^1] 
+  - Clear data preprocessing steps
+  - Commented analysis procedures
+  - Code that generates all figures and tables in the report
+
+## Case Materials
+
+- **Electronic copy of the case**: Available on Moodle (Case Studies section)
+- **Companion data**[^2]: [GitHub repository - data/](https://github.com/simoneSantoni/data-viz-smm635/tree/master/data)
+
+## Submission (November 11, 15:59 PM)
+
+Upload a **single compressed folder** (.zip or .tar.gz) containing:
+
+1. **Report** (PDF format, max 3,000 words)
+2. **Computer code** with processed datasets
+3. **README.md** with instructions to reproduce results
+
+## Presentation Preparation (November 13)
+
+- Bring presentation on USB drive or have it accessible online
+- Prepare for 10-minute presentation + 5-minute Q&A
+- All team members must participate in the presentation
+- Be ready to answer technical and business questions
+- Presentation schedule available in due course
+
+## Getting Help
+
+### Office Hours
+- **When**: Wednesdays 15:00 - 17:00, or by appointment
+- **Where**: Faculty office or online (schedule via email)
+- **Purpose**: Methodology guidance, technical support, feedback on progress
+
+### Resources
+- **Course materials**: Slides, readings, and case discussions
+- **Peer collaboration**: Discuss concepts (but not share solutions) with other teams
+
+### Academic Integrity
+
+::: {.callout-warning}
+## Important Reminders
+
+- **Collaboration within teams** is expected and encouraged
+- **Collaboration between teams** should be limited to conceptual discussions
+- **All sources** must be properly cited using academic citation standards
+- **Code originality**: While you may reference online resources, the analysis must be your own work
+- **Data integrity**: Do not modify the provided dataset beyond standard preprocessing
+:::
+
+## Success Tips
+
+::: {.callout-tip}
+## Recommendations for Success
+
+1. **Start early**: Data visualization can present substantial uncertainty
+2. **Plan your approach**: Discuss methodology before diving into coding
+3. **Iterate frequently**: Regular team check-ins and progress reviews
+4. **Focus on business value**: Always connect technical findings to business implications
+5. **Document everything**: Keep detailed notes of your analytical choices and assumptions
+6. **Practice your presentation**: Rehearse timing and smooth transitions between speakers
+:::
+
+Good luck with your mid-term project! This is an excellent opportunity to
+apply data visualization to real-world challenges and develop skills highly
+valued in today's data-driven business environment.
+
+---
+[^1]: Admitted programming languages are C, C++, Julia, Python, R, Rust. 
+[^2]: Data in Excel format. You can red that using R's [readxl](https://readxl.tidyverse.org/) 
+or Pandas's [read_excel](https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html)
