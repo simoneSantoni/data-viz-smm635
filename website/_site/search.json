@@ -1439,7 +1439,7 @@
     "href": "weeks/week-4/main.html",
     "title": "Week 4",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 4 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "📚 Readings\n\n\n\n📖 Read chapter 7 (“Maps”) and 8 (“Time-dependent graphs”) from Modern Data Visualization with R",
     "crumbs": [
       "Weekly materials",
       "Week 4"
@@ -1567,6 +1567,72 @@
     "crumbs": [
       "Project",
       "Mid-term project"
+    ]
+  },
+  {
+    "objectID": "weeks/week-4/main.html#prepare",
+    "href": "weeks/week-4/main.html#prepare",
+    "title": "Week 4",
+    "section": "",
+    "text": "📚 Readings\n\n\n\n📖 Read chapter 7 (“Maps”) and 8 (“Time-dependent graphs”) from Modern Data Visualization with R",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-4/main.html#participate",
+    "href": "weeks/week-4/main.html#participate",
+    "title": "Week 4",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\n📊 Slideshow\n\n\n\nWe will focus on the case materials this week. No slideshow will be used.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-4/main.html#practice",
+    "href": "weeks/week-4/main.html#practice",
+    "title": "Week 4",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\n💻 Specialized libraries\n\n\n\n🧮 Maps: Demonstration of R’s library ggmap\n🧮 Time-series: Demonstration of R’s library ggseries",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-4/main.html#perform",
+    "href": "weeks/week-4/main.html#perform",
+    "title": "Week 4",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Address the case study Saving Lives with Data Visualizations (A): Charts in the Time of Cholera (available in Moodle’s case studies area). The companion dataset to the case is available in the  GitHub repo of the module.\n💡 Focus on analyzing how effective visualization design principles apply to public health data and crisis communication.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-4/main.html#ponder",
+    "href": "weeks/week-4/main.html#ponder",
+    "title": "Week 4",
+    "section": "Ponder",
+    "text": "Ponder\n\n\n\n\n\n\n🛣️ Extra mile\n\n\n\n👓 Supplemental readings: Tufte, E. R. (1997). [The Visual Display of Quantitative Information][]. Graphics Press.\n🤔 Self-Reflection Exercise: What are the opportunities and challenges in visualizing multidimensional datasets that include temporal and geographic aspects? Consider how design choices impact comprehension and decision-making in complex data scenarios and contingent on audiences’ background.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
+    ]
+  },
+  {
+    "objectID": "weeks/week-4/main.html#self-reflection-exercise",
+    "href": "weeks/week-4/main.html#self-reflection-exercise",
+    "title": "Week 4",
+    "section": "💭 Self-Reflection Exercise",
+    "text": "💭 Self-Reflection Exercise\nWhat are the opportunities and challenges in visualizing multidimensional datasets that include temporal and geographic aspects? Consider how design choices impact comprehension and decision-making in complex data scenarios.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4"
     ]
   }
 ]

@@ -27,7 +27,7 @@
         "\n",
         "## Setup"
       ],
-      "id": "35d55674"
+      "id": "a646d3ba"
     },
     {
       "cell_type": "code",
@@ -46,7 +46,7 @@
         "apps['Reviews'] = pd.to_numeric(apps['Reviews'], errors='coerce')\n",
         "apps['Rating'] = pd.to_numeric(apps['Rating'], errors='coerce')"
       ],
-      "id": "75cd8e9f",
+      "id": "a83edb5e",
       "execution_count": null,
       "outputs": []
     },
@@ -60,7 +60,7 @@
         "\n",
         "## Data Overview"
       ],
-      "id": "8d96ae0c"
+      "id": "0d477e68"
     },
     {
       "cell_type": "code",
@@ -69,7 +69,7 @@
         "apps.dtypes  # Column types\n",
         "apps         # Data preview"
       ],
-      "id": "4f6bd9b6",
+      "id": "3760599b",
       "execution_count": null,
       "outputs": []
     },
@@ -107,7 +107,7 @@
         "\n",
         "## Bar Chart"
       ],
-      "id": "c3d2e74c"
+      "id": "70bb6c3c"
     },
     {
       "cell_type": "code",
@@ -129,7 +129,7 @@
       "source": [
         "## Proportional Bar Chart"
       ],
-      "id": "65f88de2"
+      "id": "a76ea008"
     },
     {
       "cell_type": "code",
@@ -156,7 +156,7 @@
       "source": [
         "## Data Quality Check"
       ],
-      "id": "b10b2b2a"
+      "id": "710c07ab"
     },
     {
       "cell_type": "code",
@@ -187,7 +187,7 @@
         "\n",
         "## Histogram"
       ],
-      "id": "875d212e"
+      "id": "e61ad034"
     },
     {
       "cell_type": "code",
@@ -209,7 +209,7 @@
       "source": [
         "## Histogram (Log Scale)"
       ],
-      "id": "dfdb5c53"
+      "id": "17d37cb4"
     },
     {
       "cell_type": "code",
@@ -234,7 +234,7 @@
       "source": [
         "## Boxplot (Horizontal)"
       ],
-      "id": "d4493b87"
+      "id": "f3ad464f"
     },
     {
       "cell_type": "code",
@@ -263,7 +263,7 @@
       "source": [
         "## Boxplot (Vertical)"
       ],
-      "id": "d46284ff"
+      "id": "6ee078bd"
     },
     {
       "cell_type": "code",
@@ -291,7 +291,7 @@
       "source": [
         "## Density Plot"
       ],
-      "id": "3b2baa2b"
+      "id": "6d1c5da6"
     },
     {
       "cell_type": "code",
@@ -326,7 +326,7 @@
         "\n",
         "## Grouped Boxplots"
       ],
-      "id": "1b837146"
+      "id": "912c05bb"
     },
     {
       "cell_type": "code",
@@ -351,7 +351,7 @@
       "source": [
         "## Violin Plots"
       ],
-      "id": "b2f12fdd"
+      "id": "085fe9a1"
     },
     {
       "cell_type": "code",
@@ -376,7 +376,7 @@
       "source": [
         "## Grouped Histograms"
       ],
-      "id": "b5acdd55"
+      "id": "1f5cb7ee"
     },
     {
       "cell_type": "code",
@@ -410,7 +410,7 @@
         "\n",
         "## Basic Scatterplot"
       ],
-      "id": "4bd69274"
+      "id": "0ca8f44c"
     },
     {
       "cell_type": "code",
@@ -437,7 +437,7 @@
       "source": [
         "## With Smoothing"
       ],
-      "id": "25c55a7f"
+      "id": "2584ca1b"
     },
     {
       "cell_type": "code",
@@ -465,7 +465,7 @@
       "source": [
         "## Colored by Type"
       ],
-      "id": "ab51b6f7"
+      "id": "3e03f741"
     },
     {
       "cell_type": "code",
@@ -500,7 +500,7 @@
         "\n",
         "## Stacked Bar Chart"
       ],
-      "id": "368e96f6"
+      "id": "60db2341"
     },
     {
       "cell_type": "code",
@@ -526,7 +526,7 @@
       "source": [
         "## Grouped Bar Chart"
       ],
-      "id": "89fd2111"
+      "id": "36932de0"
     },
     {
       "cell_type": "code",
@@ -552,7 +552,7 @@
       "source": [
         "## Heatmap"
       ],
-      "id": "0d7fcac3"
+      "id": "2af4a822"
     },
     {
       "cell_type": "code",
@@ -595,7 +595,7 @@
         "\n",
         ":::"
       ],
-      "id": "37334996"
+      "id": "20e6e648"
     }
   ],
   "metadata": {

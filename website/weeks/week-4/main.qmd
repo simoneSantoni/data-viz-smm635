@@ -4,10 +4,64 @@ subtitle: "Multidimensional data visualization and Saving Lives with Data case"
 callout-appearance: default
 ---
 
+## Prepare
+
 ::: {.callout-note}
-## Materials Coming Soon
+## 📚 Readings
 
-Content for Week 4 is currently being developed and will be available soon.
+📖 Read chapter 7 ("Maps") and 8 ("Time-dependent graphs") from [Modern Data
+Visualization with R](https://rkabacoff.github.io/datavis/) 
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
 :::
+
+## Participate
+
+::: {.callout-note}
+## 📊 Slideshow
+
+We will focus on the case materials this week. **No slideshow** will be used.
+
+:::
+
+## Practice
+
+::: {.callout-note}
+## 💻 Specialized libraries
+
+🧮 **Maps**: Demonstration of R's library [ggmap](https://cran.r-project.org/web/packages/ggmap/readme/README.html) 
+
+🧮 **Time-series**: Demonstration of R's library [ggseries](https://github.com/AtherEnergy/ggTimeSeries)
+
+:::
+
+## Perform
+
+::: {.callout-note}
+## 📝 Perform
+
+✏️ Address the case study **Saving Lives with Data Visualizations (A): Charts
+in the Time of Cholera** (available in Moodle's case studies area). The
+companion dataset to the case is available in the []() GitHub repo of the 
+module.
+
+💡 Focus on analyzing how effective visualization design principles apply to
+public health data and crisis communication.
+
+:::
+
+## Ponder
+
+::: {.callout-note}
+## 🛣️ Extra mile
+
+ 👓 **Supplemental readings:** Tufte, E. R. (1997). [*The Visual Display of Quantitative Information*][].
+Graphics Press.
+
+🤔 **Self-Reflection Exercise:** What are the opportunities and challenges in visualizing multidimensional
+datasets that include temporal and geographic aspects? Consider how design
+choices impact comprehension and decision-making in complex data scenarios and
+contingent on audiences' background.
+
+:::
+
+[1]: https://www.edwardtufte.com/book/visual-and-statistical-thinking-displays-of-evidence-for-making-decisions/?_gl=1*1ris9w1*_up*MQ..*_ga*MTk4NDQ4NTM4Ni4xNzYwNzM0NjAy*_ga_JCT37YWSC9*czE3NjA3MzQ2MDEkbzEkZzAkdDE3NjA3MzQ2MDEkajYwJGwwJGgw
