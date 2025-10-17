@@ -41,8 +41,9 @@ We will focus on the case materials this week. **No slideshow** will be used.
 
 ✏️ Address the case study **Saving Lives with Data Visualizations (A): Charts
 in the Time of Cholera** (available in Moodle's case studies area). The
-companion dataset to the case is available in the []() GitHub repo of the 
-module.
+companion dataset to the case is available in the
+[data/](https://github.com/simoneSantoni/data-viz-smm635/tree/master/data) dir
+of the GitHub repo of the module.
 
 💡 Focus on analyzing how effective visualization design principles apply to
 public health data and crisis communication.
