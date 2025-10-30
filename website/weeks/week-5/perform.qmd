@@ -1,0 +1,64 @@
+---
+title: "Crop Residue Management"
+author: "Simone Santoni"
+format: html
+editor: visual
+---
+
+## Load data
+
+```{r}
+library(tidyr)
+library(readxl)
+library(janitor)
+```
+
+## Ingest data
+
+```{r}
+getwd()
+setwd("/home/simon/githubRepos/data-viz-smm635/")
+df <- read_xlsx("data/crm.xlsx")
+```
+
+## Data preparation
+
+### Column names
+
+Data columns are not consistent with the 'tidy' approach. Let's adopt lower case
+names and replace spaces with underscores.
+
+```{r}
+# Transform column names to tidy format (lowercase with underscores)
+df <- df %>% clean_names()
+```
+
+### Encode string cols as factors
+
+
+```{r}
+# state
+df$state <- as.factor(df$state)
+
+# district
+df$district <- as.factor(df$district)
+
+# crm_type
+df$crm_type <- as.factor(df$crm_type)
+```
+
+### Encode double cols as factors where appropriate
+
+```{r}
+# soil incorporation to fertiliser consumption
+df$soil_incorporation <- as.factor(df$soil_incorporation)
+df$mulching <- as.factor(df$mulching)
+df$collection <- as.factor(df$collection)
+df$others <- as.factor(df$others)
+df$complete_burning <- as.factor(df$complete_burning)
+df$partial_burning <- as.factor(df$partial_burning)
+df$pest_infestation <- as.factor(df$pest_infestation)
+df$weed_infestation <- as.factor(df$weed_infestation)
+df$water_consumption <- as.factor(df$water_consumption)
+df$fertiliser_consumption <- as.factor(df$fertiliser_consumption)
+```

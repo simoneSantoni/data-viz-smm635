@@ -12,6 +12,8 @@ This is the course repository for SMM635 Data Visualization, a Master's level mo
 ## Build and Development Commands
 
 ### Website Development
+All Quarto commands should be run from the `website/` directory:
+
 ```bash
 # Build the website (from repository root)
 cd website && quarto render
@@ -28,6 +30,8 @@ cd website && quarto render --no-execute
 # Clean all build artifacts and cache
 cd website && rm -rf _site _freeze .quarto
 ```
+
+**Important**: Always execute Quarto commands from within `website/` directory to ensure proper path resolution for assets, includes, and R/Python code execution.
 
 ### Environment Setup
 ```bash
@@ -56,8 +60,8 @@ git push origin master
 ### Quarto Website Architecture
 The website uses Quarto's multi-format publishing system with custom output configuration:
 - **_quarto.yml**: Main configuration defining site structure, sidebar navigation, and theming
-  - **Critical**: `output-dir: ../docs` publishes to `../docs` (parent of website/)
-  - However, GitHub Actions deploys from `website/_site` directly
+  - **Critical**: `output-dir: _site` publishes to `website/_site`
+  - GitHub Actions deploys from `website/_site` to GitHub Pages
   - Sidebar has 10 weeks of content plus course info and project sections
 - **_site/**: Generated static website output (git-tracked, do not manually edit)
 - **_freeze/**: Quarto's computational cache for executed code (enabled with `freeze: auto`)
@@ -68,10 +72,12 @@ The website uses Quarto's multi-format publishing system with custom output conf
   - Each week has a `main.qmd` with: Prepare, Participate, Practice, Perform, Ponder sections
   - Additional topic-specific `.qmd` files (e.g., `design-principles-presentation.qmd`)
   - Supporting assets in `images/` subdirectories
+  - **Note**: There's an unusual `cd ../` directory within weeks/ - appears to be a directory naming accident
 - **website/course/**: Core course documents (syllabus, schedule, support, team)
 - **website/project/**: Mid-term and final project specifications in subdirectories
 - **website/notes/**: Supplemental learning materials
 - **website/imgs/**: Icons and branding assets (e.g., `r-module-icon-light.svg`)
+- **data/**: Course datasets (e.g., `crm.xlsx`) - located at repository root, not in website/
 
 ### Theming System
 - **Dual theme support**: `theme.scss` (light) and `theme-dark.scss` (dark)
@@ -135,3 +141,26 @@ The site deploys automatically on push to master:
 - Uses `quarto render --no-execute` to avoid heavy computations
 - Special handling: Temporarily removes PDF format from syllabus during CI build
 - Deploys from `website/_site` to GitHub Pages
+
+## Common Issues
+
+### R Path Configuration
+The `_quarto.yml` contains a hardcoded R path specific to one machine:
+```yaml
+r:
+  r-path: /home/simon/miniconda3/envs/smm635/bin/R
+```
+If working on a different machine, either:
+- Update this path to match your conda environment, or
+- Comment out the `r-path` setting to use system R
+
+### Conda Environment Typo
+The `smm635.yaml` file contains a typo: `sependencies` instead of `dependencies`. Despite this typo, conda correctly interprets it. If recreating the environment file, use the correct spelling.
+
+### Working with Presentations
+When creating new RevealJS presentations:
+1. Set `format: revealjs` in YAML front matter
+2. Render the presentation: `quarto render presentation-file.qmd`
+3. The output will be `presentation-file.html`
+4. Link to it from the week's `main.qmd` using relative path
+5. Do not use `quarto preview` for presentations - it may not work correctly. Use `quarto render` and open the HTML file directly.
