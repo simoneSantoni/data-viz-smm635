@@ -52,7 +52,6 @@ git push origin master
 
 # Website is deployed via GitHub Actions on every push to master
 # No manual deployment needed - see .github/workflows/publish.yml
-# The .deployment-trigger file is a legacy artifact from previous deployment setup
 ```
 
 ## Architecture and Structure
@@ -63,9 +62,10 @@ The website uses Quarto's multi-format publishing system with custom output conf
   - **Critical**: `output-dir: _site` publishes to `website/_site`
   - GitHub Actions deploys from `website/_site` to GitHub Pages
   - Sidebar has 10 weeks of content plus course info and project sections
-- **_site/**: Generated static website output (git-tracked, do not manually edit)
-- **_freeze/**: Quarto's computational cache for executed code (enabled with `freeze: auto`)
-- **.quarto/**: Internal Quarto metadata and indexing
+- **website/_site/**: Generated static website output (git-tracked, do not manually edit)
+- **website/_freeze/**: Quarto's computational cache for executed code (enabled with `freeze: auto`)
+- **website/.quarto/**: Internal Quarto metadata and indexing
+- **docs/**: Legacy generated output directory (no longer actively used; kept for reference)
 
 ### Content Organization
 - **website/weeks/**: Weekly course materials following the 5P structure:
@@ -74,30 +74,35 @@ The website uses Quarto's multi-format publishing system with custom output conf
   - Supporting assets in `images/` subdirectories
   - **Note**: There's an unusual `cd ../` directory within weeks/ - appears to be a directory naming accident
 - **website/course/**: Core course documents (syllabus, schedule, support, team)
-- **website/project/**: Mid-term and final project specifications in subdirectories
+- **website/project/**: Mid-term and final project specifications in subdirectories (midTermProject/, finalCourseProject/)
 - **website/notes/**: Supplemental learning materials
 - **website/imgs/**: Icons and branding assets (e.g., `r-module-icon-light.svg`)
-- **data/**: Course datasets (e.g., `crm.xlsx`) - located at repository root, not in website/
+- **data/**: Course datasets located at repository root, including:
+  - `crm.xlsx`: CRM data for exercises
+  - `data_a.xlsx`: Additional dataset A
+  - `ecar.csv`: Electric car dataset (large, 10MB+)
+  - `googleplaystore.csv` and `googleplaystore_user_reviews.csv`: Google Play Store datasets
 
 ### Theming System
 - **Dual theme support**: `theme.scss` (light) and `theme-dark.scss` (dark)
   - Base: Cosmo from Bootswatch
   - Custom fonts: Atkinson Hyperlegible (specified in `_quarto.yml: mainfont`)
 - **RevealJS presentations**: Separate styling in `presentation-styles.css` (e.g., week-1)
-- **Theme switcher**: JavaScript-based theme toggle via `theme-switcher.js`
+- **Theme switcher**: JavaScript-based theme toggle via `website/theme-switcher.js`
 
 ### R Configuration
 Quarto is configured to use a specific R installation from the conda environment:
 - `r-path: /home/simon/miniconda3/envs/smm635/bin/R` in `_quarto.yml`
+- **Note**: The hardcoded path uses `/home/simon/` which may differ from the current working directory `/home/simone/`
 - Jupyter kernelspec points to "ir" (R kernel) with display name "R (ind215)"
-- When working on different machines, this path may need adjustment
+- When working on different machines or with different users, this path will need adjustment
 
 ### Key Technologies
 - **Quarto**: Static site generator with support for executable R/Python code blocks
 - **RevealJS**: Interactive presentation framework for lectures (format: revealjs in YAML)
 - **R/Python Integration**: Dual-language support via conda environment
 - **Visualization Libraries**:
-  - R: ggplot2, plotly, shiny, leaflet, gganimate, highcharter, treemap
+  - R: ggplot2, plotly, shiny, leaflet, gganimate, highcharter, treemap, patchwork
   - Python: matplotlib, seaborn, altair, dash, plotly, bokeh, pyvis
 
 ## Development Patterns
@@ -123,6 +128,7 @@ RevealJS presentations (e.g., `design-principles-presentation.qmd`):
 - Link custom CSS with `css: presentation-styles.css`
 - Use `##` for slide breaks, `###` for sub-slides
 - Slides are rendered to HTML and linked from weekly `main.qmd` files
+- **Important**: Do not use `quarto preview` for presentations - it may not work correctly. Use `quarto render` and open the HTML file directly.
 
 ### Code Execution
 Quarto documents support executable code chunks:
@@ -139,8 +145,10 @@ The site deploys automatically on push to master:
 - Workflow: `.github/workflows/publish.yml`
 - Installs minimal R dependencies (rmarkdown, knitr only)
 - Uses `quarto render --no-execute` to avoid heavy computations
-- Special handling: Temporarily removes PDF format from syllabus during CI build
+- Special handling: Temporarily removes PDF format from syllabus during CI build (using sed to strip PDF output section)
 - Deploys from `website/_site` to GitHub Pages
+- Timeout: 30 minutes
+- Uses caching for R packages to speed up builds
 
 ## Common Issues
 
@@ -150,17 +158,18 @@ The `_quarto.yml` contains a hardcoded R path specific to one machine:
 r:
   r-path: /home/simon/miniconda3/envs/smm635/bin/R
 ```
-If working on a different machine, either:
-- Update this path to match your conda environment, or
-- Comment out the `r-path` setting to use system R
+**Problem**: The current working directory shows `/home/simone/` but the configuration uses `/home/simon/`.
+
+**Solutions**:
+- Update the path to match your conda environment location
+- Or comment out the `r-path` setting to use system R
+- Or create a symlink if working across multiple machines
 
 ### Conda Environment Typo
 The `smm635.yaml` file contains a typo: `sependencies` instead of `dependencies`. Despite this typo, conda correctly interprets it. If recreating the environment file, use the correct spelling.
 
-### Working with Presentations
-When creating new RevealJS presentations:
-1. Set `format: revealjs` in YAML front matter
-2. Render the presentation: `quarto render presentation-file.qmd`
-3. The output will be `presentation-file.html`
-4. Link to it from the week's `main.qmd` using relative path
-5. Do not use `quarto preview` for presentations - it may not work correctly. Use `quarto render` and open the HTML file directly.
+### Directory Structure Quirk
+There's a directory named `cd ../` in `website/weeks/` which appears to be a directory naming accident. Be careful not to confuse this with the bash command when navigating the file system.
+
+### Large Datasets
+The `data/ecar.csv` file is 10MB+ in size. When working with this dataset in code examples, consider performance implications and potentially use data sampling for demonstrations.

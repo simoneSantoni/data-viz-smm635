@@ -4,10 +4,62 @@ subtitle: "Storytelling and Crop Residue case"
 callout-appearance: default
 ---
 
+## Prepare
+
 ::: {.callout-note}
-## Materials Coming Soon
+## 📚 Prepare
 
-Content for Week 5 is currently being developed and will be available soon.
+📖 Review [Exploratory Data Analysis materials](../week-3/prepare.html) from Week 3
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
+📖 Read the Crop Residue Management case study (available in Moodle, "Case studies" section)
+
 :::
+
+## Participate
+
+::: {.callout-note}
+## 👥 Participate
+
+📊 [Case Discussion Presentation](case_discussion.html) - Understanding the challenge of crop residue burning in India and alternatives for sustainable practices
+
+📊 [Teaching Summary: Data Visualization & Storytelling](teaching_summary.html) - Comprehensive guide on using data storytelling techniques with the CRM case
+
+:::
+
+## Practice
+
+::: {.callout-note}
+## 💻 Practice
+
+🧮 Introduction to data storytelling principles
+
+🧮 Building effective narratives with data visualization
+
+:::
+
+## Perform
+
+::: {.callout-note}
+## 📝 Perform
+
+✏️ [Exploratory Data Analysis on CRM Dataset (R/tidyverse)](perform_1.html) - Analyze the Crop Residue Management survey data to uncover insights about farmer adoption of sustainable practices
+
+✏️ [Exploratory Data Analysis on CRM Dataset (Python/pandas)](perform_1_python.html) - Same analysis using Python, pandas, and matplotlib
+
+💡 Resources on data storytelling: [The Seven Basic Data Stories](http://mediashift.org/2015/06/exploring-the-7-different-types-of-data-stories/)
+
+:::
+
+## Ponder
+
+**Essential Readings**
+
+Knaflic, C.N. (2015). [*Storytelling with Data: A Data Visualization Guide for Business Professionals*](https://www.wiley.com/en-us/Storytelling+with+Data%3A+A+Data+Visualization+Guide+for+Business+Professionals-p-9781119002253). John Wiley & Sons.
+
+Sringeswara, S., Tiwari, P., & Kumar, U.D. (2022). [*Data Visualization and Storytelling*](https://www.wiley.com/en-in/Data+Visualization+and+Storytelling-p-9788126583218). Wiley India.
+
+**Supplemental Materials**
+
+Segel, E., & Heer, J. (2010). Narrative Visualization: Telling Stories with Data. *IEEE Transactions on Visualization and Computer Graphics*, 16(6), 1139-1148.
+
+Schwabish, J.A. (2014). An Economist's Guide to Visualizing Data. *Journal of Economic Perspectives*, 28(1), 209-234.

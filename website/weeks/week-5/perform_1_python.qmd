@@ -1,0 +1,566 @@
+---
+title: "Exploratory Data Analysis: Crop Residue Management (Python)"
+subtitle: "Analyzing farmer adoption of sustainable practices in Punjab and Haryana"
+author: "SMM635 - Data Visualization"
+format: html
+editor: visual
+jupyter: python3
+---
+
+## Introduction
+
+This analysis explores the Crop Residue Management (CRM) survey data collected from farmers in Punjab and Haryana using Python's pandas and matplotlib. The goal is to understand the adoption patterns of sustainable crop residue management practices as an alternative to traditional burning methods.
+
+## Setup and Data Loading
+
+```{python}
+#| label: setup
+#| message: false
+#| warning: false
+
+# Load required libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from matplotlib.patches import Patch
+
+# Set visualization style
+sns.set_style("whitegrid")
+plt.rcParams['figure.figsize'] = (10, 6)
+plt.rcParams['font.size'] = 11
+
+# Set color palette for consistent styling
+colors_practice = {
+    'Complete Burning': '#d73027',
+    'Partial Burning': '#fee090',
+    'Sustainable Practices': '#1a9850'
+}
+
+colors_state = ['#66c2a5', '#fc8d62']
+```
+
+## Data Ingestion
+
+```{python}
+#| label: load-data
+
+# Load the CRM dataset
+df = pd.read_excel("../../../data/crm.xlsx")
+
+# Display data structure
+print("Dataset Shape:", df.shape)
+print("\nColumn Names:")
+print(df.columns.tolist())
+print("\nFirst few rows:")
+df.head()
+```
+
+## Data Preparation
+
+### Column Names Standardization
+
+Convert column names to lowercase with underscores:
+
+```{python}
+#| label: clean-names
+
+# Clean column names (lowercase with underscores)
+df.columns = df.columns.str.lower().str.replace(' ', '_')
+
+# Display cleaned column names
+print("Cleaned column names:")
+print(df.columns.tolist())
+```
+
+### Data Type Conversions
+
+Convert appropriate columns to categorical types:
+
+```{python}
+#| label: convert-types
+
+# Convert categorical variables
+categorical_cols = ['state', 'district', 'crm_type']
+df[categorical_cols] = df[categorical_cols].astype('category')
+
+# Display summary statistics
+print("\nDataset Summary:")
+print(df.describe())
+print("\nCRM Type Distribution:")
+print(df['crm_type'].value_counts())
+```
+
+## Exploratory Data Analysis
+
+### Overview of Data Collection
+
+```{python}
+#| label: data-overview
+
+# Overall summary
+print("Dataset Overview")
+print("=" * 50)
+print(f"Total farmers surveyed: {len(df)}")
+print(f"States covered: {df['state'].nunique()}")
+print(f"Districts covered: {df['district'].nunique()}")
+print(f"Total land area (acres): {df['land'].sum():.1f}")
+print(f"Average farm size (acres): {df['land'].mean():.2f}")
+print(f"Median farm size (acres): {df['land'].median():.1f}")
+```
+
+### Distribution of Farm Sizes
+
+```{python}
+#| label: farm-size-distribution
+#| fig-width: 10
+#| fig-height: 6
+
+# Create figure with two subplots
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+# Histogram of land sizes
+axes[0].hist(df['land'], bins=30, color='#4575b4', alpha=0.7, edgecolor='black')
+axes[0].set_xlabel('Land Size (acres)')
+axes[0].set_ylabel('Number of Farmers')
+axes[0].set_title('Distribution of Farm Sizes')
+axes[0].grid(True, alpha=0.3)
+
+# Box plot by state
+state_data = [df[df['state'] == state]['land'].dropna() for state in df['state'].cat.categories]
+bp = axes[1].boxplot(state_data, labels=df['state'].cat.categories,
+                      patch_artist=True, vert=False)
+for patch, color in zip(bp['boxes'], colors_state):
+    patch.set_facecolor(color)
+    patch.set_alpha(0.7)
+axes[1].set_xlabel('Land Size (acres)')
+axes[1].set_ylabel('State')
+axes[1].set_title('Farm Size Distribution by State')
+axes[1].grid(True, alpha=0.3, axis='x')
+
+plt.tight_layout()
+plt.show()
+```
+
+::: callout-note
+## Key Insight
+
+Most farmers have land holdings under 20 acres, with several outliers owning larger farms. Punjab has a larger sample of farmers in this dataset compared to Haryana.
+:::
+
+### Geographic Distribution
+
+```{python}
+#| label: geographic-distribution
+#| fig-width: 10
+#| fig-height: 6
+
+# Farmers by state
+state_summary = df.groupby('state').agg({
+    'farmer_id': 'count',
+    'land': ['sum', 'mean']
+}).round(1)
+state_summary.columns = ['n_farmers', 'total_land', 'avg_land']
+
+# Create figure with two subplots
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+# Bar chart for number of farmers by state
+axes[0].bar(state_summary.index, state_summary['n_farmers'],
+            color=colors_state, alpha=0.7, edgecolor='black')
+for i, (idx, row) in enumerate(state_summary.iterrows()):
+    axes[0].text(i, row['n_farmers'] + 20, str(int(row['n_farmers'])),
+                 ha='center', fontweight='bold')
+axes[0].set_xlabel('State')
+axes[0].set_ylabel('Number of Farmers')
+axes[0].set_title('Number of Farmers by State')
+axes[0].grid(True, alpha=0.3, axis='y')
+
+# Farmers by district
+district_summary = df.groupby(['state', 'district']).agg({
+    'farmer_id': 'count',
+    'land': 'sum'
+}).reset_index()
+district_summary.columns = ['state', 'district', 'n_farmers', 'total_land']
+district_summary = district_summary.sort_values('n_farmers')
+
+# Create color mapping for states
+state_colors = {state: color for state, color in zip(df['state'].cat.categories, colors_state)}
+bar_colors = [state_colors[state] for state in district_summary['state']]
+
+axes[1].barh(range(len(district_summary)), district_summary['n_farmers'],
+             color=bar_colors, alpha=0.7, edgecolor='black')
+axes[1].set_yticks(range(len(district_summary)))
+axes[1].set_yticklabels(district_summary['district'])
+axes[1].set_xlabel('Number of Farmers')
+axes[1].set_ylabel('District')
+axes[1].set_title('Farmer Participation by District')
+axes[1].grid(True, alpha=0.3, axis='x')
+
+# Add text labels
+for i, n in enumerate(district_summary['n_farmers']):
+    axes[1].text(n + 5, i, str(int(n)), va='center', fontsize=9)
+
+# Add legend for states
+legend_elements = [Patch(facecolor=color, label=state, alpha=0.7)
+                  for state, color in state_colors.items()]
+axes[1].legend(handles=legend_elements, loc='lower right', title='State')
+
+plt.tight_layout()
+plt.show()
+```
+
+### CRM Practice Adoption
+
+```{python}
+#| label: crm-adoption
+#| fig-width: 12
+#| fig-height: 6
+
+# Create practice categories
+df['practice_category'] = df['crm_type'].map({
+    'BURNING': 'Complete Burning',
+    'BOTH': 'Partial Burning',
+    'SUSTAINABLE': 'Sustainable Practices'
+})
+
+# Overall adoption summary
+adoption_summary = df['practice_category'].value_counts()
+adoption_pct = (adoption_summary / len(df) * 100).round(1)
+
+# Create figure with two subplots
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+# Pie chart
+colors = [colors_practice[cat] for cat in adoption_summary.index]
+wedges, texts, autotexts = axes[0].pie(adoption_summary,
+                                        labels=adoption_summary.index,
+                                        colors=colors,
+                                        autopct='%1.1f%%',
+                                        startangle=90)
+for autotext in autotexts:
+    autotext.set_color('white')
+    autotext.set_fontweight('bold')
+axes[0].set_title('Distribution of CRM Practices')
+
+# Stacked bar chart by state
+state_practice = df.groupby(['state', 'practice_category']).size().unstack(fill_value=0)
+state_practice_pct = state_practice.div(state_practice.sum(axis=1), axis=0) * 100
+
+# Order columns
+col_order = ['Complete Burning', 'Partial Burning', 'Sustainable Practices']
+state_practice_pct = state_practice_pct[col_order]
+
+state_practice_pct.plot(kind='bar', stacked=True, ax=axes[1],
+                        color=[colors_practice[c] for c in col_order],
+                        alpha=0.8, edgecolor='black', width=0.6)
+axes[1].set_xlabel('State')
+axes[1].set_ylabel('Percentage of Farmers (%)')
+axes[1].set_title('CRM Practice Adoption by State')
+axes[1].legend(title='Practice Type', loc='upper left')
+axes[1].set_xticklabels(axes[1].get_xticklabels(), rotation=0)
+axes[1].grid(True, alpha=0.3, axis='y')
+
+plt.tight_layout()
+plt.show()
+
+# Print summary
+print("\nAdoption Summary:")
+for practice, count in adoption_summary.items():
+    pct = adoption_pct[practice]
+    print(f"{practice}: {count} farmers ({pct}%)")
+```
+
+::: callout-important
+## Major Finding
+
+The dataset shows that **{python} f"{adoption_pct\['Sustainable Practices'\]:.1f}%"** of farmers have adopted sustainable practices, while **{python} f"{adoption_pct.get('Complete Burning', 0):.1f}%"** still engage in complete burning.
+:::
+
+### District-Level Analysis
+
+```{python}
+#| label: district-analysis
+#| fig-width: 10
+#| fig-height: 8
+
+# Adoption by district (proportional)
+district_practice = df.groupby(['district', 'practice_category']).size().unstack(fill_value=0)
+district_practice_pct = district_practice.div(district_practice.sum(axis=1), axis=0) * 100
+
+# Order columns
+district_practice_pct = district_practice_pct[col_order]
+
+# Create horizontal stacked bar chart
+fig, ax = plt.subplots(figsize=(12, 8))
+
+district_practice_pct.plot(kind='barh', stacked=True, ax=ax,
+                           color=[colors_practice[c] for c in col_order],
+                           alpha=0.8, edgecolor='black')
+ax.set_xlabel('Proportion of Farmers (%)')
+ax.set_ylabel('District')
+ax.set_title('Distribution of CRM Practices by District')
+ax.legend(title='Practice Type', loc='lower right')
+ax.grid(True, alpha=0.3, axis='x')
+
+# Format x-axis as percentage
+ax.set_xlim(0, 100)
+
+plt.tight_layout()
+plt.show()
+```
+
+### Detailed Breakdown of Sustainable Practices
+
+```{python}
+#| label: sustainable-practices-detail
+#| fig-width: 10
+#| fig-height: 6
+
+# Filter for sustainable practices only
+sustainable_df = df[df['practice_category'] == 'Sustainable Practices']
+
+# Count which specific methods are used
+method_counts = pd.Series({
+    'Soil Incorporation': (sustainable_df['soil_incorporation'] == 1).sum(),
+    'Mulching': (sustainable_df['mulching'] == 1).sum(),
+    'Collection': (sustainable_df['collection'] == 1).sum(),
+    'Others': (sustainable_df['others'] == 1).sum()
+}).sort_values()
+
+# Create horizontal bar chart
+fig, ax = plt.subplots(figsize=(10, 6))
+bars = ax.barh(range(len(method_counts)), method_counts.values,
+               color='#1a9850', alpha=0.7, edgecolor='black')
+ax.set_yticks(range(len(method_counts)))
+ax.set_yticklabels(method_counts.index)
+ax.set_xlabel('Number of Farmers Using This Method')
+ax.set_ylabel('Method')
+ax.set_title('Specific Sustainable Methods Used by Farmers\nAmong farmers who adopted sustainable practices')
+ax.grid(True, alpha=0.3, axis='x')
+
+# Add value labels
+for i, v in enumerate(method_counts.values):
+    ax.text(v + 10, i, str(int(v)), va='center', fontweight='bold')
+
+plt.tight_layout()
+plt.show()
+
+print(f"\nTotal farmers with sustainable practices: {len(sustainable_df)}")
+print("\nNote: Farmers may use multiple methods simultaneously.")
+```
+
+::: callout-tip
+## Practice Patterns
+
+Note that farmers may use multiple methods. For example, a farmer might use both soil incorporation and mulching. The data uses binary indicators (0 or 1) for each method.
+:::
+
+### Farmer Feedback Analysis
+
+```{python}
+#| label: feedback-analysis
+#| fig-width: 12
+#| fig-height: 8
+
+# Prepare feedback data for sustainable practices only
+feedback_cols = ['water_consumption', 'fertiliser_consumption',
+                 'pest_infestation', 'weed_infestation']
+
+# Create a melted dataframe for feedback
+feedback_data = []
+for col in feedback_cols:
+    col_data = sustainable_df[col].dropna()
+    for val in col_data:
+        feedback_data.append({
+            'feedback_type': col.replace('_', ' ').title(),
+            'feedback_value': val
+        })
+
+feedback_df = pd.DataFrame(feedback_data)
+
+# Map values to labels
+feedback_df['feedback_label'] = feedback_df['feedback_value'].map({
+    -1: 'Decreased',
+    0: 'No Change',
+    1: 'Increased'
+})
+
+# Calculate percentages
+feedback_summary = feedback_df.groupby(['feedback_type', 'feedback_label']).size().unstack(fill_value=0)
+feedback_pct = feedback_summary.div(feedback_summary.sum(axis=1), axis=0) * 100
+
+# Ensure column order
+label_order = ['Decreased', 'No Change', 'Increased']
+feedback_pct = feedback_pct[[col for col in label_order if col in feedback_pct.columns]]
+
+# Create stacked bar chart
+fig, ax = plt.subplots(figsize=(12, 6))
+
+feedback_colors = {
+    'Decreased': '#1a9850',
+    'No Change': '#ffffbf',
+    'Increased': '#d73027'
+}
+
+feedback_pct.plot(kind='bar', stacked=True, ax=ax,
+                  color=[feedback_colors[c] for c in feedback_pct.columns],
+                  alpha=0.8, edgecolor='black', width=0.7)
+ax.set_xlabel('Feedback Category')
+ax.set_ylabel('Percentage of Farmers (%)')
+ax.set_title('Farmer Feedback on Impact of Sustainable CRM Practices\nAmong farmers who adopted sustainable methods')
+ax.legend(title='Impact', loc='upper right')
+ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
+ax.grid(True, alpha=0.3, axis='y')
+ax.set_ylim(0, 100)
+
+plt.tight_layout()
+plt.show()
+
+# Print detailed statistics
+print("\nDetailed Farmer Feedback Statistics:")
+print("=" * 70)
+for feedback_type in feedback_pct.index:
+    print(f"\n{feedback_type}:")
+    for label in feedback_pct.columns:
+        count = feedback_summary.loc[feedback_type, label]
+        pct = feedback_pct.loc[feedback_type, label]
+        print(f"  {label}: {int(count)} farmers ({pct:.1f}%)")
+```
+
+::: callout-important
+## Key Impact Findings
+
+Farmers adopting sustainable CRM practices reported significant benefits:
+
+```{python}
+#| echo: false
+
+# Get positive impacts (Decreased)
+if 'Decreased' in feedback_pct.columns:
+    positive_impacts = feedback_pct['Decreased'].sort_values(ascending=False)
+    for feedback_type, pct in positive_impacts.items():
+        print(f"- **{feedback_type}**: {pct:.1f}% experienced reduction")
+```
+
+These findings demonstrate the multiple benefits of sustainable practices beyond environmental impact.
+:::
+
+### Comparison: Sustainable vs Burning Practices
+
+```{python}
+#| label: practice-comparison
+#| fig-width: 12
+#| fig-height: 6
+
+# Create figure with two subplots
+fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+# Box plot comparison
+practice_order = ['Complete Burning', 'Partial Burning', 'Sustainable Practices']
+practice_data = [df[df['practice_category'] == p]['land'].dropna()
+                 for p in practice_order if p in df['practice_category'].values]
+
+bp = axes[0].boxplot(practice_data,
+                     labels=[p for p in practice_order if p in df['practice_category'].values],
+                     patch_artist=True)
+for patch, practice in zip(bp['boxes'], [p for p in practice_order if p in df['practice_category'].values]):
+    patch.set_facecolor(colors_practice[practice])
+    patch.set_alpha(0.7)
+axes[0].set_ylabel('Land Size (acres)')
+axes[0].set_title('Farm Size Distribution by Practice Type')
+axes[0].set_xticklabels(axes[0].get_xticklabels(), rotation=45, ha='right')
+axes[0].grid(True, alpha=0.3, axis='y')
+
+# Total land by practice and state
+state_practice_land = df.groupby(['state', 'practice_category'])['land'].sum().unstack(fill_value=0)
+state_practice_land = state_practice_land[[p for p in practice_order if p in state_practice_land.columns]]
+
+x = np.arange(len(state_practice_land.index))
+width = 0.25
+
+for i, practice in enumerate(state_practice_land.columns):
+    axes[1].bar(x + i*width, state_practice_land[practice], width,
+                label=practice, color=colors_practice[practice], alpha=0.7, edgecolor='black')
+
+axes[1].set_xlabel('State')
+axes[1].set_ylabel('Total Land Area (acres)')
+axes[1].set_title('Total Land Area by Practice Type and State')
+axes[1].set_xticks(x + width)
+axes[1].set_xticklabels(state_practice_land.index)
+axes[1].legend(title='Practice Type')
+axes[1].grid(True, alpha=0.3, axis='y')
+
+plt.tight_layout()
+plt.show()
+```
+
+## Summary Statistics
+
+```{python}
+#| label: summary-stats
+
+# Create comprehensive summary table
+summary_table = df.groupby('practice_category').agg({
+    'farmer_id': 'count',
+    'land': ['sum', 'mean', 'median']
+}).round(1)
+
+summary_table.columns = ['Number of Farmers', 'Total Land (acres)',
+                         'Avg Land Size (acres)', 'Median Land Size (acres)']
+summary_table['% of Total'] = (summary_table['Number of Farmers'] / len(df) * 100).round(1)
+
+# Reorder columns
+summary_table = summary_table[['Number of Farmers', '% of Total', 'Total Land (acres)',
+                               'Avg Land Size (acres)', 'Median Land Size (acres)']]
+
+print("\nCRM Practice Summary Statistics:")
+print("=" * 90)
+print(summary_table.to_string())
+
+# State-wise breakdown
+print("\n\nState-wise CRM Practice Distribution:")
+print("=" * 90)
+state_summary = df.groupby(['state', 'practice_category']).agg({
+    'farmer_id': 'count',
+    'land': 'sum'
+}).round(1)
+print(state_summary.to_string())
+```
+
+## Key Insights and Recommendations
+
+### Achievements
+
+1.  **Significant Sustainable Adoption**: Over 80% of farmers in the sample have adopted sustainable or partially sustainable practices
+2.  **Geographic Coverage**: Program reaches multiple districts across Punjab and Haryana
+3.  **Positive Farmer Feedback**: Majority of farmers adopting sustainable practices report reduced water and fertilizer consumption
+4.  **Soil Health Benefits**: Farmers noted improvements in weed and pest management
+
+### Challenges Identified
+
+1.  **Persistent Burning**: Some farmers still engage in complete or partial burning
+2.  **Regional Variation**: Different districts show varying adoption patterns
+3.  **Small Farm Holdings**: Most farmers have less than 20 acres, requiring shared resources
+4.  **Need for Support Systems**: Success depends on access to equipment and training
+
+### Recommendations for Scaling
+
+1.  **District-Specific Strategies**: Customize interventions based on local adoption patterns
+2.  **Farmer-to-Farmer Learning**: Leverage positive feedback for peer education
+3.  **Equipment Cooperatives**: Enhance access to tools through shared facilities
+4.  **Continuous Monitoring**: Maintain data collection to track long-term impacts
+5.  **Policy Advocacy**: Use evidence to support favorable policies and incentives
+
+### Data Storytelling Insights
+
+This analysis demonstrates how systematic data collection and visualization can:
+
+-   **Quantify Impact**: Show concrete adoption rates and benefits
+-   **Identify Patterns**: Reveal geographic and practice-specific trends
+-   **Support Decision-Making**: Provide evidence for resource allocation
+-   **Build Narratives**: Create compelling stories for stakeholder engagement
+
+------------------------------------------------------------------------
+
+*This analysis was conducted using survey data from the CII Crop Residue Management initiative, covering farmers in Punjab and Haryana who participated in the CRM intervention program.*

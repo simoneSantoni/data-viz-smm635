@@ -1,0 +1,186 @@
+---
+title: "Data Storytelling"
+subtitle: "What are the Alternatives to Crop Residue Burning in India?"
+author: "SMM635 - Data Visualization"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+---
+
+## The Problem: Air Pollution Crisis in Delhi NCR {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Every winter, Delhi faces severe air pollution**
+
+- November 2021: AQI > 450 (hazardous)
+- Health impacts: respiratory issues, eye irritation, headaches
+- Major contributor: **Crop residue burning** in Punjab, Haryana, and Uttar Pradesh
+
+**Why do farmers burn crop residue?**
+
+- Quick and cost-effective
+- 15-20 day window between rice harvest and wheat sowing
+- Mechanized harvesting leaves stubble in fields
+:::
+
+::: {.column width="50%"}
+**Impact of the practice:**
+
+- 36% of Delhi's air pollution from crop burning
+- Low wind speeds trap smoke over Delhi NCR
+- Reduces soil health and microbial activity
+- Increases irrigation requirements
+- Loss of organic matter
+
+> *"Earth provides enough to satisfy every man's need, but not for every man's greed."* — Mahatma Gandhi
+:::
+
+::::
+
+---
+
+## The CII Crop Residue Management Initiative {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Program Overview**
+
+- Partnership with NITI Aayog
+- Started in 2018 in Punjab's Patiala and Ludhiana
+- Expanded to 226 villages across 10 districts by 2021
+- Reached 40,040 farmers, covering 199,867 acres
+
+**Key Results**
+
+- 89% of farm area achieved zero or significantly reduced burning
+- 80% farmer adoption of sustainable practices in pilot areas
+:::
+
+::: {.column width="50%"}
+**Intervention Strategies**
+
+1. **Awareness building** - Mass campaigns on environmental impact
+2. **Machinery deployment** - Access to tools through cooperatives
+3. **Technical training** - Proper use of equipment
+4. **Participatory management** - Handholding farmers through transition
+
+**Funding Sources**
+
+- Corporate CSR funds
+- Government support
+- Policy framework development
+:::
+
+::::
+
+---
+
+## Sustainable Alternatives: In Situ vs Ex Situ Methods {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**In Situ (In-Field) Methods**
+
+*Straw incorporation and mulching*
+
+**Advantages:**
+
+- Retains water, nutrients, organic matter
+- Improves soil health and microorganisms
+- Reduces irrigation needs
+
+**Requirements:**
+
+- Access to specialized equipment
+- Rotavators, super seeders, mulchers
+- Suitable subsoil conditions
+:::
+
+::: {.column width="50%"}
+**Ex Situ (Ex-Field) Methods**
+
+*Collection and baling*
+
+**Advantages:**
+
+- Works with all soil types
+- Straw can be sold or repurposed
+- Creates additional income stream
+
+**Applications:**
+
+- Animal bedding and feed (limited for rice)
+- Biomass energy production
+- Composting
+- Industrial uses
+
+**Success in other countries:** China, Australia, East Asian nations have banned burning and adopted these methods
+:::
+
+::::
+
+---
+
+## The Challenge: Convincing Stakeholders {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Pradhan's Dilemma**
+
+Chandrakant Pradhan needs to convince funding agencies to scale up the CRM initiative
+
+**Key Questions:**
+
+- How to effectively present survey data?
+- What insights demonstrate program success?
+- Is there evidence of long-term pollution reduction?
+- How to show the ground reality faced by farmers?
+:::
+
+::: {.column width="50%"}
+**Available Data from Surveys**
+
+- Farmer details: state, district, village, land size
+- CRM practices adopted (2019 vs 2020)
+- Tools used and their sources
+- Farmer feedback on:
+  - Water consumption changes
+  - Fertilizer consumption
+  - Weed infestation
+  - Pest infestation
+
+**The Power of Data Storytelling**
+
+> *"Numbers have an important story to tell. They rely on you to give them a clear and convincing voice."* — Stephen Few
+:::
+
+::::
+
+---
+
+## Discussion Questions {.smaller}
+
+**For Class Discussion:**
+
+1. **Data Exploration:** What are the most important metrics to track in the CRM survey data? How would you measure the success of the initiative?
+
+2. **Stakeholder Perspectives:** Different stakeholders (corporates, policymakers, farmers) have different priorities. How should Pradhan tailor his data story for each audience?
+
+3. **Behavioral Change:** Stubble burning is described as a "behavioral issue." What role does data visualization play in changing farmer behavior versus providing financial incentives?
+
+4. **Sustainability vs Practicality:** Given that farmers have only 15-20 days between harvests, what barriers exist to adoption of sustainable practices? How does the data reveal these constraints?
+
+5. **Scaling Up:** Based on the case, what evidence would convince you (as a potential funder) to invest in expanding this program to other states?
+
+---
+
+**Think about:** How would you use the survey data to tell a compelling story that balances environmental urgency with practical farmer constraints?

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Simone Santoni">
 
-<title>Week 5 – SMM635 - Data Visualization</title>
+<title>Crop Residue Management – SMM635 - Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../weeks/week-6/main.html" rel="next">
-<link href="../../weeks/week-4/main.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -248,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week-1/main.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../../weeks/week-5/main.html">Week 5</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Crop Residue Management</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -378,7 +412,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week-5/main.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../weeks/week-5/main.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 5</span></a>
   </div>
 </li>
@@ -441,11 +475,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prepare" id="toc-prepare" class="nav-link active" data-scroll-target="#prepare">Prepare</a></li>
-  <li><a href="#participate" id="toc-participate" class="nav-link" data-scroll-target="#participate">Participate</a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
-  <li><a href="#perform" id="toc-perform" class="nav-link" data-scroll-target="#perform">Perform</a></li>
-  <li><a href="#ponder" id="toc-ponder" class="nav-link" data-scroll-target="#ponder">Ponder</a></li>
+  <li><a href="#load-data" id="toc-load-data" class="nav-link active" data-scroll-target="#load-data">Load data</a></li>
+  <li><a href="#ingest-data" id="toc-ingest-data" class="nav-link" data-scroll-target="#ingest-data">Ingest data</a></li>
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data preparation</a>
+  <ul class="collapse">
+  <li><a href="#column-names" id="toc-column-names" class="nav-link" data-scroll-target="#column-names">Column names</a></li>
+  <li><a href="#encode-string-cols-as-factors" id="toc-encode-string-cols-as-factors" class="nav-link" data-scroll-target="#encode-string-cols-as-factors">Encode string cols as factors</a></li>
+  <li><a href="#encode-double-cols-as-factors-where-appropriate" id="toc-encode-double-cols-as-factors-where-appropriate" class="nav-link" data-scroll-target="#encode-double-cols-as-factors-where-appropriate">Encode double cols as factors where appropriate</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -453,16 +490,21 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week-1/main.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../../weeks/week-5/main.html">Week 5</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 5</h1>
-<p class="subtitle lead">Storytelling and Crop Residue case</p>
+<h1 class="title">Crop Residue Management</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Simone Santoni </p>
+          </div>
+  </div>
     
   
     
@@ -473,85 +515,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="prepare" class="level2">
-<h2 class="anchored" data-anchor-id="prepare">Prepare</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-📚 Prepare
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>📖 Review <a href="../week-3/prepare.html">Exploratory Data Analysis materials</a> from Week 3</p>
-<p>📖 Read the Crop Residue Management case study (available in Moodle, “Case studies” section)</p>
-</div>
+<section id="load-data" class="level2">
+<h2 class="anchored" data-anchor-id="load-data">Load data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="participate" class="level2">
-<h2 class="anchored" data-anchor-id="participate">Participate</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-👥 Participate
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>📊 <a href="case_discussion.html">Case Discussion Presentation</a> - Understanding the challenge of crop residue burning in India and alternatives for sustainable practices</p>
-<p>📊 <a href="teaching_summary.html">Teaching Summary: Data Visualization &amp; Storytelling</a> - Comprehensive guide on using data storytelling techniques with the CRM case</p>
-</div>
+<section id="ingest-data" class="level2">
+<h2 class="anchored" data-anchor-id="ingest-data">Ingest data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use relative path from website/weeks/week-5/ to data/</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(<span class="st">"../../../data/crm.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="practice" class="level2">
-<h2 class="anchored" data-anchor-id="practice">Practice</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-💻 Practice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>🧮 Introduction to data storytelling principles</p>
-<p>🧮 Building effective narratives with data visualization</p>
-</div>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">Data preparation</h2>
+<section id="column-names" class="level3">
+<h3 class="anchored" data-anchor-id="column-names">Column names</h3>
+<p>Data columns are not consistent with the ‘tidy’ approach. Let’s adopt lower case names and replace spaces with underscores.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transform column names to tidy format (lowercase with underscores)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">clean_names</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="perform" class="level2">
-<h2 class="anchored" data-anchor-id="perform">Perform</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-📝 Perform
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>✏️ <a href="perform_1.html">Exploratory Data Analysis on CRM Dataset (R/tidyverse)</a> - Analyze the Crop Residue Management survey data to uncover insights about farmer adoption of sustainable practices</p>
-<p>✏️ <a href="perform_1_python.html">Exploratory Data Analysis on CRM Dataset (Python/pandas)</a> - Same analysis using Python, pandas, and matplotlib</p>
-<p>💡 Resources on data storytelling: <a href="http://mediashift.org/2015/06/exploring-the-7-different-types-of-data-stories/">The Seven Basic Data Stories</a></p>
-</div>
+<section id="encode-string-cols-as-factors" class="level3">
+<h3 class="anchored" data-anchor-id="encode-string-cols-as-factors">Encode string cols as factors</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># state</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>state <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>state)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># district</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>district <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>district)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># crm_type</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>crm_type <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>crm_type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="ponder" class="level2">
-<h2 class="anchored" data-anchor-id="ponder">Ponder</h2>
-<p><strong>Essential Readings</strong></p>
-<p>Knaflic, C.N. (2015). <a href="https://www.wiley.com/en-us/Storytelling+with+Data%3A+A+Data+Visualization+Guide+for+Business+Professionals-p-9781119002253"><em>Storytelling with Data: A Data Visualization Guide for Business Professionals</em></a>. John Wiley &amp; Sons.</p>
-<p>Sringeswara, S., Tiwari, P., &amp; Kumar, U.D. (2022). <a href="https://www.wiley.com/en-in/Data+Visualization+and+Storytelling-p-9788126583218"><em>Data Visualization and Storytelling</em></a>. Wiley India.</p>
-<p><strong>Supplemental Materials</strong></p>
-<p>Segel, E., &amp; Heer, J. (2010). Narrative Visualization: Telling Stories with Data. <em>IEEE Transactions on Visualization and Computer Graphics</em>, 16(6), 1139-1148.</p>
-<p>Schwabish, J.A. (2014). An Economist’s Guide to Visualizing Data. <em>Journal of Economic Perspectives</em>, 28(1), 209-234.</p>
+<section id="encode-double-cols-as-factors-where-appropriate" class="level3">
+<h3 class="anchored" data-anchor-id="encode-double-cols-as-factors-where-appropriate">Encode double cols as factors where appropriate</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># soil incorporation to fertiliser consumption</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>soil_incorporation <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>soil_incorporation)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>mulching <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>mulching)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>collection <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>collection)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>others <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>others)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>complete_burning <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>complete_burning)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>partial_burning <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>partial_burning)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>pest_infestation <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>pest_infestation)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>weed_infestation <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>weed_infestation)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>water_consumption <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>water_consumption)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>fertiliser_consumption <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(df<span class="sc">$</span>fertiliser_consumption)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -967,18 +986,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../weeks/week-4/main.html" class="pagination-link" aria-label="Week 4">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 4</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../weeks/week-6/main.html" class="pagination-link" aria-label="Week 6">
-        <span class="nav-page-text">Week 6</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

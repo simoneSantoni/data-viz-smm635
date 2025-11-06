@@ -1,0 +1,602 @@
+---
+title: "Data Visualization & Storytelling"
+subtitle: "Teaching Guide - Crop Residue Management Case"
+author: "SMM635 - Data Visualization"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+---
+
+## Teaching Objectives
+
+**This case demonstrates:**
+
+1. How to use data visualization and storytelling to provide insights
+2. How to communicate insights effectively to decision-makers
+3. The difference between exploratory and explanatory visualization
+4. Creating different chart types to explore data
+5. The value of business storytelling
+
+::: {.notes}
+This is a 90-minute session with 30% theory and 70% hands-on practice with Tableau or Power BI.
+:::
+
+---
+
+## The Seven-Stage Visualization Process {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**1. Acquire** - Get the data
+
+**2. Parse** - Structure the data properly
+
+**3. Filter** - Remove noise, keep useful data
+
+**4. Mine** - Examine hidden patterns
+:::
+
+::: {.column width="50%"}
+**5. Represent** - Simple visuals for complex relationships
+
+**6. Refine** - Improve the representation
+
+**7. Interact** - Provide impactful information to stakeholders
+:::
+
+::::
+
+::: {.callout-tip}
+For Pradhan's challenge: How can he effectively present farmer survey data to convince funding agencies?
+:::
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+**Key Questions to Explore:**
+
+- How many farmers participated in 2019 vs 2020?
+- How many farmers adopted CRM across states/districts?
+- Land size comparisons across states and districts
+- Has water and fertilizer consumption changed?
+- What tools are farmers using and how did they source them?
+- Tool performance (time taken per acre)
+
+::: {.fragment}
+**Start Simple:** Use descriptive statistics, histograms, box plots, and scatter plots to understand distributions and outliers.
+:::
+
+---
+
+## Data Exploration Themes
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Temporal Comparison**
+
+- 2019 vs 2020 adoption rates
+- Growth in program coverage
+- Changes in farmer behavior
+
+**Geographic Analysis**
+
+- State-level participation
+- District-specific patterns
+- Regional preferences
+:::
+
+::: {.column width="50%"}
+**Impact Assessment**
+
+- Farmer feedback on consumption
+- Benefits of sustainable practices
+- Constraints and challenges
+
+**Tool & Equipment**
+
+- Most used tools
+- Source of equipment
+- Time efficiency analysis
+:::
+
+::::
+
+---
+
+## Key Insights from 2019-2020 Comparison {.smaller}
+
+**Maps & Butterfly Charts** - Best for temporal comparison
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**2019 Baseline:**
+
+- 1,599 farmers surveyed
+- 4 districts (Patiala, Ludhiana, Sirsa, Fatehabad)
+- 46% sustainable adoption
+- 50% still burning
+:::
+
+::: {.column width="50%"}
+**2020 Progress:**
+
+- 2,159 farmers surveyed
+- 7 districts (+Sangrur, Barnala, Rohtak)
+- **89% sustainable adoption** 🎉
+- Only 11% burning/partial burning
+:::
+
+::::
+
+::: {.callout-important}
+## Major Achievement
+Sustainable practice adoption nearly doubled from 46% to 89% in just one year!
+:::
+
+---
+
+## Farmer Feedback Analysis {.smaller}
+
+**Comparing Benefits: 2019 vs 2020**
+
+| Impact Area | 2019 (Decreased) | 2020 (Decreased) | Trend |
+|------------|------------------|------------------|-------|
+| **Water Consumption** | 69% | 71% | ↗️ Improving |
+| **Fertilizer Consumption** | 60% | 80% | ⬆️ Major improvement |
+| **Weed Infestation** | 33% | 53% | ⬆️ Much better |
+| **Pest Infestation** | 31% | 31% | ➡️ Stable |
+
+::: {.callout-note}
+69-71% of farmers report reduced water consumption - critical for water-scarce Punjab and Haryana!
+:::
+
+---
+
+## Tool Usage & Availability {.smaller}
+
+**Most Popular Tools for CRM (2020):**
+
+1. **Rotavator** (1,095 farmers) - Most accessible
+   - Average time: 1.7 hrs/acre
+   - Source: Cooperatives & ownership
+
+2. **Super Seeder** (838 farmers) - Most efficient
+   - Average time: 1.1 hrs/acre
+   - Limited availability
+
+3. **Mulcher** (423 farmers)
+   - Average time: 1.9 hrs/acre
+   - Moderate availability
+
+::: {.callout-warning}
+**Challenge:** Tool availability doesn't match efficiency. Super-SMS takes only 1.1 hrs/acre but few farmers can access it!
+:::
+
+---
+
+## The Seven Basic Data Story Types
+
+1. **Change Over Time** - Gradual metric changes
+2. **Drill Down** - Big picture → focused view
+3. **Zoom Out** - Hyper-local → big picture
+4. **Contrasts** - Differences between data points
+5. **Intersection** - What happens when data crosses
+6. **Factors** - Explain what leads to a metric
+7. **Outliers** - Insights from unusual data
+
+::: {.fragment}
+**For CRM Data:** Use **Drill Down**, **Factors**, and **Contrasts** story types
+
+(Limited time series makes Change Over Time and Intersection less useful)
+:::
+
+---
+
+## Applying Story Types: Drill Down {.smaller}
+
+**Start Broad → Get Specific**
+
+:::: {.columns}
+
+::: {.column width="30%"}
+**Level 1: Overall**
+
+89% sustainable adoption across both states
+:::
+
+::: {.column width="35%"}
+**Level 2: By State**
+
+- Haryana: 16% farmers
+- Punjab: 63% farmers (higher adoption)
+:::
+
+::: {.column width="35%"}
+**Level 3: By District**
+
+- Fatehabad: High collection method
+- Punjab districts: Strong soil incorporation
+:::
+
+::::
+
+::: {.fragment}
+This reveals that **different districts prefer different methods** - important for customizing interventions!
+:::
+
+---
+
+## Applying Story Types: Factors {.smaller}
+
+**What influences CRM method adoption?**
+
+```
+Selected Metric: CRM Practice Adopted
+           ↓
+    Contributing Factors:
+    ├── Tools Available
+    │   ├── Type (Rotavator, Super Seeder, Mulcher)
+    │   ├── Source (Cooperative, Ownership, Rental)
+    │   └── Time Efficiency (hrs/acre)
+    ├── Soil Conditions
+    │   └── Suitability for in-situ methods
+    └── Access to Markets
+        └── For ex-situ (collection/baling)
+```
+
+::: {.callout-tip}
+**Insight:** Rotavator dominates not because it's fastest, but because it's most accessible through cooperatives!
+:::
+
+---
+
+## Applying Story Types: Contrasts {.smaller}
+
+**2019 vs 2020 - What Changed?**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Geographic Expansion:**
+
+- **2019:** 19 villages, 1,599 farmers
+- **2020:** 226 villages, 40,040 farmers
+- Growth: **25x in farmers reached!**
+
+**Method Distribution:**
+
+- Soil incorporation remains #1
+- Collection gains popularity
+- Partial burning reduces significantly
+:::
+
+::: {.column width="50%"}
+**Benefits Realization:**
+
+- Fertilizer reduction: 60% → 80%
+- Weed control: 33% → 53%
+- Water savings: Consistently 69-71%
+
+**Tool Access:**
+
+- More cooperative availability
+- Better farmer training
+- Expanded rental systems
+:::
+
+::::
+
+---
+
+## Data Storytelling Framework
+
+**For Pradhan's Presentation to Funders:**
+
+1. **Hook** - Delhi's air pollution crisis (AQI > 450)
+2. **Context** - CRB contributes 36% of NCR pollution
+3. **Conflict** - Farmers need quick field clearing (15-20 days)
+4. **Solution** - CII's CRM initiative with alternatives
+5. **Evidence** - Show the 46% → 89% adoption data
+6. **Impact** - Demonstrate environmental & economic benefits
+7. **Call to Action** - Need for scaling & continued funding
+
+---
+
+## Storyboarding Best Practices {.smaller}
+
+**Structure your narrative in 5-7 slides:**
+
+1. **Problem Slide** - The pollution crisis with visuals
+2. **Initiative Overview** - CRM program details, coverage
+3. **Adoption Success** - The 89% sustainable adoption stat
+4. **District Breakdown** - Geographic patterns & preferences
+5. **Tool Analysis** - What farmers use and why
+6. **Farmer Benefits** - Feedback data on reduced consumption
+7. **Recommendations** - Scaling strategy & funding needs
+
+::: {.callout-tip}
+## Design Principle
+Each slide should tell ONE key insight. Use data visualization to support, not overwhelm.
+:::
+
+---
+
+## Visualization Best Practices
+
+**Choosing the Right Chart:**
+
+- **Butterfly Charts** - Comparing two time periods by category
+- **Tree Maps** - Showing hierarchical data (districts within states)
+- **Stacked Bars** - Part-to-whole relationships (% adoption)
+- **Box Plots** - Distribution and outliers (land sizes)
+- **Maps** - Geographic patterns (district coverage)
+
+::: {.fragment}
+**Remember:** Maximize data-ink ratio - remove unnecessary elements!
+:::
+
+---
+
+## Interactive Visualizations
+
+**Engage your audience with:**
+
+- **Dropdown Filters** - Let users select year, state, or district
+- **Hover Details** - Show exact values on demand
+- **Drill-Through** - Click district to see farmer details
+- **Highlight Actions** - Select one category to see it across all charts
+
+::: {.callout-note}
+**Tableau/Power BI Tip:** Interactive dashboards let stakeholders explore data at their own pace and ask their own questions.
+:::
+
+---
+
+## Critical Thinking Questions {.smaller}
+
+**For Class Discussion:**
+
+1. **Data Quality:** What biases might exist in self-reported farmer surveys?
+
+2. **Causality:** Can we prove the initiative caused the adoption increase, or are there confounding factors?
+
+3. **Sustainability:** The data shows adoption, but will farmers continue these practices long-term?
+
+4. **Scalability:** What evidence suggests this model will work in other states?
+
+5. **Economic Viability:** Do the benefits outweigh costs for individual farmers?
+
+---
+
+## Common Pitfalls to Avoid
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**In Data Analysis:**
+
+- Confusing correlation with causation
+- Ignoring selection bias
+- Over-interpreting small differences
+- Failing to account for outliers
+:::
+
+::: {.column width="50%"}
+**In Visualization:**
+
+- Too many colors/categories
+- 3D charts (distort perception)
+- Dual y-axes (misleading)
+- Chartjunk (unnecessary decoration)
+- Missing context (no labels/legends)
+:::
+
+::::
+
+---
+
+## Recommendations for Pradhan {.smaller}
+
+**To Convince Funding Agencies:**
+
+1. **Lead with Impact** - Show the 89% adoption headline first
+2. **Use Comparison Visuals** - 2019 vs 2020 butterfly charts
+3. **Highlight Co-Benefits** - Water & fertilizer savings (not just air quality)
+4. **Show Geographic Reach** - Maps demonstrate scale
+5. **Address Barriers** - Tool availability data shows what's needed
+6. **Quantify Needs** - Specific districts, tools, training requirements
+7. **ROI Projection** - Link environmental benefits to economic value
+
+---
+
+## Key Metrics to Track {.smaller}
+
+**For Monitoring & Evaluation:**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Adoption Metrics:**
+
+- % farmers adopting sustainable practices
+- % land area with zero burning
+- Number of villages/districts covered
+- Farmer retention rate year-over-year
+:::
+
+::: {.column width="50%"}
+**Impact Metrics:**
+
+- Reduction in fire incidents (satellite data)
+- Air quality improvement (AQI)
+- Water consumption changes
+- Fertilizer cost savings
+- Tool rental/ownership rates
+:::
+
+::::
+
+::: {.callout-important}
+Combine survey data with objective measures (satellite imagery, AQI readings) for credibility.
+:::
+
+---
+
+## Policy Implications
+
+**What the data tells policymakers:**
+
+1. **Behavioral change is possible** - With right support, 89% adoption achievable
+2. **Tool access is critical** - Need subsidies/cooperatives for equipment
+3. **One-size doesn't fit all** - District-specific preferences require flexible policies
+4. **Long-term commitment needed** - This isn't a one-year fix
+5. **Market creation** - Support for ex-situ methods needs end-use markets
+
+::: {.fragment}
+**Bottom line:** Stubble burning is a behavioral issue requiring financial support AND long-term policy framework.
+:::
+
+---
+
+## Scaling Strategy
+
+**Based on data insights:**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**What's Working:**
+
+- Cooperative model for tools
+- Farmer-to-farmer training
+- Multi-method approach
+- Awareness campaigns
+- CSR funding model
+:::
+
+::: {.column width="50%"}
+**What's Needed:**
+
+- More Super-SMS availability
+- District-specific interventions
+- Stronger ex-situ markets
+- Government policy support
+- Multi-year commitments
+:::
+
+::::
+
+---
+
+## Teaching Takeaways
+
+**Students should learn:**
+
+1. **Data visualization** is a powerful tool for advocacy
+2. **Context matters** - Same data, different stories for different audiences
+3. **Interactive tools** engage stakeholders more effectively
+4. **Multiple chart types** reveal different insights
+5. **Story structure** makes data memorable
+6. **Ethical considerations** - Represent data honestly, acknowledge limitations
+
+---
+
+## Practical Exercise
+
+**For students to try:**
+
+Using the CRM dataset, create a 3-slide presentation for:
+
+- **Slide 1:** Hook - One powerful statistic with visualization
+- **Slide 2:** Context - Supporting evidence with 2-3 charts
+- **Slide 3:** Call to action - What should the audience do?
+
+**Tools:** Tableau, Power BI, or R/Python
+
+**Time:** 20-30 minutes
+
+**Present:** 3-minute pitch to class
+
+---
+
+## Resources & References {.smaller}
+
+**Books:**
+
+- Knaflic, C.N. (2015). *Storytelling with Data*
+- Sringeswara, S. et al. (2022). *Data Visualization and Storytelling*
+
+**Articles:**
+
+- Segel & Heer (2010). Narrative Visualization: Telling Stories with Data
+- Schwabish (2014). An Economist's Guide to Visualizing Data
+
+**Tools:**
+
+- [Tableau Public](https://public.tableau.com)
+- [Power BI Desktop](https://powerbi.microsoft.com)
+- [R: ggplot2](https://ggplot2.tidyverse.org)
+- [Python: matplotlib/seaborn](https://seaborn.pydata.org)
+
+---
+
+## Summary: The Power of Data Storytelling
+
+> *"Numbers have an important story to tell. They rely on you to give them a clear and convincing voice."*
+>
+> — Stephen Few
+
+::: {.fragment}
+**The CRM case shows:**
+
+- Data can drive behavioral change
+- Visualization makes complex stories accessible
+- The right story structure engages stakeholders
+- Interactive tools empower decision-makers
+:::
+
+::: {.fragment}
+**For saving the planet, we need both:**
+
+✅ **Good data** + ✅ **Good storytelling** = Real impact
+:::
+
+---
+
+## Questions & Discussion
+
+**Open Discussion Topics:**
+
+1. What visualization resonated most with you from the CRM case?
+
+2. How would you present this data to different audiences (farmers vs policymakers vs corporates)?
+
+3. What other data would strengthen the story?
+
+4. How can we ensure data visualization leads to action, not just awareness?
+
+---
+
+## Thank You!
+
+**Key Message:**
+
+Data visualization and storytelling are essential skills for communicating insights and driving change.
+
+**Practice:** The more you work with data and tell stories, the better you become.
+
+**Remember:** Your audience doesn't care about your data - they care about what your data means for *them*.
+
+::: {.callout-tip}
+## Next Steps
+Apply these principles to your own projects and case studies!
+:::

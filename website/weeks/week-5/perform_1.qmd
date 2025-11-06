@@ -1,0 +1,531 @@
+---
+title: "Exploratory Data Analysis: Crop Residue Management"
+subtitle: "Analyzing farmer adoption of sustainable practices in Punjab and Haryana"
+author: "SMM635 - Data Visualization"
+format: html
+editor: visual
+---
+
+## Introduction
+
+This analysis explores the Crop Residue Management (CRM) survey data collected from farmers in Punjab and Haryana. The goal is to understand the adoption patterns of sustainable crop residue management practices as an alternative to traditional burning methods.
+
+## Setup and Data Loading
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+# Load required libraries
+library(tidyverse)
+library(readxl)
+library(janitor)
+library(scales)
+library(knitr)
+
+# Set theme for visualizations
+theme_set(theme_minimal(base_size = 12))
+```
+
+## Data Ingestion
+
+```{r}
+#| label: load-data
+
+# Load the CRM dataset
+df <- read_xlsx("../../../data/crm.xlsx")
+
+# Display data structure
+glimpse(df)
+```
+
+## Data Preparation
+
+### Column Names Standardization
+
+Convert column names to tidy format (lowercase with underscores):
+
+```{r}
+#| label: clean-names
+
+# Transform column names to tidy format
+df <- df %>% clean_names()
+
+# Display cleaned column names
+names(df)
+```
+
+### Data Type Conversions
+
+Convert appropriate columns to factors for analysis:
+
+```{r}
+#| label: convert-types
+
+# Convert categorical variables to factors
+df <- df %>%
+  mutate(
+    state = as.factor(state),
+    district = as.factor(district),
+    crm_type = as.factor(crm_type)
+  )
+
+# Convert feedback variables to factors (-1, 0, 1 scale)
+feedback_vars <- c("soil_incorporation", "mulching", "collection", "others",
+                   "complete_burning", "partial_burning", "pest_infestation",
+                   "weed_infestation", "water_consumption", "fertiliser_consumption")
+
+df <- df %>%
+  mutate(across(all_of(feedback_vars), as.factor))
+
+# Display summary
+summary(df)
+```
+
+## Exploratory Data Analysis
+
+### Overview of Data Collection
+
+```{r}
+#| label: data-overview
+
+# Overall summary
+cat("Dataset Overview\n")
+cat("================\n")
+cat("Total farmers surveyed:", nrow(df), "\n")
+cat("States covered:", n_distinct(df$state), "\n")
+cat("Districts covered:", n_distinct(df$district), "\n")
+cat("Total land area (acres):", sum(df$land, na.rm = TRUE), "\n")
+cat("Average farm size (acres):", round(mean(df$land, na.rm = TRUE), 2), "\n")
+cat("Median farm size (acres):", median(df$land, na.rm = TRUE), "\n")
+```
+
+### Distribution of Farm Sizes
+
+```{r}
+#| label: farm-size-distribution
+#| fig-width: 10
+#| fig-height: 6
+
+# Histogram of land sizes
+df %>%
+  ggplot(aes(x = land)) +
+  geom_histogram(bins = 30, fill = "#4575b4", alpha = 0.7) +
+  labs(
+    title = "Distribution of Farm Sizes",
+    x = "Land Size (acres)",
+    y = "Number of Farmers"
+  )
+
+# Box plot by state
+df %>%
+  ggplot(aes(x = state, y = land, fill = state)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_brewer(palette = "Set2") +
+  coord_flip() +
+  labs(
+    title = "Farm Size Distribution by State",
+    x = "State",
+    y = "Land Size (acres)",
+    fill = "State"
+  ) +
+  theme(legend.position = "none")
+```
+
+::: callout-note
+## Key Insight
+
+Most farmers have land holdings under 20 acres, with several outliers owning larger farms. Punjab has a larger sample of farmers in this dataset compared to Haryana.
+:::
+
+### Geographic Distribution
+
+```{r}
+#| label: geographic-distribution
+#| fig-width: 10
+#| fig-height: 6
+
+# Farmers by state
+df %>%
+  group_by(state) %>%
+  summarise(
+    n_farmers = n(),
+    total_land = sum(land, na.rm = TRUE),
+    avg_land = mean(land, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  ggplot(aes(x = state, y = n_farmers, fill = state)) +
+  geom_col() +
+  geom_text(aes(label = n_farmers), vjust = -0.5) +
+  scale_fill_brewer(palette = "Set2") +
+  labs(
+    title = "Number of Farmers by State",
+    x = "State",
+    y = "Number of Farmers",
+    fill = "State"
+  ) +
+  theme(legend.position = "none")
+
+# Farmers by district
+df %>%
+  group_by(state, district) %>%
+  summarise(
+    n_farmers = n(),
+    total_land = sum(land, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  ggplot(aes(x = reorder(district, n_farmers), y = n_farmers, fill = state)) +
+  geom_col() +
+  geom_text(aes(label = n_farmers), hjust = -0.2, size = 3) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set1") +
+  labs(
+    title = "Farmer Participation by District",
+    x = "District",
+    y = "Number of Farmers",
+    fill = "State"
+  ) +
+  theme(legend.position = "bottom")
+```
+
+### CRM Practice Adoption
+
+```{r}
+#| label: crm-adoption
+#| fig-width: 10
+#| fig-height: 6
+
+# Create practice categories
+df <- df %>%
+  mutate(
+    practice_category = case_when(
+      crm_type == "BURNING" ~ "Complete Burning",
+      crm_type == "BOTH" ~ "Partial Burning",
+      crm_type == "SUSTAINABLE" ~ "Sustainable Practices"
+    ),
+    practice_category = factor(practice_category,
+                               levels = c("Complete Burning", "Partial Burning", "Sustainable Practices"))
+  )
+
+# Overall adoption
+adoption_summary <- df %>%
+  group_by(practice_category) %>%
+  summarise(
+    n_farmers = n(),
+    pct = n() / nrow(df) * 100,
+    total_land = sum(land, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Pie chart
+adoption_summary %>%
+  ggplot(aes(x = "", y = pct, fill = practice_category)) +
+  geom_col(width = 1) +
+  coord_polar("y", start = 0) +
+  scale_fill_manual(values = c("Complete Burning" = "#d73027",
+                                "Partial Burning" = "#fee090",
+                                "Sustainable Practices" = "#1a9850")) +
+  labs(
+    title = "Distribution of CRM Practices",
+    fill = "Practice Type"
+  ) +
+  theme_void() +
+  theme(legend.position = "right") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")),
+            position = position_stack(vjust = 0.5))
+
+# Bar chart by state
+df %>%
+  group_by(state, practice_category) %>%
+  summarise(n = n(), .groups = "drop") %>%
+  group_by(state) %>%
+  mutate(pct = n / sum(n) * 100) %>%
+  ggplot(aes(x = state, y = pct, fill = practice_category)) +
+  geom_col(position = "stack") +
+  scale_fill_manual(values = c("Complete Burning" = "#d73027",
+                                "Partial Burning" = "#fee090",
+                                "Sustainable Practices" = "#1a9850")) +
+  labs(
+    title = "CRM Practice Adoption by State",
+    x = "State",
+    y = "Percentage of Farmers (%)",
+    fill = "Practice Type"
+  ) +
+  theme(legend.position = "bottom")
+```
+
+::: callout-important
+## Major Finding
+
+The dataset shows that **`r round(adoption_summary %>% filter(practice_category == "Sustainable Practices") %>% pull(pct), 1)`%** of farmers have adopted sustainable practices, while **`r round(adoption_summary %>% filter(practice_category == "Complete Burning") %>% pull(pct), 1)`%** still engage in complete burning.
+:::
+
+### District-Level Analysis
+
+```{r}
+#| label: district-analysis
+#| fig-width: 12
+#| fig-height: 8
+
+# Adoption by district
+df %>%
+  group_by(district, practice_category) %>%
+  summarise(n = n(), .groups = "drop") %>%
+  group_by(district) %>%
+  mutate(pct = n / sum(n) * 100) %>%
+  ggplot(aes(x = district, y = pct, fill = practice_category)) +
+  geom_col(position = "fill") +
+  coord_flip() +
+  scale_y_continuous(labels = percent_format(scale = 1)) +
+  scale_fill_manual(values = c("Complete Burning" = "#d73027",
+                                "Partial Burning" = "#fee090",
+                                "Sustainable Practices" = "#1a9850")) +
+  labs(
+    title = "Distribution of CRM Practices by District",
+    subtitle = "Proportional view showing practice preferences",
+    x = "District",
+    y = "Proportion of Farmers",
+    fill = "Practice Type"
+  ) +
+  theme(legend.position = "bottom")
+```
+
+### Detailed Breakdown of Sustainable Practices
+
+```{r}
+#| label: sustainable-practices-detail
+#| fig-width: 10
+#| fig-height: 8
+
+# Filter for sustainable practices only
+sustainable_df <- df %>%
+  filter(practice_category == "Sustainable Practices")
+
+# Count which specific methods are used
+method_counts <- sustainable_df %>%
+  summarise(
+    soil_incorporation = sum(soil_incorporation == 1, na.rm = TRUE),
+    mulching = sum(mulching == 1, na.rm = TRUE),
+    collection = sum(collection == 1, na.rm = TRUE),
+    others = sum(others == 1, na.rm = TRUE)
+  ) %>%
+  pivot_longer(everything(), names_to = "method", values_to = "count") %>%
+  mutate(method = str_replace_all(method, "_", " ") %>% str_to_title())
+
+# Visualize
+method_counts %>%
+  ggplot(aes(x = reorder(method, count), y = count)) +
+  geom_col(fill = "#1a9850") +
+  geom_text(aes(label = count), hjust = -0.2) +
+  coord_flip() +
+  labs(
+    title = "Specific Sustainable Methods Used by Farmers",
+    subtitle = "Among farmers who adopted sustainable practices",
+    x = "Method",
+    y = "Number of Farmers Using This Method"
+  )
+```
+
+::: callout-tip
+## Practice Patterns
+
+Note that farmers may use multiple methods. For example, a farmer might use both soil incorporation and mulching. The data uses binary indicators (0 or 1) for each method.
+:::
+
+### Farmer Feedback Analysis
+
+```{r}
+#| label: feedback-analysis
+#| fig-width: 12
+#| fig-height: 10
+
+# Prepare feedback data for sustainable practices only
+feedback_long <- sustainable_df %>%
+  select(farmer_id, water_consumption, fertiliser_consumption,
+         pest_infestation, weed_infestation) %>%
+  pivot_longer(cols = -farmer_id,
+               names_to = "feedback_type",
+               values_to = "feedback_value") %>%
+  filter(!is.na(feedback_value)) %>%
+  mutate(
+    feedback_type = str_replace_all(feedback_type, "_", " ") %>% str_to_title(),
+    feedback_value = as.numeric(as.character(feedback_value)),
+    feedback_label = case_when(
+      feedback_value == -1 ~ "Decreased",
+      feedback_value == 0 ~ "No Change",
+      feedback_value == 1 ~ "Increased"
+    ),
+    feedback_label = factor(feedback_label, levels = c("Decreased", "No Change", "Increased"))
+  )
+
+# Calculate percentages for each feedback type
+feedback_summary <- feedback_long %>%
+  group_by(feedback_type, feedback_label) %>%
+  summarise(count = n(), .groups = "drop_last") %>%
+  mutate(percentage = count / sum(count) * 100)
+
+# Visualize feedback patterns
+feedback_summary %>%
+  ggplot(aes(x = feedback_type, y = percentage, fill = feedback_label)) +
+  geom_col(position = "stack") +
+  scale_fill_manual(values = c("Decreased" = "#1a9850",
+                                "No Change" = "#ffffbf",
+                                "Increased" = "#d73027")) +
+  labs(
+    title = "Farmer Feedback on Impact of Sustainable CRM Practices",
+    subtitle = "Among farmers who adopted sustainable methods",
+    x = "Feedback Category",
+    y = "Percentage of Farmers (%)",
+    fill = "Impact"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "bottom")
+
+# Detailed table
+feedback_summary %>%
+  pivot_wider(names_from = feedback_label, values_from = c(count, percentage)) %>%
+  select(feedback_type, starts_with("count"), starts_with("percentage")) %>%
+  kable(digits = 1, caption = "Detailed Farmer Feedback Statistics")
+```
+
+::: callout-important
+## Key Impact Findings
+
+Farmers adopting sustainable CRM practices reported significant benefits:
+
+```{r}
+#| label: feedback-highlights
+#| echo: false
+
+positive_impacts <- feedback_summary %>%
+  filter(feedback_label == "Decreased") %>%
+  arrange(desc(percentage))
+
+for (i in 1:nrow(positive_impacts)) {
+  cat("- **", positive_impacts$feedback_type[i], "**: ",
+      round(positive_impacts$percentage[i], 1), "% experienced reduction\n", sep = "")
+}
+```
+
+These findings demonstrate the multiple benefits of sustainable practices beyond environmental impact.
+:::
+
+### Comparison: Sustainable vs Burning Practices
+
+```{r}
+#| label: practice-comparison
+#| fig-width: 12
+#| fig-height: 6
+
+# Compare land sizes across practices
+df %>%
+  ggplot(aes(x = practice_category, y = land, fill = practice_category)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c("Complete Burning" = "#d73027",
+                                "Partial Burning" = "#fee090",
+                                "Sustainable Practices" = "#1a9850")) +
+  labs(
+    title = "Farm Size Distribution by Practice Type",
+    x = "Practice Type",
+    y = "Land Size (acres)",
+    fill = "Practice"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
+
+# Average land by practice and state
+df %>%
+  group_by(state, practice_category) %>%
+  summarise(
+    n_farmers = n(),
+    avg_land = mean(land, na.rm = TRUE),
+    total_land = sum(land, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  ggplot(aes(x = state, y = total_land, fill = practice_category)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("Complete Burning" = "#d73027",
+                                "Partial Burning" = "#fee090",
+                                "Sustainable Practices" = "#1a9850")) +
+  labs(
+    title = "Total Land Area by Practice Type and State",
+    x = "State",
+    y = "Total Land Area (acres)",
+    fill = "Practice Type"
+  ) +
+  theme(legend.position = "bottom")
+```
+
+## Summary Statistics
+
+```{r}
+#| label: summary-stats
+
+# Create comprehensive summary table
+summary_table <- df %>%
+  group_by(practice_category) %>%
+  summarise(
+    `Number of Farmers` = n(),
+    `% of Total` = n() / nrow(df) * 100,
+    `Total Land (acres)` = sum(land, na.rm = TRUE),
+    `Avg Land Size (acres)` = mean(land, na.rm = TRUE),
+    `Median Land Size (acres)` = median(land, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+summary_table %>%
+  kable(digits = 1, caption = "CRM Practice Summary Statistics")
+
+# State-wise breakdown
+state_summary <- df %>%
+  group_by(state, practice_category) %>%
+  summarise(
+    n_farmers = n(),
+    total_land = sum(land, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  pivot_wider(names_from = practice_category,
+              values_from = c(n_farmers, total_land),
+              values_fill = 0)
+
+state_summary %>%
+  kable(digits = 1, caption = "State-wise CRM Practice Distribution")
+```
+
+## Key Insights and Recommendations
+
+### Achievements
+
+1.  **Significant Sustainable Adoption**: Over 80% of farmers in the sample have adopted sustainable or partially sustainable practices
+2.  **Geographic Coverage**: Program reaches multiple districts across Punjab and Haryana
+3.  **Positive Farmer Feedback**: Majority of farmers adopting sustainable practices report reduced water and fertilizer consumption
+4.  **Soil Health Benefits**: Farmers noted improvements in weed and pest management
+
+### Challenges Identified
+
+1.  **Persistent Burning**: Some farmers still engage in complete or partial burning
+2.  **Regional Variation**: Different districts show varying adoption patterns
+3.  **Small Farm Holdings**: Most farmers have less than 20 acres, requiring shared resources
+4.  **Need for Support Systems**: Success depends on access to equipment and training
+
+### Recommendations for Scaling
+
+1.  **District-Specific Strategies**: Customize interventions based on local adoption patterns
+2.  **Farmer-to-Farmer Learning**: Leverage positive feedback for peer education
+3.  **Equipment Cooperatives**: Enhance access to tools through shared facilities
+4.  **Continuous Monitoring**: Maintain data collection to track long-term impacts
+5.  **Policy Advocacy**: Use evidence to support favorable policies and incentives
+
+### Data Storytelling Insights
+
+This analysis demonstrates how systematic data collection and visualization can:
+
+-   **Quantify Impact**: Show concrete adoption rates and benefits
+-   **Identify Patterns**: Reveal geographic and practice-specific trends
+-   **Support Decision-Making**: Provide evidence for resource allocation
+-   **Build Narratives**: Create compelling stories for stakeholder engagement
+
+------------------------------------------------------------------------
+
+*This analysis was conducted using survey data from the CII Crop Residue Management initiative, covering farmers in Punjab and Haryana who participated in the CRM intervention program.*
