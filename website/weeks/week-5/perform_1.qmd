@@ -253,22 +253,12 @@ df %>%
     fill = "Practice Type"
   ) +
   theme(legend.position = "bottom")
-
-# Print summary statistics
-adoption_summary
 ```
 
 ::: callout-important
 ## Major Finding
 
-```{r}
-#| echo: false
-
-sustainable_pct <- round(adoption_summary$pct[adoption_summary$practice_category == "Sustainable Practices"], 1)
-burning_pct <- round(adoption_summary$pct[adoption_summary$practice_category == "Complete Burning"], 1)
-
-cat("The dataset shows that **", sustainable_pct, "%** of farmers have adopted sustainable practices, while **", burning_pct, "%** still engage in complete burning.", sep = "")
-```
+Based on the summary statistics above, the majority of farmers in the dataset have adopted sustainable or partially sustainable practices, with a smaller proportion still engaging in complete burning of crop residue.
 :::
 
 ### District-Level Analysis
