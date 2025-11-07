@@ -253,12 +253,22 @@ df %>%
     fill = "Practice Type"
   ) +
   theme(legend.position = "bottom")
+
+# Print summary statistics
+adoption_summary
 ```
 
 ::: callout-important
 ## Major Finding
 
-The dataset shows that **`r round(adoption_summary %>% filter(practice_category == "Sustainable Practices") %>% pull(pct), 1)`%** of farmers have adopted sustainable practices, while **`r round(adoption_summary %>% filter(practice_category == "Complete Burning") %>% pull(pct), 1)`%** still engage in complete burning.
+```{r}
+#| echo: false
+
+sustainable_pct <- round(adoption_summary$pct[adoption_summary$practice_category == "Sustainable Practices"], 1)
+burning_pct <- round(adoption_summary$pct[adoption_summary$practice_category == "Complete Burning"], 1)
+
+cat("The dataset shows that **", sustainable_pct, "%** of farmers have adopted sustainable practices, while **", burning_pct, "%** still engage in complete burning.", sep = "")
+```
 :::
 
 ### District-Level Analysis
