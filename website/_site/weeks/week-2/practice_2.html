@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -106,9 +106,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -550,7 +547,7 @@ window.Quarto = {
 </section>
 <section id="setup" class="level2">
 <h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<div id="b8ca2b83" class="cell" data-execution_count="1">
+<div id="3fa99e75" class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
@@ -577,215 +574,9 @@ window.Quarto = {
 </section>
 <section id="data-overview" class="level2">
 <h2 class="anchored" data-anchor-id="data-overview">Data Overview</h2>
-<div id="6882f81c" class="cell" data-execution_count="2">
+<div id="c5552aea" class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>apps.dtypes  <span class="co"># Column types</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>apps         <span class="co"># Data preview</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="59">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">App</th>
-<th data-quarto-table-cell-role="th">Category</th>
-<th data-quarto-table-cell-role="th">Rating</th>
-<th data-quarto-table-cell-role="th">Reviews</th>
-<th data-quarto-table-cell-role="th">Size</th>
-<th data-quarto-table-cell-role="th">Installs</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Price</th>
-<th data-quarto-table-cell-role="th">Content Rating</th>
-<th data-quarto-table-cell-role="th">Genres</th>
-<th data-quarto-table-cell-role="th">Last Updated</th>
-<th data-quarto-table-cell-role="th">Current Ver</th>
-<th data-quarto-table-cell-role="th">Android Ver</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>Photo Editor &amp; Candy Camera &amp; Grid &amp; ScrapBook</td>
-<td>ART_AND_DESIGN</td>
-<td>4.1</td>
-<td>159.0</td>
-<td>19M</td>
-<td>10,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Art &amp; Design</td>
-<td>January 7, 2018</td>
-<td>1.0.0</td>
-<td>4.0.3 and up</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>Coloring book moana</td>
-<td>ART_AND_DESIGN</td>
-<td>3.9</td>
-<td>967.0</td>
-<td>14M</td>
-<td>500,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Art &amp; Design;Pretend Play</td>
-<td>January 15, 2018</td>
-<td>2.0.0</td>
-<td>4.0.3 and up</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>U Launcher Lite – FREE Live Cool Themes, Hide ...</td>
-<td>ART_AND_DESIGN</td>
-<td>4.7</td>
-<td>87510.0</td>
-<td>8.7M</td>
-<td>5,000,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Art &amp; Design</td>
-<td>August 1, 2018</td>
-<td>1.2.4</td>
-<td>4.0.3 and up</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>Sketch - Draw &amp; Paint</td>
-<td>ART_AND_DESIGN</td>
-<td>4.5</td>
-<td>215644.0</td>
-<td>25M</td>
-<td>50,000,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Teen</td>
-<td>Art &amp; Design</td>
-<td>June 8, 2018</td>
-<td>Varies with device</td>
-<td>4.2 and up</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>Pixel Draw - Number Art Coloring Book</td>
-<td>ART_AND_DESIGN</td>
-<td>4.3</td>
-<td>967.0</td>
-<td>2.8M</td>
-<td>100,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Art &amp; Design;Creativity</td>
-<td>June 20, 2018</td>
-<td>1.1</td>
-<td>4.4 and up</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10836</td>
-<td>Sya9a Maroc - FR</td>
-<td>FAMILY</td>
-<td>4.5</td>
-<td>38.0</td>
-<td>53M</td>
-<td>5,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Education</td>
-<td>July 25, 2017</td>
-<td>1.48</td>
-<td>4.1 and up</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">10837</td>
-<td>Fr. Mike Schmitz Audio Teachings</td>
-<td>FAMILY</td>
-<td>5.0</td>
-<td>4.0</td>
-<td>3.6M</td>
-<td>100+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Education</td>
-<td>July 6, 2018</td>
-<td>1.0</td>
-<td>4.1 and up</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10838</td>
-<td>Parkinson Exercices FR</td>
-<td>MEDICAL</td>
-<td>NaN</td>
-<td>3.0</td>
-<td>9.5M</td>
-<td>1,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Medical</td>
-<td>January 20, 2017</td>
-<td>1.0</td>
-<td>2.2 and up</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">10839</td>
-<td>The SCP Foundation DB fr nn5n</td>
-<td>BOOKS_AND_REFERENCE</td>
-<td>4.5</td>
-<td>114.0</td>
-<td>Varies with device</td>
-<td>1,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Mature 17+</td>
-<td>Books &amp; Reference</td>
-<td>January 19, 2015</td>
-<td>Varies with device</td>
-<td>Varies with device</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">10840</td>
-<td>iHoroscope - 2018 Daily Horoscope &amp; Astrology</td>
-<td>LIFESTYLE</td>
-<td>4.5</td>
-<td>398307.0</td>
-<td>19M</td>
-<td>10,000,000+</td>
-<td>Free</td>
-<td>0</td>
-<td>Everyone</td>
-<td>Lifestyle</td>
-<td>July 25, 2018</td>
-<td>Varies with device</td>
-<td>Varies with device</td>
-</tr>
-</tbody>
-</table>
-
-<p>10841 rows × 13 columns</p>
-</div>
-</div>
 </div>
 <section id="key-variables" class="level3">
 <h3 class="anchored" data-anchor-id="key-variables">Key Variables</h3>
@@ -898,25 +689,22 @@ window.Quarto = {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Proportional Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Data Quality Check</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div id="cell-fig-bar-chart" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(ggplot(apps, aes(x<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  geom_bar())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-bar-chart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-bar-chart" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bar-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-bar-chart-output-1.png" width="672" height="480" class="figure-img">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(ggplot(apps, aes(x<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  geom_bar())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bar-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: App distribution by pricing type
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-bar-chart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div id="cell-fig-prop-bar" class="cell" data-execution_count="4">
+<div id="fig-prop-bar" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-prop-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  .assign(category<span class="op">=</span><span class="st">'All Apps'</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'category'</span>, fill<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
@@ -924,37 +712,25 @@ Figure&nbsp;1: App distribution by pricing type
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    coord_flip() <span class="op">+</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    labs(x<span class="op">=</span><span class="st">''</span>, y<span class="op">=</span><span class="st">'Proportion'</span>) <span class="op">+</span></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-prop-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-prop-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-prop-bar-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prop-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Proportional representation (coord_polar not available in plotnine)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-prop-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
 </figcaption>
 </figure>
-</div>
-</div>
 </div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div id="cell-fig-type-issues" class="cell" data-execution_count="5">
+<div id="fig-type-issues" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-type-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type != "Free" &amp; Type != "Paid"'</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span> geom_bar()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-type-issues" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-type-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-type-issues-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-type-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Miscoded Type values (neither Free nor Paid)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-type-issues-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
 </figcaption>
 </figure>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -967,46 +743,38 @@ Figure&nbsp;3: Miscoded Type values (neither Free nor Paid)
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Histogram</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Histogram (Log Scale)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Boxplot (Horizontal)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Boxplot (Vertical)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Density Plot</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div id="cell-fig-reviews-hist" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(ggplot(apps, aes(x<span class="op">=</span><span class="st">'Reviews'</span>)) <span class="op">+</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  geom_histogram())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-reviews-hist" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-reviews-hist" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reviews-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-reviews-hist-output-1.png" width="672" height="480" class="figure-img">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(ggplot(apps, aes(x<span class="op">=</span><span class="st">'Reviews'</span>)) <span class="op">+</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  geom_histogram())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Review count distribution (raw scale)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-reviews-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div id="cell-fig-reviews-hist-log" class="cell" data-execution_count="7">
+<div id="fig-reviews-hist-log" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reviews-hist-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Reviews &gt; 0'</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Reviews'</span>)) <span class="op">+</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    geom_histogram() <span class="op">+</span></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    scale_x_log10()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-reviews-hist-log" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-reviews-hist-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-reviews-hist-log-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-hist-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Review count distribution (log₁₀ scale)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-reviews-hist-log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<div id="cell-fig-boxplot" class="cell" data-execution_count="8">
+<div id="fig-boxplot" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Reviews &gt; 0'</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  .assign(category<span class="op">=</span><span class="st">'Reviews'</span>)</span>
@@ -1016,22 +784,17 @@ Figure&nbsp;5: Review count distribution (log₁₀ scale)
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    coord_flip() <span class="op">+</span></span>
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    labs(x<span class="op">=</span><span class="st">''</span>) <span class="op">+</span></span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-boxplot-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Review summary statistics (log₁₀ scale)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<div id="cell-fig-boxplot-vertical" class="cell" data-execution_count="9">
+<div id="fig-boxplot-vertical" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-vertical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Reviews &gt; 0'</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  .assign(category<span class="op">=</span><span class="st">'Reviews'</span>)</span>
@@ -1040,39 +803,27 @@ Figure&nbsp;6: Review summary statistics (log₁₀ scale)
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    scale_y_log10() <span class="op">+</span></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    labs(x<span class="op">=</span><span class="st">''</span>) <span class="op">+</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-boxplot-vertical" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-boxplot-vertical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-boxplot-vertical-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-vertical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Vertical boxplot using y aesthetic
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-boxplot-vertical-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
-<div id="cell-fig-density" class="cell" data-execution_count="10">
+<div id="fig-density" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-density-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Reviews &gt; 0'</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Reviews'</span>)) <span class="op">+</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    geom_density() <span class="op">+</span></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    scale_x_log10()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-density" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-density-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-density-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-density-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Smoothed density estimate (log₁₀ scale)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-density-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8
 </figcaption>
 </figure>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1088,67 +839,52 @@ Figure&nbsp;8: Smoothed density estimate (log₁₀ scale)
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Grouped Boxplots</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Violin Plots</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Grouped Histograms</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<div id="cell-fig-rating-by-type" class="cell" data-execution_count="11">
+<div id="fig-rating-by-type" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rating-by-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type in ["Free", "Paid"]'</span>)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Type'</span>, y<span class="op">=</span><span class="st">'Rating'</span>, fill<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    geom_boxplot() <span class="op">+</span></span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-rating-by-type" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-rating-by-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-rating-by-type-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rating-by-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Rating distribution by app type
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-rating-by-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<div id="cell-fig-rating-violin" class="cell" data-execution_count="12">
+<div id="fig-rating-violin" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rating-violin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type in ["Free", "Paid"]'</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Type'</span>, y<span class="op">=</span><span class="st">'Rating'</span>, fill<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    geom_violin() <span class="op">+</span></span>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-rating-violin" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-rating-violin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-rating-violin-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rating-violin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: Rating density by app type
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-rating-violin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<div id="cell-fig-rating-facet" class="cell" data-execution_count="13">
+<div id="fig-rating-facet" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rating-facet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type in ["Free", "Paid"]'</span>)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Rating'</span>, fill<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    geom_histogram(bins<span class="op">=</span><span class="dv">30</span>) <span class="op">+</span></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    facet_wrap(<span class="st">'~Type'</span>, ncol<span class="op">=</span><span class="dv">1</span>) <span class="op">+</span></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-rating-facet" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-rating-facet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-rating-facet-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rating-facet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11: Rating distribution faceted by type
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-rating-facet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11
 </figcaption>
 </figure>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1161,7 +897,9 @@ Figure&nbsp;11: Rating distribution faceted by type
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Basic Scatterplot</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">With Smoothing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Colored by Type</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<div id="cell-fig-reviews-rating" class="cell" data-execution_count="14">
+<div id="fig-reviews-rating" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reviews-rating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  .dropna(subset<span class="op">=</span>[<span class="st">'Rating'</span>])</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Reviews &gt; 0'</span>)</span>
@@ -1169,22 +907,17 @@ Figure&nbsp;11: Rating distribution faceted by type
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    geom_point(alpha<span class="op">=</span><span class="fl">0.3</span>) <span class="op">+</span></span>
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    scale_x_log10() <span class="op">+</span></span>
 <span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-reviews-rating" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-reviews-rating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-reviews-rating-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-rating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;12: Relationship between reviews and ratings
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-reviews-rating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<div id="cell-fig-reviews-rating-smooth" class="cell" data-execution_count="15">
+<div id="fig-reviews-rating-smooth" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reviews-rating-smooth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  .dropna(subset<span class="op">=</span>[<span class="st">'Rating'</span>])</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Reviews &gt; 0'</span>)</span>
@@ -1193,22 +926,17 @@ Figure&nbsp;12: Relationship between reviews and ratings
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    geom_smooth(method<span class="op">=</span><span class="st">'lm'</span>, color<span class="op">=</span><span class="st">'red'</span>) <span class="op">+</span></span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    scale_x_log10() <span class="op">+</span></span>
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-reviews-rating-smooth" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-reviews-rating-smooth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-reviews-rating-smooth-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-rating-smooth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13: Reviews vs ratings with linear smoother (loess requires scikit-misc)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-reviews-rating-smooth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
-<div id="cell-fig-reviews-rating-type" class="cell" data-execution_count="16">
+<div id="fig-reviews-rating-type" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reviews-rating-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  .dropna(subset<span class="op">=</span>[<span class="st">'Rating'</span>])</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type in ["Free", "Paid"] and Reviews &gt; 0'</span>)</span>
@@ -1216,18 +944,11 @@ Figure&nbsp;13: Reviews vs ratings with linear smoother (loess requires scikit-m
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    geom_point(alpha<span class="op">=</span><span class="fl">0.4</span>) <span class="op">+</span></span>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    scale_x_log10() <span class="op">+</span></span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    theme_minimal()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-reviews-rating-type" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-reviews-rating-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-reviews-rating-type-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reviews-rating-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14: Reviews vs ratings, colored by app type
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-reviews-rating-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14
 </figcaption>
 </figure>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1240,51 +961,43 @@ Figure&nbsp;14: Reviews vs ratings, colored by app type
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Stacked Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Grouped Bar Chart</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Heatmap</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
-<div id="cell-fig-type-by-content" class="cell" data-execution_count="17">
+<div id="fig-type-by-content" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-type-by-content-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type in ["Free", "Paid"]'</span>)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Content Rating'</span>, fill<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    geom_bar() <span class="op">+</span></span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    theme_minimal() <span class="op">+</span></span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    theme(axis_text_x<span class="op">=</span>element_text(angle<span class="op">=</span><span class="dv">45</span>, hjust<span class="op">=</span><span class="dv">1</span>))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-type-by-content" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-type-by-content-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-type-by-content-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-type-by-content-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15: App type distribution by content rating
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-type-by-content-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
-<div id="cell-fig-type-by-content-dodge" class="cell" data-execution_count="18">
+<div id="fig-type-by-content-dodge" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-type-by-content-dodge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type in ["Free", "Paid"]'</span>)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  .pipe(<span class="kw">lambda</span> d: ggplot(d, aes(x<span class="op">=</span><span class="st">'Content Rating'</span>, fill<span class="op">=</span><span class="st">'Type'</span>)) <span class="op">+</span></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    geom_bar(position<span class="op">=</span><span class="st">'dodge'</span>) <span class="op">+</span></span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    theme_minimal() <span class="op">+</span></span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    theme(axis_text_x<span class="op">=</span>element_text(angle<span class="op">=</span><span class="dv">45</span>, hjust<span class="op">=</span><span class="dv">1</span>))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-type-by-content-dodge" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-type-by-content-dodge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-type-by-content-dodge-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-type-by-content-dodge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;16: Side-by-side comparison of app types
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-type-by-content-dodge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16
 </figcaption>
 </figure>
 </div>
 </div>
-</div>
-</div>
 <div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
-<div id="cell-fig-type-by-content-heatmap" class="cell" data-execution_count="19">
+<div id="fig-type-by-content-heatmap" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-type-by-content-heatmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>(apps</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  .query(<span class="st">'Type in ["Free", "Paid"]'</span>)</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  .groupby([<span class="st">'Type'</span>, <span class="st">'Content Rating'</span>], as_index<span class="op">=</span><span class="va">False</span>)</span>
@@ -1297,18 +1010,11 @@ Figure&nbsp;16: Side-by-side comparison of app types
 <span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>    labs(fill<span class="op">=</span><span class="st">'Count'</span>) <span class="op">+</span></span>
 <span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    theme_minimal() <span class="op">+</span></span>
 <span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    theme(axis_text_x<span class="op">=</span>element_text(angle<span class="op">=</span><span class="dv">45</span>, hjust<span class="op">=</span><span class="dv">1</span>))))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-type-by-content-heatmap" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-type-by-content-heatmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="practice_2_files/figure-html/fig-type-by-content-heatmap-output-1.png" width="672" height="480" class="figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-type-by-content-heatmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;17: Count heatmap of app type by content rating
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-type-by-content-heatmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17
 </figcaption>
 </figure>
-</div>
-</div>
 </div>
 </div>
 </div>
