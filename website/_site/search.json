@@ -4,7 +4,7 @@
     "href": "weeks/week-9/main.html",
     "title": "Week 9",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 9 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "NoteMaterials Coming Soon\n\n\n\nContent for Week 9 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
     "crumbs": [
       "Weekly materials",
       "Week 9"
@@ -15,7 +15,7 @@
     "href": "weeks/week-7/main.html",
     "title": "Week 7",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 7 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "Note📚 Prepare\n\n\n\n📥 Download and install Tableau Public (free): Tableau for Students\n📂 Download the Netflix dataset (netflix.csv) from GitHub (data/netflix.csv) or from Moodle.",
     "crumbs": [
       "Weekly materials",
       "Week 7"
@@ -25,15 +25,15 @@
     "objectID": "weeks/week-5/teaching_summary.html#teaching-objectives",
     "href": "weeks/week-5/teaching_summary.html#teaching-objectives",
     "title": "Data Visualization & Storytelling",
-    "section": "Teaching Objectives",
-    "text": "Teaching Objectives\nThis case demonstrates:\n\nHow to use data visualization and storytelling to provide insights\nHow to communicate insights effectively to decision-makers\nThe difference between exploratory and explanatory visualization\nCreating different chart types to explore data\nThe value of business storytelling\n\n\nThis is a 90-minute session with 30% theory and 70% hands-on practice with Tableau or Power BI."
+    "section": "",
+    "text": "This case demonstrates:\n\nHow to use data visualization and storytelling to provide insights\nHow to communicate insights effectively to decision-makers\nThe difference between exploratory and explanatory visualization\nCreating different chart types to explore data\nThe value of business storytelling\n\n\nThis is a 90-minute session with 30% theory and 70% hands-on practice with Tableau or Power BI."
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#the-seven-stage-visualization-process",
     "href": "weeks/week-5/teaching_summary.html#the-seven-stage-visualization-process",
     "title": "Data Visualization & Storytelling",
     "section": "The Seven-Stage Visualization Process",
-    "text": "The Seven-Stage Visualization Process\n\n\n1. Acquire - Get the data\n2. Parse - Structure the data properly\n3. Filter - Remove noise, keep useful data\n4. Mine - Examine hidden patterns\n\n5. Represent - Simple visuals for complex relationships\n6. Refine - Improve the representation\n7. Interact - Provide impactful information to stakeholders\n\n\n\n\n\n\n\nTip\n\n\nFor Pradhan’s challenge: How can he effectively present farmer survey data to convince funding agencies?"
+    "text": "The Seven-Stage Visualization Process\n\n\n1. Acquire - Get the data\n2. Parse - Structure the data properly\n3. Filter - Remove noise, keep useful data\n4. Mine - Examine hidden patterns\n\n5. Represent - Simple visuals for complex relationships\n6. Refine - Improve the representation\n7. Interact - Provide impactful information to stakeholders\n\n\n\n\n\n\n\n\nFor Pradhan’s challenge: How can he effectively present farmer survey data to convince funding agencies?"
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#exploratory-data-analysis-eda",
@@ -54,21 +54,21 @@
     "href": "weeks/week-5/teaching_summary.html#key-insights-from-2019-2020-comparison",
     "title": "Data Visualization & Storytelling",
     "section": "Key Insights from 2019-2020 Comparison",
-    "text": "Key Insights from 2019-2020 Comparison\nMaps & Butterfly Charts - Best for temporal comparison\n\n\n2019 Baseline:\n\n1,599 farmers surveyed\n4 districts (Patiala, Ludhiana, Sirsa, Fatehabad)\n46% sustainable adoption\n50% still burning\n\n\n2020 Progress:\n\n2,159 farmers surveyed\n7 districts (+Sangrur, Barnala, Rohtak)\n89% sustainable adoption 🎉\nOnly 11% burning/partial burning\n\n\n\n\n\n\n\n\nMajor Achievement\n\n\nSustainable practice adoption nearly doubled from 46% to 89% in just one year!"
+    "text": "Key Insights from 2019-2020 Comparison\nMaps & Butterfly Charts - Best for temporal comparison\n\n\n2019 Baseline:\n\n1,599 farmers surveyed\n4 districts (Patiala, Ludhiana, Sirsa, Fatehabad)\n46% sustainable adoption\n50% still burning\n\n\n2020 Progress:\n\n2,159 farmers surveyed\n7 districts (+Sangrur, Barnala, Rohtak)\n89% sustainable adoption 🎉\nOnly 11% burning/partial burning\n\n\n\n\n\n\n\n\n\nImportantMajor Achievement\n\n\n\nSustainable practice adoption nearly doubled from 46% to 89% in just one year!"
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#farmer-feedback-analysis",
     "href": "weeks/week-5/teaching_summary.html#farmer-feedback-analysis",
     "title": "Data Visualization & Storytelling",
     "section": "Farmer Feedback Analysis",
-    "text": "Farmer Feedback Analysis\nComparing Benefits: 2019 vs 2020\n\n\n\nImpact Area\n2019 (Decreased)\n2020 (Decreased)\nTrend\n\n\n\n\nWater Consumption\n69%\n71%\n↗️ Improving\n\n\nFertilizer Consumption\n60%\n80%\n⬆️ Major improvement\n\n\nWeed Infestation\n33%\n53%\n⬆️ Much better\n\n\nPest Infestation\n31%\n31%\n➡️ Stable\n\n\n\n\n\n\n\n\n\nNote\n\n\n69-71% of farmers report reduced water consumption - critical for water-scarce Punjab and Haryana!"
+    "text": "Farmer Feedback Analysis\nComparing Benefits: 2019 vs 2020\n\n\n\nImpact Area\n2019 (Decreased)\n2020 (Decreased)\nTrend\n\n\n\n\nWater Consumption\n69%\n71%\n↗️ Improving\n\n\nFertilizer Consumption\n60%\n80%\n⬆️ Major improvement\n\n\nWeed Infestation\n33%\n53%\n⬆️ Much better\n\n\nPest Infestation\n31%\n31%\n➡️ Stable\n\n\n\n\n\n\n\n\n\n69-71% of farmers report reduced water consumption - critical for water-scarce Punjab and Haryana!"
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#tool-usage-availability",
     "href": "weeks/week-5/teaching_summary.html#tool-usage-availability",
     "title": "Data Visualization & Storytelling",
     "section": "Tool Usage & Availability",
-    "text": "Tool Usage & Availability\nMost Popular Tools for CRM (2020):\n\nRotavator (1,095 farmers) - Most accessible\n\nAverage time: 1.7 hrs/acre\nSource: Cooperatives & ownership\n\nSuper Seeder (838 farmers) - Most efficient\n\nAverage time: 1.1 hrs/acre\nLimited availability\n\nMulcher (423 farmers)\n\nAverage time: 1.9 hrs/acre\nModerate availability\n\n\n\n\n\n\n\n\nWarning\n\n\nChallenge: Tool availability doesn’t match efficiency. Super-SMS takes only 1.1 hrs/acre but few farmers can access it!"
+    "text": "Tool Usage & Availability\nMost Popular Tools for CRM (2020):\n\nRotavator (1,095 farmers) - Most accessible\n\nAverage time: 1.7 hrs/acre\nSource: Cooperatives & ownership\n\nSuper Seeder (838 farmers) - Most efficient\n\nAverage time: 1.1 hrs/acre\nLimited availability\n\nMulcher (423 farmers)\n\nAverage time: 1.9 hrs/acre\nModerate availability\n\n\n\n\n\n\n\n\nChallenge: Tool availability doesn’t match efficiency. Super-SMS takes only 1.1 hrs/acre but few farmers can access it!"
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#the-seven-basic-data-story-types",
@@ -82,14 +82,14 @@
     "href": "weeks/week-5/teaching_summary.html#applying-story-types-drill-down",
     "title": "Data Visualization & Storytelling",
     "section": "Applying Story Types: Drill Down",
-    "text": "Applying Story Types: Drill Down\nStart Broad → Get Specific\n\n\nLevel 1: Overall\n89% sustainable adoption across both states\n\nLevel 2: By State\n\nHaryana: 16% farmers\nPunjab: 63% farmers (higher adoption)\n\n\nLevel 3: By District\n\nFatehabad: High collection method\nPunjab districts: Strong soil incorporation\n\n\n\nThis reveals that different districts prefer different methods - important for customizing interventions!"
+    "text": "Applying Story Types: Drill Down\nStart Broad → Get Specific\n\n\nLevel 1: Overall\n89% sustainable adoption across both states\n\nLevel 2: By State\n\nHaryana: 16% farmers\nPunjab: 63% farmers (higher adoption)\n\n\nLevel 3: By District\n\nFatehabad: High collection method\nPunjab districts: Strong soil incorporation\n\n\n\n\nThis reveals that different districts prefer different methods - important for customizing interventions!"
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#applying-story-types-factors",
     "href": "weeks/week-5/teaching_summary.html#applying-story-types-factors",
     "title": "Data Visualization & Storytelling",
     "section": "Applying Story Types: Factors",
-    "text": "Applying Story Types: Factors\nWhat influences CRM method adoption?\nSelected Metric: CRM Practice Adopted\n           ↓\n    Contributing Factors:\n    ├── Tools Available\n    │   ├── Type (Rotavator, Super Seeder, Mulcher)\n    │   ├── Source (Cooperative, Ownership, Rental)\n    │   └── Time Efficiency (hrs/acre)\n    ├── Soil Conditions\n    │   └── Suitability for in-situ methods\n    └── Access to Markets\n        └── For ex-situ (collection/baling)\n\n\n\n\n\n\nTip\n\n\nInsight: Rotavator dominates not because it’s fastest, but because it’s most accessible through cooperatives!"
+    "text": "Applying Story Types: Factors\nWhat influences CRM method adoption?\nSelected Metric: CRM Practice Adopted\n           ↓\n    Contributing Factors:\n    ├── Tools Available\n    │   ├── Type (Rotavator, Super Seeder, Mulcher)\n    │   ├── Source (Cooperative, Ownership, Rental)\n    │   └── Time Efficiency (hrs/acre)\n    ├── Soil Conditions\n    │   └── Suitability for in-situ methods\n    └── Access to Markets\n        └── For ex-situ (collection/baling)\n\n\n\n\n\n\nInsight: Rotavator dominates not because it’s fastest, but because it’s most accessible through cooperatives!"
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#applying-story-types-contrasts",
@@ -110,7 +110,7 @@
     "href": "weeks/week-5/teaching_summary.html#storyboarding-best-practices",
     "title": "Data Visualization & Storytelling",
     "section": "Storyboarding Best Practices",
-    "text": "Storyboarding Best Practices\nStructure your narrative in 5-7 slides:\n\nProblem Slide - The pollution crisis with visuals\nInitiative Overview - CRM program details, coverage\nAdoption Success - The 89% sustainable adoption stat\nDistrict Breakdown - Geographic patterns & preferences\nTool Analysis - What farmers use and why\nFarmer Benefits - Feedback data on reduced consumption\nRecommendations - Scaling strategy & funding needs\n\n\n\n\n\n\n\nDesign Principle\n\n\nEach slide should tell ONE key insight. Use data visualization to support, not overwhelm."
+    "text": "Storyboarding Best Practices\nStructure your narrative in 5-7 slides:\n\nProblem Slide - The pollution crisis with visuals\nInitiative Overview - CRM program details, coverage\nAdoption Success - The 89% sustainable adoption stat\nDistrict Breakdown - Geographic patterns & preferences\nTool Analysis - What farmers use and why\nFarmer Benefits - Feedback data on reduced consumption\nRecommendations - Scaling strategy & funding needs\n\n\n\n\n\n\n\nTipDesign Principle\n\n\n\nEach slide should tell ONE key insight. Use data visualization to support, not overwhelm."
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#visualization-best-practices",
@@ -124,7 +124,7 @@
     "href": "weeks/week-5/teaching_summary.html#interactive-visualizations",
     "title": "Data Visualization & Storytelling",
     "section": "Interactive Visualizations",
-    "text": "Interactive Visualizations\nEngage your audience with:\n\nDropdown Filters - Let users select year, state, or district\nHover Details - Show exact values on demand\nDrill-Through - Click district to see farmer details\nHighlight Actions - Select one category to see it across all charts\n\n\n\n\n\n\n\nNote\n\n\nTableau/Power BI Tip: Interactive dashboards let stakeholders explore data at their own pace and ask their own questions."
+    "text": "Interactive Visualizations\nEngage your audience with:\n\nDropdown Filters - Let users select year, state, or district\nHover Details - Show exact values on demand\nDrill-Through - Click district to see farmer details\nHighlight Actions - Select one category to see it across all charts\n\n\n\n\n\n\n\nTableau/Power BI Tip: Interactive dashboards let stakeholders explore data at their own pace and ask their own questions."
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#critical-thinking-questions",
@@ -152,7 +152,7 @@
     "href": "weeks/week-5/teaching_summary.html#key-metrics-to-track",
     "title": "Data Visualization & Storytelling",
     "section": "Key Metrics to Track",
-    "text": "Key Metrics to Track\nFor Monitoring & Evaluation:\n\n\nAdoption Metrics:\n\n% farmers adopting sustainable practices\n% land area with zero burning\nNumber of villages/districts covered\nFarmer retention rate year-over-year\n\n\nImpact Metrics:\n\nReduction in fire incidents (satellite data)\nAir quality improvement (AQI)\nWater consumption changes\nFertilizer cost savings\nTool rental/ownership rates\n\n\n\n\n\n\n\n\nImportant\n\n\nCombine survey data with objective measures (satellite imagery, AQI readings) for credibility."
+    "text": "Key Metrics to Track\nFor Monitoring & Evaluation:\n\n\nAdoption Metrics:\n\n% farmers adopting sustainable practices\n% land area with zero burning\nNumber of villages/districts covered\nFarmer retention rate year-over-year\n\n\nImpact Metrics:\n\nReduction in fire incidents (satellite data)\nAir quality improvement (AQI)\nWater consumption changes\nFertilizer cost savings\nTool rental/ownership rates\n\n\n\n\n\n\n\n\n\nCombine survey data with objective measures (satellite imagery, AQI readings) for credibility."
   },
   {
     "objectID": "weeks/week-5/teaching_summary.html#policy-implications",
@@ -208,7 +208,7 @@
     "href": "weeks/week-5/teaching_summary.html#thank-you",
     "title": "Data Visualization & Storytelling",
     "section": "Thank You!",
-    "text": "Thank You!\nKey Message:\nData visualization and storytelling are essential skills for communicating insights and driving change.\nPractice: The more you work with data and tell stories, the better you become.\nRemember: Your audience doesn’t care about your data - they care about what your data means for them.\n\n\n\n\n\n\nNext Steps\n\n\nApply these principles to your own projects and case studies!"
+    "text": "Thank You!\nKey Message:\nData visualization and storytelling are essential skills for communicating insights and driving change.\nPractice: The more you work with data and tell stories, the better you become.\nRemember: Your audience doesn’t care about your data - they care about what your data means for them.\n\n\n\n\n\n\nTipNext Steps\n\n\n\nApply these principles to your own projects and case studies!"
   },
   {
     "objectID": "weeks/week-5/perform_1.html",
@@ -250,7 +250,7 @@
     "href": "weeks/week-5/perform_1.html#exploratory-data-analysis",
     "title": "Exploratory Data Analysis: Crop Residue Management",
     "section": "Exploratory Data Analysis",
-    "text": "Exploratory Data Analysis\n\nOverview of Data Collection\n\n# Overall summary\ncat(\"Dataset Overview\\n\")\ncat(\"================\\n\")\ncat(\"Total farmers surveyed:\", nrow(df), \"\\n\")\ncat(\"States covered:\", n_distinct(df$state), \"\\n\")\ncat(\"Districts covered:\", n_distinct(df$district), \"\\n\")\ncat(\"Total land area (acres):\", sum(df$land, na.rm = TRUE), \"\\n\")\ncat(\"Average farm size (acres):\", round(mean(df$land, na.rm = TRUE), 2), \"\\n\")\ncat(\"Median farm size (acres):\", median(df$land, na.rm = TRUE), \"\\n\")\n\n\n\nDistribution of Farm Sizes\n\n# Histogram of land sizes\ndf %&gt;%\n  ggplot(aes(x = land)) +\n  geom_histogram(bins = 30, fill = \"#4575b4\", alpha = 0.7) +\n  labs(\n    title = \"Distribution of Farm Sizes\",\n    x = \"Land Size (acres)\",\n    y = \"Number of Farmers\"\n  )\n\n# Box plot by state\ndf %&gt;%\n  ggplot(aes(x = state, y = land, fill = state)) +\n  geom_boxplot(alpha = 0.7) +\n  scale_fill_brewer(palette = \"Set2\") +\n  coord_flip() +\n  labs(\n    title = \"Farm Size Distribution by State\",\n    x = \"State\",\n    y = \"Land Size (acres)\",\n    fill = \"State\"\n  ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\nKey Insight\n\n\n\nMost farmers have land holdings under 20 acres, with several outliers owning larger farms. Punjab has a larger sample of farmers in this dataset compared to Haryana.\n\n\n\n\nGeographic Distribution\n\n# Farmers by state\ndf %&gt;%\n  group_by(state) %&gt;%\n  summarise(\n    n_farmers = n(),\n    total_land = sum(land, na.rm = TRUE),\n    avg_land = mean(land, na.rm = TRUE),\n    .groups = \"drop\"\n  ) %&gt;%\n  ggplot(aes(x = state, y = n_farmers, fill = state)) +\n  geom_col() +\n  geom_text(aes(label = n_farmers), vjust = -0.5) +\n  scale_fill_brewer(palette = \"Set2\") +\n  labs(\n    title = \"Number of Farmers by State\",\n    x = \"State\",\n    y = \"Number of Farmers\",\n    fill = \"State\"\n  ) +\n  theme(legend.position = \"none\")\n\n# Farmers by district\ndf %&gt;%\n  group_by(state, district) %&gt;%\n  summarise(\n    n_farmers = n(),\n    total_land = sum(land, na.rm = TRUE),\n    .groups = \"drop\"\n  ) %&gt;%\n  ggplot(aes(x = reorder(district, n_farmers), y = n_farmers, fill = state)) +\n  geom_col() +\n  geom_text(aes(label = n_farmers), hjust = -0.2, size = 3) +\n  coord_flip() +\n  scale_fill_brewer(palette = \"Set1\") +\n  labs(\n    title = \"Farmer Participation by District\",\n    x = \"District\",\n    y = \"Number of Farmers\",\n    fill = \"State\"\n  ) +\n  theme(legend.position = \"bottom\")\n\n\n\nCRM Practice Adoption\n\n# Create practice categories\ndf &lt;- df %&gt;%\n  mutate(\n    practice_category = case_when(\n      crm_type == \"BURNING\" ~ \"Complete Burning\",\n      crm_type == \"BOTH\" ~ \"Partial Burning\",\n      crm_type == \"SUSTAINABLE\" ~ \"Sustainable Practices\"\n    ),\n    practice_category = factor(practice_category,\n                               levels = c(\"Complete Burning\", \"Partial Burning\", \"Sustainable Practices\"))\n  )\n\n# Overall adoption\nadoption_summary &lt;- df %&gt;%\n  group_by(practice_category) %&gt;%\n  summarise(\n    n_farmers = n(),\n    pct = n() / nrow(df) * 100,\n    total_land = sum(land, na.rm = TRUE),\n    .groups = \"drop\"\n  )\n\n# Pie chart\nadoption_summary %&gt;%\n  ggplot(aes(x = \"\", y = pct, fill = practice_category)) +\n  geom_col(width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Distribution of CRM Practices\",\n    fill = \"Practice Type\"\n  ) +\n  theme_void() +\n  theme(legend.position = \"right\") +\n  geom_text(aes(label = paste0(round(pct, 1), \"%\")),\n            position = position_stack(vjust = 0.5))\n\n# Bar chart by state\ndf %&gt;%\n  group_by(state, practice_category) %&gt;%\n  summarise(n = n(), .groups = \"drop\") %&gt;%\n  group_by(state) %&gt;%\n  mutate(pct = n / sum(n) * 100) %&gt;%\n  ggplot(aes(x = state, y = pct, fill = practice_category)) +\n  geom_col(position = \"stack\") +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"CRM Practice Adoption by State\",\n    x = \"State\",\n    y = \"Percentage of Farmers (%)\",\n    fill = \"Practice Type\"\n  ) +\n  theme(legend.position = \"bottom\")\n\n\n\n\n\n\n\nMajor Finding\n\n\n\nBased on the summary statistics above, the majority of farmers in the dataset have adopted sustainable or partially sustainable practices, with a smaller proportion still engaging in complete burning of crop residue.\n\n\n\n\nDistrict-Level Analysis\n\n# Adoption by district\ndf %&gt;%\n  group_by(district, practice_category) %&gt;%\n  summarise(n = n(), .groups = \"drop\") %&gt;%\n  group_by(district) %&gt;%\n  mutate(pct = n / sum(n) * 100) %&gt;%\n  ggplot(aes(x = district, y = pct, fill = practice_category)) +\n  geom_col(position = \"fill\") +\n  coord_flip() +\n  scale_y_continuous(labels = percent_format(scale = 1)) +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Distribution of CRM Practices by District\",\n    subtitle = \"Proportional view showing practice preferences\",\n    x = \"District\",\n    y = \"Proportion of Farmers\",\n    fill = \"Practice Type\"\n  ) +\n  theme(legend.position = \"bottom\")\n\n\n\nDetailed Breakdown of Sustainable Practices\n\n# Filter for sustainable practices only\nsustainable_df &lt;- df %&gt;%\n  filter(practice_category == \"Sustainable Practices\")\n\n# Count which specific methods are used\nmethod_counts &lt;- sustainable_df %&gt;%\n  summarise(\n    soil_incorporation = sum(soil_incorporation == 1, na.rm = TRUE),\n    mulching = sum(mulching == 1, na.rm = TRUE),\n    collection = sum(collection == 1, na.rm = TRUE),\n    others = sum(others == 1, na.rm = TRUE)\n  ) %&gt;%\n  pivot_longer(everything(), names_to = \"method\", values_to = \"count\") %&gt;%\n  mutate(method = str_replace_all(method, \"_\", \" \") %&gt;% str_to_title())\n\n# Visualize\nmethod_counts %&gt;%\n  ggplot(aes(x = reorder(method, count), y = count)) +\n  geom_col(fill = \"#1a9850\") +\n  geom_text(aes(label = count), hjust = -0.2) +\n  coord_flip() +\n  labs(\n    title = \"Specific Sustainable Methods Used by Farmers\",\n    subtitle = \"Among farmers who adopted sustainable practices\",\n    x = \"Method\",\n    y = \"Number of Farmers Using This Method\"\n  )\n\n\n\n\n\n\n\nPractice Patterns\n\n\n\nNote that farmers may use multiple methods. For example, a farmer might use both soil incorporation and mulching. The data uses binary indicators (0 or 1) for each method.\n\n\n\n\nFarmer Feedback Analysis\n\n# Prepare feedback data for sustainable practices only\nfeedback_long &lt;- sustainable_df %&gt;%\n  select(farmer_id, water_consumption, fertiliser_consumption,\n         pest_infestation, weed_infestation) %&gt;%\n  pivot_longer(cols = -farmer_id,\n               names_to = \"feedback_type\",\n               values_to = \"feedback_value\") %&gt;%\n  filter(!is.na(feedback_value)) %&gt;%\n  mutate(\n    feedback_type = str_replace_all(feedback_type, \"_\", \" \") %&gt;% str_to_title(),\n    feedback_value = as.numeric(as.character(feedback_value)),\n    feedback_label = case_when(\n      feedback_value == -1 ~ \"Decreased\",\n      feedback_value == 0 ~ \"No Change\",\n      feedback_value == 1 ~ \"Increased\"\n    ),\n    feedback_label = factor(feedback_label, levels = c(\"Decreased\", \"No Change\", \"Increased\"))\n  )\n\n# Calculate percentages for each feedback type\nfeedback_summary &lt;- feedback_long %&gt;%\n  group_by(feedback_type, feedback_label) %&gt;%\n  summarise(count = n(), .groups = \"drop_last\") %&gt;%\n  mutate(percentage = count / sum(count) * 100)\n\n# Visualize feedback patterns\nfeedback_summary %&gt;%\n  ggplot(aes(x = feedback_type, y = percentage, fill = feedback_label)) +\n  geom_col(position = \"stack\") +\n  scale_fill_manual(values = c(\"Decreased\" = \"#1a9850\",\n                                \"No Change\" = \"#ffffbf\",\n                                \"Increased\" = \"#d73027\")) +\n  labs(\n    title = \"Farmer Feedback on Impact of Sustainable CRM Practices\",\n    subtitle = \"Among farmers who adopted sustainable methods\",\n    x = \"Feedback Category\",\n    y = \"Percentage of Farmers (%)\",\n    fill = \"Impact\"\n  ) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1),\n        legend.position = \"bottom\")\n\n# Detailed table\nfeedback_summary %&gt;%\n  pivot_wider(names_from = feedback_label, values_from = c(count, percentage)) %&gt;%\n  select(feedback_type, starts_with(\"count\"), starts_with(\"percentage\")) %&gt;%\n  kable(digits = 1, caption = \"Detailed Farmer Feedback Statistics\")\n\n\n\n\n\n\n\nKey Impact Findings\n\n\n\nFarmers adopting sustainable CRM practices reported significant benefits:\nThese findings demonstrate the multiple benefits of sustainable practices beyond environmental impact.\n\n\n\n\nComparison: Sustainable vs Burning Practices\n\n# Compare land sizes across practices\ndf %&gt;%\n  ggplot(aes(x = practice_category, y = land, fill = practice_category)) +\n  geom_boxplot(alpha = 0.7) +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Farm Size Distribution by Practice Type\",\n    x = \"Practice Type\",\n    y = \"Land Size (acres)\",\n    fill = \"Practice\"\n  ) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1),\n        legend.position = \"none\")\n\n# Average land by practice and state\ndf %&gt;%\n  group_by(state, practice_category) %&gt;%\n  summarise(\n    n_farmers = n(),\n    avg_land = mean(land, na.rm = TRUE),\n    total_land = sum(land, na.rm = TRUE),\n    .groups = \"drop\"\n  ) %&gt;%\n  ggplot(aes(x = state, y = total_land, fill = practice_category)) +\n  geom_col(position = \"dodge\") +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Total Land Area by Practice Type and State\",\n    x = \"State\",\n    y = \"Total Land Area (acres)\",\n    fill = \"Practice Type\"\n  ) +\n  theme(legend.position = \"bottom\")"
+    "text": "Exploratory Data Analysis\n\nOverview of Data Collection\n\n# Overall summary\ncat(\"Dataset Overview\\n\")\ncat(\"================\\n\")\ncat(\"Total farmers surveyed:\", nrow(df), \"\\n\")\ncat(\"States covered:\", n_distinct(df$state), \"\\n\")\ncat(\"Districts covered:\", n_distinct(df$district), \"\\n\")\ncat(\"Total land area (acres):\", sum(df$land, na.rm = TRUE), \"\\n\")\ncat(\"Average farm size (acres):\", round(mean(df$land, na.rm = TRUE), 2), \"\\n\")\ncat(\"Median farm size (acres):\", median(df$land, na.rm = TRUE), \"\\n\")\n\n\n\nDistribution of Farm Sizes\n\n# Histogram of land sizes\ndf %&gt;%\n  ggplot(aes(x = land)) +\n  geom_histogram(bins = 30, fill = \"#4575b4\", alpha = 0.7) +\n  labs(\n    title = \"Distribution of Farm Sizes\",\n    x = \"Land Size (acres)\",\n    y = \"Number of Farmers\"\n  )\n\n# Box plot by state\ndf %&gt;%\n  ggplot(aes(x = state, y = land, fill = state)) +\n  geom_boxplot(alpha = 0.7) +\n  scale_fill_brewer(palette = \"Set2\") +\n  coord_flip() +\n  labs(\n    title = \"Farm Size Distribution by State\",\n    x = \"State\",\n    y = \"Land Size (acres)\",\n    fill = \"State\"\n  ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\nNoteKey Insight\n\n\n\nMost farmers have land holdings under 20 acres, with several outliers owning larger farms. Punjab has a larger sample of farmers in this dataset compared to Haryana.\n\n\n\n\nGeographic Distribution\n\n# Farmers by state\ndf %&gt;%\n  group_by(state) %&gt;%\n  summarise(\n    n_farmers = n(),\n    total_land = sum(land, na.rm = TRUE),\n    avg_land = mean(land, na.rm = TRUE),\n    .groups = \"drop\"\n  ) %&gt;%\n  ggplot(aes(x = state, y = n_farmers, fill = state)) +\n  geom_col() +\n  geom_text(aes(label = n_farmers), vjust = -0.5) +\n  scale_fill_brewer(palette = \"Set2\") +\n  labs(\n    title = \"Number of Farmers by State\",\n    x = \"State\",\n    y = \"Number of Farmers\",\n    fill = \"State\"\n  ) +\n  theme(legend.position = \"none\")\n\n# Farmers by district\ndf %&gt;%\n  group_by(state, district) %&gt;%\n  summarise(\n    n_farmers = n(),\n    total_land = sum(land, na.rm = TRUE),\n    .groups = \"drop\"\n  ) %&gt;%\n  ggplot(aes(x = reorder(district, n_farmers), y = n_farmers, fill = state)) +\n  geom_col() +\n  geom_text(aes(label = n_farmers), hjust = -0.2, size = 3) +\n  coord_flip() +\n  scale_fill_brewer(palette = \"Set1\") +\n  labs(\n    title = \"Farmer Participation by District\",\n    x = \"District\",\n    y = \"Number of Farmers\",\n    fill = \"State\"\n  ) +\n  theme(legend.position = \"bottom\")\n\n\n\nCRM Practice Adoption\n\n# Create practice categories\ndf &lt;- df %&gt;%\n  mutate(\n    practice_category = case_when(\n      crm_type == \"BURNING\" ~ \"Complete Burning\",\n      crm_type == \"BOTH\" ~ \"Partial Burning\",\n      crm_type == \"SUSTAINABLE\" ~ \"Sustainable Practices\"\n    ),\n    practice_category = factor(practice_category,\n                               levels = c(\"Complete Burning\", \"Partial Burning\", \"Sustainable Practices\"))\n  )\n\n# Overall adoption\nadoption_summary &lt;- df %&gt;%\n  group_by(practice_category) %&gt;%\n  summarise(\n    n_farmers = n(),\n    pct = n() / nrow(df) * 100,\n    total_land = sum(land, na.rm = TRUE),\n    .groups = \"drop\"\n  )\n\n# Pie chart\nadoption_summary %&gt;%\n  ggplot(aes(x = \"\", y = pct, fill = practice_category)) +\n  geom_col(width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Distribution of CRM Practices\",\n    fill = \"Practice Type\"\n  ) +\n  theme_void() +\n  theme(legend.position = \"right\") +\n  geom_text(aes(label = paste0(round(pct, 1), \"%\")),\n            position = position_stack(vjust = 0.5))\n\n# Bar chart by state\ndf %&gt;%\n  group_by(state, practice_category) %&gt;%\n  summarise(n = n(), .groups = \"drop\") %&gt;%\n  group_by(state) %&gt;%\n  mutate(pct = n / sum(n) * 100) %&gt;%\n  ggplot(aes(x = state, y = pct, fill = practice_category)) +\n  geom_col(position = \"stack\") +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"CRM Practice Adoption by State\",\n    x = \"State\",\n    y = \"Percentage of Farmers (%)\",\n    fill = \"Practice Type\"\n  ) +\n  theme(legend.position = \"bottom\")\n\n\n\n\n\n\n\nImportantMajor Finding\n\n\n\nBased on the summary statistics above, the majority of farmers in the dataset have adopted sustainable or partially sustainable practices, with a smaller proportion still engaging in complete burning of crop residue.\n\n\n\n\nDistrict-Level Analysis\n\n# Adoption by district\ndf %&gt;%\n  group_by(district, practice_category) %&gt;%\n  summarise(n = n(), .groups = \"drop\") %&gt;%\n  group_by(district) %&gt;%\n  mutate(pct = n / sum(n) * 100) %&gt;%\n  ggplot(aes(x = district, y = pct, fill = practice_category)) +\n  geom_col(position = \"fill\") +\n  coord_flip() +\n  scale_y_continuous(labels = percent_format(scale = 1)) +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Distribution of CRM Practices by District\",\n    subtitle = \"Proportional view showing practice preferences\",\n    x = \"District\",\n    y = \"Proportion of Farmers\",\n    fill = \"Practice Type\"\n  ) +\n  theme(legend.position = \"bottom\")\n\n\n\nDetailed Breakdown of Sustainable Practices\n\n# Filter for sustainable practices only\nsustainable_df &lt;- df %&gt;%\n  filter(practice_category == \"Sustainable Practices\")\n\n# Count which specific methods are used\nmethod_counts &lt;- sustainable_df %&gt;%\n  summarise(\n    soil_incorporation = sum(soil_incorporation == 1, na.rm = TRUE),\n    mulching = sum(mulching == 1, na.rm = TRUE),\n    collection = sum(collection == 1, na.rm = TRUE),\n    others = sum(others == 1, na.rm = TRUE)\n  ) %&gt;%\n  pivot_longer(everything(), names_to = \"method\", values_to = \"count\") %&gt;%\n  mutate(method = str_replace_all(method, \"_\", \" \") %&gt;% str_to_title())\n\n# Visualize\nmethod_counts %&gt;%\n  ggplot(aes(x = reorder(method, count), y = count)) +\n  geom_col(fill = \"#1a9850\") +\n  geom_text(aes(label = count), hjust = -0.2) +\n  coord_flip() +\n  labs(\n    title = \"Specific Sustainable Methods Used by Farmers\",\n    subtitle = \"Among farmers who adopted sustainable practices\",\n    x = \"Method\",\n    y = \"Number of Farmers Using This Method\"\n  )\n\n\n\n\n\n\n\nTipPractice Patterns\n\n\n\nNote that farmers may use multiple methods. For example, a farmer might use both soil incorporation and mulching. The data uses binary indicators (0 or 1) for each method.\n\n\n\n\nFarmer Feedback Analysis\n\n# Prepare feedback data for sustainable practices only\nfeedback_long &lt;- sustainable_df %&gt;%\n  select(farmer_id, water_consumption, fertiliser_consumption,\n         pest_infestation, weed_infestation) %&gt;%\n  pivot_longer(cols = -farmer_id,\n               names_to = \"feedback_type\",\n               values_to = \"feedback_value\") %&gt;%\n  filter(!is.na(feedback_value)) %&gt;%\n  mutate(\n    feedback_type = str_replace_all(feedback_type, \"_\", \" \") %&gt;% str_to_title(),\n    feedback_value = as.numeric(as.character(feedback_value)),\n    feedback_label = case_when(\n      feedback_value == -1 ~ \"Decreased\",\n      feedback_value == 0 ~ \"No Change\",\n      feedback_value == 1 ~ \"Increased\"\n    ),\n    feedback_label = factor(feedback_label, levels = c(\"Decreased\", \"No Change\", \"Increased\"))\n  )\n\n# Calculate percentages for each feedback type\nfeedback_summary &lt;- feedback_long %&gt;%\n  group_by(feedback_type, feedback_label) %&gt;%\n  summarise(count = n(), .groups = \"drop_last\") %&gt;%\n  mutate(percentage = count / sum(count) * 100)\n\n# Visualize feedback patterns\nfeedback_summary %&gt;%\n  ggplot(aes(x = feedback_type, y = percentage, fill = feedback_label)) +\n  geom_col(position = \"stack\") +\n  scale_fill_manual(values = c(\"Decreased\" = \"#1a9850\",\n                                \"No Change\" = \"#ffffbf\",\n                                \"Increased\" = \"#d73027\")) +\n  labs(\n    title = \"Farmer Feedback on Impact of Sustainable CRM Practices\",\n    subtitle = \"Among farmers who adopted sustainable methods\",\n    x = \"Feedback Category\",\n    y = \"Percentage of Farmers (%)\",\n    fill = \"Impact\"\n  ) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1),\n        legend.position = \"bottom\")\n\n# Detailed table\nfeedback_summary %&gt;%\n  pivot_wider(names_from = feedback_label, values_from = c(count, percentage)) %&gt;%\n  select(feedback_type, starts_with(\"count\"), starts_with(\"percentage\")) %&gt;%\n  kable(digits = 1, caption = \"Detailed Farmer Feedback Statistics\")\n\n\n\n\n\n\n\nImportantKey Impact Findings\n\n\n\nFarmers adopting sustainable CRM practices reported significant benefits:\nThese findings demonstrate the multiple benefits of sustainable practices beyond environmental impact.\n\n\n\n\nComparison: Sustainable vs Burning Practices\n\n# Compare land sizes across practices\ndf %&gt;%\n  ggplot(aes(x = practice_category, y = land, fill = practice_category)) +\n  geom_boxplot(alpha = 0.7) +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Farm Size Distribution by Practice Type\",\n    x = \"Practice Type\",\n    y = \"Land Size (acres)\",\n    fill = \"Practice\"\n  ) +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1),\n        legend.position = \"none\")\n\n# Average land by practice and state\ndf %&gt;%\n  group_by(state, practice_category) %&gt;%\n  summarise(\n    n_farmers = n(),\n    avg_land = mean(land, na.rm = TRUE),\n    total_land = sum(land, na.rm = TRUE),\n    .groups = \"drop\"\n  ) %&gt;%\n  ggplot(aes(x = state, y = total_land, fill = practice_category)) +\n  geom_col(position = \"dodge\") +\n  scale_fill_manual(values = c(\"Complete Burning\" = \"#d73027\",\n                                \"Partial Burning\" = \"#fee090\",\n                                \"Sustainable Practices\" = \"#1a9850\")) +\n  labs(\n    title = \"Total Land Area by Practice Type and State\",\n    x = \"State\",\n    y = \"Total Land Area (acres)\",\n    fill = \"Practice Type\"\n  ) +\n  theme(legend.position = \"bottom\")"
   },
   {
     "objectID": "weeks/week-5/perform_1.html#summary-statistics",
@@ -270,8 +270,8 @@
     "objectID": "weeks/week-5/case_discussion.html#the-problem-air-pollution-crisis-in-delhi-ncr",
     "href": "weeks/week-5/case_discussion.html#the-problem-air-pollution-crisis-in-delhi-ncr",
     "title": "Data Storytelling",
-    "section": "The Problem: Air Pollution Crisis in Delhi NCR",
-    "text": "The Problem: Air Pollution Crisis in Delhi NCR\n\n\nEvery winter, Delhi faces severe air pollution\n\nNovember 2021: AQI &gt; 450 (hazardous)\nHealth impacts: respiratory issues, eye irritation, headaches\nMajor contributor: Crop residue burning in Punjab, Haryana, and Uttar Pradesh\n\nWhy do farmers burn crop residue?\n\nQuick and cost-effective\n15-20 day window between rice harvest and wheat sowing\nMechanized harvesting leaves stubble in fields\n\n\nImpact of the practice:\n\n36% of Delhi’s air pollution from crop burning\nLow wind speeds trap smoke over Delhi NCR\nReduces soil health and microbial activity\nIncreases irrigation requirements\nLoss of organic matter\n\n\n“Earth provides enough to satisfy every man’s need, but not for every man’s greed.” — Mahatma Gandhi"
+    "section": "",
+    "text": "Every winter, Delhi faces severe air pollution\n\nNovember 2021: AQI &gt; 450 (hazardous)\nHealth impacts: respiratory issues, eye irritation, headaches\nMajor contributor: Crop residue burning in Punjab, Haryana, and Uttar Pradesh\n\nWhy do farmers burn crop residue?\n\nQuick and cost-effective\n15-20 day window between rice harvest and wheat sowing\nMechanized harvesting leaves stubble in fields\n\n\nImpact of the practice:\n\n36% of Delhi’s air pollution from crop burning\nLow wind speeds trap smoke over Delhi NCR\nReduces soil health and microbial activity\nIncreases irrigation requirements\nLoss of organic matter\n\n\n“Earth provides enough to satisfy every man’s need, but not for every man’s greed.” — Mahatma Gandhi"
   },
   {
     "objectID": "weeks/week-5/case_discussion.html#the-cii-crop-residue-management-initiative",
@@ -299,21 +299,21 @@
     "href": "weeks/week-5/case_discussion.html#discussion-questions",
     "title": "Data Storytelling",
     "section": "Discussion Questions",
-    "text": "Discussion Questions\nFor Class Discussion:\n\nData Exploration: What are the most important metrics to track in the CRM survey data? How would you measure the success of the initiative?\nStakeholder Perspectives: Different stakeholders (corporates, policymakers, farmers) have different priorities. How should Pradhan tailor his data story for each audience?\nBehavioral Change: Stubble burning is described as a “behavioral issue.” What role does data visualization play in changing farmer behavior versus providing financial incentives?\nSustainability vs Practicality: Given that farmers have only 15-20 days between harvests, what barriers exist to adoption of sustainable practices? How does the data reveal these constraints?\nScaling Up: Based on the case, what evidence would convince you (as a potential funder) to invest in expanding this program to other states?"
+    "text": "Discussion Questions\nFor Class Discussion:\n\nData Exploration: What are the most important metrics to track in the CRM survey data? How would you measure the success of the initiative?\nStakeholder Perspectives: Different stakeholders (corporates, policymakers, farmers) have different priorities. How should Pradhan tailor his data story for each audience?\nBehavioral Change: Stubble burning is described as a “behavioral issue.” What role does data visualization play in changing farmer behavior versus providing financial incentives?\nSustainability vs Practicality: Given that farmers have only 15-20 days between harvests, what barriers exist to adoption of sustainable practices? How does the data reveal these constraints?\nScaling Up: Based on the case, what evidence would convince you (as a potential funder) to invest in expanding this program to other states?\n\n\nThink about: How would you use the survey data to tell a compelling story that balances environmental urgency with practical farmer constraints?"
   },
   {
     "objectID": "weeks/week-3/prepare.html",
     "href": "weeks/week-3/prepare.html",
     "title": "Exploratory Data Analysis: Foundations and Practice",
     "section": "",
-    "text": "Exploratory Data Analysis (EDA) is a fundamental approach to analyzing datasets to summarize their main characteristics, often through visual methods. Pioneered by John Tukey in the 1970s, EDA emphasizes an open-minded, detective-like approach to data, prioritizing discovery over confirmation.\n\n\n\n\n\n\nKey Philosophy\n\n\n\n“Exploratory data analysis is detective work—numerical detective work—or counting detective work—or graphical detective work.” — John Tukey"
+    "text": "Exploratory Data Analysis (EDA) is a fundamental approach to analyzing datasets to summarize their main characteristics, often through visual methods. Pioneered by John Tukey in the 1970s, EDA emphasizes an open-minded, detective-like approach to data, prioritizing discovery over confirmation.\n\n\n\n\n\n\nNoteKey Philosophy\n\n\n\n“Exploratory data analysis is detective work—numerical detective work—or counting detective work—or graphical detective work.” — John Tukey"
   },
   {
     "objectID": "weeks/week-3/prepare.html#introduction",
     "href": "weeks/week-3/prepare.html#introduction",
     "title": "Exploratory Data Analysis: Foundations and Practice",
     "section": "",
-    "text": "Exploratory Data Analysis (EDA) is a fundamental approach to analyzing datasets to summarize their main characteristics, often through visual methods. Pioneered by John Tukey in the 1970s, EDA emphasizes an open-minded, detective-like approach to data, prioritizing discovery over confirmation.\n\n\n\n\n\n\nKey Philosophy\n\n\n\n“Exploratory data analysis is detective work—numerical detective work—or counting detective work—or graphical detective work.” — John Tukey"
+    "text": "Exploratory Data Analysis (EDA) is a fundamental approach to analyzing datasets to summarize their main characteristics, often through visual methods. Pioneered by John Tukey in the 1970s, EDA emphasizes an open-minded, detective-like approach to data, prioritizing discovery over confirmation.\n\n\n\n\n\n\nNoteKey Philosophy\n\n\n\n“Exploratory data analysis is detective work—numerical detective work—or counting detective work—or graphical detective work.” — John Tukey"
   },
   {
     "objectID": "weeks/week-3/prepare.html#nature-of-eda",
@@ -341,7 +341,7 @@
     "href": "weeks/week-3/prepare.html#criticalities-and-challenges",
     "title": "Exploratory Data Analysis: Foundations and Practice",
     "section": "Criticalities and Challenges",
-    "text": "Criticalities and Challenges\n\nCritical Considerations\n\n1. Cognitive Biases\nConfirmation Bias: Tendency to seek patterns that confirm pre-existing beliefs while ignoring contradictory evidence.\nMitigation:\n\nActively seek disconfirming evidence\nConsider alternative explanations\nDocument unexpected findings\n\nApophenia: Seeing meaningful patterns in random data (Type I error in visual analysis).\nMitigation:\n\nValidate visual discoveries statistically\nConsider multiple comparisons problem\nUse cross-validation techniques\n\n\n\n2. Multiple Testing Problem\nWhen exploring many relationships simultaneously, spurious patterns emerge by chance.\nExample: Testing 100 independent relationships at α=0.05 yields ~5 false positives on average.\nMitigation:\n\nApply multiple testing corrections (Bonferroni, FDR)\nValidate findings on holdout data\nDistinguish exploratory from confirmatory phases\n\n\n\n3. Data Snooping and P-Hacking\nRisk: Using the same data for exploration and inference inflates false discovery rates.\nBest Practice:\n\nSplit data: exploration set and confirmation set\nPre-register confirmatory hypotheses\nReport exploratory analyses as hypothesis-generating\n\n\n\n4. Overplotting and Visualization Artifacts\nChallenge: Dense data creates overlapping points that obscure patterns.\nSolutions:\n\nAlpha transparency\nBinning and aggregation (hexbin plots)\nSampling for large datasets\nAlternative encodings (density plots)\n\n\n\n5. Dimensionality Challenges\nIssue: High-dimensional data makes comprehensive exploration difficult.\nApproaches:\n\nDimensionality reduction (PCA, t-SNE, UMAP)\nFeature selection\nFocusing on variable subsets\nParallel coordinates plots\n\n\n\n\nCommon Pitfalls\n\n\n\n\n\n\nAvoid These Mistakes\n\n\n\n\nSkipping EDA: Rushing to modeling without understanding data structure\nOver-interpreting noise: Treating random variation as meaningful patterns\nIgnoring context: Analyzing data without domain knowledge\nInadequate documentation: Failing to record exploration process and decisions\nCherry-picking: Reporting only interesting findings while ignoring the broader picture"
+    "text": "Criticalities and Challenges\n\nCritical Considerations\n\n1. Cognitive Biases\nConfirmation Bias: Tendency to seek patterns that confirm pre-existing beliefs while ignoring contradictory evidence.\nMitigation:\n\nActively seek disconfirming evidence\nConsider alternative explanations\nDocument unexpected findings\n\nApophenia: Seeing meaningful patterns in random data (Type I error in visual analysis).\nMitigation:\n\nValidate visual discoveries statistically\nConsider multiple comparisons problem\nUse cross-validation techniques\n\n\n\n2. Multiple Testing Problem\nWhen exploring many relationships simultaneously, spurious patterns emerge by chance.\nExample: Testing 100 independent relationships at α=0.05 yields ~5 false positives on average.\nMitigation:\n\nApply multiple testing corrections (Bonferroni, FDR)\nValidate findings on holdout data\nDistinguish exploratory from confirmatory phases\n\n\n\n3. Data Snooping and P-Hacking\nRisk: Using the same data for exploration and inference inflates false discovery rates.\nBest Practice:\n\nSplit data: exploration set and confirmation set\nPre-register confirmatory hypotheses\nReport exploratory analyses as hypothesis-generating\n\n\n\n4. Overplotting and Visualization Artifacts\nChallenge: Dense data creates overlapping points that obscure patterns.\nSolutions:\n\nAlpha transparency\nBinning and aggregation (hexbin plots)\nSampling for large datasets\nAlternative encodings (density plots)\n\n\n\n5. Dimensionality Challenges\nIssue: High-dimensional data makes comprehensive exploration difficult.\nApproaches:\n\nDimensionality reduction (PCA, t-SNE, UMAP)\nFeature selection\nFocusing on variable subsets\nParallel coordinates plots\n\n\n\n\nCommon Pitfalls\n\n\n\n\n\n\nWarningAvoid These Mistakes\n\n\n\n\nSkipping EDA: Rushing to modeling without understanding data structure\nOver-interpreting noise: Treating random variation as meaningful patterns\nIgnoring context: Analyzing data without domain knowledge\nInadequate documentation: Failing to record exploration process and decisions\nCherry-picking: Reporting only interesting findings while ignoring the broader picture"
   },
   {
     "objectID": "weeks/week-3/prepare.html#examples-of-eda-in-practice",
@@ -369,14 +369,14 @@
     "href": "weeks/week-3/prepare.html#best-practices",
     "title": "Exploratory Data Analysis: Foundations and Practice",
     "section": "Best Practices",
-    "text": "Best Practices\n\n\n\n\n\n\nEDA Best Practices\n\n\n\n\nStart Simple: Begin with univariate analysis before multivariate exploration\nVisualize First: Look at the data before calculating statistics\nQuestion Everything: Challenge assumptions and look for anomalies\nDocument Process: Record exploration steps, decisions, and discoveries\nIterate: Cycle between questions, visualization, and refinement\nValidate Findings: Check surprising results with alternative methods\nConsider Context: Integrate domain knowledge throughout exploration\nBe Systematic: Cover key aspects while remaining flexible\nCommunicate Findings: Share insights with stakeholders iteratively\nKnow When to Stop: Balance thoroughness with diminishing returns"
+    "text": "Best Practices\n\n\n\n\n\n\nTipEDA Best Practices\n\n\n\n\nStart Simple: Begin with univariate analysis before multivariate exploration\nVisualize First: Look at the data before calculating statistics\nQuestion Everything: Challenge assumptions and look for anomalies\nDocument Process: Record exploration steps, decisions, and discoveries\nIterate: Cycle between questions, visualization, and refinement\nValidate Findings: Check surprising results with alternative methods\nConsider Context: Integrate domain knowledge throughout exploration\nBe Systematic: Cover key aspects while remaining flexible\nCommunicate Findings: Share insights with stakeholders iteratively\nKnow When to Stop: Balance thoroughness with diminishing returns"
   },
   {
     "objectID": "weeks/week-3/prepare.html#conclusion",
     "href": "weeks/week-3/prepare.html#conclusion",
     "title": "Exploratory Data Analysis: Foundations and Practice",
     "section": "Conclusion",
-    "text": "Conclusion\nExploratory Data Analysis is not merely a preliminary step before “real” analysis—it is a critical discipline that shapes all subsequent analytical work. By systematically examining data structure, quality, distributions, and relationships, EDA reveals the stories hidden in data while exposing limitations and potential pitfalls.\nEffective EDA requires balancing structure with flexibility, skepticism with curiosity, and pattern recognition with statistical rigor. It is both art and science: the art of asking productive questions and the science of answering them systematically.\n\n\n\n\n\n\nRemember\n\n\n\nEDA is an iterative, thoughtful process of dialogue with data. It requires patience, curiosity, and critical thinking. The goal is not just to find patterns, but to understand them—and to know which patterns are worth pursuing."
+    "text": "Conclusion\nExploratory Data Analysis is not merely a preliminary step before “real” analysis—it is a critical discipline that shapes all subsequent analytical work. By systematically examining data structure, quality, distributions, and relationships, EDA reveals the stories hidden in data while exposing limitations and potential pitfalls.\nEffective EDA requires balancing structure with flexibility, skepticism with curiosity, and pattern recognition with statistical rigor. It is both art and science: the art of asking productive questions and the science of answering them systematically.\n\n\n\n\n\n\nImportantRemember\n\n\n\nEDA is an iterative, thoughtful process of dialogue with data. It requires patience, curiosity, and critical thinking. The goal is not just to find patterns, but to understand them—and to know which patterns are worth pursuing."
   },
   {
     "objectID": "weeks/week-3/ecar.html",
@@ -439,7 +439,7 @@
     "href": "weeks/week-2/main.html",
     "title": "Week 2",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Review the course syllabus",
+    "text": "Note📚 Prepare\n\n\n\n📖 Review the course syllabus",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -450,7 +450,7 @@
     "href": "weeks/week-2/main.html#prepare",
     "title": "Week 2",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Review the course syllabus",
+    "text": "Note📚 Prepare\n\n\n\n📖 Review the course syllabus",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -461,7 +461,7 @@
     "href": "weeks/week-2/main.html#participate",
     "title": "Week 2",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\n👥 Participate\n\n\n\n📊 Slideshows:\n\nGrammar of Graphics and Visual Forms",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Slideshows:\n\nGrammar of Graphics and Visual Forms",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -472,7 +472,7 @@
     "href": "weeks/week-2/main.html#practice",
     "title": "Week 2",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\n💻 Practice\n\n\n\n🧮 GoG with R’s ggplot21\n🧮 GoG with Python’s Plotnine2\n🧮 Faceting with ggplot2 and patchwork",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 GoG with R’s ggplot21\n🧮 GoG with Python’s Plotnine2\n🧮 Faceting with ggplot2 and patchwork",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -483,7 +483,7 @@
     "href": "weeks/week-2/main.html#perform",
     "title": "Week 2",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Hands-on practice implementing visualization designs using the grammar of graphics framework",
+    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\n✏️ Hands-on practice implementing visualization designs using the grammar of graphics framework",
     "crumbs": [
       "Weekly materials",
       "Week 2"
@@ -516,7 +516,7 @@
     "href": "weeks/week-10/main.html",
     "title": "Week 10",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 10 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "NoteMaterials Coming Soon\n\n\n\nContent for Week 10 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
     "crumbs": [
       "Weekly materials",
       "Week 10"
@@ -527,7 +527,7 @@
     "href": "weeks/week-1/main.html",
     "title": "Week 1",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Introductory session, no preparation needed",
+    "text": "Note📚 Prepare\n\n\n\n📖 Introductory session, no preparation needed",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -538,7 +538,7 @@
     "href": "weeks/week-1/main.html#prepare",
     "title": "Week 1",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Introductory session, no preparation needed",
+    "text": "Note📚 Prepare\n\n\n\n📖 Introductory session, no preparation needed",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -549,7 +549,7 @@
     "href": "weeks/week-1/main.html#participate",
     "title": "Week 1",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\n👥 Participate\n\n\n\n📊 Slideshows:\n\nDesign Principles Presentation",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Slideshows:\n\nDesign Principles Presentation",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -560,7 +560,7 @@
     "href": "weeks/week-1/main.html#practice",
     "title": "Week 1",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\n💻 Practice\n\n\n\n🧮 Introduction to R/Python visualization environments\n🧮 Version control with Git",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 Introduction to R/Python visualization environments\n🧮 Version control with Git",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -571,7 +571,7 @@
     "href": "weeks/week-1/main.html#perform",
     "title": "Week 1",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Introductory session, no laboratory exercises",
+    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\n✏️ Introductory session, no laboratory exercises",
     "crumbs": [
       "Weekly materials",
       "Week 1"
@@ -603,8 +603,8 @@
     "objectID": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
     "href": "weeks/week-1/design-principles-presentation.html#what-is-good-data-visualization",
     "title": "Data Visualization: Design Principles and Processes",
-    "section": "What is Good Data Visualization?",
-    "text": "What is Good Data Visualization?\n\nThe fundamental question every data analyst must ask\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
+    "section": "",
+    "text": "The fundamental question every data analyst must ask\n\n\n\n\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#tale-of-two-visualizations",
@@ -618,42 +618,42 @@
     "href": "weeks/week-1/design-principles-presentation.html#tuftes-principles-of-graphical-excellence",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Tufte’s Principles of Graphical Excellence",
-    "text": "Tufte’s Principles of Graphical Excellence\n\n\nExcellent visualizations should:\n\nShow the data clearly and accurately\nInduce thinking about substance, not methodology\n\nAvoid distortion of what the data reveal\nPresent many numbers in a small space\nMake large datasets coherent\nEncourage comparison between data elements\nReveal data at multiple levels of detail\nServe a clear purpose: description, exploration, or decoration\nIntegrate with statistical and verbal descriptions\n\n\n\n\n\nEdward Tufte"
+    "text": "Tufte’s Principles of Graphical Excellence\n\n\nExcellent visualizations should:\n\n\nShow the data clearly and accurately\nInduce thinking about substance, not methodology\n\nAvoid distortion of what the data reveal\nPresent many numbers in a small space\nMake large datasets coherent\nEncourage comparison between data elements\nReveal data at multiple levels of detail\nServe a clear purpose: description, exploration, or decoration\nIntegrate with statistical and verbal descriptions\n\n\n\n\n\n\nEdward Tufte"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
     "href": "weeks/week-1/design-principles-presentation.html#the-power-of-show-the-data---anscombes-quartet",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "The Power of “Show the Data” - Anscombe’s Quartet",
-    "text": "The Power of “Show the Data” - Anscombe’s Quartet\nFour datasets with identical summary statistics\n\n\nSame means, same correlations, same regression lines…"
+    "text": "The Power of “Show the Data” - Anscombe’s Quartet\nFour datasets with identical summary statistics\n\n\n\n\n\n\nSame means, same correlations, same regression lines…"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
     "href": "weeks/week-1/design-principles-presentation.html#anscombes-quartet-revealed",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Anscombe’s Quartet Revealed",
-    "text": "Anscombe’s Quartet Revealed\n…but completely different data patterns!\n\n\n\n\n\n\n\nImportant\n\n\nKey Lesson: Summary statistics alone are insufficient. Always visualize your data to understand its true nature."
+    "text": "Anscombe’s Quartet Revealed\n…but completely different data patterns!\n\n\n\n\n\n\n\n\n\n\n\nKey Lesson: Summary statistics alone are insufficient. Always visualize your data to understand its true nature."
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
     "href": "weeks/week-1/design-principles-presentation.html#the-design-process-framework",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "The Design Process Framework",
-    "text": "The Design Process Framework\n\n\nSource: Cairo, A. (2012). The Functional Art"
+    "text": "The Design Process Framework\n\n\n\n\n\n\nSource: Cairo, A. (2012). The Functional Art"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
     "href": "weeks/week-1/design-principles-presentation.html#design-principles-in-action",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Design Principles in Action",
-    "text": "Design Principles in Action\n\n\nTraditional Approach \nHeavy gridlines, excessive decoration\n\nTufte’s Approach \n\nMinimalist, data-focused design\n\n\n\nPrinciple: Maximize the data-ink ratio - every mark should represent data"
+    "text": "Design Principles in Action\n\n\nTraditional Approach \nHeavy gridlines, excessive decoration\n\nTufte’s Approach \n\nMinimalist, data-focused design\n\n\n\n\nPrinciple: Maximize the data-ink ratio - every mark should represent data"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
     "href": "weeks/week-1/design-principles-presentation.html#chart-junk---what-not-to-do",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Chart Junk - What Not to Do",
-    "text": "Chart Junk - What Not to Do\n\n\n\n\n\n\n\nWarning\n\n\nChart Junk: Visual elements that distract from the data\n\nUnnecessary 3D effects\nDecorative images\n\nExcessive colors\nHeavy borders and gridlines\nMoiré patterns and visual noise"
+    "text": "Chart Junk - What Not to Do\n\n\n\n\n\n\n\n\n\n\n\nChart Junk: Visual elements that distract from the data\n\nUnnecessary 3D effects\nDecorative images\n\nExcessive colors\nHeavy borders and gridlines\nMoiré patterns and visual noise"
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#before-and-after---redesign-example",
@@ -667,14 +667,14 @@
     "href": "weeks/week-1/design-principles-presentation.html#key-takeaways-for-week-1",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Key Takeaways for Week 1",
-    "text": "Key Takeaways for Week 1\n\nYour visualization design checklist\n\n🎯 Purpose: Does your chart serve a clear analytical goal?\n📊 Data: Does your visualization accurately represent the data?\n👁️ Clarity: Can viewers understand the message quickly?\n✂️ Simplicity: Have you removed unnecessary elements?\n🎨 Aesthetics: Is the design professional and appropriate?\n🔄 Iteration: Have you tested and refined your design?\n\n\nRemember: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles."
+    "text": "Key Takeaways for Week 1\n\nYour visualization design checklist\n\n\n🎯 Purpose: Does your chart serve a clear analytical goal?\n📊 Data: Does your visualization accurately represent the data?\n👁️ Clarity: Can viewers understand the message quickly?\n✂️ Simplicity: Have you removed unnecessary elements?\n🎨 Aesthetics: Is the design professional and appropriate?\n🔄 Iteration: Have you tested and refined your design?\n\n\n\nRemember: Good visualization design is both art and science - it requires understanding your data, your audience, and your design principles."
   },
   {
     "objectID": "weeks/week-1/design-principles-presentation.html#next-steps",
     "href": "weeks/week-1/design-principles-presentation.html#next-steps",
     "title": "Data Visualization: Design Principles and Processes",
     "section": "Next Steps",
-    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1\n💻 Practice: Complete the Data visualization and communication excercise\n\n\n\n\n\n\nResources\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 15:00-17:00"
+    "text": "Next Steps\n📚 For next week: Read Tufte Chapter 1 and Cairo Introduction and Chapter 1\n💻 Practice: Complete the Data visualization and communication excercise\n\n\n\n\n\n\nTipResources\n\n\n\n\nCourse GitHub: github.com/simoneSantoni/data-viz-smm635\nDesign principles checklist in Moodle\nOffice hours: Wednesdays 15:00-17:00"
   },
   {
     "objectID": "weeks/cd ../main.html",
@@ -1386,8 +1386,8 @@
     "objectID": "weeks/week-2/gog_and_visual_forms.html#todays-journey",
     "href": "weeks/week-2/gog_and_visual_forms.html#todays-journey",
     "title": "Design Variables and the Grammar of Graphics",
-    "section": "Today’s Journey",
-    "text": "Today’s Journey\n\n\nPart 1: Grammar of Graphics\n\nFramework & Philosophy\nCore Components\nBuilding Blocks\n\n\nPart 2: Visual Forms\n\nUnivariate Charts\nBivariate Charts\n\nMultivariate Charts"
+    "section": "",
+    "text": "Part 1: Grammar of Graphics\n\nFramework & Philosophy\nCore Components\nBuilding Blocks\n\n\nPart 2: Visual Forms\n\nUnivariate Charts\nBivariate Charts\n\nMultivariate Charts"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#learning-objectives",
@@ -1401,7 +1401,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#part-1-grammar-of-graphics",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Part 1: Grammar of Graphics",
-    "text": "Part 1: Grammar of Graphics\nMoving Beyond Chart Types"
+    "text": "Part 1: Grammar of Graphics\n\nMoving Beyond Chart Types"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart",
@@ -1415,7 +1415,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#how-do-we-describe-a-chart-1",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "How Do We Describe a Chart?",
-    "text": "How Do We Describe a Chart?\n\n\nTraditional Approach:\n\nPie chart\nBar chart\nLine chart\nScatter plot\n\n\n\n\n\n\n\nNote\n\n\nWe can use labels or conceptual categories\n\n\n\n\nGrammar Approach:\n\nData\nAesthetics\nGeometries\nScales\nCoordinates\n\n\n\n\n\n\n\nNote\n\n\nWe can refer to a chart’s constitutive components"
+    "text": "How Do We Describe a Chart?\n\n\nTraditional Approach:\n\nPie chart\nBar chart\nLine chart\nScatter plot\n\n\n\n\n\n\n\nWe can use labels or conceptual categories\n\n\n\n\nGrammar Approach:\n\nData\nAesthetics\nGeometries\nScales\nCoordinates\n\n\n\n\n\n\n\nWe can refer to a chart’s constitutive components"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#what-is-grammar-of-graphics-gog",
@@ -1436,7 +1436,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#the-power-of-gog",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "The Power of GoG",
-    "text": "The Power of GoG\n\n# Traditional thinking\nmake_pie_chart(data)\nmake_bar_chart(data)\n\n# Grammar thinking\nggplot(data) +\n  geom_bar() +\n  coord_polar()  # Bar chart → Pie chart!\n\n\n\n\n\n\n\nImportant\n\n\nA pie chart is just a stacked bar chart in polar coordinates! 🤯"
+    "text": "The Power of GoG\n\n# Traditional thinking\nmake_pie_chart(data)\nmake_bar_chart(data)\n\n# Grammar thinking\nggplot(data) +\n  geom_bar() +\n  coord_polar()  # Bar chart → Pie chart!\n\n\n\n\n\n\n\nA pie chart is just a stacked bar chart in polar coordinates! 🤯"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#a-bar-chart",
@@ -1464,14 +1464,14 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#data-the-foundation",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "1. Data: The Foundation",
-    "text": "1. Data: The Foundation\n\n\n\n# Data is structured information\nsales_data &lt;- data.frame(\n  month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\"),\n  revenue = c(45000, 52000, 48000, 61000),\n  region = c(\"North\", \"North\", \"South\", \"South\")\n)\n\n\n\n\n\n\n\nTip\n\n\nGood visualization starts with well-structured data\nTidyverse is your friend!"
+    "text": "1. Data: The Foundation\n\n\n\n# Data is structured information\nsales_data &lt;- data.frame(\n  month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\"),\n  revenue = c(45000, 52000, 48000, 61000),\n  region = c(\"North\", \"North\", \"South\", \"South\")\n)\n\n\n\n\n\n\n\nGood visualization starts with well-structured data\nTidyverse is your friend!"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#aesthetics-visual-mappings",
     "href": "weeks/week-2/gog_and_visual_forms.html#aesthetics-visual-mappings",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "2. Aesthetics: Visual Mappings",
-    "text": "2. Aesthetics: Visual Mappings\nMapping Data → Visual Properties\n\n\n\n\n\nData Variables\n\n\n\nContinuous values\nCategories\nOrdered factors\nTime series\n\n\n\n\n\n\n\n\nVisual Variables\n\n\n\nPosition (x, y)\nSize\nColor\nShape\nTransparency\nLine type"
+    "text": "2. Aesthetics: Visual Mappings\n\nMapping Data → Visual Properties\n\n\n\n\n\n\n\n\nNoteData Variables\n\n\n\n\nContinuous values\nCategories\nOrdered factors\nTime series\n\n\n\n\n\n\n\n\n\n\nTipVisual Variables\n\n\n\n\nPosition (x, y)\nSize\nColor\nShape\nTransparency\nLine type"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#visual-variables-in-action",
@@ -1492,28 +1492,28 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#facets-small-multiples",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "4. Facets: Small Multiples",
-    "text": "4. Facets: Small Multiples\n\nNo FacetsFacet WrapFacet with Free Scales\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point()\n\n\n\n\n\n\n\nNote\n\n\nAll data in a single plot\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  facet_wrap(~region)\n\n\n\n\n\n\n\nNote\n\n\nCreates separate panels for each region\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = profit)) +\n  geom_point() +\n  facet_wrap(~region, scales = \"free_y\")\n\n\n\n\n\n\n\nNote\n\n\nIndependent y-axis scales per facet"
+    "text": "4. Facets: Small Multiples\n\nNo FacetsFacet WrapFacet with Free Scales\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point()\n\n\n\n\n\n\n\nAll data in a single plot\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  facet_wrap(~region)\n\n\n\n\n\n\n\nCreates separate panels for each region\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = profit)) +\n  geom_point() +\n  facet_wrap(~region, scales = \"free_y\")\n\n\n\n\n\n\n\nIndependent y-axis scales per facet"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#statistics-transforming-data",
     "href": "weeks/week-2/gog_and_visual_forms.html#statistics-transforming-data",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "5. Statistics: Transforming Data",
-    "text": "5. Statistics: Transforming Data\n\nRaw DataSmooth TrendSummary Statistics\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\n\n\n\n\n\n\nNote\n\n\nNo statistical transformation\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\nNote\n\n\nAdds linear regression line with confidence interval\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_point() +\n  stat_summary(fun = mean, geom = \"point\", color = \"red\")\n\n\n\n\n\n\n\nNote\n\n\nCalculates and displays mean values"
+    "text": "5. Statistics: Transforming Data\n\nRaw DataSmooth TrendSummary Statistics\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point()\n\n\n\n\n\n\n\nNo statistical transformation\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\nAdds linear regression line with confidence interval\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_point() +\n  stat_summary(fun = mean, geom = \"point\", color = \"red\")\n\n\n\n\n\n\n\nCalculates and displays mean values"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
     "href": "weeks/week-2/gog_and_visual_forms.html#coordinates-the-canvas",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "6. Coordinates: The Canvas",
-    "text": "6. Coordinates: The Canvas\n\nCartesian (default)FlippedPolar\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_cartesian()\n\n\n\n\n\n\n\nNote\n\n\nThe standard x-y coordinate system\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip()\n\n\n\n\n\n\n\nNote\n\n\nSwaps x and y axes for horizontal bars\n\n\n\n\n\n\nggplot(sample_data, aes(x = \"\", y = sales, fill = region)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\") + \n  theme_void()\n\n\n\n\n\n\n\nNote\n\n\nTransforms to polar coordinates (e.g., pie charts)"
+    "text": "6. Coordinates: The Canvas\n\nCartesian (default)FlippedPolar\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_cartesian()\n\n\n\n\n\n\n\nThe standard x-y coordinate system\n\n\n\n\n\n\nggplot(sample_data, aes(x = region, y = sales)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip()\n\n\n\n\n\n\n\nSwaps x and y axes for horizontal bars\n\n\n\n\n\n\nggplot(sample_data, aes(x = \"\", y = sales, fill = region)) +\n  geom_bar(stat = \"identity\") +\n  coord_polar(theta = \"y\") + \n  theme_void()\n\n\n\n\n\n\n\nTransforms to polar coordinates (e.g., pie charts)"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
     "href": "weeks/week-2/gog_and_visual_forms.html#themes-overall-visual-appearance",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "7. Themes: Overall Visual Appearance",
-    "text": "7. Themes: Overall Visual Appearance\n\ntheme_minimal()theme_bw()theme_classic()Custom Theme\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal()\n\n\n\n\n\n\n\nNote\n\n\nClean, minimal design\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_bw()\n\n\n\n\n\n\n\nNote\n\n\nBlack and white with borders\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_classic()\n\n\n\n\n\n\n\nNote\n\n\nClassic look with axis lines only\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal() +\n  theme(panel.grid.major = element_line(color = \"gray80\"),\n        panel.grid.minor = element_blank(),\n        legend.position = \"bottom\")"
+    "text": "7. Themes: Overall Visual Appearance\n\ntheme_minimal()theme_bw()theme_classic()Custom Theme\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal()\n\n\n\n\n\n\n\nClean, minimal design\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_bw()\n\n\n\n\n\n\n\nBlack and white with borders\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_classic()\n\n\n\n\n\n\n\nClassic look with axis lines only\n\n\n\n\n\n\nggplot(sample_data, aes(x = date, y = sales, color = region)) +\n  geom_point() +\n  theme_minimal() +\n  theme(panel.grid.major = element_line(color = \"gray80\"),\n        panel.grid.minor = element_blank(),\n        legend.position = \"bottom\")"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#building-complex-from-simple",
@@ -1527,21 +1527,21 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#layering-the-power-of-composition",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Layering: The Power of Composition",
-    "text": "Layering: The Power of Composition\n\nggplot(economics, aes(date, unemploy)) +\n  geom_area(alpha = 0.3) +           # Layer 1: Area\n  geom_line(size = 1.2) +            # Layer 2: Line\n  geom_smooth(se = FALSE, col = \"red\") # Layer 3: Trend\n\n\n\n\n\n\n\nNote\n\n\nEach layer adds information without obscuring previous layers"
+    "text": "Layering: The Power of Composition\n\nggplot(economics, aes(date, unemploy)) +\n  geom_area(alpha = 0.3) +           # Layer 1: Area\n  geom_line(size = 1.2) +            # Layer 2: Line\n  geom_smooth(se = FALSE, col = \"red\") # Layer 3: Trend\n\n\n\n\n\n\n\nEach layer adds information without obscuring previous layers"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#part-2-visual-forms",
     "href": "weeks/week-2/gog_and_visual_forms.html#part-2-visual-forms",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Part 2: Visual Forms",
-    "text": "Part 2: Visual Forms\nFrom Simple to Complex"
+    "text": "Part 2: Visual Forms\n\nFrom Simple to Complex"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-charts",
     "href": "weeks/week-2/gog_and_visual_forms.html#univariate-charts",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Univariate Charts",
-    "text": "Univariate Charts\nExploring Single Variables\n\n\n\n\n\nContinuous Data\n\n\n\nHistograms\nDensity plots\nBox plots\nViolin plots\n\n\n\n\n\n\n\n\nCategorical Data\n\n\n\nBar charts\nPie charts\nWaffle charts\nDot plots"
+    "text": "Univariate Charts\n\nExploring Single Variables\n\n\n\n\n\n\n\n\nNoteContinuous Data\n\n\n\n\nHistograms\nDensity plots\nBox plots\nViolin plots\n\n\n\n\n\n\n\n\n\n\nTipCategorical Data\n\n\n\n\nBar charts\nPie charts\nWaffle charts\nDot plots"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#univariate-continuous-data",
@@ -1562,7 +1562,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#bivariate-charts",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Bivariate Charts",
-    "text": "Bivariate Charts\nExploring Relationships Between Two Variables\n\n\n\nX Variable\nY Variable\nBest Chart Types\n\n\n\n\nContinuous\nContinuous\nScatter plot, Line chart\n\n\nContinuous\nCategorical\nBox plot, Violin plot\n\n\nCategorical\nCategorical\nHeatmap, Grouped bars\n\n\nTime\nContinuous\nLine chart, Area chart"
+    "text": "Bivariate Charts\n\nExploring Relationships Between Two Variables\n\n\n\nX Variable\nY Variable\nBest Chart Types\n\n\n\n\nContinuous\nContinuous\nScatter plot, Line chart\n\n\nContinuous\nCategorical\nBox plot, Violin plot\n\n\nCategorical\nCategorical\nHeatmap, Grouped bars\n\n\nTime\nContinuous\nLine chart, Area chart"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#bivariate-continuous-continuous",
@@ -1583,7 +1583,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-charts",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Multivariate Charts",
-    "text": "Multivariate Charts\nBeyond Two Dimensions\nStrategies for encoding multiple variables:\n\nColor/Fill: 3rd dimension\nSize: 4th dimension\n\nShape: 5th dimension (categorical only)\nFaceting: Create small multiples\nAnimation: Time as dimension"
+    "text": "Multivariate Charts\n\nBeyond Two Dimensions\nStrategies for encoding multiple variables:\n\nColor/Fill: 3rd dimension\nSize: 4th dimension\n\nShape: 5th dimension (categorical only)\nFaceting: Create small multiples\nAnimation: Time as dimension"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset",
@@ -1597,7 +1597,7 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#multivariate-example-the-economics-dataset-1",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Multivariate Example: The Economics Dataset",
-    "text": "Multivariate Example: The Economics Dataset\n\n\n\n\n\n\nNote\n\n\nDataset Variables:\n\ndate: Month of data collection\npce: Personal consumption expenditures (billions USD)\npop: Total population (thousands)\npsavert: Personal savings rate (%)\nuempmed: Median duration of unemployment (weeks)\nunemploy: Number of unemployed (thousands)"
+    "text": "Multivariate Example: The Economics Dataset\n\n\n\n\n\n\nDataset Variables:\n\ndate: Month of data collection\npce: Personal consumption expenditures (billions USD)\npop: Total population (thousands)\npsavert: Personal savings rate (%)\nuempmed: Median duration of unemployment (weeks)\nunemploy: Number of unemployed (thousands)"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#multivariate-example",
@@ -1618,35 +1618,35 @@
     "href": "weeks/week-2/gog_and_visual_forms.html#best-practices-for-multivariate",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Best Practices for Multivariate",
-    "text": "Best Practices for Multivariate\n\nStart simple: Add dimensions gradually\nPrioritize: Most important variables get best encodings\nTest perception: Can viewers decode all dimensions?\nConsider alternatives: Sometimes multiple simple charts &gt; one complex chart\nInteractive solutions: Tooltips, filtering, zooming"
+    "text": "Best Practices for Multivariate\n\n\nStart simple: Add dimensions gradually\nPrioritize: Most important variables get best encodings\nTest perception: Can viewers decode all dimensions?\nConsider alternatives: Sometimes multiple simple charts &gt; one complex chart\nInteractive solutions: Tooltips, filtering, zooming"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#putting-it-all-together",
     "href": "weeks/week-2/gog_and_visual_forms.html#putting-it-all-together",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Putting It All Together",
-    "text": "Putting It All Together\nA Practical Workflow\n\n\n\n\n\n\nTip\n\n\n\nUnderstand your data\n\nTypes of variables\nRelationships to explore\n\nChoose appropriate forms\n\nMatch chart to data type\nConsider your message\n\nApply the grammar\n\nMap variables to aesthetics\nLayer geometries\nRefine with scales"
+    "text": "Putting It All Together\n\nA Practical Workflow\n\n\n\n\n\n\n\nUnderstand your data\n\nTypes of variables\nRelationships to explore\n\nChoose appropriate forms\n\nMatch chart to data type\nConsider your message\n\nApply the grammar\n\nMap variables to aesthetics\nLayer geometries\nRefine with scales"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#key-takeaways",
     "href": "weeks/week-2/gog_and_visual_forms.html#key-takeaways",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Key Takeaways",
-    "text": "Key Takeaways\n\n📊 The Grammar of Graphics provides a systematic framework for creating any visualization\n🔧 Complex visualizations are built from simple, reusable components\n🎨 Visual variables (position, size, color, etc.) are tools for encoding information\n📈 Choose chart types based on data types and relationships\n🔄 Iteration and layering lead to rich, informative graphics"
+    "text": "Key Takeaways\n\n\n📊 The Grammar of Graphics provides a systematic framework for creating any visualization\n🔧 Complex visualizations are built from simple, reusable components\n🎨 Visual variables (position, size, color, etc.) are tools for encoding information\n📈 Choose chart types based on data types and relationships\n🔄 Iteration and layering lead to rich, informative graphics"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#next-week",
     "href": "weeks/week-2/gog_and_visual_forms.html#next-week",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Next Week",
-    "text": "Next Week\nTopic 3: Exploratory Data Analysis\n\nEDA workflow and visualization\nDistribution visualization techniques\n\nCorrelation and relationship exploration\nTime series exploration\nCase Study: Nomis Solutions\n\nHomework\n\nPractice creating layered visualizations\nExperiment with different coordinate systems\nRead: Wickham’s “Layered Grammar of Graphics”"
+    "text": "Next Week\n\nTopic 3: Exploratory Data Analysis\n\nEDA workflow and visualization\nDistribution visualization techniques\n\nCorrelation and relationship exploration\nTime series exploration\nCase Study: Nomis Solutions\n\n\n\nHomework\n\nPractice creating layered visualizations\nExperiment with different coordinate systems\nRead: Wickham’s “Layered Grammar of Graphics”"
   },
   {
     "objectID": "weeks/week-2/gog_and_visual_forms.html#questions",
     "href": "weeks/week-2/gog_and_visual_forms.html#questions",
     "title": "Design Variables and the Grammar of Graphics",
     "section": "Questions?",
-    "text": "Questions?\nLet’s explore the grammar together!\n📧 Simone.Santoni.1@city.ac.uk\n🌐 Course website: https://simonesantoni.github.io/data-viz-smm635\n💬 Office hours: Wednesdays 3-5 PM"
+    "text": "Questions?\n\nLet’s explore the grammar together!\n📧 Simone.Santoni.1@city.ac.uk\n🌐 Course website: https://simonesantoni.github.io/data-viz-smm635\n💬 Office hours: Wednesdays 3-5 PM"
   },
   {
     "objectID": "weeks/week-2/practice_1.html",
@@ -1723,7 +1723,7 @@
     "href": "weeks/week-2/practice_3.html#faceting-vs-patchwork-when-to-use-which",
     "title": "Faceting and Multi-Panel Layouts with ggplot2",
     "section": "Faceting vs Patchwork: When to Use Which?",
-    "text": "Faceting vs Patchwork: When to Use Which?\n\n\n\n\n\n\n\n\nFeature\nfacet_wrap / facet_grid\npatchwork\n\n\n\n\nUse case\nSame plot type, same variables, different subgroups\nDifferent plot types, different variables, or different data\n\n\nData source\nSingle data frame\nMultiple data frames or sources\n\n\nAesthetics\nShared across all panels\nIndependent per plot\n\n\nScales\nCan be fixed or freed\nFully independent\n\n\nLayout\nRegular grid\nFlexible, asymmetric layouts\n\n\nLegends\nAutomatically unified\nCan be collected or kept separate\n\n\nAnnotations\nStandard ggplot2 labels\nAdvanced with plot_annotation()\n\n\n\n\n\n\n\n\n\nBest Practices\n\n\n\n\nUse faceting when exploring how a single relationship varies across categories\nUse patchwork when combining conceptually different visualizations into a dashboard\nCombine both: Facet individual plots, then use patchwork to arrange them"
+    "text": "Faceting vs Patchwork: When to Use Which?\n\n\n\n\n\n\n\n\nFeature\nfacet_wrap / facet_grid\npatchwork\n\n\n\n\nUse case\nSame plot type, same variables, different subgroups\nDifferent plot types, different variables, or different data\n\n\nData source\nSingle data frame\nMultiple data frames or sources\n\n\nAesthetics\nShared across all panels\nIndependent per plot\n\n\nScales\nCan be fixed or freed\nFully independent\n\n\nLayout\nRegular grid\nFlexible, asymmetric layouts\n\n\nLegends\nAutomatically unified\nCan be collected or kept separate\n\n\nAnnotations\nStandard ggplot2 labels\nAdvanced with plot_annotation()\n\n\n\n\n\n\n\n\n\nTipBest Practices\n\n\n\n\nUse faceting when exploring how a single relationship varies across categories\nUse patchwork when combining conceptually different visualizations into a dashboard\nCombine both: Facet individual plots, then use patchwork to arrange them"
   },
   {
     "objectID": "weeks/week-2/practice_3.html#example-complete-analysis-dashboard",
@@ -1737,14 +1737,14 @@
     "href": "weeks/week-2/practice_3.html#summary",
     "title": "Faceting and Multi-Panel Layouts with ggplot2",
     "section": "Summary",
-    "text": "Summary\nThis document demonstrated:\n\nfacet_wrap(): For wrapping panels in a ribbon\nfacet_grid(): For creating rectangular grids\nPatchwork operators: + (side-by-side), / (stacked), | (compose)\nplot_layout(): Fine control over dimensions and arrangement\nplot_annotation(): Adding titles, tags, and themes\nCollecting guides: Unifying legends across plots\n\n\n\n\n\n\n\nFurther Learning\n\n\n\n\nPatchwork GitHub\nPatchwork documentation\nggplot2 book on faceting"
+    "text": "Summary\nThis document demonstrated:\n\nfacet_wrap(): For wrapping panels in a ribbon\nfacet_grid(): For creating rectangular grids\nPatchwork operators: + (side-by-side), / (stacked), | (compose)\nplot_layout(): Fine control over dimensions and arrangement\nplot_annotation(): Adding titles, tags, and themes\nCollecting guides: Unifying legends across plots\n\n\n\n\n\n\n\nImportantFurther Learning\n\n\n\n\nPatchwork GitHub\nPatchwork documentation\nggplot2 book on faceting"
   },
   {
     "objectID": "weeks/week-3/main.html",
     "href": "weeks/week-3/main.html",
     "title": "Week 3",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Review Grammar of Graphics materials from Week 2\n📖 Notes on the nature, scope, objectives, criticalities, and examples of EDA",
+    "text": "Note📚 Prepare\n\n\n\n📖 Review Grammar of Graphics materials from Week 2\n📖 Notes on the nature, scope, objectives, criticalities, and examples of EDA",
     "crumbs": [
       "Weekly materials",
       "Week 3"
@@ -1755,7 +1755,7 @@
     "href": "weeks/week-3/main.html#prepare",
     "title": "Week 3",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Review Grammar of Graphics materials from Week 2\n📖 Notes on the nature, scope, objectives, criticalities, and examples of EDA",
+    "text": "Note📚 Prepare\n\n\n\n📖 Review Grammar of Graphics materials from Week 2\n📖 Notes on the nature, scope, objectives, criticalities, and examples of EDA",
     "crumbs": [
       "Weekly materials",
       "Week 3"
@@ -1766,7 +1766,7 @@
     "href": "weeks/week-3/main.html#participate",
     "title": "Week 3",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\n👥 Participate\n\n\n\n📖 No slideshows this week",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📖 No slideshows this week",
     "crumbs": [
       "Weekly materials",
       "Week 3"
@@ -1777,7 +1777,7 @@
     "href": "weeks/week-3/main.html#practice",
     "title": "Week 3",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\n💻 Practice\n\n\n\n🧮 No practice sessions this week",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 No practice sessions this week",
     "crumbs": [
       "Weekly materials",
       "Week 3"
@@ -1788,7 +1788,7 @@
     "href": "weeks/week-3/main.html#perform",
     "title": "Week 3",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Analyze the Nomis Solutions A and B case study using visualization-driven exploration (refer to the case studies section of SMM635’s Moodle page).\n💡 Resources on how to discuss business case studies: The Case Method",
+    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\n✏️ Analyze the Nomis Solutions A and B case study using visualization-driven exploration (refer to the case studies section of SMM635’s Moodle page).\n💡 Resources on how to discuss business case studies: The Case Method",
     "crumbs": [
       "Weekly materials",
       "Week 3"
@@ -1810,7 +1810,7 @@
     "href": "weeks/week-4/main.html",
     "title": "Week 4",
     "section": "",
-    "text": "📚 Readings\n\n\n\n📖 Read chapter 7 (“Maps”) and 8 (“Time-dependent graphs”) from Modern Data Visualization with R",
+    "text": "Note📚 Readings\n\n\n\n📖 Read chapter 7 (“Maps”) and 8 (“Time-dependent graphs”) from Modern Data Visualization with R",
     "crumbs": [
       "Weekly materials",
       "Week 4"
@@ -1821,7 +1821,7 @@
     "href": "weeks/week-4/main.html#prepare",
     "title": "Week 4",
     "section": "",
-    "text": "📚 Readings\n\n\n\n📖 Read chapter 7 (“Maps”) and 8 (“Time-dependent graphs”) from Modern Data Visualization with R",
+    "text": "Note📚 Readings\n\n\n\n📖 Read chapter 7 (“Maps”) and 8 (“Time-dependent graphs”) from Modern Data Visualization with R",
     "crumbs": [
       "Weekly materials",
       "Week 4"
@@ -1832,7 +1832,7 @@
     "href": "weeks/week-4/main.html#participate",
     "title": "Week 4",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\n📊 Slideshow\n\n\n\nWe will focus on the case materials this week. No slideshow will be used.",
+    "text": "Participate\n\n\n\n\n\n\nNote📊 Slideshow\n\n\n\nWe will focus on the case materials this week. No slideshow will be used.",
     "crumbs": [
       "Weekly materials",
       "Week 4"
@@ -1843,7 +1843,7 @@
     "href": "weeks/week-4/main.html#practice",
     "title": "Week 4",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\n💻 Specialized libraries\n\n\n\n🧮 Maps: Demonstration of R’s library ggmap\n🧮 Time-series: Demonstration of R’s library ggseries",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Specialized libraries\n\n\n\n🧮 Maps: Demonstration of R’s library ggmap\n🧮 Time-series: Demonstration of R’s library ggseries",
     "crumbs": [
       "Weekly materials",
       "Week 4"
@@ -1854,7 +1854,7 @@
     "href": "weeks/week-4/main.html#perform",
     "title": "Week 4",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Address the case study Saving Lives with Data Visualizations (A): Charts in the Time of Cholera (available in Moodle’s case studies area). The companion dataset to the case is available in the data/ dir of the GitHub repo of the module.\n💡 Focus on analyzing how effective visualization design principles apply to public health data and crisis communication.",
+    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\n✏️ Address the case study Saving Lives with Data Visualizations (A): Charts in the Time of Cholera (available in Moodle’s case studies area). The companion dataset to the case is available in the data/ dir of the GitHub repo of the module.\n💡 Focus on analyzing how effective visualization design principles apply to public health data and crisis communication.",
     "crumbs": [
       "Weekly materials",
       "Week 4"
@@ -1865,7 +1865,7 @@
     "href": "weeks/week-4/main.html#ponder",
     "title": "Week 4",
     "section": "Ponder",
-    "text": "Ponder\n\n\n\n\n\n\n🛣️ Extra mile\n\n\n\n👓 Supplemental readings: Tufte, E. R. (1997). [The Visual Display of Quantitative Information][]. Graphics Press.\n🤔 Self-Reflection Exercise: What are the opportunities and challenges in visualizing multidimensional datasets that include temporal and geographic aspects? Consider how design choices impact comprehension and decision-making in complex data scenarios and contingent on audiences’ background.",
+    "text": "Ponder\n\n\n\n\n\n\nNote🛣️ Extra mile\n\n\n\n👓 Supplemental readings: Tufte, E. R. (1997). [The Visual Display of Quantitative Information][]. Graphics Press.\n🤔 Self-Reflection Exercise: What are the opportunities and challenges in visualizing multidimensional datasets that include temporal and geographic aspects? Consider how design choices impact comprehension and decision-making in complex data scenarios and contingent on audiences’ background.",
     "crumbs": [
       "Weekly materials",
       "Week 4"
@@ -1876,7 +1876,7 @@
     "href": "weeks/week-5/main.html",
     "title": "Week 5",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Review Exploratory Data Analysis materials from Week 3\n📖 Read the Crop Residue Management case study (available in Moodle, “Case studies” section)",
+    "text": "Note📚 Prepare\n\n\n\n📖 Review Exploratory Data Analysis materials from Week 3\n📖 Read the Crop Residue Management case study (available in Moodle, “Case studies” section)",
     "crumbs": [
       "Weekly materials",
       "Week 5"
@@ -1887,7 +1887,7 @@
     "href": "weeks/week-5/main.html#prepare",
     "title": "Week 5",
     "section": "",
-    "text": "📚 Prepare\n\n\n\n📖 Review Exploratory Data Analysis materials from Week 3\n📖 Read the Crop Residue Management case study (available in Moodle, “Case studies” section)",
+    "text": "Note📚 Prepare\n\n\n\n📖 Review Exploratory Data Analysis materials from Week 3\n📖 Read the Crop Residue Management case study (available in Moodle, “Case studies” section)",
     "crumbs": [
       "Weekly materials",
       "Week 5"
@@ -1898,7 +1898,7 @@
     "href": "weeks/week-5/main.html#participate",
     "title": "Week 5",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\n👥 Participate\n\n\n\n📊 Case Discussion Presentation - Understanding the challenge of crop residue burning in India and alternatives for sustainable practices\n📊 Teaching Summary: Data Visualization & Storytelling - Comprehensive guide on using data storytelling techniques with the CRM case",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Case Discussion Presentation - Understanding the challenge of crop residue burning in India and alternatives for sustainable practices\n📊 Teaching Summary: Data Visualization & Storytelling - Comprehensive guide on using data storytelling techniques with the CRM case",
     "crumbs": [
       "Weekly materials",
       "Week 5"
@@ -1909,7 +1909,7 @@
     "href": "weeks/week-5/main.html#practice",
     "title": "Week 5",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\n💻 Practice\n\n\n\n🧮 Introduction to data storytelling principles\n🧮 Building effective narratives with data visualization",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 Introduction to data storytelling principles\n🧮 Building effective narratives with data visualization",
     "crumbs": [
       "Weekly materials",
       "Week 5"
@@ -1920,7 +1920,7 @@
     "href": "weeks/week-5/main.html#perform",
     "title": "Week 5",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\n📝 Perform\n\n\n\n✏️ Exploratory Data Analysis on CRM Dataset (R/tidyverse) - Analyze the Crop Residue Management survey data to uncover insights about farmer adoption of sustainable practices\n✏️ Exploratory Data Analysis on CRM Dataset (Python/pandas) - Same analysis using Python, pandas, and matplotlib\n💡 Resources on data storytelling: The Seven Basic Data Stories",
+    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\n✏️ Exploratory Data Analysis on CRM Dataset (R/tidyverse) - Analyze the Crop Residue Management survey data to uncover insights about farmer adoption of sustainable practices\n✏️ Exploratory Data Analysis on CRM Dataset (Python/pandas) - Same analysis using Python, pandas, and matplotlib\n💡 Resources on data storytelling: The Seven Basic Data Stories",
     "crumbs": [
       "Weekly materials",
       "Week 5"
@@ -1977,7 +1977,7 @@
     "href": "weeks/week-5/perform_1_python.html#exploratory-data-analysis",
     "title": "Exploratory Data Analysis: Crop Residue Management (Python)",
     "section": "Exploratory Data Analysis",
-    "text": "Exploratory Data Analysis\n\nOverview of Data Collection\n\n# Overall summary\nprint(\"Dataset Overview\")\nprint(\"=\" * 50)\nprint(f\"Total farmers surveyed: {len(df)}\")\nprint(f\"States covered: {df['state'].nunique()}\")\nprint(f\"Districts covered: {df['district'].nunique()}\")\nprint(f\"Total land area (acres): {df['land'].sum():.1f}\")\nprint(f\"Average farm size (acres): {df['land'].mean():.2f}\")\nprint(f\"Median farm size (acres): {df['land'].median():.1f}\")\n\n\n\nDistribution of Farm Sizes\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Histogram of land sizes\naxes[0].hist(df['land'], bins=30, color='#4575b4', alpha=0.7, edgecolor='black')\naxes[0].set_xlabel('Land Size (acres)')\naxes[0].set_ylabel('Number of Farmers')\naxes[0].set_title('Distribution of Farm Sizes')\naxes[0].grid(True, alpha=0.3)\n\n# Box plot by state\nstate_data = [df[df['state'] == state]['land'].dropna() for state in df['state'].cat.categories]\nbp = axes[1].boxplot(state_data, labels=df['state'].cat.categories,\n                      patch_artist=True, vert=False)\nfor patch, color in zip(bp['boxes'], colors_state):\n    patch.set_facecolor(color)\n    patch.set_alpha(0.7)\naxes[1].set_xlabel('Land Size (acres)')\naxes[1].set_ylabel('State')\naxes[1].set_title('Farm Size Distribution by State')\naxes[1].grid(True, alpha=0.3, axis='x')\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\nKey Insight\n\n\n\nMost farmers have land holdings under 20 acres, with several outliers owning larger farms. Punjab has a larger sample of farmers in this dataset compared to Haryana.\n\n\n\n\nGeographic Distribution\n\n# Farmers by state\nstate_summary = df.groupby('state').agg({\n    'farmer_id': 'count',\n    'land': ['sum', 'mean']\n}).round(1)\nstate_summary.columns = ['n_farmers', 'total_land', 'avg_land']\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Bar chart for number of farmers by state\naxes[0].bar(state_summary.index, state_summary['n_farmers'],\n            color=colors_state, alpha=0.7, edgecolor='black')\nfor i, (idx, row) in enumerate(state_summary.iterrows()):\n    axes[0].text(i, row['n_farmers'] + 20, str(int(row['n_farmers'])),\n                 ha='center', fontweight='bold')\naxes[0].set_xlabel('State')\naxes[0].set_ylabel('Number of Farmers')\naxes[0].set_title('Number of Farmers by State')\naxes[0].grid(True, alpha=0.3, axis='y')\n\n# Farmers by district\ndistrict_summary = df.groupby(['state', 'district']).agg({\n    'farmer_id': 'count',\n    'land': 'sum'\n}).reset_index()\ndistrict_summary.columns = ['state', 'district', 'n_farmers', 'total_land']\ndistrict_summary = district_summary.sort_values('n_farmers')\n\n# Create color mapping for states\nstate_colors = {state: color for state, color in zip(df['state'].cat.categories, colors_state)}\nbar_colors = [state_colors[state] for state in district_summary['state']]\n\naxes[1].barh(range(len(district_summary)), district_summary['n_farmers'],\n             color=bar_colors, alpha=0.7, edgecolor='black')\naxes[1].set_yticks(range(len(district_summary)))\naxes[1].set_yticklabels(district_summary['district'])\naxes[1].set_xlabel('Number of Farmers')\naxes[1].set_ylabel('District')\naxes[1].set_title('Farmer Participation by District')\naxes[1].grid(True, alpha=0.3, axis='x')\n\n# Add text labels\nfor i, n in enumerate(district_summary['n_farmers']):\n    axes[1].text(n + 5, i, str(int(n)), va='center', fontsize=9)\n\n# Add legend for states\nlegend_elements = [Patch(facecolor=color, label=state, alpha=0.7)\n                  for state, color in state_colors.items()]\naxes[1].legend(handles=legend_elements, loc='lower right', title='State')\n\nplt.tight_layout()\nplt.show()\n\n\n\nCRM Practice Adoption\n\n# Create practice categories\ndf['practice_category'] = df['crm_type'].map({\n    'BURNING': 'Complete Burning',\n    'BOTH': 'Partial Burning',\n    'SUSTAINABLE': 'Sustainable Practices'\n})\n\n# Overall adoption summary\nadoption_summary = df['practice_category'].value_counts()\nadoption_pct = (adoption_summary / len(df) * 100).round(1)\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Pie chart\ncolors = [colors_practice[cat] for cat in adoption_summary.index]\nwedges, texts, autotexts = axes[0].pie(adoption_summary,\n                                        labels=adoption_summary.index,\n                                        colors=colors,\n                                        autopct='%1.1f%%',\n                                        startangle=90)\nfor autotext in autotexts:\n    autotext.set_color('white')\n    autotext.set_fontweight('bold')\naxes[0].set_title('Distribution of CRM Practices')\n\n# Stacked bar chart by state\nstate_practice = df.groupby(['state', 'practice_category']).size().unstack(fill_value=0)\nstate_practice_pct = state_practice.div(state_practice.sum(axis=1), axis=0) * 100\n\n# Order columns\ncol_order = ['Complete Burning', 'Partial Burning', 'Sustainable Practices']\nstate_practice_pct = state_practice_pct[col_order]\n\nstate_practice_pct.plot(kind='bar', stacked=True, ax=axes[1],\n                        color=[colors_practice[c] for c in col_order],\n                        alpha=0.8, edgecolor='black', width=0.6)\naxes[1].set_xlabel('State')\naxes[1].set_ylabel('Percentage of Farmers (%)')\naxes[1].set_title('CRM Practice Adoption by State')\naxes[1].legend(title='Practice Type', loc='upper left')\naxes[1].set_xticklabels(axes[1].get_xticklabels(), rotation=0)\naxes[1].grid(True, alpha=0.3, axis='y')\n\nplt.tight_layout()\nplt.show()\n\n# Print summary\nprint(\"\\nAdoption Summary:\")\nfor practice, count in adoption_summary.items():\n    pct = adoption_pct[practice]\n    print(f\"{practice}: {count} farmers ({pct}%)\")\n\n\n\n\n\n\n\nMajor Finding\n\n\n\nThe dataset shows that {python} f”{adoption_pct[‘Sustainable Practices’]:.1f}%“ of farmers have adopted sustainable practices, while {python} f”{adoption_pct.get(‘Complete Burning’, 0):.1f}%“ still engage in complete burning.\n\n\n\n\nDistrict-Level Analysis\n\n# Adoption by district (proportional)\ndistrict_practice = df.groupby(['district', 'practice_category']).size().unstack(fill_value=0)\ndistrict_practice_pct = district_practice.div(district_practice.sum(axis=1), axis=0) * 100\n\n# Order columns\ndistrict_practice_pct = district_practice_pct[col_order]\n\n# Create horizontal stacked bar chart\nfig, ax = plt.subplots(figsize=(12, 8))\n\ndistrict_practice_pct.plot(kind='barh', stacked=True, ax=ax,\n                           color=[colors_practice[c] for c in col_order],\n                           alpha=0.8, edgecolor='black')\nax.set_xlabel('Proportion of Farmers (%)')\nax.set_ylabel('District')\nax.set_title('Distribution of CRM Practices by District')\nax.legend(title='Practice Type', loc='lower right')\nax.grid(True, alpha=0.3, axis='x')\n\n# Format x-axis as percentage\nax.set_xlim(0, 100)\n\nplt.tight_layout()\nplt.show()\n\n\n\nDetailed Breakdown of Sustainable Practices\n\n# Filter for sustainable practices only\nsustainable_df = df[df['practice_category'] == 'Sustainable Practices']\n\n# Count which specific methods are used\nmethod_counts = pd.Series({\n    'Soil Incorporation': (sustainable_df['soil_incorporation'] == 1).sum(),\n    'Mulching': (sustainable_df['mulching'] == 1).sum(),\n    'Collection': (sustainable_df['collection'] == 1).sum(),\n    'Others': (sustainable_df['others'] == 1).sum()\n}).sort_values()\n\n# Create horizontal bar chart\nfig, ax = plt.subplots(figsize=(10, 6))\nbars = ax.barh(range(len(method_counts)), method_counts.values,\n               color='#1a9850', alpha=0.7, edgecolor='black')\nax.set_yticks(range(len(method_counts)))\nax.set_yticklabels(method_counts.index)\nax.set_xlabel('Number of Farmers Using This Method')\nax.set_ylabel('Method')\nax.set_title('Specific Sustainable Methods Used by Farmers\\nAmong farmers who adopted sustainable practices')\nax.grid(True, alpha=0.3, axis='x')\n\n# Add value labels\nfor i, v in enumerate(method_counts.values):\n    ax.text(v + 10, i, str(int(v)), va='center', fontweight='bold')\n\nplt.tight_layout()\nplt.show()\n\nprint(f\"\\nTotal farmers with sustainable practices: {len(sustainable_df)}\")\nprint(\"\\nNote: Farmers may use multiple methods simultaneously.\")\n\n\n\n\n\n\n\nPractice Patterns\n\n\n\nNote that farmers may use multiple methods. For example, a farmer might use both soil incorporation and mulching. The data uses binary indicators (0 or 1) for each method.\n\n\n\n\nFarmer Feedback Analysis\n\n# Prepare feedback data for sustainable practices only\nfeedback_cols = ['water_consumption', 'fertiliser_consumption',\n                 'pest_infestation', 'weed_infestation']\n\n# Create a melted dataframe for feedback\nfeedback_data = []\nfor col in feedback_cols:\n    col_data = sustainable_df[col].dropna()\n    for val in col_data:\n        feedback_data.append({\n            'feedback_type': col.replace('_', ' ').title(),\n            'feedback_value': val\n        })\n\nfeedback_df = pd.DataFrame(feedback_data)\n\n# Map values to labels\nfeedback_df['feedback_label'] = feedback_df['feedback_value'].map({\n    -1: 'Decreased',\n    0: 'No Change',\n    1: 'Increased'\n})\n\n# Calculate percentages\nfeedback_summary = feedback_df.groupby(['feedback_type', 'feedback_label']).size().unstack(fill_value=0)\nfeedback_pct = feedback_summary.div(feedback_summary.sum(axis=1), axis=0) * 100\n\n# Ensure column order\nlabel_order = ['Decreased', 'No Change', 'Increased']\nfeedback_pct = feedback_pct[[col for col in label_order if col in feedback_pct.columns]]\n\n# Create stacked bar chart\nfig, ax = plt.subplots(figsize=(12, 6))\n\nfeedback_colors = {\n    'Decreased': '#1a9850',\n    'No Change': '#ffffbf',\n    'Increased': '#d73027'\n}\n\nfeedback_pct.plot(kind='bar', stacked=True, ax=ax,\n                  color=[feedback_colors[c] for c in feedback_pct.columns],\n                  alpha=0.8, edgecolor='black', width=0.7)\nax.set_xlabel('Feedback Category')\nax.set_ylabel('Percentage of Farmers (%)')\nax.set_title('Farmer Feedback on Impact of Sustainable CRM Practices\\nAmong farmers who adopted sustainable methods')\nax.legend(title='Impact', loc='upper right')\nax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')\nax.grid(True, alpha=0.3, axis='y')\nax.set_ylim(0, 100)\n\nplt.tight_layout()\nplt.show()\n\n# Print detailed statistics\nprint(\"\\nDetailed Farmer Feedback Statistics:\")\nprint(\"=\" * 70)\nfor feedback_type in feedback_pct.index:\n    print(f\"\\n{feedback_type}:\")\n    for label in feedback_pct.columns:\n        count = feedback_summary.loc[feedback_type, label]\n        pct = feedback_pct.loc[feedback_type, label]\n        print(f\"  {label}: {int(count)} farmers ({pct:.1f}%)\")\n\n\n\n\n\n\n\nKey Impact Findings\n\n\n\nFarmers adopting sustainable CRM practices reported significant benefits:\nThese findings demonstrate the multiple benefits of sustainable practices beyond environmental impact.\n\n\n\n\nComparison: Sustainable vs Burning Practices\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Box plot comparison\npractice_order = ['Complete Burning', 'Partial Burning', 'Sustainable Practices']\npractice_data = [df[df['practice_category'] == p]['land'].dropna()\n                 for p in practice_order if p in df['practice_category'].values]\n\nbp = axes[0].boxplot(practice_data,\n                     labels=[p for p in practice_order if p in df['practice_category'].values],\n                     patch_artist=True)\nfor patch, practice in zip(bp['boxes'], [p for p in practice_order if p in df['practice_category'].values]):\n    patch.set_facecolor(colors_practice[practice])\n    patch.set_alpha(0.7)\naxes[0].set_ylabel('Land Size (acres)')\naxes[0].set_title('Farm Size Distribution by Practice Type')\naxes[0].set_xticklabels(axes[0].get_xticklabels(), rotation=45, ha='right')\naxes[0].grid(True, alpha=0.3, axis='y')\n\n# Total land by practice and state\nstate_practice_land = df.groupby(['state', 'practice_category'])['land'].sum().unstack(fill_value=0)\nstate_practice_land = state_practice_land[[p for p in practice_order if p in state_practice_land.columns]]\n\nx = np.arange(len(state_practice_land.index))\nwidth = 0.25\n\nfor i, practice in enumerate(state_practice_land.columns):\n    axes[1].bar(x + i*width, state_practice_land[practice], width,\n                label=practice, color=colors_practice[practice], alpha=0.7, edgecolor='black')\n\naxes[1].set_xlabel('State')\naxes[1].set_ylabel('Total Land Area (acres)')\naxes[1].set_title('Total Land Area by Practice Type and State')\naxes[1].set_xticks(x + width)\naxes[1].set_xticklabels(state_practice_land.index)\naxes[1].legend(title='Practice Type')\naxes[1].grid(True, alpha=0.3, axis='y')\n\nplt.tight_layout()\nplt.show()"
+    "text": "Exploratory Data Analysis\n\nOverview of Data Collection\n\n# Overall summary\nprint(\"Dataset Overview\")\nprint(\"=\" * 50)\nprint(f\"Total farmers surveyed: {len(df)}\")\nprint(f\"States covered: {df['state'].nunique()}\")\nprint(f\"Districts covered: {df['district'].nunique()}\")\nprint(f\"Total land area (acres): {df['land'].sum():.1f}\")\nprint(f\"Average farm size (acres): {df['land'].mean():.2f}\")\nprint(f\"Median farm size (acres): {df['land'].median():.1f}\")\n\n\n\nDistribution of Farm Sizes\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Histogram of land sizes\naxes[0].hist(df['land'], bins=30, color='#4575b4', alpha=0.7, edgecolor='black')\naxes[0].set_xlabel('Land Size (acres)')\naxes[0].set_ylabel('Number of Farmers')\naxes[0].set_title('Distribution of Farm Sizes')\naxes[0].grid(True, alpha=0.3)\n\n# Box plot by state\nstate_data = [df[df['state'] == state]['land'].dropna() for state in df['state'].cat.categories]\nbp = axes[1].boxplot(state_data, labels=df['state'].cat.categories,\n                      patch_artist=True, vert=False)\nfor patch, color in zip(bp['boxes'], colors_state):\n    patch.set_facecolor(color)\n    patch.set_alpha(0.7)\naxes[1].set_xlabel('Land Size (acres)')\naxes[1].set_ylabel('State')\naxes[1].set_title('Farm Size Distribution by State')\naxes[1].grid(True, alpha=0.3, axis='x')\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\nNoteKey Insight\n\n\n\nMost farmers have land holdings under 20 acres, with several outliers owning larger farms. Punjab has a larger sample of farmers in this dataset compared to Haryana.\n\n\n\n\nGeographic Distribution\n\n# Farmers by state\nstate_summary = df.groupby('state').agg({\n    'farmer_id': 'count',\n    'land': ['sum', 'mean']\n}).round(1)\nstate_summary.columns = ['n_farmers', 'total_land', 'avg_land']\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Bar chart for number of farmers by state\naxes[0].bar(state_summary.index, state_summary['n_farmers'],\n            color=colors_state, alpha=0.7, edgecolor='black')\nfor i, (idx, row) in enumerate(state_summary.iterrows()):\n    axes[0].text(i, row['n_farmers'] + 20, str(int(row['n_farmers'])),\n                 ha='center', fontweight='bold')\naxes[0].set_xlabel('State')\naxes[0].set_ylabel('Number of Farmers')\naxes[0].set_title('Number of Farmers by State')\naxes[0].grid(True, alpha=0.3, axis='y')\n\n# Farmers by district\ndistrict_summary = df.groupby(['state', 'district']).agg({\n    'farmer_id': 'count',\n    'land': 'sum'\n}).reset_index()\ndistrict_summary.columns = ['state', 'district', 'n_farmers', 'total_land']\ndistrict_summary = district_summary.sort_values('n_farmers')\n\n# Create color mapping for states\nstate_colors = {state: color for state, color in zip(df['state'].cat.categories, colors_state)}\nbar_colors = [state_colors[state] for state in district_summary['state']]\n\naxes[1].barh(range(len(district_summary)), district_summary['n_farmers'],\n             color=bar_colors, alpha=0.7, edgecolor='black')\naxes[1].set_yticks(range(len(district_summary)))\naxes[1].set_yticklabels(district_summary['district'])\naxes[1].set_xlabel('Number of Farmers')\naxes[1].set_ylabel('District')\naxes[1].set_title('Farmer Participation by District')\naxes[1].grid(True, alpha=0.3, axis='x')\n\n# Add text labels\nfor i, n in enumerate(district_summary['n_farmers']):\n    axes[1].text(n + 5, i, str(int(n)), va='center', fontsize=9)\n\n# Add legend for states\nlegend_elements = [Patch(facecolor=color, label=state, alpha=0.7)\n                  for state, color in state_colors.items()]\naxes[1].legend(handles=legend_elements, loc='lower right', title='State')\n\nplt.tight_layout()\nplt.show()\n\n\n\nCRM Practice Adoption\n\n# Create practice categories\ndf['practice_category'] = df['crm_type'].map({\n    'BURNING': 'Complete Burning',\n    'BOTH': 'Partial Burning',\n    'SUSTAINABLE': 'Sustainable Practices'\n})\n\n# Overall adoption summary\nadoption_summary = df['practice_category'].value_counts()\nadoption_pct = (adoption_summary / len(df) * 100).round(1)\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Pie chart\ncolors = [colors_practice[cat] for cat in adoption_summary.index]\nwedges, texts, autotexts = axes[0].pie(adoption_summary,\n                                        labels=adoption_summary.index,\n                                        colors=colors,\n                                        autopct='%1.1f%%',\n                                        startangle=90)\nfor autotext in autotexts:\n    autotext.set_color('white')\n    autotext.set_fontweight('bold')\naxes[0].set_title('Distribution of CRM Practices')\n\n# Stacked bar chart by state\nstate_practice = df.groupby(['state', 'practice_category']).size().unstack(fill_value=0)\nstate_practice_pct = state_practice.div(state_practice.sum(axis=1), axis=0) * 100\n\n# Order columns\ncol_order = ['Complete Burning', 'Partial Burning', 'Sustainable Practices']\nstate_practice_pct = state_practice_pct[col_order]\n\nstate_practice_pct.plot(kind='bar', stacked=True, ax=axes[1],\n                        color=[colors_practice[c] for c in col_order],\n                        alpha=0.8, edgecolor='black', width=0.6)\naxes[1].set_xlabel('State')\naxes[1].set_ylabel('Percentage of Farmers (%)')\naxes[1].set_title('CRM Practice Adoption by State')\naxes[1].legend(title='Practice Type', loc='upper left')\naxes[1].set_xticklabels(axes[1].get_xticklabels(), rotation=0)\naxes[1].grid(True, alpha=0.3, axis='y')\n\nplt.tight_layout()\nplt.show()\n\n# Print summary\nprint(\"\\nAdoption Summary:\")\nfor practice, count in adoption_summary.items():\n    pct = adoption_pct[practice]\n    print(f\"{practice}: {count} farmers ({pct}%)\")\n\n\n\n\n\n\n\nImportantMajor Finding\n\n\n\nThe dataset shows that {python} f”{adoption_pct[‘Sustainable Practices’]:.1f}%“ of farmers have adopted sustainable practices, while {python} f”{adoption_pct.get(‘Complete Burning’, 0):.1f}%“ still engage in complete burning.\n\n\n\n\nDistrict-Level Analysis\n\n# Adoption by district (proportional)\ndistrict_practice = df.groupby(['district', 'practice_category']).size().unstack(fill_value=0)\ndistrict_practice_pct = district_practice.div(district_practice.sum(axis=1), axis=0) * 100\n\n# Order columns\ndistrict_practice_pct = district_practice_pct[col_order]\n\n# Create horizontal stacked bar chart\nfig, ax = plt.subplots(figsize=(12, 8))\n\ndistrict_practice_pct.plot(kind='barh', stacked=True, ax=ax,\n                           color=[colors_practice[c] for c in col_order],\n                           alpha=0.8, edgecolor='black')\nax.set_xlabel('Proportion of Farmers (%)')\nax.set_ylabel('District')\nax.set_title('Distribution of CRM Practices by District')\nax.legend(title='Practice Type', loc='lower right')\nax.grid(True, alpha=0.3, axis='x')\n\n# Format x-axis as percentage\nax.set_xlim(0, 100)\n\nplt.tight_layout()\nplt.show()\n\n\n\nDetailed Breakdown of Sustainable Practices\n\n# Filter for sustainable practices only\nsustainable_df = df[df['practice_category'] == 'Sustainable Practices']\n\n# Count which specific methods are used\nmethod_counts = pd.Series({\n    'Soil Incorporation': (sustainable_df['soil_incorporation'] == 1).sum(),\n    'Mulching': (sustainable_df['mulching'] == 1).sum(),\n    'Collection': (sustainable_df['collection'] == 1).sum(),\n    'Others': (sustainable_df['others'] == 1).sum()\n}).sort_values()\n\n# Create horizontal bar chart\nfig, ax = plt.subplots(figsize=(10, 6))\nbars = ax.barh(range(len(method_counts)), method_counts.values,\n               color='#1a9850', alpha=0.7, edgecolor='black')\nax.set_yticks(range(len(method_counts)))\nax.set_yticklabels(method_counts.index)\nax.set_xlabel('Number of Farmers Using This Method')\nax.set_ylabel('Method')\nax.set_title('Specific Sustainable Methods Used by Farmers\\nAmong farmers who adopted sustainable practices')\nax.grid(True, alpha=0.3, axis='x')\n\n# Add value labels\nfor i, v in enumerate(method_counts.values):\n    ax.text(v + 10, i, str(int(v)), va='center', fontweight='bold')\n\nplt.tight_layout()\nplt.show()\n\nprint(f\"\\nTotal farmers with sustainable practices: {len(sustainable_df)}\")\nprint(\"\\nNote: Farmers may use multiple methods simultaneously.\")\n\n\n\n\n\n\n\nTipPractice Patterns\n\n\n\nNote that farmers may use multiple methods. For example, a farmer might use both soil incorporation and mulching. The data uses binary indicators (0 or 1) for each method.\n\n\n\n\nFarmer Feedback Analysis\n\n# Prepare feedback data for sustainable practices only\nfeedback_cols = ['water_consumption', 'fertiliser_consumption',\n                 'pest_infestation', 'weed_infestation']\n\n# Create a melted dataframe for feedback\nfeedback_data = []\nfor col in feedback_cols:\n    col_data = sustainable_df[col].dropna()\n    for val in col_data:\n        feedback_data.append({\n            'feedback_type': col.replace('_', ' ').title(),\n            'feedback_value': val\n        })\n\nfeedback_df = pd.DataFrame(feedback_data)\n\n# Map values to labels\nfeedback_df['feedback_label'] = feedback_df['feedback_value'].map({\n    -1: 'Decreased',\n    0: 'No Change',\n    1: 'Increased'\n})\n\n# Calculate percentages\nfeedback_summary = feedback_df.groupby(['feedback_type', 'feedback_label']).size().unstack(fill_value=0)\nfeedback_pct = feedback_summary.div(feedback_summary.sum(axis=1), axis=0) * 100\n\n# Ensure column order\nlabel_order = ['Decreased', 'No Change', 'Increased']\nfeedback_pct = feedback_pct[[col for col in label_order if col in feedback_pct.columns]]\n\n# Create stacked bar chart\nfig, ax = plt.subplots(figsize=(12, 6))\n\nfeedback_colors = {\n    'Decreased': '#1a9850',\n    'No Change': '#ffffbf',\n    'Increased': '#d73027'\n}\n\nfeedback_pct.plot(kind='bar', stacked=True, ax=ax,\n                  color=[feedback_colors[c] for c in feedback_pct.columns],\n                  alpha=0.8, edgecolor='black', width=0.7)\nax.set_xlabel('Feedback Category')\nax.set_ylabel('Percentage of Farmers (%)')\nax.set_title('Farmer Feedback on Impact of Sustainable CRM Practices\\nAmong farmers who adopted sustainable methods')\nax.legend(title='Impact', loc='upper right')\nax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')\nax.grid(True, alpha=0.3, axis='y')\nax.set_ylim(0, 100)\n\nplt.tight_layout()\nplt.show()\n\n# Print detailed statistics\nprint(\"\\nDetailed Farmer Feedback Statistics:\")\nprint(\"=\" * 70)\nfor feedback_type in feedback_pct.index:\n    print(f\"\\n{feedback_type}:\")\n    for label in feedback_pct.columns:\n        count = feedback_summary.loc[feedback_type, label]\n        pct = feedback_pct.loc[feedback_type, label]\n        print(f\"  {label}: {int(count)} farmers ({pct:.1f}%)\")\n\n\n\n\n\n\n\nImportantKey Impact Findings\n\n\n\nFarmers adopting sustainable CRM practices reported significant benefits:\nThese findings demonstrate the multiple benefits of sustainable practices beyond environmental impact.\n\n\n\n\nComparison: Sustainable vs Burning Practices\n\n# Create figure with two subplots\nfig, axes = plt.subplots(1, 2, figsize=(14, 6))\n\n# Box plot comparison\npractice_order = ['Complete Burning', 'Partial Burning', 'Sustainable Practices']\npractice_data = [df[df['practice_category'] == p]['land'].dropna()\n                 for p in practice_order if p in df['practice_category'].values]\n\nbp = axes[0].boxplot(practice_data,\n                     labels=[p for p in practice_order if p in df['practice_category'].values],\n                     patch_artist=True)\nfor patch, practice in zip(bp['boxes'], [p for p in practice_order if p in df['practice_category'].values]):\n    patch.set_facecolor(colors_practice[practice])\n    patch.set_alpha(0.7)\naxes[0].set_ylabel('Land Size (acres)')\naxes[0].set_title('Farm Size Distribution by Practice Type')\naxes[0].set_xticklabels(axes[0].get_xticklabels(), rotation=45, ha='right')\naxes[0].grid(True, alpha=0.3, axis='y')\n\n# Total land by practice and state\nstate_practice_land = df.groupby(['state', 'practice_category'])['land'].sum().unstack(fill_value=0)\nstate_practice_land = state_practice_land[[p for p in practice_order if p in state_practice_land.columns]]\n\nx = np.arange(len(state_practice_land.index))\nwidth = 0.25\n\nfor i, practice in enumerate(state_practice_land.columns):\n    axes[1].bar(x + i*width, state_practice_land[practice], width,\n                label=practice, color=colors_practice[practice], alpha=0.7, edgecolor='black')\n\naxes[1].set_xlabel('State')\naxes[1].set_ylabel('Total Land Area (acres)')\naxes[1].set_title('Total Land Area by Practice Type and State')\naxes[1].set_xticks(x + width)\naxes[1].set_xticklabels(state_practice_land.index)\naxes[1].legend(title='Practice Type')\naxes[1].grid(True, alpha=0.3, axis='y')\n\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "weeks/week-5/perform_1_python.html#summary-statistics",
@@ -2009,10 +2009,93 @@
     "href": "weeks/week-8/main.html",
     "title": "Week 8",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 8 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "NoteMaterials Coming Soon\n\n\n\nContent for Week 8 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
     "crumbs": [
       "Weekly materials",
       "Week 8"
     ]
+  },
+  {
+    "objectID": "weeks/week-7/main.html#prepare",
+    "href": "weeks/week-7/main.html#prepare",
+    "title": "Week 7",
+    "section": "",
+    "text": "Note📚 Prepare\n\n\n\n📥 Download and install Tableau Public (free): Tableau for Students\n📂 Download the Netflix dataset (netflix.csv) from GitHub (data/netflix.csv) or from Moodle.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-7/main.html#participate",
+    "href": "weeks/week-7/main.html#participate",
+    "title": "Week 7",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📖 No slideshows this week",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-7/main.html#practice",
+    "href": "weeks/week-7/main.html#practice",
+    "title": "Week 7",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 In-class guided practice using netflix.csv:\n\nConnect the dataset and inspect fields on the Data Source page.\nBuild a few core charts and some more advanced charts step by step.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-7/main.html#perform",
+    "href": "weeks/week-7/main.html#perform",
+    "title": "Week 7",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\nUsing the Netflix dataset, reflect on the following questions. You will work individually.\n\nOne country’s structure and trend\n\nChoose one country of interest.\nWhat does Netflix’s content from this country look like in terms of Movies vs TV Shows?\nHow has the number of contents from this country changed over release years? Are there any noticeable shifts or trends over time?\n\nRating structure within one main genre\n\nChoose one main genre (e.g. Drama, Comedy, Documentary).\nHow are titles in this genre distributed across different rating categories?\nDo certain ratings dominate within this genre?\nWhat does this suggest about the typical audience for this genre on Netflix?\n\nCountry catalogue size vs “recency” of content\n\nThink of each country as one observation.\nHow do countries differ in terms of the size of their catalogues?\nHow do they differ in terms of how “recent” their catalogues are (e.g. by average release year)?\nWhich countries stand out as outliers or interesting groups when you consider catalogue size and recency together?",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-7/main.html#ponder",
+    "href": "weeks/week-7/main.html#ponder",
+    "title": "Week 7",
+    "section": "Ponder",
+    "text": "Ponder\n🤔 Self-Reflection Exercise: Use Tableau to explore any dataset that interests you and practice building a few simple views.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 7"
+    ]
+  },
+  {
+    "objectID": "weeks/week-2/gog_and_visual_forms.html",
+    "href": "weeks/week-2/gog_and_visual_forms.html",
+    "title": "Design Variables and the Grammar of Graphics",
+    "section": "",
+    "text": "Part 1: Grammar of Graphics\n\nFramework & Philosophy\nCore Components\nBuilding Blocks\n\n\nPart 2: Visual Forms\n\nUnivariate Charts\nBivariate Charts\n\nMultivariate Charts"
+  },
+  {
+    "objectID": "weeks/week-1/design-principles-presentation.html",
+    "href": "weeks/week-1/design-principles-presentation.html",
+    "title": "Data Visualization: Design Principles and Processes",
+    "section": "",
+    "text": "The fundamental question every data analyst must ask\n\n\n\n\n\n\n\n\n“Excellence in statistical graphs consists of complex ideas communicated with clarity, precision, and efficiency.” - Edward Tufte"
+  },
+  {
+    "objectID": "weeks/week-5/case_discussion.html",
+    "href": "weeks/week-5/case_discussion.html",
+    "title": "Data Storytelling",
+    "section": "",
+    "text": "Every winter, Delhi faces severe air pollution\n\nNovember 2021: AQI &gt; 450 (hazardous)\nHealth impacts: respiratory issues, eye irritation, headaches\nMajor contributor: Crop residue burning in Punjab, Haryana, and Uttar Pradesh\n\nWhy do farmers burn crop residue?\n\nQuick and cost-effective\n15-20 day window between rice harvest and wheat sowing\nMechanized harvesting leaves stubble in fields\n\n\nImpact of the practice:\n\n36% of Delhi’s air pollution from crop burning\nLow wind speeds trap smoke over Delhi NCR\nReduces soil health and microbial activity\nIncreases irrigation requirements\nLoss of organic matter\n\n\n“Earth provides enough to satisfy every man’s need, but not for every man’s greed.” — Mahatma Gandhi"
+  },
+  {
+    "objectID": "weeks/week-5/teaching_summary.html",
+    "href": "weeks/week-5/teaching_summary.html",
+    "title": "Data Visualization & Storytelling",
+    "section": "",
+    "text": "This case demonstrates:\n\nHow to use data visualization and storytelling to provide insights\nHow to communicate insights effectively to decision-makers\nThe difference between exploratory and explanatory visualization\nCreating different chart types to explore data\nThe value of business storytelling\n\n\nThis is a 90-minute session with 30% theory and 70% hands-on practice with Tableau or Power BI."
   }
 ]

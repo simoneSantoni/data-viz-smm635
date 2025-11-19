@@ -4,10 +4,60 @@ subtitle: "Introduction to Tableau (Part 1)"
 callout-appearance: default
 ---
 
-::: {.callout-note}
-## Materials Coming Soon
+## Prepare
 
-Content for Week 7 is currently being developed and will be available soon.
+:::: {.callout-note}
+## 📚 Prepare
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
-:::
+📥 Download and install **Tableau Public** (free): [Tableau for Students](https://www.tableau.com/en-gb/academic/students)
+
+📂 Download the **Netflix dataset** (`netflix.csv`) from GitHub (`data/netflix.csv`) or Moodle.
+::::
+
+## Participate
+
+:::: {.callout-note}
+## 👥 Participate
+
+📖 No slideshows this week
+::::
+
+## Practice
+
+:::: {.callout-note}
+## 💻 Practice
+
+🧮 In-class guided practice using `netflix.csv`:
+
+- Connect to the dataset and inspect the fields on the **Data Source** page.
+- Build a few core charts and then some more advanced charts, step by step.
+::::
+
+## Perform
+
+:::: {.callout-note}
+## 📝 Perform
+
+Using the Netflix dataset, reflect on the following questions. You will work individually.
+
+1. **One country’s structure and trends**
+   - Choose one country of interest.
+   - What does Netflix’s content from this country look like in terms of Movies vs TV Shows?
+   - How has the number of titles from this country changed over the years (by release year)? Are there any noticeable shifts or trends over time?
+
+2. **Rating structure within a main genre**
+   - Choose one main genre (e.g., Drama, Comedy, Documentary).
+   - How are titles in this genre distributed across different rating categories?
+   - Do certain ratings dominate within this genre?
+   - What does this suggest about the typical audience for this genre on Netflix?
+
+3. **Country catalogue size vs “recency” of content**
+   - Think of each country as one observation.
+   - How do countries differ in terms of the size of their catalogues?
+   - How do they differ in how “recent” their catalogues are?
+   - Which countries stand out as outliers or interesting groups when you consider catalogue size and recency together?
+::::
+
+## Ponder
+
+🤔 Self-Reflection Exercise: Use Tableau to explore any dataset that interests you and practice building a few simple views.
