@@ -5,26 +5,39 @@ subtitle: "Flying Around Real Estate Development: Persuading with Data Visualiza
 
 ## Project Overview
 
-The final project is an **individual assignment** that challenges you to apply data visualization principles to address a complex business decision with competing considerations. You will work with the case study "Flying Around Real Estate Development: Persuading with Data Visualizations" (UVA-BC-0285) to demonstrate your mastery of persuasive visualization and storytelling with data.
+The final project is an **individual assignment** that challenges you to apply
+data visualization principles to address a complex business decision with
+competing considerations. You will work with the case study "Flying Around
+Real Estate Development: Persuading with Data Visualizations" (UVA-BC-0285) to
+demonstrate your mastery of persuasive visualization and storytelling with
+data.[^1]
 
 ### The Business Challenge
 
-You are Logan Clausen, a project manager at Pitchard Development Company (PDC), a boutique real estate development firm in San Francisco. You have identified a promising mixed-use development opportunity near a municipal airport. However, the proximity to the airport raises critical questions:
+You are Logan Clausen, a project manager at Pitchard Development Company
+(PDC), a boutique real estate development firm in San Francisco. You have
+identified a promising mixed-use development opportunity near a municipal
+airport. However, the proximity to the airport raises critical questions:
 
 - Does airport proximity increase or decrease property value?
 - How do noise levels (measured in CNEL decibels) impact housing prices?
 - Are there market segments that actively seek airport proximity?
 - How can you persuasively communicate the opportunity (or risk) to stakeholders?
 
-Your task is to analyze benchmark data from two comparable California airports (Salinas and Watsonville Municipal Airports) and create compelling visualizations that support a clear recommendation about the development opportunity.
+Your task is to analyze benchmark data from two comparable California airports
+(Salinas and Watsonville Municipal Airports) and create compelling
+visualizations that support a clear recommendation about the development
+opportunity.
 
 ::: {.callout-important}
 ## Key Information
+
 - **Type**: Individual project
 - **Due Date**: December 11, 2025 (15:59 PM)
 - **Weight**: 40% of final grade
 - **Case**: UVA-BC-0285 (available on Moodle)
 - **Data**: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)
+
 :::
 
 ## Learning Objectives
@@ -81,7 +94,7 @@ Create a **professional presentation** (PDF format) that includes:
 
 ### 2. Technical Report (Supporting Document)
 
-A written report (2,000-2,500 words) containing:
+A written report (1,000 words) containing:
 
 - **Introduction**: Business context and analytical objectives
 - **Data Description**: Variables, ranges, potential limitations
@@ -101,7 +114,7 @@ Well-documented code that:
 - Includes clear comments explaining each step
 - Runs without errors (provide clear setup instructions)
 
-**Accepted languages**: R, Python, Julia[^1]
+**Accepted languages**: Tableau,[^2] R, Python
 
 ### 4. README File
 
@@ -117,6 +130,7 @@ A markdown file explaining:
 You will work with two datasets:
 
 ### Salinas Municipal Airport Dataset
+
 - **Properties analyzed**: Houses at varying distances from terminal
 - **Distance range**: 0.64 to 3.67 miles from terminal
 - **Noise categories**: 
@@ -126,6 +140,7 @@ You will work with two datasets:
 - **Variables**: Property values, distances, noise levels, time series data
 
 ### Watsonville Municipal Airport Dataset
+
 - **Properties analyzed**: Houses at varying distances from terminal
 - **Distance range**: 0.71 to 2.02 miles from terminal
 - **Noise categories**:
@@ -169,9 +184,7 @@ Your visualizations should showcase:
 
 - **Clarity**: Clear titles, labels, legends, and annotations
 - **Appropriate chart types**: Match visualization to data type and question
-- **Color theory**: Strategic use of color for emphasis and grouping
 - **Hierarchy**: Guide the viewer's attention to key insights
-- **Accessibility**: Colorblind-friendly palettes, sufficient contrast
 - **Context**: Provide reference points and benchmarks where helpful
 - **Integrity**: Honest representation without distortion
 - **Polish**: Professional appearance suitable for executive presentation
@@ -197,8 +210,8 @@ LastName_FirstName_FinalProject/
 ├── presentation.pdf          # Executive presentation (required)
 ├── report.pdf               # Technical report (required)
 ├── code/                    # All code files
-│   ├── analysis.R (or .py, .jl)
-│   ├── visualizations.R (or .py, .jl)
+│   ├── analysis.R (or .py, .tbm)
+│   ├── visualizations.R (or .py, .tbm)
 │   └── utils.R (optional helper functions)
 ├── data/                    # Processed data (if applicable)
 │   └── processed_data.csv
@@ -212,8 +225,7 @@ LastName_FirstName_FinalProject/
 ### Where to Submit
 
 - **Platform**: Moodle (Final Course Project submission link)
-- **Deadline**: December 11, 2025, 15:59 PM
-- **Late policy**: 10% penalty per day, maximum 3 days
+- **Deadline**: December 1, 2025, 15:59 PM
 
 ## Evaluation Criteria
 
@@ -253,16 +265,24 @@ Your project will be assessed on:
 - **Writing quality**: Clear, concise, error-free
 - **Organization**: Well-structured submission
 
+:::{.callout-warning}
+
+These criteria will be assessed based on the submitted material and individual
+presentation.
+
+:::
+
+
 ## Getting Started
 
-### Step 1: Understand the Context (Week 1-2)
+### Step 1: Understand the Context
 
 1. Read the case study carefully
 2. Research real estate development and airport proximity effects
 3. Understand CNEL and NDI measurements
 4. Identify your key stakeholders and their concerns
 
-### Step 2: Explore the Data (Week 3-4)
+### Step 2: Explore the Data
 
 1. Load and examine both datasets
 2. Check for data quality issues
@@ -270,7 +290,7 @@ Your project will be assessed on:
 4. Create exploratory visualizations (not for final submission)
 5. Identify interesting patterns and relationships
 
-### Step 3: Develop Your Argument (Week 5-6)
+### Step 3: Develop Your Argument
 
 1. Form a hypothesis about the development opportunity
 2. Identify what evidence you need to support it
@@ -278,7 +298,7 @@ Your project will be assessed on:
 4. Consider counterarguments and alternative explanations
 5. Sketch your narrative arc
 
-### Step 4: Create & Refine (Week 7-8)
+### Step 4: Create & Refine
 
 1. Build your visualizations
 2. Write your report and presentation
@@ -302,14 +322,8 @@ Revisit course materials on:
 - **Week 2**: Grammar of graphics and visual encodings
 - **Week 4**: Multidimensional data visualization
 - **Week 5**: Storytelling with data
-- **Essential texts**: Tufte (graphical excellence), Cairo (functional art), Healy (practical visualization)
-
-### Technical Resources
-
-- R documentation: [ggplot2.tidyverse.org](https://ggplot2.tidyverse.org)
-- Python documentation: [matplotlib.org](https://matplotlib.org), [seaborn.pydata.org](https://seaborn.pydata.org)
-- Color advice: [colorbrewer2.org](https://colorbrewer2.org)
-- Accessibility: [vis4.net/chromajs](https://vis4.net/chromajs)
+- **Essential texts**: Tufte (graphical excellence), Cairo (functional art),
+Healy (practical visualization)
 
 ## Academic Integrity
 
@@ -343,30 +357,43 @@ Revisit course materials on:
 
 ## Frequently Asked Questions
 
-**Q: Can I use interactive visualizations?**
-A: Yes, but your final presentation must be a PDF. You can include static screenshots of interactive visualizations with annotations explaining the interactive features.
+**Q: Can I use interactive visualizations?** A: Yes, but your final
+presentation must be a PDF. You can include static screenshots of interactive
+visualizations with annotations explaining the interactive features.
 
-**Q: How technical should the presentation be?**
-A: Balance is key. Your audience includes both technical and non-technical stakeholders. Explain concepts clearly without oversimplifying or using jargon unnecessarily.
+**Q: How technical should the presentation be?** A: Balance is key. Your
+audience includes both technical and non-technical stakeholders. Explain
+concepts clearly without oversimplifying or using jargon unnecessarily.
 
-**Q: Should I recommend for or against the development?**
-A: Either conclusion can be correct if well-supported by evidence. The quality of your reasoning and visualization matters more than your specific recommendation.
+**Q: Should I recommend for or against the development?** A: Either conclusion
+can be correct if well-supported by evidence. The quality of your reasoning
+and visualization matters more than your specific recommendation.
 
-**Q: Can I use external data sources?**
-A: No. Use only the provided Salinas and Watsonville datasets. You may reference external information for context (e.g., NDI research) but not add external data to your analysis.
+**Q: Can I use external data sources?** A: No. Use only the provided Salinas
+and Watsonville datasets. You may reference external information for context
+(e.g., NDI research) but not add external data to your analysis.
 
-**Q: What if I find data quality issues?**
-A: Document them in your limitations section and explain how you handled them. Real-world data is messy.
+**Q: What if I find data quality issues?** A: Document them in your
+limitations section and explain how you handled them. Real-world data is
+messy.
 
-**Q: How many visualizations should I include?**
-A: Quality over quantity. 6-10 excellent visualizations that tell a coherent story are better than 15 mediocre ones.
+**Q: How many visualizations should I include?** A: Quality over quantity.
+6-10 excellent visualizations that tell a coherent story are better than 15
+mediocre ones.
 
-**Q: Can I work with others?**
-A: This is an individual project. You may discuss general concepts but all analysis, code, and visualizations must be your own original work.
+**Q: Can I work with others?** A: This is an individual project. You may
+discuss general concepts but all analysis, code, and visualizations must be
+your own original work.
 
 ---
 
-This project is your opportunity to demonstrate mastery of data visualization principles in a realistic business context. Focus on creating visualizations that don't just show data, but reveal insights and persuade stakeholders. Good luck!
+This project is your opportunity to demonstrate mastery of data visualization
+principles in a realistic business context. Focus on creating visualizations
+that don't just show data, but reveal insights and persuade stakeholders. Good
+luck!
 
-[^1]: While Julia is accepted, ensure all required libraries are clearly documented in your README, as it's less commonly used in the course
+[^1]: Electronic copy of the case available in the "Case Studies" section of
+SMM635's Moodle Page.
+
+[^2]: If you use Tableau, include your .tbm file in the submission package.
 

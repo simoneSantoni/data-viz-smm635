@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,21 +32,17 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../weeks/week-1/main.html" rel="next">
 <link href="../../project/midTermProject/main.html" rel="prev">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-681822eba45d7ad844278df7de90f1b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-2408c2472c949ec902b150c4c1981b7a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-681822eba45d7ad844278df7de90f1b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,169 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -264,8 +98,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../imgs/r-module-icon-light.svg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../../imgs/r-module-icon-light.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../../imgs/r-module-icon-light.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/simoneSantoni/data-viz-smm635" title="Repository" class="quarto-navigation-tool px-1" aria-label="Repository"><i class="bi bi-github"></i></a>
@@ -438,17 +271,74 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a>
+  <ul class="collapse">
+  <li><a href="#the-business-challenge" id="toc-the-business-challenge" class="nav-link" data-scroll-target="#the-business-challenge">The Business Challenge</a></li>
+  </ul></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#case-questions-to-address" id="toc-case-questions-to-address" class="nav-link" data-scroll-target="#case-questions-to-address">Case Questions to Address</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a>
+  <ul class="collapse">
+  <li><a href="#executive-presentation-primary-deliverable" id="toc-executive-presentation-primary-deliverable" class="nav-link" data-scroll-target="#executive-presentation-primary-deliverable">1. Executive Presentation (Primary Deliverable)</a></li>
+  <li><a href="#technical-report-supporting-document" id="toc-technical-report-supporting-document" class="nav-link" data-scroll-target="#technical-report-supporting-document">2. Technical Report (Supporting Document)</a></li>
+  <li><a href="#reproducible-code" id="toc-reproducible-code" class="nav-link" data-scroll-target="#reproducible-code">3. Reproducible Code</a></li>
+  <li><a href="#readme-file" id="toc-readme-file" class="nav-link" data-scroll-target="#readme-file">4. README File</a></li>
+  </ul></li>
+  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description">Data Description</a>
+  <ul class="collapse">
+  <li><a href="#salinas-municipal-airport-dataset" id="toc-salinas-municipal-airport-dataset" class="nav-link" data-scroll-target="#salinas-municipal-airport-dataset">Salinas Municipal Airport Dataset</a></li>
+  <li><a href="#watsonville-municipal-airport-dataset" id="toc-watsonville-municipal-airport-dataset" class="nav-link" data-scroll-target="#watsonville-municipal-airport-dataset">Watsonville Municipal Airport Dataset</a></li>
+  </ul></li>
+  <li><a href="#visualization-requirements" id="toc-visualization-requirements" class="nav-link" data-scroll-target="#visualization-requirements">Visualization Requirements</a>
+  <ul class="collapse">
+  <li><a href="#mandatory-visualizations" id="toc-mandatory-visualizations" class="nav-link" data-scroll-target="#mandatory-visualizations">Mandatory Visualizations</a></li>
+  <li><a href="#design-principles-to-demonstrate" id="toc-design-principles-to-demonstrate" class="nav-link" data-scroll-target="#design-principles-to-demonstrate">Design Principles to Demonstrate</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
+  </ul></li>
+  <li><a href="#submission-requirements" id="toc-submission-requirements" class="nav-link" data-scroll-target="#submission-requirements">Submission Requirements</a>
+  <ul class="collapse">
+  <li><a href="#what-to-submit" id="toc-what-to-submit" class="nav-link" data-scroll-target="#what-to-submit">What to Submit</a></li>
+  <li><a href="#where-to-submit" id="toc-where-to-submit" class="nav-link" data-scroll-target="#where-to-submit">Where to Submit</a></li>
+  </ul></li>
+  <li><a href="#evaluation-criteria" id="toc-evaluation-criteria" class="nav-link" data-scroll-target="#evaluation-criteria">Evaluation Criteria</a>
+  <ul class="collapse">
+  <li><a href="#visualization-quality-40" id="toc-visualization-quality-40" class="nav-link" data-scroll-target="#visualization-quality-40">Visualization Quality (40%)</a></li>
+  <li><a href="#analytical-rigor-25" id="toc-analytical-rigor-25" class="nav-link" data-scroll-target="#analytical-rigor-25">Analytical Rigor (25%)</a></li>
+  <li><a href="#storytelling-persuasion-20" id="toc-storytelling-persuasion-20" class="nav-link" data-scroll-target="#storytelling-persuasion-20">Storytelling &amp; Persuasion (20%)</a></li>
+  <li><a href="#technical-quality-10" id="toc-technical-quality-10" class="nav-link" data-scroll-target="#technical-quality-10">Technical Quality (10%)</a></li>
+  <li><a href="#professionalism-5" id="toc-professionalism-5" class="nav-link" data-scroll-target="#professionalism-5">Professionalism (5%)</a></li>
+  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
+  <ul class="collapse">
+  <li><a href="#step-1-understand-the-context-week-1-2" id="toc-step-1-understand-the-context-week-1-2" class="nav-link" data-scroll-target="#step-1-understand-the-context-week-1-2">Step 1: Understand the Context (Week 1-2)</a></li>
+  <li><a href="#step-2-explore-the-data-week-3-4" id="toc-step-2-explore-the-data-week-3-4" class="nav-link" data-scroll-target="#step-2-explore-the-data-week-3-4">Step 2: Explore the Data (Week 3-4)</a></li>
+  <li><a href="#step-3-develop-your-argument-week-5-6" id="toc-step-3-develop-your-argument-week-5-6" class="nav-link" data-scroll-target="#step-3-develop-your-argument-week-5-6">Step 3: Develop Your Argument (Week 5-6)</a></li>
+  <li><a href="#step-4-create-refine-week-7-8" id="toc-step-4-create-refine-week-7-8" class="nav-link" data-scroll-target="#step-4-create-refine-week-7-8">Step 4: Create &amp; Refine (Week 7-8)</a></li>
+  </ul></li>
+  <li><a href="#resources-support" id="toc-resources-support" class="nav-link" data-scroll-target="#resources-support">Resources &amp; Support</a>
+  <ul class="collapse">
+  <li><a href="#office-hours" id="toc-office-hours" class="nav-link" data-scroll-target="#office-hours">Office Hours</a></li>
+  <li><a href="#recommended-readings" id="toc-recommended-readings" class="nav-link" data-scroll-target="#recommended-readings">Recommended Readings</a></li>
+  <li><a href="#technical-resources" id="toc-technical-resources" class="nav-link" data-scroll-target="#technical-resources">Technical Resources</a></li>
+  </ul></li>
+  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity</a></li>
+  <li><a href="#success-tips" id="toc-success-tips" class="nav-link" data-scroll-target="#success-tips">Success Tips</a></li>
+  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link" data-scroll-target="#frequently-asked-questions">Frequently Asked Questions</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../project/midTermProject/main.html">Project</a></li><li class="breadcrumb-item"><a href="../../project/finalCourseProject/main.html">Final course project</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Final Course Project</h1>
-<p class="subtitle lead">Individual Network Analysis Research</p>
+<p class="subtitle lead">Flying Around Real Estate Development: Persuading with Data Visualizations</p>
 </div>
 
 
@@ -465,271 +355,837 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-note no-icon">
-<div class="callout-body d-flex">
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>The final project is an <strong>individual assignment</strong> that challenges you to apply data visualization principles to address a complex business decision with competing considerations. You will work with the case study “Flying Around Real Estate Development: Persuading with Data Visualizations” (UVA-BC-0285) to demonstrate your mastery of persuasive visualization and storytelling with data.</p>
+<section id="the-business-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="the-business-challenge">The Business Challenge</h3>
+<p>You are Logan Clausen, a project manager at Pitchard Development Company (PDC), a boutique real estate development firm in San Francisco. You have identified a promising mixed-use development opportunity near a municipal airport. However, the proximity to the airport raises critical questions:</p>
+<ul>
+<li>Does airport proximity increase or decrease property value?</li>
+<li>How do noise levels (measured in CNEL decibels) impact housing prices?</li>
+<li>Are there market segments that actively seek airport proximity?</li>
+<li>How can you persuasively communicate the opportunity (or risk) to stakeholders?</li>
+</ul>
+<p>Your task is to analyze benchmark data from two comparable California airports (Salinas and Watsonville Municipal Airports) and create compelling visualizations that support a clear recommendation about the development opportunity.</p>
+<div class="callout callout-style-simple callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Content coming soon.</p>
+<div class="callout-title-container flex-fill">
+Key Information
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Type</strong>: Individual project</li>
+<li><strong>Due Date</strong>: December 11, 2025 (15:59 PM)</li>
+<li><strong>Weight</strong>: 40% of final grade</li>
+<li><strong>Case</strong>: UVA-BC-0285 (available on Moodle)</li>
+<li><strong>Data</strong>: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)</li>
+</ul>
 </div>
+</div>
+</section>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>Through this project, you will:</p>
+<ol type="1">
+<li><strong>Apply persuasive visualization techniques</strong> to support business recommendations</li>
+<li><strong>Design for multiple audiences</strong> with different backgrounds and information needs</li>
+<li><strong>Handle multidimensional data</strong> (price, distance, noise levels, time)</li>
+<li><strong>Create narrative flow</strong> that guides stakeholders through your analysis</li>
+<li><strong>Balance analytical rigor with clarity</strong> for non-technical audiences</li>
+<li><strong>Make defensible design choices</strong> grounded in visualization principles</li>
+</ol>
+</section>
+<section id="case-questions-to-address" class="level2">
+<h2 class="anchored" data-anchor-id="case-questions-to-address">Case Questions to Address</h2>
+<p>Your analysis must answer the following:</p>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Required Analysis Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>Proximity Analysis</strong>: How does distance from the airport terminal correlate with housing values in the benchmark markets (Salinas and Watsonville)?</p></li>
+<li><p><strong>Noise Impact Assessment</strong>: What is the relationship between Community Noise Equivalent Level (CNEL) and property values? Is the Noise Depreciation Index (NDI) of 0.45%-0.64% supported by the data?</p></li>
+<li><p><strong>Market Segmentation</strong>: Are there patterns suggesting different market segments respond differently to airport proximity?</p></li>
+<li><p><strong>Comparative Analysis</strong>: How do the two benchmark airports (Salinas vs.&nbsp;Watsonville) compare? What explains any differences?</p></li>
+<li><p><strong>Confounding Factors</strong>: What other variables beyond noise and distance might be influencing the housing values you observe?</p></li>
+<li><p><strong>Investment Recommendation</strong>: Should PDC pursue this development opportunity? What are the key risks and opportunities?</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<section id="executive-presentation-primary-deliverable" class="level3">
+<h3 class="anchored" data-anchor-id="executive-presentation-primary-deliverable">1. Executive Presentation (Primary Deliverable)</h3>
+<p>Create a <strong>professional presentation</strong> (PDF format) that includes:</p>
+<ul>
+<li><strong>Executive Summary</strong> (1 slide): Your recommendation and key findings</li>
+<li><strong>Context &amp; Business Problem</strong> (1-2 slides): Situation overview</li>
+<li><strong>Data &amp; Methodology</strong> (1-2 slides): Brief description of your analytical approach</li>
+<li><strong>Visual Analysis</strong> (6-10 slides): Your data visualizations with insights</li>
+<li><strong>Recommendation</strong> (1-2 slides): Clear action items and risk/opportunity assessment</li>
+<li><strong>Appendix</strong> (optional): Additional supporting analyses</li>
+</ul>
+<p><strong>Specifications:</strong></p>
+<ul>
+<li>Maximum 15 slides (excluding title and appendix)</li>
+<li>Minimum 6 visualizations, maximum 12</li>
+<li>Each visualization must be purposeful and support your narrative</li>
+<li>Professional design consistent with business context</li>
+<li>Audience: PDC partners (technical literacy varies) and potential investors</li>
+</ul>
+</section>
+<section id="technical-report-supporting-document" class="level3">
+<h3 class="anchored" data-anchor-id="technical-report-supporting-document">2. Technical Report (Supporting Document)</h3>
+<p>A written report (2,000-2,500 words) containing:</p>
+<ul>
+<li><strong>Introduction</strong>: Business context and analytical objectives</li>
+<li><strong>Data Description</strong>: Variables, ranges, potential limitations</li>
+<li><strong>Methodology</strong>: Analytical approach and design choices</li>
+<li><strong>Findings</strong>: Detailed analysis supporting each visualization</li>
+<li><strong>Design Rationale</strong>: Justification for your visualization choices based on course principles</li>
+<li><strong>Limitations &amp; Assumptions</strong>: What your analysis cannot answer</li>
+<li><strong>Conclusion</strong>: Synthesis and recommendation</li>
+</ul>
+</section>
+<section id="reproducible-code" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-code">3. Reproducible Code</h3>
+<p>Well-documented code that:</p>
+<ul>
+<li>Loads and preprocesses the datasets</li>
+<li>Performs all analyses</li>
+<li>Generates all visualizations in your presentation and report</li>
+<li>Includes clear comments explaining each step</li>
+<li>Runs without errors (provide clear setup instructions)</li>
+</ul>
+<p><strong>Accepted languages</strong>: R, Python, Julia<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</section>
+<section id="readme-file" class="level3">
+<h3 class="anchored" data-anchor-id="readme-file">4. README File</h3>
+<p>A markdown file explaining:</p>
+<ul>
+<li>How to set up the environment (packages/libraries needed)</li>
+<li>How to run your code</li>
+<li>Description of output files</li>
+<li>Any known issues or dependencies</li>
+</ul>
+</section>
+</section>
+<section id="data-description" class="level2">
+<h2 class="anchored" data-anchor-id="data-description">Data Description</h2>
+<p>You will work with two datasets:</p>
+<section id="salinas-municipal-airport-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="salinas-municipal-airport-dataset">Salinas Municipal Airport Dataset</h3>
+<ul>
+<li><strong>Properties analyzed</strong>: Houses at varying distances from terminal</li>
+<li><strong>Distance range</strong>: 0.64 to 3.67 miles from terminal</li>
+<li><strong>Noise categories</strong>:
+<ul>
+<li>≥60 dB CNEL</li>
+<li>55-60 dB CNEL</li>
+<li>&lt;55 dB CNEL</li>
+</ul></li>
+<li><strong>Variables</strong>: Property values, distances, noise levels, time series data</li>
+</ul>
+</section>
+<section id="watsonville-municipal-airport-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="watsonville-municipal-airport-dataset">Watsonville Municipal Airport Dataset</h3>
+<ul>
+<li><strong>Properties analyzed</strong>: Houses at varying distances from terminal</li>
+<li><strong>Distance range</strong>: 0.71 to 2.02 miles from terminal</li>
+<li><strong>Noise categories</strong>:
+<ul>
+<li>≥65 dB CNEL</li>
+<li>60-65 dB CNEL</li>
+<li>&lt;60 dB CNEL</li>
+</ul></li>
+<li><strong>Variables</strong>: Property values, distances, noise levels, time series data</li>
+</ul>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Understanding CNEL (Community Noise Equivalent Level)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>CNEL measures 24-hour noise exposure with penalties for evening/night noise:</p>
+<ul>
+<li><strong>Quiet urban area (day)</strong>: 50 dB</li>
+<li><strong>Quiet urban area (night)</strong>: 40 dB</li>
+<li><strong>Countryside (night)</strong>: 20-25 dB</li>
+<li><strong>Discomfort threshold</strong>: &gt;120 dB</li>
+<li><strong>Pain threshold</strong>: &gt;130 dB</li>
+<li><strong>Rocket launch</strong>: ~200 dB</li>
+</ul>
+<p>For context: rustling leaves ≈ 20 dB, normal conversation ≈ 60 dB, lawnmower ≈ 90 dB</p>
+</div>
+</div>
+</section>
+</section>
+<section id="visualization-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-requirements">Visualization Requirements</h2>
+<section id="mandatory-visualizations" class="level3">
+<h3 class="anchored" data-anchor-id="mandatory-visualizations">Mandatory Visualizations</h3>
+<p>Your analysis must include at least:</p>
+<ol type="1">
+<li><strong>One visualization showing the relationship between distance and property value</strong></li>
+<li><strong>One visualization showing the relationship between noise levels and property value</strong></li>
+<li><strong>One comparative visualization</strong> contrasting Salinas and Watsonville</li>
+<li><strong>One multidimensional visualization</strong> integrating 3+ variables</li>
+</ol>
+</section>
+<section id="design-principles-to-demonstrate" class="level3">
+<h3 class="anchored" data-anchor-id="design-principles-to-demonstrate">Design Principles to Demonstrate</h3>
+<p>Your visualizations should showcase:</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Expected Design Competencies
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Clarity</strong>: Clear titles, labels, legends, and annotations</li>
+<li><strong>Appropriate chart types</strong>: Match visualization to data type and question</li>
+<li><strong>Color theory</strong>: Strategic use of color for emphasis and grouping</li>
+<li><strong>Hierarchy</strong>: Guide the viewer’s attention to key insights</li>
+<li><strong>Accessibility</strong>: Colorblind-friendly palettes, sufficient contrast</li>
+<li><strong>Context</strong>: Provide reference points and benchmarks where helpful</li>
+<li><strong>Integrity</strong>: Honest representation without distortion</li>
+<li><strong>Polish</strong>: Professional appearance suitable for executive presentation</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="tools" class="level3">
+<h3 class="anchored" data-anchor-id="tools">Tools</h3>
+<p>You may use any combination of:</p>
+<ul>
+<li><strong>R</strong>: ggplot2, plotly, shiny, patchwork, gganimate</li>
+<li><strong>Python</strong>: matplotlib, seaborn, plotly, altair, bokeh</li>
+<li><strong>Tableau</strong>: For interactive components (export to PDF for submission)</li>
+<li><strong>Design tools</strong>: Illustrator, Figma for final polish (optional)</li>
+</ul>
+</section>
+</section>
+<section id="submission-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="submission-requirements">Submission Requirements</h2>
+<section id="what-to-submit" class="level3">
+<h3 class="anchored" data-anchor-id="what-to-submit">What to Submit</h3>
+<p>Upload a <strong>single compressed folder</strong> (.zip or .tar.gz) named <code>LastName_FirstName_FinalProject</code> containing:</p>
+<pre><code>LastName_FirstName_FinalProject/
+├── presentation.pdf          # Executive presentation (required)
+├── report.pdf               # Technical report (required)
+├── code/                    # All code files
+│   ├── analysis.R (or .py, .jl)
+│   ├── visualizations.R (or .py, .jl)
+│   └── utils.R (optional helper functions)
+├── data/                    # Processed data (if applicable)
+│   └── processed_data.csv
+├── figures/                 # Generated visualizations
+│   ├── figure1.png
+│   ├── figure2.png
+│   └── ...
+└── README.md               # Setup and execution instructions</code></pre>
+</section>
+<section id="where-to-submit" class="level3">
+<h3 class="anchored" data-anchor-id="where-to-submit">Where to Submit</h3>
+<ul>
+<li><strong>Platform</strong>: Moodle (Final Course Project submission link)</li>
+<li><strong>Deadline</strong>: December 11, 2025, 15:59 PM</li>
+<li><strong>Late policy</strong>: 10% penalty per day, maximum 3 days</li>
+</ul>
+</section>
+</section>
+<section id="evaluation-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-criteria">Evaluation Criteria</h2>
+<p>Your project will be assessed on:</p>
+<section id="visualization-quality-40" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-quality-40">Visualization Quality (40%)</h3>
+<ul>
+<li><strong>Appropriateness</strong>: Chart types match data and questions</li>
+<li><strong>Design excellence</strong>: Professional, polished, clear</li>
+<li><strong>Insight generation</strong>: Visualizations reveal meaningful patterns</li>
+<li><strong>Technical execution</strong>: Accurate, honest representation</li>
+<li><strong>Accessibility</strong>: Considerate of diverse audiences</li>
+</ul>
+</section>
+<section id="analytical-rigor-25" class="level3">
+<h3 class="anchored" data-anchor-id="analytical-rigor-25">Analytical Rigor (25%)</h3>
+<ul>
+<li><strong>Depth of analysis</strong>: Thorough exploration of relationships</li>
+<li><strong>Methodology</strong>: Sound analytical approach</li>
+<li><strong>Critical thinking</strong>: Consideration of confounds and limitations</li>
+<li><strong>Data handling</strong>: Appropriate preprocessing and transformations</li>
+</ul>
+</section>
+<section id="storytelling-persuasion-20" class="level3">
+<h3 class="anchored" data-anchor-id="storytelling-persuasion-20">Storytelling &amp; Persuasion (20%)</h3>
+<ul>
+<li><strong>Narrative flow</strong>: Logical progression of ideas</li>
+<li><strong>Clarity of recommendation</strong>: Clear, actionable conclusions</li>
+<li><strong>Audience awareness</strong>: Appropriate for PDC partners and investors</li>
+<li><strong>Persuasiveness</strong>: Compelling case supported by evidence</li>
+</ul>
+</section>
+<section id="technical-quality-10" class="level3">
+<h3 class="anchored" data-anchor-id="technical-quality-10">Technical Quality (10%)</h3>
+<ul>
+<li><strong>Code quality</strong>: Clean, documented, reproducible</li>
+<li><strong>Completeness</strong>: All deliverables present and functional</li>
+<li><strong>Documentation</strong>: Clear README and comments</li>
+</ul>
+</section>
+<section id="professionalism-5" class="level3">
+<h3 class="anchored" data-anchor-id="professionalism-5">Professionalism (5%)</h3>
+<ul>
+<li><strong>Presentation polish</strong>: Executive-ready materials</li>
+<li><strong>Writing quality</strong>: Clear, concise, error-free</li>
+<li><strong>Organization</strong>: Well-structured submission</li>
+</ul>
+</section>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<section id="step-1-understand-the-context-week-1-2" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-understand-the-context-week-1-2">Step 1: Understand the Context (Week 1-2)</h3>
+<ol type="1">
+<li>Read the case study carefully</li>
+<li>Research real estate development and airport proximity effects</li>
+<li>Understand CNEL and NDI measurements</li>
+<li>Identify your key stakeholders and their concerns</li>
+</ol>
+</section>
+<section id="step-2-explore-the-data-week-3-4" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-explore-the-data-week-3-4">Step 2: Explore the Data (Week 3-4)</h3>
+<ol type="1">
+<li>Load and examine both datasets</li>
+<li>Check for data quality issues</li>
+<li>Calculate summary statistics</li>
+<li>Create exploratory visualizations (not for final submission)</li>
+<li>Identify interesting patterns and relationships</li>
+</ol>
+</section>
+<section id="step-3-develop-your-argument-week-5-6" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-develop-your-argument-week-5-6">Step 3: Develop Your Argument (Week 5-6)</h3>
+<ol type="1">
+<li>Form a hypothesis about the development opportunity</li>
+<li>Identify what evidence you need to support it</li>
+<li>Design visualizations that reveal this evidence</li>
+<li>Consider counterarguments and alternative explanations</li>
+<li>Sketch your narrative arc</li>
+</ol>
+</section>
+<section id="step-4-create-refine-week-7-8" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-create-refine-week-7-8">Step 4: Create &amp; Refine (Week 7-8)</h3>
+<ol type="1">
+<li>Build your visualizations</li>
+<li>Write your report and presentation</li>
+<li>Iterate based on self-critique</li>
+<li>Test with a peer (optional but recommended)</li>
+<li>Polish and finalize</li>
+</ol>
+</section>
+</section>
+<section id="resources-support" class="level2">
+<h2 class="anchored" data-anchor-id="resources-support">Resources &amp; Support</h2>
+<section id="office-hours" class="level3">
+<h3 class="anchored" data-anchor-id="office-hours">Office Hours</h3>
+<ul>
+<li><strong>When</strong>: Wednesdays 15:00-17:00, or by appointment</li>
+<li><strong>Where</strong>: Faculty office or online (schedule via email)</li>
+<li><strong>What to discuss</strong>: Methodology, design feedback, technical issues</li>
+</ul>
+</section>
+<section id="recommended-readings" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-readings">Recommended Readings</h3>
+<p>Revisit course materials on:</p>
+<ul>
+<li><strong>Week 1</strong>: Design principles and visual perception</li>
+<li><strong>Week 2</strong>: Grammar of graphics and visual encodings</li>
+<li><strong>Week 4</strong>: Multidimensional data visualization</li>
+<li><strong>Week 5</strong>: Storytelling with data</li>
+<li><strong>Essential texts</strong>: Tufte (graphical excellence), Cairo (functional art), Healy (practical visualization)</li>
+</ul>
+</section>
+<section id="technical-resources" class="level3">
+<h3 class="anchored" data-anchor-id="technical-resources">Technical Resources</h3>
+<ul>
+<li>R documentation: <a href="https://ggplot2.tidyverse.org">ggplot2.tidyverse.org</a></li>
+<li>Python documentation: <a href="https://matplotlib.org">matplotlib.org</a>, <a href="https://seaborn.pydata.org">seaborn.pydata.org</a></li>
+<li>Color advice: <a href="https://colorbrewer2.org">colorbrewer2.org</a></li>
+<li>Accessibility: <a href="https://vis4.net/chromajs">vis4.net/chromajs</a></li>
+</ul>
+</section>
+</section>
+<section id="academic-integrity" class="level2">
+<h2 class="anchored" data-anchor-id="academic-integrity">Academic Integrity</h2>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important Reminders
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>This is an <strong>individual project</strong> - all work must be your own</li>
+<li>You may <strong>discuss concepts</strong> with classmates but not share code or visualizations</li>
+<li><strong>Cite all sources</strong> including online tutorials, Stack Overflow answers, or AI assistance</li>
+<li><strong>Use provided data</strong> - do not supplement with external datasets</li>
+<li><strong>Original visualizations</strong> - do not copy designs from online examples</li>
+<li>Violations will be handled according to university academic integrity policies</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="success-tips" class="level2">
+<h2 class="anchored" data-anchor-id="success-tips">Success Tips</h2>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Recommendations for Excellence
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Start early</strong>: Complex decisions require time to develop nuanced arguments</li>
+<li><strong>Iterate often</strong>: First drafts of visualizations are rarely final versions</li>
+<li><strong>Seek feedback</strong>: Use office hours to validate your approach</li>
+<li><strong>Think like your audience</strong>: Partners care about ROI, investors about risk</li>
+<li><strong>Question your assumptions</strong>: What if your initial hypothesis is wrong?</li>
+<li><strong>Design with purpose</strong>: Every element should serve your narrative</li>
+<li><strong>Test your code</strong>: Make sure everything runs before submission</li>
+<li><strong>Proofread everything</strong>: Typos undermine professional credibility</li>
+<li><strong>Save incrementally</strong>: Version control or frequent backups</li>
+<li><strong>Keep it simple</strong>: Clarity beats complexity</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="frequently-asked-questions" class="level2">
+<h2 class="anchored" data-anchor-id="frequently-asked-questions">Frequently Asked Questions</h2>
+<p><strong>Q: Can I use interactive visualizations?</strong> A: Yes, but your final presentation must be a PDF. You can include static screenshots of interactive visualizations with annotations explaining the interactive features.</p>
+<p><strong>Q: How technical should the presentation be?</strong> A: Balance is key. Your audience includes both technical and non-technical stakeholders. Explain concepts clearly without oversimplifying or using jargon unnecessarily.</p>
+<p><strong>Q: Should I recommend for or against the development?</strong> A: Either conclusion can be correct if well-supported by evidence. The quality of your reasoning and visualization matters more than your specific recommendation.</p>
+<p><strong>Q: Can I use external data sources?</strong> A: No.&nbsp;Use only the provided Salinas and Watsonville datasets. You may reference external information for context (e.g., NDI research) but not add external data to your analysis.</p>
+<p><strong>Q: What if I find data quality issues?</strong> A: Document them in your limitations section and explain how you handled them. Real-world data is messy.</p>
+<p><strong>Q: How many visualizations should I include?</strong> A: Quality over quantity. 6-10 excellent visualizations that tell a coherent story are better than 15 mediocre ones.</p>
+<p><strong>Q: Can I work with others?</strong> A: This is an individual project. You may discuss general concepts but all analysis, code, and visualizations must be your own original work.</p>
+<hr>
+<p>This project is your opportunity to demonstrate mastery of data visualization principles in a realistic business context. Focus on creating visualizations that don’t just show data, but reveal insights and persuade stakeholders. Good luck!</p>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>While Julia is accepted, ensure all required libraries are clearly documented in your README, as it’s less commonly used in the course<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
     }
-    setColorSchemeToggle(hasAlternateSentinel())
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
         }
       }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
       return false;
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
     }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/simonesantoni\.github\.io\/data-viz-smm635");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/simonesantoni\.github\.io\/data-viz-smm635");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
     }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -737,161 +1193,185 @@ ul.task-list li input[type="checkbox"] {
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../project/midTermProject/main.html" class="pagination-link" aria-label="Mid-term project">
