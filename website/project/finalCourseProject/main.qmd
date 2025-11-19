@@ -27,13 +27,15 @@ airport. However, the proximity to the airport raises critical questions:
 Your task is to analyze benchmark data from two comparable California airports
 (Salinas and Watsonville Municipal Airports) and create compelling
 visualizations that support a clear recommendation about the development
-opportunity.
+opportunity. The data, in Excel format, are available in the [data 
+directory](https://github.com/simoneSantoni/data-viz-smm635/tree/master/data) 
+of SMM635's GitHub repository (see file `real_estate.xlsx`).
 
 ::: {.callout-important}
 ## Key Information
 
 - **Type**: Individual project
-- **Due Date**: December 11, 2025 (15:59 PM)
+- **Due Date**: December 1, 2025 (15:59 PM)
 - **Weight**: 40% of final grade
 - **Case**: UVA-BC-0285 (available on Moodle)
 - **Data**: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)
