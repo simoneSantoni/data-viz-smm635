@@ -38,7 +38,7 @@ div.boardhandle > ul > li {
 }
 
 @media print {
-	div.palette, div.boardhandle { 
+	div.palette, div.boardhandle, .chalkboard-button { 
 		display: none!important; 
 	}
 }

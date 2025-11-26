@@ -1,11 +1,401 @@
 ---
 title: "Final Course Project"
-subtitle: "Individual Network Analysis Research"
+subtitle: "Flying Around Real Estate Development: Persuading with Data Visualizations"
 ---
 
+## Project Overview
 
-::: {.callout-note}
-Content coming soon.
+The final project is an **individual assignment** that challenges you to apply
+data visualization principles to address a complex business decision with
+competing considerations. You will work with the case study "Flying Around
+Real Estate Development: Persuading with Data Visualizations" (UVA-BC-0285) to
+demonstrate your mastery of persuasive visualization and storytelling with
+data.[^1]
+
+### The Business Challenge
+
+You are Logan Clausen, a project manager at Pitchard Development Company
+(PDC), a boutique real estate development firm in San Francisco. You have
+identified a promising mixed-use development opportunity near a municipal
+airport. However, the proximity to the airport raises critical questions:
+
+- Does airport proximity increase or decrease property value?
+- How do noise levels (measured in CNEL decibels) impact housing prices?
+- Are there market segments that actively seek airport proximity?
+- How can you persuasively communicate the opportunity (or risk) to stakeholders?
+
+Your task is to analyze benchmark data from two comparable California airports
+(Salinas and Watsonville Municipal Airports) and create compelling
+visualizations that support a clear recommendation about the development
+opportunity. The data, in Excel format, are available in the [data 
+directory](https://github.com/simoneSantoni/data-viz-smm635/tree/master/data) 
+of SMM635's GitHub repository (see file `real_estate.xlsx`).
+
+::: {.callout-important}
+## Key Information
+
+- **Type**: Individual project
+- **Due Date**: December 1, 2025 (15:59 PM)
+- **Weight**: 40% of final grade
+- **Case**: UVA-BC-0285 (available on Moodle)
+- **Data**: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)
 
 :::
+
+## Learning Objectives
+
+Through this project, you will:
+
+1. **Apply persuasive visualization techniques** to support business recommendations
+2. **Design for multiple audiences** with different backgrounds and information needs
+3. **Handle multidimensional data** (price, distance, noise levels, time)
+4. **Create narrative flow** that guides stakeholders through your analysis
+5. **Balance analytical rigor with clarity** for non-technical audiences
+6. **Make defensible design choices** grounded in visualization principles
+
+## Case Questions to Address
+
+Your analysis must answer the following:
+
+::: {.callout-warning}
+## Required Analysis Questions
+
+1. **Proximity Analysis**: How does distance from the airport terminal correlate with housing values in the benchmark markets (Salinas and Watsonville)?
+
+2. **Noise Impact Assessment**: What is the relationship between Community Noise Equivalent Level (CNEL) and property values? Is the Noise Depreciation Index (NDI) of 0.45%-0.64% supported by the data?
+
+3. **Market Segmentation**: Are there patterns suggesting different market segments respond differently to airport proximity?
+
+4. **Comparative Analysis**: How do the two benchmark airports (Salinas vs. Watsonville) compare? What explains any differences?
+
+5. **Confounding Factors**: What other variables beyond noise and distance might be influencing the housing values you observe?
+
+6. **Investment Recommendation**: Should PDC pursue this development opportunity? What are the key risks and opportunities?
+:::
+
+## Deliverables
+
+### 1. Executive Presentation (Primary Deliverable)
+
+Create a **professional presentation** (PDF format) that includes:
+
+- **Executive Summary** (1 slide): Your recommendation and key findings
+- **Context & Business Problem** (1-2 slides): Situation overview
+- **Data & Methodology** (1-2 slides): Brief description of your analytical approach
+- **Visual Analysis** (6-10 slides): Your data visualizations with insights
+- **Recommendation** (1-2 slides): Clear action items and risk/opportunity assessment
+- **Appendix** (optional): Additional supporting analyses
+
+**Specifications:**
+
+- Maximum 15 slides (excluding title and appendix)
+- Minimum 6 visualizations, maximum 12
+- Each visualization must be purposeful and support your narrative
+- Professional design consistent with business context
+- Audience: PDC partners (technical literacy varies) and potential investors
+
+### 2. Technical Report (Supporting Document)
+
+A written report (1,000 words) containing:
+
+- **Introduction**: Business context and analytical objectives
+- **Data Description**: Variables, ranges, potential limitations
+- **Methodology**: Analytical approach and design choices
+- **Findings**: Detailed analysis supporting each visualization
+- **Design Rationale**: Justification for your visualization choices based on course principles
+- **Limitations & Assumptions**: What your analysis cannot answer
+- **Conclusion**: Synthesis and recommendation
+
+### 3. Reproducible Code
+
+Well-documented code that:
+
+- Loads and preprocesses the datasets
+- Performs all analyses
+- Generates all visualizations in your presentation and report
+- Includes clear comments explaining each step
+- Runs without errors (provide clear setup instructions)
+
+**Accepted languages**: Tableau,[^2] R, Python
+
+### 4. README File
+
+A markdown file explaining:
+
+- How to set up the environment (packages/libraries needed)
+- How to run your code
+- Description of output files
+- Any known issues or dependencies
+
+## Data Description
+
+You will work with two datasets:
+
+### Salinas Municipal Airport Dataset
+
+- **Properties analyzed**: Houses at varying distances from terminal
+- **Distance range**: 0.64 to 3.67 miles from terminal
+- **Noise categories**: 
+  - ≥60 dB CNEL
+  - 55-60 dB CNEL
+  - <55 dB CNEL
+- **Variables**: Property values, distances, noise levels, time series data
+
+### Watsonville Municipal Airport Dataset
+
+- **Properties analyzed**: Houses at varying distances from terminal
+- **Distance range**: 0.71 to 2.02 miles from terminal
+- **Noise categories**:
+  - ≥65 dB CNEL
+  - 60-65 dB CNEL
+  - <60 dB CNEL
+- **Variables**: Property values, distances, noise levels, time series data
+
+::: {.callout-tip}
+## Understanding CNEL (Community Noise Equivalent Level)
+
+CNEL measures 24-hour noise exposure with penalties for evening/night noise:
+
+- **Quiet urban area (day)**: 50 dB
+- **Quiet urban area (night)**: 40 dB
+- **Countryside (night)**: 20-25 dB
+- **Discomfort threshold**: >120 dB
+- **Pain threshold**: >130 dB
+- **Rocket launch**: ~200 dB
+
+For context: rustling leaves ≈ 20 dB, normal conversation ≈ 60 dB, lawnmower ≈ 90 dB
+:::
+
+## Visualization Requirements
+
+### Mandatory Visualizations
+
+Your analysis must include at least:
+
+1. **One visualization showing the relationship between distance and property value**
+2. **One visualization showing the relationship between noise levels and property value**
+3. **One comparative visualization** contrasting Salinas and Watsonville
+4. **One multidimensional visualization** integrating 3+ variables
+
+### Design Principles to Demonstrate
+
+Your visualizations should showcase:
+
+::: {.callout-note}
+## Expected Design Competencies
+
+- **Clarity**: Clear titles, labels, legends, and annotations
+- **Appropriate chart types**: Match visualization to data type and question
+- **Hierarchy**: Guide the viewer's attention to key insights
+- **Context**: Provide reference points and benchmarks where helpful
+- **Integrity**: Honest representation without distortion
+- **Polish**: Professional appearance suitable for executive presentation
+:::
+
+### Tools
+
+You may use any combination of:
+
+- **R**: ggplot2, plotly, shiny, patchwork, gganimate
+- **Python**: matplotlib, seaborn, plotly, altair, bokeh
+- **Tableau**: For interactive components (export to PDF for submission)
+- **Design tools**: Illustrator, Figma for final polish (optional)
+
+## Submission Requirements
+
+### What to Submit
+
+Upload a **single compressed folder** (.zip or .tar.gz) named `LastName_FirstName_FinalProject` containing:
+
+```
+LastName_FirstName_FinalProject/
+├── presentation.pdf          # Executive presentation (required)
+├── report.pdf               # Technical report (required)
+├── code/                    # All code files
+│   ├── analysis.R (or .py, .tbm)
+│   ├── visualizations.R (or .py, .tbm)
+│   └── utils.R (optional helper functions)
+├── data/                    # Processed data (if applicable)
+│   └── processed_data.csv
+├── figures/                 # Generated visualizations
+│   ├── figure1.png
+│   ├── figure2.png
+│   └── ...
+└── README.md               # Setup and execution instructions
+```
+
+### Where to Submit
+
+- **Platform**: Moodle (Final Course Project submission link)
+- **Deadline**: December 1, 2025, 15:59 PM
+
+## Evaluation Criteria
+
+Your project will be assessed on:
+
+### Visualization Quality (40%)
+
+- **Appropriateness**: Chart types match data and questions
+- **Design excellence**: Professional, polished, clear
+- **Insight generation**: Visualizations reveal meaningful patterns
+- **Technical execution**: Accurate, honest representation
+- **Accessibility**: Considerate of diverse audiences
+
+### Analytical Rigor (25%)
+
+- **Depth of analysis**: Thorough exploration of relationships
+- **Methodology**: Sound analytical approach
+- **Critical thinking**: Consideration of confounds and limitations
+- **Data handling**: Appropriate preprocessing and transformations
+
+### Storytelling & Persuasion (20%)
+
+- **Narrative flow**: Logical progression of ideas
+- **Clarity of recommendation**: Clear, actionable conclusions
+- **Audience awareness**: Appropriate for PDC partners and investors
+- **Persuasiveness**: Compelling case supported by evidence
+
+### Technical Quality (10%)
+
+- **Code quality**: Clean, documented, reproducible
+- **Completeness**: All deliverables present and functional
+- **Documentation**: Clear README and comments
+
+### Professionalism (5%)
+
+- **Presentation polish**: Executive-ready materials
+- **Writing quality**: Clear, concise, error-free
+- **Organization**: Well-structured submission
+
+:::{.callout-warning}
+
+These criteria will be assessed based on the submitted material and individual
+presentation.
+
+:::
+
+
+## Getting Started
+
+### Step 1: Understand the Context
+
+1. Read the case study carefully
+2. Research real estate development and airport proximity effects
+3. Understand CNEL and NDI measurements
+4. Identify your key stakeholders and their concerns
+
+### Step 2: Explore the Data
+
+1. Load and examine both datasets
+2. Check for data quality issues
+3. Calculate summary statistics
+4. Create exploratory visualizations (not for final submission)
+5. Identify interesting patterns and relationships
+
+### Step 3: Develop Your Argument
+
+1. Form a hypothesis about the development opportunity
+2. Identify what evidence you need to support it
+3. Design visualizations that reveal this evidence
+4. Consider counterarguments and alternative explanations
+5. Sketch your narrative arc
+
+### Step 4: Create & Refine
+
+1. Build your visualizations
+2. Write your report and presentation
+3. Iterate based on self-critique
+4. Test with a peer (optional but recommended)
+5. Polish and finalize
+
+## Resources & Support
+
+### Office Hours
+
+- **When**: Wednesdays 15:00-17:00, or by appointment
+- **Where**: Faculty office or online (schedule via email)
+- **What to discuss**: Methodology, design feedback, technical issues
+
+### Recommended Readings
+
+Revisit course materials on:
+
+- **Week 1**: Design principles and visual perception
+- **Week 2**: Grammar of graphics and visual encodings
+- **Week 4**: Multidimensional data visualization
+- **Week 5**: Storytelling with data
+- **Essential texts**: Tufte (graphical excellence), Cairo (functional art),
+Healy (practical visualization)
+
+## Academic Integrity
+
+::: {.callout-warning}
+## Important Reminders
+
+- This is an **individual project** - all work must be your own
+- You may **discuss concepts** with classmates but not share code or visualizations
+- **Cite all sources** including online tutorials, Stack Overflow answers, or AI assistance
+- **Use provided data** - do not supplement with external datasets
+- **Original visualizations** - do not copy designs from online examples
+- Violations will be handled according to university academic integrity policies
+:::
+
+## Success Tips
+
+::: {.callout-tip}
+## Recommendations for Excellence
+
+1. **Start early**: Complex decisions require time to develop nuanced arguments
+2. **Iterate often**: First drafts of visualizations are rarely final versions
+3. **Seek feedback**: Use office hours to validate your approach
+4. **Think like your audience**: Partners care about ROI, investors about risk
+5. **Question your assumptions**: What if your initial hypothesis is wrong?
+6. **Design with purpose**: Every element should serve your narrative
+7. **Test your code**: Make sure everything runs before submission
+8. **Proofread everything**: Typos undermine professional credibility
+9. **Save incrementally**: Version control or frequent backups
+10. **Keep it simple**: Clarity beats complexity
+:::
+
+## Frequently Asked Questions
+
+**Q: Can I use interactive visualizations?** A: Yes, but your final
+presentation must be a PDF. You can include static screenshots of interactive
+visualizations with annotations explaining the interactive features.
+
+**Q: How technical should the presentation be?** A: Balance is key. Your
+audience includes both technical and non-technical stakeholders. Explain
+concepts clearly without oversimplifying or using jargon unnecessarily.
+
+**Q: Should I recommend for or against the development?** A: Either conclusion
+can be correct if well-supported by evidence. The quality of your reasoning
+and visualization matters more than your specific recommendation.
+
+**Q: Can I use external data sources?** A: No. Use only the provided Salinas
+and Watsonville datasets. You may reference external information for context
+(e.g., NDI research) but not add external data to your analysis.
+
+**Q: What if I find data quality issues?** A: Document them in your
+limitations section and explain how you handled them. Real-world data is
+messy.
+
+**Q: How many visualizations should I include?** A: Quality over quantity.
+6-10 excellent visualizations that tell a coherent story are better than 15
+mediocre ones.
+
+**Q: Can I work with others?** A: This is an individual project. You may
+discuss general concepts but all analysis, code, and visualizations must be
+your own original work.
+
+---
+
+This project is your opportunity to demonstrate mastery of data visualization
+principles in a realistic business context. Focus on creating visualizations
+that don't just show data, but reveal insights and persuade stakeholders. Good
+luck!
+
+[^1]: Electronic copy of the case available in the "Case Studies" section of
+SMM635's Moodle Page.
+
+[^2]: If you use Tableau, include your .tbm file in the submission package.
 
