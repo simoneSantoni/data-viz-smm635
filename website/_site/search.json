@@ -15,7 +15,7 @@
     "href": "weeks/week-7/main.html",
     "title": "Week 7",
     "section": "",
-    "text": "Note📚 Prepare\n\n\n\n📥 Download and install Tableau Public (free): Tableau for Students\n📂 Download the Netflix dataset (netflix.csv) from GitHub (data/netflix.csv) or from Moodle.",
+    "text": "Note📚 Prepare\n\n\n\n📥 Download and install Tableau Public (free): Tableau for Students\n📂 Download the Netflix dataset (netflix.csv) from GitHub (data/netflix.csv) or Moodle.",
     "crumbs": [
       "Weekly materials",
       "Week 7"
@@ -2009,7 +2009,7 @@
     "href": "weeks/week-8/main.html",
     "title": "Week 8",
     "section": "",
-    "text": "NoteMaterials Coming Soon\n\n\n\nContent for Week 8 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "Note📚 Prepare\n\n\n\nPlease read the case study:\n\n“Using Data Analytics and Visualization in Accounting and Auditing at Toby Biotech Inc.”\n(Moodle → Case Study section)\n\nAs you read, pay special attention to the accounting-related terms and ideas, for example: - Accounts Receivable (AR)\n- Allowance for Credit Losses (ACL)\n- Reserve for Returns and Allowances (RRA)\n- Revenue recognition and timing\n- Materiality\n- CECL (Current Expected Credit Loss model)\nYou do not need to understand every technical detail,\nbut you should have a basic sense of what each term means in the case.",
     "crumbs": [
       "Weekly materials",
       "Week 8"
@@ -2020,7 +2020,7 @@
     "href": "weeks/week-7/main.html#prepare",
     "title": "Week 7",
     "section": "",
-    "text": "Note📚 Prepare\n\n\n\n📥 Download and install Tableau Public (free): Tableau for Students\n📂 Download the Netflix dataset (netflix.csv) from GitHub (data/netflix.csv) or from Moodle.",
+    "text": "Note📚 Prepare\n\n\n\n📥 Download and install Tableau Public (free): Tableau for Students\n📂 Download the Netflix dataset (netflix.csv) from GitHub (data/netflix.csv) or Moodle.",
     "crumbs": [
       "Weekly materials",
       "Week 7"
@@ -2042,7 +2042,7 @@
     "href": "weeks/week-7/main.html#practice",
     "title": "Week 7",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 In-class guided practice using netflix.csv:\n\nConnect the dataset and inspect fields on the Data Source page.\nBuild a few core charts and some more advanced charts step by step.",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 In-class guided practice using netflix.csv:\n\nConnect to the dataset and inspect the fields on the Data Source page.\nBuild a few core charts and then some more advanced charts, step by step.",
     "crumbs": [
       "Weekly materials",
       "Week 7"
@@ -2053,7 +2053,7 @@
     "href": "weeks/week-7/main.html#perform",
     "title": "Week 7",
     "section": "Perform",
-    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\nUsing the Netflix dataset, reflect on the following questions. You will work individually.\n\nOne country’s structure and trend\n\nChoose one country of interest.\nWhat does Netflix’s content from this country look like in terms of Movies vs TV Shows?\nHow has the number of contents from this country changed over release years? Are there any noticeable shifts or trends over time?\n\nRating structure within one main genre\n\nChoose one main genre (e.g. Drama, Comedy, Documentary).\nHow are titles in this genre distributed across different rating categories?\nDo certain ratings dominate within this genre?\nWhat does this suggest about the typical audience for this genre on Netflix?\n\nCountry catalogue size vs “recency” of content\n\nThink of each country as one observation.\nHow do countries differ in terms of the size of their catalogues?\nHow do they differ in terms of how “recent” their catalogues are (e.g. by average release year)?\nWhich countries stand out as outliers or interesting groups when you consider catalogue size and recency together?",
+    "text": "Perform\n\n\n\n\n\n\nNote📝 Perform\n\n\n\nUsing the Netflix dataset, reflect on the following questions. You will work individually.\n\nOne country’s structure and trends\n\nChoose one country of interest.\nWhat does Netflix’s content from this country look like in terms of Movies vs TV Shows?\nHow has the number of titles from this country changed over the years (by release year)? Are there any noticeable shifts or trends over time?\n\nRating structure within a main genre\n\nChoose one main genre (e.g., Drama, Comedy, Documentary).\nHow are titles in this genre distributed across different rating categories?\nDo certain ratings dominate within this genre?\nWhat does this suggest about the typical audience for this genre on Netflix?\n\nCountry catalogue size vs “recency” of content\n\nThink of each country as one observation.\nHow do countries differ in terms of the size of their catalogues?\nHow do they differ in how “recent” their catalogues are?\nWhich countries stand out as outliers or interesting groups when you consider catalogue size and recency together?",
     "crumbs": [
       "Weekly materials",
       "Week 7"
@@ -2097,5 +2097,491 @@
     "title": "Data Visualization & Storytelling",
     "section": "",
     "text": "This case demonstrates:\n\nHow to use data visualization and storytelling to provide insights\nHow to communicate insights effectively to decision-makers\nThe difference between exploratory and explanatory visualization\nCreating different chart types to explore data\nThe value of business storytelling\n\n\nThis is a 90-minute session with 30% theory and 70% hands-on practice with Tableau or Power BI."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#the-scenario-why-do-we-care-about-receivables",
+    "href": "weeks/week-8/case_discussion.html#the-scenario-why-do-we-care-about-receivables",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "The Scenario: Why Do We Care About Receivables?",
+    "text": "The Scenario: Why Do We Care About Receivables?\n\nToby Biotech Inc. is a fictional, global life-sciences equipment firm (instruments, consumables, software, services).\nMacro context:\n\nGlobal economy is slowing; major markets are in or near recession.\nCustomers’ cash flows are under pressure → more credit sales, slower payment, more returns and price concessions.\n\nFinancial snapshot (20X3, unaudited):\n\nNet sales ≈ $1.13bn; pretax income ≈ $218m.\nAccounts receivable (AR) at year-end ≈ $177m, up 12% vs prior year.\n\nToby is:\n\nUndergoing its annual financial statement audit by TRG LLP.\nPreparing a new bond issue; credit rating and EPS are highly sensitive.\n\n\nCore case tension:\nCan Toby’s reported revenue and receivables be trusted in a downturn, or are risks being hidden in AR, bad-debt allowances, and returns/allowances?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#key-accounting-ideas-for-non-accounting-students",
+    "href": "weeks/week-8/case_discussion.html#key-accounting-ideas-for-non-accounting-students",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Key Accounting Ideas (For Non-Accounting Students)",
+    "text": "Key Accounting Ideas (For Non-Accounting Students)\nWe only need four core concepts:\n\nAccounts Receivable (AR, net)\n\nMoney customers owe Toby for goods/services already delivered.\nReported on the balance sheet as an asset.\n\nAllowance for Credit Losses (ACL)\n\nManagement’s estimate of receivables that will never be collected.\n\nHigher ACL → higher bad-debt expense → lower profit & EPS → lower net AR.\n\nReserve for Returns and Allowances (RRA)\n\nExpected future revenue reductions from product returns and post-sale price concessions (“allowances”).\n\nHigher RRA → lower revenue and profit → lower net AR.\n\nRevenue Recognition\n\nRules deciding when and how much revenue to book.\nAggressive recognition can temporarily inflate revenue, AR, and EPS.\n\n\nMateriality:\nTRG sets overall materiality at ~4% of pretax income. Even “small” changes in ACL or RRA can be material when the firm is just meeting analyst EPS expectations."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#stakeholders-their-incentives",
+    "href": "weeks/week-8/case_discussion.html#stakeholders-their-incentives",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Stakeholders & Their Incentives",
+    "text": "Stakeholders & Their Incentives\nToby Management (CFO, Controller, CRO)\n\nWant to:\n\nShow stable or growing revenue and EPS despite the downturn.\nMaintain an investment-grade credit rating for the upcoming bond issue.\n\nTemptation:\n\nUnder-estimate ACL and RRA to keep profit high.\nPush aggressive revenue recognition and generous credit terms.\n\n\nTRG Audit Team\n\nResponsible for stating whether the financial statements are fairly presented.\nFocused on:\n\nRisk of overstated AR and revenue.\nWhether ACL and RRA properly reflect current conditions and reasonable forecasts (CECL model).\n\nNeed to decide:\n\nWhere to focus audit effort.\nWhat questions to ask management.\n\n\nInvestors & Lenders\n\nCare about:\n\nQuality of earnings (are profits sustainable?).\n\nCredit risk: will cash actually be collected?\n\n\nRely heavily on the audit and on clear communication of risks."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#tableaus-role-from-raw-ledger-to-risk-signals",
+    "href": "weeks/week-8/case_discussion.html#tableaus-role-from-raw-ledger-to-risk-signals",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Tableau’s Role: From Raw Ledger to Risk Signals",
+    "text": "Tableau’s Role: From Raw Ledger to Risk Signals\nWe use Tableau not to make “pretty charts,” but to help answer:\n\n“Where in Toby’s receivables and related accounts do we see patterns that might signal credit and revenue-recognition risk?”\n\nTRG has access to:\n\nAR subledger with customer-level balances.\nDetailed invoices data.\nCredit memos for returns.\nCredit memos for allowances (post-sale price concessions).\n\nTableau views are organised into four blocks:\n\nCustomer Balance – Where is the AR located?\nInvoices – What do single transactions look like (size, timing, ageing)?\nReturns – Who is returning goods and when?\nAllowances – Who is getting price concessions and how large are they?\n\nYour job in class is to follow the views, learn Tableau operations, and practise reading patterns that matter for business risk."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#block-1-customer-balance-where-is-the-money",
+    "href": "weeks/week-8/case_discussion.html#block-1-customer-balance-where-is-the-money",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Block 1 – Customer Balance: “Where Is the Money?”",
+    "text": "Block 1 – Customer Balance: “Where Is the Money?”\nGuiding questions:\n\nBy country/city:\n\nAre receivables concentrated in a few markets or spread evenly?\n\nAny locations with surprisingly large balances relative to expectations?\n\nBy sales office:\n\nWhich offices carry the largest AR?\n\nAre there offices whose AR is unusually high given their role/region?\n\nBy customer:\n\nWithin a region or office, is AR dominated by a few big customers?\n\nAre there “outlier” customers (large balances, unusual location–office pair)?\n\n\nWhat to look for (anchor points):\n\nHigh geographic or organisational concentration of credit risk.\nCustomer–sales office pairings that look unusual (e.g. distant office serving a large foreign client).\nSingle customers that account for a very large share of a region’s AR."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#block-2-invoices-how-big-how-old",
+    "href": "weeks/week-8/case_discussion.html#block-2-invoices-how-big-how-old",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Block 2 – Invoices: “How Big, How Old?”",
+    "text": "Block 2 – Invoices: “How Big, How Old?”\nGuiding questions:\n\nInvoice amount distribution:\n\nAre most invoices small/medium, with a few very large ones?\nWhere would an auditor focus sample selection for detailed testing?\n\nTiming and ageing:\n\nIn which months were many large invoices issued (e.g., year-end spikes)?\nWhich periods have invoices that are still unpaid long after issue?\n\n\nWhat to look for:\n\nHeavy tails – few very large invoices that carry disproportionate risk.\nTemporal clusters – bursts of invoicing (e.g., just before year-end) that may indicate aggressive revenue recognition.\nLonger-aged invoices that may require higher ACL."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#block-3-returns-are-customers-sending-products-back",
+    "href": "weeks/week-8/case_discussion.html#block-3-returns-are-customers-sending-products-back",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Block 3 – Returns: “Are Customers Sending Products Back?”",
+    "text": "Block 3 – Returns: “Are Customers Sending Products Back?”\nGuiding questions:\n\nWhen do returns happen?\n\nMostly soon after sale (within normal policy) or much later?\nAny months with unusually high return activity?\n\nWho is returning?\n\nWhich customers generate the largest volume/value of returns?\nAre these the same customers with large AR balances?\n\n\nWhat to look for:\n\nReturns occurring outside normal return windows.\n\nSpikes in returns following sales pushes or product launches.\n\nA small number of “return-heavy” customers driving most of the volume.\n\nImplications:\n\nHigher actual and expected returns → RRA may need to increase.\n\nClusters of late or frequent returns may signal product issues or weak revenue-recognition discipline."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#block-4-allowances-who-gets-price-concessions",
+    "href": "weeks/week-8/case_discussion.html#block-4-allowances-who-gets-price-concessions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Block 4 – Allowances: “Who Gets Price Concessions?”",
+    "text": "Block 4 – Allowances: “Who Gets Price Concessions?”\nGuiding questions:\n\nTiming of allowances:\n\nAre concessions granted close to the sale, or long after?\nAny build-up of allowances at year-end?\n\nSize and proportion:\n\nHow large are allowances relative to original invoice amounts?\nAre there transactions where allowances approach or exceed 100%?\n\nBy customer:\n\nWhich customers frequently receive allowances?\nAre they also heavy in AR and returns?\n\n\nWhat to look for:\n\nHigh allowance percentages (e.g., &gt;50% of invoice) as clear outliers.\nTransactions with very low or negative net revenue after allowances.\nCustomers with repeated or large concessions, indicating pricing pressure or relationship management issues.\n\nImplications:\n\nUnder-recorded allowances → overstated revenue and AR.\n\nPattern of large, late-stage concessions might suggest using allowances to manage earnings."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#pulling-it-together-from-patterns-to-questions",
+    "href": "weeks/week-8/case_discussion.html#pulling-it-together-from-patterns-to-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Pulling It Together: From Patterns to Questions",
+    "text": "Pulling It Together: From Patterns to Questions\nAcross all four blocks, we are training three skills:\n\nDetect patterns and anomalies\n\nConcentrations, spikes, tails, late events, repeated problem customers.\n\nTranslate patterns into questions\n\n“Why is this region so concentrated?”\n\n“Why do allowances spike at year-end?”\n\n“Why does this customer have both high AR and high returns?”\n\nConnect to decisions\n\nFor auditors: where to focus further testing, what estimates to challenge.\n\nFor management: which customers/policies to review, how to adjust credit and pricing strategies.\n\nFor investors: how sustainable and high-quality Toby’s earnings really are."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#discussion-prompts-for-class",
+    "href": "weeks/week-8/case_discussion.html#discussion-prompts-for-class",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Discussion Prompts for Class",
+    "text": "Discussion Prompts for Class\n\nData Exploration:\nLooking at the four Tableau blocks, which views do you find most informative for understanding receivables risk at Toby? Why?\nRisk Signals:\nSuppose you are on the TRG audit team. Which 2–3 patterns from the visualisations would most worry you? How might they affect ACL or RRA?\nStakeholder Stories:\nHow would you summarise Toby’s receivables situation differently if you were speaking to:\n\nthe CFO,\n\nthe audit committee, and\n\na potential bond investor?\n\nDesign Choices:\nFor one of the Tableau views, critique the chart design. Does it make the risk easy to see? How would you redesign it to better support the story?\nBeyond This Case:\nWhere else in business (outside accounting) could the same approach—using visualisations to find “risk hotspots” in transactional data—be valuable?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#module-a",
+    "href": "weeks/week-8/case_discussion.html#module-a",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Module A",
+    "text": "Module A\nThe Context of This Case"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#a1-who-is-toby-biotech",
+    "href": "weeks/week-8/case_discussion.html#a1-who-is-toby-biotech",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "A1 · Who Is Toby Biotech?",
+    "text": "A1 · Who Is Toby Biotech?\n\nToby Biotech Inc. is a fictional global life sciences equipment firm.\nMain product lines:\n\nInstruments\n\nConsumables\n\nSoftware\n\nServices\n\nMain customers:\n\nResearch labs\n\nHospitals and clinics\n\nUniversities and public-sector organisations\n\nToby sells high-value products on credit to professional customers,\nso receivables are a natural and important part of the business."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#a2-economic-background",
+    "href": "weeks/week-8/case_discussion.html#a2-economic-background",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "A2 · Economic Background",
+    "text": "A2 · Economic Background\n\nThe case takes place during a period of global economic slowdown:\n\nMajor markets are in or near recession.\nCustomers’ cash flows are under pressure.\n\nTypical effects in this environment:\n\nMore sales are done on credit instead of cash.\nCustomers take longer to pay.\nCompanies see more product returns and stronger pressure for price concessions.\n\nIn this setting, receivables become a key place where financial risks can build up,\nand some reported numbers may become less reliable."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#a3-tobys-20x3-financial-snapshot-unaudited",
+    "href": "weeks/week-8/case_discussion.html#a3-tobys-20x3-financial-snapshot-unaudited",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "A3 · Toby’s 20X3 Financial Snapshot (Unaudited)",
+    "text": "A3 · Toby’s 20X3 Financial Snapshot (Unaudited)\n\nNet sales revenue (20X3): about $1.132 billion\nPre-tax income (20X3): about $218 million\nYear-end accounts receivable (AR):\n\n$177 million at 31 Dec 20X3\n\nIncrease of $19 million (≈12%) over the prior year\n\nSales vs. AR growth\n\nSales have grown by roughly 10% year-on-year.\n\nAR has grown by roughly 12%, so receivables are increasing faster than sales.\n\nIn a weak economy, this pattern raises questions about\nhow quickly customers are paying and how realistic the reported AR balance is."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#module-b",
+    "href": "weeks/week-8/case_discussion.html#module-b",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Module B",
+    "text": "Module B\nCore Accounting Ideas (for Non-Accounting Students)"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b1-accounts-receivable-ar",
+    "href": "weeks/week-8/case_discussion.html#b1-accounts-receivable-ar",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B1 · Accounts Receivable (AR)",
+    "text": "B1 · Accounts Receivable (AR)\n\nAccounts Receivable (AR)\n\nMoney that customers owe Toby for goods or services already delivered\n\nReported as an asset on the balance sheet\n\nKey idea:\n\nAR is a good asset only if customers actually pay.\n\nIf they do not pay, AR turns into credit losses.\n\nIn this case, we will use Tableau to understand where this AR sits:\n\nWhich countries and cities\n\nWhich sales offices\n\nWhich customers"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b2-adjusting-ar-for-risk-acl-rra",
+    "href": "weeks/week-8/case_discussion.html#b2-adjusting-ar-for-risk-acl-rra",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B2 · Adjusting AR for Risk: ACL & RRA",
+    "text": "B2 · Adjusting AR for Risk: ACL & RRA\n\nAllowance for Credit Losses (ACL)\n\nManagement’s estimate of receivables that will not be collected\n\nHigher ACL → more bad-debt expense → lower profit and lower net AR\n\nReserve for Returns and Allowances (RRA)\n\nExpected future product returns and post-sale price concessions\n\nHigher RRA → lower revenue → lower profit and lower net AR\n\n\n\nNet AR = Gross AR – ACL – RRA\n\n\nIf management is too optimistic, ACL and RRA may be too low,\nwhich makes AR and profit look better than they really are."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b3-revenue-recognition-timing",
+    "href": "weeks/week-8/case_discussion.html#b3-revenue-recognition-timing",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B3 · Revenue Recognition & Timing",
+    "text": "B3 · Revenue Recognition & Timing\n\nRevenue recognition decides:\n\nWhen a sale is recorded as revenue.\n\nHow much revenue is recorded.\n\nAggressive recognition:\n\nBook revenue early (e.g., before risks around collection/returns are resolved).\nTemporarily inflates revenue, AR, and EPS.\n\nIn a downturn, pressure to “hit the numbers” can push firms toward:\n\nLooser credit policies,\nLater recognition of losses,\nHeavier use of returns and allowances to adjust results quietly."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#module-c",
+    "href": "weeks/week-8/case_discussion.html#module-c",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Module C",
+    "text": "Module C\nStakeholders & Their Incentives"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#c1-toby-managements-perspective",
+    "href": "weeks/week-8/case_discussion.html#c1-toby-managements-perspective",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "C1 · Toby Management’s Perspective",
+    "text": "C1 · Toby Management’s Perspective\n\nKey players: CFO, Controller, CRO\nMain objectives:\n\nMeet or beat analyst EPS expectations\n\nMaintain a strong credit rating for a planned bond issue\n\nUnder pressure, management may:\n\nStretch credit terms to keep sales volume up\n\nDelay recognising credit losses and returns\n\nUnderestimate ACL and RRA to support reported profit"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#c2-trg-audit-teams-perspective",
+    "href": "weeks/week-8/case_discussion.html#c2-trg-audit-teams-perspective",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "C2 · TRG Audit Team’s Perspective",
+    "text": "C2 · TRG Audit Team’s Perspective\n\nTRG LLP is Toby’s external auditor.\nMain responsibility:\n\nProvide reasonable assurance that the financial statements are fairly presented\n\nIn this engagement, TRG:\n\nSets overall materiality at about 4% of pre-tax income\n\nFocuses on risk of overstatement in:\n\nNet AR\n\nRevenue\n\nACL and RRA\n\n\nThe audit team must decide:\n\nWhere to concentrate audit effort\n\nWhat extra evidence to collect"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#c3-investors-and-lenders",
+    "href": "weeks/week-8/case_discussion.html#c3-investors-and-lenders",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "C3 · Investors and Lenders",
+    "text": "C3 · Investors and Lenders\n\nInvestors and bondholders care about:\n\nQuality of earnings, not just the earnings level\n\nAbility to generate cash and repay debt\n\nSmall changes around EPS targets or leverage ratios can:\n\nMove Toby’s share price\n\nAffect the interest rate demanded by lenders\n\nBecause of this, the way Toby estimates ACL and RRA,\nand how realistic its revenue is, matters directly to capital markets."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#module-d",
+    "href": "weeks/week-8/case_discussion.html#module-d",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Module D",
+    "text": "Module D\nFrom Data Tables to Risk Patterns\nIn this section, we will:\n\nDive into Toby’s receivables data\nSee what kinds of risks and patterns are hiding in the ledgers\nUse a few simple visualisations to understand the data"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1-from-subledger-to-visuals",
+    "href": "weeks/week-8/case_discussion.html#d1-from-subledger-to-visuals",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1 · From Subledger to Visuals",
+    "text": "D1 · From Subledger to Visuals\n\nTRG has access to:\n\nCustomer-level AR subledger\n\nDetailed invoices\n\nCredit memos – returns\n\nCredit memos – allowances\n\nTool for this class: Tableau Public\nIn this session, we will:\n\nUse Tableau to explore these datasets\n\nLook for patterns that may signal credit risk or revenue-recognition risk\n\nPractise describing those patterns clearly"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d2-block-1-customer-balance-where-is-the-money",
+    "href": "weeks/week-8/case_discussion.html#d2-block-1-customer-balance-where-is-the-money",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D2 · Block 1 – Customer Balance: Where Is the Money?",
+    "text": "D2 · Block 1 – Customer Balance: Where Is the Money?\n\nWith customer-balance views we can explore:\n\nBy country / city\n\nAre receivables concentrated in a few markets or spread widely?\n\nAre there locations with unexpectedly large balances?\n\nBy sales office\n\nWhich offices carry the largest AR?\n\nAre some offices unusually exposed?\n\nBy customer\n\nIn a given region, do a few customers account for most of the AR?\n\n\nThese visuals show:\n\nGeographic and organisational concentration of credit risk\n\nUnusual customer–office combinations that may deserve extra attention"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d3-block-2-invoices-how-big-how-old",
+    "href": "weeks/week-8/case_discussion.html#d3-block-2-invoices-how-big-how-old",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D3 · Block 2 – Invoices: How Big, How Old?",
+    "text": "D3 · Block 2 – Invoices: How Big, How Old?\n\nInvoice-level views allow us to:\n\nExamine the distribution of invoice sizes\n\nMany small transactions vs. a few very large ones\n\nLook at timing and simple ageing\n\nWhich periods generated heavy invoicing\n\nWhere older unpaid invoices are clustered\n\n\nThese patterns matter because:\n\nVery large invoices can be material on their own\n\nOlder invoices are more likely to become credit losses\n\nSpikes in invoicing at certain dates may hint at aggressive revenue recognition"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d4-block-3-returns-are-products-coming-back",
+    "href": "weeks/week-8/case_discussion.html#d4-block-3-returns-are-products-coming-back",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D4 · Block 3 – Returns: Are Products Coming Back?",
+    "text": "D4 · Block 3 – Returns: Are Products Coming Back?\n\nUsing returns data, we can study:\n\nWhen returns occur\n\nSoon after sale (within policy) or much later\n\nMonths with unusually high return activity\n\nWho is returning products\n\nCustomers with high return amounts or high return frequency\n\n\nThese visuals help us:\n\nJudge whether the RRA is reasonable\n\nIdentify customers or time periods linked to product issues\n\nUnderstand how returns might reduce effective revenue"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d5-block-4-allowances-hidden-price-cuts",
+    "href": "weeks/week-8/case_discussion.html#d5-block-4-allowances-hidden-price-cuts",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D5 · Block 4 – Allowances: Hidden Price Cuts",
+    "text": "D5 · Block 4 – Allowances: Hidden Price Cuts\n\nAllowances represent post-sale price concessions and credits.\nWith allowance data we look at:\n\nTiming of allowances relative to the original sale\n\nAllowance size as a percentage of invoice amount\n\nCustomers who often receive large concessions\n\nIn Tableau we will:\n\nPlot the distribution of allowance percentages\n\nHighlight transactions where allowances dramatically reduce\nor even exceed the original invoice\n\nSpot customers who are consistently “allowance-heavy”\n\nThese patterns are important because:\n\nUnder-recorded allowances mean overstated revenue and AR\n\nSystematic, large concessions may indicate earnings management\n\nThey also reveal structural pricing or bargaining-power issues"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#wrap-up-what-we-want-you-to-practise",
+    "href": "weeks/week-8/case_discussion.html#wrap-up-what-we-want-you-to-practise",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Wrap-Up: What We Want You to Practise",
+    "text": "Wrap-Up: What We Want You to Practise\n\nUsing Tableau to:\n\nConnect business questions to data views.\n\nBuild simple but informative visualisations.\nSpot patterns and outliers in receivables-related data.\n\nThinking like an analyst:\n\n“Does this pattern look normal given the economic background?”\n\n“If not, what questions should I ask next?”\n\nCommunicating clearly:\n\nTurning a visual pattern into a short, convincing explanation that a manager, auditor, or investor can understand."
+  },
+  {
+    "objectID": "weeks/week-8/main.html#prepare",
+    "href": "weeks/week-8/main.html#prepare",
+    "title": "Week 8",
+    "section": "",
+    "text": "Note📚 Prepare\n\n\n\nPlease read the case study:\n\n“Using Data Analytics and Visualization in Accounting and Auditing at Toby Biotech Inc.”\n(Moodle → Case Study section)\n\nAs you read, pay special attention to the accounting-related terms and ideas, for example: - Accounts Receivable (AR)\n- Allowance for Credit Losses (ACL)\n- Reserve for Returns and Allowances (RRA)\n- Revenue recognition and timing\n- Materiality\n- CECL (Current Expected Credit Loss model)\nYou do not need to understand every technical detail,\nbut you should have a basic sense of what each term means in the case.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#participate",
+    "href": "weeks/week-8/main.html#participate",
+    "title": "Week 8",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Case Discussion Presentation – Understanding the challenge of receivables risk at Toby Biotech\nIn class, we will:\n\nWalk through the Toby Biotech case together and discuss:\n\nthe company background\n\nthe economic context\n\nwhy receivables and related estimates matter.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#practice",
+    "href": "weeks/week-8/main.html#practice",
+    "title": "Week 8",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\nIn the second part of the session, we will do a hands-on exercise:\n\nUse Tableau to explore the Toby Biotech datasets from the case.\nBuild simple visualisations to:\n\nsee where receivables are concentrated, and\n\nstart identifying patterns that might indicate risk.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#perform",
+    "href": "weeks/week-8/main.html#perform",
+    "title": "Week 8",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\nNote🧠 Perform\n\n\n\nAfter class, take a few minutes to mentally review:\n\nWhat you understood about receivables risk from the Toby Biotech case;\n\nWhich Tableau view or pattern in the data stayed most clearly in your mind, and why;\n\nWhat kinds of Tableau skills you feel you strengthened in this session and how you will use them in the future.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#ponder",
+    "href": "weeks/week-8/main.html#ponder",
+    "title": "Week 8",
+    "section": "Ponder",
+    "text": "Ponder\n\n\n\n\n\n\nNote🔍 Ponder\n\n\n\nThink beyond what we actually did in class:\n\nIf you had more time and access to the same data, what additional analyses or visualisations would you build on the Toby Biotech case?\nWhat other questions might an auditor, a manager, or a bond investor want to answer using this data?\nWhat extra information or datasets would you like to have, to make your conclusions about receivables risk more convincing?",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b3-why-cecl-was-introduced",
+    "href": "weeks/week-8/case_discussion.html#b3-why-cecl-was-introduced",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B3 · Why CECL Was Introduced",
+    "text": "B3 · Why CECL Was Introduced\n\nHistorically, many firms used an “incurred loss” model:\n\nLosses were recognised mainly when there was clear evidence of trouble\n(missed payments, defaults, downgrades, etc.).\nThis often made loss recognition too slow and too small,\nespecially before and during the 2008 financial crisis.\n\nRegulators wanted a more forward-looking approach:\n\nOne that forces firms to consider not just past problems,\nbut also what is likely to go wrong in the future."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b4-the-current-expected-credit-loss-cecl-model",
+    "href": "weeks/week-8/case_discussion.html#b4-the-current-expected-credit-loss-cecl-model",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B4 · The Current Expected Credit Loss (CECL) Model",
+    "text": "B4 · The Current Expected Credit Loss (CECL) Model\n\nUnder the Current Expected Credit Loss (CECL) model, firms must:\n\nEstimate lifetime expected credit losses on receivables.\nUse:\n\nPast experience\n\nCurrent conditions\n\nReasonable and supportable forecasts\n\n\nThis means:\n\nThe allowance reflects not only what has already gone bad,\nbut also what is expected to go bad over the life of the receivable.\n\nIn our case:\n\nIn a weakening economy, CECL pushes Toby to raise ACL earlier and more aggressively,\nrather than waiting for customers to actually default.\nIf AR is growing faster than sales but ACL does not respond,\nthe reported AR and profit may be too optimistic."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b5-revenue-recognition-timing",
+    "href": "weeks/week-8/case_discussion.html#b5-revenue-recognition-timing",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B5 · Revenue Recognition & Timing",
+    "text": "B5 · Revenue Recognition & Timing\n\nRevenue recognition determines:\n\nWhen and how much revenue is recorded\n\nAggressive revenue recognition:\n\nRecords revenue earlier in the process\n\nCan temporarily inflate revenue, AR, and EPS\n\nUnder CECL, even if revenue is recognised early:\n\nCompanies are expected to record expected credit losses on those receivables at the same time.\nIf revenue is recognised aggressively without adjusting ACL,\nthe financial statements can become misleading.\n\nIn a downturn, pressure to “hit the numbers” can still lead to:\n\nLooser credit policies\n\nDelayed recognition of losses in practice\n\nHeavy use of returns and allowances to quietly adjust results"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#wrap-up-what-you-will-practise",
+    "href": "weeks/week-8/case_discussion.html#wrap-up-what-you-will-practise",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Wrap-Up · What You Will Practise",
+    "text": "Wrap-Up · What You Will Practise\n\nUsing Tableau to:\n\nLink business questions to appropriate data views\n\nBuild clear, informative visualisations\n\nSpot patterns and outliers in receivables-related data\n\nThinking like an analyst:\n\nDoes this pattern make sense given the economic background?\n\nIf not, what follow-up questions should we ask?\n\nCommunicating insights:\n\nTurning what you see in a chart into a short, convincing explanation\n\nMaking it understandable for managers, auditors, or investors"
+  },
+  {
+    "objectID": "weeks/week-8/main.html#ponder-1",
+    "href": "weeks/week-8/main.html#ponder-1",
+    "title": "Week 8",
+    "section": "🔍 Ponder",
+    "text": "🔍 Ponder\nThink beyond what we actually did in class:\n\nIf you had more time and access to the same data, what additional analyses or visualisations would you build on the Toby Biotech case?\nWhat other questions might an auditor, a manager, or a bond investor want to answer using this data?\nWhat extra information or datasets would you like to have, to make your conclusions about receivables risk more convincing?\n\n:::",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b4-the-cecl-model",
+    "href": "weeks/week-8/case_discussion.html#b4-the-cecl-model",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B4 · The CECL Model",
+    "text": "B4 · The CECL Model\n\nUnder the Current Expected Credit Loss (CECL) model, firms must:\n\nEstimate lifetime expected credit losses on receivables.\nUse:\n\nPast experience\n\nCurrent conditions\n\nReasonable and supportable forecasts\n\n\nThis means:\n\nThe allowance reflects not only what has already gone bad,\nbut also what is expected to go bad over the life of the receivable.\n\nIn our case:\n\nIn a weakening economy, CECL pushes Toby to raise ACL earlier and more aggressively, rather than waiting for customers to actually default.\nIf AR is growing faster than sales but ACL does not respond, the reported AR and profit may be too optimistic."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1-our-data-for-toby-biotech",
+    "href": "weeks/week-8/case_discussion.html#d1-our-data-for-toby-biotech",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1 · Our Data for Toby Biotech",
+    "text": "D1 · Our Data for Toby Biotech\nTRG has four main data sources:\n\nAR subledger (customer-level)\n– Who owes Toby money, how much, and where they are\n\nInvoices\n– Individual sales: ID, date, amount, customer, sales office\n\nCredit memos – returns\n– When customers send products back\n\nCredit memos – allowances\n– Post-sale price concessions and credits\n\nDiscussion:\nWhat kinds of questions about receivables risk could we answer with these tables?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d2-inside-the-ar-subledger",
+    "href": "weeks/week-8/case_discussion.html#d2-inside-the-ar-subledger",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D2 · Inside the AR Subledger",
+    "text": "D2 · Inside the AR Subledger\nKey fields you will see:\n\nCustomer name / customer ID\n\nCustomer city, country, region\n\nSales office / sales territory\n\nInvoice ID and invoice date\n\nInvoice / AR balance amount\n\nReturn amount and return date (if any)\n\nAllowance amount and allowance date (if any)\n\nDiscussion:\nIf you were an auditor, which 3–4 columns would you look at first, and why?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d3-four-lenses-on-the-same-story",
+    "href": "weeks/week-8/case_discussion.html#d3-four-lenses-on-the-same-story",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D3 · Four Lenses on the Same Story",
+    "text": "D3 · Four Lenses on the Same Story\nWe will explore Toby’s receivables through four blocks:\n\nBlock 1 – Customer balance\n\nWhere is the money? (countries, cities, sales offices, customers)\n\nBlock 2 – Invoices\n\nHow big are the invoices, and how old are the receivables?\n\nBlock 3 – Returns\n\nAre products coming back? When, and from whom?\n\nBlock 4 – Allowances\n\nWhere is Toby “cutting price after the fact”?\n\n\nFor each block we will:\n\nStart from a business question\n\nBuild a few simple Tableau views\n\nTalk about what those views might mean for risk and earnings quality"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d4-block-1-customer-balance-questions-first",
+    "href": "weeks/week-8/case_discussion.html#d4-block-1-customer-balance-questions-first",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D4 · Block 1 – Customer Balance: Questions First",
+    "text": "D4 · Block 1 – Customer Balance: Questions First\nFocus: customer balances – where receivables currently sit.\nQuestions to think about:\n\nWhich countries or cities carry the largest AR balances?\n\nWhich sales offices are most exposed?\n\nAre there a few customers that dominate the total AR?\n\nIf one country / office / customer got into trouble,\nhow much of Toby’s receivables would be at risk?\n\nWe will now use Tableau to explore these questions."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d5-block-1-views-to-try-in-tableau",
+    "href": "weeks/week-8/case_discussion.html#d5-block-1-views-to-try-in-tableau",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D5 · Block 1 – Views to Try in Tableau",
+    "text": "D5 · Block 1 – Views to Try in Tableau\nFor Block 1, useful views include:\n\nBy country / city\n\nBar chart or map of AR balance by country / city\nLook for:\n\nA few markets with very large balances\n\nLocations that do not fit your expectations\n\n\nBy sales office\n\nBar chart of AR balance by sales office\nLook for:\n\nOffices with much higher balances than others\n\n\nBy customer\n\nTreemap or bar chart of top customers by AR balance\nLook for:\n\nWhether a small number of customers account for most of the AR\n\n\n\nWe will later compare your views and discuss\nwhere credit risk seems most concentrated."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d6-block-2-invoices-questions-first",
+    "href": "weeks/week-8/case_discussion.html#d6-block-2-invoices-questions-first",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D6 · Block 2 – Invoices: Questions First",
+    "text": "D6 · Block 2 – Invoices: Questions First\nFocus: invoices – how receivables were created.\nQuestions to think about:\n\nAre most invoices small and similar,\nor do we see a few very large invoices?\n\nAre there months or quarters with unusually heavy invoicing?\n\nDo we see signs of older, slow-moving receivables that have not been collected?\n\nThese questions matter because they relate directly to:\n\nBad-debt risk\n\nHow realistic Toby’s ACL is under CECL"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d7-block-2-views-to-try-in-tableau",
+    "href": "weeks/week-8/case_discussion.html#d7-block-2-views-to-try-in-tableau",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D7 · Block 2 – Views to Try in Tableau",
+    "text": "D7 · Block 2 – Views to Try in Tableau\nFor Block 2, useful views include:\n\nInvoice size\n\nHistogram of invoice amount\n\nOptional: sorted bar chart of the largest invoices\nLook for:\n\nOverall shape of the distribution\n\nVery large invoices that could be material on their own\n\n\nTiming and simple ageing\n\nLine or area chart of total invoice amount by month\n\nIf available, ageing buckets (0–30, 31–60, 61–90, 90+ days)\nLook for:\n\nPeriods where invoicing spikes\n\nPeriods where old invoices accumulate\n\n\n\nLater we will ask:\nwhich of these patterns would make you tighten or relax the ACL?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d8-block-3-returns-questions-first",
+    "href": "weeks/week-8/case_discussion.html#d8-block-3-returns-questions-first",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D8 · Block 3 – Returns: Questions First",
+    "text": "D8 · Block 3 – Returns: Questions First\nFocus: returns – when customers change their mind\nor products do not work out.\nQuestions to think about:\n\nDo most returns happen soon after the sale,\nor do many returns happen much later?\n\nWhich customers have high return amounts or high frequencies?\n\nAre there invoices where returns remove most of the original sale?\n\nSome returns are normal business;\nothers may suggest that earlier revenue was too optimistic."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d9-block-3-views-to-try-in-tableau",
+    "href": "weeks/week-8/case_discussion.html#d9-block-3-views-to-try-in-tableau",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D9 · Block 3 – Views to Try in Tableau",
+    "text": "D9 · Block 3 – Views to Try in Tableau\nFor Block 3, useful views include:\n\nWhen do returns happen?\n\nHistogram of days between invoice and return, or\n\nTime series of total return amount by month\nLook for:\n\nReturns within the normal policy window\n\nA cluster of very late returns\n\n\nWho is returning?\n\nBar chart of return amount / count by customer\nLook for:\n\nCustomers with unusually high returns\n\n\nImpact on invoices\n\nScatter or bar chart of invoice amount vs. net of returns\nLook for:\n\nInvoices where returns wipe out most of the revenue\n\n\n\nThese patterns will help us think about\nwhether Toby’s RRA looks realistic."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d10-block-4-allowances-questions-first",
+    "href": "weeks/week-8/case_discussion.html#d10-block-4-allowances-questions-first",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D10 · Block 4 – Allowances: Questions First",
+    "text": "D10 · Block 4 – Allowances: Questions First\nFocus: allowances – post-sale price concessions and credits.\nQuestions to think about:\n\nWhen are allowances granted – soon after invoicing,\nor long after the sale?\n\nHow large are allowances as a percentage of invoice amount?\n\nAre there customers who regularly receive large concessions?\n\nNormal business practice and aggressive earnings management\ncan look similar on paper; timing and size help us tell them apart."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d11-block-4-views-to-try-in-tableau",
+    "href": "weeks/week-8/case_discussion.html#d11-block-4-views-to-try-in-tableau",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D11 · Block 4 – Views to Try in Tableau",
+    "text": "D11 · Block 4 – Views to Try in Tableau\nFor Block 4, useful views include:\n\nTiming of allowances\n\nHistogram of days to allowance, or\n\nTime series of allowance amount by month\nLook for:\n\nAllowances given shortly after sale\n\nMany allowances booked very late\n\n\nAllowance percentage\n\nCreate Allowance % = Allowance Amount / Invoice Amount\n\nHistogram of Allowance %\nLook for:\n\nTypical small discounts\n\nVery high percentages, or cases where allowance almost equals the invoice\n\n\nAllowance-heavy customers\n\nBar chart of allowance amount / count by customer\nLook for:\n\nCustomers who consistently receive large post-sale discounts\n\n\n\nThese views raise questions such as:\n\nIs revenue being quietly adjusted after the fact?\n\nIs the RRA high enough to capture typical concessions?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d12-module-d-wrap-up",
+    "href": "weeks/week-8/case_discussion.html#d12-module-d-wrap-up",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D12 · Module D Wrap-Up",
+    "text": "D12 · Module D Wrap-Up\nIn Module D you should focus on three skills:\n\nFrom question to view\n\nStarting with: “What am I worried about?”\n\nChoosing a chart that can actually answer that worry\n\nSeeing risk patterns\n\nConcentration of balances\n\nSpikes in invoicing\n\nLate and heavy returns or allowances\n\nExplaining visuals in plain language\n\n1–2 sentences on:\n\nWhat the chart shows\n\nWhy it matters for receivables, ACL/RRA, and earnings quality\n\n\n\nWe will now move into hands-on Tableau time\nand use these blocks as a guide for your exploration."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset",
+    "href": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1 · What Is in This Dataset?",
+    "text": "D1 · What Is in This Dataset?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d2-discussion",
+    "href": "weeks/week-8/case_discussion.html#d2-discussion",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D2 · Discussion",
+    "text": "D2 · Discussion\nLooking at these four types of information:\n\nIf you had to start somewhere as an analyst or auditor,\nwhich part of the data would you look at first, and why?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1a-client-information",
+    "href": "weeks/week-8/case_discussion.html#d1a-client-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1a · Client Information",
+    "text": "D1a · Client Information\n\nWhich organisations are Toby’s customers\n\nWhere they are located\n\nCustomer city\n\nCustomer country\n\n\nWhich sales office is responsible for each customer\n\nSales office city\n\nSales office country"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1b-invoice-information",
+    "href": "weeks/week-8/case_discussion.html#d1b-invoice-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1b · Invoice Information",
+    "text": "D1b · Invoice Information\n\nIndividual sales transactions:\n\nInvoice ID / invoice number\n\nInvoice date\n\nInvoice amount\n\n\nThese invoices are what build up the receivables balance:\n\nMore invoices → higher AR\n\nLarger invoices → more exposure in a single transaction"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1c-return-information",
+    "href": "weeks/week-8/case_discussion.html#d1c-return-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1c · Return Information",
+    "text": "D1c · Return Information\n\nWhen customers send products back:\n\nReturn date\n\nDays between invoice and return\n\n\nHow much revenue is reversed:\n\nReturn amount\n\nInvoice net of return (what is left after returns)"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1d-allowance-information",
+    "href": "weeks/week-8/case_discussion.html#d1d-allowance-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1d · Allowance Information",
+    "text": "D1d · Allowance Information\n\nPost-sale price concessions and credits:\n\nAllowance amount\n\nAllowance date\n\nDays between invoice and allowance\n\n\nHow large the concession is compared with the invoice:\n\nAllowance percentage\n\nInvoice net of allowance"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset-1",
+    "href": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset-1",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1 · What Is in This Dataset?",
+    "text": "D1 · What Is in This Dataset?\nThis case dataset brings together four types of information:\n\nClient information\n\nInvoice information\n\nReturn information\n\nAllowance information"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d2-four-lenses-on-the-same-story",
+    "href": "weeks/week-8/case_discussion.html#d2-four-lenses-on-the-same-story",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D2 · Four Lenses on the Same Story",
+    "text": "D2 · Four Lenses on the Same Story\nWe will explore Toby’s receivables through four blocks:\n\nBlock 1 – Customer balance\n\nWhere is the money? (countries, cities, sales offices, customers)\n\nBlock 2 – Invoices\n\nHow big are the invoices, and how old are the receivables?\n\nBlock 3 – Returns\n\nAre products coming back? When, and from whom?\n\nBlock 4 – Allowances\n\nWhere is Toby “cutting price after the fact”?\n\n\nFor each block we will:\n\nStart with clear business questions\n\nBuild a few simple Tableau visualisations\n\nDiscuss the insights from the visualisations"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d3-block-1-customer-balance-questions-first",
+    "href": "weeks/week-8/case_discussion.html#d3-block-1-customer-balance-questions-first",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D3 · Block 1 – Customer Balance: Questions First",
+    "text": "D3 · Block 1 – Customer Balance: Questions First\nFocus: customer balances – where receivables currently sit.\nQuestions to think about:\n\nWhich countries or cities carry the largest AR balances?\n\nWhich sales offices are most exposed?\n\nAre there a few customers that dominate the total AR?\n\nIf one country / office / customer got into trouble,\nhow much of Toby’s receivables would be at risk?\n\nWe will now use Tableau to explore these questions."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d5-block-2-invoices-questions",
+    "href": "weeks/week-8/case_discussion.html#d5-block-2-invoices-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D5 · Block 2 – Invoices: Questions",
+    "text": "D5 · Block 2 – Invoices: Questions\nWhen you explore the invoice data, think about:\n\nAre most invoices small and similar,\nor do a few very large invoices dominate the total?\nHow are invoices distributed over time\n(by month or by quarter)? Do you see any spikes?\nDo you see signs of older, slow-moving invoices\nthat have not been collected for a long time?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d6-block-3-returns-questions",
+    "href": "weeks/week-8/case_discussion.html#d6-block-3-returns-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D6 · Block 3 – Returns: Questions",
+    "text": "D6 · Block 3 – Returns: Questions\nWhen you explore the returns data, think about:\n\nDo most returns happen soon after the sale,\nor do many returns happen a long time later?\nWhich customers have high total return amounts\nor very frequent returns?\nAre there invoices where returns remove most or all of the original sale?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d7-block-4-allowances-questions",
+    "href": "weeks/week-8/case_discussion.html#d7-block-4-allowances-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D7 · Block 4 – Allowances: Questions",
+    "text": "D7 · Block 4 – Allowances: Questions\nWhen you explore the allowances data, think about:\n\nWhen are allowances granted:\nmostly shortly after invoicing, or often long after the sale?\nHow large are allowances as a percentage of the original invoice amount?\nAre there customers who regularly receive large concessions?\nDo you see any unusual patterns:\nfor example, allowances that almost wipe out the original invoice?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d8-module-d-reflection-questions",
+    "href": "weeks/week-8/case_discussion.html#d8-module-d-reflection-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D8 · Module D – Reflection Questions",
+    "text": "D8 · Module D – Reflection Questions\nAfter you have explored all four blocks, think about:\n\nWhere does the receivables risk seem most concentrated\n(by region, office, customer, or invoice type)?\nWhich patterns would make you doubt whether ACL or RRA are high enough?\nIf you were the audit team,\nwhich customers, regions, or time periods would you want to investigate further,\nbased on the patterns you saw in the data?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d3-block-1-customer-balance-questions",
+    "href": "weeks/week-8/case_discussion.html#d3-block-1-customer-balance-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D3 · Block 1 – Customer Balance: Questions",
+    "text": "D3 · Block 1 – Customer Balance: Questions\nWhen you explore the customer balance data, think about:\n\nWhich countries or cities show the largest AR balances?\nWhich sales offices are responsible for the biggest AR balances?\nAre there a few customers that account for a large share of total AR?\nIf one country / city / sales office / customer ran into trouble, how much of Toby’s receivables would be at risk?"
   }
 ]

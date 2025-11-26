@@ -1,13 +1,85 @@
 ---
 title: "Week 8"
-subtitle: "Introduction to Tableau (Part 2) and Accounting and Auditing at Toby Biotech Inc."
+subtitle: "Toby Biotech Case & Receivables Risk"
 callout-appearance: default
 ---
 
+## Prepare
+
 ::: {.callout-note}
-## Materials Coming Soon
+## 📚 Prepare
 
-Content for Week 8 is currently being developed and will be available soon.
+Please read the case study:
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
+> **“Using Data Analytics and Visualization in Accounting and Auditing at Toby Biotech Inc.”**  
+> (Moodle → *Case Study* section)
+
+As you read, pay **special attention** to the accounting-related terms and ideas, for example:
+- Accounts Receivable (AR)  
+- Allowance for Credit Losses (ACL)  
+- Reserve for Returns and Allowances (RRA)  
+- Revenue recognition and timing  
+- Materiality  
+- CECL (Current Expected Credit Loss model)
+
+You do **not** need to understand every technical detail,  
+but you should have a basic sense of what each term means in the case.
+:::
+
+
+## Participate
+
+::: {.callout-note}
+## 👥 Participate
+
+📊 [Case Discussion Presentation](case_discussion.html) – Understanding the challenge of receivables risk at Toby Biotech
+
+In class, we will:
+
+- Walk through the **Toby Biotech** case together and discuss:
+  - the company background  
+  - the economic context  
+  - why receivables and related estimates matter.
+
+:::
+
+
+## Practice
+
+::: {.callout-note}
+## 💻 Practice
+
+In the second part of the session, we will do a **hands-on exercise**:
+
+- Use **Tableau** to explore the Toby Biotech datasets from the case.
+- Build simple visualisations to:
+  - see where receivables are concentrated, and  
+  - start identifying patterns that might indicate risk.
+:::
+
+
+## Perform
+
+::: {.callout-note}
+## 🧠 Perform
+
+After class, take a few minutes to **mentally review**:
+
+- What you understood about **receivables risk** from the Toby Biotech case;  
+- Which Tableau view or pattern in the data stayed most clearly in your mind, and why;  
+- What kinds of **Tableau skills** you feel you strengthened in this session and how you will use them in the future.
+:::
+
+
+## Ponder
+
+::: {.callout-note}
+## 🔍 Ponder
+
+Think beyond what we actually did in class:
+
+- If you had **more time** and access to the same data, what **additional analyses or visualisations** would you build on the Toby Biotech case?
+- What **other questions** might an auditor, a manager, or a bond investor want to answer using this data?
+- What **extra information or datasets** would you like to have, to make your conclusions about receivables risk more convincing?
+
 :::

@@ -1,0 +1,312 @@
+---
+title: "Case Discussion: Toby Biotech & Tableau"
+subtitle: "Using Data Visualization to Explore Receivables Risk"
+author: "SMM635 – Data Visualization"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    smaller: true
+---
+
+## Module A  
+### The Context of This Case
+
+## A1 · Who Is Toby Biotech?
+
+- Toby Biotech Inc. is a **fictional global life sciences equipment firm**.
+- Main product lines:
+  - Instruments  
+  - Consumables  
+  - Software  
+  - Services
+- Main customers:
+  - Research labs  
+  - Hospitals and clinics  
+  - Universities and public-sector organisations
+- Toby sells high-value products **on credit** to professional customers,  
+  so receivables are a natural and important part of the business.
+
+
+## A2 · Economic Background
+
+- The case takes place during a period of **global economic slowdown**:
+  - Major markets are in or near recession.
+  - Customers’ cash flows are under pressure.
+- Typical effects in this environment:
+  - More sales are done **on credit** instead of cash.
+  - Customers **take longer to pay**.
+  - Companies see **more product returns** and stronger pressure for **price concessions**.
+- In this setting, receivables become a key place where financial risks can build up,  
+  and some reported numbers may become less reliable.
+
+
+## A3 · Toby’s 20X3 Financial Snapshot (Unaudited)
+
+- **Net sales revenue (20X3)**: about **$1.132 billion**
+- **Pre-tax income (20X3)**: about **$218 million**
+- **Year-end accounts receivable (AR)**:
+  - $177 million at 31 Dec 20X3  
+  - Increase of **$19 million (≈12%)** over the prior year
+- **Sales vs. AR growth**
+  - Sales have grown by roughly **10%** year-on-year.  
+  - AR has grown by roughly **12%**, so receivables are increasing **faster than sales**.
+- In a weak economy, this pattern raises questions about  
+  how quickly customers are paying and how realistic the reported AR balance is.
+
+
+## Module B  
+### Core Accounting Ideas (for Non-Accounting Students)
+
+
+## B1 · Accounts Receivable (AR)
+
+- **Accounts Receivable (AR)**  
+  - Money that customers owe Toby for goods or services already delivered  
+  - Reported as an **asset** on the balance sheet
+- Key idea:
+  - AR is a good asset **only if customers actually pay**.  
+  - If they do not pay, AR turns into credit losses.
+- In this case, we will use Tableau to understand **where this AR sits**:
+  - Which countries and cities  
+  - Which sales offices  
+  - Which customers
+
+
+## B2 · Adjusting AR for Risk: ACL & RRA
+
+- **Allowance for Credit Losses (ACL)**  
+  - Management’s estimate of receivables that **will not be collected**  
+  - Higher ACL → more bad-debt expense → lower profit and **lower net AR**
+- **Reserve for Returns and Allowances (RRA)**  
+  - Expected future **product returns** and **post-sale price concessions**  
+  - Higher RRA → lower revenue → lower profit and **lower net AR**
+
+> **Net AR = Gross AR – ACL – RRA**
+
+- If management is **too optimistic**, ACL and RRA may be **too low**,  
+  which makes AR and profit look better than they really are.
+
+
+## B3 · Why CECL Was Introduced
+
+- Historically, many firms used an **“incurred loss” model**:
+  - Losses were recognised mainly when there was clear evidence of trouble  
+    (missed payments, defaults, downgrades, etc.).
+  - This often made loss recognition **too slow and too small**,  
+    especially before and during the 2008 financial crisis.
+- Regulators wanted a more **forward-looking** approach:
+  - One that forces firms to consider not just past problems,  
+    but also what is likely to go wrong in the future.
+
+
+## B4 · The CECL Model
+
+- Under the **Current Expected Credit Loss (CECL)** model, firms must:
+  - Estimate **lifetime expected credit losses** on receivables.
+  - Use:
+    - Past experience  
+    - Current conditions  
+    - Reasonable and supportable forecasts
+- This means:
+  - The allowance reflects not only what has already gone bad,  
+    but also what is **expected** to go bad over the life of the receivable.
+- In our case:
+  - In a weakening economy, CECL pushes Toby to **raise ACL earlier and more aggressively**, rather than waiting for customers to actually default.
+  - If AR is growing faster than sales but ACL does not respond, the reported AR and profit may be **too optimistic**.
+
+
+## B5 · Revenue Recognition & Timing
+
+- **Revenue recognition** determines:
+  - **When** and **how much** revenue is recorded
+- Aggressive revenue recognition:
+  - Records revenue **earlier** in the process  
+  - Can temporarily inflate **revenue, AR, and EPS**
+- Under CECL, even if revenue is recognised early:
+  - Companies are expected to record **expected credit losses** on those receivables at the same time.
+  - If revenue is recognised aggressively **without** adjusting ACL,  
+  the financial statements can become misleading.
+- In a downturn, pressure to “hit the numbers” can still lead to:
+  - Looser credit policies  
+  - Delayed recognition of losses in practice  
+  - Heavy use of returns and allowances to quietly adjust results
+
+
+## Module C  
+### Stakeholders & Their Incentives
+
+
+## C1 · Toby Management’s Perspective
+
+- Key players: **CFO, Controller, CRO**
+- Main objectives:
+  - **Meet or beat analyst EPS expectations**  
+  - Maintain a strong **credit rating** for a planned bond issue
+- Under pressure, management may:
+  - Stretch credit terms to keep sales volume up  
+  - Delay recognising credit losses and returns  
+  - Underestimate ACL and RRA to support reported profit
+
+
+## C2 · TRG Audit Team’s Perspective
+
+- TRG LLP is Toby’s **external auditor**.
+- Main responsibility:
+  - Provide reasonable assurance that the financial statements are **fairly presented**
+- In this engagement, TRG:
+  - Sets overall materiality at about **4% of pre-tax income**  
+  - Focuses on risk of **overstatement** in:
+    - Net AR  
+    - Revenue  
+    - ACL and RRA
+- The audit team must decide:
+  - Where to concentrate audit effort  
+  - What extra evidence to collect
+
+
+## C3 · Investors and Lenders
+
+- Investors and bondholders care about:
+  - **Quality of earnings**, not just the earnings level  
+  - Ability to **generate cash** and repay debt
+- Small changes around EPS targets or leverage ratios can:
+  - Move Toby’s **share price**  
+  - Affect the **interest rate** demanded by lenders
+- Because of this, the way Toby estimates ACL and RRA,  
+  and how realistic its revenue is, matters directly to capital markets.
+
+## Module D  
+### From Data Tables to Risk Patterns
+
+In this section, we will:
+
+- Dive into Toby’s receivables data
+- See what kinds of **risks and patterns** are hiding in the ledgers
+- Use a few simple **visualisations** to understand the data
+
+## D1 · What Is in This Dataset?
+
+## D1 · What Is in This Dataset?
+This case dataset brings together **four types of information**:
+
+- Client information  
+- Invoice information  
+- Return information  
+- Allowance information  
+
+## D1a · Client Information
+
+- Which organisations are Toby’s customers  
+- Where they are located  
+  - Customer city  
+  - Customer country  
+- Which sales office is responsible for each customer  
+  - Sales office city  
+  - Sales office country  
+
+## D1b · Invoice Information
+
+- Individual sales transactions:
+  - Invoice ID / invoice number  
+  - Invoice date  
+  - Invoice amount  
+- These invoices are what **build up** the receivables balance:
+  - More invoices → higher AR  
+  - Larger invoices → more exposure in a single transaction  
+
+## D1c · Return Information
+
+- When customers send products back:
+  - Return date  
+  - Days between invoice and return  
+- How much revenue is reversed:
+  - Return amount  
+  - Invoice net of return (what is left after returns)  
+
+## D1d · Allowance Information
+
+- Post-sale price concessions and credits:
+  - Allowance amount  
+  - Allowance date  
+  - Days between invoice and allowance  
+- How large the concession is compared with the invoice:
+  - Allowance percentage  
+  - Invoice net of allowance  
+
+## D2 · Four Lenses on the Same Story
+
+We will explore Toby’s receivables through four blocks:
+
+1. **Block 1 – Customer balance**  
+   - Where is the money? (countries, cities, sales offices, customers)
+
+2. **Block 2 – Invoices**  
+   - How big are the invoices, and how old are the receivables?
+
+3. **Block 3 – Returns**  
+   - Are products coming back? When, and from whom?
+
+4. **Block 4 – Allowances**  
+   - Where is Toby “cutting price after the fact”?
+
+**For each block we will:**
+
+- Start with **clear business questions**  
+- Build a few simple Tableau **visualisations**  
+- Discuss the insights from the **visualisations**
+
+## D3 · Block 1 – Customer Balance Questions
+
+When you explore the **customer balance** data, think about:
+
+- Which **countries or cities** show the largest **AR balances**?
+- Which **sales offices** are responsible for the biggest **AR balances**?
+- Are there a few **customers** that account for a large share of total AR?
+- If one **country / city / sales office / customer** ran into trouble,
+  how much of Toby’s receivables would be at risk?
+
+## D5 · Block 2 – Invoices Questions
+
+When you explore the **invoice** data, think about:
+
+- Are most invoices **small and similar**,  
+  or do a few **very large invoices** dominate the total?
+- How are invoices distributed **over time**  
+  (by month or by quarter)? Do you see any **spikes**?
+- Do you see signs of **older, slow-moving invoices**  
+  that have not been collected for a long time?
+
+## D6 · Block 3 – Returns Questions
+
+When you explore the **returns** data, think about:
+
+- Do most returns happen **soon after the sale**,  
+  or do many returns happen **a long time later**?
+- Which customers have **high total return amounts**  
+  or **very frequent returns**?
+- Are there invoices where returns remove **most or all** of the original sale?
+
+## D7 · Block 4 – Allowances Questions
+
+When you explore the **allowances** data, think about:
+
+- When are allowances granted:  
+  mostly **shortly after invoicing**, or often **long after the sale**?
+- How large are allowances as a **percentage of the original invoice amount**?
+- Are there customers who **regularly receive large concessions**?
+- Do you see any **unusual patterns**:  
+  for example, allowances that almost wipe out the original invoice?
+
+## D8 · Module D – Reflection Questions
+
+After you have explored all four blocks, think about:
+
+- Where does the **receivables risk** seem most concentrated  
+  (by region, office, customer, or invoice type)?
+- Which patterns would make you **doubt** whether ACL or RRA are high enough?
+- If you were the **audit team**,  
+  which customers, regions, or time periods would you want to **investigate further**,  
+  based on the patterns you saw in the data?
