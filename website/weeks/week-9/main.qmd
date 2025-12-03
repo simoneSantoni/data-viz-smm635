@@ -1,13 +1,53 @@
 ---
 title: "Week 9"
-subtitle: "Dashboards with Tableau (Part 1)"
+subtitle: "Dashboards with Tableau"
 callout-appearance: default
 ---
 
-::: {.callout-note}
-## Materials Coming Soon
+## Prepare
 
-Content for Week 9 is currently being developed and will be available soon.
+:::: {.callout-note}
+## 📚 Prepare
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
-:::
+1. Revisit Week 7 and 8 materials.  
+2. Download `superstore.xls` from Moodle or GitHub (file provided in this repository under `data/superstore.xls`).  
+::::
+
+## Participate
+
+:::: {.callout-note}
+## 👥 Participate
+
+📊 **Conceptual toolkit for interactive Tableau.**  
+We will cover:
+
+- Calculated fields (row-level vs aggregate).  
+- Parameters as user-controlled variables.  
+- Reference lines, filters (measure/context), and box plots for analytical context.  
+- Dashboard layout principles and story structure for communicating insights.
+- Storytelling with data.
+::::
+
+## Practice
+
+:::: {.callout-note}
+## 💻 Practice
+
+🧮 Guided Tableau lab with `Superstore.xls` (hands-on workflow).
+::::
+
+## Perform
+
+:::: {.callout-note}
+## 🧠 Perform
+
+✏️ Hands-on practice applying interactive Tableau techniques (calculated fields, parameters, reference lines, filters, dashboard actions, and story points) to reinforce this week’s concepts.
+::::
+
+## Ponder
+
+:::: {.callout-note}
+## 🔍 Ponder
+
+Read **10 Best Practices for Building Effective Dashboards** (PDF provided alongside this page in the [Week 9 folder](https://github.com/simoneSantoni/data-viz-smm635/tree/master/website/weeks/week-9)).
+::::

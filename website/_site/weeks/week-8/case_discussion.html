@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="SMM635 – Data Visualization">
 
-<title>Week 9 – SMM635 - Data Visualization</title>
+<title>Case Discussion: Toby Biotech &amp; Tableau – SMM635 - Data Visualization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../weeks/week-10/main.html" rel="next">
-<link href="../../weeks/week-8/main.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -249,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week-1/main.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../../weeks/week-9/main.html">Week 9</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Case Discussion: Toby Biotech &amp; Tableau</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -404,7 +403,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../weeks/week-9/main.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../weeks/week-9/main.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 9</span></a>
   </div>
 </li>
@@ -443,28 +442,68 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prepare" id="toc-prepare" class="nav-link active" data-scroll-target="#prepare">Prepare</a></li>
-  <li><a href="#participate" id="toc-participate" class="nav-link" data-scroll-target="#participate">Participate</a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
-  <li><a href="#perform" id="toc-perform" class="nav-link" data-scroll-target="#perform">Perform</a></li>
-  <li><a href="#ponder" id="toc-ponder" class="nav-link" data-scroll-target="#ponder">Ponder</a></li>
+  <li><a href="#module-a" id="toc-module-a" class="nav-link active" data-scroll-target="#module-a">Module A</a>
+  <ul class="collapse">
+  <li><a href="#the-context-of-this-case" id="toc-the-context-of-this-case" class="nav-link" data-scroll-target="#the-context-of-this-case">The Context of This Case</a></li>
+  </ul></li>
+  <li><a href="#a1-who-is-toby-biotech" id="toc-a1-who-is-toby-biotech" class="nav-link" data-scroll-target="#a1-who-is-toby-biotech">A1 · Who Is Toby Biotech?</a></li>
+  <li><a href="#a2-economic-background" id="toc-a2-economic-background" class="nav-link" data-scroll-target="#a2-economic-background">A2 · Economic Background</a></li>
+  <li><a href="#a3-tobys-20x3-financial-snapshot-unaudited" id="toc-a3-tobys-20x3-financial-snapshot-unaudited" class="nav-link" data-scroll-target="#a3-tobys-20x3-financial-snapshot-unaudited">A3 · Toby’s 20X3 Financial Snapshot (Unaudited)</a></li>
+  <li><a href="#module-b" id="toc-module-b" class="nav-link" data-scroll-target="#module-b">Module B</a>
+  <ul class="collapse">
+  <li><a href="#core-accounting-ideas-for-non-accounting-students" id="toc-core-accounting-ideas-for-non-accounting-students" class="nav-link" data-scroll-target="#core-accounting-ideas-for-non-accounting-students">Core Accounting Ideas (for Non-Accounting Students)</a></li>
+  </ul></li>
+  <li><a href="#b1-accounts-receivable-ar" id="toc-b1-accounts-receivable-ar" class="nav-link" data-scroll-target="#b1-accounts-receivable-ar">B1 · Accounts Receivable (AR)</a></li>
+  <li><a href="#b2-adjusting-ar-for-risk-acl-rra" id="toc-b2-adjusting-ar-for-risk-acl-rra" class="nav-link" data-scroll-target="#b2-adjusting-ar-for-risk-acl-rra">B2 · Adjusting AR for Risk: ACL &amp; RRA</a></li>
+  <li><a href="#b3-why-cecl-was-introduced" id="toc-b3-why-cecl-was-introduced" class="nav-link" data-scroll-target="#b3-why-cecl-was-introduced">B3 · Why CECL Was Introduced</a></li>
+  <li><a href="#b4-the-cecl-model" id="toc-b4-the-cecl-model" class="nav-link" data-scroll-target="#b4-the-cecl-model">B4 · The CECL Model</a></li>
+  <li><a href="#b5-revenue-recognition-timing" id="toc-b5-revenue-recognition-timing" class="nav-link" data-scroll-target="#b5-revenue-recognition-timing">B5 · Revenue Recognition &amp; Timing</a></li>
+  <li><a href="#module-c" id="toc-module-c" class="nav-link" data-scroll-target="#module-c">Module C</a>
+  <ul class="collapse">
+  <li><a href="#stakeholders-their-incentives" id="toc-stakeholders-their-incentives" class="nav-link" data-scroll-target="#stakeholders-their-incentives">Stakeholders &amp; Their Incentives</a></li>
+  </ul></li>
+  <li><a href="#c1-toby-managements-perspective" id="toc-c1-toby-managements-perspective" class="nav-link" data-scroll-target="#c1-toby-managements-perspective">C1 · Toby Management’s Perspective</a></li>
+  <li><a href="#c2-trg-audit-teams-perspective" id="toc-c2-trg-audit-teams-perspective" class="nav-link" data-scroll-target="#c2-trg-audit-teams-perspective">C2 · TRG Audit Team’s Perspective</a></li>
+  <li><a href="#c3-investors-and-lenders" id="toc-c3-investors-and-lenders" class="nav-link" data-scroll-target="#c3-investors-and-lenders">C3 · Investors and Lenders</a></li>
+  <li><a href="#module-d" id="toc-module-d" class="nav-link" data-scroll-target="#module-d">Module D</a>
+  <ul class="collapse">
+  <li><a href="#from-data-tables-to-risk-patterns" id="toc-from-data-tables-to-risk-patterns" class="nav-link" data-scroll-target="#from-data-tables-to-risk-patterns">From Data Tables to Risk Patterns</a></li>
+  </ul></li>
+  <li><a href="#d1-what-is-in-this-dataset" id="toc-d1-what-is-in-this-dataset" class="nav-link" data-scroll-target="#d1-what-is-in-this-dataset">D1 · What Is in This Dataset?</a></li>
+  <li><a href="#d1-what-is-in-this-dataset-1" id="toc-d1-what-is-in-this-dataset-1" class="nav-link" data-scroll-target="#d1-what-is-in-this-dataset-1">D1 · What Is in This Dataset?</a></li>
+  <li><a href="#d1a-client-information" id="toc-d1a-client-information" class="nav-link" data-scroll-target="#d1a-client-information">D1a · Client Information</a></li>
+  <li><a href="#d1b-invoice-information" id="toc-d1b-invoice-information" class="nav-link" data-scroll-target="#d1b-invoice-information">D1b · Invoice Information</a></li>
+  <li><a href="#d1c-return-information" id="toc-d1c-return-information" class="nav-link" data-scroll-target="#d1c-return-information">D1c · Return Information</a></li>
+  <li><a href="#d1d-allowance-information" id="toc-d1d-allowance-information" class="nav-link" data-scroll-target="#d1d-allowance-information">D1d · Allowance Information</a></li>
+  <li><a href="#d2-four-lenses-on-the-same-story" id="toc-d2-four-lenses-on-the-same-story" class="nav-link" data-scroll-target="#d2-four-lenses-on-the-same-story">D2 · Four Lenses on the Same Story</a></li>
+  <li><a href="#d3-block-1-customer-balance-questions" id="toc-d3-block-1-customer-balance-questions" class="nav-link" data-scroll-target="#d3-block-1-customer-balance-questions">D3 · Block 1 – Customer Balance Questions</a></li>
+  <li><a href="#d5-block-2-invoices-questions" id="toc-d5-block-2-invoices-questions" class="nav-link" data-scroll-target="#d5-block-2-invoices-questions">D5 · Block 2 – Invoices Questions</a></li>
+  <li><a href="#d6-block-3-returns-questions" id="toc-d6-block-3-returns-questions" class="nav-link" data-scroll-target="#d6-block-3-returns-questions">D6 · Block 3 – Returns Questions</a></li>
+  <li><a href="#d7-block-4-allowances-questions" id="toc-d7-block-4-allowances-questions" class="nav-link" data-scroll-target="#d7-block-4-allowances-questions">D7 · Block 4 – Allowances Questions</a></li>
+  <li><a href="#d8-module-d-reflection-questions" id="toc-d8-module-d-reflection-questions" class="nav-link" data-scroll-target="#d8-module-d-reflection-questions">D8 · Module D – Reflection Questions</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="case_discussion.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../weeks/week-1/main.html">Weekly materials</a></li><li class="breadcrumb-item"><a href="../../weeks/week-9/main.html">Week 9</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 9</h1>
-<p class="subtitle lead">Dashboards with Tableau (Part 1)</p>
+<h1 class="title">Case Discussion: Toby Biotech &amp; Tableau</h1>
+<p class="subtitle lead">Using Data Visualization to Explore Receivables Risk</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>SMM635 – Data Visualization </p>
+          </div>
+  </div>
     
   
     
@@ -475,101 +514,471 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="prepare" class="level2">
-<h2 class="anchored" data-anchor-id="prepare">Prepare</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>📚 Prepare
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Revisit Week 7 materials.<br>
-</li>
-<li>Download <a href="../../data/superstore.xls"><code>Superstore.xls</code></a> from Moodle or Github.<br>
-</li>
-</ol>
-</div>
-</div>
+<section id="module-a" class="level2">
+<h2 class="anchored" data-anchor-id="module-a">Module A</h2>
+<section id="the-context-of-this-case" class="level3">
+<h3 class="anchored" data-anchor-id="the-context-of-this-case">The Context of This Case</h3>
 </section>
-<section id="participate" class="level2">
-<h2 class="anchored" data-anchor-id="participate">Participate</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>👥 Participate
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>📊 Live session: <strong>Conceptual toolkit for interactive Tableau.</strong><br>
-We will cover:</p>
+</section>
+<section id="a1-who-is-toby-biotech" class="level2">
+<h2 class="anchored" data-anchor-id="a1-who-is-toby-biotech">A1 · Who Is Toby Biotech?</h2>
 <ul>
-<li>Calculated fields (row-level vs aggregate).<br>
+<li>Toby Biotech Inc.&nbsp;is a <strong>fictional global life sciences equipment firm</strong>.</li>
+<li>Main product lines:
+<ul>
+<li>Instruments<br>
 </li>
-<li>Parameters as user-controlled variables for what-if analysis.<br>
+<li>Consumables<br>
 </li>
-<li>Reference lines, filters (measure/context), and box plots for analytical context.<br>
+<li>Software<br>
 </li>
-<li>Dashboard layout principles and story structure for communicating insights.</li>
-<li>Storytelling with data.</li>
+<li>Services</li>
+</ul></li>
+<li>Main customers:
+<ul>
+<li>Research labs<br>
+</li>
+<li>Hospitals and clinics<br>
+</li>
+<li>Universities and public-sector organisations</li>
+</ul></li>
+<li>Toby sells high-value products <strong>on credit</strong> to professional customers,<br>
+so receivables are a natural and important part of the business.</li>
 </ul>
-</div>
-</div>
 </section>
-<section id="practice" class="level2">
-<h2 class="anchored" data-anchor-id="practice">Practice</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>💻 Practice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>🧮 Guided Tableau lab with <code>Sample - Superstore.xls</code> (hands-on workflow).</p>
-</div>
-</div>
+<section id="a2-economic-background" class="level2">
+<h2 class="anchored" data-anchor-id="a2-economic-background">A2 · Economic Background</h2>
+<ul>
+<li>The case takes place during a period of <strong>global economic slowdown</strong>:
+<ul>
+<li>Major markets are in or near recession.</li>
+<li>Customers’ cash flows are under pressure.</li>
+</ul></li>
+<li>Typical effects in this environment:
+<ul>
+<li>More sales are done <strong>on credit</strong> instead of cash.</li>
+<li>Customers <strong>take longer to pay</strong>.</li>
+<li>Companies see <strong>more product returns</strong> and stronger pressure for <strong>price concessions</strong>.</li>
+</ul></li>
+<li>In this setting, receivables become a key place where financial risks can build up,<br>
+and some reported numbers may become less reliable.</li>
+</ul>
 </section>
-<section id="perform" class="level2">
-<h2 class="anchored" data-anchor-id="perform">Perform</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>🧠 Perform
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>✏️ Hands-on practice applying interactive Tableau techniques (calculated fields, parameters, reference lines, filters, dashboard actions, and story points) to reinforce this week’s concepts.</p>
-</div>
-</div>
+<section id="a3-tobys-20x3-financial-snapshot-unaudited" class="level2">
+<h2 class="anchored" data-anchor-id="a3-tobys-20x3-financial-snapshot-unaudited">A3 · Toby’s 20X3 Financial Snapshot (Unaudited)</h2>
+<ul>
+<li><strong>Net sales revenue (20X3)</strong>: about <strong>$1.132 billion</strong></li>
+<li><strong>Pre-tax income (20X3)</strong>: about <strong>$218 million</strong></li>
+<li><strong>Year-end accounts receivable (AR)</strong>:
+<ul>
+<li>$177 million at 31 Dec 20X3<br>
+</li>
+<li>Increase of <strong>$19 million (≈12%)</strong> over the prior year</li>
+</ul></li>
+<li><strong>Sales vs.&nbsp;AR growth</strong>
+<ul>
+<li>Sales have grown by roughly <strong>10%</strong> year-on-year.<br>
+</li>
+<li>AR has grown by roughly <strong>12%</strong>, so receivables are increasing <strong>faster than sales</strong>.</li>
+</ul></li>
+<li>In a weak economy, this pattern raises questions about<br>
+how quickly customers are paying and how realistic the reported AR balance is.</li>
+</ul>
 </section>
-<section id="ponder" class="level2">
-<h2 class="anchored" data-anchor-id="ponder">Ponder</h2>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>🔍 Ponder
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Read <strong><a href="10 Best Practices for Building Effective DashboardsWP.pdf">10 Best Practices for Building Effective Dashboards</a></strong>.</p>
-</div>
-</div>
+<section id="module-b" class="level2">
+<h2 class="anchored" data-anchor-id="module-b">Module B</h2>
+<section id="core-accounting-ideas-for-non-accounting-students" class="level3">
+<h3 class="anchored" data-anchor-id="core-accounting-ideas-for-non-accounting-students">Core Accounting Ideas (for Non-Accounting Students)</h3>
+</section>
+</section>
+<section id="b1-accounts-receivable-ar" class="level2">
+<h2 class="anchored" data-anchor-id="b1-accounts-receivable-ar">B1 · Accounts Receivable (AR)</h2>
+<ul>
+<li><strong>Accounts Receivable (AR)</strong>
+<ul>
+<li>Money that customers owe Toby for goods or services already delivered<br>
+</li>
+<li>Reported as an <strong>asset</strong> on the balance sheet</li>
+</ul></li>
+<li>Key idea:
+<ul>
+<li>AR is a good asset <strong>only if customers actually pay</strong>.<br>
+</li>
+<li>If they do not pay, AR turns into credit losses.</li>
+</ul></li>
+<li>In this case, we will use Tableau to understand <strong>where this AR sits</strong>:
+<ul>
+<li>Which countries and cities<br>
+</li>
+<li>Which sales offices<br>
+</li>
+<li>Which customers</li>
+</ul></li>
+</ul>
+</section>
+<section id="b2-adjusting-ar-for-risk-acl-rra" class="level2">
+<h2 class="anchored" data-anchor-id="b2-adjusting-ar-for-risk-acl-rra">B2 · Adjusting AR for Risk: ACL &amp; RRA</h2>
+<ul>
+<li><strong>Allowance for Credit Losses (ACL)</strong>
+<ul>
+<li>Management’s estimate of receivables that <strong>will not be collected</strong><br>
+</li>
+<li>Higher ACL → more bad-debt expense → lower profit and <strong>lower net AR</strong></li>
+</ul></li>
+<li><strong>Reserve for Returns and Allowances (RRA)</strong>
+<ul>
+<li>Expected future <strong>product returns</strong> and <strong>post-sale price concessions</strong><br>
+</li>
+<li>Higher RRA → lower revenue → lower profit and <strong>lower net AR</strong></li>
+</ul></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Net AR = Gross AR – ACL – RRA</strong></p>
+</blockquote>
+<ul>
+<li>If management is <strong>too optimistic</strong>, ACL and RRA may be <strong>too low</strong>,<br>
+which makes AR and profit look better than they really are.</li>
+</ul>
+</section>
+<section id="b3-why-cecl-was-introduced" class="level2">
+<h2 class="anchored" data-anchor-id="b3-why-cecl-was-introduced">B3 · Why CECL Was Introduced</h2>
+<ul>
+<li>Historically, many firms used an <strong>“incurred loss” model</strong>:
+<ul>
+<li>Losses were recognised mainly when there was clear evidence of trouble<br>
+(missed payments, defaults, downgrades, etc.).</li>
+<li>This often made loss recognition <strong>too slow and too small</strong>,<br>
+especially before and during the 2008 financial crisis.</li>
+</ul></li>
+<li>Regulators wanted a more <strong>forward-looking</strong> approach:
+<ul>
+<li>One that forces firms to consider not just past problems,<br>
+but also what is likely to go wrong in the future.</li>
+</ul></li>
+</ul>
+</section>
+<section id="b4-the-cecl-model" class="level2">
+<h2 class="anchored" data-anchor-id="b4-the-cecl-model">B4 · The CECL Model</h2>
+<ul>
+<li>Under the <strong>Current Expected Credit Loss (CECL)</strong> model, firms must:
+<ul>
+<li>Estimate <strong>lifetime expected credit losses</strong> on receivables.</li>
+<li>Use:
+<ul>
+<li>Past experience<br>
+</li>
+<li>Current conditions<br>
+</li>
+<li>Reasonable and supportable forecasts</li>
+</ul></li>
+</ul></li>
+<li>This means:
+<ul>
+<li>The allowance reflects not only what has already gone bad,<br>
+but also what is <strong>expected</strong> to go bad over the life of the receivable.</li>
+</ul></li>
+<li>In our case:
+<ul>
+<li>In a weakening economy, CECL pushes Toby to <strong>raise ACL earlier and more aggressively</strong>, rather than waiting for customers to actually default.</li>
+<li>If AR is growing faster than sales but ACL does not respond, the reported AR and profit may be <strong>too optimistic</strong>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="b5-revenue-recognition-timing" class="level2">
+<h2 class="anchored" data-anchor-id="b5-revenue-recognition-timing">B5 · Revenue Recognition &amp; Timing</h2>
+<ul>
+<li><strong>Revenue recognition</strong> determines:
+<ul>
+<li><strong>When</strong> and <strong>how much</strong> revenue is recorded</li>
+</ul></li>
+<li>Aggressive revenue recognition:
+<ul>
+<li>Records revenue <strong>earlier</strong> in the process<br>
+</li>
+<li>Can temporarily inflate <strong>revenue, AR, and EPS</strong></li>
+</ul></li>
+<li>Under CECL, even if revenue is recognised early:
+<ul>
+<li>Companies are expected to record <strong>expected credit losses</strong> on those receivables at the same time.</li>
+<li>If revenue is recognised aggressively <strong>without</strong> adjusting ACL,<br>
+the financial statements can become misleading.</li>
+</ul></li>
+<li>In a downturn, pressure to “hit the numbers” can still lead to:
+<ul>
+<li>Looser credit policies<br>
+</li>
+<li>Delayed recognition of losses in practice<br>
+</li>
+<li>Heavy use of returns and allowances to quietly adjust results</li>
+</ul></li>
+</ul>
+</section>
+<section id="module-c" class="level2">
+<h2 class="anchored" data-anchor-id="module-c">Module C</h2>
+<section id="stakeholders-their-incentives" class="level3">
+<h3 class="anchored" data-anchor-id="stakeholders-their-incentives">Stakeholders &amp; Their Incentives</h3>
+</section>
+</section>
+<section id="c1-toby-managements-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="c1-toby-managements-perspective">C1 · Toby Management’s Perspective</h2>
+<ul>
+<li>Key players: <strong>CFO, Controller, CRO</strong></li>
+<li>Main objectives:
+<ul>
+<li><strong>Meet or beat analyst EPS expectations</strong><br>
+</li>
+<li>Maintain a strong <strong>credit rating</strong> for a planned bond issue</li>
+</ul></li>
+<li>Under pressure, management may:
+<ul>
+<li>Stretch credit terms to keep sales volume up<br>
+</li>
+<li>Delay recognising credit losses and returns<br>
+</li>
+<li>Underestimate ACL and RRA to support reported profit</li>
+</ul></li>
+</ul>
+</section>
+<section id="c2-trg-audit-teams-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="c2-trg-audit-teams-perspective">C2 · TRG Audit Team’s Perspective</h2>
+<ul>
+<li>TRG LLP is Toby’s <strong>external auditor</strong>.</li>
+<li>Main responsibility:
+<ul>
+<li>Provide reasonable assurance that the financial statements are <strong>fairly presented</strong></li>
+</ul></li>
+<li>In this engagement, TRG:
+<ul>
+<li>Sets overall materiality at about <strong>4% of pre-tax income</strong><br>
+</li>
+<li>Focuses on risk of <strong>overstatement</strong> in:
+<ul>
+<li>Net AR<br>
+</li>
+<li>Revenue<br>
+</li>
+<li>ACL and RRA</li>
+</ul></li>
+</ul></li>
+<li>The audit team must decide:
+<ul>
+<li>Where to concentrate audit effort<br>
+</li>
+<li>What extra evidence to collect</li>
+</ul></li>
+</ul>
+</section>
+<section id="c3-investors-and-lenders" class="level2">
+<h2 class="anchored" data-anchor-id="c3-investors-and-lenders">C3 · Investors and Lenders</h2>
+<ul>
+<li>Investors and bondholders care about:
+<ul>
+<li><strong>Quality of earnings</strong>, not just the earnings level<br>
+</li>
+<li>Ability to <strong>generate cash</strong> and repay debt</li>
+</ul></li>
+<li>Small changes around EPS targets or leverage ratios can:
+<ul>
+<li>Move Toby’s <strong>share price</strong><br>
+</li>
+<li>Affect the <strong>interest rate</strong> demanded by lenders</li>
+</ul></li>
+<li>Because of this, the way Toby estimates ACL and RRA,<br>
+and how realistic its revenue is, matters directly to capital markets.</li>
+</ul>
+</section>
+<section id="module-d" class="level2">
+<h2 class="anchored" data-anchor-id="module-d">Module D</h2>
+<section id="from-data-tables-to-risk-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="from-data-tables-to-risk-patterns">From Data Tables to Risk Patterns</h3>
+<p>In this section, we will:</p>
+<ul>
+<li>Dive into Toby’s receivables data</li>
+<li>See what kinds of <strong>risks and patterns</strong> are hiding in the ledgers</li>
+<li>Use a few simple <strong>visualisations</strong> to understand the data</li>
+</ul>
+</section>
+</section>
+<section id="d1-what-is-in-this-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="d1-what-is-in-this-dataset">D1 · What Is in This Dataset?</h2>
+</section>
+<section id="d1-what-is-in-this-dataset-1" class="level2">
+<h2 class="anchored" data-anchor-id="d1-what-is-in-this-dataset-1">D1 · What Is in This Dataset?</h2>
+<p>This case dataset brings together <strong>four types of information</strong>:</p>
+<ul>
+<li>Client information<br>
+</li>
+<li>Invoice information<br>
+</li>
+<li>Return information<br>
+</li>
+<li>Allowance information</li>
+</ul>
+</section>
+<section id="d1a-client-information" class="level2">
+<h2 class="anchored" data-anchor-id="d1a-client-information">D1a · Client Information</h2>
+<ul>
+<li>Which organisations are Toby’s customers<br>
+</li>
+<li>Where they are located
+<ul>
+<li>Customer city<br>
+</li>
+<li>Customer country<br>
+</li>
+</ul></li>
+<li>Which sales office is responsible for each customer
+<ul>
+<li>Sales office city<br>
+</li>
+<li>Sales office country</li>
+</ul></li>
+</ul>
+</section>
+<section id="d1b-invoice-information" class="level2">
+<h2 class="anchored" data-anchor-id="d1b-invoice-information">D1b · Invoice Information</h2>
+<ul>
+<li>Individual sales transactions:
+<ul>
+<li>Invoice ID / invoice number<br>
+</li>
+<li>Invoice date<br>
+</li>
+<li>Invoice amount<br>
+</li>
+</ul></li>
+<li>These invoices are what <strong>build up</strong> the receivables balance:
+<ul>
+<li>More invoices → higher AR<br>
+</li>
+<li>Larger invoices → more exposure in a single transaction</li>
+</ul></li>
+</ul>
+</section>
+<section id="d1c-return-information" class="level2">
+<h2 class="anchored" data-anchor-id="d1c-return-information">D1c · Return Information</h2>
+<ul>
+<li>When customers send products back:
+<ul>
+<li>Return date<br>
+</li>
+<li>Days between invoice and return<br>
+</li>
+</ul></li>
+<li>How much revenue is reversed:
+<ul>
+<li>Return amount<br>
+</li>
+<li>Invoice net of return (what is left after returns)</li>
+</ul></li>
+</ul>
+</section>
+<section id="d1d-allowance-information" class="level2">
+<h2 class="anchored" data-anchor-id="d1d-allowance-information">D1d · Allowance Information</h2>
+<ul>
+<li>Post-sale price concessions and credits:
+<ul>
+<li>Allowance amount<br>
+</li>
+<li>Allowance date<br>
+</li>
+<li>Days between invoice and allowance<br>
+</li>
+</ul></li>
+<li>How large the concession is compared with the invoice:
+<ul>
+<li>Allowance percentage<br>
+</li>
+<li>Invoice net of allowance</li>
+</ul></li>
+</ul>
+</section>
+<section id="d2-four-lenses-on-the-same-story" class="level2">
+<h2 class="anchored" data-anchor-id="d2-four-lenses-on-the-same-story">D2 · Four Lenses on the Same Story</h2>
+<p>We will explore Toby’s receivables through four blocks:</p>
+<ol type="1">
+<li><strong>Block 1 – Customer balance</strong>
+<ul>
+<li>Where is the money? (countries, cities, sales offices, customers)</li>
+</ul></li>
+<li><strong>Block 2 – Invoices</strong>
+<ul>
+<li>How big are the invoices, and how old are the receivables?</li>
+</ul></li>
+<li><strong>Block 3 – Returns</strong>
+<ul>
+<li>Are products coming back? When, and from whom?</li>
+</ul></li>
+<li><strong>Block 4 – Allowances</strong>
+<ul>
+<li>Where is Toby “cutting price after the fact”?</li>
+</ul></li>
+</ol>
+<p><strong>For each block we will:</strong></p>
+<ul>
+<li>Start with <strong>clear business questions</strong><br>
+</li>
+<li>Build a few simple Tableau <strong>visualisations</strong><br>
+</li>
+<li>Discuss the insights from the <strong>visualisations</strong></li>
+</ul>
+</section>
+<section id="d3-block-1-customer-balance-questions" class="level2">
+<h2 class="anchored" data-anchor-id="d3-block-1-customer-balance-questions">D3 · Block 1 – Customer Balance Questions</h2>
+<p>When you explore the <strong>customer balance</strong> data, think about:</p>
+<ul>
+<li>Which <strong>countries or cities</strong> show the largest <strong>AR balances</strong>?</li>
+<li>Which <strong>sales offices</strong> are responsible for the biggest <strong>AR balances</strong>?</li>
+<li>Are there a few <strong>customers</strong> that account for a large share of total AR?</li>
+<li>If one <strong>country / city / sales office / customer</strong> ran into trouble, how much of Toby’s receivables would be at risk?</li>
+</ul>
+</section>
+<section id="d5-block-2-invoices-questions" class="level2">
+<h2 class="anchored" data-anchor-id="d5-block-2-invoices-questions">D5 · Block 2 – Invoices Questions</h2>
+<p>When you explore the <strong>invoice</strong> data, think about:</p>
+<ul>
+<li>Are most invoices <strong>small and similar</strong>,<br>
+or do a few <strong>very large invoices</strong> dominate the total?</li>
+<li>How are invoices distributed <strong>over time</strong><br>
+(by month or by quarter)? Do you see any <strong>spikes</strong>?</li>
+<li>Do you see signs of <strong>older, slow-moving invoices</strong><br>
+that have not been collected for a long time?</li>
+</ul>
+</section>
+<section id="d6-block-3-returns-questions" class="level2">
+<h2 class="anchored" data-anchor-id="d6-block-3-returns-questions">D6 · Block 3 – Returns Questions</h2>
+<p>When you explore the <strong>returns</strong> data, think about:</p>
+<ul>
+<li>Do most returns happen <strong>soon after the sale</strong>,<br>
+or do many returns happen <strong>a long time later</strong>?</li>
+<li>Which customers have <strong>high total return amounts</strong><br>
+or <strong>very frequent returns</strong>?</li>
+<li>Are there invoices where returns remove <strong>most or all</strong> of the original sale?</li>
+</ul>
+</section>
+<section id="d7-block-4-allowances-questions" class="level2">
+<h2 class="anchored" data-anchor-id="d7-block-4-allowances-questions">D7 · Block 4 – Allowances Questions</h2>
+<p>When you explore the <strong>allowances</strong> data, think about:</p>
+<ul>
+<li>When are allowances granted:<br>
+mostly <strong>shortly after invoicing</strong>, or often <strong>long after the sale</strong>?</li>
+<li>How large are allowances as a <strong>percentage of the original invoice amount</strong>?</li>
+<li>Are there customers who <strong>regularly receive large concessions</strong>?</li>
+<li>Do you see any <strong>unusual patterns</strong>:<br>
+for example, allowances that almost wipe out the original invoice?</li>
+</ul>
+</section>
+<section id="d8-module-d-reflection-questions" class="level2">
+<h2 class="anchored" data-anchor-id="d8-module-d-reflection-questions">D8 · Module D – Reflection Questions</h2>
+<p>After you have explored all four blocks, think about:</p>
+<ul>
+<li>Where does the <strong>receivables risk</strong> seem most concentrated<br>
+(by region, office, customer, or invoice type)?</li>
+<li>Which patterns would make you <strong>doubt</strong> whether ACL or RRA are high enough?</li>
+<li>If you were the <strong>audit team</strong>,<br>
+which customers, regions, or time periods would you want to <strong>investigate further</strong>,<br>
+based on the patterns you saw in the data?</li>
+</ul>
 
 
 </section>
@@ -988,18 +1397,6 @@ We will cover:</p>
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../weeks/week-8/main.html" class="pagination-link" aria-label="Week 8">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 8</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../weeks/week-10/main.html" class="pagination-link" aria-label="Week 10">
-        <span class="nav-page-text">Week 10</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

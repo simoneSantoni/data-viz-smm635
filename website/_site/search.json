@@ -572,7 +572,7 @@
     "href": "weeks/week-8/main.html",
     "title": "Week 8",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 8 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "Note📚 Prepare\n\n\n\nPlease read the case study:\n\n“Using Data Analytics and Visualization in Accounting and Auditing at Toby Biotech Inc.”\n(Moodle → Case Study section)\n\nAs you read, pay special attention to the accounting-related terms and ideas, for example: - Accounts Receivable (AR)\n- Allowance for Credit Losses (ACL)\n- Reserve for Returns and Allowances (RRA)\n- Revenue recognition and timing\n- Materiality\n- CECL (Current Expected Credit Loss model)\nYou do not need to understand every technical detail,\nbut you should have a basic sense of what each term means in the case.",
     "crumbs": [
       "Weekly materials",
       "Week 8"
@@ -908,7 +908,7 @@
     "href": "project/finalCourseProject/main.html",
     "title": "Final Course Project",
     "section": "",
-    "text": "The final project is an individual assignment that challenges you to apply data visualization principles to address a complex business decision with competing considerations. You will work with the case study “Flying Around Real Estate Development: Persuading with Data Visualizations” (UVA-BC-0285) to demonstrate your mastery of persuasive visualization and storytelling with data.\n\n\nYou are Logan Clausen, a project manager at Pitchard Development Company (PDC), a boutique real estate development firm in San Francisco. You have identified a promising mixed-use development opportunity near a municipal airport. However, the proximity to the airport raises critical questions:\n\nDoes airport proximity increase or decrease property value?\nHow do noise levels (measured in CNEL decibels) impact housing prices?\nAre there market segments that actively seek airport proximity?\nHow can you persuasively communicate the opportunity (or risk) to stakeholders?\n\nYour task is to analyze benchmark data from two comparable California airports (Salinas and Watsonville Municipal Airports) and create compelling visualizations that support a clear recommendation about the development opportunity.\n\n\n\n\n\n\nKey Information\n\n\n\n\nType: Individual project\nDue Date: December 11, 2025 (15:59 PM)\nWeight: 40% of final grade\nCase: UVA-BC-0285 (available on Moodle)\nData: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)",
+    "text": "The final project is an individual assignment that challenges you to apply data visualization principles to address a complex business decision with competing considerations. You will work with the case study “Flying Around Real Estate Development: Persuading with Data Visualizations” (UVA-BC-0285) to demonstrate your mastery of persuasive visualization and storytelling with data.1\n\n\nYou are Logan Clausen, a project manager at Pitchard Development Company (PDC), a boutique real estate development firm in San Francisco. You have identified a promising mixed-use development opportunity near a municipal airport. However, the proximity to the airport raises critical questions:\n\nDoes airport proximity increase or decrease property value?\nHow do noise levels (measured in CNEL decibels) impact housing prices?\nAre there market segments that actively seek airport proximity?\nHow can you persuasively communicate the opportunity (or risk) to stakeholders?\n\nYour task is to analyze benchmark data from two comparable California airports (Salinas and Watsonville Municipal Airports) and create compelling visualizations that support a clear recommendation about the development opportunity. The data, in Excel format, are available in the data directory of SMM635’s GitHub repository (see file real_estate.xlsx).\n\n\n\n\n\n\nImportantKey Information\n\n\n\n\nType: Individual project\nDue Date: December 1, 2025 (15:59 PM)\nWeight: 40% of final grade\nCase: UVA-BC-0285 (available on Moodle)\nData: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)",
     "crumbs": [
       "Project",
       "Final course project"
@@ -919,7 +919,7 @@
     "href": "project/finalCourseProject/main.html#project-overview",
     "title": "Final Course Project",
     "section": "",
-    "text": "The final project is an individual assignment that challenges you to apply data visualization principles to address a complex business decision with competing considerations. You will work with the case study “Flying Around Real Estate Development: Persuading with Data Visualizations” (UVA-BC-0285) to demonstrate your mastery of persuasive visualization and storytelling with data.\n\n\nYou are Logan Clausen, a project manager at Pitchard Development Company (PDC), a boutique real estate development firm in San Francisco. You have identified a promising mixed-use development opportunity near a municipal airport. However, the proximity to the airport raises critical questions:\n\nDoes airport proximity increase or decrease property value?\nHow do noise levels (measured in CNEL decibels) impact housing prices?\nAre there market segments that actively seek airport proximity?\nHow can you persuasively communicate the opportunity (or risk) to stakeholders?\n\nYour task is to analyze benchmark data from two comparable California airports (Salinas and Watsonville Municipal Airports) and create compelling visualizations that support a clear recommendation about the development opportunity.\n\n\n\n\n\n\nKey Information\n\n\n\n\nType: Individual project\nDue Date: December 11, 2025 (15:59 PM)\nWeight: 40% of final grade\nCase: UVA-BC-0285 (available on Moodle)\nData: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)",
+    "text": "The final project is an individual assignment that challenges you to apply data visualization principles to address a complex business decision with competing considerations. You will work with the case study “Flying Around Real Estate Development: Persuading with Data Visualizations” (UVA-BC-0285) to demonstrate your mastery of persuasive visualization and storytelling with data.1\n\n\nYou are Logan Clausen, a project manager at Pitchard Development Company (PDC), a boutique real estate development firm in San Francisco. You have identified a promising mixed-use development opportunity near a municipal airport. However, the proximity to the airport raises critical questions:\n\nDoes airport proximity increase or decrease property value?\nHow do noise levels (measured in CNEL decibels) impact housing prices?\nAre there market segments that actively seek airport proximity?\nHow can you persuasively communicate the opportunity (or risk) to stakeholders?\n\nYour task is to analyze benchmark data from two comparable California airports (Salinas and Watsonville Municipal Airports) and create compelling visualizations that support a clear recommendation about the development opportunity. The data, in Excel format, are available in the data directory of SMM635’s GitHub repository (see file real_estate.xlsx).\n\n\n\n\n\n\nImportantKey Information\n\n\n\n\nType: Individual project\nDue Date: December 1, 2025 (15:59 PM)\nWeight: 40% of final grade\nCase: UVA-BC-0285 (available on Moodle)\nData: Salinas and Watsonville airport housing datasets (UVA-BC-0285X)",
     "crumbs": [
       "Project",
       "Final course project"
@@ -941,7 +941,7 @@
     "href": "project/finalCourseProject/main.html#case-questions-to-address",
     "title": "Final Course Project",
     "section": "Case Questions to Address",
-    "text": "Case Questions to Address\nYour analysis must answer the following:\n\n\n\n\n\n\nRequired Analysis Questions\n\n\n\n\nProximity Analysis: How does distance from the airport terminal correlate with housing values in the benchmark markets (Salinas and Watsonville)?\nNoise Impact Assessment: What is the relationship between Community Noise Equivalent Level (CNEL) and property values? Is the Noise Depreciation Index (NDI) of 0.45%-0.64% supported by the data?\nMarket Segmentation: Are there patterns suggesting different market segments respond differently to airport proximity?\nComparative Analysis: How do the two benchmark airports (Salinas vs. Watsonville) compare? What explains any differences?\nConfounding Factors: What other variables beyond noise and distance might be influencing the housing values you observe?\nInvestment Recommendation: Should PDC pursue this development opportunity? What are the key risks and opportunities?",
+    "text": "Case Questions to Address\nYour analysis must answer the following:\n\n\n\n\n\n\nWarningRequired Analysis Questions\n\n\n\n\nProximity Analysis: How does distance from the airport terminal correlate with housing values in the benchmark markets (Salinas and Watsonville)?\nNoise Impact Assessment: What is the relationship between Community Noise Equivalent Level (CNEL) and property values? Is the Noise Depreciation Index (NDI) of 0.45%-0.64% supported by the data?\nMarket Segmentation: Are there patterns suggesting different market segments respond differently to airport proximity?\nComparative Analysis: How do the two benchmark airports (Salinas vs. Watsonville) compare? What explains any differences?\nConfounding Factors: What other variables beyond noise and distance might be influencing the housing values you observe?\nInvestment Recommendation: Should PDC pursue this development opportunity? What are the key risks and opportunities?",
     "crumbs": [
       "Project",
       "Final course project"
@@ -952,7 +952,7 @@
     "href": "project/finalCourseProject/main.html#deliverables",
     "title": "Final Course Project",
     "section": "Deliverables",
-    "text": "Deliverables\n\n1. Executive Presentation (Primary Deliverable)\nCreate a professional presentation (PDF format) that includes:\n\nExecutive Summary (1 slide): Your recommendation and key findings\nContext & Business Problem (1-2 slides): Situation overview\nData & Methodology (1-2 slides): Brief description of your analytical approach\nVisual Analysis (6-10 slides): Your data visualizations with insights\nRecommendation (1-2 slides): Clear action items and risk/opportunity assessment\nAppendix (optional): Additional supporting analyses\n\nSpecifications:\n\nMaximum 15 slides (excluding title and appendix)\nMinimum 6 visualizations, maximum 12\nEach visualization must be purposeful and support your narrative\nProfessional design consistent with business context\nAudience: PDC partners (technical literacy varies) and potential investors\n\n\n\n2. Technical Report (Supporting Document)\nA written report (2,000-2,500 words) containing:\n\nIntroduction: Business context and analytical objectives\nData Description: Variables, ranges, potential limitations\nMethodology: Analytical approach and design choices\nFindings: Detailed analysis supporting each visualization\nDesign Rationale: Justification for your visualization choices based on course principles\nLimitations & Assumptions: What your analysis cannot answer\nConclusion: Synthesis and recommendation\n\n\n\n3. Reproducible Code\nWell-documented code that:\n\nLoads and preprocesses the datasets\nPerforms all analyses\nGenerates all visualizations in your presentation and report\nIncludes clear comments explaining each step\nRuns without errors (provide clear setup instructions)\n\nAccepted languages: R, Python, Julia1\n\n\n4. README File\nA markdown file explaining:\n\nHow to set up the environment (packages/libraries needed)\nHow to run your code\nDescription of output files\nAny known issues or dependencies",
+    "text": "Deliverables\n\n1. Executive Presentation (Primary Deliverable)\nCreate a professional presentation (PDF format) that includes:\n\nExecutive Summary (1 slide): Your recommendation and key findings\nContext & Business Problem (1-2 slides): Situation overview\nData & Methodology (1-2 slides): Brief description of your analytical approach\nVisual Analysis (6-10 slides): Your data visualizations with insights\nRecommendation (1-2 slides): Clear action items and risk/opportunity assessment\nAppendix (optional): Additional supporting analyses\n\nSpecifications:\n\nMaximum 15 slides (excluding title and appendix)\nMinimum 6 visualizations, maximum 12\nEach visualization must be purposeful and support your narrative\nProfessional design consistent with business context\nAudience: PDC partners (technical literacy varies) and potential investors\n\n\n\n2. Technical Report (Supporting Document)\nA written report (1,000 words) containing:\n\nIntroduction: Business context and analytical objectives\nData Description: Variables, ranges, potential limitations\nMethodology: Analytical approach and design choices\nFindings: Detailed analysis supporting each visualization\nDesign Rationale: Justification for your visualization choices based on course principles\nLimitations & Assumptions: What your analysis cannot answer\nConclusion: Synthesis and recommendation\n\n\n\n3. Reproducible Code\nWell-documented code that:\n\nLoads and preprocesses the datasets\nPerforms all analyses\nGenerates all visualizations in your presentation and report\nIncludes clear comments explaining each step\nRuns without errors (provide clear setup instructions)\n\nAccepted languages: Tableau,2 R, Python\n\n\n4. README File\nA markdown file explaining:\n\nHow to set up the environment (packages/libraries needed)\nHow to run your code\nDescription of output files\nAny known issues or dependencies",
     "crumbs": [
       "Project",
       "Final course project"
@@ -963,7 +963,7 @@
     "href": "project/finalCourseProject/main.html#data-description",
     "title": "Final Course Project",
     "section": "Data Description",
-    "text": "Data Description\nYou will work with two datasets:\n\nSalinas Municipal Airport Dataset\n\nProperties analyzed: Houses at varying distances from terminal\nDistance range: 0.64 to 3.67 miles from terminal\nNoise categories:\n\n≥60 dB CNEL\n55-60 dB CNEL\n&lt;55 dB CNEL\n\nVariables: Property values, distances, noise levels, time series data\n\n\n\nWatsonville Municipal Airport Dataset\n\nProperties analyzed: Houses at varying distances from terminal\nDistance range: 0.71 to 2.02 miles from terminal\nNoise categories:\n\n≥65 dB CNEL\n60-65 dB CNEL\n&lt;60 dB CNEL\n\nVariables: Property values, distances, noise levels, time series data\n\n\n\n\n\n\n\nUnderstanding CNEL (Community Noise Equivalent Level)\n\n\n\nCNEL measures 24-hour noise exposure with penalties for evening/night noise:\n\nQuiet urban area (day): 50 dB\nQuiet urban area (night): 40 dB\nCountryside (night): 20-25 dB\nDiscomfort threshold: &gt;120 dB\nPain threshold: &gt;130 dB\nRocket launch: ~200 dB\n\nFor context: rustling leaves ≈ 20 dB, normal conversation ≈ 60 dB, lawnmower ≈ 90 dB",
+    "text": "Data Description\nYou will work with two datasets:\n\nSalinas Municipal Airport Dataset\n\nProperties analyzed: Houses at varying distances from terminal\nDistance range: 0.64 to 3.67 miles from terminal\nNoise categories:\n\n≥60 dB CNEL\n55-60 dB CNEL\n&lt;55 dB CNEL\n\nVariables: Property values, distances, noise levels, time series data\n\n\n\nWatsonville Municipal Airport Dataset\n\nProperties analyzed: Houses at varying distances from terminal\nDistance range: 0.71 to 2.02 miles from terminal\nNoise categories:\n\n≥65 dB CNEL\n60-65 dB CNEL\n&lt;60 dB CNEL\n\nVariables: Property values, distances, noise levels, time series data\n\n\n\n\n\n\n\nTipUnderstanding CNEL (Community Noise Equivalent Level)\n\n\n\nCNEL measures 24-hour noise exposure with penalties for evening/night noise:\n\nQuiet urban area (day): 50 dB\nQuiet urban area (night): 40 dB\nCountryside (night): 20-25 dB\nDiscomfort threshold: &gt;120 dB\nPain threshold: &gt;130 dB\nRocket launch: ~200 dB\n\nFor context: rustling leaves ≈ 20 dB, normal conversation ≈ 60 dB, lawnmower ≈ 90 dB",
     "crumbs": [
       "Project",
       "Final course project"
@@ -974,7 +974,7 @@
     "href": "project/finalCourseProject/main.html#visualization-requirements",
     "title": "Final Course Project",
     "section": "Visualization Requirements",
-    "text": "Visualization Requirements\n\nMandatory Visualizations\nYour analysis must include at least:\n\nOne visualization showing the relationship between distance and property value\nOne visualization showing the relationship between noise levels and property value\nOne comparative visualization contrasting Salinas and Watsonville\nOne multidimensional visualization integrating 3+ variables\n\n\n\nDesign Principles to Demonstrate\nYour visualizations should showcase:\n\n\n\n\n\n\nExpected Design Competencies\n\n\n\n\nClarity: Clear titles, labels, legends, and annotations\nAppropriate chart types: Match visualization to data type and question\nColor theory: Strategic use of color for emphasis and grouping\nHierarchy: Guide the viewer’s attention to key insights\nAccessibility: Colorblind-friendly palettes, sufficient contrast\nContext: Provide reference points and benchmarks where helpful\nIntegrity: Honest representation without distortion\nPolish: Professional appearance suitable for executive presentation\n\n\n\n\n\nTools\nYou may use any combination of:\n\nR: ggplot2, plotly, shiny, patchwork, gganimate\nPython: matplotlib, seaborn, plotly, altair, bokeh\nTableau: For interactive components (export to PDF for submission)\nDesign tools: Illustrator, Figma for final polish (optional)",
+    "text": "Visualization Requirements\n\nMandatory Visualizations\nYour analysis must include at least:\n\nOne visualization showing the relationship between distance and property value\nOne visualization showing the relationship between noise levels and property value\nOne comparative visualization contrasting Salinas and Watsonville\nOne multidimensional visualization integrating 3+ variables\n\n\n\nDesign Principles to Demonstrate\nYour visualizations should showcase:\n\n\n\n\n\n\nNoteExpected Design Competencies\n\n\n\n\nClarity: Clear titles, labels, legends, and annotations\nAppropriate chart types: Match visualization to data type and question\nHierarchy: Guide the viewer’s attention to key insights\nContext: Provide reference points and benchmarks where helpful\nIntegrity: Honest representation without distortion\nPolish: Professional appearance suitable for executive presentation\n\n\n\n\n\nTools\nYou may use any combination of:\n\nR: ggplot2, plotly, shiny, patchwork, gganimate\nPython: matplotlib, seaborn, plotly, altair, bokeh\nTableau: For interactive components (export to PDF for submission)\nDesign tools: Illustrator, Figma for final polish (optional)",
     "crumbs": [
       "Project",
       "Final course project"
@@ -985,7 +985,7 @@
     "href": "project/finalCourseProject/main.html#submission-requirements",
     "title": "Final Course Project",
     "section": "Submission Requirements",
-    "text": "Submission Requirements\n\nWhat to Submit\nUpload a single compressed folder (.zip or .tar.gz) named LastName_FirstName_FinalProject containing:\nLastName_FirstName_FinalProject/\n├── presentation.pdf          # Executive presentation (required)\n├── report.pdf               # Technical report (required)\n├── code/                    # All code files\n│   ├── analysis.R (or .py, .jl)\n│   ├── visualizations.R (or .py, .jl)\n│   └── utils.R (optional helper functions)\n├── data/                    # Processed data (if applicable)\n│   └── processed_data.csv\n├── figures/                 # Generated visualizations\n│   ├── figure1.png\n│   ├── figure2.png\n│   └── ...\n└── README.md               # Setup and execution instructions\n\n\nWhere to Submit\n\nPlatform: Moodle (Final Course Project submission link)\nDeadline: December 11, 2025, 15:59 PM\nLate policy: 10% penalty per day, maximum 3 days",
+    "text": "Submission Requirements\n\nWhat to Submit\nUpload a single compressed folder (.zip or .tar.gz) named LastName_FirstName_FinalProject containing:\nLastName_FirstName_FinalProject/\n├── presentation.pdf          # Executive presentation (required)\n├── report.pdf               # Technical report (required)\n├── code/                    # All code files\n│   ├── analysis.R (or .py, .tbm)\n│   ├── visualizations.R (or .py, .tbm)\n│   └── utils.R (optional helper functions)\n├── data/                    # Processed data (if applicable)\n│   └── processed_data.csv\n├── figures/                 # Generated visualizations\n│   ├── figure1.png\n│   ├── figure2.png\n│   └── ...\n└── README.md               # Setup and execution instructions\n\n\nWhere to Submit\n\nPlatform: Moodle (Final Course Project submission link)\nDeadline: December 1, 2025, 15:59 PM",
     "crumbs": [
       "Project",
       "Final course project"
@@ -996,7 +996,7 @@
     "href": "project/finalCourseProject/main.html#evaluation-criteria",
     "title": "Final Course Project",
     "section": "Evaluation Criteria",
-    "text": "Evaluation Criteria\nYour project will be assessed on:\n\nVisualization Quality (40%)\n\nAppropriateness: Chart types match data and questions\nDesign excellence: Professional, polished, clear\nInsight generation: Visualizations reveal meaningful patterns\nTechnical execution: Accurate, honest representation\nAccessibility: Considerate of diverse audiences\n\n\n\nAnalytical Rigor (25%)\n\nDepth of analysis: Thorough exploration of relationships\nMethodology: Sound analytical approach\nCritical thinking: Consideration of confounds and limitations\nData handling: Appropriate preprocessing and transformations\n\n\n\nStorytelling & Persuasion (20%)\n\nNarrative flow: Logical progression of ideas\nClarity of recommendation: Clear, actionable conclusions\nAudience awareness: Appropriate for PDC partners and investors\nPersuasiveness: Compelling case supported by evidence\n\n\n\nTechnical Quality (10%)\n\nCode quality: Clean, documented, reproducible\nCompleteness: All deliverables present and functional\nDocumentation: Clear README and comments\n\n\n\nProfessionalism (5%)\n\nPresentation polish: Executive-ready materials\nWriting quality: Clear, concise, error-free\nOrganization: Well-structured submission",
+    "text": "Evaluation Criteria\nYour project will be assessed on:\n\nVisualization Quality (40%)\n\nAppropriateness: Chart types match data and questions\nDesign excellence: Professional, polished, clear\nInsight generation: Visualizations reveal meaningful patterns\nTechnical execution: Accurate, honest representation\nAccessibility: Considerate of diverse audiences\n\n\n\nAnalytical Rigor (25%)\n\nDepth of analysis: Thorough exploration of relationships\nMethodology: Sound analytical approach\nCritical thinking: Consideration of confounds and limitations\nData handling: Appropriate preprocessing and transformations\n\n\n\nStorytelling & Persuasion (20%)\n\nNarrative flow: Logical progression of ideas\nClarity of recommendation: Clear, actionable conclusions\nAudience awareness: Appropriate for PDC partners and investors\nPersuasiveness: Compelling case supported by evidence\n\n\n\nTechnical Quality (10%)\n\nCode quality: Clean, documented, reproducible\nCompleteness: All deliverables present and functional\nDocumentation: Clear README and comments\n\n\n\nProfessionalism (5%)\n\nPresentation polish: Executive-ready materials\nWriting quality: Clear, concise, error-free\nOrganization: Well-structured submission\n\n\n\n\n\n\n\nThese criteria will be assessed based on the submitted material and individual presentation.",
     "crumbs": [
       "Project",
       "Final course project"
@@ -1007,7 +1007,7 @@
     "href": "project/finalCourseProject/main.html#getting-started",
     "title": "Final Course Project",
     "section": "Getting Started",
-    "text": "Getting Started\n\nStep 1: Understand the Context (Week 1-2)\n\nRead the case study carefully\nResearch real estate development and airport proximity effects\nUnderstand CNEL and NDI measurements\nIdentify your key stakeholders and their concerns\n\n\n\nStep 2: Explore the Data (Week 3-4)\n\nLoad and examine both datasets\nCheck for data quality issues\nCalculate summary statistics\nCreate exploratory visualizations (not for final submission)\nIdentify interesting patterns and relationships\n\n\n\nStep 3: Develop Your Argument (Week 5-6)\n\nForm a hypothesis about the development opportunity\nIdentify what evidence you need to support it\nDesign visualizations that reveal this evidence\nConsider counterarguments and alternative explanations\nSketch your narrative arc\n\n\n\nStep 4: Create & Refine (Week 7-8)\n\nBuild your visualizations\nWrite your report and presentation\nIterate based on self-critique\nTest with a peer (optional but recommended)\nPolish and finalize",
+    "text": "Getting Started\n\nStep 1: Understand the Context\n\nRead the case study carefully\nResearch real estate development and airport proximity effects\nUnderstand CNEL and NDI measurements\nIdentify your key stakeholders and their concerns\n\n\n\nStep 2: Explore the Data\n\nLoad and examine both datasets\nCheck for data quality issues\nCalculate summary statistics\nCreate exploratory visualizations (not for final submission)\nIdentify interesting patterns and relationships\n\n\n\nStep 3: Develop Your Argument\n\nForm a hypothesis about the development opportunity\nIdentify what evidence you need to support it\nDesign visualizations that reveal this evidence\nConsider counterarguments and alternative explanations\nSketch your narrative arc\n\n\n\nStep 4: Create & Refine\n\nBuild your visualizations\nWrite your report and presentation\nIterate based on self-critique\nTest with a peer (optional but recommended)\nPolish and finalize",
     "crumbs": [
       "Project",
       "Final course project"
@@ -1018,7 +1018,7 @@
     "href": "project/finalCourseProject/main.html#resources-support",
     "title": "Final Course Project",
     "section": "Resources & Support",
-    "text": "Resources & Support\n\nOffice Hours\n\nWhen: Wednesdays 15:00-17:00, or by appointment\nWhere: Faculty office or online (schedule via email)\nWhat to discuss: Methodology, design feedback, technical issues\n\n\n\nRecommended Readings\nRevisit course materials on:\n\nWeek 1: Design principles and visual perception\nWeek 2: Grammar of graphics and visual encodings\nWeek 4: Multidimensional data visualization\nWeek 5: Storytelling with data\nEssential texts: Tufte (graphical excellence), Cairo (functional art), Healy (practical visualization)\n\n\n\nTechnical Resources\n\nR documentation: ggplot2.tidyverse.org\nPython documentation: matplotlib.org, seaborn.pydata.org\nColor advice: colorbrewer2.org\nAccessibility: vis4.net/chromajs",
+    "text": "Resources & Support\n\nOffice Hours\n\nWhen: Wednesdays 15:00-17:00, or by appointment\nWhere: Faculty office or online (schedule via email)\nWhat to discuss: Methodology, design feedback, technical issues\n\n\n\nRecommended Readings\nRevisit course materials on:\n\nWeek 1: Design principles and visual perception\nWeek 2: Grammar of graphics and visual encodings\nWeek 4: Multidimensional data visualization\nWeek 5: Storytelling with data\nEssential texts: Tufte (graphical excellence), Cairo (functional art), Healy (practical visualization)",
     "crumbs": [
       "Project",
       "Final course project"
@@ -1029,7 +1029,7 @@
     "href": "project/finalCourseProject/main.html#academic-integrity",
     "title": "Final Course Project",
     "section": "Academic Integrity",
-    "text": "Academic Integrity\n\n\n\n\n\n\nImportant Reminders\n\n\n\n\nThis is an individual project - all work must be your own\nYou may discuss concepts with classmates but not share code or visualizations\nCite all sources including online tutorials, Stack Overflow answers, or AI assistance\nUse provided data - do not supplement with external datasets\nOriginal visualizations - do not copy designs from online examples\nViolations will be handled according to university academic integrity policies",
+    "text": "Academic Integrity\n\n\n\n\n\n\nWarningImportant Reminders\n\n\n\n\nThis is an individual project - all work must be your own\nYou may discuss concepts with classmates but not share code or visualizations\nCite all sources including online tutorials, Stack Overflow answers, or AI assistance\nUse provided data - do not supplement with external datasets\nOriginal visualizations - do not copy designs from online examples\nViolations will be handled according to university academic integrity policies",
     "crumbs": [
       "Project",
       "Final course project"
@@ -1040,7 +1040,7 @@
     "href": "project/finalCourseProject/main.html#success-tips",
     "title": "Final Course Project",
     "section": "Success Tips",
-    "text": "Success Tips\n\n\n\n\n\n\nRecommendations for Excellence\n\n\n\n\nStart early: Complex decisions require time to develop nuanced arguments\nIterate often: First drafts of visualizations are rarely final versions\nSeek feedback: Use office hours to validate your approach\nThink like your audience: Partners care about ROI, investors about risk\nQuestion your assumptions: What if your initial hypothesis is wrong?\nDesign with purpose: Every element should serve your narrative\nTest your code: Make sure everything runs before submission\nProofread everything: Typos undermine professional credibility\nSave incrementally: Version control or frequent backups\nKeep it simple: Clarity beats complexity",
+    "text": "Success Tips\n\n\n\n\n\n\nTipRecommendations for Excellence\n\n\n\n\nStart early: Complex decisions require time to develop nuanced arguments\nIterate often: First drafts of visualizations are rarely final versions\nSeek feedback: Use office hours to validate your approach\nThink like your audience: Partners care about ROI, investors about risk\nQuestion your assumptions: What if your initial hypothesis is wrong?\nDesign with purpose: Every element should serve your narrative\nTest your code: Make sure everything runs before submission\nProofread everything: Typos undermine professional credibility\nSave incrementally: Version control or frequent backups\nKeep it simple: Clarity beats complexity",
     "crumbs": [
       "Project",
       "Final course project"
@@ -1062,7 +1062,7 @@
     "href": "project/finalCourseProject/main.html#footnotes",
     "title": "Final Course Project",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nWhile Julia is accepted, ensure all required libraries are clearly documented in your README, as it’s less commonly used in the course↩︎",
+    "text": "Footnotes\n\n\nElectronic copy of the case available in the “Case Studies” section of SMM635’s Moodle Page.↩︎\nIf you use Tableau, include your .tbm file in the submission package.↩︎",
     "crumbs": [
       "Project",
       "Final course project"
@@ -1966,7 +1966,7 @@
     "href": "weeks/week-9/main.html",
     "title": "Week 9",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 9 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "Note📚 Prepare\n\n\n\n\nRevisit Week 7 materials.\n\nDownload Superstore.xls from Moodle or Github.",
     "crumbs": [
       "Weekly materials",
       "Week 9"
@@ -2223,5 +2223,297 @@
     "title": "Google Play Store Apps: Data Exploration with Python’s plotnine",
     "section": "Next Steps",
     "text": "Next Steps\n\n\n\n\n\n\n\nData Cleaning: Address missing values and miscoded entries in Type, Category, and other fields\nFeature Engineering: Parse Size and Installs into numeric formats for quantitative analysis\nAdvanced Analysis: Examine temporal patterns using Last Updated, analyze price elasticity, investigate category-specific trends\nMultivariate Analysis: Build models to predict ratings or success metrics based on app characteristics"
+  },
+  {
+    "objectID": "weeks/week-8/main.html#prepare",
+    "href": "weeks/week-8/main.html#prepare",
+    "title": "Week 8",
+    "section": "",
+    "text": "Note📚 Prepare\n\n\n\nPlease read the case study:\n\n“Using Data Analytics and Visualization in Accounting and Auditing at Toby Biotech Inc.”\n(Moodle → Case Study section)\n\nAs you read, pay special attention to the accounting-related terms and ideas, for example: - Accounts Receivable (AR)\n- Allowance for Credit Losses (ACL)\n- Reserve for Returns and Allowances (RRA)\n- Revenue recognition and timing\n- Materiality\n- CECL (Current Expected Credit Loss model)\nYou do not need to understand every technical detail,\nbut you should have a basic sense of what each term means in the case.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#participate",
+    "href": "weeks/week-8/main.html#participate",
+    "title": "Week 8",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Case Discussion Presentation – Understanding the challenge of receivables risk at Toby Biotech\nIn class, we will:\n\nWalk through the Toby Biotech case together and discuss:\n\nthe company background\n\nthe economic context\n\nwhy receivables and related estimates matter.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#practice",
+    "href": "weeks/week-8/main.html#practice",
+    "title": "Week 8",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\nIn the second part of the session, we will do a hands-on exercise:\n\nUse Tableau to explore the Toby Biotech datasets from the case.\nBuild simple visualisations to:\n\nsee where receivables are concentrated, and\n\nstart identifying patterns that might indicate risk.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#perform",
+    "href": "weeks/week-8/main.html#perform",
+    "title": "Week 8",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\nNote🧠 Perform\n\n\n\nAfter class, take a few minutes to mentally review:\n\nWhat you understood about receivables risk from the Toby Biotech case;\n\nWhich Tableau view or pattern in the data stayed most clearly in your mind, and why;\n\nWhat kinds of Tableau skills you feel you strengthened in this session and how you will use them in the future.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/main.html#ponder",
+    "href": "weeks/week-8/main.html#ponder",
+    "title": "Week 8",
+    "section": "Ponder",
+    "text": "Ponder\n\n\n\n\n\n\nNote🔍 Ponder\n\n\n\nThink beyond what we actually did in class:\n\nIf you had more time and access to the same data, what additional analyses or visualisations would you build on the Toby Biotech case?\nWhat other questions might an auditor, a manager, or a bond investor want to answer using this data?\nWhat extra information or datasets would you like to have, to make your conclusions about receivables risk more convincing?",
+    "crumbs": [
+      "Weekly materials",
+      "Week 8"
+    ]
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#a1-who-is-toby-biotech",
+    "href": "weeks/week-8/case_discussion.html#a1-who-is-toby-biotech",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "A1 · Who Is Toby Biotech?",
+    "text": "A1 · Who Is Toby Biotech?\n\nToby Biotech Inc. is a fictional global life sciences equipment firm.\nMain product lines:\n\nInstruments\n\nConsumables\n\nSoftware\n\nServices\n\nMain customers:\n\nResearch labs\n\nHospitals and clinics\n\nUniversities and public-sector organisations\n\nToby sells high-value products on credit to professional customers,\nso receivables are a natural and important part of the business."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#a2-economic-background",
+    "href": "weeks/week-8/case_discussion.html#a2-economic-background",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "A2 · Economic Background",
+    "text": "A2 · Economic Background\n\nThe case takes place during a period of global economic slowdown:\n\nMajor markets are in or near recession.\nCustomers’ cash flows are under pressure.\n\nTypical effects in this environment:\n\nMore sales are done on credit instead of cash.\nCustomers take longer to pay.\nCompanies see more product returns and stronger pressure for price concessions.\n\nIn this setting, receivables become a key place where financial risks can build up,\nand some reported numbers may become less reliable."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#a3-tobys-20x3-financial-snapshot-unaudited",
+    "href": "weeks/week-8/case_discussion.html#a3-tobys-20x3-financial-snapshot-unaudited",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "A3 · Toby’s 20X3 Financial Snapshot (Unaudited)",
+    "text": "A3 · Toby’s 20X3 Financial Snapshot (Unaudited)\n\nNet sales revenue (20X3): about $1.132 billion\nPre-tax income (20X3): about $218 million\nYear-end accounts receivable (AR):\n\n$177 million at 31 Dec 20X3\n\nIncrease of $19 million (≈12%) over the prior year\n\nSales vs. AR growth\n\nSales have grown by roughly 10% year-on-year.\n\nAR has grown by roughly 12%, so receivables are increasing faster than sales.\n\nIn a weak economy, this pattern raises questions about\nhow quickly customers are paying and how realistic the reported AR balance is."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#module-b",
+    "href": "weeks/week-8/case_discussion.html#module-b",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Module B",
+    "text": "Module B\n\nCore Accounting Ideas (for Non-Accounting Students)"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b1-accounts-receivable-ar",
+    "href": "weeks/week-8/case_discussion.html#b1-accounts-receivable-ar",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B1 · Accounts Receivable (AR)",
+    "text": "B1 · Accounts Receivable (AR)\n\nAccounts Receivable (AR)\n\nMoney that customers owe Toby for goods or services already delivered\n\nReported as an asset on the balance sheet\n\nKey idea:\n\nAR is a good asset only if customers actually pay.\n\nIf they do not pay, AR turns into credit losses.\n\nIn this case, we will use Tableau to understand where this AR sits:\n\nWhich countries and cities\n\nWhich sales offices\n\nWhich customers"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b2-adjusting-ar-for-risk-acl-rra",
+    "href": "weeks/week-8/case_discussion.html#b2-adjusting-ar-for-risk-acl-rra",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B2 · Adjusting AR for Risk: ACL & RRA",
+    "text": "B2 · Adjusting AR for Risk: ACL & RRA\n\nAllowance for Credit Losses (ACL)\n\nManagement’s estimate of receivables that will not be collected\n\nHigher ACL → more bad-debt expense → lower profit and lower net AR\n\nReserve for Returns and Allowances (RRA)\n\nExpected future product returns and post-sale price concessions\n\nHigher RRA → lower revenue → lower profit and lower net AR\n\n\n\nNet AR = Gross AR – ACL – RRA\n\n\nIf management is too optimistic, ACL and RRA may be too low,\nwhich makes AR and profit look better than they really are."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b3-why-cecl-was-introduced",
+    "href": "weeks/week-8/case_discussion.html#b3-why-cecl-was-introduced",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B3 · Why CECL Was Introduced",
+    "text": "B3 · Why CECL Was Introduced\n\nHistorically, many firms used an “incurred loss” model:\n\nLosses were recognised mainly when there was clear evidence of trouble\n(missed payments, defaults, downgrades, etc.).\nThis often made loss recognition too slow and too small,\nespecially before and during the 2008 financial crisis.\n\nRegulators wanted a more forward-looking approach:\n\nOne that forces firms to consider not just past problems,\nbut also what is likely to go wrong in the future."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b4-the-cecl-model",
+    "href": "weeks/week-8/case_discussion.html#b4-the-cecl-model",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B4 · The CECL Model",
+    "text": "B4 · The CECL Model\n\nUnder the Current Expected Credit Loss (CECL) model, firms must:\n\nEstimate lifetime expected credit losses on receivables.\nUse:\n\nPast experience\n\nCurrent conditions\n\nReasonable and supportable forecasts\n\n\nThis means:\n\nThe allowance reflects not only what has already gone bad,\nbut also what is expected to go bad over the life of the receivable.\n\nIn our case:\n\nIn a weakening economy, CECL pushes Toby to raise ACL earlier and more aggressively, rather than waiting for customers to actually default.\nIf AR is growing faster than sales but ACL does not respond, the reported AR and profit may be too optimistic."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#b5-revenue-recognition-timing",
+    "href": "weeks/week-8/case_discussion.html#b5-revenue-recognition-timing",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "B5 · Revenue Recognition & Timing",
+    "text": "B5 · Revenue Recognition & Timing\n\nRevenue recognition determines:\n\nWhen and how much revenue is recorded\n\nAggressive revenue recognition:\n\nRecords revenue earlier in the process\n\nCan temporarily inflate revenue, AR, and EPS\n\nUnder CECL, even if revenue is recognised early:\n\nCompanies are expected to record expected credit losses on those receivables at the same time.\nIf revenue is recognised aggressively without adjusting ACL,\nthe financial statements can become misleading.\n\nIn a downturn, pressure to “hit the numbers” can still lead to:\n\nLooser credit policies\n\nDelayed recognition of losses in practice\n\nHeavy use of returns and allowances to quietly adjust results"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#module-c",
+    "href": "weeks/week-8/case_discussion.html#module-c",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Module C",
+    "text": "Module C\n\nStakeholders & Their Incentives"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#c1-toby-managements-perspective",
+    "href": "weeks/week-8/case_discussion.html#c1-toby-managements-perspective",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "C1 · Toby Management’s Perspective",
+    "text": "C1 · Toby Management’s Perspective\n\nKey players: CFO, Controller, CRO\nMain objectives:\n\nMeet or beat analyst EPS expectations\n\nMaintain a strong credit rating for a planned bond issue\n\nUnder pressure, management may:\n\nStretch credit terms to keep sales volume up\n\nDelay recognising credit losses and returns\n\nUnderestimate ACL and RRA to support reported profit"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#c2-trg-audit-teams-perspective",
+    "href": "weeks/week-8/case_discussion.html#c2-trg-audit-teams-perspective",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "C2 · TRG Audit Team’s Perspective",
+    "text": "C2 · TRG Audit Team’s Perspective\n\nTRG LLP is Toby’s external auditor.\nMain responsibility:\n\nProvide reasonable assurance that the financial statements are fairly presented\n\nIn this engagement, TRG:\n\nSets overall materiality at about 4% of pre-tax income\n\nFocuses on risk of overstatement in:\n\nNet AR\n\nRevenue\n\nACL and RRA\n\n\nThe audit team must decide:\n\nWhere to concentrate audit effort\n\nWhat extra evidence to collect"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#c3-investors-and-lenders",
+    "href": "weeks/week-8/case_discussion.html#c3-investors-and-lenders",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "C3 · Investors and Lenders",
+    "text": "C3 · Investors and Lenders\n\nInvestors and bondholders care about:\n\nQuality of earnings, not just the earnings level\n\nAbility to generate cash and repay debt\n\nSmall changes around EPS targets or leverage ratios can:\n\nMove Toby’s share price\n\nAffect the interest rate demanded by lenders\n\nBecause of this, the way Toby estimates ACL and RRA,\nand how realistic its revenue is, matters directly to capital markets."
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#module-d",
+    "href": "weeks/week-8/case_discussion.html#module-d",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "Module D",
+    "text": "Module D\n\nFrom Data Tables to Risk Patterns\nIn this section, we will:\n\nDive into Toby’s receivables data\nSee what kinds of risks and patterns are hiding in the ledgers\nUse a few simple visualisations to understand the data"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset",
+    "href": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1 · What Is in This Dataset?",
+    "text": "D1 · What Is in This Dataset?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset-1",
+    "href": "weeks/week-8/case_discussion.html#d1-what-is-in-this-dataset-1",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1 · What Is in This Dataset?",
+    "text": "D1 · What Is in This Dataset?\nThis case dataset brings together four types of information:\n\nClient information\n\nInvoice information\n\nReturn information\n\nAllowance information"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1a-client-information",
+    "href": "weeks/week-8/case_discussion.html#d1a-client-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1a · Client Information",
+    "text": "D1a · Client Information\n\nWhich organisations are Toby’s customers\n\nWhere they are located\n\nCustomer city\n\nCustomer country\n\n\nWhich sales office is responsible for each customer\n\nSales office city\n\nSales office country"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1b-invoice-information",
+    "href": "weeks/week-8/case_discussion.html#d1b-invoice-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1b · Invoice Information",
+    "text": "D1b · Invoice Information\n\nIndividual sales transactions:\n\nInvoice ID / invoice number\n\nInvoice date\n\nInvoice amount\n\n\nThese invoices are what build up the receivables balance:\n\nMore invoices → higher AR\n\nLarger invoices → more exposure in a single transaction"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1c-return-information",
+    "href": "weeks/week-8/case_discussion.html#d1c-return-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1c · Return Information",
+    "text": "D1c · Return Information\n\nWhen customers send products back:\n\nReturn date\n\nDays between invoice and return\n\n\nHow much revenue is reversed:\n\nReturn amount\n\nInvoice net of return (what is left after returns)"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d1d-allowance-information",
+    "href": "weeks/week-8/case_discussion.html#d1d-allowance-information",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D1d · Allowance Information",
+    "text": "D1d · Allowance Information\n\nPost-sale price concessions and credits:\n\nAllowance amount\n\nAllowance date\n\nDays between invoice and allowance\n\n\nHow large the concession is compared with the invoice:\n\nAllowance percentage\n\nInvoice net of allowance"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d2-four-lenses-on-the-same-story",
+    "href": "weeks/week-8/case_discussion.html#d2-four-lenses-on-the-same-story",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D2 · Four Lenses on the Same Story",
+    "text": "D2 · Four Lenses on the Same Story\nWe will explore Toby’s receivables through four blocks:\n\nBlock 1 – Customer balance\n\nWhere is the money? (countries, cities, sales offices, customers)\n\nBlock 2 – Invoices\n\nHow big are the invoices, and how old are the receivables?\n\nBlock 3 – Returns\n\nAre products coming back? When, and from whom?\n\nBlock 4 – Allowances\n\nWhere is Toby “cutting price after the fact”?\n\n\nFor each block we will:\n\nStart with clear business questions\n\nBuild a few simple Tableau visualisations\n\nDiscuss the insights from the visualisations"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d3-block-1-customer-balance-questions",
+    "href": "weeks/week-8/case_discussion.html#d3-block-1-customer-balance-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D3 · Block 1 – Customer Balance Questions",
+    "text": "D3 · Block 1 – Customer Balance Questions\nWhen you explore the customer balance data, think about:\n\nWhich countries or cities show the largest AR balances?\nWhich sales offices are responsible for the biggest AR balances?\nAre there a few customers that account for a large share of total AR?\nIf one country / city / sales office / customer ran into trouble, how much of Toby’s receivables would be at risk?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d5-block-2-invoices-questions",
+    "href": "weeks/week-8/case_discussion.html#d5-block-2-invoices-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D5 · Block 2 – Invoices Questions",
+    "text": "D5 · Block 2 – Invoices Questions\nWhen you explore the invoice data, think about:\n\nAre most invoices small and similar,\nor do a few very large invoices dominate the total?\nHow are invoices distributed over time\n(by month or by quarter)? Do you see any spikes?\nDo you see signs of older, slow-moving invoices\nthat have not been collected for a long time?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d6-block-3-returns-questions",
+    "href": "weeks/week-8/case_discussion.html#d6-block-3-returns-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D6 · Block 3 – Returns Questions",
+    "text": "D6 · Block 3 – Returns Questions\nWhen you explore the returns data, think about:\n\nDo most returns happen soon after the sale,\nor do many returns happen a long time later?\nWhich customers have high total return amounts\nor very frequent returns?\nAre there invoices where returns remove most or all of the original sale?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d7-block-4-allowances-questions",
+    "href": "weeks/week-8/case_discussion.html#d7-block-4-allowances-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D7 · Block 4 – Allowances Questions",
+    "text": "D7 · Block 4 – Allowances Questions\nWhen you explore the allowances data, think about:\n\nWhen are allowances granted:\nmostly shortly after invoicing, or often long after the sale?\nHow large are allowances as a percentage of the original invoice amount?\nAre there customers who regularly receive large concessions?\nDo you see any unusual patterns:\nfor example, allowances that almost wipe out the original invoice?"
+  },
+  {
+    "objectID": "weeks/week-8/case_discussion.html#d8-module-d-reflection-questions",
+    "href": "weeks/week-8/case_discussion.html#d8-module-d-reflection-questions",
+    "title": "Case Discussion: Toby Biotech & Tableau",
+    "section": "D8 · Module D – Reflection Questions",
+    "text": "D8 · Module D – Reflection Questions\nAfter you have explored all four blocks, think about:\n\nWhere does the receivables risk seem most concentrated\n(by region, office, customer, or invoice type)?\nWhich patterns would make you doubt whether ACL or RRA are high enough?\nIf you were the audit team,\nwhich customers, regions, or time periods would you want to investigate further,\nbased on the patterns you saw in the data?"
+  },
+  {
+    "objectID": "weeks/week-9/main.html#prepare",
+    "href": "weeks/week-9/main.html#prepare",
+    "title": "Week 9",
+    "section": "",
+    "text": "Note📚 Prepare\n\n\n\n\nRevisit Week 7 materials.\n\nDownload Superstore.xls from Moodle or Github.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-9/main.html#participate",
+    "href": "weeks/week-9/main.html#participate",
+    "title": "Week 9",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Live session: Conceptual toolkit for interactive Tableau.\nWe will cover:\n\nCalculated fields (row-level vs aggregate).\n\nParameters as user-controlled variables for what-if analysis.\n\nReference lines, filters (measure/context), and box plots for analytical context.\n\nDashboard layout principles and story structure for communicating insights.\nStorytelling with data.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-9/main.html#practice",
+    "href": "weeks/week-9/main.html#practice",
+    "title": "Week 9",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 Guided Tableau lab with Sample - Superstore.xls (hands-on workflow).",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-9/main.html#perform",
+    "href": "weeks/week-9/main.html#perform",
+    "title": "Week 9",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\nNote🧠 Perform\n\n\n\n✏️ Hands-on practice applying interactive Tableau techniques (calculated fields, parameters, reference lines, filters, dashboard actions, and story points) to reinforce this week’s concepts.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-9/main.html#ponder",
+    "href": "weeks/week-9/main.html#ponder",
+    "title": "Week 9",
+    "section": "Ponder",
+    "text": "Ponder\n\n\n\n\n\n\nNote🔍 Ponder\n\n\n\nRead 10 Best Practices for Building Effective Dashboards.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 9"
+    ]
   }
 ]
