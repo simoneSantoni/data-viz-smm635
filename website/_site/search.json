@@ -1599,7 +1599,7 @@
     "href": "weeks/week-10/main.html",
     "title": "Week 10",
     "section": "",
-    "text": "Materials Coming Soon\n\n\n\nContent for Week 10 is currently being developed and will be available soon.\nCheck back regularly for updates or visit the course Moodle page for the latest information.",
+    "text": "Note📚 Prepare\n\n\n\nPlease read the case study:\n\n“Stocking the Wine Shelves in Charlottesville”\n(Moodle → Case Study section)",
     "crumbs": [
       "Weekly materials",
       "Week 10"
@@ -1966,7 +1966,7 @@
     "href": "weeks/week-9/main.html",
     "title": "Week 9",
     "section": "",
-    "text": "Note📚 Prepare\n\n\n\n\nRevisit Week 7 materials.\n\nDownload Superstore.xls from Moodle or Github.",
+    "text": "Note📚 Prepare\n\n\n\n\nRevisit Week 7 and 8 materials.\n\nDownload superstore.xls from Moodle or GitHub (file provided in this repository under data/superstore.xls).",
     "crumbs": [
       "Weekly materials",
       "Week 9"
@@ -2466,7 +2466,7 @@
     "href": "weeks/week-9/main.html#prepare",
     "title": "Week 9",
     "section": "",
-    "text": "Note📚 Prepare\n\n\n\n\nRevisit Week 7 materials.\n\nDownload Superstore.xls from Moodle or Github.",
+    "text": "Note📚 Prepare\n\n\n\n\nRevisit Week 7 and 8 materials.\n\nDownload superstore.xls from Moodle or GitHub (file provided in this repository under data/superstore.xls).",
     "crumbs": [
       "Weekly materials",
       "Week 9"
@@ -2477,7 +2477,7 @@
     "href": "weeks/week-9/main.html#participate",
     "title": "Week 9",
     "section": "Participate",
-    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Live session: Conceptual toolkit for interactive Tableau.\nWe will cover:\n\nCalculated fields (row-level vs aggregate).\n\nParameters as user-controlled variables for what-if analysis.\n\nReference lines, filters (measure/context), and box plots for analytical context.\n\nDashboard layout principles and story structure for communicating insights.\nStorytelling with data.",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Conceptual toolkit for interactive Tableau.\nWe will cover:\n\nCalculated fields (row-level vs aggregate).\n\nParameters as user-controlled variables.\n\nReference lines, filters (measure/context), and box plots for analytical context.\n\nDashboard layout principles and story structure for communicating insights.\nStorytelling with data.",
     "crumbs": [
       "Weekly materials",
       "Week 9"
@@ -2488,7 +2488,7 @@
     "href": "weeks/week-9/main.html#practice",
     "title": "Week 9",
     "section": "Practice",
-    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 Guided Tableau lab with Sample - Superstore.xls (hands-on workflow).",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\n🧮 Guided Tableau lab with Superstore.xls (hands-on workflow).",
     "crumbs": [
       "Weekly materials",
       "Week 9"
@@ -2510,10 +2510,289 @@
     "href": "weeks/week-9/main.html#ponder",
     "title": "Week 9",
     "section": "Ponder",
-    "text": "Ponder\n\n\n\n\n\n\nNote🔍 Ponder\n\n\n\nRead 10 Best Practices for Building Effective Dashboards.",
+    "text": "Ponder\n\n\n\n\n\n\nNote🔍 Ponder\n\n\n\nRead 10 Best Practices for Building Effective Dashboards (PDF provided alongside this page in the Week 9 folder).",
     "crumbs": [
       "Weekly materials",
       "Week 9"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#section-1",
+    "href": "weeks/week-10/case_discussion.html#section-1",
+    "title": "Case Discussion",
+    "section": "Section 1",
+    "text": "Section 1\nCase Context"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#orientation",
+    "href": "weeks/week-10/case_discussion.html#orientation",
+    "title": "Case Discussion",
+    "section": "1.0 Orientation",
+    "text": "1.0 Orientation\n\nA legacy independent wine retailer is rethinking its assortment.\nThe owners are deciding whether and how to extend the aisle.\nThe challenge is to adapt to change while protecting the store’s curated identity."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#context-what-is-market-street-wine",
+    "href": "weeks/week-10/case_discussion.html#context-what-is-market-street-wine",
+    "title": "Case Discussion",
+    "section": "1.1 Context: What is Market Street Wine?",
+    "text": "1.1 Context: What is Market Street Wine?\n\nA long-standing, iconic wine shop in Charlottesville.\nAn independent, curated specialty retailer with deep local roots.\nKnown for discovery and trust-based selection."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#change-what-has-changed",
+    "href": "weeks/week-10/case_discussion.html#change-what-has-changed",
+    "title": "Case Discussion",
+    "section": "1.2 Change: What has changed?",
+    "text": "1.2 Change: What has changed?\n\nRichards and McQuade took over in 2018.\nThey were insiders who had worked in the shop for years.\nThey preserved the store’s character and legacy."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#change-continued",
+    "href": "weeks/week-10/case_discussion.html#change-continued",
+    "title": "Case Discussion",
+    "section": "1.2 Change (continued)",
+    "text": "1.2 Change (continued)\nBy 2022, they observed clear shifts across:\n\nConsumer tastes\n\nCustomer profile\n\nBuying channels\n\nPrice/value sensitivity\n\nSupply conditions\n\nThese shifts triggered a reassessment of the shelf."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#a-who-buys-now",
+    "href": "weeks/week-10/case_discussion.html#a-who-buys-now",
+    "title": "Case Discussion",
+    "section": "1.3A Who buys now?",
+    "text": "1.3A Who buys now?\n\nThe customer base has evolved since 2018.\nThe historical core included:\n\nBurgundy and Bordeaux lovers\n\nClassic-region loyalists\n\nBuyers curious about organic wines and small-producer relationships"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#a-who-buys-now-1",
+    "href": "weeks/week-10/case_discussion.html#a-who-buys-now-1",
+    "title": "Case Discussion",
+    "section": "1.3A Who buys now?",
+    "text": "1.3A Who buys now?\n\nThe bulk of customers shifted in age:\n\nFrom mid-40s/50s\n\nToward 30s/40s\n\nThis shift increases demand for:\n\nExploration\n\nAuthenticity-led choices\n\nClear value signals"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#a-who-buys-now-2",
+    "href": "weeks/week-10/case_discussion.html#a-who-buys-now-2",
+    "title": "Case Discussion",
+    "section": "1.3A Who buys now?",
+    "text": "1.3A Who buys now?\n\nWine enthusiasts: Collect based on producer and seek fancy or obscure wines.\n\nCurious, story-driven buyers: Less focused on famous regions; value authenticity and narrative.\n\nGrab-and-go explorers: Arrive with fewer preconceived ideas and a willingness to try new things."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#b-how-they-buy-now",
+    "href": "weeks/week-10/case_discussion.html#b-how-they-buy-now",
+    "title": "Case Discussion",
+    "section": "1.3B How they buy now?",
+    "text": "1.3B How they buy now?\n\nThe in-store experience remains central.\nThe pandemic accelerated digital engagement and new routines.\nBuying expanded to:\n\nOnline ordering\n\nPickup / delivery\n\nSubscriptions"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#b-how-they-buy-now-implications",
+    "href": "weeks/week-10/case_discussion.html#b-how-they-buy-now-implications",
+    "title": "Case Discussion",
+    "section": "1.3B How they buy now? (implications)",
+    "text": "1.3B How they buy now? (implications)\n\nThe store must retain customers gained during online-only periods.\nDigital engagement enables more data-driven customization.\nThe assortment must work well in both:\n\nPhysical browsing\n\nDigital search and quick decision contexts"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#industry-tailwinds",
+    "href": "weeks/week-10/case_discussion.html#industry-tailwinds",
+    "title": "Case Discussion",
+    "section": "1.4 Industry tailwinds",
+    "text": "1.4 Industry tailwinds\nThe category environment is shifting:\n\nRenewed attention to sustainability and natural wines.\nRising interest in grape mixes and blends.\nA rekindled interest in rosé.\nSupply-chain changes pushing prices upward.\nGrowing consumer interest in lower-priced wines during COVID."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#industry-tailwinds-millennial-mechanism",
+    "href": "weeks/week-10/case_discussion.html#industry-tailwinds-millennial-mechanism",
+    "title": "Case Discussion",
+    "section": "1.4 Industry tailwinds (millennial mechanism)",
+    "text": "1.4 Industry tailwinds (millennial mechanism)\n\nMillennials are a driving force behind multiple trends.\nThey order more adventurously.\nThey show interest in:\n\nUnusual sparkling wines\n\nBlends\n\nAuthentic, values-led products"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#industry-tailwinds-1",
+    "href": "weeks/week-10/case_discussion.html#industry-tailwinds-1",
+    "title": "Case Discussion",
+    "section": "1.4 Industry tailwinds",
+    "text": "1.4 Industry tailwinds\n\nClassic French and Italian labels became harder to obtain.\nThe case raises a practical alternative question:\n\nCould U.S. regions fill meaningful category gaps?"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#industry-tailwinds-2",
+    "href": "weeks/week-10/case_discussion.html#industry-tailwinds-2",
+    "title": "Case Discussion",
+    "section": "1.4 Industry tailwinds",
+    "text": "1.4 Industry tailwinds\n\nThe owners must maintain strong options near popular price points.\nA key strategic anchor is the presence of compelling choices under $20."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#decision-what-is-the-core-business-question",
+    "href": "weeks/week-10/case_discussion.html#decision-what-is-the-core-business-question",
+    "title": "Case Discussion",
+    "section": "1.5 Decision: What is the core business question?",
+    "text": "1.5 Decision: What is the core business question?\nShould Market Street Wine extend the aisle?\nIf yes:\n\nWhich U.S. regions and producers fit emerging demand?\nWhat styles, grapes, and blends align with current trends?\nHow to support a strong value story around key price points?\nHow to modernize while preserving the store’s curated identity?"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#our-role-in-this-class",
+    "href": "weeks/week-10/case_discussion.html#our-role-in-this-class",
+    "title": "Case Discussion",
+    "section": "1.6 Our role in this class",
+    "text": "1.6 Our role in this class\n\nWe act as advisors to a curated retailer.\nWe work with a dataset of 40,000+ U.S. wines.\nThe data provides a way to move from trend narratives to measurable filters and defensible recommendations."
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#our-role-what-the-data-includes",
+    "href": "weeks/week-10/case_discussion.html#our-role-what-the-data-includes",
+    "title": "Case Discussion",
+    "section": "1.6 Our role (what the data includes)",
+    "text": "1.6 Our role (what the data includes)\nWe can leverage fields such as:\n\nDescriptions\n\nGrape variety\n\nPrice\n\nPoints\n\nTasting notes\n\nWine style\n\nVineyard and winery geography"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#section-2",
+    "href": "weeks/week-10/case_discussion.html#section-2",
+    "title": "Case Discussion",
+    "section": "Section 2",
+    "text": "Section 2\nMovement 1: Audience → Dashboard Design"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#the-audience",
+    "href": "weeks/week-10/case_discussion.html#the-audience",
+    "title": "Case Discussion",
+    "section": "2.1 The Audience",
+    "text": "2.1 The Audience\nWho are we building this analysis and dashboard for?"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#the-audience-1",
+    "href": "weeks/week-10/case_discussion.html#the-audience-1",
+    "title": "Case Discussion",
+    "section": "2.1 The Audience",
+    "text": "2.1 The Audience\n\nSiân Richards and Thadd McQuade\n\nOwners of Market Street Wine\n\nIndependent boutique wine retailers"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#audience-traits",
+    "href": "weeks/week-10/case_discussion.html#audience-traits",
+    "title": "Case Discussion",
+    "section": "2.2 Audience Traits",
+    "text": "2.2 Audience Traits\n\nExperienced and knowledgeable in wine, but not data analysts\n\nTrend-conscious\n\nStory-driven\n\nNeed insights for business strategy\n\nTime-constrained\n\nUsed to working with reps"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#translating-audience-needs-into-design",
+    "href": "weeks/week-10/case_discussion.html#translating-audience-needs-into-design",
+    "title": "Case Discussion",
+    "section": "2.3 Translating Audience Needs into Design",
+    "text": "2.3 Translating Audience Needs into Design\nGiven these traits, what should the dashboard feel like?"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#audience-traits-ideas-for-dashboard-design",
+    "href": "weeks/week-10/case_discussion.html#audience-traits-ideas-for-dashboard-design",
+    "title": "Case Discussion",
+    "section": "2.3 Audience Traits → Ideas for Dashboard Design",
+    "text": "2.3 Audience Traits → Ideas for Dashboard Design\n\n\n\n\n\n\n\nAudience traits\nIdeas for dashboard design\n\n\n\n\nExperienced and knowledgeable in wine, but not data analysts\nStrategic but not technical\n\n\nTrend-conscious\nSimple but rich\n\n\nStory-driven\nSupported by qualitative storytelling elements\n\n\nNeed insights for business strategy\nUnbiased, data-backed, tailored choices\n\n\nTime-constrained\nIntuitive\n\n\nUsed to working with reps\nSupports discovery beyond the rep pitch"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#section-3",
+    "href": "weeks/week-10/case_discussion.html#section-3",
+    "title": "Case Discussion",
+    "section": "Section 3",
+    "text": "Section 3\nMovement 2: Trends → Data → Charts/Features"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#consumer-trends",
+    "href": "weeks/week-10/case_discussion.html#consumer-trends",
+    "title": "Case Discussion",
+    "section": "3.1 Consumer Trends",
+    "text": "3.1 Consumer Trends\nWhat consumer or category trends does the case highlight?"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#consumer-trends-1",
+    "href": "weeks/week-10/case_discussion.html#consumer-trends-1",
+    "title": "Case Discussion",
+    "section": "3.1 Consumer Trends",
+    "text": "3.1 Consumer Trends\n\nGrowing demand for natural/organic, sustainable, and low-sulfite wines\n\nPopularity of rosé, sparkling, and lighter styles\n\nMillennials’ preference for value and uniqueness\n\nCuriosity- and story-driven shopping\n\nIncreased interest in American and lesser-known regions"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#from-trends-to-data",
+    "href": "weeks/week-10/case_discussion.html#from-trends-to-data",
+    "title": "Case Discussion",
+    "section": "3.2 From Trends to Data",
+    "text": "3.2 From Trends to Data\nIf these are the trends, what data do we need to capture them?"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#trends-data-alignment",
+    "href": "weeks/week-10/case_discussion.html#trends-data-alignment",
+    "title": "Case Discussion",
+    "section": "3.2 Trends → Data Alignment",
+    "text": "3.2 Trends → Data Alignment\n\n\n\n\n\n\n\nConsumer trends\nRelevant data from the dataset\n\n\n\n\nNatural/organic, sustainable, low-sulfite\nNatural/organic indicators; vineyard state / winery state\n\n\nRosé, sparkling, lighter styles\nWine type/style\n\n\nValue and uniqueness\nPrice, points\n\n\nCuriosity- and story-driven shopping\nDescriptions, tasting notes\n\n\nAmerican and lesser-known regions\nVineyard/winery geography"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#from-data-to-visualization",
+    "href": "weeks/week-10/case_discussion.html#from-data-to-visualization",
+    "title": "Case Discussion",
+    "section": "3.3 From Data to Visualization",
+    "text": "3.3 From Data to Visualization\nGiven these data fields, what charts or Tableau features would best highlight matches?"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#data-visualization-alignment",
+    "href": "weeks/week-10/case_discussion.html#data-visualization-alignment",
+    "title": "Case Discussion",
+    "section": "3.3 Data → Visualization Alignment",
+    "text": "3.3 Data → Visualization Alignment\n\n\n\n\n\n\n\nRelevant data\nCharts / Tableau features\n\n\n\n\nNatural/organic indicators; vineyard/winery geography\nCalculated fields, filters, highlights\n\n\nWine type/style\nFilters, bar charts, highlights\n\n\nPrice, points\nScatterplots, calculated value logic\n\n\nDescriptions, tasting notes\nPivot tasting notes; rich tooltips / viz in tooltip\n\n\nVineyard/winery geography\nMaps, filters, simple tables"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#end-to-end-view",
+    "href": "weeks/week-10/case_discussion.html#end-to-end-view",
+    "title": "Case Discussion",
+    "section": "3.4 End-to-End View",
+    "text": "3.4 End-to-End View"
+  },
+  {
+    "objectID": "weeks/week-10/case_discussion.html#trends-data-visualization",
+    "href": "weeks/week-10/case_discussion.html#trends-data-visualization",
+    "title": "Case Discussion",
+    "section": "3.4 Trends → Data → Visualization",
+    "text": "3.4 Trends → Data → Visualization\n\n\n\n\n\n\n\n\nConsumer trends\nRelevant data\nCharts / Tableau features\n\n\n\n\nNatural/organic, sustainable, low-sulfite\nNatural/organic indicators; vineyard state / winery state\nCalculated fields, filters, highlights\n\n\nRosé, sparkling, lighter styles\nWine type/style\nFilters, bar charts, highlights\n\n\nValue and uniqueness\nPrice, points\nScatterplots, calculated value logic\n\n\nCuriosity- and story-driven shopping\nDescriptions, tasting notes\nPivot tasting notes; rich tooltips / viz in tooltip\n\n\nAmerican and lesser-known regions\nVineyard/winery geography\nMaps, filters, simple tables"
+  },
+  {
+    "objectID": "weeks/week-10/main.html#prepare",
+    "href": "weeks/week-10/main.html#prepare",
+    "title": "Week 10",
+    "section": "",
+    "text": "Note📚 Prepare\n\n\n\nPlease read the case study:\n\n“Stocking the Wine Shelves in Charlottesville”\n(Moodle → Case Study section)",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10/main.html#participate",
+    "href": "weeks/week-10/main.html#participate",
+    "title": "Week 10",
+    "section": "Participate",
+    "text": "Participate\n\n\n\n\n\n\nNote👥 Participate\n\n\n\n📊 Case Discussion Presentation\nIn class, we will:\n\nWalk through this case study together.\n\nDiscuss the strategic tension behind the assortment decision.\n\nTranslate the business problem into data questions.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10/main.html#practice",
+    "href": "weeks/week-10/main.html#practice",
+    "title": "Week 10",
+    "section": "Practice",
+    "text": "Practice\n\n\n\n\n\n\nNote💻 Practice\n\n\n\nIn the second part of the session, we will:\n\nUse Tableau to explore the U.S. wine dataset.\n\nBuild key views that support the case decision.\n\nCombine them into an interactive dashboard.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10/main.html#perform",
+    "href": "weeks/week-10/main.html#perform",
+    "title": "Week 10",
+    "section": "Perform",
+    "text": "Perform\n\n\n\n\n\n\nNote🧠 Perform\n\n\n\nAfter class, take a few minutes to:\n\nReview the core decision logic of the case.\n\nReflect on how your dashboard supported that logic.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
+    ]
+  },
+  {
+    "objectID": "weeks/week-10/main.html#ponder",
+    "href": "weeks/week-10/main.html#ponder",
+    "title": "Week 10",
+    "section": "Ponder",
+    "text": "Ponder\n\n\n\n\n\n\nNote🔍 Ponder\n\n\n\nThink beyond what we did in class:\n\nWhat additional data or views would strengthen your recommendation?\n\nHow would you make the dashboard more actionable for the owners?",
+    "crumbs": [
+      "Weekly materials",
+      "Week 10"
     ]
   }
 ]

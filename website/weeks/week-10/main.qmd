@@ -1,13 +1,72 @@
 ---
 title: "Week 10"
-subtitle: "Dashboards with Tableau (Part 2) and Market Street Wine case"
+subtitle: "Market Street Wine Case & Dashboard Design"
 callout-appearance: default
 ---
 
+## Prepare
+
 ::: {.callout-note}
-## Materials Coming Soon
+## 📚 Prepare
 
-Content for Week 10 is currently being developed and will be available soon.
+Please read the case study:
 
-Check back regularly for updates or visit the course Moodle page for the latest information.
+> **“Stocking the Wine Shelves in Charlottesville”**  
+> (Moodle → *Case Study* section)
+:::
+
+---
+
+## Participate
+
+::: {.callout-note}
+## 👥 Participate
+
+📊 [Case Discussion Presentation](case_discussion.html)
+
+In class, we will:
+
+- Walk through this case study together.  
+- Discuss the strategic tension behind the assortment decision.  
+- Translate the business problem into data questions.
+:::
+
+---
+
+## Practice
+
+::: {.callout-note}
+## 💻 Practice
+
+In the second part of the session, we will:
+
+- Use Tableau to explore the U.S. wine dataset.  
+- Build key views that support the case decision.  
+- Combine them into an interactive dashboard.
+:::
+
+---
+
+## Perform
+
+::: {.callout-note}
+## 🧠 Perform
+
+After class, take a few minutes to:
+
+- Review the core decision logic of the case.  
+- Reflect on how your dashboard supported that logic.
+:::
+
+---
+
+## Ponder
+
+::: {.callout-note}
+## 🔍 Ponder
+
+Think beyond what we did in class:
+
+- What additional data or views would strengthen your recommendation?  
+- How would you make the dashboard more actionable for the owners?
 :::
