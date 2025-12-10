@@ -1,0 +1,293 @@
+---
+title: "Case Discussion"
+subtitle: "Stocking the Wine Shelves in Charlottesville"
+author: "SMM635 – Data Visualization"
+format:
+  revealjs:
+    theme: simple
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    smaller: true
+---
+
+## Section 1  
+### Case Context
+
+## 1.0 Orientation
+
+- A legacy independent wine retailer is rethinking its assortment.
+- The owners are deciding whether and how to **extend the aisle**.
+- The challenge is to adapt to change while protecting the store’s curated identity.
+
+---
+
+## 1.1 Context: What is Market Street Wine?
+
+- A long-standing, iconic wine shop in Charlottesville.
+- An independent, curated specialty retailer with deep local roots.
+- Known for discovery and trust-based selection.
+
+---
+
+## 1.2 Change: What has changed?
+
+- Richards and McQuade took over in 2018.
+- They were insiders who had worked in the shop for years.
+- They preserved the store’s character and legacy.
+
+---
+
+## 1.2 Change (continued)
+
+By 2022, they observed clear shifts across:
+
+- Consumer tastes  
+- Customer profile  
+- Buying channels  
+- Price/value sensitivity  
+- Supply conditions  
+
+These shifts triggered a reassessment of the shelf.
+
+---
+
+## 1.3A Who buys now?
+
+- The customer base has evolved since 2018.
+- The historical core included:
+  - Burgundy and Bordeaux lovers  
+  - Classic-region loyalists  
+  - Buyers curious about organic wines and small-producer relationships  
+
+---
+
+## 1.3A Who buys now?
+
+- The bulk of customers shifted in age:
+  - From mid-40s/50s  
+  - Toward 30s/40s  
+
+- This shift increases demand for:
+  - Exploration  
+  - Authenticity-led choices  
+  - Clear value signals
+
+---
+
+## 1.3A Who buys now?
+
+- **Wine enthusiasts:** Collect based on producer and seek fancy or obscure wines.  
+- **Curious, story-driven buyers:** Less focused on famous regions; value authenticity and narrative.  
+- **Grab-and-go explorers:** Arrive with fewer preconceived ideas and a willingness to try new things.
+
+---
+
+## 1.3B How they buy now?
+
+- The in-store experience remains central.
+- The pandemic accelerated digital engagement and new routines.
+- Buying expanded to:
+  - Online ordering  
+  - Pickup / delivery  
+  - Subscriptions  
+
+---
+
+## 1.3B How they buy now? (implications)
+
+- The store must retain customers gained during online-only periods.
+- Digital engagement enables more data-driven customization.
+- The assortment must work well in both:
+  - Physical browsing  
+  - Digital search and quick decision contexts  
+
+---
+
+## 1.4 Industry tailwinds
+
+The category environment is shifting:
+
+- Renewed attention to sustainability and natural wines.
+- Rising interest in grape mixes and blends.
+- A rekindled interest in rosé.
+- Supply-chain changes pushing prices upward.
+- Growing consumer interest in lower-priced wines during COVID.
+
+---
+
+## 1.4 Industry tailwinds (millennial mechanism)
+
+- Millennials are a driving force behind multiple trends.
+- They order more adventurously.
+- They show interest in:
+  - Unusual sparkling wines  
+  - Blends  
+  - Authentic, values-led products  
+
+---
+
+## 1.4 Industry tailwinds
+
+- Classic French and Italian labels became harder to obtain.
+- The case raises a practical alternative question:
+  - Could **U.S. regions** fill meaningful category gaps?
+
+---
+
+## 1.4 Industry tailwinds
+
+- The owners must maintain strong options near popular price points.
+- A key strategic anchor is the presence of compelling choices **under $20**.
+
+---
+
+## 1.5 Decision: What is the core business question?
+
+**Should Market Street Wine extend the aisle?**  
+If yes:
+
+- Which U.S. regions and producers fit emerging demand?
+- What styles, grapes, and blends align with current trends?
+- How to support a strong value story around key price points?
+- How to modernize while preserving the store’s curated identity?
+
+---
+
+## 1.6 Our role in this class
+
+- We act as advisors to a curated retailer.
+- We work with a dataset of **40,000+ U.S. wines**.
+- The data provides a way to move from trend narratives to measurable filters and defensible recommendations.
+
+---
+
+## 1.6 Our role (what the data includes)
+
+We can leverage fields such as:
+
+- Descriptions  
+- Grape variety  
+- Price  
+- Points  
+- Tasting notes  
+- Wine style  
+- Vineyard and winery geography  
+
+---
+
+## Section 2  
+### Movement 1: Audience → Dashboard Design
+
+## 2.1 The Audience
+
+Who are we building this analysis and dashboard for?
+
+---
+
+## 2.1 The Audience
+
+- Siân Richards and Thadd McQuade  
+- Owners of Market Street Wine  
+- Independent boutique wine retailers
+
+---
+
+## 2.2 Audience Traits
+
+- Experienced and knowledgeable in wine, but not data analysts  
+- Trend-conscious  
+- Story-driven  
+- Need insights for business strategy  
+- Time-constrained  
+- Used to working with reps
+
+---
+
+## 2.3 Translating Audience Needs into Design
+
+Given these traits, what should the dashboard feel like?
+
+---
+
+## 2.3 Audience Traits → Ideas for Dashboard Design
+
+| Audience traits | Ideas for dashboard design |
+|---|---|
+| Experienced and knowledgeable in wine, but not data analysts | Strategic but not technical |
+| Trend-conscious | Simple but rich |
+| Story-driven | Supported by qualitative storytelling elements |
+| Need insights for business strategy | Unbiased, data-backed, tailored choices |
+| Time-constrained | Intuitive |
+| Used to working with reps | Supports discovery beyond the rep pitch |
+
+---
+
+## Section 3  
+### Movement 2: Trends → Data → Charts/Features
+
+## 3.1 Consumer Trends
+
+What consumer or category trends does the case highlight?
+
+---
+
+## 3.1 Consumer Trends
+
+- Growing demand for **natural/organic, sustainable, and low-sulfite** wines  
+- Popularity of **rosé, sparkling, and lighter styles**  
+- Millennials’ preference for **value and uniqueness**  
+- **Curiosity- and story-driven** shopping  
+- Increased interest in **American and lesser-known regions**
+
+---
+
+## 3.2 From Trends to Data
+
+If these are the trends, what data do we need to capture them?
+
+---
+
+## 3.2 Trends → Data Alignment
+
+| Consumer trends | Relevant data from the dataset |
+|---|---|
+| Natural/organic, sustainable, low-sulfite | Natural/organic indicators; vineyard state / winery state |
+| Rosé, sparkling, lighter styles | Wine type/style |
+| Value and uniqueness | Price, points |
+| Curiosity- and story-driven shopping | Descriptions, tasting notes |
+| American and lesser-known regions | Vineyard/winery geography |
+
+---
+
+## 3.3 From Data to Visualization
+
+Given these data fields, what charts or Tableau features would best highlight matches?
+
+---
+
+## 3.3 Data → Visualization Alignment
+
+| Relevant data | Charts / Tableau features |
+|---|---|
+| Natural/organic indicators; vineyard/winery geography | Calculated fields, filters, highlights |
+| Wine type/style | Filters, bar charts, highlights |
+| Price, points | Scatterplots, calculated value logic |
+| Descriptions, tasting notes | Pivot tasting notes; rich tooltips / viz in tooltip |
+| Vineyard/winery geography | Maps, filters, simple tables |
+
+---
+
+## 3.4 End-to-End View
+
+---
+
+## 3.4 Trends → Data → Visualization
+
+| Consumer trends | Relevant data | Charts / Tableau features |
+|---|---|---|
+| Natural/organic, sustainable, low-sulfite | Natural/organic indicators; vineyard state / winery state | Calculated fields, filters, highlights |
+| Rosé, sparkling, lighter styles | Wine type/style | Filters, bar charts, highlights |
+| Value and uniqueness | Price, points | Scatterplots, calculated value logic |
+| Curiosity- and story-driven shopping | Descriptions, tasting notes | Pivot tasting notes; rich tooltips / viz in tooltip |
+| American and lesser-known regions | Vineyard/winery geography | Maps, filters, simple tables |
